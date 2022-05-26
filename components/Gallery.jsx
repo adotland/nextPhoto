@@ -20,7 +20,7 @@ export default function Gallery({ data }) {
               mb={2}
               d="inline-block"
               src={`${d.download_url}`}
-              alt="park"
+              alt={d.name || "image"}
             /></a>
         </Link>
       ))}

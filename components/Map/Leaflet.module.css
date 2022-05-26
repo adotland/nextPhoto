@@ -1,0 +1,16 @@
+.map {
+  margin-top: 1rem;
+  flex: none;
+  height: 20rem;
+  min-height: 20rem;
+}
+
+@media screen and (min-width: 62em) {
+  .map {
+    margin-top: 0;
+    margin-left: 2rem;
+    flex: 1;
+    height: auto;
+    max-height: 768px;
+  }
+}
