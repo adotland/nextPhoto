@@ -3,21 +3,25 @@ import { useColorModeValue } from "@chakra-ui/react"
 import PillPity from 'pill-pity'
 
 function Footer() {
-    return (
-      <PillPity
-      pattern="topography"
-      as={Flex}
-      justify="center"
-      align="center"
-      patternFill={useColorModeValue("gray.200", "gray.600")}
-      patternOpacity={useColorModeValue(0.4, 0.1)}
-      bgColor={useColorModeValue("gray.100", "gray.800")}
+  return (
+    <Box
+      pt={5}
+      mt={3}
+      color='gray.600'
     >
-        <Box textAlign='center' p='5' color='gray.600'>
-            &copy; {new Date().getFullYear()} A.Land
-        </Box>
-        </PillPity>
-    )
+      <PillPity
+        pattern="topography"
+        as={Flex}
+        patternFill={useColorModeValue("gray.200", "gray.600")}
+        patternOpacity={useColorModeValue(0.4, 0.1)}
+        bgColor={useColorModeValue("gray.100", "gray.800")}
+        py={5}
+        px={10}
+      >
+        &copy; {new Date().getFullYear()} A.Land
+      </PillPity>
+    </Box>
+  )
 }
 
 export default Footer
