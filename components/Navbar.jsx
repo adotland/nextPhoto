@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
-import PillPity from 'pill-pity'
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
 
@@ -107,6 +106,7 @@ const NavBarContainer = ({ children, ...props }) => {
       color={useColorModeValue("brand.700", "brand.200")}
       position="fixed"
       backdropFilter="saturate(180%) blur(5px)"
+      zIndex={99999}
       {...props}
     >
       {children}

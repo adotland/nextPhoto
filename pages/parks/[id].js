@@ -1,4 +1,5 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
+import Image from "next/image";
 import { ff } from "fssf";
 import Details from "../../components/Details";
 import Map from '../../components/Map';
@@ -16,10 +17,13 @@ export default function ({ dataList }) {
         <Box flex={1}>
           <Image
             key={data.id}
-            w="100%"
-            d="inline-block"
             src={`${data.download_url}`}
             alt={data.name ?? "image"}
+            layout="responsive"
+            width={data.width}
+            height={data.height}
+            // sizes="50vw"
+            priority
           />
         </Box>
         <Map center={[data.lat, data.long]} name={data.name} />
