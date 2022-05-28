@@ -34,3 +34,4 @@ yarn-error.log*
 .vscode
 cms/data/base
 cms/config.js
+pages/test.js

@@ -26,7 +26,7 @@ export default function ({ dataList }) {
   const data = dataList[0];
   return (
     <>
-      <Flex m={7} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
+      <Flex m={[0,0,0,7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
         <Box flex={1}
           minW={data.width > data.height ? "60%" : "40%"}
           // maxW={data.width > data.height ? "100%" : "40%"}

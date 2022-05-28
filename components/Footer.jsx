@@ -7,6 +7,7 @@ function Footer() {
     <Box
       pt={5}
       mt={3}
+      mx={[0, 0, 0, 7]}
       color='gray.600'
     >
       {/* <PillPity
@@ -19,8 +20,8 @@ function Footer() {
         px={10}
       > */}
       <Flex
-              patternFill={useColorModeValue("gray.200", "gray.600")}
-              patternOpacity={useColorModeValue(0.4, 0.1)}
+              // patternFill={useColorModeValue("gray.200", "gray.600")}
+              // opacity={useColorModeValue(0.4, 0.1)}
               bgColor={useColorModeValue("gray.100", "gray.800")}
               py={5}
               px={10}>
