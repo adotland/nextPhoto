@@ -15,7 +15,7 @@ export default function Logo(props) {
             backgroundColor={useColorModeValue("white", "gray.800")}
             p={1}
           >
-            TheBikeAndThePark
+            TheParkAndTheBike
           </Heading>
         </a>
       </Link>

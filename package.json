@@ -15,7 +15,7 @@
     "@fontsource/open-sans": "^4.5.10",
     "@fontsource/raleway": "^4.5.8",
     "framer-motion": "^6",
-    "fssf": "^0.6.0",
+    "fssf": "^0.7.0",
     "leaflet": "^1.8.0",
     "next": "12.1.6",
     "nprogress": "^0.2.0",
@@ -26,7 +26,9 @@
     "react-leaflet": "^4.0.0"
   },
   "devDependencies": {
+    "commander": "^9.2.0",
     "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "sharp": "^0.30.5"
   }
 }

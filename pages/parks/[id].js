@@ -5,8 +5,8 @@ import Details from "../../components/Details";
 import Map from '../../components/Map';
 
 export async function getServerSideProps({ params: { id } }) {
-  const data = await ff.readJson(ff.path('./data/db.json'));
-  return { props: { dataList: data.filter(d => d.id === id) } };
+  const data = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
+  return { props: { dataList: data.filter(d => d.id == id) } };
 }
 
 export default function ({ dataList }) {
@@ -14,10 +14,13 @@ export default function ({ dataList }) {
   return (
     <>
       <Flex m={7} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
-        <Box flex={1}>
+        <Box flex={1}
+          minW={data.width > data.height ? "60%" : "40%"}
+          maxW={data.width > data.height ? "60%" : "40%"}
+        >
           <Image
             key={data.id}
-            src={`${data.download_url}`}
+            src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
             alt={data.name ?? "image"}
             layout="responsive"
             width={data.width}

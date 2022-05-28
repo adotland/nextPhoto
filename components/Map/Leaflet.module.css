@@ -12,5 +12,6 @@
     flex: 1;
     height: auto;
     max-height: 768px;
+    max-width: 40%;
   }
 }

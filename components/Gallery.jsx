@@ -3,7 +3,7 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Gallery({ data }) {
+export default function Gallery({ dataList }) {
   return (
     <Box
       padding={4}
@@ -12,26 +12,29 @@ export default function Gallery({ data }) {
       bg={useColorModeValue("gray.100", "gray.800")}
       sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
     >
-      {data.map((d, index) => (
-        <Link href={`/parks/${d.id}`} key={index} url={d.download_url}>
-          <a>
-            <Box
-              w="100%"
-              mb={2}
-              display="inline-block"
-            >
-              <Image
-                key={index}
-                src={`${d.download_url}`}
-                alt={d.name || "image"}
-                layout="responsive"
-                width={d.width}
-                height={d.height}
-                sizes="33vw"
-              />
-            </Box>
-          </a>
-        </Link>
+      {
+      dataList.map((data, index) => (
+        (data.live &&
+          <Link href={`/parks/${data.id}`} key={index}>
+            <a>
+              <Box
+                w="100%"
+                mb={2}
+                display="inline-block"
+              >
+                <Image
+                  key={index}
+                  src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
+                  alt={data.name || "image"}
+                  layout="responsive"
+                  width={data.width}
+                  height={data.height}
+                  sizes="33vw"
+                />
+              </Box>
+            </a>
+          </Link>
+        )
       ))}
     </Box>
   );

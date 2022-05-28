@@ -2,12 +2,12 @@ import Gallery from "../components/Gallery";
 import { ff } from "fssf";
 
 export async function getServerSideProps() {
-  const data = await ff.readJson(ff.path('./data/db.json'));
-  return { props: { data } };
+  const dataList = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
+  return { props: { dataList } };
 }
 
-export default function({ data }) {
+export default function({ dataList }) {
   return (
-    <Gallery data={data}/>
+    <Gallery dataList={dataList}/>
   )
 }
