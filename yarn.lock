@@ -2525,11 +2525,6 @@ picomatch@^2.3.1:
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-pill-pity@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.npmjs.org/pill-pity/-/pill-pity-0.2.3.tgz"
-  integrity sha512-d0J9pDFwaivD15I6dgFdljXL8vlaXtbFlmn+oGCEW4eC0IpXcUHge2AwLAnbiWr6qICfmxwaM8BWrbUkaN2/ug==
-
 popmotion@11.0.3:
   version "11.0.3"
   resolved "https://registry.npmjs.org/popmotion/-/popmotion-11.0.3.tgz"
