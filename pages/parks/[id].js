@@ -4,7 +4,20 @@ import { ff } from "fssf";
 import Details from "../../components/Details";
 import Map from '../../components/Map';
 
-export async function getServerSideProps({ params: { id } }) {
+export async function getStaticPaths() {
+  const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
+  const displayable = dataList.filter(data => data.live).map(data => {
+    return {
+      params: { id: data.id.toString() }
+    }
+  })
+  return {
+    paths: displayable,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params: { id } }) {
   const data = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
   return { props: { dataList: data.filter(d => d.id == id) } };
 }

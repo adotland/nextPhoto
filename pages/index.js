@@ -5,7 +5,7 @@ function byWeight(a, b) {
   return (b.weight || 0) - (a.weight || 0);
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const dataList = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
   return { props: { dataList: dataList.sort(byWeight) } };
 }
