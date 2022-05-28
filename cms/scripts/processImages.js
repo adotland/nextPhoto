@@ -66,15 +66,15 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (imageFileName = '114_1434_Jefferson-Park.jpg', metadata = {}, dump = true) {
+  addWatermark: async function (imageFileName = '2975_1323_Fairview-Park.jpg', metadata = {}, dump = true) {
     try {
-      const imageFile = fs.readFileSync(ff.path(IMAGES_PATH, imageFileName));
-      let watermarkBuffer;
-      if (metadata.width && metadata.height) {
-        watermarkBuffer = await this.createWatermark(metadata.width, metadata.height);
-      } else {
-        watermarkBuffer = fs.readFileSync(ff.path(__dirname, 'watermark.png'));
+      const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
+      const imageFile = fs.readFileSync(imageFileFullPath);
+      if (!metadata.width || !metadata.height) {
+        const sharpImage = sharp(imageFileFullPath);
+        metadata = await sharpImage.metadata();
       }
+      const watermarkBuffer = await this.createWatermark(metadata.width, metadata.height);
       const image = sharp(imageFile)
         .composite([
           {
@@ -99,9 +99,9 @@ const ImageProcessor = {
       const imageFileName = `${imageDataList[i].pmaid}_${imageDataList[i].locid}_${imageDataList[i].imageName}`;
       const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
       console.info(`processing [${imageFileName}]`);
-      const sharperImage = sharp(imageFileFullPath);
-      if (sharperImage) {
-        const metadata = await sharperImage.metadata();
+      const sharpImage = sharp(imageFileFullPath);
+      if (sharpImage) {
+        const metadata = await sharpImage.metadata();
         const processedImage = await this.addWatermark(imageFileName, metadata, false);
         const formattedImageFileName = formatImageFileName(imageFileName);
         if (processedImage) {
