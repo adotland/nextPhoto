@@ -23,11 +23,14 @@ const ImageProcessor = {
         const pmaid = dParsed[0];
         const locid = dParsed[1];
         const name = dParsed[2];
+        const { slug, ext } = formatImageFileName(name);
         retval.push({
           pmaid,
           locid,
           imageName: name,
-          parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, '')
+          parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
+          slug,
+          ext
         });
       }
     })
@@ -103,10 +106,10 @@ const ImageProcessor = {
       if (sharpImage) {
         const metadata = await sharpImage.metadata();
         const processedImage = await this.addWatermark(imageFileName, metadata, false);
-        const formattedImageFileName = formatImageFileName(imageFileName);
+        const {name: formattedImageFileName, ext} = formatImageFileName(imageFileName);
         if (processedImage) {
           console.info(`saving [${imageFileName}]`);
-          await processedImage.toFile(ff.path(PROCESSED_IMAGES_PATH, formattedImageFileName));
+          await processedImage.toFile(ff.path(PROCESSED_IMAGES_PATH, `${formattedImageFileName}.${ext}`));
         } else {
           throw new Error(`image undefined on [${imageFileName}]`);
         }
@@ -116,16 +119,16 @@ const ImageProcessor = {
     }
   },
 
-  sanitizeFileNames: async function () {
-    const list = await ff.readdir(PROCESSED_IMAGES_PATH);
-    for (let i = 0, len = list.length; i < len; i++) {
-      const srcPath = ff.path(PROCESSED_IMAGES_PATH, list[i]);
-      const destPath = ff.path(PROCESSED_IMAGES_PATH, this.formatImageFileName(list[i]));
-      if (srcPath !== destPath) {
-        await ff.mv(srcPath, destPath);
-      }
-    }
-  }
+  // sanitizeFileNames: async function () {
+  //   const list = await ff.readdir(PROCESSED_IMAGES_PATH);
+  //   for (let i = 0, len = list.length; i < len; i++) {
+  //     const srcPath = ff.path(PROCESSED_IMAGES_PATH, list[i]);
+  //     const destPath = ff.path(PROCESSED_IMAGES_PATH, formatImageFileName(list[i]));
+  //     if (srcPath !== destPath) {
+  //       await ff.mv(srcPath, destPath);
+  //     }
+  //   }
+  // }
 };
 
 (async () => {

@@ -15,7 +15,7 @@ export default function Gallery({ dataList }) {
       {
       dataList.map((data, index) => (
         (data.live &&
-          <Link href={`/parks/${data.id}`} key={index}>
+          <Link href={`/parks/${data.slug}`} key={index}>
             <a>
               <Box
                 w="100%"
@@ -24,7 +24,7 @@ export default function Gallery({ dataList }) {
               >
                 <Image
                   key={index}
-                  src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
+                  src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
                   alt={data.name || "image"}
                   layout="responsive"
                   width={data.width}

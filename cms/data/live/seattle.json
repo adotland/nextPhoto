@@ -8,9 +8,12 @@
     "zip_code": "98101",
     "lat": "47.611906",
     "long": "-122.325512",
-    "imageName": "3910_1332_First-Hill-Park.jpg",
+    "imageName": "3910_1332_First-Hill-Park",
+    "slug": "first-hill-park",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": false
   },
   {
@@ -22,9 +25,13 @@
     "zip_code": "98103",
     "lat": "47.678016",
     "long": "-122.347727",
-    "imageName": "4419_1061_Linden-Orchard-Park.jpg",
+    "imageName": "4419_1061_Linden-Orchard-Park",
+    "slug": "linden-orchard-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 2,
@@ -35,9 +42,13 @@
     "zip_code": "98116",
     "lat": "47.579565",
     "long": "-122.397063",
-    "imageName": "3916_1551_Nantes-Park.jpg",
+    "imageName": "3916_1551_Nantes-Park",
+    "slug": "nantes-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 3,
@@ -48,9 +59,13 @@
     "zip_code": "98117",
     "lat": "47.712194",
     "long": "-122.379763",
-    "imageName": "240_1227_Carkeek-Park.jpg",
+    "imageName": "240_1227_Carkeek-Park",
+    "slug": "carkeek-park",
+    "ext": "jpg",
     "width": 3999,
-    "height": 2979
+    "height": 2979,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 4,
@@ -61,9 +76,13 @@
     "zip_code": "98119",
     "lat": "47.647239",
     "long": "-122.379191",
-    "imageName": "3887_1821_Interbay-Athletic-Complex.jpg",
+    "imageName": "3887_1821_Interbay-Athletic-Complex",
+    "slug": "interbay-athletic-complex",
+    "ext": "jpg",
     "width": 3825,
-    "height": 2966
+    "height": 2966,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 5,
@@ -74,9 +93,13 @@
     "zip_code": "98122",
     "lat": "47.617684",
     "long": "-122.312534",
-    "imageName": "4466_1610_Seven-Hills-Park.jpg",
+    "imageName": "4466_1610_Seven-Hills-Park",
+    "slug": "seven-hills-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 6,
@@ -87,9 +110,13 @@
     "zip_code": "98133",
     "lat": "47.714678",
     "long": "-122.364699",
-    "imageName": "275_2242_Pipers-Creek-Natural-Area.jpg",
+    "imageName": "275_2242_Pipers-Creek-Natural-Area",
+    "slug": "pipers-creek-natural-area",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 7,
@@ -100,9 +127,13 @@
     "zip_code": "98144",
     "lat": "47.589983",
     "long": "-122.292616",
-    "imageName": "4427_2399_Mt--Baker-Ridge-Viewpoint.jpg",
+    "imageName": "4427_2399_Mt--Baker-Ridge-Viewpoint",
+    "slug": "mt--baker-ridge-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 8,
@@ -113,9 +144,13 @@
     "zip_code": "98144",
     "lat": "47.587419",
     "long": "-122.295426",
-    "imageName": "401_1203_Bradner-Gardens-Park.jpg",
+    "imageName": "401_1203_Bradner-Gardens-Park",
+    "slug": "bradner-gardens-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 9,
@@ -126,9 +161,13 @@
     "zip_code": "98146",
     "lat": "47.50039",
     "long": "-122.374332",
-    "imageName": "466_1609_Seola-Park.jpg",
+    "imageName": "466_1609_Seola-Park",
+    "slug": "seola-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2453
+    "height": 2453,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 10,
@@ -139,9 +178,13 @@
     "zip_code": "98102",
     "lat": "47.6233342",
     "long": "-122.3185889",
-    "imageName": "__Broadway-Hill-Park.jpg",
+    "imageName": "__Broadway-Hill-Park",
+    "slug": "broadway-hill-park",
+    "ext": "jpg",
     "width": 1933,
-    "height": 2524
+    "height": 2524,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 11,
@@ -152,9 +195,13 @@
     "zip_code": "98112",
     "lat": "47.619809",
     "long": "-122.313094",
-    "imageName": "4016_1707_Williams-Place.jpg",
+    "imageName": "4016_1707_Williams-Place",
+    "slug": "williams-place",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 12,
@@ -165,9 +212,13 @@
     "zip_code": "98104",
     "lat": "47.60042",
     "long": "-122.324494",
-    "imageName": "3915_1449_Kobe-Terrace.jpg",
+    "imageName": "3915_1449_Kobe-Terrace",
+    "slug": "kobe-terrace",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 13,
@@ -178,9 +229,13 @@
     "zip_code": "98112",
     "lat": "47.61875",
     "long": "-122.282003",
-    "imageName": "3098_1667_Viretta-Park.jpg",
+    "imageName": "3098_1667_Viretta-Park",
+    "slug": "viretta-park",
+    "ext": "jpg",
     "width": 4025,
-    "height": 2264
+    "height": 2264,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 14,
@@ -191,9 +246,13 @@
     "zip_code": "98119",
     "lat": "47.628948",
     "long": "-122.360626",
-    "imageName": "1000342_0_Bayview-Kinnear--Lower-Kerry-Park-.jpg",
+    "imageName": "1000342_0_Bayview-Kinnear--Lower-Kerry-Park-",
+    "slug": "bayview-kinnear--lower-kerry-park-",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 15,
@@ -204,9 +263,13 @@
     "zip_code": "98125",
     "lat": "47.705194",
     "long": "-122.322424",
-    "imageName": "4445_1562_Northgate-Park.jpg",
+    "imageName": "4445_1562_Northgate-Park",
+    "slug": "northgate-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 16,
@@ -217,9 +280,13 @@
     "zip_code": "98103",
     "lat": "47.6511954",
     "long": "-122.3476933",
-    "imageName": "__Trolls-Knoll-Park.jpg",
+    "imageName": "__Trolls-Knoll-Park",
+    "slug": "trolls-knoll-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 17,
@@ -230,9 +297,13 @@
     "zip_code": "98118",
     "lat": "47.525041",
     "long": "-122.273136",
-    "imageName": "422_1160_Rainier-Beach-Playfield.jpg",
+    "imageName": "422_1160_Rainier-Beach-Playfield",
+    "slug": "rainier-beach-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2280
+    "height": 2280,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 18,
@@ -243,11 +314,13 @@
     "zip_code": "98103",
     "lat": "47.687872",
     "long": "-122.3548669",
-    "imageName": "__Alice-Ball-Park.jpg",
+    "imageName": "__Alice-Ball-Park",
+    "slug": "alice-ball-park",
+    "ext": "jpg",
     "width": 3309,
     "height": 1776,
-    "live": true,
-    "weight": 9000
+    "weight": 9000,
+    "live": true
   },
   {
     "id": 20,
@@ -258,9 +331,13 @@
     "zip_code": "98107",
     "lat": "47.670709",
     "long": "-122.395214",
-    "imageName": "4405_1649_Thyme-Patch-Park.jpg",
+    "imageName": "4405_1649_Thyme-Patch-Park",
+    "slug": "thyme-patch-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 21,
@@ -271,9 +348,13 @@
     "zip_code": "98116",
     "lat": "47.575195",
     "long": "-122.416054",
-    "imageName": "3703_1919_Bar-S-Playground.jpg",
+    "imageName": "3703_1919_Bar-S-Playground",
+    "slug": "bar-s-playground",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 23,
@@ -284,9 +365,13 @@
     "zip_code": "98103",
     "lat": "47.646349",
     "long": "-122.332567",
-    "imageName": "4083_1692_Waterway-19.jpg",
+    "imageName": "4083_1692_Waterway-19",
+    "slug": "waterway-19",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 24,
@@ -297,11 +382,13 @@
     "zip_code": "98102",
     "lat": "47.647413",
     "long": "-122.325368",
-    "imageName": "2975_1323_Fairview-Park.jpg",
-    "width": 4032,
+    "imageName": "2975_1323_Fairview-Park",
+    "slug": "fairview-park",
+    "ext": "jpg",
+    "width": 4010,
     "height": 3024,
-    "live": true,
-    "weight": 8000
+    "weight": 8000,
+    "live": true
   },
   {
     "id": 30,
@@ -312,9 +399,13 @@
     "zip_code": "98144",
     "lat": "47.586226",
     "long": "-122.315325",
-    "imageName": "400_1074_Beacon-Hill-Playground.jpg",
+    "imageName": "400_1074_Beacon-Hill-Playground",
+    "slug": "beacon-hill-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 37,
@@ -325,9 +416,13 @@
     "zip_code": "98112",
     "lat": "47.646662",
     "long": "-122.301441",
-    "imageName": "374_1305_East-Montlake-Park.jpg",
+    "imageName": "374_1305_East-Montlake-Park",
+    "slug": "east-montlake-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 38,
@@ -338,9 +433,13 @@
     "zip_code": "98125",
     "lat": "47.72016",
     "long": "-122.298752",
-    "imageName": "244_1886_Albert-Davis-Park.jpg",
+    "imageName": "244_1886_Albert-Davis-Park",
+    "slug": "albert-davis-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 39,
@@ -351,9 +450,13 @@
     "zip_code": "98125",
     "lat": "47.718819",
     "long": "-122.295266",
-    "imageName": "333_1457_Lake-City-Memorial-Triangle.jpg",
+    "imageName": "333_1457_Lake-City-Memorial-Triangle",
+    "slug": "lake-city-memorial-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 40,
@@ -364,9 +467,12 @@
     "zip_code": "98125",
     "lat": "47.71911",
     "long": "-122.295875",
-    "imageName": "487_1458_Lake-City-Mini-Park.jpg",
+    "imageName": "487_1458_Lake-City-Mini-Park",
+    "slug": "lake-city-mini-park",
+    "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "weight": 100,
     "live": true
   },
   {
@@ -378,9 +484,13 @@
     "zip_code": "98199",
     "lat": "47.66083",
     "long": "-122.415282",
-    "imageName": "310_1301_Discovery-Park.jpg",
+    "imageName": "310_1301_Discovery-Park",
+    "slug": "discovery-park",
+    "ext": "jpg",
     "width": 3790,
-    "height": 1931
+    "height": 1931,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 42,
@@ -391,9 +501,13 @@
     "zip_code": "98102",
     "lat": "47.639849",
     "long": "-122.32975",
-    "imageName": "4075_2494_Lynn-Street-Mini-Park.jpg",
+    "imageName": "4075_2494_Lynn-Street-Mini-Park",
+    "slug": "lynn-street-mini-park",
+    "ext": "jpg",
     "width": 3971,
-    "height": 2234
+    "height": 2234,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 43,
@@ -404,9 +518,13 @@
     "zip_code": "98103",
     "lat": "47.661108",
     "long": "-122.356671",
-    "imageName": "4424_1343_Fremont-Peak-Park.jpg",
+    "imageName": "4424_1343_Fremont-Peak-Park",
+    "slug": "fremont-peak-park",
+    "ext": "jpg",
     "width": 3510,
-    "height": 1884
+    "height": 1884,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 44,
@@ -417,9 +535,13 @@
     "zip_code": "98105",
     "lat": "47.654365",
     "long": "-122.320826",
-    "imageName": "4452_1563_Northlake-Park.jpg",
+    "imageName": "4452_1563_Northlake-Park",
+    "slug": "northlake-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2628
+    "height": 2628,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 45,
@@ -430,9 +552,13 @@
     "zip_code": "98117",
     "lat": "47.696071",
     "long": "-122.373976",
-    "imageName": "4469_1282_Crown-Hill-Park.jpg",
+    "imageName": "4469_1282_Crown-Hill-Park",
+    "slug": "crown-hill-park",
+    "ext": "jpg",
     "width": 3821,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 46,
@@ -443,9 +569,13 @@
     "zip_code": "98119",
     "lat": "47.644135",
     "long": "-122.359484",
-    "imageName": "331_1289_David-Rodgers-Park.jpg",
+    "imageName": "331_1289_David-Rodgers-Park",
+    "slug": "david-rodgers-park",
+    "ext": "jpg",
     "width": 3672,
-    "height": 2433
+    "height": 2433,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 47,
@@ -456,9 +586,13 @@
     "zip_code": "98112",
     "lat": "47.632063",
     "long": "-122.315708",
-    "imageName": "1000399_0_Volunteer-Park-Conservatory.jpg",
+    "imageName": "1000399_0_Volunteer-Park-Conservatory",
+    "slug": "volunteer-park-conservatory",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 48,
@@ -469,9 +603,13 @@
     "zip_code": "98105",
     "lat": "47.6567783",
     "long": "-122.2863863",
-    "imageName": "__Union-Bay-Boglands.jpg",
+    "imageName": "__Union-Bay-Boglands",
+    "slug": "union-bay-boglands",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 49,
@@ -482,9 +620,13 @@
     "zip_code": "98118",
     "lat": "47.522834",
     "long": "-122.263078",
-    "imageName": "4081_1908_Atlantic-City-Boat-Ramp.jpg",
+    "imageName": "4081_1908_Atlantic-City-Boat-Ramp",
+    "slug": "atlantic-city-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2282
+    "height": 2282,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 50,
@@ -495,9 +637,13 @@
     "zip_code": "98106",
     "lat": "47.52738",
     "long": "-122.349034",
-    "imageName": "457_1137_Highland-Park-Playground.jpg",
+    "imageName": "457_1137_Highland-Park-Playground",
+    "slug": "highland-park-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 51,
@@ -508,9 +654,13 @@
     "zip_code": "98136",
     "lat": "47.52133",
     "long": "-122.388277",
-    "imageName": "459_1441_Kilbourne-Park.jpg",
+    "imageName": "459_1441_Kilbourne-Park",
+    "slug": "kilbourne-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 52,
@@ -521,9 +671,13 @@
     "zip_code": "98104",
     "lat": "47.603014",
     "long": "-122.323693",
-    "imageName": "355_0_Harborview-Park.jpg",
+    "imageName": "355_0_Harborview-Park",
+    "slug": "harborview-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 53,
@@ -534,9 +688,13 @@
     "zip_code": "98109",
     "lat": "47.627015",
     "long": "-122.338848",
-    "imageName": "344_1460_Lake-Union-Park--2-.jpg",
+    "imageName": "344_1460_Lake-Union-Park--2-",
+    "slug": "lake-union-park--2-",
+    "ext": "jpg",
     "width": 3826,
-    "height": 2277
+    "height": 2277,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 54,
@@ -547,9 +705,13 @@
     "zip_code": "98106",
     "lat": "47.55437",
     "long": "-122.366001",
-    "imageName": "4157_1372_Greg-Davis-Park.jpg",
+    "imageName": "4157_1372_Greg-Davis-Park",
+    "slug": "greg-davis-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 55,
@@ -560,9 +722,13 @@
     "zip_code": "98126",
     "lat": "47.54017",
     "long": "-122.373415",
-    "imageName": "3941_1748_Walt-Hundley-Playfield.jpg",
+    "imageName": "3941_1748_Walt-Hundley-Playfield",
+    "slug": "walt-hundley-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 56,
@@ -573,9 +739,13 @@
     "zip_code": "98103",
     "lat": "47.666499",
     "long": "-122.35054",
-    "imageName": "1000292_292_Woodland-Park-Rose-Garden.jpg",
+    "imageName": "1000292_292_Woodland-Park-Rose-Garden",
+    "slug": "woodland-park-rose-garden",
+    "ext": "jpg",
     "width": 3990,
-    "height": 2970
+    "height": 2970,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 57,
@@ -586,9 +756,13 @@
     "zip_code": "98133",
     "lat": "47.724209",
     "long": "-122.349314",
-    "imageName": "288_1113_Bitter-Lake-Playfield.jpg",
+    "imageName": "288_1113_Bitter-Lake-Playfield",
+    "slug": "bitter-lake-playfield",
+    "ext": "jpg",
     "width": 3944,
-    "height": 2373
+    "height": 2373,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 58,
@@ -599,9 +773,13 @@
     "zip_code": "98133",
     "lat": "47.731181",
     "long": "-122.348583",
-    "imageName": "4450_1194_Bitter-Lake-Reservoir-Open-Space.jpg",
+    "imageName": "4450_1194_Bitter-Lake-Reservoir-Open-Space",
+    "slug": "bitter-lake-reservoir-open-space",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2063
+    "height": 2063,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 59,
@@ -612,9 +790,12 @@
     "zip_code": "98118",
     "lat": "47.54923",
     "long": "-122.250639",
-    "imageName": "428_1611_Seward-Park.jpg",
+    "imageName": "428_1611_Seward-Park",
+    "slug": "seward-park",
+    "ext": "jpg",
     "width": 3979,
     "height": 2328,
+    "weight": 100,
     "live": true
   },
   {
@@ -626,9 +807,13 @@
     "zip_code": "98126",
     "lat": "47.572695",
     "long": "-122.290713",
-    "imageName": "3926_1816_York-Playground.jpg",
+    "imageName": "3926_1816_York-Playground",
+    "slug": "york-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 61,
@@ -639,9 +824,13 @@
     "zip_code": "98144",
     "lat": "47.58547",
     "long": "-122.288612",
-    "imageName": "405_1263_Colman-Park.jpg",
+    "imageName": "405_1263_Colman-Park",
+    "slug": "colman-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 62,
@@ -652,9 +841,13 @@
     "zip_code": "98118",
     "lat": "47.561817",
     "long": "-122.2862",
-    "imageName": "423_1162_Rainier-Playfield.jpg",
+    "imageName": "423_1162_Rainier-Playfield",
+    "slug": "rainier-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 63,
@@ -665,9 +858,13 @@
     "zip_code": "98112",
     "lat": "47.625169",
     "long": "-122.293173",
-    "imageName": "296_296_3001-E-Madison.jpg",
+    "imageName": "296_296_3001-E-Madison",
+    "slug": "3001-e-madison",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 64,
@@ -678,9 +875,13 @@
     "zip_code": "98112",
     "lat": "47.632017",
     "long": "-122.283837",
-    "imageName": "3096_0_Lambert-Place.jpg",
+    "imageName": "3096_0_Lambert-Place",
+    "slug": "lambert-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2453
+    "height": 2453,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 65,
@@ -691,9 +892,13 @@
     "zip_code": "98119",
     "lat": "47.651085",
     "long": "-122.390877",
-    "imageName": "747_1477_Magnolia-Manor-Park.jpg",
+    "imageName": "747_1477_Magnolia-Manor-Park",
+    "slug": "magnolia-manor-park",
+    "ext": "jpg",
     "width": 1866,
-    "height": 2137
+    "height": 2137,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 66,
@@ -704,9 +909,13 @@
     "zip_code": "98199",
     "lat": "47.655065",
     "long": "-122.391158",
-    "imageName": "316_1054_Lawton-Park.jpg",
+    "imageName": "316_1054_Lawton-Park",
+    "slug": "lawton-park",
+    "ext": "jpg",
     "width": 4025,
-    "height": 2264
+    "height": 2264,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 67,
@@ -717,9 +926,13 @@
     "zip_code": "98106",
     "lat": "47.547368",
     "long": "-122.359947",
-    "imageName": "4201_1039_Puget-Ridge-Playground.jpg",
+    "imageName": "4201_1039_Puget-Ridge-Playground",
+    "slug": "puget-ridge-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 68,
@@ -730,9 +943,13 @@
     "zip_code": "98125",
     "lat": "47.714186",
     "long": "-122.308222",
-    "imageName": "4444_1947_Pinehurst-Pocket-Park.jpg",
+    "imageName": "4444_1947_Pinehurst-Pocket-Park",
+    "slug": "pinehurst-pocket-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 69,
@@ -743,9 +960,13 @@
     "zip_code": "98125",
     "lat": "47.72416562",
     "long": "-122.3174621",
-    "imageName": "416_0_Thornton-Creek-Natural-Area.jpg",
+    "imageName": "416_0_Thornton-Creek-Natural-Area",
+    "slug": "thornton-creek-natural-area",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 70,
@@ -756,9 +977,13 @@
     "zip_code": "98144",
     "lat": "47.592857",
     "long": "-122.314435",
-    "imageName": "4076_1058_Lewis-Park.jpg",
+    "imageName": "4076_1058_Lewis-Park",
+    "slug": "lewis-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 71,
@@ -769,9 +994,13 @@
     "zip_code": "98105",
     "lat": "47.6661366",
     "long": "-122.3159345",
-    "imageName": "__University-Heights-Plaza.jpg",
+    "imageName": "__University-Heights-Plaza",
+    "slug": "university-heights-plaza",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 72,
@@ -782,9 +1011,13 @@
     "zip_code": "98103",
     "lat": "47.664159",
     "long": "-122.332557",
-    "imageName": "1104_1149_Meridian-Playground.jpg",
+    "imageName": "1104_1149_Meridian-Playground",
+    "slug": "meridian-playground",
+    "ext": "jpg",
     "width": 3975,
-    "height": 2226
+    "height": 2226,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 73,
@@ -795,9 +1028,13 @@
     "zip_code": "98115",
     "lat": "47.689015",
     "long": "-122.315613",
-    "imageName": "3881_1105_Maple-Leaf-Resevoir-Park.jpg",
+    "imageName": "3881_1105_Maple-Leaf-Resevoir-Park",
+    "slug": "maple-leaf-resevoir-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 1711
+    "height": 1711,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 74,
@@ -808,9 +1045,13 @@
     "zip_code": "98103",
     "lat": "47.668906",
     "long": "-122.344218",
-    "imageName": "292_1815_Woodland-Park.jpg",
+    "imageName": "292_1815_Woodland-Park",
+    "slug": "woodland-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2780
+    "height": 2780,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 75,
@@ -821,9 +1062,13 @@
     "zip_code": "98117",
     "lat": "47.693048",
     "long": "-122.350647",
-    "imageName": "4408_1369_Greenwood-Park.jpg",
+    "imageName": "4408_1369_Greenwood-Park",
+    "slug": "greenwood-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 76,
@@ -834,9 +1079,13 @@
     "zip_code": "98109",
     "lat": "47.630426",
     "long": "-122.348403",
-    "imageName": "304_1193_Bhy-Kracke-Park.jpg",
+    "imageName": "304_1193_Bhy-Kracke-Park",
+    "slug": "bhy-kracke-park",
+    "ext": "jpg",
     "width": 3917,
-    "height": 2871
+    "height": 2871,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 77,
@@ -847,9 +1096,13 @@
     "zip_code": "98109",
     "lat": "47.636139",
     "long": "-122.353786",
-    "imageName": "329_2535_East-Queen-Anne-Playground.jpg",
+    "imageName": "329_2535_East-Queen-Anne-Playground",
+    "slug": "east-queen-anne-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 78,
@@ -860,9 +1113,13 @@
     "zip_code": "98109",
     "lat": "47.636191",
     "long": "-122.345276",
-    "imageName": "4422_1069_MacLean-Park.jpg",
+    "imageName": "4422_1069_MacLean-Park",
+    "slug": "maclean-park",
+    "ext": "jpg",
     "width": 4009,
-    "height": 2995
+    "height": 2995,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 79,
@@ -873,9 +1130,13 @@
     "zip_code": "98103",
     "lat": "47.65603",
     "long": "-122.349222",
-    "imageName": "241_2552_BF-Day-Playground.jpg",
+    "imageName": "241_2552_BF-Day-Playground",
+    "slug": "bf-day-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 80,
@@ -886,9 +1147,13 @@
     "zip_code": "98107",
     "lat": "47.668902",
     "long": "-122.361032",
-    "imageName": "245_1371_Greenwood-Triangle.jpg",
+    "imageName": "245_1371_Greenwood-Triangle",
+    "slug": "greenwood-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 81,
@@ -899,9 +1164,13 @@
     "zip_code": "98112",
     "lat": "47.635274",
     "long": "-122.311628",
-    "imageName": "362_1066_Louisa-Boren-Park.jpg",
+    "imageName": "362_1066_Louisa-Boren-Park",
+    "slug": "louisa-boren-park",
+    "ext": "jpg",
     "width": 3987,
-    "height": 2024
+    "height": 2024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 82,
@@ -912,9 +1181,13 @@
     "zip_code": "98122",
     "lat": "47.614318",
     "long": "-122.288745",
-    "imageName": "3914_1891_Alvin-Larkins-Park.jpg",
+    "imageName": "3914_1891_Alvin-Larkins-Park",
+    "slug": "alvin-larkins-park",
+    "ext": "jpg",
     "width": 4015,
-    "height": 3001
+    "height": 3001,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 83,
@@ -925,9 +1198,13 @@
     "zip_code": "98122",
     "lat": "47.600931",
     "long": "-122.286548",
-    "imageName": "367_1057_Leschi-Park.jpg",
+    "imageName": "367_1057_Leschi-Park",
+    "slug": "leschi-park",
+    "ext": "jpg",
     "width": 3942,
-    "height": 2336
+    "height": 2336,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 84,
@@ -938,9 +1215,13 @@
     "zip_code": "98122",
     "lat": "47.609299",
     "long": "-122.282679",
-    "imageName": "370_1473_Madrona-Park.jpg",
+    "imageName": "370_1473_Madrona-Park",
+    "slug": "madrona-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 85,
@@ -951,9 +1232,13 @@
     "zip_code": "98144",
     "lat": "47.592425",
     "long": "-122.303951",
-    "imageName": "397_1097_Judkins-Park-and-Playfield.jpg",
+    "imageName": "397_1097_Judkins-Park-and-Playfield",
+    "slug": "judkins-park-and-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2304
+    "height": 2304,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 86,
@@ -964,9 +1249,13 @@
     "zip_code": "98112",
     "lat": "47.6223176",
     "long": "-122.2964232",
-    "imageName": "__Julia-Lees-Park.jpg",
+    "imageName": "__Julia-Lees-Park",
+    "slug": "julia-lees-park",
+    "ext": "jpg",
     "width": 3943,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 87,
@@ -977,9 +1266,13 @@
     "zip_code": "98122",
     "lat": "47.609342",
     "long": "-122.2829934",
-    "imageName": "__Lake-Washington-Boulevard.jpg",
+    "imageName": "__Lake-Washington-Boulevard",
+    "slug": "lake-washington-boulevard",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 88,
@@ -990,9 +1283,13 @@
     "zip_code": "98102",
     "lat": "47.643193",
     "long": "-122.329327",
-    "imageName": "9064_0_Roanoke-St-Mini-Park.jpg",
+    "imageName": "9064_0_Roanoke-St-Mini-Park",
+    "slug": "roanoke-st-mini-park",
+    "ext": "jpg",
     "width": 3943,
-    "height": 2907
+    "height": 2907,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 89,
@@ -1003,9 +1300,13 @@
     "zip_code": "98108",
     "lat": "47.52678",
     "long": "-122.32562",
-    "imageName": "4448_1245_Cesar-Chavez-Park.jpg",
+    "imageName": "4448_1245_Cesar-Chavez-Park",
+    "slug": "cesar-chavez-park",
+    "ext": "jpg",
     "width": 3953,
-    "height": 2917
+    "height": 2917,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 90,
@@ -1016,9 +1317,13 @@
     "zip_code": "98105",
     "lat": "47.666634",
     "long": "-122.282623",
-    "imageName": "496_1083_Burke-Gilman-Playground-Park.jpg",
+    "imageName": "496_1083_Burke-Gilman-Playground-Park",
+    "slug": "burke-gilman-playground-park",
+    "ext": "jpg",
     "width": 3965,
-    "height": 2935
+    "height": 2935,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 91,
@@ -1029,9 +1334,13 @@
     "zip_code": "98125",
     "lat": "47.729254",
     "long": "-122.319103",
-    "imageName": "327_1790_Jackson-Park-Golf-Course.jpg",
+    "imageName": "327_1790_Jackson-Park-Golf-Course",
+    "slug": "jackson-park-golf-course",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 92,
@@ -1042,9 +1351,12 @@
     "zip_code": "98121",
     "lat": "47.616577",
     "long": "-122.35418",
-    "imageName": "4414_1929_Olympic-Sculpture-Park.jpg",
+    "imageName": "4414_1929_Olympic-Sculpture-Park",
+    "slug": "olympic-sculpture-park",
+    "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "weight": 100,
     "live": true
   },
   {
@@ -1056,9 +1368,13 @@
     "zip_code": "98199",
     "lat": "47.65129",
     "long": "-122.409139",
-    "imageName": "1556_1898_Arapahoe-Triangle.jpg",
+    "imageName": "1556_1898_Arapahoe-Triangle",
+    "slug": "arapahoe-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 94,
@@ -1069,9 +1385,13 @@
     "zip_code": "98199",
     "lat": "47.640142",
     "long": "-122.410083",
-    "imageName": "4009_1938_Parkmont-Place.jpg",
+    "imageName": "4009_1938_Parkmont-Place",
+    "slug": "parkmont-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 95,
@@ -1082,9 +1402,12 @@
     "zip_code": "98104",
     "lat": "47.599362",
     "long": "-122.330086",
-    "imageName": "4007_1658_Union-Station-Square.jpg",
+    "imageName": "4007_1658_Union-Station-Square",
+    "slug": "union-station-square",
+    "ext": "jpg",
     "width": 2854,
     "height": 2467,
+    "weight": 100,
     "live": true
   },
   {
@@ -1096,9 +1419,13 @@
     "zip_code": "98122",
     "lat": "47.608448",
     "long": "-122.308558",
-    "imageName": "351_1331_Firehouse-Mini-Park.jpg",
+    "imageName": "351_1331_Firehouse-Mini-Park",
+    "slug": "firehouse-mini-park",
+    "ext": "jpg",
     "width": 3914,
-    "height": 2671
+    "height": 2671,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 97,
@@ -1109,9 +1436,13 @@
     "zip_code": "98105",
     "lat": "47.67203",
     "long": "-122.275181",
-    "imageName": "424_1659_University-Circle.jpg",
+    "imageName": "424_1659_University-Circle",
+    "slug": "university-circle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 98,
@@ -1122,9 +1453,13 @@
     "zip_code": "98112",
     "lat": "47.645971",
     "long": "-122.30474",
-    "imageName": "4021_2536_Montlake-Boulevard.jpg",
+    "imageName": "4021_2536_Montlake-Boulevard",
+    "slug": "montlake-boulevard",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 99,
@@ -1135,9 +1470,13 @@
     "zip_code": "98115",
     "lat": "47.676873",
     "long": "-122.304964",
-    "imageName": "488_1576_Ravenna-Eckstein-Park.jpg",
+    "imageName": "488_1576_Ravenna-Eckstein-Park",
+    "slug": "ravenna-eckstein-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 100,
@@ -1148,9 +1487,13 @@
     "zip_code": "98115",
     "lat": "47.679747",
     "long": "-122.279969",
-    "imageName": "444_1876_View-Ridge-Playfield.jpg",
+    "imageName": "444_1876_View-Ridge-Playfield",
+    "slug": "view-ridge-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 101,
@@ -1161,9 +1504,12 @@
     "zip_code": "98109",
     "lat": "47.625683",
     "long": "-122.356323",
-    "imageName": "4438_1084_Counterbalance-Park-An-Urban-Oasis.jpg",
+    "imageName": "4438_1084_Counterbalance-Park-An-Urban-Oasis",
+    "slug": "counterbalance-park-an-urban-oasis",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -1175,9 +1521,13 @@
     "zip_code": "98103",
     "lat": "47.665198",
     "long": "-122.330874",
-    "imageName": "4017_1275_Corliss-Place.jpg",
+    "imageName": "4017_1275_Corliss-Place",
+    "slug": "corliss-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 103,
@@ -1188,9 +1538,13 @@
     "zip_code": "98107",
     "lat": "47.672786",
     "long": "-122.39155",
-    "imageName": "497_1108_Ballard-Playground.jpg",
+    "imageName": "497_1108_Ballard-Playground",
+    "slug": "ballard-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 104,
@@ -1201,9 +1555,13 @@
     "zip_code": "98117",
     "lat": "47.680338",
     "long": "-122.368021",
-    "imageName": "4468_1444_Kirke-Park.jpg",
+    "imageName": "4468_1444_Kirke-Park",
+    "slug": "kirke-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 105,
@@ -1214,9 +1572,13 @@
     "zip_code": "98117",
     "lat": "47.679297",
     "long": "-122.381343",
-    "imageName": "249_1599_Salmon-Bay-Park.jpg",
+    "imageName": "249_1599_Salmon-Bay-Park",
+    "slug": "salmon-bay-park",
+    "ext": "jpg",
     "width": 3949,
-    "height": 2913
+    "height": 2913,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 106,
@@ -1227,9 +1589,13 @@
     "zip_code": "98117",
     "lat": "47.684034",
     "long": "-122.400938",
-    "imageName": "252_1638_Sunset-Hill-Park.jpg",
+    "imageName": "252_1638_Sunset-Hill-Park",
+    "slug": "sunset-hill-park",
+    "ext": "jpg",
     "width": 3915,
-    "height": 2583
+    "height": 2583,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 107,
@@ -1240,9 +1606,13 @@
     "zip_code": "98199",
     "lat": "47.639414",
     "long": "-122.406385",
-    "imageName": "305_1232_Carleton-Center.jpg",
+    "imageName": "305_1232_Carleton-Center",
+    "slug": "carleton-center",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 108,
@@ -1253,9 +1623,12 @@
     "zip_code": "98199",
     "lat": "47.637689",
     "long": "-122.405566",
-    "imageName": "4012_1308_Eastmont-Place.jpg",
+    "imageName": "4012_1308_Eastmont-Place",
+    "slug": "eastmont-place",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -1267,9 +1640,13 @@
     "zip_code": "98199",
     "lat": "47.636006",
     "long": "-122.389073",
-    "imageName": "492_1476_Magnolia-Greenbelt.jpg",
+    "imageName": "492_1476_Magnolia-Greenbelt",
+    "slug": "magnolia-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 110,
@@ -1280,9 +1657,13 @@
     "zip_code": "98199",
     "lat": "47.635099",
     "long": "-122.390161",
-    "imageName": "343_1648_Thorndyke-Park.jpg",
+    "imageName": "343_1648_Thorndyke-Park",
+    "slug": "thorndyke-park",
+    "ext": "jpg",
     "width": 2950,
-    "height": 2150
+    "height": 2150,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 111,
@@ -1293,9 +1674,13 @@
     "zip_code": "98101",
     "lat": "47.609472",
     "long": "-122.330904",
-    "imageName": "312_2390_Freeway-Park---Jim-Ellis-Freeway-Park.jpg",
+    "imageName": "312_2390_Freeway-Park---Jim-Ellis-Freeway-Park",
+    "slug": "freeway-park---jim-ellis-freeway-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 112,
@@ -1306,9 +1691,13 @@
     "zip_code": "98102",
     "lat": "47.62379",
     "long": "-122.323444",
-    "imageName": "384_1076_Tashkent-Park.jpg",
+    "imageName": "384_1076_Tashkent-Park",
+    "slug": "tashkent-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 113,
@@ -1319,9 +1708,13 @@
     "zip_code": "98112",
     "lat": "47.61833",
     "long": "-122.284838",
-    "imageName": "3980_1298_Denny-Blaine-Lake-Park.jpg",
+    "imageName": "3980_1298_Denny-Blaine-Lake-Park",
+    "slug": "denny-blaine-lake-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 114,
@@ -1332,9 +1725,13 @@
     "zip_code": "98112",
     "lat": "47.632304",
     "long": "-122.282887",
-    "imageName": "3905_1399_Hyde-Place.jpg",
+    "imageName": "3905_1399_Hyde-Place",
+    "slug": "hyde-place",
+    "ext": "jpg",
     "width": 2772,
-    "height": 1401
+    "height": 1401,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 115,
@@ -1345,9 +1742,13 @@
     "zip_code": "98118",
     "lat": "47.564856",
     "long": "-122.278744",
-    "imageName": "409_1786_Genesee-Park-and-Playfield.jpg",
+    "imageName": "409_1786_Genesee-Park-and-Playfield",
+    "slug": "genesee-park-and-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 118,
@@ -1358,9 +1759,12 @@
     "zip_code": "98107",
     "lat": "47.666686",
     "long": "-122.357602",
-    "imageName": "3901_1639_Sunset-Place.jpg",
+    "imageName": "3901_1639_Sunset-Place",
+    "slug": "sunset-place",
+    "ext": "jpg",
     "width": 3622,
     "height": 2474,
+    "weight": 100,
     "live": true
   },
   {
@@ -1372,9 +1776,13 @@
     "zip_code": "98106",
     "lat": "47.554364",
     "long": "-122.365311",
-    "imageName": "4462_1277_Cottage-Grove-Park.jpg",
+    "imageName": "4462_1277_Cottage-Grove-Park",
+    "slug": "cottage-grove-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 120,
@@ -1385,9 +1793,13 @@
     "zip_code": "98106",
     "lat": "47.563271",
     "long": "-122.356966",
-    "imageName": "282_1945_Pigeon-Point-Park.jpg",
+    "imageName": "282_1945_Pigeon-Point-Park",
+    "slug": "pigeon-point-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 121,
@@ -1398,9 +1810,13 @@
     "zip_code": "98106",
     "lat": "47.555356",
     "long": "-122.365575",
-    "imageName": "4158_2405_Puget-Boulevard-Commons.jpg",
+    "imageName": "4158_2405_Puget-Boulevard-Commons",
+    "slug": "puget-boulevard-commons",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 122,
@@ -1411,9 +1827,13 @@
     "zip_code": "98106",
     "lat": "47.558473",
     "long": "-122.356922",
-    "imageName": "462_1961_Puget-Park.jpg",
+    "imageName": "462_1961_Puget-Park",
+    "slug": "puget-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 123,
@@ -1424,9 +1844,13 @@
     "zip_code": "98105",
     "lat": "47.652696",
     "long": "-122.277487",
-    "imageName": "4162_1053_Laurelhurst-Triangle.jpg",
+    "imageName": "4162_1053_Laurelhurst-Triangle",
+    "slug": "laurelhurst-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 124,
@@ -1437,9 +1861,13 @@
     "zip_code": "98109",
     "lat": "47.643241",
     "long": "-122.353356",
-    "imageName": "321_1530_Mayfair-Park.jpg",
+    "imageName": "321_1530_Mayfair-Park",
+    "slug": "mayfair-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 125,
@@ -1450,9 +1878,13 @@
     "zip_code": "98119",
     "lat": "47.640108",
     "long": "-122.365952",
-    "imageName": "3985_1261_Coe-Play-Park.jpg",
+    "imageName": "3985_1261_Coe-Play-Park",
+    "slug": "coe-play-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 126,
@@ -1463,9 +1895,13 @@
     "zip_code": "98121",
     "lat": "47.610153",
     "long": "-122.343869",
-    "imageName": "338_1664_Victor-Steinbrueck-Park.jpg",
+    "imageName": "338_1664_Victor-Steinbrueck-Park",
+    "slug": "victor-steinbrueck-park",
+    "ext": "jpg",
     "width": 3798,
-    "height": 2442
+    "height": 2442,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 127,
@@ -1476,9 +1912,13 @@
     "zip_code": "98116",
     "lat": "47.585641",
     "long": "-122.386696",
-    "imageName": "448_1212_California-Place.jpg",
+    "imageName": "448_1212_California-Place",
+    "slug": "california-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 128,
@@ -1489,9 +1929,13 @@
     "zip_code": "98116",
     "lat": "47.57242",
     "long": "-122.413877",
-    "imageName": "80_2497_Charles-Richey-Sr-Viewpoint.jpg",
+    "imageName": "80_2497_Charles-Richey-Sr-Viewpoint",
+    "slug": "charles-richey-sr-viewpoint",
+    "ext": "jpg",
     "width": 3587,
-    "height": 2413
+    "height": 2413,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 129,
@@ -1502,9 +1946,13 @@
     "zip_code": "98116",
     "lat": "47.568247",
     "long": "-122.409506",
-    "imageName": "3966_1694_Weather-Watch-Park.jpg",
+    "imageName": "3966_1694_Weather-Watch-Park",
+    "slug": "weather-watch-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 130,
@@ -1515,9 +1963,13 @@
     "zip_code": "98136",
     "lat": "47.522599",
     "long": "-122.392498",
-    "imageName": "3149_1324_Fauntleroy-Creek-Ravine.jpg",
+    "imageName": "3149_1324_Fauntleroy-Creek-Ravine",
+    "slug": "fauntleroy-creek-ravine",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 131,
@@ -1528,11 +1980,13 @@
     "zip_code": "98136",
     "lat": "47.531176",
     "long": "-122.396012",
-    "imageName": "460_1060_Lincoln-Park.jpg",
+    "imageName": "460_1060_Lincoln-Park",
+    "slug": "lincoln-park",
+    "ext": "jpg",
     "width": 4032,
     "height": 1517,
-    "live": true,
-    "weight": 500
+    "weight": 500,
+    "live": true
   },
   {
     "id": 132,
@@ -1543,9 +1997,13 @@
     "zip_code": "98103",
     "lat": "47.650292",
     "long": "-122.330723",
-    "imageName": "3903_2500_Sunnyside-Ave-N-Boat-Ramp.jpg",
+    "imageName": "3903_2500_Sunnyside-Ave-N-Boat-Ramp",
+    "slug": "sunnyside-ave-n-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 133,
@@ -1556,9 +2014,13 @@
     "zip_code": "98105",
     "lat": "47.671404",
     "long": "-122.305705",
-    "imageName": "391_1570_Ravenna-Park.jpg",
+    "imageName": "391_1570_Ravenna-Park",
+    "slug": "ravenna-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 134,
@@ -1569,9 +2031,13 @@
     "zip_code": "98115",
     "lat": "47.685762",
     "long": "-122.32343",
-    "imageName": "4073_2553_Banner-Way-Triangle.jpg",
+    "imageName": "4073_2553_Banner-Way-Triangle",
+    "slug": "banner-way-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 135,
@@ -1582,9 +2048,13 @@
     "zip_code": "98117",
     "lat": "47.686852",
     "long": "-122.403454",
-    "imageName": "1000003_0_Eddie-Vine-Boat-Ramp.jpg",
+    "imageName": "1000003_0_Eddie-Vine-Boat-Ramp",
+    "slug": "eddie-vine-boat-ramp",
+    "ext": "jpg",
     "width": 4005,
-    "height": 2987
+    "height": 2987,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 136,
@@ -1595,9 +2065,13 @@
     "zip_code": "98101",
     "lat": "47.608656",
     "long": "-122.345237",
-    "imageName": "274_1943_Piers-62-and-63.jpg",
+    "imageName": "274_1943_Piers-62-and-63",
+    "slug": "piers-62-and-63",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 137,
@@ -1608,9 +2082,13 @@
     "zip_code": "98119",
     "lat": "47.643753",
     "long": "-122.378455",
-    "imageName": "313_1407_Interbay-Golf.jpg",
+    "imageName": "313_1407_Interbay-Golf",
+    "slug": "interbay-golf",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 138,
@@ -1621,9 +2099,13 @@
     "zip_code": "98119",
     "lat": "47.629868",
     "long": "-122.366082",
-    "imageName": "324_2415_Parsons-Gardens.jpg",
+    "imageName": "324_2415_Parsons-Gardens",
+    "slug": "parsons-gardens",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 139,
@@ -1634,9 +2116,13 @@
     "zip_code": "98121",
     "lat": "47.618767",
     "long": "-122.36087",
-    "imageName": "311_1547_Myrtle-Edwards-Park.jpg",
+    "imageName": "311_1547_Myrtle-Edwards-Park",
+    "slug": "myrtle-edwards-park",
+    "ext": "jpg",
     "width": 4003,
-    "height": 2985
+    "height": 2985,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 140,
@@ -1647,9 +2133,13 @@
     "zip_code": "98112",
     "lat": "47.626925",
     "long": "-122.282116",
-    "imageName": "4013_2395_McGilvra-Boulevard.jpg",
+    "imageName": "4013_2395_McGilvra-Boulevard",
+    "slug": "mcgilvra-boulevard",
+    "ext": "jpg",
     "width": 3597,
-    "height": 2370
+    "height": 2370,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 141,
@@ -1660,9 +2150,13 @@
     "zip_code": "98112",
     "lat": "47.620311",
     "long": "-122.305711",
-    "imageName": "4015_1541_Miller-Triangle.jpg",
+    "imageName": "4015_1541_Miller-Triangle",
+    "slug": "miller-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 143,
@@ -1673,9 +2167,13 @@
     "zip_code": "98112",
     "lat": "47.619443",
     "long": "-122.283592",
-    "imageName": "3981_1631_Stevens-Triangle.jpg",
+    "imageName": "3981_1631_Stevens-Triangle",
+    "slug": "stevens-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 144,
@@ -1686,9 +2184,13 @@
     "zip_code": "98118",
     "lat": "47.565219",
     "long": "-122.267178",
-    "imageName": "1000002_0_Adams-Street-Boat-Ramp.jpg",
+    "imageName": "1000002_0_Adams-Street-Boat-Ramp",
+    "slug": "adams-street-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 145,
@@ -1699,11 +2201,13 @@
     "zip_code": "98118",
     "lat": "47.561358",
     "long": "-122.264912",
-    "imageName": "413_2498_Ferdinand-Street-Boat-Ramp.jpg",
+    "imageName": "413_2498_Ferdinand-Street-Boat-Ramp",
+    "slug": "ferdinand-street-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "live": true,
-    "weight": 500
+    "weight": 500,
+    "live": true
   },
   {
     "id": 146,
@@ -1714,9 +2218,13 @@
     "zip_code": "98144",
     "lat": "47.584876",
     "long": "-122.29742",
-    "imageName": "426_1892_Amy-Yee-Tennis-Center.jpg",
+    "imageName": "426_1892_Amy-Yee-Tennis-Center",
+    "slug": "amy-yee-tennis-center",
+    "ext": "jpg",
     "width": 4032,
-    "height": 1659
+    "height": 1659,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 147,
@@ -1727,9 +2235,13 @@
     "zip_code": "98144",
     "lat": "47.573861",
     "long": "-122.283396",
-    "imageName": "3929_1468_Landing-Parkway.jpg",
+    "imageName": "3929_1468_Landing-Parkway",
+    "slug": "landing-parkway",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 149,
@@ -1740,9 +2252,13 @@
     "zip_code": "98144",
     "lat": "47.573282",
     "long": "-122.282492",
-    "imageName": "3928_1616_Sierra-Place.jpg",
+    "imageName": "3928_1616_Sierra-Place",
+    "slug": "sierra-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 150,
@@ -1753,9 +2269,13 @@
     "zip_code": "98117",
     "lat": "47.690119",
     "long": "-122.374794",
-    "imageName": "2840_1911_Baker-Park-on-Crown-Hill.jpg",
+    "imageName": "2840_1911_Baker-Park-on-Crown-Hill",
+    "slug": "baker-park-on-crown-hill",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 151,
@@ -1766,9 +2286,13 @@
     "zip_code": "98117",
     "lat": "47.703423",
     "long": "-122.381171",
-    "imageName": "239_1200_Blue-Ridge-Place.jpg",
+    "imageName": "239_1200_Blue-Ridge-Place",
+    "slug": "blue-ridge-place",
+    "ext": "jpg",
     "width": 4005,
-    "height": 2989
+    "height": 2989,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 152,
@@ -1779,9 +2303,13 @@
     "zip_code": "98117",
     "lat": "47.684106",
     "long": "-122.38324",
-    "imageName": "289_1146_Loyal-Heights-Playfield.jpg",
+    "imageName": "289_1146_Loyal-Heights-Playfield",
+    "slug": "loyal-heights-playfield",
+    "ext": "jpg",
     "width": 4031,
-    "height": 3023
+    "height": 3023,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 153,
@@ -1792,9 +2320,13 @@
     "zip_code": "98117",
     "lat": "47.69471",
     "long": "-122.390258",
-    "imageName": "247_247_North-Beach-Park.jpg",
+    "imageName": "247_247_North-Beach-Park",
+    "slug": "north-beach-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 154,
@@ -1805,9 +2337,13 @@
     "zip_code": "98117",
     "lat": "47.695134",
     "long": "-122.358701",
-    "imageName": "250_2493_Sandel-Playground.jpg",
+    "imageName": "250_2493_Sandel-Playground",
+    "slug": "sandel-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 155,
@@ -1818,9 +2354,13 @@
     "zip_code": "98103",
     "lat": "47.684317",
     "long": "-122.333029",
-    "imageName": "4018_1280_Crescent-Place.jpg",
+    "imageName": "4018_1280_Crescent-Place",
+    "slug": "crescent-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 156,
@@ -1831,9 +2371,12 @@
     "zip_code": "98103",
     "lat": "47.658544",
     "long": "-122.337444",
-    "imageName": "449_2336_Wallingford-Playfield.jpg",
+    "imageName": "449_2336_Wallingford-Playfield",
+    "slug": "wallingford-playfield",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": false
   },
   {
@@ -1845,9 +2388,12 @@
     "zip_code": "98115",
     "lat": "47.671728",
     "long": "-122.322634",
-    "imageName": "3975_2596_NE-60th-Street-Park.jpg",
+    "imageName": "3975_2596_NE-60th-Street-Park",
+    "slug": "ne-60th-street-park",
+    "ext": "jpg",
     "width": 3913,
     "height": 2037,
+    "weight": 100,
     "live": false
   },
   {
@@ -1859,9 +2405,13 @@
     "zip_code": "98115",
     "lat": "47.680304",
     "long": "-122.255084",
-    "imageName": "398_2394_Warren-G-Magnuson-Park.jpg",
+    "imageName": "398_2394_Warren-G-Magnuson-Park",
+    "slug": "warren-g-magnuson-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 159,
@@ -1872,9 +2422,13 @@
     "zip_code": "98102",
     "lat": "47.643015",
     "long": "-122.318347",
-    "imageName": "4006_1910_Bagley-Viewpoint.jpg",
+    "imageName": "4006_1910_Bagley-Viewpoint",
+    "slug": "bagley-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 160,
@@ -1885,9 +2439,12 @@
     "zip_code": "98102",
     "lat": "47.625727",
     "long": "-122.324408",
-    "imageName": "346_1290_Belmont-Place.jpg",
+    "imageName": "346_1290_Belmont-Place",
+    "slug": "belmont-place",
+    "ext": "jpg",
     "width": 2789,
     "height": 3857,
+    "weight": 100,
     "live": false
   },
   {
@@ -1899,9 +2456,13 @@
     "zip_code": "98102",
     "lat": "47.627081",
     "long": "-122.325708",
-    "imageName": "383_1635_Summit-Place.jpg",
+    "imageName": "383_1635_Summit-Place",
+    "slug": "summit-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 163,
@@ -1912,9 +2473,13 @@
     "zip_code": "98144",
     "lat": "47.630922",
     "long": "-122.391648",
-    "imageName": "2970_0_Magnolia-Tidelands-Park.jpg",
+    "imageName": "2970_0_Magnolia-Tidelands-Park",
+    "slug": "magnolia-tidelands-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 164,
@@ -1925,9 +2490,13 @@
     "zip_code": "98199",
     "lat": "47.643802",
     "long": "-122.386786",
-    "imageName": "303_1110_Bayview-Playground.jpg",
+    "imageName": "303_1110_Bayview-Playground",
+    "slug": "bayview-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 165,
@@ -1938,9 +2507,13 @@
     "zip_code": "98199",
     "lat": "47.629555",
     "long": "-122.386693",
-    "imageName": "3005_1930_Open-Water-Park.jpg",
+    "imageName": "3005_1930_Open-Water-Park",
+    "slug": "open-water-park",
+    "ext": "jpg",
     "width": 3476,
-    "height": 2429
+    "height": 2429,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 166,
@@ -1951,9 +2524,13 @@
     "zip_code": "98199",
     "lat": "47.632049",
     "long": "-122.390232",
-    "imageName": "4451_1757_Ursula-Judkins-Viewpoint.jpg",
+    "imageName": "4451_1757_Ursula-Judkins-Viewpoint",
+    "slug": "ursula-judkins-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 167,
@@ -1964,9 +2541,13 @@
     "zip_code": "98103",
     "lat": "47.651802",
     "long": "-122.357864",
-    "imageName": "4011_1341_Fremont-Canal-Park.jpg",
+    "imageName": "4011_1341_Fremont-Canal-Park",
+    "slug": "fremont-canal-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 168,
@@ -1977,9 +2558,13 @@
     "zip_code": "98103",
     "lat": "47.645639",
     "long": "-122.334906",
-    "imageName": "293_1349_Gas-Works-Park--2-.jpg",
+    "imageName": "293_1349_Gas-Works-Park--2-",
+    "slug": "gas-works-park--2-",
+    "ext": "jpg",
     "width": 4028,
-    "height": 2266
+    "height": 2266,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 169,
@@ -1990,9 +2575,13 @@
     "zip_code": "98109",
     "lat": "47.621405",
     "long": "-122.332355",
-    "imageName": "350_1117_Cascade-Playground.jpg",
+    "imageName": "350_1117_Cascade-Playground",
+    "slug": "cascade-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2883
+    "height": 2883,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 170,
@@ -2003,9 +2592,12 @@
     "zip_code": "98101",
     "lat": "47.614124",
     "long": "-122.329092",
-    "imageName": "4000_1952_Plymouth-Pillars-Park.jpg",
+    "imageName": "4000_1952_Plymouth-Pillars-Park",
+    "slug": "plymouth-pillars-park",
+    "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "weight": 100,
     "live": true
   },
   {
@@ -2017,9 +2609,13 @@
     "zip_code": "98106",
     "lat": "47.531156",
     "long": "-122.319694",
-    "imageName": "705_1304_Duwamish-Waterway-Park.jpg",
+    "imageName": "705_1304_Duwamish-Waterway-Park",
+    "slug": "duwamish-waterway-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 172,
@@ -2030,11 +2626,13 @@
     "zip_code": "98108",
     "lat": "47.568067",
     "long": "-122.311441",
-    "imageName": "114_1434_Jefferson-Park.jpg",
+    "imageName": "114_1434_Jefferson-Park",
+    "slug": "jefferson-park",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "live": true,
-    "weight": 7000
+    "weight": 7000,
+    "live": true
   },
   {
     "id": 173,
@@ -2045,9 +2643,13 @@
     "zip_code": "98108",
     "lat": "47.54499",
     "long": "-122.321583",
-    "imageName": "4416_1934_Oxbow-Park.jpg",
+    "imageName": "4416_1934_Oxbow-Park",
+    "slug": "oxbow-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 174,
@@ -2058,9 +2660,13 @@
     "zip_code": "98108",
     "lat": "47.528016",
     "long": "-122.324159",
-    "imageName": "467_1177_South-Park-Playground.jpg",
+    "imageName": "467_1177_South-Park-Playground",
+    "slug": "south-park-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 175,
@@ -2071,9 +2677,13 @@
     "zip_code": "98122",
     "lat": "47.603132",
     "long": "-122.318982",
-    "imageName": "43_1394_Horiuchi-Park.jpg",
+    "imageName": "43_1394_Horiuchi-Park",
+    "slug": "horiuchi-park",
+    "ext": "jpg",
     "width": 4013,
-    "height": 2999
+    "height": 2999,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 176,
@@ -2084,9 +2694,13 @@
     "zip_code": "98144",
     "lat": "47.577122",
     "long": "-122.310563",
-    "imageName": "3919_1630_Stevens-Place.jpg",
+    "imageName": "3919_1630_Stevens-Place",
+    "slug": "stevens-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 177,
@@ -2097,9 +2711,13 @@
     "zip_code": "98144",
     "lat": "47.59409",
     "long": "-122.314376",
-    "imageName": "592_1633_Sturgus-Park.jpg",
+    "imageName": "592_1633_Sturgus-Park",
+    "slug": "sturgus-park",
+    "ext": "jpg",
     "width": 3734,
-    "height": 2630
+    "height": 2630,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 178,
@@ -2110,9 +2728,13 @@
     "zip_code": "98134",
     "lat": "47.5866891",
     "long": "-122.318965",
-    "imageName": "__East-Duwamish-Greenbelt.jpg",
+    "imageName": "__East-Duwamish-Greenbelt",
+    "slug": "east-duwamish-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 179,
@@ -2123,9 +2745,13 @@
     "zip_code": "98109",
     "lat": "47.629656",
     "long": "-122.355466",
-    "imageName": "3979_1384_Highland-Place.jpg",
+    "imageName": "3979_1384_Highland-Place",
+    "slug": "highland-place",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 180,
@@ -2136,9 +2762,13 @@
     "zip_code": "98109",
     "lat": "47.635866",
     "long": "-122.345011",
-    "imageName": "279_2618_Northeast-Queen-Anne-Greenbelt.jpg",
+    "imageName": "279_2618_Northeast-Queen-Anne-Greenbelt",
+    "slug": "northeast-queen-anne-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 181,
@@ -2149,9 +2779,30 @@
     "zip_code": "98109",
     "lat": "47.631342",
     "long": "-122.355134",
-    "imageName": "322_1926_Observatory-Courts.jpg",
+    "imageName": "322_1926_Observatory-Courts",
+    "slug": "observatory-courts",
+    "ext": "jpg",
     "width": 2957,
-    "height": 3981
+    "height": 3981,
+    "weight": 100,
+    "live": false
+  },
+  {
+    "id": 182,
+    "pmaid": "1106",
+    "locid": "1756",
+    "name": "Thomas C. Wales Park",
+    "address": "2401 6th Ave N",
+    "zip_code": "98109",
+    "lat": "47.640523",
+    "long": "-122.344468",
+    "imageName": "1106_1756_Thomas-C--Wales-Park",
+    "slug": "thomas-c--wales-park",
+    "ext": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 183,
@@ -2162,9 +2813,13 @@
     "zip_code": "98109",
     "lat": "47.635143",
     "long": "-122.347039",
-    "imageName": "4421_1654_Trolley-Hill-Park.jpg",
+    "imageName": "4421_1654_Trolley-Hill-Park",
+    "slug": "trolley-hill-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 184,
@@ -2175,9 +2830,13 @@
     "zip_code": "98119",
     "lat": "47.645599",
     "long": "-122.359711",
-    "imageName": "3984_1040_Queen-Anne-Bowl-Playfield.jpg",
+    "imageName": "3984_1040_Queen-Anne-Bowl-Playfield",
+    "slug": "queen-anne-bowl-playfield",
+    "ext": "jpg",
     "width": 3957,
-    "height": 2925
+    "height": 2925,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 185,
@@ -2188,9 +2847,13 @@
     "zip_code": "98119",
     "lat": "47.65205",
     "long": "-122.360602",
-    "imageName": "3694_2401_West-Ewing-Mini-Park.jpg",
+    "imageName": "3694_2401_West-Ewing-Mini-Park",
+    "slug": "west-ewing-mini-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 186,
@@ -2201,9 +2864,12 @@
     "zip_code": "98104",
     "lat": "47.596236",
     "long": "-122.318716",
-    "imageName": "3119_1923_Beacon-Place.jpg",
+    "imageName": "3119_1923_Beacon-Place",
+    "slug": "beacon-place",
+    "ext": "jpg",
     "width": 3617,
     "height": 2916,
+    "weight": 100,
     "live": true
   },
   {
@@ -2215,9 +2881,13 @@
     "zip_code": "98144",
     "lat": "47.593859",
     "long": "-122.318094",
-    "imageName": "433_2490_Dr-Jose-Rizal-Park.jpg",
+    "imageName": "433_2490_Dr-Jose-Rizal-Park",
+    "slug": "dr-jose-rizal-park",
+    "ext": "jpg",
     "width": 4012,
-    "height": 2734
+    "height": 2734,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 188,
@@ -2228,9 +2898,13 @@
     "zip_code": "98105",
     "lat": "47.671888",
     "long": "-122.312027",
-    "imageName": "4028_0_Beck-Place.jpg",
+    "imageName": "4028_0_Beck-Place",
+    "slug": "beck-place",
+    "ext": "jpg",
     "width": 3923,
-    "height": 2881
+    "height": 2881,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 189,
@@ -2241,9 +2915,13 @@
     "zip_code": "98105",
     "lat": "47.672596",
     "long": "-122.313072",
-    "imageName": "483_1279_Cowen-Park.jpg",
+    "imageName": "483_1279_Cowen-Park",
+    "slug": "cowen-park",
+    "ext": "jpg",
     "width": 3756,
-    "height": 2652
+    "height": 2652,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 190,
@@ -2254,9 +2932,13 @@
     "zip_code": "98105",
     "lat": "47.67005",
     "long": "-122.305464",
-    "imageName": "4027_1937_Park-Home-Circle.jpg",
+    "imageName": "4027_1937_Park-Home-Circle",
+    "slug": "park-home-circle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 191,
@@ -2267,9 +2949,13 @@
     "zip_code": "98105",
     "lat": "47.668089",
     "long": "-122.30367",
-    "imageName": "4080_1572_Ravenna-Park-Triangle.jpg",
+    "imageName": "4080_1572_Ravenna-Park-Triangle",
+    "slug": "ravenna-park-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 192,
@@ -2280,9 +2966,13 @@
     "zip_code": "98107",
     "lat": "47.659718",
     "long": "-122.361347",
-    "imageName": "248_1812_Ross-Playground.jpg",
+    "imageName": "248_1812_Ross-Playground",
+    "slug": "ross-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 193,
@@ -2293,9 +2983,13 @@
     "zip_code": "98109",
     "lat": "47.639775",
     "long": "-122.352314",
-    "imageName": "278_1814_Wolf-Creek-Ravine-Natural-Area.jpg",
+    "imageName": "278_1814_Wolf-Creek-Ravine-Natural-Area",
+    "slug": "wolf-creek-ravine-natural-area",
+    "ext": "jpg",
     "width": 4003,
-    "height": 2985
+    "height": 2985,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 194,
@@ -2306,9 +3000,13 @@
     "zip_code": "98119",
     "lat": "47.635514",
     "long": "-122.359504",
-    "imageName": "330_2561_West-Queen-Anne-Playfield.jpg",
+    "imageName": "330_2561_West-Queen-Anne-Playfield",
+    "slug": "west-queen-anne-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 195,
@@ -2319,9 +3017,13 @@
     "zip_code": "98144",
     "lat": "47.578695",
     "long": "-122.311648",
-    "imageName": "3918_0_McClellan-Place.jpg",
+    "imageName": "3918_0_McClellan-Place",
+    "slug": "mcclellan-place",
+    "ext": "jpg",
     "width": 3922,
-    "height": 2811
+    "height": 2811,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 196,
@@ -2332,9 +3034,13 @@
     "zip_code": "98121",
     "lat": "47.618382",
     "long": "-122.347411",
-    "imageName": "3909_1651_Tilikum-Place.jpg",
+    "imageName": "3909_1651_Tilikum-Place",
+    "slug": "tilikum-place",
+    "ext": "jpg",
     "width": 2925,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 197,
@@ -2345,9 +3051,13 @@
     "zip_code": "98109",
     "lat": "47.629736",
     "long": "-122.353337",
-    "imageName": "3983_1383_Highland-Drive-Parkway.jpg",
+    "imageName": "3983_1383_Highland-Drive-Parkway",
+    "slug": "highland-drive-parkway",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 198,
@@ -2358,9 +3068,13 @@
     "zip_code": "98109",
     "lat": "47.627747",
     "long": "-122.349245",
-    "imageName": "763_1684_Ward-Springs-Park.jpg",
+    "imageName": "763_1684_Ward-Springs-Park",
+    "slug": "ward-springs-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 199,
@@ -2371,9 +3085,13 @@
     "zip_code": "98119",
     "lat": "47.626809",
     "long": "-122.364152",
-    "imageName": "3907_1196_Blaine-Place.jpg",
+    "imageName": "3907_1196_Blaine-Place",
+    "slug": "blaine-place",
+    "ext": "jpg",
     "width": 3920,
-    "height": 1934
+    "height": 1934,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 200,
@@ -2384,9 +3102,13 @@
     "zip_code": "98119",
     "lat": "47.629023",
     "long": "-122.359874",
-    "imageName": "342_2374_Kerry-Park.jpg",
+    "imageName": "342_2374_Kerry-Park",
+    "slug": "kerry-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 201,
@@ -2397,9 +3119,13 @@
     "zip_code": "98102",
     "lat": "47.626904",
     "long": "-122.327658",
-    "imageName": "4022_1182_Bellevue-Place.jpg",
+    "imageName": "4022_1182_Bellevue-Place",
+    "slug": "bellevue-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 202,
@@ -2410,9 +3136,13 @@
     "zip_code": "98102",
     "lat": "47.619832",
     "long": "-122.325298",
-    "imageName": "4461_1636_Summit-Slope-Park.jpg",
+    "imageName": "4461_1636_Summit-Slope-Park",
+    "slug": "summit-slope-park",
+    "ext": "jpg",
     "width": 4005,
-    "height": 2987
+    "height": 2987,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 203,
@@ -2423,9 +3153,13 @@
     "zip_code": "98104",
     "lat": "47.609976",
     "long": "-122.32094",
-    "imageName": "349_1202_Boylston-Place.jpg",
+    "imageName": "349_1202_Boylston-Place",
+    "slug": "boylston-place",
+    "ext": "jpg",
     "width": 3258,
-    "height": 2022
+    "height": 2022,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 204,
@@ -2436,9 +3170,12 @@
     "zip_code": "98112",
     "lat": "47.630378",
     "long": "-122.315568",
-    "imageName": "399_1669_Volunteer-Park.jpg",
+    "imageName": "399_1669_Volunteer-Park",
+    "slug": "volunteer-park",
+    "ext": "jpg",
     "width": 3530,
     "height": 1848,
+    "weight": 100,
     "live": true
   },
   {
@@ -2450,9 +3187,13 @@
     "zip_code": "98122",
     "lat": "47.617013",
     "long": "-122.319134",
-    "imageName": "3102_1211_Cal-Anderson-Park-and-Bobby-Morris-Playfield.jpg",
+    "imageName": "3102_1211_Cal-Anderson-Park-and-Bobby-Morris-Playfield",
+    "slug": "cal-anderson-park-and-bobby-morris-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2699
+    "height": 2699,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 207,
@@ -2463,9 +3204,13 @@
     "zip_code": "98102",
     "lat": "47.6408315",
     "long": "-122.3294106",
-    "imageName": "__Cheshiahud-Lake-Union-Loop.jpg",
+    "imageName": "__Cheshiahud-Lake-Union-Loop",
+    "slug": "cheshiahud-lake-union-loop",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 208,
@@ -2476,9 +3221,13 @@
     "zip_code": "98109",
     "lat": "47.641586",
     "long": "-122.34338",
-    "imageName": "494_1702_Westlake-Greenbelt.jpg",
+    "imageName": "494_1702_Westlake-Greenbelt",
+    "slug": "westlake-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 209,
@@ -2489,9 +3238,13 @@
     "zip_code": "98103",
     "lat": "47.698542",
     "long": "-122.338735",
-    "imageName": "286_1059_Licton-Springs-Park.jpg",
+    "imageName": "286_1059_Licton-Springs-Park",
+    "slug": "licton-springs-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 210,
@@ -2502,9 +3255,13 @@
     "zip_code": "98105",
     "lat": "47.65543",
     "long": "-122.323616",
-    "imageName": "4029_1940_Peace-Park.jpg",
+    "imageName": "4029_1940_Peace-Park",
+    "slug": "peace-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 211,
@@ -2515,9 +3272,13 @@
     "zip_code": "98118",
     "lat": "47.559792",
     "long": "-122.287394",
-    "imageName": "4034_1271_Columbia-Park.jpg",
+    "imageName": "4034_1271_Columbia-Park",
+    "slug": "columbia-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 212,
@@ -2528,9 +3289,12 @@
     "zip_code": "98118",
     "lat": "47.513543",
     "long": "-122.266125",
-    "imageName": "415_1450_Kubota-Garden.jpg",
+    "imageName": "415_1450_Kubota-Garden",
+    "slug": "kubota-garden",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -2542,9 +3306,13 @@
     "zip_code": "98101",
     "lat": "47.61299",
     "long": "-122.337587",
-    "imageName": "339_1536_McGraw-Square.jpg",
+    "imageName": "339_1536_McGraw-Square",
+    "slug": "mcgraw-square",
+    "ext": "jpg",
     "width": 3777,
-    "height": 2691
+    "height": 2691,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 215,
@@ -2555,9 +3323,13 @@
     "zip_code": "98101",
     "lat": "47.611099",
     "long": "-122.33724",
-    "imageName": "332_1703_Westlake-Park.jpg",
+    "imageName": "332_1703_Westlake-Park",
+    "slug": "westlake-park",
+    "ext": "jpg",
     "width": 3928,
-    "height": 2886
+    "height": 2886,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 216,
@@ -2568,9 +3340,13 @@
     "zip_code": "98101",
     "lat": "47.607411",
     "long": "-122.342836",
-    "imageName": "335_2384_Seattle-Aquarium.jpg",
+    "imageName": "335_2384_Seattle-Aquarium",
+    "slug": "seattle-aquarium",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2867
+    "height": 2867,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 217,
@@ -2581,9 +3357,13 @@
     "zip_code": "98102",
     "lat": "47.636461",
     "long": "-122.316261",
-    "imageName": "354_1346_Grand-Army-of-the-Republic-Cemetery.jpg",
+    "imageName": "354_1346_Grand-Army-of-the-Republic-Cemetery",
+    "slug": "grand-army-of-the-republic-cemetery",
+    "ext": "jpg",
     "width": 2832,
-    "height": 3886
+    "height": 3886,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 219,
@@ -2594,9 +3374,12 @@
     "zip_code": "98102",
     "lat": "47.634898",
     "long": "-122.323409",
-    "imageName": "4446_1400_I-5-Colonnade.jpg",
+    "imageName": "4446_1400_I-5-Colonnade",
+    "slug": "i-5-colonnade",
+    "ext": "jpg",
     "width": 3633,
     "height": 2297,
+    "weight": 100,
     "live": true
   },
   {
@@ -2608,9 +3391,13 @@
     "zip_code": "98102",
     "lat": "47.636257",
     "long": "-122.308316",
-    "imageName": "3023_1412_Interlaken-Park.jpg",
+    "imageName": "3023_1412_Interlaken-Park",
+    "slug": "interlaken-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 221,
@@ -2621,9 +3408,13 @@
     "zip_code": "98102",
     "lat": "47.62939",
     "long": "-122.325705",
-    "imageName": "366_1464_Lakeview-Place.jpg",
+    "imageName": "366_1464_Lakeview-Place",
+    "slug": "lakeview-place",
+    "ext": "jpg",
     "width": 3928,
-    "height": 1217
+    "height": 1217,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 222,
@@ -2634,9 +3425,13 @@
     "zip_code": "98102",
     "lat": "47.643723",
     "long": "-122.320185",
-    "imageName": "379_1591_Roanoke-Park.jpg",
+    "imageName": "379_1591_Roanoke-Park",
+    "slug": "roanoke-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 223,
@@ -2647,9 +3442,13 @@
     "zip_code": "98102",
     "lat": "47.642601",
     "long": "-122.325257",
-    "imageName": "380_1165_Rogers-Playground.jpg",
+    "imageName": "380_1165_Rogers-Playground",
+    "slug": "rogers-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 224,
@@ -2660,9 +3459,13 @@
     "zip_code": "98102",
     "lat": "47.652087",
     "long": "-122.322486",
-    "imageName": "377_2431_South-Passage-Point-Park.jpg",
+    "imageName": "377_2431_South-Passage-Point-Park",
+    "slug": "south-passage-point-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 225,
@@ -2673,9 +3476,13 @@
     "zip_code": "98102",
     "lat": "47.63115",
     "long": "-122.322174",
-    "imageName": "2848_2848_St-Marks-Greenbelt.jpg",
+    "imageName": "2848_2848_St-Marks-Greenbelt",
+    "slug": "st-marks-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 226,
@@ -2686,9 +3493,13 @@
     "zip_code": "98102",
     "lat": "47.636742",
     "long": "-122.329689",
-    "imageName": "3889_1643_Terry-Pettus-Park.jpg",
+    "imageName": "3889_1643_Terry-Pettus-Park",
+    "slug": "terry-pettus-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 227,
@@ -2699,9 +3510,12 @@
     "zip_code": "98103",
     "lat": "47.650087",
     "long": "-122.348826",
-    "imageName": "4404_2533_A-B-Ernst-Park.jpg",
+    "imageName": "4404_2533_A-B-Ernst-Park",
+    "slug": "a-b-ernst-park",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -2713,9 +3527,13 @@
     "zip_code": "98103",
     "lat": "47.670304",
     "long": "-122.333769",
-    "imageName": "3880_1440_Keystone-Place.jpg",
+    "imageName": "3880_1440_Keystone-Place",
+    "slug": "keystone-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 229,
@@ -2726,9 +3544,12 @@
     "zip_code": "98103",
     "lat": "47.647345",
     "long": "-122.336152",
-    "imageName": "1000004_0_Wallingford-Steps.jpg",
+    "imageName": "1000004_0_Wallingford-Steps",
+    "slug": "wallingford-steps",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": false
   },
   {
@@ -2740,9 +3561,13 @@
     "zip_code": "98104",
     "lat": "47.598609",
     "long": "-122.325435",
-    "imageName": "358_1093_Hing-Hay-Park.jpg",
+    "imageName": "358_1093_Hing-Hay-Park",
+    "slug": "hing-hay-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 231,
@@ -2753,9 +3578,13 @@
     "zip_code": "98104",
     "lat": "47.596897",
     "long": "-122.323412",
-    "imageName": "364_1413_International-Children-s-Park.jpg",
+    "imageName": "364_1413_International-Children-s-Park",
+    "slug": "international-children-s-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 232,
@@ -2766,9 +3595,12 @@
     "zip_code": "98104",
     "lat": "47.600463",
     "long": "-122.333272",
-    "imageName": "323_1927_Occidental-Square.jpg",
+    "imageName": "323_1927_Occidental-Square",
+    "slug": "occidental-square",
+    "ext": "jpg",
     "width": 3622,
     "height": 2034,
+    "weight": 100,
     "live": false
   },
   {
@@ -2780,9 +3612,13 @@
     "zip_code": "98104",
     "lat": "47.602076",
     "long": "-122.333886",
-    "imageName": "325_1949_Pioneer-Square.jpg",
+    "imageName": "325_1949_Pioneer-Square",
+    "slug": "pioneer-square",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 234,
@@ -2793,9 +3629,13 @@
     "zip_code": "98104",
     "lat": "47.601844",
     "long": "-122.330883",
-    "imageName": "326_1956_Prefontaine-Place.jpg",
+    "imageName": "326_1956_Prefontaine-Place",
+    "slug": "prefontaine-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 235,
@@ -2806,9 +3646,13 @@
     "zip_code": "98104",
     "lat": "47.601007",
     "long": "-122.336045",
-    "imageName": "4165_2499_Washington-Street-Public-Boat-Landing.jpg",
+    "imageName": "4165_2499_Washington-Street-Public-Boat-Landing",
+    "slug": "washington-street-public-boat-landing",
+    "ext": "jpg",
     "width": 4029,
-    "height": 3019
+    "height": 3019,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 236,
@@ -2819,9 +3663,13 @@
     "zip_code": "98104",
     "lat": "47.601262",
     "long": "-122.320083",
-    "imageName": "4563_0_Yesler-Playfield.jpg",
+    "imageName": "4563_0_Yesler-Playfield",
+    "slug": "yesler-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 237,
@@ -2832,9 +3680,12 @@
     "zip_code": "98105",
     "lat": "47.655124",
     "long": "-122.283215",
-    "imageName": "475_1189_Belvoir-Place.jpg",
+    "imageName": "475_1189_Belvoir-Place",
+    "slug": "belvoir-place",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -2846,9 +3697,13 @@
     "zip_code": "98105",
     "lat": "47.659308",
     "long": "-122.319072",
-    "imageName": "595_1250_Christie-Park.jpg",
+    "imageName": "595_1250_Christie-Park",
+    "slug": "christie-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 239,
@@ -2859,9 +3714,13 @@
     "zip_code": "98105",
     "lat": "47.65989",
     "long": "-122.278019",
-    "imageName": "340_1142_Laurelhurst-Playfield.jpg",
+    "imageName": "340_1142_Laurelhurst-Playfield",
+    "slug": "laurelhurst-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 240,
@@ -2872,9 +3731,13 @@
     "zip_code": "98105",
     "lat": "47.653963",
     "long": "-122.322428",
-    "imageName": "2956_2487_North-Passage-Point-Park.jpg",
+    "imageName": "2956_2487_North-Passage-Point-Park",
+    "slug": "north-passage-point-park",
+    "ext": "jpg",
     "width": 3762,
-    "height": 2605
+    "height": 2605,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 241,
@@ -2885,9 +3748,13 @@
     "zip_code": "98105",
     "lat": "47.664447",
     "long": "-122.319312",
-    "imageName": "435_1180_University-Playground.jpg",
+    "imageName": "435_1180_University-Playground",
+    "slug": "university-playground",
+    "ext": "jpg",
     "width": 3809,
-    "height": 1183
+    "height": 1183,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 242,
@@ -2898,9 +3765,13 @@
     "zip_code": "98106",
     "lat": "47.562842",
     "long": "-122.364371",
-    "imageName": "450_1124_Delridge-Playfield.jpg",
+    "imageName": "450_1124_Delridge-Playfield",
+    "slug": "delridge-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 243,
@@ -2911,9 +3782,13 @@
     "zip_code": "98106",
     "lat": "47.561514",
     "long": "-122.349545",
-    "imageName": "4412_1381_Herring-s-House-Park--T-ul-altx-.jpg",
+    "imageName": "4412_1381_Herring-s-House-Park--T-ul-altx-",
+    "slug": "herring-s-house-park--t-ul-altx-",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 244,
@@ -2924,9 +3799,13 @@
     "zip_code": "98106",
     "lat": "47.530167",
     "long": "-122.363435",
-    "imageName": "264_2437_Longfellow-Creek-Greenspace.jpg",
+    "imageName": "264_2437_Longfellow-Creek-Greenspace",
+    "slug": "longfellow-creek-greenspace",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 245,
@@ -2937,9 +3816,13 @@
     "zip_code": "98106",
     "lat": "47.55187",
     "long": "-122.358556",
-    "imageName": "3993_2247_Puget-Creek-Greenspace.jpg",
+    "imageName": "3993_2247_Puget-Creek-Greenspace",
+    "slug": "puget-creek-greenspace",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 246,
@@ -2950,9 +3833,13 @@
     "zip_code": "98106",
     "lat": "47.54101",
     "long": "-122.348688",
-    "imageName": "463_2269_Riverview-Playfield.jpg",
+    "imageName": "463_2269_Riverview-Playfield",
+    "slug": "riverview-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 247,
@@ -2963,9 +3850,13 @@
     "zip_code": "98106",
     "lat": "47.563271",
     "long": "-122.356966",
-    "imageName": "4401_2603_West-Duwamish-Greenbelt.jpg",
+    "imageName": "4401_2603_West-Duwamish-Greenbelt",
+    "slug": "west-duwamish-greenbelt",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 248,
@@ -2976,9 +3867,13 @@
     "zip_code": "98106",
     "lat": "47.525783",
     "long": "-122.341719",
-    "imageName": "468_1701_Westcrest-Park.jpg",
+    "imageName": "468_1701_Westcrest-Park",
+    "slug": "westcrest-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 249,
@@ -2989,9 +3884,13 @@
     "zip_code": "98107",
     "lat": "47.660775",
     "long": "-122.373536",
-    "imageName": "4010_2546_14th-Ave-NW-Boat-Ramp.jpg",
+    "imageName": "4010_2546_14th-Ave-NW-Boat-Ramp",
+    "slug": "14th-ave-nw-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 250,
@@ -3002,9 +3901,13 @@
     "zip_code": "98107",
     "lat": "47.670549",
     "long": "-122.385487",
-    "imageName": "4278_1913_Ballard-Commons-Park.jpg",
+    "imageName": "4278_1913_Ballard-Commons-Park",
+    "slug": "ballard-commons-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 251,
@@ -3015,9 +3918,13 @@
     "zip_code": "98107",
     "lat": "47.674186",
     "long": "-122.379116",
-    "imageName": "4428_1914_Ballard-Corners-Park.jpg",
+    "imageName": "4428_1914_Ballard-Corners-Park",
+    "slug": "ballard-corners-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 252,
@@ -3028,9 +3935,13 @@
     "zip_code": "98107",
     "lat": "47.666216",
     "long": "-122.358092",
-    "imageName": "3902_1235_Cascade-Place.jpg",
+    "imageName": "3902_1235_Cascade-Place",
+    "slug": "cascade-place",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 253,
@@ -3041,9 +3952,13 @@
     "zip_code": "98107",
     "lat": "47.66538",
     "long": "-122.40014",
-    "imageName": "308_1272_Commodore-Park.jpg",
+    "imageName": "308_1272_Commodore-Park",
+    "slug": "commodore-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2593
+    "height": 2593,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 254,
@@ -3054,9 +3969,13 @@
     "zip_code": "98107",
     "lat": "47.667292",
     "long": "-122.369684",
-    "imageName": "242_1134_Gilman-Playground.jpg",
+    "imageName": "242_1134_Gilman-Playground",
+    "slug": "gilman-playground",
+    "ext": "jpg",
     "width": 3819,
-    "height": 2747
+    "height": 2747,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 255,
@@ -3067,9 +3986,13 @@
     "zip_code": "98107",
     "lat": "47.667976",
     "long": "-122.384972",
-    "imageName": "298_1880_Marvin-s-Garden.jpg",
+    "imageName": "298_1880_Marvin-s-Garden",
+    "slug": "marvin-s-garden",
+    "ext": "jpg",
     "width": 2943,
-    "height": 3971
+    "height": 3971,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 257,
@@ -3080,9 +4003,13 @@
     "zip_code": "98107",
     "lat": "47.667567",
     "long": "-122.359434",
-    "imageName": "3999_1568_Rainier-Place.jpg",
+    "imageName": "3999_1568_Rainier-Place",
+    "slug": "rainier-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 258,
@@ -3093,9 +4020,13 @@
     "zip_code": "98108",
     "lat": "47.552012",
     "long": "-122.315542",
-    "imageName": "404_2026_Cleveland-Playfield.jpg",
+    "imageName": "404_2026_Cleveland-Playfield",
+    "slug": "cleveland-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 259,
@@ -3106,9 +4037,13 @@
     "zip_code": "98108",
     "lat": "47.55162",
     "long": "-122.321396",
-    "imageName": "410_2094_Georgetown-Playfield.jpg",
+    "imageName": "410_2094_Georgetown-Playfield",
+    "slug": "georgetown-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 260,
@@ -3119,9 +4054,13 @@
     "zip_code": "98108",
     "lat": "47.567202",
     "long": "-122.305242",
-    "imageName": "4153_1791_Jefferson-Park-Golf-Course.jpg",
+    "imageName": "4153_1791_Jefferson-Park-Golf-Course",
+    "slug": "jefferson-park-golf-course",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 261,
@@ -3132,9 +4071,13 @@
     "zip_code": "98108",
     "lat": "47.569133",
     "long": "-122.292012",
-    "imageName": "4439_1459_Lake-People-Park--Xacua-bs-.jpg",
+    "imageName": "4439_1459_Lake-People-Park--Xacua-bs-",
+    "slug": "lake-people-park--xacua-bs-",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 262,
@@ -3145,9 +4088,13 @@
     "zip_code": "98108",
     "lat": "47.551071",
     "long": "-122.308342",
-    "imageName": "1630_1523_Maple-School-Ravine.jpg",
+    "imageName": "1630_1523_Maple-School-Ravine",
+    "slug": "maple-school-ravine",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 263,
@@ -3158,9 +4105,13 @@
     "zip_code": "98108",
     "lat": "47.560041",
     "long": "-122.318845",
-    "imageName": "418_1106_Maple-Wood-Playfield.jpg",
+    "imageName": "418_1106_Maple-Wood-Playfield",
+    "slug": "maple-wood-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2628
+    "height": 2628,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 264,
@@ -3171,9 +4122,13 @@
     "zip_code": "98108",
     "lat": "47.520795",
     "long": "-122.323649",
-    "imageName": "4048_1624_South-Park-Meadow.jpg",
+    "imageName": "4048_1624_South-Park-Meadow",
+    "slug": "south-park-meadow",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2576
+    "height": 2576,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 265,
@@ -3184,9 +4139,13 @@
     "zip_code": "98108",
     "lat": "47.539446",
     "long": "-122.294068",
-    "imageName": "431_1874_Van-Asselt-Playground.jpg",
+    "imageName": "431_1874_Van-Asselt-Playground",
+    "slug": "van-asselt-playground",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 266,
@@ -3197,9 +4156,13 @@
     "zip_code": "98109",
     "lat": "47.613627",
     "long": "-122.337285",
-    "imageName": "334_1705_Westlake-Square.jpg",
+    "imageName": "334_1705_Westlake-Square",
+    "slug": "westlake-square",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 267,
@@ -3210,9 +4173,13 @@
     "zip_code": "98109",
     "lat": "47.61913",
     "long": "-122.341049",
-    "imageName": "309_1297_Denny-Park.jpg",
+    "imageName": "309_1297_Denny-Park",
+    "slug": "denny-park",
+    "ext": "jpg",
     "width": 3902,
-    "height": 2295
+    "height": 2295,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 268,
@@ -3223,9 +4190,13 @@
     "zip_code": "98109",
     "lat": "47.62841",
     "long": "-122.328918",
-    "imageName": "3977_0_Eastlake-Triangle.jpg",
+    "imageName": "3977_0_Eastlake-Triangle",
+    "slug": "eastlake-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2467
+    "height": 2467,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 269,
@@ -3236,9 +4207,13 @@
     "zip_code": "98109",
     "lat": "47.630501",
     "long": "-122.328967",
-    "imageName": "4155_1461_Fairview-Walkway.jpg",
+    "imageName": "4155_1461_Fairview-Walkway",
+    "slug": "fairview-walkway",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 271,
@@ -3249,9 +4224,13 @@
     "zip_code": "98112",
     "lat": "47.62011",
     "long": "-122.280548",
-    "imageName": "3982_1300_Denny-Blaine-Park.jpg",
+    "imageName": "3982_1300_Denny-Blaine-Park",
+    "slug": "denny-blaine-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 272,
@@ -3262,9 +4241,13 @@
     "zip_code": "98112",
     "lat": "47.619711",
     "long": "-122.290339",
-    "imageName": "356_1377_Harrison-Ridge-Greenbelt.jpg",
+    "imageName": "356_1377_Harrison-Ridge-Greenbelt",
+    "slug": "harrison-ridge-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 273,
@@ -3275,9 +4258,13 @@
     "zip_code": "98112",
     "lat": "47.627312",
     "long": "-122.2952",
-    "imageName": "1000393_0_Japanese-Garden.jpg",
+    "imageName": "1000393_0_Japanese-Garden",
+    "slug": "japanese-garden",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 274,
@@ -3288,9 +4275,13 @@
     "zip_code": "98112",
     "lat": "47.62205",
     "long": "-122.284732",
-    "imageName": "365_1463_Lakeview-Park.jpg",
+    "imageName": "365_1463_Lakeview-Park",
+    "slug": "lakeview-park",
+    "ext": "jpg",
     "width": 3998,
-    "height": 2981
+    "height": 2981,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 275,
@@ -3301,9 +4292,13 @@
     "zip_code": "98112",
     "lat": "47.635779",
     "long": "-122.276602",
-    "imageName": "369_1071_Madison-Park.jpg",
+    "imageName": "369_1071_Madison-Park",
+    "slug": "madison-park",
+    "ext": "jpg",
     "width": 3873,
-    "height": 2215
+    "height": 2215,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 276,
@@ -3314,9 +4309,13 @@
     "zip_code": "98112",
     "lat": "47.639084",
     "long": "-122.276118",
-    "imageName": "4441_2509_Madison-Park-North-Beach.jpg",
+    "imageName": "4441_2509_Madison-Park-North-Beach",
+    "slug": "madison-park-north-beach",
+    "ext": "jpg",
     "width": 3738,
-    "height": 2784
+    "height": 2784,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 277,
@@ -3327,9 +4326,13 @@
     "zip_code": "98112",
     "lat": "47.621433",
     "long": "-122.306261",
-    "imageName": "373_1150_Miller-Playfield.jpg",
+    "imageName": "373_1150_Miller-Playfield",
+    "slug": "miller-playfield",
+    "ext": "jpg",
     "width": 3949,
-    "height": 2915
+    "height": 2915,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 278,
@@ -3340,9 +4343,13 @@
     "zip_code": "98112",
     "lat": "47.642407",
     "long": "-122.310081",
-    "imageName": "376_2536_Montlake-Playfield.jpg",
+    "imageName": "376_2536_Montlake-Playfield",
+    "slug": "montlake-playfield",
+    "ext": "jpg",
     "width": 3828,
-    "height": 2991
+    "height": 2991,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 279,
@@ -3353,9 +4360,13 @@
     "zip_code": "98112",
     "lat": "47.605197",
     "long": "-122.295998",
-    "imageName": "345_1953_Powell-Barnett-Park.jpg",
+    "imageName": "345_1953_Powell-Barnett-Park",
+    "slug": "powell-barnett-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 280,
@@ -3366,9 +4377,13 @@
     "zip_code": "98112",
     "lat": "47.636477",
     "long": "-122.294835",
-    "imageName": "393_0_Washington-Park-Arboretum.jpg",
+    "imageName": "393_0_Washington-Park-Arboretum",
+    "slug": "washington-park-arboretum",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 281,
@@ -3379,9 +4394,13 @@
     "zip_code": "98112",
     "lat": "47.646219",
     "long": "-122.30982",
-    "imageName": "375_2402_West-Montlake-Park.jpg",
+    "imageName": "375_2402_West-Montlake-Park",
+    "slug": "west-montlake-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 282,
@@ -3392,9 +4411,13 @@
     "zip_code": "98115",
     "lat": "47.675299",
     "long": "-122.283644",
-    "imageName": "482_1082_Bryant-Neighborhood-Playground.jpg",
+    "imageName": "482_1082_Bryant-Neighborhood-Playground",
+    "slug": "bryant-neighborhood-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 283,
@@ -3405,9 +4428,13 @@
     "zip_code": "98115",
     "lat": "47.685267",
     "long": "-122.299309",
-    "imageName": "499_1819_Dahl-Playfield.jpg",
+    "imageName": "499_1819_Dahl-Playfield",
+    "slug": "dahl-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 284,
@@ -3418,9 +4445,13 @@
     "zip_code": "98115",
     "lat": "47.680538",
     "long": "-122.313978",
-    "imageName": "287_1128_Froula-Playground.jpg",
+    "imageName": "287_1128_Froula-Playground",
+    "slug": "froula-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 285,
@@ -3431,9 +4462,13 @@
     "zip_code": "98115",
     "lat": "47.678938",
     "long": "-122.330394",
-    "imageName": "307_1366_Green-Lake-Park.jpg",
+    "imageName": "307_1366_Green-Lake-Park",
+    "slug": "green-lake-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 286,
@@ -3444,9 +4479,13 @@
     "zip_code": "98115",
     "lat": "47.691145",
     "long": "-122.280809",
-    "imageName": "4001_1095_Inverness-Ravine-Park.jpg",
+    "imageName": "4001_1095_Inverness-Ravine-Park",
+    "slug": "inverness-ravine-park",
+    "ext": "jpg",
     "width": 3861,
-    "height": 2801
+    "height": 2801,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 287,
@@ -3457,9 +4496,13 @@
     "zip_code": "98115",
     "lat": "47.701262",
     "long": "-122.299926",
-    "imageName": "4482_1102_LaVilla-Meadows-Natural-Area-on-Thornton-Creek.jpg",
+    "imageName": "4482_1102_LaVilla-Meadows-Natural-Area-on-Thornton-Creek",
+    "slug": "lavilla-meadows-natural-area-on-thornton-creek",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 288,
@@ -3470,9 +4513,13 @@
     "zip_code": "98115",
     "lat": "47.723106",
     "long": "-122.315433",
-    "imageName": "4479_1103_Licorice-Fern-Natural-Area-on-Thornton-Creek.jpg",
+    "imageName": "4479_1103_Licorice-Fern-Natural-Area-on-Thornton-Creek",
+    "slug": "licorice-fern-natural-area-on-thornton-creek",
+    "ext": "jpg",
     "width": 4011,
-    "height": 2997
+    "height": 2997,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 289,
@@ -3483,9 +4530,13 @@
     "zip_code": "98115",
     "lat": "47.542398",
     "long": "-122.260054",
-    "imageName": "432_1527_Martha-Washington-Park.jpg",
+    "imageName": "432_1527_Martha-Washington-Park",
+    "slug": "martha-washington-park",
+    "ext": "jpg",
     "width": 3897,
-    "height": 2845
+    "height": 2845,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 290,
@@ -3496,9 +4547,13 @@
     "zip_code": "98115",
     "lat": "47.694564",
     "long": "-122.271785",
-    "imageName": "347_1529_Matthews-Beach-Park.jpg",
+    "imageName": "347_1529_Matthews-Beach-Park",
+    "slug": "matthews-beach-park",
+    "ext": "jpg",
     "width": 4015,
-    "height": 3003
+    "height": 3003,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 291,
@@ -3509,9 +4564,13 @@
     "zip_code": "98115",
     "lat": "47.699037",
     "long": "-122.28962",
-    "imageName": "277_1543_Mock-Creek-Ravine.jpg",
+    "imageName": "277_1543_Mock-Creek-Ravine",
+    "slug": "mock-creek-ravine",
+    "ext": "jpg",
     "width": 4025,
-    "height": 2378
+    "height": 2378,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 292,
@@ -3522,9 +4581,13 @@
     "zip_code": "98115",
     "lat": "47.682713",
     "long": "-122.320476",
-    "imageName": "4045_1565_Rainbow-Point.jpg",
+    "imageName": "4045_1565_Rainbow-Point",
+    "slug": "rainbow-point",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 293,
@@ -3535,9 +4598,13 @@
     "zip_code": "98115",
     "lat": "47.674823",
     "long": "-122.301707",
-    "imageName": "254_1571_Ravenna-Ravine.jpg",
+    "imageName": "254_1571_Ravenna-Ravine",
+    "slug": "ravenna-ravine",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 294,
@@ -3548,9 +4615,13 @@
     "zip_code": "98115",
     "lat": "47.697132",
     "long": "-122.308132",
-    "imageName": "394_1168_Sacajawea-Playground.jpg",
+    "imageName": "394_1168_Sacajawea-Playground",
+    "slug": "sacajawea-playground",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 295,
@@ -3561,9 +4632,13 @@
     "zip_code": "98115",
     "lat": "47.688151",
     "long": "-122.294772",
-    "imageName": "3899_1695_Wedgwood-Square.jpg",
+    "imageName": "3899_1695_Wedgwood-Square",
+    "slug": "wedgwood-square",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 296,
@@ -3574,9 +4649,13 @@
     "zip_code": "98116",
     "lat": "47.582912",
     "long": "-122.402173",
-    "imageName": "445_1888_Alki-Beach-Park.jpg",
+    "imageName": "445_1888_Alki-Beach-Park",
+    "slug": "alki-beach-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 297,
@@ -3587,9 +4666,13 @@
     "zip_code": "98116",
     "lat": "47.578497",
     "long": "-122.407312",
-    "imageName": "446_1049_Alki-Playground.jpg",
+    "imageName": "446_1049_Alki-Playground",
+    "slug": "alki-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 298,
@@ -3600,9 +4683,12 @@
     "zip_code": "98116",
     "lat": "47.568517",
     "long": "-122.409993",
-    "imageName": "2927_1894_Andover-Place.jpg",
+    "imageName": "2927_1894_Andover-Place",
+    "slug": "andover-place",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -3614,9 +4700,12 @@
     "zip_code": "98116",
     "lat": "47.583406",
     "long": "-122.395546",
-    "imageName": "260_2504_College-Street-Ravine.jpg",
+    "imageName": "260_2504_College-Street-Ravine",
+    "slug": "college-street-ravine",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -3628,9 +4717,13 @@
     "zip_code": "98116",
     "lat": "47.570984",
     "long": "-122.412089",
-    "imageName": "295_1276_Cormorant-Cove.jpg",
+    "imageName": "295_1276_Cormorant-Cove",
+    "slug": "cormorant-cove",
+    "ext": "jpg",
     "width": 4001,
-    "height": 2621
+    "height": 2621,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 301,
@@ -3641,9 +4734,13 @@
     "zip_code": "98116",
     "lat": "47.566844",
     "long": "-122.387164",
-    "imageName": "575_1287_Dakota-Place-Park.jpg",
+    "imageName": "575_1287_Dakota-Place-Park",
+    "slug": "dakota-place-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 302,
@@ -3654,9 +4751,13 @@
     "zip_code": "98116",
     "lat": "47.59274",
     "long": "-122.382295",
-    "imageName": "3917_1085_Don-Armeni-Park.jpg",
+    "imageName": "3917_1085_Don-Armeni-Park",
+    "slug": "don-armeni-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 303,
@@ -3667,9 +4768,12 @@
     "zip_code": "98116",
     "lat": "47.562898",
     "long": "-122.40712",
-    "imageName": "3920_1086_Emma-Schmitz-Memorial-Overlook.jpg",
+    "imageName": "3920_1086_Emma-Schmitz-Memorial-Overlook",
+    "slug": "emma-schmitz-memorial-overlook",
+    "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "weight": 100,
     "live": true
   },
   {
@@ -3681,9 +4785,13 @@
     "zip_code": "98116",
     "lat": "47.514542",
     "long": "-122.39438",
-    "imageName": "1653_1314_Endolyne-Park.jpg",
+    "imageName": "1653_1314_Endolyne-Park",
+    "slug": "endolyne-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 305,
@@ -3694,9 +4802,13 @@
     "zip_code": "98116",
     "lat": "47.5615176",
     "long": "-122.3931846",
-    "imageName": "4454_1316_Ercolini-Park.jpg",
+    "imageName": "4454_1316_Ercolini-Park",
+    "slug": "ercolini-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 306,
@@ -3707,9 +4819,13 @@
     "zip_code": "98116",
     "lat": "47.5937424",
     "long": "-122.3891882",
-    "imageName": "454_1375_Hamilton-Viewpoint-Park.jpg",
+    "imageName": "454_1375_Hamilton-Viewpoint-Park",
+    "slug": "hamilton-viewpoint-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 307,
@@ -3720,9 +4836,13 @@
     "zip_code": "98116",
     "lat": "47.578272",
     "long": "-122.384965",
-    "imageName": "456_1788_Hiawatha-Playfield.jpg",
+    "imageName": "456_1788_Hiawatha-Playfield",
+    "slug": "hiawatha-playfield",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 308,
@@ -3733,9 +4853,13 @@
     "zip_code": "98116",
     "lat": "47.577899",
     "long": "-122.405592",
-    "imageName": "4236_2539_Schmitz-Boulevard.jpg",
+    "imageName": "4236_2539_Schmitz-Boulevard",
+    "slug": "schmitz-boulevard",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 309,
@@ -3746,9 +4870,13 @@
     "zip_code": "98116",
     "lat": "47.574375",
     "long": "-122.400425",
-    "imageName": "465_1603_Schmitz-Preserve-Park.jpg",
+    "imageName": "465_1603_Schmitz-Preserve-Park",
+    "slug": "schmitz-preserve-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 310,
@@ -3759,9 +4887,13 @@
     "zip_code": "98117",
     "lat": "47.70439",
     "long": "-122.380095",
-    "imageName": "238_1199_Blue-Ridge-Circle.jpg",
+    "imageName": "238_1199_Blue-Ridge-Circle",
+    "slug": "blue-ridge-circle",
+    "ext": "jpg",
     "width": 2278,
-    "height": 2734
+    "height": 2734,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 311,
@@ -3772,9 +4904,12 @@
     "zip_code": "98117",
     "lat": "47.693703",
     "long": "-122.381394",
-    "imageName": "4070_1281_Crown-Hill-Glen.jpg",
+    "imageName": "4070_1281_Crown-Hill-Glen",
+    "slug": "crown-hill-glen",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "weight": 100,
     "live": true
   },
   {
@@ -3786,9 +4921,13 @@
     "zip_code": "98117",
     "lat": "47.686852",
     "long": "-122.403454",
-    "imageName": "243_1361_Golden-Gardens-Park.jpg",
+    "imageName": "243_1361_Golden-Gardens-Park",
+    "slug": "golden-gardens-park",
+    "ext": "jpg",
     "width": 4011,
-    "height": 2995
+    "height": 2995,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 313,
@@ -3799,9 +4938,13 @@
     "zip_code": "98117",
     "lat": "47.695416",
     "long": "-122.378878",
-    "imageName": "251_1175_Soundview-Playfield.jpg",
+    "imageName": "251_1175_Soundview-Playfield",
+    "slug": "soundview-playfield",
+    "ext": "jpg",
     "width": 3865,
-    "height": 2715
+    "height": 2715,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 314,
@@ -3812,9 +4955,13 @@
     "zip_code": "98118",
     "lat": "47.524191",
     "long": "-122.263223",
-    "imageName": "440_1925_Beer-Sheva-Park.jpg",
+    "imageName": "440_1925_Beer-Sheva-Park",
+    "slug": "beer-sheva-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 315,
@@ -3825,9 +4972,12 @@
     "zip_code": "98118",
     "lat": "47.518998",
     "long": "-122.284294",
-    "imageName": "436_1077_Benefit-Playground.jpg",
+    "imageName": "436_1077_Benefit-Playground",
+    "slug": "benefit-playground",
+    "ext": "jpg",
     "width": 4032,
     "height": 2136,
+    "weight": 100,
     "live": true
   },
   {
@@ -3839,9 +4989,13 @@
     "zip_code": "98118",
     "lat": "47.548387",
     "long": "-122.2821",
-    "imageName": "402_1115_Brighton-Playfield.jpg",
+    "imageName": "402_1115_Brighton-Playfield",
+    "slug": "brighton-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 317,
@@ -3852,9 +5006,13 @@
     "zip_code": "98118",
     "lat": "47.520135",
     "long": "-122.258376",
-    "imageName": "421_1249_Chinook-Beach-Park.jpg",
+    "imageName": "421_1249_Chinook-Beach-Park",
+    "slug": "chinook-beach-park",
+    "ext": "jpg",
     "width": 4025,
-    "height": 2929
+    "height": 2929,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 318,
@@ -3865,9 +5023,13 @@
     "zip_code": "98118",
     "lat": "47.519093",
     "long": "-122.261484",
-    "imageName": "3948_1333_Fletcher-Place.jpg",
+    "imageName": "3948_1333_Fletcher-Place",
+    "slug": "fletcher-place",
+    "ext": "jpg",
     "width": 3926,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 319,
@@ -3878,9 +5040,13 @@
     "zip_code": "98118",
     "lat": "47.554207",
     "long": "-122.28455",
-    "imageName": "4413_1389_Hitt-s-Hill-Park.jpg",
+    "imageName": "4413_1389_Hitt-s-Hill-Park",
+    "slug": "hitt-s-hill-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 320,
@@ -3891,9 +5057,13 @@
     "zip_code": "98118",
     "lat": "47.514312",
     "long": "-122.260062",
-    "imageName": "439_1089_Hutchinson-Playground.jpg",
+    "imageName": "439_1089_Hutchinson-Playground",
+    "slug": "hutchinson-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 322,
@@ -3904,9 +5074,13 @@
     "zip_code": "98118",
     "lat": "47.562981",
     "long": "-122.268295",
-    "imageName": "4040_1465_Lakewood-Moorage.jpg",
+    "imageName": "4040_1465_Lakewood-Moorage",
+    "slug": "lakewood-moorage",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 323,
@@ -3917,9 +5091,13 @@
     "zip_code": "98118",
     "lat": "47.558831",
     "long": "-122.27006",
-    "imageName": "414_2167_Lakewood-Playfield.jpg",
+    "imageName": "414_2167_Lakewood-Playfield",
+    "slug": "lakewood-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 324,
@@ -3930,9 +5108,13 @@
     "zip_code": "98118",
     "lat": "47.536214",
     "long": "-122.278105",
-    "imageName": "403_1933_Othello-Playground.jpg",
+    "imageName": "403_1933_Othello-Playground",
+    "slug": "othello-playground",
+    "ext": "jpg",
     "width": 4029,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 325,
@@ -3943,9 +5125,13 @@
     "zip_code": "98118",
     "lat": "47.528948",
     "long": "-122.26283",
-    "imageName": "420_1957_Pritchard-Island-Beach.jpg",
+    "imageName": "420_1957_Pritchard-Island-Beach",
+    "slug": "pritchard-island-beach",
+    "ext": "jpg",
     "width": 3998,
-    "height": 2379
+    "height": 2379,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 326,
@@ -3956,9 +5142,13 @@
     "zip_code": "98118",
     "lat": "47.571222",
     "long": "-122.277162",
-    "imageName": "425_1844_Stan-Sayres-Memorial-Park.jpg",
+    "imageName": "425_1844_Stan-Sayres-Memorial-Park",
+    "slug": "stan-sayres-memorial-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 327,
@@ -3969,9 +5159,13 @@
     "zip_code": "98118",
     "lat": "47.51783",
     "long": "-122.268561",
-    "imageName": "290_1633_Sturtevant-Ravine.jpg",
+    "imageName": "290_1633_Sturtevant-Ravine",
+    "slug": "sturtevant-ravine",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 328,
@@ -3982,9 +5176,13 @@
     "zip_code": "98119",
     "lat": "47.636097",
     "long": "-122.372985",
-    "imageName": "281_2545_12th-and-Howe-Play-Park.jpg",
+    "imageName": "281_2545_12th-and-Howe-Play-Park",
+    "slug": "12th-and-howe-play-park",
+    "ext": "jpg",
     "width": 4005,
-    "height": 2987
+    "height": 2987,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 329,
@@ -3995,9 +5193,13 @@
     "zip_code": "98119",
     "lat": "47.602022",
     "long": "-122.329875",
-    "imageName": "306_1252_City-Hall-Park.jpg",
+    "imageName": "306_1252_City-Hall-Park",
+    "slug": "city-hall-park",
+    "ext": "jpg",
     "width": 4015,
-    "height": 2538
+    "height": 2538,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 330,
@@ -4008,9 +5210,13 @@
     "zip_code": "98119",
     "lat": "47.627317",
     "long": "-122.367207",
-    "imageName": "314_1442_Kinnear-Park.jpg",
+    "imageName": "314_1442_Kinnear-Park",
+    "slug": "kinnear-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 331,
@@ -4021,9 +5227,13 @@
     "zip_code": "98119",
     "lat": "47.629436",
     "long": "-122.366805",
-    "imageName": "320_1525_Marshall-Park.jpg",
+    "imageName": "320_1525_Marshall-Park",
+    "slug": "marshall-park",
+    "ext": "jpg",
     "width": 3953,
-    "height": 2919
+    "height": 2919,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 332,
@@ -4034,9 +5244,13 @@
     "zip_code": "98119",
     "lat": "47.640849",
     "long": "-122.37141",
-    "imageName": "3987_1738_Soundview-Terrace.jpg",
+    "imageName": "3987_1738_Soundview-Terrace",
+    "slug": "soundview-terrace",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2666
+    "height": 2666,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 333,
@@ -4047,9 +5261,13 @@
     "zip_code": "98119",
     "lat": "47.633353",
     "long": "-122.373209",
-    "imageName": "234_2416_SW-Queen-Anne-Greenbelt.jpg",
+    "imageName": "234_2416_SW-Queen-Anne-Greenbelt",
+    "slug": "sw-queen-anne-greenbelt",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 334,
@@ -4060,9 +5278,13 @@
     "zip_code": "98121",
     "lat": "47.614696",
     "long": "-122.344866",
-    "imageName": "4472_2543_Bell-Street-Park.jpg",
+    "imageName": "4472_2543_Bell-Street-Park",
+    "slug": "bell-street-park",
+    "ext": "jpg",
     "width": 3731,
-    "height": 2633
+    "height": 2633,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 335,
@@ -4073,9 +5295,13 @@
     "zip_code": "98121",
     "lat": "47.613889",
     "long": "-122.350776",
-    "imageName": "4415_1186_Belltown-Cottage-Park.jpg",
+    "imageName": "4415_1186_Belltown-Cottage-Park",
+    "slug": "belltown-cottage-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 337,
@@ -4086,9 +5312,13 @@
     "zip_code": "98122",
     "lat": "47.607427",
     "long": "-122.316455",
-    "imageName": "4467_2382_12th-Ave-Square-Park.jpg",
+    "imageName": "4467_2382_12th-Ave-Square-Park",
+    "slug": "12th-ave-square-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 338,
@@ -4099,9 +5329,13 @@
     "zip_code": "98122",
     "lat": "47.589841",
     "long": "-122.303029",
-    "imageName": "4245_1190_Benvenuto-Viewpoint.jpg",
+    "imageName": "4245_1190_Benvenuto-Viewpoint",
+    "slug": "benvenuto-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 339,
@@ -4112,9 +5346,13 @@
     "zip_code": "98122",
     "lat": "47.604999",
     "long": "-122.320952",
-    "imageName": "348_0_Boren-Place.jpg",
+    "imageName": "348_0_Boren-Place",
+    "slug": "boren-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2842
+    "height": 2842,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 340,
@@ -4125,9 +5363,13 @@
     "zip_code": "98122",
     "lat": "47.587625",
     "long": "-122.301957",
-    "imageName": "406_1121_Colman-Playground.jpg",
+    "imageName": "406_1121_Colman-Playground",
+    "slug": "colman-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 341,
@@ -4138,9 +5380,13 @@
     "zip_code": "98122",
     "lat": "47.607098",
     "long": "-122.301412",
-    "imageName": "353_1130_Garfield-Playfield.jpg",
+    "imageName": "353_1130_Garfield-Playfield",
+    "slug": "garfield-playfield",
+    "ext": "jpg",
     "width": 3985,
-    "height": 2963
+    "height": 2963,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 342,
@@ -4151,9 +5397,13 @@
     "zip_code": "98122",
     "lat": "47.607709",
     "long": "-122.296568",
-    "imageName": "3759_1359_Gerber-Park.jpg",
+    "imageName": "3759_1359_Gerber-Park",
+    "slug": "gerber-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 343,
@@ -4164,9 +5414,13 @@
     "zip_code": "98122",
     "lat": "47.617309",
     "long": "-122.300994",
-    "imageName": "4426_1392_Homer-Harris-Park.jpg",
+    "imageName": "4426_1392_Homer-Harris-Park",
+    "slug": "homer-harris-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 344,
@@ -4177,9 +5431,13 @@
     "zip_code": "98122",
     "lat": "47.617518",
     "long": "-122.280313",
-    "imageName": "359_1397_Howell-Park.jpg",
+    "imageName": "359_1397_Howell-Park",
+    "slug": "howell-park",
+    "ext": "jpg",
     "width": 3990,
-    "height": 2970
+    "height": 2970,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 345,
@@ -4190,9 +5448,13 @@
     "zip_code": "98122",
     "lat": "47.604695",
     "long": "-122.287835",
-    "imageName": "263_1808_Leschi-Lake-Dell-Natural-Area.jpg",
+    "imageName": "263_1808_Leschi-Lake-Dell-Natural-Area",
+    "slug": "leschi-lake-dell-natural-area",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 346,
@@ -4203,9 +5465,13 @@
     "zip_code": "98122",
     "lat": "47.611022",
     "long": "-122.289885",
-    "imageName": "371_1147_Madrona-Playground.jpg",
+    "imageName": "371_1147_Madrona-Playground",
+    "slug": "madrona-playground",
+    "ext": "jpg",
     "width": 2913,
-    "height": 3977
+    "height": 3977,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 347,
@@ -4216,9 +5482,13 @@
     "zip_code": "98122",
     "lat": "47.611456",
     "long": "-122.285412",
-    "imageName": "2856_1474_Madrona-Ravine.jpg",
+    "imageName": "2856_1474_Madrona-Ravine",
+    "slug": "madrona-ravine",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 348,
@@ -4229,9 +5499,13 @@
     "zip_code": "98122",
     "lat": "47.608732",
     "long": "-122.294573",
-    "imageName": "4403_1557_Nora-s-Woods.jpg",
+    "imageName": "4403_1557_Nora-s-Woods",
+    "slug": "nora-s-woods",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 349,
@@ -4242,9 +5516,13 @@
     "zip_code": "98122",
     "lat": "47.602723",
     "long": "-122.290602",
-    "imageName": "378_2239_Peppi-s-Playground.jpg",
+    "imageName": "378_2239_Peppi-s-Playground",
+    "slug": "peppi-s-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 350,
@@ -4255,9 +5533,13 @@
     "zip_code": "98122",
     "lat": "47.617053",
     "long": "-122.299142",
-    "imageName": "387_1951_Plum-Tree-Park.jpg",
+    "imageName": "387_1951_Plum-Tree-Park",
+    "slug": "plum-tree-park",
+    "ext": "jpg",
     "width": 2883,
-    "height": 3925
+    "height": 3925,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 351,
@@ -4268,9 +5550,13 @@
     "zip_code": "98122",
     "lat": "47.589982",
     "long": "-122.297814",
-    "imageName": "4242_1600_Sam-Smith-Park.jpg",
+    "imageName": "4242_1600_Sam-Smith-Park",
+    "slug": "sam-smith-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 352,
@@ -4281,9 +5567,13 @@
     "zip_code": "98122",
     "lat": "47.611801",
     "long": "-122.3124",
-    "imageName": "381_2523_Spring-Street-Mini-Park.jpg",
+    "imageName": "381_2523_Spring-Street-Mini-Park",
+    "slug": "spring-street-mini-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 353,
@@ -4294,9 +5584,30 @@
     "zip_code": "98122",
     "lat": "47.603091",
     "long": "-122.304648",
-    "imageName": "3117_2524_Spruce-Street-Mini-Park.jpg",
+    "imageName": "3117_2524_Spruce-Street-Mini-Park",
+    "slug": "spruce-street-mini-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
+  },
+  {
+    "id": 354,
+    "pmaid": "3913",
+    "locid": "2591",
+    "name": "T.T. Minor Playground",
+    "address": "1698 E Union St",
+    "zip_code": "98122",
+    "lat": "47.613111",
+    "long": "-122.310543",
+    "imageName": "3913_2591_TT-minor-playground",
+    "slug": "tt-minor-playground",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 355,
@@ -4307,9 +5618,13 @@
     "zip_code": "98122",
     "lat": "47.618021",
     "long": "-122.29294",
-    "imageName": "385_2530_William-Grose-Park.jpg",
+    "imageName": "385_2530_William-Grose-Park",
+    "slug": "william-grose-park",
+    "ext": "jpg",
     "width": 4011,
-    "height": 2929
+    "height": 2929,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 356,
@@ -4320,9 +5635,13 @@
     "zip_code": "98125",
     "lat": "47.703288",
     "long": "-122.323168",
-    "imageName": "4481_1075_Beaver-Pond-Natural-Area-on-Thornton-Creek.jpg",
+    "imageName": "4481_1075_Beaver-Pond-Natural-Area-on-Thornton-Creek",
+    "slug": "beaver-pond-natural-area-on-thornton-creek",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 357,
@@ -4333,9 +5652,13 @@
     "zip_code": "98125",
     "lat": "47.725808",
     "long": "-122.288042",
-    "imageName": "4167_1237_Cedar-Park.jpg",
+    "imageName": "4167_1237_Cedar-Park",
+    "slug": "cedar-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 358,
@@ -4346,9 +5669,13 @@
     "zip_code": "98125",
     "lat": "47.709964",
     "long": "-122.324674",
-    "imageName": "4456_1398_Hubbard-Homestead.jpg",
+    "imageName": "4456_1398_Hubbard-Homestead",
+    "slug": "hubbard-homestead",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 359,
@@ -4359,9 +5686,13 @@
     "zip_code": "98125",
     "lat": "47.704889",
     "long": "-122.312411",
-    "imageName": "4480_1099_Kingfisher-Natural-Area-on-Thornton-Creek.jpg",
+    "imageName": "4480_1099_Kingfisher-Natural-Area-on-Thornton-Creek",
+    "slug": "kingfisher-natural-area-on-thornton-creek",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 360,
@@ -4372,9 +5703,13 @@
     "zip_code": "98125",
     "lat": "47.731387",
     "long": "-122.294567",
-    "imageName": "297_1064_Little-Brook-Park.jpg",
+    "imageName": "297_1064_Little-Brook-Park",
+    "slug": "little-brook-park",
+    "ext": "jpg",
     "width": 3112,
-    "height": 1983
+    "height": 1983,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 361,
@@ -4385,9 +5720,13 @@
     "zip_code": "98125",
     "lat": "47.70326",
     "long": "-122.322269",
-    "imageName": "4434_1522_Maple-Leaf-Community-Garden.jpg",
+    "imageName": "4434_1522_Maple-Leaf-Community-Garden",
+    "slug": "maple-leaf-community-garden",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 362,
@@ -4398,9 +5737,13 @@
     "zip_code": "98125",
     "lat": "47.705771",
     "long": "-122.293493",
-    "imageName": "352_1107_Meadowbrook-Playfield.jpg",
+    "imageName": "352_1107_Meadowbrook-Playfield",
+    "slug": "meadowbrook-playfield",
+    "ext": "jpg",
     "width": 3880,
-    "height": 2822
+    "height": 2822,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 363,
@@ -4411,9 +5754,13 @@
     "zip_code": "98125",
     "lat": "47.707715",
     "long": "-122.292028",
-    "imageName": "4023_1155_Nathan-Hale-Playfield.jpg",
+    "imageName": "4023_1155_Nathan-Hale-Playfield",
+    "slug": "nathan-hale-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 364,
@@ -4424,9 +5771,13 @@
     "zip_code": "98125",
     "lat": "47.721775",
     "long": "-122.326124",
-    "imageName": "361_361_Northacres-Park.jpg",
+    "imageName": "361_361_Northacres-Park",
+    "slug": "northacres-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 365,
@@ -4437,9 +5788,13 @@
     "zip_code": "98125",
     "lat": "47.716436",
     "long": "-122.314628",
-    "imageName": "382_1157_Pinehurst-Playground.jpg",
+    "imageName": "382_1157_Pinehurst-Playground",
+    "slug": "pinehurst-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 366,
@@ -4450,9 +5805,13 @@
     "zip_code": "98125",
     "lat": "47.718937",
     "long": "-122.28006",
-    "imageName": "3998_1662_University-Lake-Shore-Place.jpg",
+    "imageName": "3998_1662_University-Lake-Shore-Place",
+    "slug": "university-lake-shore-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 367,
@@ -4463,9 +5822,13 @@
     "zip_code": "98125",
     "lat": "47.709155",
     "long": "-122.315554",
-    "imageName": "4443_1666_Victory-Creek-Park.jpg",
+    "imageName": "4443_1666_Victory-Creek-Park",
+    "slug": "victory-creek-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 368,
@@ -4476,9 +5839,13 @@
     "zip_code": "98125",
     "lat": "47.705672",
     "long": "-122.307834",
-    "imageName": "438_1875_Victory-Heights-Playground.jpg",
+    "imageName": "438_1875_Victory-Heights-Playground",
+    "slug": "victory-heights-playground",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 369,
@@ -4489,9 +5856,13 @@
     "zip_code": "98125",
     "lat": "47.717955",
     "long": "-122.299374",
-    "imageName": "4002_1668_Virgil-Flaim-Park.jpg",
+    "imageName": "4002_1668_Virgil-Flaim-Park",
+    "slug": "virgil-flaim-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 370,
@@ -4502,9 +5873,13 @@
     "zip_code": "98126",
     "lat": "47.580673",
     "long": "-122.376896",
-    "imageName": "447_1188_Belvedere-Park.jpg",
+    "imageName": "447_1188_Belvedere-Park",
+    "slug": "belvedere-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 371,
@@ -4515,9 +5890,13 @@
     "zip_code": "98126",
     "lat": "47.556242",
     "long": "-122.373161",
-    "imageName": "4154_1213_Camp-Long.jpg",
+    "imageName": "4154_1213_Camp-Long",
+    "slug": "camp-long",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 372,
@@ -4528,9 +5907,13 @@
     "zip_code": "98126",
     "lat": "47.553389",
     "long": "-122.296225",
-    "imageName": "408_1291_Dearborn-Park.jpg",
+    "imageName": "408_1291_Dearborn-Park",
+    "slug": "dearborn-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 373,
@@ -4541,9 +5924,13 @@
     "zip_code": "98126",
     "lat": "47.532805",
     "long": "-122.369545",
-    "imageName": "458_2534_EC-Hughes-Playground.jpg",
+    "imageName": "458_2534_EC-Hughes-Playground",
+    "slug": "ec-hughes-playground",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 374,
@@ -4554,9 +5941,13 @@
     "zip_code": "98126",
     "lat": "47.539206",
     "long": "-122.376716",
-    "imageName": "4463_1548_Myrtle-Reservoir.jpg",
+    "imageName": "4463_1548_Myrtle-Reservoir",
+    "slug": "myrtle-reservoir",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 375,
@@ -4567,9 +5958,13 @@
     "zip_code": "98126",
     "lat": "47.560222",
     "long": "-122.375859",
-    "imageName": "4465_1594_Rotary-Viewpoint.jpg",
+    "imageName": "4465_1594_Rotary-Viewpoint",
+    "slug": "rotary-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 376,
@@ -4580,9 +5975,13 @@
     "zip_code": "98126",
     "lat": "47.519496",
     "long": "-122.368881",
-    "imageName": "464_1595_Roxhill-Park.jpg",
+    "imageName": "464_1595_Roxhill-Park",
+    "slug": "roxhill-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 377,
@@ -4593,9 +5992,13 @@
     "zip_code": "98126",
     "lat": "47.589941",
     "long": "-122.381226",
-    "imageName": "455_1605_Seacrest-Park.jpg",
+    "imageName": "455_1605_Seacrest-Park",
+    "slug": "seacrest-park",
+    "ext": "jpg",
     "width": 3892,
-    "height": 2558
+    "height": 2558,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 378,
@@ -4606,9 +6009,13 @@
     "zip_code": "98126",
     "lat": "47.55986",
     "long": "-122.369657",
-    "imageName": "469_2566_West-Seattle-Golf-Course.jpg",
+    "imageName": "469_2566_West-Seattle-Golf-Course",
+    "slug": "west-seattle-golf-course",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 379,
@@ -4619,9 +6026,13 @@
     "zip_code": "98126",
     "lat": "47.562826",
     "long": "-122.374348",
-    "imageName": "472_2528_West-Seattle-Stadium.jpg",
+    "imageName": "472_2528_West-Seattle-Stadium",
+    "slug": "west-seattle-stadium",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 380,
@@ -4632,9 +6043,13 @@
     "zip_code": "98133",
     "lat": "47.717936",
     "long": "-122.355836",
-    "imageName": "3997_1207_Broadview-Park.jpg",
+    "imageName": "3997_1207_Broadview-Park",
+    "slug": "broadview-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 381,
@@ -4645,9 +6060,13 @@
     "zip_code": "98133",
     "lat": "47.705755",
     "long": "-122.336528",
-    "imageName": "291_1542_Mineral-Springs-Park.jpg",
+    "imageName": "291_1542_Mineral-Springs-Park",
+    "slug": "mineral-springs-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 383,
@@ -4658,9 +6077,13 @@
     "zip_code": "98136",
     "lat": "47.554041",
     "long": "-122.380549",
-    "imageName": "452_1127_Fairmount-Playfield.jpg",
+    "imageName": "452_1127_Fairmount-Playfield",
+    "slug": "fairmount-playfield",
+    "ext": "jpg",
     "width": 3914,
-    "height": 2866
+    "height": 2866,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 384,
@@ -4671,9 +6094,13 @@
     "zip_code": "98136",
     "lat": "47.5192",
     "long": "-122.383222",
-    "imageName": "453_1325_Fauntleroy-Park.jpg",
+    "imageName": "453_1325_Fauntleroy-Park",
+    "slug": "fauntleroy-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 385,
@@ -4684,9 +6111,13 @@
     "zip_code": "98136",
     "lat": "47.540367",
     "long": "-122.396728",
-    "imageName": "461_1067_Lowman-Beach-Park.jpg",
+    "imageName": "461_1067_Lowman-Beach-Park",
+    "slug": "lowman-beach-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 386,
@@ -4697,9 +6128,13 @@
     "zip_code": "98136",
     "lat": "47.545507",
     "long": "-122.387528",
-    "imageName": "4460_1545_Morgan-Junction.jpg",
+    "imageName": "4460_1545_Morgan-Junction",
+    "slug": "morgan-junction",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 387,
@@ -4710,9 +6145,13 @@
     "zip_code": "98136",
     "lat": "47.538315",
     "long": "-122.380151",
-    "imageName": "300_2403_Orchard-Street-Ravine.jpg",
+    "imageName": "300_2403_Orchard-Street-Ravine",
+    "slug": "orchard-street-ravine",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 388,
@@ -4723,9 +6162,13 @@
     "zip_code": "98136",
     "lat": "47.541492",
     "long": "-122.39309",
-    "imageName": "237_1810_Pelly-Place-Natural-Area.jpg",
+    "imageName": "237_1810_Pelly-Place-Natural-Area",
+    "slug": "pelly-place-natural-area",
+    "ext": "jpg",
     "width": 4025,
-    "height": 1331
+    "height": 1331,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 389,
@@ -4736,9 +6179,13 @@
     "zip_code": "98144",
     "lat": "47.577953",
     "long": "-122.317765",
-    "imageName": "4159_2387_12th-Ave-S-Viewpoint.jpg",
+    "imageName": "4159_2387_12th-Ave-S-Viewpoint",
+    "slug": "12th-ave-s-viewpoint",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 390,
@@ -4749,9 +6196,13 @@
     "zip_code": "98144",
     "lat": "47.589165",
     "long": "-122.30566",
-    "imageName": "4243_2541_Atlantic-Street-Park.jpg",
+    "imageName": "4243_2541_Atlantic-Street-Park",
+    "slug": "atlantic-street-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 391,
@@ -4762,9 +6213,13 @@
     "zip_code": "98144",
     "lat": "47.59192",
     "long": "-122.312163",
-    "imageName": "4400_1285_Daejeon-Park.jpg",
+    "imageName": "4400_1285_Daejeon-Park",
+    "slug": "daejeon-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 392,
@@ -4775,9 +6230,13 @@
     "zip_code": "98144",
     "lat": "47.59026",
     "long": "-122.285154",
-    "imageName": "4082_2505_Day-Street-Boat-Ramp.jpg",
+    "imageName": "4082_2505_Day-Street-Boat-Ramp",
+    "slug": "day-street-boat-ramp",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 393,
@@ -4788,9 +6247,13 @@
     "zip_code": "98144",
     "lat": "47.600278",
     "long": "-122.304179",
-    "imageName": "395_2496_Dr-Blanche-Lavizzo-Park.jpg",
+    "imageName": "395_2496_Dr-Blanche-Lavizzo-Park",
+    "slug": "dr-blanche-lavizzo-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 394,
@@ -4801,9 +6264,13 @@
     "zip_code": "98144",
     "lat": "47.590222",
     "long": "-122.287893",
-    "imageName": "4241_2507_East-Portal-Viewpoint.jpg",
+    "imageName": "4241_2507_East-Portal-Viewpoint",
+    "slug": "east-portal-viewpoint",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 395,
@@ -4814,9 +6281,13 @@
     "zip_code": "98144",
     "lat": "47.599557",
     "long": "-122.295868",
-    "imageName": "363_1334_Flo-Ware-Park.jpg",
+    "imageName": "363_1334_Flo-Ware-Park",
+    "slug": "flo-ware-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 396,
@@ -4827,9 +6298,13 @@
     "zip_code": "98144",
     "lat": "47.599506",
     "long": "-122.290256",
-    "imageName": "392_1345_Frink-Park.jpg",
+    "imageName": "392_1345_Frink-Park",
+    "slug": "frink-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 397,
@@ -4840,9 +6315,13 @@
     "zip_code": "98144",
     "lat": "47.573846",
     "long": "-122.287187",
-    "imageName": "3927_1396_Horton-Hill-Corridor.jpg",
+    "imageName": "3927_1396_Horton-Hill-Corridor",
+    "slug": "horton-hill-corridor",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2563
+    "height": 2563,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 398,
@@ -4853,9 +6332,13 @@
     "zip_code": "98144",
     "lat": "47.573877",
     "long": "-122.285153",
-    "imageName": "4032_2391_Hunter-Boulevard.jpg",
+    "imageName": "4032_2391_Hunter-Boulevard",
+    "slug": "hunter-boulevard",
+    "ext": "jpg",
     "width": 3996,
-    "height": 2976
+    "height": 2976,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 399,
@@ -4866,11 +6349,13 @@
     "zip_code": "98144",
     "lat": "47.588907",
     "long": "-122.300842",
-    "imageName": "3121_1437_Jimi-Hendrix-Park.jpg",
+    "imageName": "3121_1437_Jimi-Hendrix-Park",
+    "slug": "jimi-hendrix-park",
+    "ext": "jpg",
     "width": 3437,
     "height": 1673,
-    "live": true,
-    "weight": 400
+    "weight": 400,
+    "live": true
   },
   {
     "id": 401,
@@ -4881,9 +6366,13 @@
     "zip_code": "98144",
     "lat": "47.590421",
     "long": "-122.317642",
-    "imageName": "3122_1098_Katie-Blacks-Garden.jpg",
+    "imageName": "3122_1098_Katie-Blacks-Garden",
+    "slug": "katie-blacks-garden",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 402,
@@ -4894,9 +6383,13 @@
     "zip_code": "98144",
     "lat": "47.576058",
     "long": "-122.28372",
-    "imageName": "4024_1466_Lakewood-Triangle.jpg",
+    "imageName": "4024_1466_Lakewood-Triangle",
+    "slug": "lakewood-triangle",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 403,
@@ -4907,9 +6400,13 @@
     "zip_code": "98144",
     "lat": "47.580957",
     "long": "-122.288481",
-    "imageName": "419_2537_Mt-Baker-Park.jpg",
+    "imageName": "419_2537_Mt-Baker-Park",
+    "slug": "mt-baker-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 404,
@@ -4920,9 +6417,13 @@
     "zip_code": "98144",
     "lat": "47.580737",
     "long": "-122.28642",
-    "imageName": "4019_2595_Mt-Claire-Park.jpg",
+    "imageName": "4019_2595_Mt-Claire-Park",
+    "slug": "mt-claire-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 405,
@@ -4933,9 +6434,13 @@
     "zip_code": "98144",
     "lat": "47.601407",
     "long": "-122.307257",
-    "imageName": "390_2404_Pratt-Park.jpg",
+    "imageName": "390_2404_Pratt-Park",
+    "slug": "pratt-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 406,
@@ -4946,9 +6451,13 @@
     "zip_code": "98144",
     "lat": "47.570461",
     "long": "-122.295537",
-    "imageName": "580_1712_York-Park.jpg",
+    "imageName": "580_1712_York-Park",
+    "slug": "york-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 3584
+    "height": 3584,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 407,
@@ -4959,9 +6468,13 @@
     "zip_code": "98146",
     "lat": "47.505679",
     "long": "-122.387822",
-    "imageName": "485_1907_Arroyos-Natural-Area.jpg",
+    "imageName": "485_1907_Arroyos-Natural-Area",
+    "slug": "arroyos-natural-area",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 408,
@@ -4972,9 +6485,13 @@
     "zip_code": "98177",
     "lat": "47.733024",
     "long": "-122.364545",
-    "imageName": "301_1809_Llandover-Woods-Greenspace.jpg",
+    "imageName": "301_1809_Llandover-Woods-Greenspace",
+    "slug": "llandover-woods-greenspace",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 409,
@@ -4985,9 +6502,13 @@
     "zip_code": "98178",
     "lat": "47.506033",
     "long": "-122.247429",
-    "imageName": "411_1462_Lakeridge-Park.jpg",
+    "imageName": "411_1462_Lakeridge-Park",
+    "slug": "lakeridge-park",
+    "ext": "jpg",
     "width": 4029,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 410,
@@ -4998,9 +6519,13 @@
     "zip_code": "98178",
     "lat": "47.510319",
     "long": "-122.246841",
-    "imageName": "3972_1140_Lakeridge-Playfield.jpg",
+    "imageName": "3972_1140_Lakeridge-Playfield",
+    "slug": "lakeridge-playfield",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 411,
@@ -5011,9 +6536,13 @@
     "zip_code": "98178",
     "lat": "47.510613",
     "long": "-122.250038",
-    "imageName": "4014_1644_Thayer-Place.jpg",
+    "imageName": "4014_1644_Thayer-Place",
+    "slug": "thayer-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 412,
@@ -5024,9 +6553,13 @@
     "zip_code": "98199",
     "lat": "47.632345",
     "long": "-122.398685",
-    "imageName": "1000001_0_32nd-Ave-W-Boat-Launch.jpg",
+    "imageName": "1000001_0_32nd-Ave-W-Boat-Launch",
+    "slug": "32nd-ave-w-boat-launch",
+    "ext": "jpg",
     "width": 3965,
-    "height": 2935
+    "height": 2935,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 413,
@@ -5037,9 +6570,13 @@
     "zip_code": "98199",
     "lat": "47.650028",
     "long": "-122.415934",
-    "imageName": "4049_1233_Carleton-Highlands.jpg",
+    "imageName": "4049_1233_Carleton-Highlands",
+    "slug": "carleton-highlands",
+    "ext": "jpg",
     "width": 2757,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 414,
@@ -5050,9 +6587,13 @@
     "zip_code": "98199",
     "lat": "47.640584",
     "long": "-122.39106",
-    "imageName": "318_1311_Ella-Bailey-Park.jpg",
+    "imageName": "318_1311_Ella-Bailey-Park",
+    "slug": "ella-bailey-park",
+    "ext": "jpg",
     "width": 3990,
-    "height": 2740
+    "height": 2740,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 415,
@@ -5063,9 +6604,13 @@
     "zip_code": "98199",
     "lat": "47.66197",
     "long": "-122.401004",
-    "imageName": "246_1100_Kiwanis-Memorial-Preserve-Park.jpg",
+    "imageName": "246_1100_Kiwanis-Memorial-Preserve-Park",
+    "slug": "kiwanis-memorial-preserve-park",
+    "ext": "jpg",
     "width": 3024,
-    "height": 4032
+    "height": 4032,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 416,
@@ -5076,9 +6621,13 @@
     "zip_code": "98199",
     "lat": "47.632366",
     "long": "-122.398993",
-    "imageName": "317_1478_Magnolia-Park.jpg",
+    "imageName": "317_1478_Magnolia-Park",
+    "slug": "magnolia-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2925
+    "height": 2925,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 417,
@@ -5089,9 +6638,13 @@
     "zip_code": "98199",
     "lat": "47.643746",
     "long": "-122.399472",
-    "imageName": "319_2564_Magnolia-Playfield.jpg",
+    "imageName": "319_2564_Magnolia-Playfield",
+    "slug": "magnolia-playfield",
+    "ext": "jpg",
     "width": 3939,
-    "height": 2597
+    "height": 2597,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 418,
@@ -5102,9 +6655,13 @@
     "zip_code": "98199",
     "lat": "47.632602",
     "long": "-122.387679",
-    "imageName": "4433_1617_Smith-Cove.jpg",
+    "imageName": "4433_1617_Smith-Cove",
+    "slug": "smith-cove",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 419,
@@ -5115,9 +6672,13 @@
     "zip_code": "91601",
     "lat": "47.6391017",
     "long": "-122.41026",
-    "imageName": "__Magnolia-Boulevard.jpg",
+    "imageName": "__Magnolia-Boulevard",
+    "slug": "magnolia-boulevard",
+    "ext": "jpg",
     "width": 4006,
-    "height": 2052
+    "height": 2052,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 420,
@@ -5128,9 +6689,13 @@
     "zip_code": "98102",
     "lat": "47.6284241",
     "long": "-122.314591",
-    "imageName": "__Volunteer-Parkway.jpg",
+    "imageName": "__Volunteer-Parkway",
+    "slug": "volunteer-parkway",
+    "ext": "jpg",
     "width": 3946,
-    "height": 3000
+    "height": 3000,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 421,
@@ -5141,9 +6706,13 @@
     "zip_code": "98105",
     "lat": "47.6520661",
     "long": "-122.3159908",
-    "imageName": "__Fritz-Hedges-Waterway-Park.jpg",
+    "imageName": "__Fritz-Hedges-Waterway-Park",
+    "slug": "fritz-hedges-waterway-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2226
+    "height": 2226,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 422,
@@ -5154,9 +6723,13 @@
     "zip_code": "98105",
     "lat": "47.67189949999999",
     "long": "-122.3158493",
-    "imageName": "__Ravenna-Boulevard.jpg",
+    "imageName": "__Ravenna-Boulevard",
+    "slug": "ravenna-boulevard",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2016
+    "height": 2016,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 423,
@@ -5167,9 +6740,13 @@
     "zip_code": "98107",
     "lat": "47.6723655",
     "long": "-122.3735938",
-    "imageName": "__Gemenskap-Park.jpg",
+    "imageName": "__Gemenskap-Park",
+    "slug": "gemenskap-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 424,
@@ -5180,11 +6757,13 @@
     "zip_code": "98108",
     "lat": "47.5355061",
     "long": "-122.3229432",
-    "imageName": "__Georgetown-Pump-Station.jpg",
+    "imageName": "__Georgetown-Pump-Station",
+    "slug": "georgetown-pump-station",
+    "ext": "jpg",
     "width": 4032,
     "height": 2020,
-    "live": true,
-    "weight": 500
+    "weight": 500,
+    "live": true
   },
   {
     "id": 425,
@@ -5195,9 +6774,13 @@
     "zip_code": "98115",
     "lat": "47.6959099",
     "long": "-122.2780722",
-    "imageName": "__Burke-Gilman-Trail.jpg",
+    "imageName": "__Burke-Gilman-Trail",
+    "slug": "burke-gilman-trail",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2061
+    "height": 2061,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 426,
@@ -5208,9 +6791,13 @@
     "zip_code": "98118",
     "lat": "47.526372",
     "long": "-122.2652439",
-    "imageName": "__Rainier-Beach-Urban-Farm-and-Wetlands.jpg",
+    "imageName": "__Rainier-Beach-Urban-Farm-and-Wetlands",
+    "slug": "rainier-beach-urban-farm-and-wetlands",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 427,
@@ -5221,9 +6808,13 @@
     "zip_code": "98119",
     "lat": "47.6277505",
     "long": "-122.3625405",
-    "imageName": "__Kinnear-Place.jpg",
+    "imageName": "__Kinnear-Place",
+    "slug": "kinnear-place",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 428,
@@ -5234,9 +6825,13 @@
     "zip_code": "98119",
     "lat": "47.629588",
     "long": "-122.3613234",
-    "imageName": "__Queen-Anne-Boulevard.jpg",
+    "imageName": "__Queen-Anne-Boulevard",
+    "slug": "queen-anne-boulevard",
+    "ext": "jpg",
     "width": 3933,
-    "height": 2763
+    "height": 2763,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 429,
@@ -5247,11 +6842,13 @@
     "zip_code": "98121",
     "lat": "47.6166381",
     "long": "-122.3379068",
-    "imageName": "__Urban-Triangle-Park.jpg",
+    "imageName": "__Urban-Triangle-Park",
+    "slug": "urban-triangle-park",
+    "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "live": true,
-    "weight": 500
+    "weight": 500,
+    "live": true
   },
   {
     "id": 430,
@@ -5262,9 +6859,13 @@
     "zip_code": "98122",
     "lat": "47.616422",
     "long": "-122.3098456",
-    "imageName": "__Cayton-Corner-Park.jpg",
+    "imageName": "__Cayton-Corner-Park",
+    "slug": "cayton-corner-park",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2447
+    "height": 2447,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 431,
@@ -5275,9 +6876,13 @@
     "zip_code": "98125",
     "lat": "47.72298079999999",
     "long": "-122.2810049",
-    "imageName": "__NE-130th-Street-End.jpg",
+    "imageName": "__NE-130th-Street-End",
+    "slug": "ne-130th-street-end",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 432,
@@ -5288,9 +6893,13 @@
     "zip_code": "98126",
     "lat": "47.5408111",
     "long": "-122.3815842",
-    "imageName": "__Watton-Site.jpg",
+    "imageName": "__Watton-Site",
+    "slug": "watton-site",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 434,
@@ -5301,9 +6910,13 @@
     "zip_code": "98144",
     "lat": "47.5768663",
     "long": "-122.292468",
-    "imageName": "__Mount-Baker-Boulevard.jpg",
+    "imageName": "__Mount-Baker-Boulevard",
+    "slug": "mount-baker-boulevard",
+    "ext": "jpg",
     "width": 4032,
-    "height": 2028
+    "height": 2028,
+    "weight": 100,
+    "live": false
   },
   {
     "id": 435,
@@ -5314,8 +6927,12 @@
     "zip_code": "98144",
     "lat": "47.5766116",
     "long": "-122.2861267",
-    "imageName": "__Trudys-Triangle.jpg",
+    "imageName": "__Trudys-Triangle",
+    "slug": "trudys-triangle",
+    "ext": "jpg",
     "width": 4032,
-    "height": 3024
+    "height": 3024,
+    "weight": 100,
+    "live": false
   }
 ]

@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
   const displayable = dataList.filter(data => data.live).map(data => {
     return {
-      params: { id: data.id.toString() }
+      params: { slug: data.slug }
     }
   })
   return {
@@ -17,9 +17,9 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { id } }) {
+export async function getStaticProps({ params: { slug } }) {
   const data = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
-  return { props: { dataList: data.filter(d => d.id == id) } };
+  return { props: { dataList: data.filter(d => d.slug == slug) } };
 }
 
 export default function ({ dataList }) {
@@ -33,7 +33,7 @@ export default function ({ dataList }) {
         >
           <Image
             key={data.id}
-            src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
+            src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
             alt={data.name ?? "image"}
             layout="responsive"
             width={data.width}
