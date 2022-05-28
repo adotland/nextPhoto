@@ -2,7 +2,7 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { IMAGES_PATH, DATA_PATH, PROCESSED_IMAGES_PATH } = require('../config');
+const { IMAGES_PATH, PROCESSED_IMAGES_PATH, LIVE_DATA_PATH, BASE_DATA_PATH } = require('../config');
 const { formatImageFileName } = require('./helpers');
 
 const { program } = require('commander');
@@ -31,13 +31,13 @@ const ImageProcessor = {
         });
       }
     })
-    await ff.writeJson(retval, DATA_PATH, 'images.json', 2);
-    await ff.writeJson(rejects, DATA_PATH, 'imagesRejected.json', 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, 'images.json', 2);
+    await ff.writeJson(rejects, BASE_DATA_PATH, 'imagesRejected.json', 2);
   },
 
   getListAll: async function () {
     const data = await ff.readdir(IMAGES_PATH);
-    await ff.writeJson(data, DATA_PATH, 'imagesAll.json', 2);
+    await ff.writeJson(data, BASE_DATA_PATH, 'imagesAll.json', 2);
   },
 
   createWatermark: async function (imageWidth, imageHeight, dump) {
@@ -94,7 +94,7 @@ const ImageProcessor = {
   },
 
   processImages: async function () {
-    const imageDataList = await ff.readJson(DATA_PATH, 'images.json');
+    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     for (let i = 0, len = imageDataList.length; i < len; i++) {
       const imageFileName = `${imageDataList[i].pmaid}_${imageDataList[i].locid}_${imageDataList[i].imageName}`;
       const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);

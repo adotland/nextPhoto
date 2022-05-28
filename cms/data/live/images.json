@@ -1,0 +1,2504 @@
+[
+  {
+    "pmaid": "1000001",
+    "locid": "0",
+    "imageName": "32nd-Ave-W-Boat-Launch.jpg",
+    "parsed": "NDAVEWBOATLAUNCH"
+  },
+  {
+    "pmaid": "1000002",
+    "locid": "0",
+    "imageName": "Adams-Street-Boat-Ramp.jpg",
+    "parsed": "ADAMSSTREETBOATRAMP"
+  },
+  {
+    "pmaid": "1000003",
+    "locid": "0",
+    "imageName": "Eddie-Vine-Boat-Ramp.jpg",
+    "parsed": "EDDIEVINEBOATRAMP"
+  },
+  {
+    "pmaid": "1000004",
+    "locid": "0",
+    "imageName": "Wallingford-Steps.jpg",
+    "parsed": "WALLINGFORDSTEPS"
+  },
+  {
+    "pmaid": "1000292",
+    "locid": "292",
+    "imageName": "Woodland-Park-Rose-Garden.jpg",
+    "parsed": "WOODLANDPARKROSEGARDEN"
+  },
+  {
+    "pmaid": "1000342",
+    "locid": "0",
+    "imageName": "Bayview-Kinnear-(Lower-Kerry-Park).jpg",
+    "parsed": "BAYVIEWKINNEARLOWERKERRYPARK"
+  },
+  {
+    "pmaid": "1000393",
+    "locid": "0",
+    "imageName": "Japanese-Garden.jpg",
+    "parsed": "JAPANESEGARDEN"
+  },
+  {
+    "pmaid": "1000399",
+    "locid": "0",
+    "imageName": "Volunteer-Park-Conservatory.jpg",
+    "parsed": "VOLUNTEERPARKCONSERVATORY"
+  },
+  {
+    "pmaid": "1104",
+    "locid": "1149",
+    "imageName": "Meridian-Playground.jpg",
+    "parsed": "MERIDIANPLAYGROUND"
+  },
+  {
+    "pmaid": "1106",
+    "locid": "1756",
+    "imageName": "Thomas-C.jpg",
+    "parsed": "THOMASC"
+  },
+  {
+    "pmaid": "114",
+    "locid": "1434",
+    "imageName": "Jefferson-Park.jpg",
+    "parsed": "JEFFERSONPARK"
+  },
+  {
+    "pmaid": "1556",
+    "locid": "1898",
+    "imageName": "Arapahoe-Triangle.jpg",
+    "parsed": "ARAPAHOETRIANGLE"
+  },
+  {
+    "pmaid": "1630",
+    "locid": "1523",
+    "imageName": "Maple-School-Ravine.jpg",
+    "parsed": "MAPLESCHOOLRAVINE"
+  },
+  {
+    "pmaid": "1653",
+    "locid": "1314",
+    "imageName": "Endolyne-Park.jpg",
+    "parsed": "ENDOLYNEPARK"
+  },
+  {
+    "pmaid": "234",
+    "locid": "2416",
+    "imageName": "SW-Queen-Anne-Greenbelt.jpg",
+    "parsed": "SWQUEENANNEGREENBELT"
+  },
+  {
+    "pmaid": "237",
+    "locid": "1810",
+    "imageName": "Pelly-Place-Natural-Area.jpg",
+    "parsed": "PELLYPLACENATURALAREA"
+  },
+  {
+    "pmaid": "238",
+    "locid": "1199",
+    "imageName": "Blue-Ridge-Circle.jpg",
+    "parsed": "BLUERIDGECIRCLE"
+  },
+  {
+    "pmaid": "239",
+    "locid": "1200",
+    "imageName": "Blue-Ridge-Place.jpg",
+    "parsed": "BLUERIDGEPLACE"
+  },
+  {
+    "pmaid": "240",
+    "locid": "1227",
+    "imageName": "Carkeek-Park.jpg",
+    "parsed": "CARKEEKPARK"
+  },
+  {
+    "pmaid": "241",
+    "locid": "2552",
+    "imageName": "BF-Day-Playground.jpg",
+    "parsed": "BFDAYPLAYGROUND"
+  },
+  {
+    "pmaid": "242",
+    "locid": "1134",
+    "imageName": "Gilman-Playground.jpg",
+    "parsed": "GILMANPLAYGROUND"
+  },
+  {
+    "pmaid": "243",
+    "locid": "1361",
+    "imageName": "Golden-Gardens-Park.jpg",
+    "parsed": "GOLDENGARDENSPARK"
+  },
+  {
+    "pmaid": "244",
+    "locid": "1886",
+    "imageName": "Albert-Davis-Park.jpg",
+    "parsed": "ALBERTDAVISPARK"
+  },
+  {
+    "pmaid": "245",
+    "locid": "1371",
+    "imageName": "Greenwood-Triangle.jpg",
+    "parsed": "GREENWOODTRIANGLE"
+  },
+  {
+    "pmaid": "246",
+    "locid": "1100",
+    "imageName": "Kiwanis-Memorial-Preserve-Park.jpg",
+    "parsed": "KIWANISMEMORIALPRESERVEPARK"
+  },
+  {
+    "pmaid": "247",
+    "locid": "247",
+    "imageName": "North-Beach-Park.jpg",
+    "parsed": "NORTHBEACHPARK"
+  },
+  {
+    "pmaid": "248",
+    "locid": "1812",
+    "imageName": "Ross-Playground.jpg",
+    "parsed": "ROSSPLAYGROUND"
+  },
+  {
+    "pmaid": "249",
+    "locid": "1599",
+    "imageName": "Salmon-Bay-Park.jpg",
+    "parsed": "SALMONBAYPARK"
+  },
+  {
+    "pmaid": "250",
+    "locid": "2493",
+    "imageName": "Sandel-Playground.jpg",
+    "parsed": "SANDELPLAYGROUND"
+  },
+  {
+    "pmaid": "251",
+    "locid": "1175",
+    "imageName": "Soundview-Playfield.jpg",
+    "parsed": "SOUNDVIEWPLAYFIELD"
+  },
+  {
+    "pmaid": "252",
+    "locid": "1638",
+    "imageName": "Sunset-Hill-Park.jpg",
+    "parsed": "SUNSETHILLPARK"
+  },
+  {
+    "pmaid": "254",
+    "locid": "1571",
+    "imageName": "Ravenna-Ravine.jpg",
+    "parsed": "RAVENNARAVINE"
+  },
+  {
+    "pmaid": "260",
+    "locid": "2504",
+    "imageName": "College-Street-Ravine.jpg",
+    "parsed": "COLLEGESTREETRAVINE"
+  },
+  {
+    "pmaid": "263",
+    "locid": "1808",
+    "imageName": "Leschi-Lake-Dell-Natural-Area.jpg",
+    "parsed": "LESCHILAKEDELLNATURALAREA"
+  },
+  {
+    "pmaid": "264",
+    "locid": "2437",
+    "imageName": "Longfellow-Creek-Greenspace.jpg",
+    "parsed": "LONGFELLOWCREEKGREENSPACE"
+  },
+  {
+    "pmaid": "274",
+    "locid": "1943",
+    "imageName": "Piers-62-and-63.jpg",
+    "parsed": "PIERSAND"
+  },
+  {
+    "pmaid": "275",
+    "locid": "2242",
+    "imageName": "Pipers-Creek-Natural-Area.jpg",
+    "parsed": "PIPERSCREEKNATURALAREA"
+  },
+  {
+    "pmaid": "277",
+    "locid": "1543",
+    "imageName": "Mock-Creek-Ravine.jpg",
+    "parsed": "MOCKCREEKRAVINE"
+  },
+  {
+    "pmaid": "278",
+    "locid": "1814",
+    "imageName": "Wolf-Creek-Ravine-Natural-Area.jpg",
+    "parsed": "WOLFCREEKRAVINENATURALAREA"
+  },
+  {
+    "pmaid": "279",
+    "locid": "2618",
+    "imageName": "Northeast-Queen-Anne-Greenbelt.jpg",
+    "parsed": "NORTHEASTQUEENANNEGREENBELT"
+  },
+  {
+    "pmaid": "281",
+    "locid": "2545",
+    "imageName": "12th-and-Howe-Play-Park.jpg",
+    "parsed": "THANDHOWEPLAYPARK"
+  },
+  {
+    "pmaid": "282",
+    "locid": "1945",
+    "imageName": "Pigeon-Point-Park.jpg",
+    "parsed": "PIGEONPOINTPARK"
+  },
+  {
+    "pmaid": "2840",
+    "locid": "1911",
+    "imageName": "Baker-Park-on-Crown-Hill.jpg",
+    "parsed": "BAKERPARKONCROWNHILL"
+  },
+  {
+    "pmaid": "2848",
+    "locid": "2848",
+    "imageName": "St-Marks-Greenbelt.jpg",
+    "parsed": "STMARKSGREENBELT"
+  },
+  {
+    "pmaid": "2856",
+    "locid": "1474",
+    "imageName": "Madrona-Ravine.jpg",
+    "parsed": "MADRONARAVINE"
+  },
+  {
+    "pmaid": "286",
+    "locid": "1059",
+    "imageName": "Licton-Springs-Park.jpg",
+    "parsed": "LICTONSPRINGSPARK"
+  },
+  {
+    "pmaid": "287",
+    "locid": "1128",
+    "imageName": "Froula-Playground.jpg",
+    "parsed": "FROULAPLAYGROUND"
+  },
+  {
+    "pmaid": "288",
+    "locid": "1113",
+    "imageName": "Bitter-Lake-Playfield.jpg",
+    "parsed": "BITTERLAKEPLAYFIELD"
+  },
+  {
+    "pmaid": "289",
+    "locid": "1146",
+    "imageName": "Loyal-Heights-Playfield.jpg",
+    "parsed": "LOYALHEIGHTSPLAYFIELD"
+  },
+  {
+    "pmaid": "290",
+    "locid": "1633",
+    "imageName": "Sturtevant-Ravine.jpg",
+    "parsed": "STURTEVANTRAVINE"
+  },
+  {
+    "pmaid": "291",
+    "locid": "1542",
+    "imageName": "Mineral-Springs-Park.jpg",
+    "parsed": "MINERALSPRINGSPARK"
+  },
+  {
+    "pmaid": "2927",
+    "locid": "1894",
+    "imageName": "Andover-Place.jpg",
+    "parsed": "ANDOVERPLACE"
+  },
+  {
+    "pmaid": "292",
+    "locid": "1815",
+    "imageName": "Woodland Park.jpg",
+    "parsed": "WOODLANDPARK"
+  },
+  {
+    "pmaid": "293",
+    "locid": "1349",
+    "imageName": "Gas-Works-Park-(2).jpg",
+    "parsed": "GASWORKSPARK"
+  },
+  {
+    "pmaid": "293",
+    "locid": "1349",
+    "imageName": "Gas-Works-Park.jpg",
+    "parsed": "GASWORKSPARK"
+  },
+  {
+    "pmaid": "2956",
+    "locid": "2487",
+    "imageName": "North-Passage-Point-Park.jpg",
+    "parsed": "NORTHPASSAGEPOINTPARK"
+  },
+  {
+    "pmaid": "295",
+    "locid": "1276",
+    "imageName": "Cormorant-Cove.jpg",
+    "parsed": "CORMORANTCOVE"
+  },
+  {
+    "pmaid": "296",
+    "locid": "296",
+    "imageName": "3001-E-Madison.jpg",
+    "parsed": "EMADISON"
+  },
+  {
+    "pmaid": "2970",
+    "locid": "0",
+    "imageName": "Magnolia-Tidelands-Park.jpg",
+    "parsed": "MAGNOLIATIDELANDSPARK"
+  },
+  {
+    "pmaid": "2975",
+    "locid": "1323",
+    "imageName": "Fairview-Park.jpg",
+    "parsed": "FAIRVIEWPARK"
+  },
+  {
+    "pmaid": "297",
+    "locid": "1064",
+    "imageName": "Little-Brook-Park.jpg",
+    "parsed": "LITTLEBROOKPARK"
+  },
+  {
+    "pmaid": "298",
+    "locid": "1880",
+    "imageName": "Marvin's-Garden.jpg",
+    "parsed": "MARVINSGARDEN"
+  },
+  {
+    "pmaid": "3005",
+    "locid": "1930",
+    "imageName": "Open-Water-Park.jpg",
+    "parsed": "OPENWATERPARK"
+  },
+  {
+    "pmaid": "300",
+    "locid": "2403",
+    "imageName": "Orchard-Street-Ravine.jpg",
+    "parsed": "ORCHARDSTREETRAVINE"
+  },
+  {
+    "pmaid": "301",
+    "locid": "1809",
+    "imageName": "Llandover-Woods-Greenspace.jpg",
+    "parsed": "LLANDOVERWOODSGREENSPACE"
+  },
+  {
+    "pmaid": "3023",
+    "locid": "1412",
+    "imageName": "Interlaken-Park.jpg",
+    "parsed": "INTERLAKENPARK"
+  },
+  {
+    "pmaid": "303",
+    "locid": "1110",
+    "imageName": "Bayview-Playground.jpg",
+    "parsed": "BAYVIEWPLAYGROUND"
+  },
+  {
+    "pmaid": "304",
+    "locid": "1193",
+    "imageName": "Bhy-Kracke-Park.jpg",
+    "parsed": "BHYKRACKEPARK"
+  },
+  {
+    "pmaid": "305",
+    "locid": "1232",
+    "imageName": "Carleton-Center.jpg",
+    "parsed": "CARLETONCENTER"
+  },
+  {
+    "pmaid": "306",
+    "locid": "1252",
+    "imageName": "City-Hall-Park.jpg",
+    "parsed": "CITYHALLPARK"
+  },
+  {
+    "pmaid": "307",
+    "locid": "1366",
+    "imageName": "Green-Lake-Park.jpg",
+    "parsed": "GREENLAKEPARK"
+  },
+  {
+    "pmaid": "308",
+    "locid": "1272",
+    "imageName": "Commodore-Park.jpg",
+    "parsed": "COMMODOREPARK"
+  },
+  {
+    "pmaid": "3096",
+    "locid": "0",
+    "imageName": "Lambert-Place.jpg",
+    "parsed": "LAMBERTPLACE"
+  },
+  {
+    "pmaid": "3098",
+    "locid": "1667",
+    "imageName": "Viretta-Park.jpg",
+    "parsed": "VIRETTAPARK"
+  },
+  {
+    "pmaid": "309",
+    "locid": "1297",
+    "imageName": "Denny-Park.jpg",
+    "parsed": "DENNYPARK"
+  },
+  {
+    "pmaid": "3102",
+    "locid": "1211",
+    "imageName": "Cal-Anderson-Park-and-Bobby-Morris-Playfield.jpg",
+    "parsed": "CALANDERSONPARKANDBOBBYMORRISPLAYFIELD"
+  },
+  {
+    "pmaid": "310",
+    "locid": "1301",
+    "imageName": "Discovery-Park.jpg",
+    "parsed": "DISCOVERYPARK"
+  },
+  {
+    "pmaid": "3117",
+    "locid": "2524",
+    "imageName": "Spruce-Street-Mini-Park.jpg",
+    "parsed": "SPRUCESTREETMINIPARK"
+  },
+  {
+    "pmaid": "3119",
+    "locid": "1923",
+    "imageName": "Beacon-Place.jpg",
+    "parsed": "BEACONPLACE"
+  },
+  {
+    "pmaid": "3119",
+    "locid": "1923",
+    "imageName": "Beacon-Place.png",
+    "parsed": "BEACONPLACEPNG"
+  },
+  {
+    "pmaid": "311",
+    "locid": "1547",
+    "imageName": "Myrtle-Edwards-Park.jpg",
+    "parsed": "MYRTLEEDWARDSPARK"
+  },
+  {
+    "pmaid": "3121",
+    "locid": "1437",
+    "imageName": "Jimi-Hendrix-Park.jpg",
+    "parsed": "JIMIHENDRIXPARK"
+  },
+  {
+    "pmaid": "3121",
+    "locid": "1437",
+    "imageName": "Jimi-Hendrix-Park.png",
+    "parsed": "JIMIHENDRIXPARKPNG"
+  },
+  {
+    "pmaid": "3122",
+    "locid": "1098",
+    "imageName": "Katie-Blacks-Garden.jpg",
+    "parsed": "KATIEBLACKSGARDEN"
+  },
+  {
+    "pmaid": "312",
+    "locid": "2390",
+    "imageName": "Freeway-Park---Jim-Ellis-Freeway-Park.jpg",
+    "parsed": "FREEWAYPARKJIMELLISFREEWAYPARK"
+  },
+  {
+    "pmaid": "313",
+    "locid": "1407",
+    "imageName": "Interbay-Golf.jpg",
+    "parsed": "INTERBAYGOLF"
+  },
+  {
+    "pmaid": "3149",
+    "locid": "1324",
+    "imageName": "Fauntleroy-Creek-Ravine.jpg",
+    "parsed": "FAUNTLEROYCREEKRAVINE"
+  },
+  {
+    "pmaid": "314",
+    "locid": "1442",
+    "imageName": "Kinnear-Park.jpg",
+    "parsed": "KINNEARPARK"
+  },
+  {
+    "pmaid": "316",
+    "locid": "1054",
+    "imageName": "Lawton-Park.jpg",
+    "parsed": "LAWTONPARK"
+  },
+  {
+    "pmaid": "317",
+    "locid": "1478",
+    "imageName": "Magnolia-Park.jpg",
+    "parsed": "MAGNOLIAPARK"
+  },
+  {
+    "pmaid": "318",
+    "locid": "1311",
+    "imageName": "Ella-Bailey-Park.jpg",
+    "parsed": "ELLABAILEYPARK"
+  },
+  {
+    "pmaid": "319",
+    "locid": "2564",
+    "imageName": "Magnolia-Playfield.jpg",
+    "parsed": "MAGNOLIAPLAYFIELD"
+  },
+  {
+    "pmaid": "320",
+    "locid": "1525",
+    "imageName": "Marshall-Park.jpg",
+    "parsed": "MARSHALLPARK"
+  },
+  {
+    "pmaid": "321",
+    "locid": "1530",
+    "imageName": "Mayfair-Park.jpg",
+    "parsed": "MAYFAIRPARK"
+  },
+  {
+    "pmaid": "322",
+    "locid": "1926",
+    "imageName": "Observatory-Courts.jpg",
+    "parsed": "OBSERVATORYCOURTS"
+  },
+  {
+    "pmaid": "323",
+    "locid": "1927",
+    "imageName": "Occidental-Square.jpg",
+    "parsed": "OCCIDENTALSQUARE"
+  },
+  {
+    "pmaid": "324",
+    "locid": "2415",
+    "imageName": "Parsons-Gardens.jpg",
+    "parsed": "PARSONSGARDENS"
+  },
+  {
+    "pmaid": "325",
+    "locid": "1949",
+    "imageName": "Pioneer-Square.jpg",
+    "parsed": "PIONEERSQUARE"
+  },
+  {
+    "pmaid": "326",
+    "locid": "1956",
+    "imageName": "Prefontaine-Place.jpg",
+    "parsed": "PREFONTAINEPLACE"
+  },
+  {
+    "pmaid": "327",
+    "locid": "1790",
+    "imageName": "Jackson-Park-Golf-Course.jpg",
+    "parsed": "JACKSONPARKGOLFCOURSE"
+  },
+  {
+    "pmaid": "329",
+    "locid": "2535",
+    "imageName": "East-Queen-Anne-Playground.jpg",
+    "parsed": "EASTQUEENANNEPLAYGROUND"
+  },
+  {
+    "pmaid": "330",
+    "locid": "2561",
+    "imageName": "West-Queen-Anne-Playfield.jpg",
+    "parsed": "WESTQUEENANNEPLAYFIELD"
+  },
+  {
+    "pmaid": "331",
+    "locid": "1289",
+    "imageName": "David-Rodgers-Park.jpg",
+    "parsed": "DAVIDRODGERSPARK"
+  },
+  {
+    "pmaid": "332",
+    "locid": "1703",
+    "imageName": "Westlake-Park.jpg",
+    "parsed": "WESTLAKEPARK"
+  },
+  {
+    "pmaid": "333",
+    "locid": "1457",
+    "imageName": "Lake-City-Memorial-Triangle.jpg",
+    "parsed": "LAKECITYMEMORIALTRIANGLE"
+  },
+  {
+    "pmaid": "334",
+    "locid": "1705",
+    "imageName": "Westlake-Square.jpg",
+    "parsed": "WESTLAKESQUARE"
+  },
+  {
+    "pmaid": "335",
+    "locid": "2384",
+    "imageName": "Seattle-Aquarium.jpg",
+    "parsed": "SEATTLEAQUARIUM"
+  },
+  {
+    "pmaid": "338",
+    "locid": "1664",
+    "imageName": "Victor-Steinbrueck-Park.jpg",
+    "parsed": "VICTORSTEINBRUECKPARK"
+  },
+  {
+    "pmaid": "339",
+    "locid": "1536",
+    "imageName": "McGraw-Square.jpg",
+    "parsed": "MCGRAWSQUARE"
+  },
+  {
+    "pmaid": "340",
+    "locid": "1142",
+    "imageName": "Laurelhurst-Playfield.jpg",
+    "parsed": "LAURELHURSTPLAYFIELD"
+  },
+  {
+    "pmaid": "342",
+    "locid": "2374",
+    "imageName": "Kerry-Park.jpg",
+    "parsed": "KERRYPARK"
+  },
+  {
+    "pmaid": "343",
+    "locid": "1648",
+    "imageName": "Thorndyke-Park.jpg",
+    "parsed": "THORNDYKEPARK"
+  },
+  {
+    "pmaid": "344",
+    "locid": "1460",
+    "imageName": "Lake-Union-Park-(2).jpg",
+    "parsed": "LAKEUNIONPARK"
+  },
+  {
+    "pmaid": "345",
+    "locid": "1953",
+    "imageName": "Powell-Barnett-Park.jpg",
+    "parsed": "POWELLBARNETTPARK"
+  },
+  {
+    "pmaid": "346",
+    "locid": "1290",
+    "imageName": "Belmont-Place.jpg",
+    "parsed": "BELMONTPLACE"
+  },
+  {
+    "pmaid": "347",
+    "locid": "1529",
+    "imageName": "Matthews-Beach-Park.jpg",
+    "parsed": "MATTHEWSBEACHPARK"
+  },
+  {
+    "pmaid": "348",
+    "locid": "0",
+    "imageName": "Boren-Place.jpg",
+    "parsed": "BORENPLACE"
+  },
+  {
+    "pmaid": "349",
+    "locid": "1202",
+    "imageName": "Boylston-Place.jpg",
+    "parsed": "BOYLSTONPLACE"
+  },
+  {
+    "pmaid": "350",
+    "locid": "1117",
+    "imageName": "Cascade-Playground.jpg",
+    "parsed": "CASCADEPLAYGROUND"
+  },
+  {
+    "pmaid": "351",
+    "locid": "1331",
+    "imageName": "Firehouse-Mini-Park.jpg",
+    "parsed": "FIREHOUSEMINIPARK"
+  },
+  {
+    "pmaid": "352",
+    "locid": "1107",
+    "imageName": "Meadowbrook-Playfield.jpg",
+    "parsed": "MEADOWBROOKPLAYFIELD"
+  },
+  {
+    "pmaid": "353",
+    "locid": "1130",
+    "imageName": "Garfield-Playfield.jpg",
+    "parsed": "GARFIELDPLAYFIELD"
+  },
+  {
+    "pmaid": "354",
+    "locid": "1346",
+    "imageName": "Grand-Army-of-the-Republic-Cemetery.jpg",
+    "parsed": "GRANDARMYOFTHEREPUBLICCEMETERY"
+  },
+  {
+    "pmaid": "355",
+    "locid": "0",
+    "imageName": "Harborview-Park.jpg",
+    "parsed": "HARBORVIEWPARK"
+  },
+  {
+    "pmaid": "356",
+    "locid": "1377",
+    "imageName": "Harrison-Ridge-Greenbelt.jpg",
+    "parsed": "HARRISONRIDGEGREENBELT"
+  },
+  {
+    "pmaid": "357",
+    "locid": "2438",
+    "imageName": "Prentis-I.jpg",
+    "parsed": "PRENTISI"
+  },
+  {
+    "pmaid": "358",
+    "locid": "1093",
+    "imageName": "Hing-Hay-Park.jpg",
+    "parsed": "HINGHAYPARK"
+  },
+  {
+    "pmaid": "359",
+    "locid": "1397",
+    "imageName": "Howell-Park.jpg",
+    "parsed": "HOWELLPARK"
+  },
+  {
+    "pmaid": "361",
+    "locid": "361",
+    "imageName": "Northacres-Park.jpg",
+    "parsed": "NORTHACRESPARK"
+  },
+  {
+    "pmaid": "362",
+    "locid": "1066",
+    "imageName": "Louisa-Boren-Park.jpg",
+    "parsed": "LOUISABORENPARK"
+  },
+  {
+    "pmaid": "363",
+    "locid": "1334",
+    "imageName": "Flo-Ware-Park.jpg",
+    "parsed": "FLOWAREPARK"
+  },
+  {
+    "pmaid": "364",
+    "locid": "1413",
+    "imageName": "International-Children's-Park.jpg",
+    "parsed": "INTERNATIONALCHILDRENSPARK"
+  },
+  {
+    "pmaid": "365",
+    "locid": "1463",
+    "imageName": "Lakeview-Park.jpg",
+    "parsed": "LAKEVIEWPARK"
+  },
+  {
+    "pmaid": "366",
+    "locid": "1464",
+    "imageName": "Lakeview-Place.jpg",
+    "parsed": "LAKEVIEWPLACE"
+  },
+  {
+    "pmaid": "367",
+    "locid": "1057",
+    "imageName": "Leschi-Park.jpg",
+    "parsed": "LESCHIPARK"
+  },
+  {
+    "pmaid": "3694",
+    "locid": "2401",
+    "imageName": "West-Ewing-Mini-Park.jpg",
+    "parsed": "WESTEWINGMINIPARK"
+  },
+  {
+    "pmaid": "369",
+    "locid": "1071",
+    "imageName": "Madison-Park.jpg",
+    "parsed": "MADISONPARK"
+  },
+  {
+    "pmaid": "3703",
+    "locid": "1919",
+    "imageName": "Bar-S-Playground.jpg",
+    "parsed": "BARSPLAYGROUND"
+  },
+  {
+    "pmaid": "370",
+    "locid": "1473",
+    "imageName": "Madrona-Park.jpg",
+    "parsed": "MADRONAPARK"
+  },
+  {
+    "pmaid": "371",
+    "locid": "1147",
+    "imageName": "Madrona-Playground.jpg",
+    "parsed": "MADRONAPLAYGROUND"
+  },
+  {
+    "pmaid": "373",
+    "locid": "1150",
+    "imageName": "Miller-Playfield.jpg",
+    "parsed": "MILLERPLAYFIELD"
+  },
+  {
+    "pmaid": "374",
+    "locid": "1305",
+    "imageName": "East Montlake Park.jpg",
+    "parsed": "EASTMONTLAKEPARK"
+  },
+  {
+    "pmaid": "3759",
+    "locid": "1359",
+    "imageName": "Gerber-Park.jpg",
+    "parsed": "GERBERPARK"
+  },
+  {
+    "pmaid": "375",
+    "locid": "2402",
+    "imageName": "West-Montlake-Park.jpg",
+    "parsed": "WESTMONTLAKEPARK"
+  },
+  {
+    "pmaid": "376",
+    "locid": "2536",
+    "imageName": "Montlake-Playfield.jpg",
+    "parsed": "MONTLAKEPLAYFIELD"
+  },
+  {
+    "pmaid": "377",
+    "locid": "2431",
+    "imageName": "South-Passage-Point-Park.jpg",
+    "parsed": "SOUTHPASSAGEPOINTPARK"
+  },
+  {
+    "pmaid": "378",
+    "locid": "2239",
+    "imageName": "Peppi's-Playground.jpg",
+    "parsed": "PEPPISPLAYGROUND"
+  },
+  {
+    "pmaid": "379",
+    "locid": "1591",
+    "imageName": "Roanoke-Park.jpg",
+    "parsed": "ROANOKEPARK"
+  },
+  {
+    "pmaid": "380",
+    "locid": "1165",
+    "imageName": "Rogers-Playground.jpg",
+    "parsed": "ROGERSPLAYGROUND"
+  },
+  {
+    "pmaid": "381",
+    "locid": "2523",
+    "imageName": "Spring-Street-Mini-Park.jpg",
+    "parsed": "SPRINGSTREETMINIPARK"
+  },
+  {
+    "pmaid": "382",
+    "locid": "1157",
+    "imageName": "Pinehurst-Playground.jpg",
+    "parsed": "PINEHURSTPLAYGROUND"
+  },
+  {
+    "pmaid": "383",
+    "locid": "1635",
+    "imageName": "Summit-Place.jpg",
+    "parsed": "SUMMITPLACE"
+  },
+  {
+    "pmaid": "384",
+    "locid": "1076",
+    "imageName": "Tashkent-Park.jpg",
+    "parsed": "TASHKENTPARK"
+  },
+  {
+    "pmaid": "385",
+    "locid": "2530",
+    "imageName": "William-Grose-Park.jpg",
+    "parsed": "WILLIAMGROSEPARK"
+  },
+  {
+    "pmaid": "386",
+    "locid": "1044",
+    "imageName": "Thomas-St.jpg",
+    "parsed": "THOMASST"
+  },
+  {
+    "pmaid": "387",
+    "locid": "1951",
+    "imageName": "Plum-Tree-Park.jpg",
+    "parsed": "PLUMTREEPARK"
+  },
+  {
+    "pmaid": "3880",
+    "locid": "1440",
+    "imageName": "Keystone-Place.jpg",
+    "parsed": "KEYSTONEPLACE"
+  },
+  {
+    "pmaid": "3881",
+    "locid": "1105",
+    "imageName": "Maple-Leaf-Resevoir-Park.jpg",
+    "parsed": "MAPLELEAFRESEVOIRPARK"
+  },
+  {
+    "pmaid": "3887",
+    "locid": "1821",
+    "imageName": "Interbay-Athletic-Complex.jpg",
+    "parsed": "INTERBAYATHLETICCOMPLEX"
+  },
+  {
+    "pmaid": "3889",
+    "locid": "1643",
+    "imageName": "Terry-Pettus-Park.jpg",
+    "parsed": "TERRYPETTUSPARK"
+  },
+  {
+    "pmaid": "3899",
+    "locid": "1695",
+    "imageName": "Wedgwood-Square.jpg",
+    "parsed": "WEDGWOODSQUARE"
+  },
+  {
+    "pmaid": "3901",
+    "locid": "1639",
+    "imageName": "Sunset-Place.jpg",
+    "parsed": "SUNSETPLACE"
+  },
+  {
+    "pmaid": "3902",
+    "locid": "1235",
+    "imageName": "Cascade-Place.jpg",
+    "parsed": "CASCADEPLACE"
+  },
+  {
+    "pmaid": "3903",
+    "locid": "2500",
+    "imageName": "Sunnyside-Ave-N-Boat-Ramp.jpg",
+    "parsed": "SUNNYSIDEAVENBOATRAMP"
+  },
+  {
+    "pmaid": "3905",
+    "locid": "1399",
+    "imageName": "Hyde-Place.jpg",
+    "parsed": "HYDEPLACE"
+  },
+  {
+    "pmaid": "3907",
+    "locid": "1196",
+    "imageName": "Blaine-Place.jpg",
+    "parsed": "BLAINEPLACE"
+  },
+  {
+    "pmaid": "3909",
+    "locid": "1651",
+    "imageName": "Tilikum-Place.jpg",
+    "parsed": "TILIKUMPLACE"
+  },
+  {
+    "pmaid": "390",
+    "locid": "2404",
+    "imageName": "Pratt-Park.jpg",
+    "parsed": "PRATTPARK"
+  },
+  {
+    "pmaid": "3910",
+    "locid": "1332",
+    "imageName": "First-Hill-Park.jpg",
+    "parsed": "FIRSTHILLPARK"
+  },
+  {
+    "pmaid": "3913",
+    "locid": "2591",
+    "imageName": "TT-minor.jpg",
+    "parsed": "TTMINOR"
+  },
+  {
+    "pmaid": "3914",
+    "locid": "1891",
+    "imageName": "Alvin-Larkins-Park.jpg",
+    "parsed": "ALVINLARKINSPARK"
+  },
+  {
+    "pmaid": "3915",
+    "locid": "1449",
+    "imageName": "Kobe-Terrace.jpg",
+    "parsed": "KOBETERRACE"
+  },
+  {
+    "pmaid": "3916",
+    "locid": "1551",
+    "imageName": "Nantes-Park.jpg",
+    "parsed": "NANTESPARK"
+  },
+  {
+    "pmaid": "3917",
+    "locid": "1085",
+    "imageName": "Don-Armeni-Park.jpg",
+    "parsed": "DONARMENIPARK"
+  },
+  {
+    "pmaid": "3918",
+    "locid": "0",
+    "imageName": "McClellan-Place.jpg",
+    "parsed": "MCCLELLANPLACE"
+  },
+  {
+    "pmaid": "3919",
+    "locid": "1630",
+    "imageName": "Stevens-Place.jpg",
+    "parsed": "STEVENSPLACE"
+  },
+  {
+    "pmaid": "391",
+    "locid": "1570",
+    "imageName": "Ravenna-Park.jpg",
+    "parsed": "RAVENNAPARK"
+  },
+  {
+    "pmaid": "3920",
+    "locid": "1086",
+    "imageName": "Emma-Schmitz-Memorial-Overlook.jpg",
+    "parsed": "EMMASCHMITZMEMORIALOVERLOOK"
+  },
+  {
+    "pmaid": "3923",
+    "locid": "2615",
+    "imageName": "Martin-Luther-King,-Jr.jpg",
+    "parsed": "MARTINLUTHERKINGJR"
+  },
+  {
+    "pmaid": "3926",
+    "locid": "1816",
+    "imageName": "York-Playground.jpg",
+    "parsed": "YORKPLAYGROUND"
+  },
+  {
+    "pmaid": "3927",
+    "locid": "1396",
+    "imageName": "Horton-Hill-Corridor.jpg",
+    "parsed": "HORTONHILLCORRIDOR"
+  },
+  {
+    "pmaid": "3928",
+    "locid": "1616",
+    "imageName": "Sierra-Place.jpg",
+    "parsed": "SIERRAPLACE"
+  },
+  {
+    "pmaid": "3929",
+    "locid": "1468",
+    "imageName": "Landing-Parkway.jpg",
+    "parsed": "LANDINGPARKWAY"
+  },
+  {
+    "pmaid": "392",
+    "locid": "1345",
+    "imageName": "Frink-Park.jpg",
+    "parsed": "FRINKPARK"
+  },
+  {
+    "pmaid": "393",
+    "locid": "0",
+    "imageName": "Washington-Park-Arboretum.jpg",
+    "parsed": "WASHINGTONPARKARBORETUM"
+  },
+  {
+    "pmaid": "3941",
+    "locid": "1748",
+    "imageName": "Walt-Hundley-Playfield.jpg",
+    "parsed": "WALTHUNDLEYPLAYFIELD"
+  },
+  {
+    "pmaid": "3948",
+    "locid": "1333",
+    "imageName": "Fletcher-Place.jpg",
+    "parsed": "FLETCHERPLACE"
+  },
+  {
+    "pmaid": "394",
+    "locid": "1168",
+    "imageName": "Sacajawea-Playground.jpg",
+    "parsed": "SACAJAWEAPLAYGROUND"
+  },
+  {
+    "pmaid": "395",
+    "locid": "2496",
+    "imageName": "Dr-Blanche-Lavizzo-Park.jpg",
+    "parsed": "DRBLANCHELAVIZZOPARK"
+  },
+  {
+    "pmaid": "3966",
+    "locid": "1694",
+    "imageName": "Weather-Watch-Park.jpg",
+    "parsed": "WEATHERWATCHPARK"
+  },
+  {
+    "pmaid": "3972",
+    "locid": "1140",
+    "imageName": "Lakeridge-Playfield.jpg",
+    "parsed": "LAKERIDGEPLAYFIELD"
+  },
+  {
+    "pmaid": "3975",
+    "locid": "2596",
+    "imageName": "NE-60th-Street-Park.jpg",
+    "parsed": "NETHSTREETPARK"
+  },
+  {
+    "pmaid": "3977",
+    "locid": "0",
+    "imageName": "Eastlake-Triangle.jpg",
+    "parsed": "EASTLAKETRIANGLE"
+  },
+  {
+    "pmaid": "3979",
+    "locid": "1384",
+    "imageName": "Highland-Place.jpg",
+    "parsed": "HIGHLANDPLACE"
+  },
+  {
+    "pmaid": "397",
+    "locid": "1097",
+    "imageName": "Judkins-Park-and-Playfield.jpg",
+    "parsed": "JUDKINSPARKANDPLAYFIELD"
+  },
+  {
+    "pmaid": "3980",
+    "locid": "1298",
+    "imageName": "Denny-Blaine-Lake-Park.jpg",
+    "parsed": "DENNYBLAINELAKEPARK"
+  },
+  {
+    "pmaid": "3981",
+    "locid": "1631",
+    "imageName": "Stevens-Triangle.jpg",
+    "parsed": "STEVENSTRIANGLE"
+  },
+  {
+    "pmaid": "3982",
+    "locid": "1300",
+    "imageName": "Denny-Blaine-Park.jpg",
+    "parsed": "DENNYBLAINEPARK"
+  },
+  {
+    "pmaid": "3983",
+    "locid": "1383",
+    "imageName": "Highland-Drive-Parkway.jpg",
+    "parsed": "HIGHLANDDRIVEPARKWAY"
+  },
+  {
+    "pmaid": "3984",
+    "locid": "1040",
+    "imageName": "Queen-Anne-Bowl-Playfield.jpg",
+    "parsed": "QUEENANNEBOWLPLAYFIELD"
+  },
+  {
+    "pmaid": "3985",
+    "locid": "1261",
+    "imageName": "Coe-Play-Park.jpg",
+    "parsed": "COEPLAYPARK"
+  },
+  {
+    "pmaid": "3987",
+    "locid": "1738",
+    "imageName": "Soundview-Terrace.jpg",
+    "parsed": "SOUNDVIEWTERRACE"
+  },
+  {
+    "pmaid": "398",
+    "locid": "2394",
+    "imageName": "Warren-G-Magnuson-Park.jpg",
+    "parsed": "WARRENGMAGNUSONPARK"
+  },
+  {
+    "pmaid": "3993",
+    "locid": "2247",
+    "imageName": "Puget-Creek-Greenspace.jpg",
+    "parsed": "PUGETCREEKGREENSPACE"
+  },
+  {
+    "pmaid": "3997",
+    "locid": "1207",
+    "imageName": "Broadview-Park.jpg",
+    "parsed": "BROADVIEWPARK"
+  },
+  {
+    "pmaid": "3998",
+    "locid": "1662",
+    "imageName": "University-Lake-Shore-Place.jpg",
+    "parsed": "UNIVERSITYLAKESHOREPLACE"
+  },
+  {
+    "pmaid": "3999",
+    "locid": "1568",
+    "imageName": "Rainier-Place.jpg",
+    "parsed": "RAINIERPLACE"
+  },
+  {
+    "pmaid": "399",
+    "locid": "1669",
+    "imageName": "Volunteer-Park.jpg",
+    "parsed": "VOLUNTEERPARK"
+  },
+  {
+    "pmaid": "4000",
+    "locid": "1952",
+    "imageName": "Plymouth-Pillars-Park.jpg",
+    "parsed": "PLYMOUTHPILLARSPARK"
+  },
+  {
+    "pmaid": "4001",
+    "locid": "1095",
+    "imageName": "Inverness-Ravine-Park.jpg",
+    "parsed": "INVERNESSRAVINEPARK"
+  },
+  {
+    "pmaid": "4002",
+    "locid": "1668",
+    "imageName": "Virgil-Flaim-Park.jpg",
+    "parsed": "VIRGILFLAIMPARK"
+  },
+  {
+    "pmaid": "4006",
+    "locid": "1910",
+    "imageName": "Bagley-Viewpoint.jpg",
+    "parsed": "BAGLEYVIEWPOINT"
+  },
+  {
+    "pmaid": "4007",
+    "locid": "1658",
+    "imageName": "Union-Station-Square.jpg",
+    "parsed": "UNIONSTATIONSQUARE"
+  },
+  {
+    "pmaid": "4009",
+    "locid": "1938",
+    "imageName": "Parkmont-Place.jpg",
+    "parsed": "PARKMONTPLACE"
+  },
+  {
+    "pmaid": "400",
+    "locid": "1074",
+    "imageName": "Beacon-Hill-Playground.jpg",
+    "parsed": "BEACONHILLPLAYGROUND"
+  },
+  {
+    "pmaid": "4010",
+    "locid": "2546",
+    "imageName": "14th-Ave-NW-Boat-Ramp.jpg",
+    "parsed": "THAVENWBOATRAMP"
+  },
+  {
+    "pmaid": "4011",
+    "locid": "1341",
+    "imageName": "Fremont-Canal-Park.jpg",
+    "parsed": "FREMONTCANALPARK"
+  },
+  {
+    "pmaid": "4012",
+    "locid": "1308",
+    "imageName": "Eastmont-Place.jpg",
+    "parsed": "EASTMONTPLACE"
+  },
+  {
+    "pmaid": "4013",
+    "locid": "2395",
+    "imageName": "McGilvra-Boulevard.jpg",
+    "parsed": "MCGILVRABOULEVARD"
+  },
+  {
+    "pmaid": "4014",
+    "locid": "1644",
+    "imageName": "Thayer-Place.jpg",
+    "parsed": "THAYERPLACE"
+  },
+  {
+    "pmaid": "4015",
+    "locid": "1541",
+    "imageName": "Miller-Triangle.jpg",
+    "parsed": "MILLERTRIANGLE"
+  },
+  {
+    "pmaid": "4016",
+    "locid": "1707",
+    "imageName": "Williams-Place.jpg",
+    "parsed": "WILLIAMSPLACE"
+  },
+  {
+    "pmaid": "4017",
+    "locid": "1275",
+    "imageName": "Corliss-Place.jpg",
+    "parsed": "CORLISSPLACE"
+  },
+  {
+    "pmaid": "4018",
+    "locid": "1280",
+    "imageName": "Crescent-Place.jpg",
+    "parsed": "CRESCENTPLACE"
+  },
+  {
+    "pmaid": "4019",
+    "locid": "2595",
+    "imageName": "Mt-Claire-Park.jpg",
+    "parsed": "MTCLAIREPARK"
+  },
+  {
+    "pmaid": "401",
+    "locid": "1203",
+    "imageName": "Bradner-Gardens-Park.jpg",
+    "parsed": "BRADNERGARDENSPARK"
+  },
+  {
+    "pmaid": "4021",
+    "locid": "2536",
+    "imageName": "Montlake-Boulevard.jpg",
+    "parsed": "MONTLAKEBOULEVARD"
+  },
+  {
+    "pmaid": "4022",
+    "locid": "1182",
+    "imageName": "Bellevue-Place.jpg",
+    "parsed": "BELLEVUEPLACE"
+  },
+  {
+    "pmaid": "4023",
+    "locid": "1155",
+    "imageName": "Nathan-Hale-Playfield.jpg",
+    "parsed": "NATHANHALEPLAYFIELD"
+  },
+  {
+    "pmaid": "4024",
+    "locid": "1466",
+    "imageName": "Lakewood-Triangle.jpg",
+    "parsed": "LAKEWOODTRIANGLE"
+  },
+  {
+    "pmaid": "4027",
+    "locid": "1937",
+    "imageName": "Park-Home-Circle.jpg",
+    "parsed": "PARKHOMECIRCLE"
+  },
+  {
+    "pmaid": "4028",
+    "locid": "0",
+    "imageName": "Beck-Place.jpg",
+    "parsed": "BECKPLACE"
+  },
+  {
+    "pmaid": "4029",
+    "locid": "1940",
+    "imageName": "Peace-Park.jpg",
+    "parsed": "PEACEPARK"
+  },
+  {
+    "pmaid": "402",
+    "locid": "1115",
+    "imageName": "Brighton-Playfield.jpg",
+    "parsed": "BRIGHTONPLAYFIELD"
+  },
+  {
+    "pmaid": "4032",
+    "locid": "2391",
+    "imageName": "Hunter-Boulevard.jpg",
+    "parsed": "HUNTERBOULEVARD"
+  },
+  {
+    "pmaid": "4034",
+    "locid": "1271",
+    "imageName": "Columbia-Park.jpg",
+    "parsed": "COLUMBIAPARK"
+  },
+  {
+    "pmaid": "403",
+    "locid": "1933",
+    "imageName": "Othello-Playground.jpg",
+    "parsed": "OTHELLOPLAYGROUND"
+  },
+  {
+    "pmaid": "4040",
+    "locid": "1465",
+    "imageName": "Lakewood-Moorage.jpg",
+    "parsed": "LAKEWOODMOORAGE"
+  },
+  {
+    "pmaid": "4045",
+    "locid": "1565",
+    "imageName": "Rainbow-Point.jpg",
+    "parsed": "RAINBOWPOINT"
+  },
+  {
+    "pmaid": "4048",
+    "locid": "1624",
+    "imageName": "South-Park-Meadow.jpg",
+    "parsed": "SOUTHPARKMEADOW"
+  },
+  {
+    "pmaid": "4049",
+    "locid": "1233",
+    "imageName": "Carleton-Highlands.jpg",
+    "parsed": "CARLETONHIGHLANDS"
+  },
+  {
+    "pmaid": "404",
+    "locid": "2026",
+    "imageName": "Cleveland-Playfield.jpg",
+    "parsed": "CLEVELANDPLAYFIELD"
+  },
+  {
+    "pmaid": "405",
+    "locid": "1263",
+    "imageName": "Colman-Park.jpg",
+    "parsed": "COLMANPARK"
+  },
+  {
+    "pmaid": "406",
+    "locid": "1121",
+    "imageName": "Colman-Playground.jpg",
+    "parsed": "COLMANPLAYGROUND"
+  },
+  {
+    "pmaid": "4070",
+    "locid": "1281",
+    "imageName": "Crown-Hill-Glen.jpg",
+    "parsed": "CROWNHILLGLEN"
+  },
+  {
+    "pmaid": "4073",
+    "locid": "2553",
+    "imageName": "Banner-Way-Triangle.jpg",
+    "parsed": "BANNERWAYTRIANGLE"
+  },
+  {
+    "pmaid": "4075",
+    "locid": "2494",
+    "imageName": "Lynn-Street-Mini-Park.jpg",
+    "parsed": "LYNNSTREETMINIPARK"
+  },
+  {
+    "pmaid": "4076",
+    "locid": "1058",
+    "imageName": "Lewis-Park.jpg",
+    "parsed": "LEWISPARK"
+  },
+  {
+    "pmaid": "4080",
+    "locid": "1572",
+    "imageName": "Ravenna-Park-Triangle.jpg",
+    "parsed": "RAVENNAPARKTRIANGLE"
+  },
+  {
+    "pmaid": "4081",
+    "locid": "1908",
+    "imageName": "Atlantic-City-Boat-Ramp.jpg",
+    "parsed": "ATLANTICCITYBOATRAMP"
+  },
+  {
+    "pmaid": "4082",
+    "locid": "2505",
+    "imageName": "Day-Street-Boat-Ramp.jpg",
+    "parsed": "DAYSTREETBOATRAMP"
+  },
+  {
+    "pmaid": "4083",
+    "locid": "1692",
+    "imageName": "Waterway-19.jpg",
+    "parsed": "WATERWAY"
+  },
+  {
+    "pmaid": "408",
+    "locid": "1291",
+    "imageName": "Dearborn-Park.jpg",
+    "parsed": "DEARBORNPARK"
+  },
+  {
+    "pmaid": "409",
+    "locid": "1786",
+    "imageName": "Genesee-Park-and-Playfield.jpg",
+    "parsed": "GENESEEPARKANDPLAYFIELD"
+  },
+  {
+    "pmaid": "410",
+    "locid": "2094",
+    "imageName": "Georgetown-Playfield.jpg",
+    "parsed": "GEORGETOWNPLAYFIELD"
+  },
+  {
+    "pmaid": "411",
+    "locid": "1462",
+    "imageName": "Lakeridge-Park.jpg",
+    "parsed": "LAKERIDGEPARK"
+  },
+  {
+    "pmaid": "413",
+    "locid": "2498",
+    "imageName": "Ferdinand-Street-Boat-Ramp.jpg",
+    "parsed": "FERDINANDSTREETBOATRAMP"
+  },
+  {
+    "pmaid": "414",
+    "locid": "2167",
+    "imageName": "Lakewood-Playfield.jpg",
+    "parsed": "LAKEWOODPLAYFIELD"
+  },
+  {
+    "pmaid": "4153",
+    "locid": "1791",
+    "imageName": "Jefferson-Park-Golf-Course.jpg",
+    "parsed": "JEFFERSONPARKGOLFCOURSE"
+  },
+  {
+    "pmaid": "4154",
+    "locid": "1213",
+    "imageName": "Camp-Long.jpg",
+    "parsed": "CAMPLONG"
+  },
+  {
+    "pmaid": "4155",
+    "locid": "1461",
+    "imageName": "Fairview-Walkway.jpg",
+    "parsed": "FAIRVIEWWALKWAY"
+  },
+  {
+    "pmaid": "4157",
+    "locid": "1372",
+    "imageName": "Greg-Davis-Park.jpg",
+    "parsed": "GREGDAVISPARK"
+  },
+  {
+    "pmaid": "4158",
+    "locid": "2405",
+    "imageName": "Puget-Boulevard-Commons.jpg",
+    "parsed": "PUGETBOULEVARDCOMMONS"
+  },
+  {
+    "pmaid": "4159",
+    "locid": "2387",
+    "imageName": "12th-Ave-S-Viewpoint.jpg",
+    "parsed": "THAVESVIEWPOINT"
+  },
+  {
+    "pmaid": "415",
+    "locid": "1450",
+    "imageName": "Kubota-Garden.jpg",
+    "parsed": "KUBOTAGARDEN"
+  },
+  {
+    "pmaid": "4161",
+    "locid": "2599",
+    "imageName": "Northwest-60th-St.jpg",
+    "parsed": "NORTHWESTTHST"
+  },
+  {
+    "pmaid": "4162",
+    "locid": "1053",
+    "imageName": "Laurelhurst-Triangle.jpg",
+    "parsed": "LAURELHURSTTRIANGLE"
+  },
+  {
+    "pmaid": "4165",
+    "locid": "2499",
+    "imageName": "Washington-Street-Public-Boat-Landing.jpg",
+    "parsed": "WASHINGTONSTREETPUBLICBOATLANDING"
+  },
+  {
+    "pmaid": "4167",
+    "locid": "1237",
+    "imageName": "Cedar-Park.jpg",
+    "parsed": "CEDARPARK"
+  },
+  {
+    "pmaid": "416",
+    "locid": "0",
+    "imageName": "Thornton Creek Natural Area.jpg",
+    "parsed": "THORNTONCREEKNATURALAREA"
+  },
+  {
+    "pmaid": "418",
+    "locid": "1106",
+    "imageName": "Maple-Wood-Playfield.jpg",
+    "parsed": "MAPLEWOODPLAYFIELD"
+  },
+  {
+    "pmaid": "419",
+    "locid": "2537",
+    "imageName": "Mt-Baker-Park.jpg",
+    "parsed": "MTBAKERPARK"
+  },
+  {
+    "pmaid": "4201",
+    "locid": "1039",
+    "imageName": "Puget-Ridge-Playground.jpg",
+    "parsed": "PUGETRIDGEPLAYGROUND"
+  },
+  {
+    "pmaid": "420",
+    "locid": "1957",
+    "imageName": "Pritchard-Island-Beach.jpg",
+    "parsed": "PRITCHARDISLANDBEACH"
+  },
+  {
+    "pmaid": "421",
+    "locid": "1249",
+    "imageName": "Chinook-Beach-Park.jpg",
+    "parsed": "CHINOOKBEACHPARK"
+  },
+  {
+    "pmaid": "422",
+    "locid": "1160",
+    "imageName": "Rainier-Beach-Playfield.jpg",
+    "parsed": "RAINIERBEACHPLAYFIELD"
+  },
+  {
+    "pmaid": "4236",
+    "locid": "2539",
+    "imageName": "Schmitz-Boulevard.jpg",
+    "parsed": "SCHMITZBOULEVARD"
+  },
+  {
+    "pmaid": "423",
+    "locid": "1162",
+    "imageName": "Rainier-Playfield.jpg",
+    "parsed": "RAINIERPLAYFIELD"
+  },
+  {
+    "pmaid": "4241",
+    "locid": "2507",
+    "imageName": "East-Portal-Viewpoint.jpg",
+    "parsed": "EASTPORTALVIEWPOINT"
+  },
+  {
+    "pmaid": "4242",
+    "locid": "1600",
+    "imageName": "Sam-Smith-Park.jpg",
+    "parsed": "SAMSMITHPARK"
+  },
+  {
+    "pmaid": "4243",
+    "locid": "2541",
+    "imageName": "Atlantic-Street-Park.jpg",
+    "parsed": "ATLANTICSTREETPARK"
+  },
+  {
+    "pmaid": "4244",
+    "locid": "2491",
+    "imageName": "Judge-Charles-M.jpg",
+    "parsed": "JUDGECHARLESM"
+  },
+  {
+    "pmaid": "4245",
+    "locid": "1190",
+    "imageName": "Benvenuto-Viewpoint.jpg",
+    "parsed": "BENVENUTOVIEWPOINT"
+  },
+  {
+    "pmaid": "424",
+    "locid": "1659",
+    "imageName": "University-Circle.jpg",
+    "parsed": "UNIVERSITYCIRCLE"
+  },
+  {
+    "pmaid": "425",
+    "locid": "1844",
+    "imageName": "Stan-Sayres-Memorial-Park.jpg",
+    "parsed": "STANSAYRESMEMORIALPARK"
+  },
+  {
+    "pmaid": "426",
+    "locid": "1892",
+    "imageName": "Amy-Yee-Tennis-Center.jpg",
+    "parsed": "AMYYEETENNISCENTER"
+  },
+  {
+    "pmaid": "4278",
+    "locid": "1913",
+    "imageName": "Ballard-Commons-Park.jpg",
+    "parsed": "BALLARDCOMMONSPARK"
+  },
+  {
+    "pmaid": "428",
+    "locid": "1611",
+    "imageName": "Seward-Park.jpg",
+    "parsed": "SEWARDPARK"
+  },
+  {
+    "pmaid": "429",
+    "locid": "2560",
+    "imageName": "John-C.-Little,-Sr.jpg",
+    "parsed": "JOHNCLITTLESR"
+  },
+  {
+    "pmaid": "431",
+    "locid": "1874",
+    "imageName": "Van-Asselt-Playground.jpg",
+    "parsed": "VANASSELTPLAYGROUND"
+  },
+  {
+    "pmaid": "432",
+    "locid": "1527",
+    "imageName": "Martha-Washington-Park.jpg",
+    "parsed": "MARTHAWASHINGTONPARK"
+  },
+  {
+    "pmaid": "433",
+    "locid": "2490",
+    "imageName": "Dr-Jose-Rizal-Park.jpg",
+    "parsed": "DRJOSERIZALPARK"
+  },
+  {
+    "pmaid": "435",
+    "locid": "1180",
+    "imageName": "University-Playground.jpg",
+    "parsed": "UNIVERSITYPLAYGROUND"
+  },
+  {
+    "pmaid": "436",
+    "locid": "1077",
+    "imageName": "Benefit-Playground.jpg",
+    "parsed": "BENEFITPLAYGROUND"
+  },
+  {
+    "pmaid": "438",
+    "locid": "1875",
+    "imageName": "Victory-Heights-Playground.jpg",
+    "parsed": "VICTORYHEIGHTSPLAYGROUND"
+  },
+  {
+    "pmaid": "439",
+    "locid": "1089",
+    "imageName": "Hutchinson-Playground.jpg",
+    "parsed": "HUTCHINSONPLAYGROUND"
+  },
+  {
+    "pmaid": "43",
+    "locid": "1394",
+    "imageName": "Horiuchi-Park.jpg",
+    "parsed": "HORIUCHIPARK"
+  },
+  {
+    "pmaid": "4400",
+    "locid": "1285",
+    "imageName": "Daejeon-Park.jpg",
+    "parsed": "DAEJEONPARK"
+  },
+  {
+    "pmaid": "4401",
+    "locid": "2603",
+    "imageName": "West-Duwamish-Greenbelt.jpg",
+    "parsed": "WESTDUWAMISHGREENBELT"
+  },
+  {
+    "pmaid": "4403",
+    "locid": "1557",
+    "imageName": "Nora's-Woods.jpg",
+    "parsed": "NORASWOODS"
+  },
+  {
+    "pmaid": "4404",
+    "locid": "2533",
+    "imageName": "A B Ernst Park.jpg",
+    "parsed": "ABERNSTPARK"
+  },
+  {
+    "pmaid": "4405",
+    "locid": "1649",
+    "imageName": "Thyme-Patch-Park.jpg",
+    "parsed": "THYMEPATCHPARK"
+  },
+  {
+    "pmaid": "4408",
+    "locid": "1369",
+    "imageName": "Greenwood-Park.jpg",
+    "parsed": "GREENWOODPARK"
+  },
+  {
+    "pmaid": "440",
+    "locid": "1925",
+    "imageName": "Beer-Sheva-Park.jpg",
+    "parsed": "BEERSHEVAPARK"
+  },
+  {
+    "pmaid": "4412",
+    "locid": "1381",
+    "imageName": "Herring's-House-Park-(T'ul'altx).jpg",
+    "parsed": "HERRINGSHOUSEPARKTULALTX"
+  },
+  {
+    "pmaid": "4413",
+    "locid": "1389",
+    "imageName": "Hitt's-Hill-Park.jpg",
+    "parsed": "HITTSHILLPARK"
+  },
+  {
+    "pmaid": "4414",
+    "locid": "1929",
+    "imageName": "Olympic-Sculpture-Park.jpg",
+    "parsed": "OLYMPICSCULPTUREPARK"
+  },
+  {
+    "pmaid": "4415",
+    "locid": "1186",
+    "imageName": "Belltown-Cottage-Park.jpg",
+    "parsed": "BELLTOWNCOTTAGEPARK"
+  },
+  {
+    "pmaid": "4416",
+    "locid": "1934",
+    "imageName": "Oxbow-Park.jpg",
+    "parsed": "OXBOWPARK"
+  },
+  {
+    "pmaid": "4419",
+    "locid": "1061",
+    "imageName": "Linden-Orchard-Park.jpg",
+    "parsed": "LINDENORCHARDPARK"
+  },
+  {
+    "pmaid": "4421",
+    "locid": "1654",
+    "imageName": "Trolley-Hill-Park.jpg",
+    "parsed": "TROLLEYHILLPARK"
+  },
+  {
+    "pmaid": "4422",
+    "locid": "1069",
+    "imageName": "MacLean-Park.jpg",
+    "parsed": "MACLEANPARK"
+  },
+  {
+    "pmaid": "4424",
+    "locid": "1343",
+    "imageName": "Fremont-Peak-Park.jpg",
+    "parsed": "FREMONTPEAKPARK"
+  },
+  {
+    "pmaid": "4426",
+    "locid": "1392",
+    "imageName": "Homer-Harris-Park.jpg",
+    "parsed": "HOMERHARRISPARK"
+  },
+  {
+    "pmaid": "4427",
+    "locid": "2399",
+    "imageName": "Mt.-Baker-Ridge-Viewpoint.jpg",
+    "parsed": "MTBAKERRIDGEVIEWPOINT"
+  },
+  {
+    "pmaid": "4428",
+    "locid": "1914",
+    "imageName": "Ballard-Corners-Park.jpg",
+    "parsed": "BALLARDCORNERSPARK"
+  },
+  {
+    "pmaid": "4433",
+    "locid": "1617",
+    "imageName": "Smith-Cove.jpg",
+    "parsed": "SMITHCOVE"
+  },
+  {
+    "pmaid": "4434",
+    "locid": "1522",
+    "imageName": "Maple-Leaf-Community-Garden.jpg",
+    "parsed": "MAPLELEAFCOMMUNITYGARDEN"
+  },
+  {
+    "pmaid": "4438",
+    "locid": "1084",
+    "imageName": "Counterbalance-Park-An-Urban-Oasis.jpg",
+    "parsed": "COUNTERBALANCEPARKANURBANOASIS"
+  },
+  {
+    "pmaid": "4439",
+    "locid": "1459",
+    "imageName": "Lake-People-Park-(Xacua'bs).jpg",
+    "parsed": "LAKEPEOPLEPARKXACUABS"
+  },
+  {
+    "pmaid": "4441",
+    "locid": "2509",
+    "imageName": "Madison-Park-North-Beach.jpg",
+    "parsed": "MADISONPARKNORTHBEACH"
+  },
+  {
+    "pmaid": "4443",
+    "locid": "1666",
+    "imageName": "Victory-Creek-Park.jpg",
+    "parsed": "VICTORYCREEKPARK"
+  },
+  {
+    "pmaid": "4444",
+    "locid": "1947",
+    "imageName": "Pinehurst-Pocket-Park.jpg",
+    "parsed": "PINEHURSTPOCKETPARK"
+  },
+  {
+    "pmaid": "4445",
+    "locid": "1562",
+    "imageName": "Northgate-Park.jpg",
+    "parsed": "NORTHGATEPARK"
+  },
+  {
+    "pmaid": "4446",
+    "locid": "1400",
+    "imageName": "I-5-Colonnade.jpg",
+    "parsed": "ICOLONNADE"
+  },
+  {
+    "pmaid": "4448",
+    "locid": "1245",
+    "imageName": "Cesar-Chavez-Park.jpg",
+    "parsed": "CESARCHAVEZPARK"
+  },
+  {
+    "pmaid": "444",
+    "locid": "1876",
+    "imageName": "View-Ridge-Playfield.jpg",
+    "parsed": "VIEWRIDGEPLAYFIELD"
+  },
+  {
+    "pmaid": "4450",
+    "locid": "1194",
+    "imageName": "Bitter-Lake-Reservoir-Open-Space.jpg",
+    "parsed": "BITTERLAKERESERVOIROPENSPACE"
+  },
+  {
+    "pmaid": "4451",
+    "locid": "1757",
+    "imageName": "Ursula Judkins Viewpoint.jpg",
+    "parsed": "URSULAJUDKINSVIEWPOINT"
+  },
+  {
+    "pmaid": "4452",
+    "locid": "1563",
+    "imageName": "Northlake-Park.jpg",
+    "parsed": "NORTHLAKEPARK"
+  },
+  {
+    "pmaid": "4454",
+    "locid": "1316",
+    "imageName": "Ercolini-Park.jpg",
+    "parsed": "ERCOLINIPARK"
+  },
+  {
+    "pmaid": "4456",
+    "locid": "1398",
+    "imageName": "Hubbard-Homestead.jpg",
+    "parsed": "HUBBARDHOMESTEAD"
+  },
+  {
+    "pmaid": "445",
+    "locid": "1888",
+    "imageName": "Alki-Beach-Park.jpg",
+    "parsed": "ALKIBEACHPARK"
+  },
+  {
+    "pmaid": "4460",
+    "locid": "1545",
+    "imageName": "Morgan-Junction.jpg",
+    "parsed": "MORGANJUNCTION"
+  },
+  {
+    "pmaid": "4461",
+    "locid": "1636",
+    "imageName": "Summit-Slope-Park.jpg",
+    "parsed": "SUMMITSLOPEPARK"
+  },
+  {
+    "pmaid": "4462",
+    "locid": "1277",
+    "imageName": "Cottage-Grove-Park.jpg",
+    "parsed": "COTTAGEGROVEPARK"
+  },
+  {
+    "pmaid": "4463",
+    "locid": "1548",
+    "imageName": "Myrtle-Reservoir.jpg",
+    "parsed": "MYRTLERESERVOIR"
+  },
+  {
+    "pmaid": "4465",
+    "locid": "1594",
+    "imageName": "Rotary-Viewpoint.jpg",
+    "parsed": "ROTARYVIEWPOINT"
+  },
+  {
+    "pmaid": "4466",
+    "locid": "1610",
+    "imageName": "Seven-Hills-Park.jpg",
+    "parsed": "SEVENHILLSPARK"
+  },
+  {
+    "pmaid": "4467",
+    "locid": "2382",
+    "imageName": "12th-Ave-Square-Park.jpg",
+    "parsed": "THAVESQUAREPARK"
+  },
+  {
+    "pmaid": "4468",
+    "locid": "1444",
+    "imageName": "Kirke-Park.jpg",
+    "parsed": "KIRKEPARK"
+  },
+  {
+    "pmaid": "4469",
+    "locid": "1282",
+    "imageName": "Crown-Hill-Park.jpg",
+    "parsed": "CROWNHILLPARK"
+  },
+  {
+    "pmaid": "446",
+    "locid": "1049",
+    "imageName": "Alki-Playground.jpg",
+    "parsed": "ALKIPLAYGROUND"
+  },
+  {
+    "pmaid": "4472",
+    "locid": "2543",
+    "imageName": "Bell-Street-Park.jpg",
+    "parsed": "BELLSTREETPARK"
+  },
+  {
+    "pmaid": "4479",
+    "locid": "1103",
+    "imageName": "Licorice-Fern-Natural-Area-on-Thornton-Creek.jpg",
+    "parsed": "LICORICEFERNNATURALAREAONTHORNTONCREEK"
+  },
+  {
+    "pmaid": "447",
+    "locid": "1188",
+    "imageName": "Belvedere-Park.jpg",
+    "parsed": "BELVEDEREPARK"
+  },
+  {
+    "pmaid": "4480",
+    "locid": "1099",
+    "imageName": "Kingfisher-Natural-Area-on-Thornton-Creek.jpg",
+    "parsed": "KINGFISHERNATURALAREAONTHORNTONCREEK"
+  },
+  {
+    "pmaid": "4481",
+    "locid": "1075",
+    "imageName": "Beaver-Pond-Natural-Area-on-Thornton-Creek.jpg",
+    "parsed": "BEAVERPONDNATURALAREAONTHORNTONCREEK"
+  },
+  {
+    "pmaid": "4482",
+    "locid": "1102",
+    "imageName": "LaVilla-Meadows-Natural-Area-on-Thornton-Creek.jpg",
+    "parsed": "LAVILLAMEADOWSNATURALAREAONTHORNTONCREEK"
+  },
+  {
+    "pmaid": "448",
+    "locid": "1212",
+    "imageName": "California-Place.jpg",
+    "parsed": "CALIFORNIAPLACE"
+  },
+  {
+    "pmaid": "449",
+    "locid": "2336",
+    "imageName": "Wallingford-Playfield.jpg",
+    "parsed": "WALLINGFORDPLAYFIELD"
+  },
+  {
+    "pmaid": "450",
+    "locid": "1124",
+    "imageName": "Delridge-Playfield.jpg",
+    "parsed": "DELRIDGEPLAYFIELD"
+  },
+  {
+    "pmaid": "452",
+    "locid": "1127",
+    "imageName": "Fairmount-Playfield.jpg",
+    "parsed": "FAIRMOUNTPLAYFIELD"
+  },
+  {
+    "pmaid": "453",
+    "locid": "1325",
+    "imageName": "Fauntleroy-Park.jpg",
+    "parsed": "FAUNTLEROYPARK"
+  },
+  {
+    "pmaid": "454",
+    "locid": "1375",
+    "imageName": "Hamilton-Viewpoint-Park.jpg",
+    "parsed": "HAMILTONVIEWPOINTPARK"
+  },
+  {
+    "pmaid": "455",
+    "locid": "1605",
+    "imageName": "Seacrest-Park.jpg",
+    "parsed": "SEACRESTPARK"
+  },
+  {
+    "pmaid": "4563",
+    "locid": "0",
+    "imageName": "Yesler-Playfield.jpg",
+    "parsed": "YESLERPLAYFIELD"
+  },
+  {
+    "pmaid": "456",
+    "locid": "1788",
+    "imageName": "Hiawatha-Playfield.jpg",
+    "parsed": "HIAWATHAPLAYFIELD"
+  },
+  {
+    "pmaid": "457",
+    "locid": "1137",
+    "imageName": "Highland-Park-Playground.jpg",
+    "parsed": "HIGHLANDPARKPLAYGROUND"
+  },
+  {
+    "pmaid": "458",
+    "locid": "2534",
+    "imageName": "EC-Hughes-Playground.jpg",
+    "parsed": "ECHUGHESPLAYGROUND"
+  },
+  {
+    "pmaid": "459",
+    "locid": "1441",
+    "imageName": "Kilbourne-Park.jpg",
+    "parsed": "KILBOURNEPARK"
+  },
+  {
+    "pmaid": "460",
+    "locid": "1060",
+    "imageName": "Lincoln-Park.jpg",
+    "parsed": "LINCOLNPARK"
+  },
+  {
+    "pmaid": "461",
+    "locid": "1067",
+    "imageName": "Lowman-Beach-Park.jpg",
+    "parsed": "LOWMANBEACHPARK"
+  },
+  {
+    "pmaid": "462",
+    "locid": "1961",
+    "imageName": "Puget-Park.jpg",
+    "parsed": "PUGETPARK"
+  },
+  {
+    "pmaid": "463",
+    "locid": "2269",
+    "imageName": "Riverview-Playfield.jpg",
+    "parsed": "RIVERVIEWPLAYFIELD"
+  },
+  {
+    "pmaid": "464",
+    "locid": "1595",
+    "imageName": "Roxhill-Park.jpg",
+    "parsed": "ROXHILLPARK"
+  },
+  {
+    "pmaid": "465",
+    "locid": "1603",
+    "imageName": "Schmitz-Preserve-Park.jpg",
+    "parsed": "SCHMITZPRESERVEPARK"
+  },
+  {
+    "pmaid": "466",
+    "locid": "1609",
+    "imageName": "Seola-Park.jpg",
+    "parsed": "SEOLAPARK"
+  },
+  {
+    "pmaid": "467",
+    "locid": "1177",
+    "imageName": "South-Park-Playground.jpg",
+    "parsed": "SOUTHPARKPLAYGROUND"
+  },
+  {
+    "pmaid": "468",
+    "locid": "1701",
+    "imageName": "Westcrest-Park.jpg",
+    "parsed": "WESTCRESTPARK"
+  },
+  {
+    "pmaid": "469",
+    "locid": "2566",
+    "imageName": "West-Seattle-Golf-Course.jpg",
+    "parsed": "WESTSEATTLEGOLFCOURSE"
+  },
+  {
+    "pmaid": "472",
+    "locid": "2528",
+    "imageName": "West-Seattle-Stadium.jpg",
+    "parsed": "WESTSEATTLESTADIUM"
+  },
+  {
+    "pmaid": "475",
+    "locid": "1189",
+    "imageName": "Belvoir-Place.jpg",
+    "parsed": "BELVOIRPLACE"
+  },
+  {
+    "pmaid": "482",
+    "locid": "1082",
+    "imageName": "Bryant-Neighborhood-Playground.jpg",
+    "parsed": "BRYANTNEIGHBORHOODPLAYGROUND"
+  },
+  {
+    "pmaid": "483",
+    "locid": "1279",
+    "imageName": "Cowen-Park.jpg",
+    "parsed": "COWENPARK"
+  },
+  {
+    "pmaid": "485",
+    "locid": "1907",
+    "imageName": "Arroyos-Natural-Area.jpg",
+    "parsed": "ARROYOSNATURALAREA"
+  },
+  {
+    "pmaid": "487",
+    "locid": "1458",
+    "imageName": "Lake-City-Mini-Park.jpg",
+    "parsed": "LAKECITYMINIPARK"
+  },
+  {
+    "pmaid": "488",
+    "locid": "1576",
+    "imageName": "Ravenna-Eckstein-Park.jpg",
+    "parsed": "RAVENNAECKSTEINPARK"
+  },
+  {
+    "pmaid": "492",
+    "locid": "1476",
+    "imageName": "Magnolia-Greenbelt.jpg",
+    "parsed": "MAGNOLIAGREENBELT"
+  },
+  {
+    "pmaid": "494",
+    "locid": "1702",
+    "imageName": "Westlake-Greenbelt.jpg",
+    "parsed": "WESTLAKEGREENBELT"
+  },
+  {
+    "pmaid": "496",
+    "locid": "1083",
+    "imageName": "Burke-Gilman-Playground-Park.jpg",
+    "parsed": "BURKEGILMANPLAYGROUNDPARK"
+  },
+  {
+    "pmaid": "497",
+    "locid": "1108",
+    "imageName": "Ballard-Playground.jpg",
+    "parsed": "BALLARDPLAYGROUND"
+  },
+  {
+    "pmaid": "499",
+    "locid": "1819",
+    "imageName": "Dahl-Playfield.jpg",
+    "parsed": "DAHLPLAYFIELD"
+  },
+  {
+    "pmaid": "575",
+    "locid": "1287",
+    "imageName": "Dakota-Place-Park.jpg",
+    "parsed": "DAKOTAPLACEPARK"
+  },
+  {
+    "pmaid": "580",
+    "locid": "1712",
+    "imageName": "York-Park.jpg",
+    "parsed": "YORKPARK"
+  },
+  {
+    "pmaid": "592",
+    "locid": "1633",
+    "imageName": "Sturgus-Park.jpg",
+    "parsed": "STURGUSPARK"
+  },
+  {
+    "pmaid": "595",
+    "locid": "1250",
+    "imageName": "Christie-Park.jpg",
+    "parsed": "CHRISTIEPARK"
+  },
+  {
+    "pmaid": "705",
+    "locid": "1304",
+    "imageName": "Duwamish-Waterway-Park.jpg",
+    "parsed": "DUWAMISHWATERWAYPARK"
+  },
+  {
+    "pmaid": "747",
+    "locid": "1477",
+    "imageName": "Magnolia-Manor-Park.jpg",
+    "parsed": "MAGNOLIAMANORPARK"
+  },
+  {
+    "pmaid": "763",
+    "locid": "1684",
+    "imageName": "Ward-Springs-Park.jpg",
+    "parsed": "WARDSPRINGSPARK"
+  },
+  {
+    "pmaid": "80",
+    "locid": "2497",
+    "imageName": "Charles-Richey-Sr-Viewpoint.jpg",
+    "parsed": "CHARLESRICHEYSRVIEWPOINT"
+  },
+  {
+    "pmaid": "9064",
+    "locid": "0",
+    "imageName": "Roanoke-St-Mini-Park.jpg",
+    "parsed": "ROANOKESTMINIPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Alice-Ball-Park.jpg",
+    "parsed": "ALICEBALLPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Broadway-Hill-Park.jpg",
+    "parsed": "BROADWAYHILLPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Burke-Gilman-Trail.jpg",
+    "parsed": "BURKEGILMANTRAIL"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Cayton-Corner-Park.jpg",
+    "parsed": "CAYTONCORNERPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Cheshiahud-Lake-Union-Loop.jpg",
+    "parsed": "CHESHIAHUDLAKEUNIONLOOP"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "East-Duwamish-Greenbelt.jpg",
+    "parsed": "EASTDUWAMISHGREENBELT"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Fritz-Hedges-Waterway-Park.jpg",
+    "parsed": "FRITZHEDGESWATERWAYPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Gemenskap-Park.jpg",
+    "parsed": "GEMENSKAPPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Georgetown Pump Station.jpg",
+    "parsed": "GEORGETOWNPUMPSTATION"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Julia-Lees-Park.jpg",
+    "parsed": "JULIALEESPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Kinnear-Place.jpg",
+    "parsed": "KINNEARPLACE"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Lake-Washington-Boulevard.jpg",
+    "parsed": "LAKEWASHINGTONBOULEVARD"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Magnolia-Boulevard.jpg",
+    "parsed": "MAGNOLIABOULEVARD"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Mount-Baker-Boulevard.jpg",
+    "parsed": "MOUNTBAKERBOULEVARD"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "NE-130th-Street-End.jpg",
+    "parsed": "NETHSTREETEND"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Queen-Anne-Boulevard.jpg",
+    "parsed": "QUEENANNEBOULEVARD"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Rainier-Beach-Urban-Farm-and-Wetlands.jpg",
+    "parsed": "RAINIERBEACHURBANFARMANDWETLANDS"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Ravenna-Boulevard.jpg",
+    "parsed": "RAVENNABOULEVARD"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Trolls-Knoll-Park.jpg",
+    "parsed": "TROLLSKNOLLPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Trudys-Triangle.jpg",
+    "parsed": "TRUDYSTRIANGLE"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Union-Bay-Boglands.jpg",
+    "parsed": "UNIONBAYBOGLANDS"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "University-Heights-Plaza.jpg",
+    "parsed": "UNIVERSITYHEIGHTSPLAZA"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Urban-Triangle-Park.jpg",
+    "parsed": "URBANTRIANGLEPARK"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Volunteer-Parkway.jpg",
+    "parsed": "VOLUNTEERPARKWAY"
+  },
+  {
+    "pmaid": "",
+    "locid": "",
+    "imageName": "Watton-Site.jpg",
+    "parsed": "WATTONSITE"
+  }
+]

@@ -3,7 +3,7 @@ const { ff } = require("fssf");
 const fs = require('fs');
 const sharp = require("sharp");
 
-const { IMAGES_PATH, DATA_PATH, CMS_EXPORT_FILE } = require('../config');
+const { IMAGES_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH } = require('../config');
 const { formatImageFileName } = require('./helpers');
 
 const { program } = require('commander');
@@ -12,8 +12,8 @@ program.parse();
 
 const ManageData = {
   main: async function () {
-    const data = await ff.readCsv(DATA_PATH, CMS_EXPORT_FILE, true, '\t');
-    const imageDataList = await ff.readJson(DATA_PATH, 'images.json');
+    const data = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE, true, '\t');
+    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const jsonData = [];
     const missingImages = [];
     await Promise.all(data.map(async (cmsData, index) => {
@@ -64,12 +64,12 @@ const ManageData = {
       }
     }));
     console.log('done')
-    await ff.writeJson(jsonData, DATA_PATH, 'seattle.json', 2);
-    await ff.writeJson(missingImages, DATA_PATH, 'seattleMissingImages.json', 2);
+    await ff.writeJson(jsonData, LIVE_DATA_PATH, 'seattle.json', 2);
+    await ff.writeJson(missingImages, BASE_DATA_PATH, 'seattleMissingImages.json', 2);
   },
 
   sanitizeImageNames: async function () {
-    const data = await ff.readJson(DATA_PATH, 'seattle.json');
+    const data = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
     const retval =[]
     for (let i = 0, len = data.length; i < len; i++) {
       retval.push({
@@ -77,7 +77,7 @@ const ManageData = {
         imageName: formatImageFileName(data[i].imageName)
       });
     }
-    await ff.writeJson(retval, DATA_PATH, 'seattle.json', 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
   },
 };
 
