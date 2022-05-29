@@ -1,13 +1,30 @@
 
-import { Box, Tag, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Tag, TagCloseButton, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/home";
+
+function FiltersRow({ filterColor }) {
+  return (
+
+    filterColor && <Box
+      w={"100%"}
+      bg={useColorModeValue("gray.100", "gray.800")}
+      pt={4}
+      pl={4}
+    >
+      <Text display={'inline-block'} mr={5} fontSize="sm">Active Filters: </Text>
+      <FilterTagClose type={'color'} value={filterColor} />
+    </Box>
+  )
+}
 
 export default function Gallery({ dataList, filterColor }) {
   return (
     <>
       <SEO />
+      <FiltersRow filterColor={filterColor} />
       <Box
         padding={4}
         w="100%"
@@ -15,7 +32,6 @@ export default function Gallery({ dataList, filterColor }) {
         bg={useColorModeValue("gray.100", "gray.800")}
         sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
       >
-        {filterColor && <Tag bg={useColorModeValue('blackAlpha.400' ,'whiteAlpha.700')} color='gray.900' mb={7} border='2px' borderColor={filterColor}>{filterColor}</Tag>}
         {
           dataList.length ? dataList.map((data, index) => (
             (data.filters.live &&
@@ -40,7 +56,7 @@ export default function Gallery({ dataList, filterColor }) {
               </Link>
             )
           )) :
-          <Text>No Parks matching this filter</Text>
+            <Text>No Parks matching this filter</Text>
         }
       </Box>
     </>
