@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ff } from "fssf";
 import Details from "../../components/Details";
 import Map from '../../components/Map';
+import SEO from "../../components/SEO/park";
 
 export async function getStaticPaths() {
   const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
@@ -26,6 +27,7 @@ export default function ({ dataList }) {
   const data = dataList[0];
   return (
     <>
+      <SEO data={data} />
       <Flex m={[0,0,0,7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
         <Box flex={1}
           minW={data.width > data.height ? "60%" : "40%"}
