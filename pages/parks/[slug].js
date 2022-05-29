@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const data = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
+  const data = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
   return { props: { dataList: data.filter(d => d.slug == slug) } };
 }
 
