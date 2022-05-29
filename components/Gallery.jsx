@@ -34,27 +34,25 @@ export default function Gallery({ dataList, filterColor }) {
       >
         {
           dataList.length ? dataList.map((data, index) => (
-            (data.filters.live &&
-              <Link href={`/parks/${data.slug}`} key={index}>
-                <a>
-                  <Box
-                    w="100%"
-                    mb={2}
-                    display="inline-block"
-                  >
-                    <Image
-                      key={index}
-                      src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
-                      alt={data.name || "image"}
-                      layout="responsive"
-                      width={data.width}
-                      height={data.height}
-                      sizes="33vw"
-                    />
-                  </Box>
-                </a>
-              </Link>
-            )
+            <Link href={`/parks/${data.slug}`} key={index}>
+              <a>
+                <Box
+                  w="100%"
+                  mb={2}
+                  display="inline-block"
+                >
+                  <Image
+                    key={index}
+                    src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
+                    alt={data.name || "image"}
+                    layout="responsive"
+                    width={data.width}
+                    height={data.height}
+                    sizes="33vw"
+                  />
+                </Box>
+              </a>
+            </Link>
           )) :
             <Text>No Parks matching this filter</Text>
         }

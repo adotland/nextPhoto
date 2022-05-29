@@ -11,7 +11,21 @@ function byColor(a, b) {
 
 export async function getStaticProps() {
   const dataList = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
-  return { props: { dataList: dataList.sort(byWeight).sort(byColor) } };
+  const sorted = dataList.sort(byWeight).sort(byColor);
+  const retval = [];
+  sorted.forEach(data => {
+    if (data.filters.live) {
+      retval.push({
+        slug: data.slug,
+        imageName: data.imageName,
+        ext: data.ext,
+        name: data.name,
+        width: data.width,
+        height: data.height,
+      });
+    }
+  })
+  return { props: { dataList: retval } };
 }
 
 export default function ({ dataList }) {

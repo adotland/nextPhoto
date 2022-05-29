@@ -42,9 +42,23 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { value } }) {
   const data = await ff.readJson(ff.path('./cms/data/live/seattle.json'));
+  const filtered = data.filter(d => d.filters?.matchColor?.toLowerCase() == value?.toLowerCase());
+  const retval = [];
+  filtered.forEach(data => {
+    if (data.filters.live) {
+      retval.push({
+        slug: data.slug,
+        imageName: data.imageName,
+        ext: data.ext,
+        name: data.name,
+        width: data.width,
+        height: data.height,
+      });
+    }
+  });
   return {
     props: {
-      dataList: data.filter(d => d.filters?.matchColor?.toLowerCase() == value?.toLowerCase()),
+      dataList: retval,
       filterColor: value,
     }
   };
