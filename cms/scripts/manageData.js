@@ -1,9 +1,10 @@
 const { ff } = require("fssf");
 const fs = require('fs');
 const sharp = require("sharp");
+const ColorThief = require('colorthief');
 
-const { IMAGES_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH } = require('../config');
-const { formatImageFileName, findDuplicates } = require('./helpers');
+const { IMAGES_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_IMAGES_PATH } = require('../config');
+const { formatImageFileName, findDuplicates, getColorDiff, toHex } = require('./helpers');
 
 const { program } = require('commander');
 program.requiredOption('-x, --execute <method>');
@@ -42,7 +43,7 @@ const ManageData = {
             const sharperImage = sharp(imageBuffer);
             metadata = await sharperImage.metadata();
 
-            const weight = filterWeight.filter(x=>x.slug === slug);
+            const weight = filterWeight.filter(x => x.slug === slug);
             const live = filterLive.includes(slug);
 
             jsonData.push({
@@ -59,8 +60,10 @@ const ManageData = {
               ext,
               width: metadata.width,
               height: metadata.height,
-              weight: weight.length ? weight[0].weight : 100,
-              live,
+              filters: {
+                weight: weight.length ? weight[0].weight : 100,
+                live,
+              }
             });
           } else {
             console.error(`missing image name [${imageData}]`);
@@ -100,9 +103,28 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, 'seattle_duplicate_slugs.json');
   },
 
-  applyFilters: async function () {
-
-  }
+  colorDiff: async function () {
+    const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+    const retval = [];
+    await Promise.all(dataList.map(async data => {
+      try {
+        const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+        console.info(`${data.imageName} [${color}]`);
+        const matchColor = getColorDiff(color);
+        retval.push({
+          ...data,
+          filters: {
+            ...data.filters,
+            domColor: toHex(color),
+            matchColor,
+          }
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    }));
+    await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
+  },
 };
 
 

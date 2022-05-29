@@ -9,7 +9,6 @@ const { program } = require('commander');
 program.requiredOption('-x, --execute <method>');
 program.parse();
 
-
 const ImageProcessor = {
   getList: async function () {
     const data = await ff.readdir(IMAGES_PATH);
@@ -106,7 +105,7 @@ const ImageProcessor = {
       if (sharpImage) {
         const metadata = await sharpImage.metadata();
         const processedImage = await this.addWatermark(imageFileName, metadata, false);
-        const {name: formattedImageFileName, ext} = formatImageFileName(imageFileName);
+        const { name: formattedImageFileName, ext } = formatImageFileName(imageFileName);
         if (processedImage) {
           console.info(`saving [${imageFileName}]`);
           await processedImage.toFile(ff.path(PROCESSED_IMAGES_PATH, `${formattedImageFileName}.${ext}`));
@@ -129,6 +128,7 @@ const ImageProcessor = {
   //     }
   //   }
   // }
+
 };
 
 (async () => {

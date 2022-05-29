@@ -1,10 +1,10 @@
 
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box, Tag, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import SEO from "./SEO/home";
 
-export default function Gallery({ dataList }) {
+export default function Gallery({ dataList, filterColor }) {
   return (
     <>
       <SEO />
@@ -15,9 +15,10 @@ export default function Gallery({ dataList }) {
         bg={useColorModeValue("gray.100", "gray.800")}
         sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
       >
+        {filterColor && <Tag bg={useColorModeValue('blackAlpha.400' ,'whiteAlpha.700')} color='gray.900' mb={7} border='2px' borderColor={filterColor}>{filterColor}</Tag>}
         {
-          dataList.map((data, index) => (
-            (data.live &&
+          dataList.length ? dataList.map((data, index) => (
+            (data.filters.live &&
               <Link href={`/parks/${data.slug}`} key={index}>
                 <a>
                   <Box
@@ -38,7 +39,9 @@ export default function Gallery({ dataList }) {
                 </a>
               </Link>
             )
-          ))}
+          )) :
+          <Text>No Parks matching this filter</Text>
+        }
       </Box>
     </>
   );

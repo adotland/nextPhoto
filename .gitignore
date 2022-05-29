@@ -32,6 +32,9 @@ yarn-error.log*
 .vercel
 
 .vscode
+
 cms/data/base
 cms/config.js
+cms/scripts/Colour.js
+
 pages/test.js

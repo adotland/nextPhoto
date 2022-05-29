@@ -7,7 +7,7 @@ import SEO from "../../components/SEO/park";
 
 export async function getStaticPaths() {
   const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
-  const displayable = dataList.filter(data => data.live).map(data => {
+  const displayable = dataList.filter(data => data.filters.live).map(data => {
     return {
       params: { slug: data.slug }
     }
