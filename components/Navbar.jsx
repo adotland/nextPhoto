@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
+import FilterMenu from "./FilterMenu";
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ const NavBar = (props) => {
     <NavBarContainer {...props}>
       <Logo />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
+      {/* <FilterMenu /> */}
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
   );
@@ -55,13 +57,18 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", }) => {
   return (
-    <Link href={to}   >
+    <Link href={to}>
       <a>
         <Text
           display="block"
-          color={useColorModeValue("brand.700", "brand.200")}
+          color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "gray.800")}
-          p={1}
+          py={1}
+          px={2}
+        
+          
+          _hover={{background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700')}}
+          // fontWeight={""}
         >
           {children}
         </Text>

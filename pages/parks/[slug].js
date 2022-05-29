@@ -2,7 +2,6 @@ import { Box, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import { ff } from "fssf";
 import Details from "../../components/Details";
-import Map from '../../components/Map';
 import SEO from "../../components/SEO/park";
 
 export async function getStaticPaths() {
@@ -28,10 +27,10 @@ export default function ({ dataList }) {
   return (
     <>
       <SEO data={data} />
-      <Flex m={[0,0,0,7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
+      <Flex m={[0, 0, 0, 7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']}>
         <Box flex={1}
           minW={data.width > data.height ? "60%" : "40%"}
-          // maxW={data.width > data.height ? "100%" : "40%"}
+          maxW={data.width > data.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
           <Image
             key={data.id}
@@ -44,9 +43,8 @@ export default function ({ dataList }) {
             priority
           />
         </Box>
-        <Map center={[data.lat, data.long]} name={data.name} />
+        <Details data={data} />
       </Flex>
-      <Details data={data} />
     </>
   )
 }
