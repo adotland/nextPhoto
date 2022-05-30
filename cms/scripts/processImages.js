@@ -6,7 +6,7 @@ const { IMAGES_PATH, PROCESSED_IMAGES_PATH, LIVE_DATA_PATH, BASE_DATA_PATH } = r
 const { formatImageFileName } = require('./helpers');
 
 const { program } = require('commander');
-program.requiredOption('-x, --execute <method>');
+program.requiredOption('-x, --method <method>');
 program.parse();
 
 const ImageProcessor = {
@@ -23,13 +23,15 @@ const ImageProcessor = {
         const locid = dParsed[1];
         const name = dParsed[2];
         const { slug, ext } = formatImageFileName(name);
+        const statObj = fs.statSync(ff.path(IMAGES_PATH, d));
         retval.push({
           pmaid,
           locid,
           imageName: name,
           parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
           slug,
-          ext
+          ext,
+          lastChange: statObj?.ctime
         });
       }
     })
@@ -68,7 +70,7 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (imageFileName = '2975_1323_Fairview-Park.jpg', metadata = {}, dump = true) {
+  addWatermark: async function (imageFileName = '274_1943_Piers-62-and-63.jpg', metadata = {}, dump = true) {
     try {
       const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
       const imageFile = fs.readFileSync(imageFileFullPath);
@@ -95,8 +97,8 @@ const ImageProcessor = {
     }
   },
 
-  processImages: async function () {
-    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
+  processImages: async function (imageDataList) {
+    imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, 'images.json');
     for (let i = 0, len = imageDataList.length; i < len; i++) {
       const imageFileName = `${imageDataList[i].pmaid}_${imageDataList[i].locid}_${imageDataList[i].imageName}`;
       const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
@@ -129,13 +131,21 @@ const ImageProcessor = {
   //   }
   // }
 
+  processRecent: async function() {
+    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
+    const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
+    const filtered = imageDataList.filter(data => new Date(data.lastChange).getTime() > yesterday);
+    // await this.processImages(filtered);
+    console.log(filtered.map(f=>f.imageName));
+  }
+
 };
 
 (async () => {
   try {
     const options = program.opts();
-    if (options.execute && ImageProcessor[options.execute]) {
-      await ImageProcessor[options.execute]();
+    if (options.method && ImageProcessor[options.method]) {
+      await ImageProcessor[options.method]();
     } else {
       console.error('missing/bad method');
     }

@@ -1,5 +1,6 @@
 import { Box, Flex } from "@chakra-ui/layout"
 import { useColorModeValue } from "@chakra-ui/react"
+import { BsGithub } from "react-icons/bs"
 // import PillPity from 'pill-pity'
 
 function Footer() {
@@ -20,13 +21,16 @@ function Footer() {
         px={10}
       > */}
       <Flex
-              // patternFill={useColorModeValue("gray.200", "gray.600")}
-              // opacity={useColorModeValue(0.4, 0.1)}
-              bgColor={useColorModeValue("gray.100", "gray.800")}
-              py={5}
-              px={10}>
+        // patternFill={useColorModeValue("gray.200", "gray.600")}
+        // opacity={useColorModeValue(0.4, 0.1)}
+        bgColor={useColorModeValue("gray.100", "gray.800")}
+        py={5}
+        px={10}
+        justifyContent={'space-between'}
+      >
         &copy; {new Date().getFullYear()} A.Land
-        </Flex>
+        <BsGithub />
+      </Flex>
       {/* </PillPity> */}
     </Box>
   )

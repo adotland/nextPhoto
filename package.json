@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "processData": "node ./cms/scripts/manageData.js -x main",
+    "uf-matchColor": "node ./cms/scripts/manageData.js -x updateFilter -f matchColor",
+    "uf-weight": "node ./cms/scripts/manageData.js -x updateFilter -f weight",
+    "uf-live": "node ./cms/scripts/manageData.js -x updateFilter -f live",
+    "reProcessDataFull": "node ./cms/scripts/manageData.js -x main && npm run uf-matchColor",
+    "imageList": "node ./cms/scripts/processImages.js -x getList",
+    "processImagesRecent": "node ./cms/scripts/processImages.js -x processRecent"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",

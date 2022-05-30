@@ -7,7 +7,8 @@ const { IMAGES_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_
 const { formatImageFileName, findDuplicates, getColorDiff, toHex } = require('./helpers');
 
 const { program } = require('commander');
-program.requiredOption('-x, --execute <method>');
+program.requiredOption('-x, --method <method>');
+program.option('-f, --filter <filter>');
 program.parse();
 
 const ManageData = {
@@ -103,20 +104,17 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, 'seattle_duplicate_slugs.json');
   },
 
-  colorDiff: async function () {
+  updateFilter: async function (filter) {
     const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
     const retval = [];
     await Promise.all(dataList.map(async data => {
       try {
-        const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
-        console.info(`${data.imageName} [${color}]`);
-        const matchColor = getColorDiff(color);
+        const newFilterObj = await this[`_get_${filter}`](data);
         retval.push({
           ...data,
           filters: {
             ...data.filters,
-            domColor: toHex(color),
-            matchColor,
+            ...newFilterObj,
           }
         });
       } catch (err) {
@@ -124,15 +122,44 @@ const ManageData = {
       }
     }));
     await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
+    // output color to avoid having to reprocess
   },
+
+  _get_matchColor: async function (data) {
+    const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+    console.info(`${data.imageName} [${color}]`);
+    const matchColor = getColorDiff(color);
+    const domColor = toHex(color);
+    return {
+      matchColor,
+      domColor,
+    }
+  },
+
+  _get_weight: async function (data) {
+    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
+    const newVal = updateList.filter(x => x.slug === data.slug);
+    return {
+      weight: newVal.length ? newVal[0].weight : 100,
+    }
+  },
+
+  _get_live: async function (data) {
+    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
+    const newVal = updateList.includes(data.slug);
+    return {
+      live: newVal,
+    }
+  },
+
 };
 
 
 (async () => {
   try {
     const options = program.opts();
-    if (options.execute && ManageData[options.execute]) {
-      await ManageData[options.execute]();
+    if (options.method && ManageData[options.method]) {
+      await ManageData[options.method](options.filter);
     } else {
       console.error('missing/bad method');
     }
