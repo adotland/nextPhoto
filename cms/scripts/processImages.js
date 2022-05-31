@@ -2,8 +2,8 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
-const { formatImageFileName, asyncForEach } = require('./helpers');
+const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL: SHARE_PATH, SHARE_PATH_GIF } = require('../config');
+const { formatImageFileName, asyncForEach, arrayDiff } = require('./helpers');
 
 const FONT_SCALE = 70 / (3000 * 4000);
 
@@ -46,8 +46,18 @@ const ImageProcessor = {
   },
 
   getListAll: async function () {
-    const data = await ff.readdir(STILL_PATH);
-    await ff.writeJson(data, BASE_DATA_PATH, 'imagesAll.json', 2);
+    const local = await ff.readdir(STILL_PATH);
+    await ff.writeJson(local.sort(), BASE_DATA_PATH, 'imagesAll_still.json', 2);
+    const data = await ff.readdir(SHARE_PATH);
+    await ff.writeJson(data.sort(), BASE_DATA_PATH, 'imagesAll_share.json', 2);
+  },
+
+  imageDiff: async function () {
+    const local = await ff.readJson(BASE_DATA_PATH, 'imagesAll.json');
+    const share = await ff.readJson(BASE_DATA_PATH, 'imagesAll_share.json');
+    let localDiff = arrayDiff(local, share);
+    // let shareDiff = difference(share, local);
+    await ff.writeJson({ localDiff }, BASE_DATA_PATH, 'imageDiff.json');
   },
 
   createWatermark: async function (imageWidth, imageHeight, dump) {
@@ -145,20 +155,20 @@ const ImageProcessor = {
     console.timeEnd('processImages');
   },
 
-  sanitizeFileNames: async function (isGif = true) {
-    const path = isGif ? GIF_PATH : STILL_PATH;
-    const list = await ff.readdir(path);
-    // console.log(list)
-    for (let i = 0, len = list.length; i < len; i++) {
-      const srcPath = ff.path(path, list[i]);
-      const { name, ext } = formatImageFileName(list[i]);
-      const destPath = ff.path(path, `${name}.${ext}`);
-      if (srcPath !== destPath) {
-        console.log(srcPath + ' --> ' + destPath);
-        await ff.mv(srcPath, destPath);
-      }
-    }
-  },
+  // sanitizeFileNames: async function (isGif = true) {
+  //   const path = isGif ? GIF_PATH : STILL_PATH;
+  //   const list = await ff.readdir(path);
+  //   // console.log(list)
+  //   for (let i = 0, len = list.length; i < len; i++) {
+  //     const srcPath = ff.path(path, list[i]);
+  //     const { name, ext } = formatImageFileName(list[i]);
+  //     const destPath = ff.path(path, `${name}.${ext}`);
+  //     if (srcPath !== destPath) {
+  //       console.log(srcPath + ' --> ' + destPath);
+  //       fs.renameSync(srcPath, destPath);
+  //     }
+  //   }
+  // },
 
   processRecent: async function () {
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');

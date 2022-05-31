@@ -7,7 +7,7 @@ const { COLORS } = require('../config');
 //   HIGH_SQ: 441.673, // sqrt(255^2 * 3)
 // };
 
-const _doRegex = function(fileName) {
+const _doRegex = function (fileName) {
   let sanitizedName = fileName;
   // const remove_re = /[’]/g;
   // const spaces_re = /['.,]/g;
@@ -110,11 +110,19 @@ async function asyncForEach(array, callback) {
     await callback(array[index], index, array);
   }
 }
+
+function arrayDiff(arr1, arr2) {
+  return arr1
+    .filter(x => !arr2.includes(x))
+    .concat(arr2.filter(x => !arr1.includes(x)));
+}
+
 module.exports = {
   formatImageFileName,
   findDuplicates,
   getColorDiff,
   toHex,
   asyncForEach,
-  formatImageFileNameNoExt
+  formatImageFileNameNoExt,
+  arrayDiff
 }
