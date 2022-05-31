@@ -41,8 +41,8 @@ const ManageData = {
             console.log(`processing [${fullImageName}]`);
 
             const imageBuffer = fs.readFileSync(ff.path(IMAGES_PATH, fullImageName));
-            const sharperImage = sharp(imageBuffer);
-            metadata = await sharperImage.metadata();
+            const sharpImage = sharp(imageBuffer);
+            metadata = await sharpImage.metadata();
 
             const weight = filterWeight.filter(x => x.slug === slug);
             const live = filterLive.includes(slug);
@@ -105,6 +105,7 @@ const ManageData = {
   },
 
   updateFilter: async function (filter) {
+    console.time('updateFilter');
     const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
     const retval = [];
     await Promise.all(dataList.map(async data => {
@@ -122,11 +123,24 @@ const ManageData = {
       }
     }));
     await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
+    console.timeEnd('updateFilter');
     // output color to avoid having to reprocess
   },
 
   _get_matchColor: async function (data) {
-    const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+    // color thief
+    // const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+
+    // sharp
+    const sharpImage = sharp(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+    // background is almost always just region above mid
+    const metadata = await sharpImage.metadata();
+    const background = await sharpImage.extract({ left: 0, top: 0, width: metadata.width, height: Math.ceil(metadata.height / 1.5) }).toBuffer();
+
+    const { dominant } = await sharp(background).stats();
+    const color = [dominant.r, dominant.g, dominant.b];
+
+
     console.info(`${data.imageName} [${color}]`);
     const matchColor = getColorDiff(color);
     const domColor = toHex(color);

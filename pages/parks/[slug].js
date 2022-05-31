@@ -8,6 +8,7 @@ import RelatedImages from "../../components/RelatedImages";
 export async function getStaticPaths() {
   const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
   const displayable = dataList.filter(data => data.filters.live).map(data => {
+  // const displayable = dataList.map(data => {
     return {
       params: { slug: data.slug }
     }
@@ -23,6 +24,7 @@ export async function getStaticProps({ params: { slug } }) {
   const currentData = data.filter(d => d.slug == slug).pop();
   const related = data
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live))
+    // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
     .slice(0, 3);
   return {
     props: {

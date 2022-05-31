@@ -48,6 +48,9 @@ const toHex = function (arr) {
   // console.log(`toHex: ` + retval);
   return retval;
 }
+
+// in [r,g,b], [r,g,b]
+// out #rrggbb
 const getColorDiff = function (c1, c2) {
   // console.log('c2: '+c2)
   //TODO: color space

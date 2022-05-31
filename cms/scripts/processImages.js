@@ -2,8 +2,10 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { IMAGES_PATH, PROCESSED_IMAGES_PATH, LIVE_DATA_PATH, BASE_DATA_PATH } = require('../config');
+const { IMAGES_PATH, PROCESSED_IMAGES_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIFS_PATH, PROCESSED_GIFS_PATH } = require('../config');
 const { formatImageFileName } = require('./helpers');
+
+const FONT_SCALE = 70 / (3000 * 4000);
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
@@ -45,14 +47,17 @@ const ImageProcessor = {
   },
 
   createWatermark: async function (imageWidth, imageHeight, dump) {
-    const width = imageWidth || 4032;
-    const height = imageHeight || 3024;
+    const width = imageWidth || 4000;
+    const height = imageHeight || 3000;
     const text = String.fromCharCode(169) + "TheParkAndTheBike";
+
+    const fontSize = Math.ceil(FONT_SCALE * width * height);
+    // console.log(fontSize)
 
     const svgImage = `
     <svg width="${width}" height="${height}">
       <style>
-      .title { fill: rgba(255, 255, 255, 0.333); font-size: 70px;}
+      .title { fill: rgba(255, 255, 255, 0.333); font-size: ${fontSize}px;}
       </style>
       <text x="80%" y="95%" text-anchor="right" class="title">${text}</text>
     </svg>
@@ -62,31 +67,41 @@ const ImageProcessor = {
       const image = sharp(svgBuffer);
       if (dump) {
         await image.toFile(ff.path(__dirname, "watermark.png"));
-      } else {
-        return svgBuffer;
       }
+      return svgBuffer;
     } catch (error) {
       console.log(error);
     }
   },
 
-  addWatermark: async function (imageFileName = '274_1943_Piers-62-and-63.jpg', metadata = {}, dump = true) {
+  addWatermark: async function (imageFileName = '238_1199_Blue-Ridge-Circle.jpg', metadata = {}, dump = true) {
     try {
-      const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
+      const ext = imageFileName.split('.').pop();
+      const isGif = ext === 'gif';
+      const imageFileFullPath = ff.path(isGif ? GIFS_PATH : IMAGES_PATH, imageFileName);
       const imageFile = fs.readFileSync(imageFileFullPath);
       if (!metadata.width || !metadata.height) {
         const sharpImage = sharp(imageFileFullPath);
         metadata = await sharpImage.metadata();
+        console.log(metadata.xmp.toString())
       }
-      const watermarkBuffer = await this.createWatermark(metadata.width, metadata.height);
-      const image = sharp(imageFile)
-        .composite([
-          {
-            input: watermarkBuffer,
-            top: 0,
-            left: 0,
-          },
-        ]);
+      const watermarkBuffer = await this.createWatermark(metadata.width, metadata.height, true);
+      let image;
+      if (isGif) {
+        image = sharp(imageFile, { animated: true });
+      }
+      else {
+        image = sharp(imageFile);
+      }
+      image = image.composite([
+        {
+          input: watermarkBuffer,
+          top: 0,
+          left: 0,
+          tile: (ext === 'gif'),
+          // gravity: 'northwest'
+        },
+      ]);
       if (dump) {
         image.toFile(ff.path(__dirname, `p-${imageFileName}`));
       } else {
@@ -98,6 +113,7 @@ const ImageProcessor = {
   },
 
   processImages: async function (imageDataList) {
+    console.time('processImages')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, 'images.json');
     for (let i = 0, len = imageDataList.length; i < len; i++) {
       const imageFileName = `${imageDataList[i].pmaid}_${imageDataList[i].locid}_${imageDataList[i].imageName}`;
@@ -118,25 +134,28 @@ const ImageProcessor = {
         throw new Error(`file missing [${imageFileName}]`);
       }
     }
+    console.timeEnd('processImages');
   },
 
-  // sanitizeFileNames: async function () {
-  //   const list = await ff.readdir(PROCESSED_IMAGES_PATH);
-  //   for (let i = 0, len = list.length; i < len; i++) {
-  //     const srcPath = ff.path(PROCESSED_IMAGES_PATH, list[i]);
-  //     const destPath = ff.path(PROCESSED_IMAGES_PATH, formatImageFileName(list[i]));
-  //     if (srcPath !== destPath) {
-  //       await ff.mv(srcPath, destPath);
-  //     }
-  //   }
-  // }
+  sanitizeFileNames: async function () {
+    const list = await ff.readdir(GIFS_PATH);
+    console.log(list)
+    for (let i = 0, len = list.length; i < len; i++) {
+      const srcPath = ff.path(GIFS_PATH, list[i]);
+      const { name, ext } = formatImageFileName(list[i]);
+      const destPath = ff.path(GIFS_PATH, `${name}.${ext}`);
+      if (srcPath !== destPath) {
+        await ff.mv(srcPath, destPath);
+      }
+    }
+  },
 
-  processRecent: async function() {
+  processRecent: async function () {
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
     const filtered = imageDataList.filter(data => new Date(data.lastChange).getTime() > yesterday);
-    // await this.processImages(filtered);
-    console.log(filtered.map(f=>f.imageName));
+    await this.processImages(filtered);
+    // console.log(filtered.map(f => f.imageName));
   }
 
 };
