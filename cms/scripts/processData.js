@@ -1,10 +1,10 @@
 const { ff } = require("fssf");
 const fs = require('fs');
 const sharp = require("sharp");
-const ColorThief = require('colorthief');
+// const ColorThief = require('colorthief');
 
-const { IMAGES_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_IMAGES_PATH } = require('../config');
-const { formatImageFileName, findDuplicates, getColorDiff, toHex } = require('./helpers');
+const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH } = require('../config');
+const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt } = require('./helpers');
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
@@ -13,13 +13,14 @@ program.parse();
 
 const ManageData = {
   main: async function () {
-    const data = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE, true, '\t');
+    const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE, true, '\t');
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
     const filterLive = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
     const jsonData = [];
     const missingImages = [];
-    await Promise.all(data.map(async (cmsData, index) => {
+    const duplicateImages = [];
+    await Promise.all(cmsDataList.map(async (cmsData, index) => {
       if (cmsData[14]) {
         let metadata;
         const long_name = cmsData[14];
@@ -27,66 +28,68 @@ const ManageData = {
         // seattle parks format XX_XX_name
         // image data has image file name and parsed name upper case, only alpha chars
 
-        const parsedLongName = long_name.replaceAll(/[^a-z]/ig, '').toUpperCase();
-        const imageData = imageDataList.filter(d => d.parsed === parsedLongName);
+        // const parsedLongName = long_name.replaceAll(/[^a-z]/ig, '').toUpperCase();
+        // const imageData = imageDataList.filter(d => d.parsed === parsedLongName);
 
-        if (imageData.length) {
-          if (imageData.length > 1) console.log(`has duplicates: ${imageData}`);
-          if (imageData[0].imageName) {
+        const {name: formattedNameNoExt} = formatImageFileNameNoExt(long_name);
 
-            const currentImageName = imageData[0].imageName;
-            const { name: sanitizedImageName, slug, ext } = formatImageFileName(currentImageName);
-            const fullImageName = `${imageData[0].pmaid}_${imageData[0].locid}_${currentImageName}`;
-            const fullSanitizedImageName = `${imageData[0].pmaid}_${imageData[0].locid}_${sanitizedImageName}`;
-            console.log(`processing [${fullImageName}]`);
+        const matchingImageDataList = imageDataList.filter(d => `${d.pmaid}_${d.locid}_${d.imageName}` === formattedNameNoExt);
 
-            const imageBuffer = fs.readFileSync(ff.path(IMAGES_PATH, fullImageName));
-            const sharpImage = sharp(imageBuffer);
-            metadata = await sharpImage.metadata();
-
-            const weight = filterWeight.filter(x => x.slug === slug);
-            const live = filterLive.includes(slug);
-
-            jsonData.push({
-              id: index,
-              pmaid: cmsData[0],
-              locid: cmsData[1],
-              name: cmsData[2] || console.warn('missing name', cmsData),
-              address: cmsData[3] || console.warn('missing address', cmsData),
-              zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
-              lat: cmsData[5] || console.warn('missing lat', cmsData),
-              long: cmsData[6] || console.warn('missing long', cmsData),
-              imageName: fullSanitizedImageName || console.warn('missing long_name', cmsData),
-              slug,
-              ext,
-              width: metadata.width,
-              height: metadata.height,
-              filters: {
-                weight: weight.length ? weight[0].weight : 100,
-                live,
-              }
-            });
-          } else {
-            console.error(`missing image name [${imageData}]`);
-          }
-        } else {
+        if (matchingImageDataList.length < 1) {
+          // console.error(`missing image name [${parsedLongName}]`);
           missingImages.push(long_name);
-          console.error(`missing image [${long_name}]`);
+        } else if (matchingImageDataList.length > 1) {
+          // console.log(imageData.length, `has duplicates: ${imageData.map(d=>d.imageName)}`);
+          duplicateImages.push(matchingImageDataList.map(d => d.imageName));
+        } else {
+          const imageData = matchingImageDataList[0];
+          const currentImageName = imageData.imageName;
+          const fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.${imageData.ext}`;
+          console.log(`processing [${fullImageName}]`);
+
+          // image dimensions
+          const imageBuffer = fs.readFileSync(ff.path(STILL_PATH, fullImageName));
+          const sharpImage = sharp(imageBuffer);
+          metadata = await sharpImage.metadata();
+
+          // filters
+          const weight = filterWeight.filter(x => x.slug === imageData.slug);
+          const live = filterLive.includes(imageData.slug);
+
+          jsonData.push({
+            id: index,
+            pmaid: cmsData[0],
+            locid: cmsData[1],
+            name: cmsData[2] || console.warn('missing name', cmsData),
+            address: cmsData[3] || console.warn('missing address', cmsData),
+            zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
+            lat: cmsData[5] || console.warn('missing lat', cmsData),
+            long: cmsData[6] || console.warn('missing long', cmsData),
+            imageName: fullImageName || console.warn('missing long_name', cmsData),
+            slug: imageData.slug,
+            ext: imageData.ext,
+            width: metadata.width,
+            height: metadata.height,
+            filters: {
+              weight: weight.length ? weight[0].weight : 100,
+              live,
+            }
+          });
         }
       }
     }));
-    console.log('done')
     await ff.writeJson(jsonData, LIVE_DATA_PATH, 'seattle.json', 2);
-    await ff.writeJson(missingImages, BASE_DATA_PATH, 'seattleMissingImages.json', 2);
+    await ff.writeJson(missingImages, BASE_DATA_PATH, 'seattle_missing_still_images.json', 2);
+    await ff.writeJson(duplicateImages, BASE_DATA_PATH, 'seattle_duplicate_still_images.json', 2);
   },
 
-  sanitizeImageNames: async function () {
+  sanitizeImageNamesInFile: async function () {
     const data = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
     const retval = [];
     for (let i = 0, len = data.length; i < len; i++) {
       retval.push({
         ...data[i],
-        imageName: formatImageFileName(data[i].imageName).sanitizedName
+        imageName: formatImageFileName(data[i].imageName).name
       });
     }
     await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
@@ -129,10 +132,10 @@ const ManageData = {
 
   _get_matchColor: async function (data) {
     // color thief
-    // const color = await ColorThief.getColor(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+    // const color = await ColorThief.getColor(ff.path(PROCESSED_STILL_PATH, `${data.imageName}.${data.ext}`));
 
     // sharp
-    const sharpImage = sharp(ff.path(PROCESSED_IMAGES_PATH, `${data.imageName}.${data.ext}`));
+    const sharpImage = sharp(ff.path(PROCESSED_STILL_PATH, `${data.imageName}.${data.ext}`));
     // background is almost always just region above mid
     const metadata = await sharpImage.metadata();
     const background = await sharpImage.extract({ left: 0, top: 0, width: metadata.width, height: Math.ceil(metadata.height / 1.5) }).toBuffer();

@@ -2,8 +2,8 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { IMAGES_PATH, PROCESSED_IMAGES_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIFS_PATH, PROCESSED_GIFS_PATH } = require('../config');
-const { formatImageFileName } = require('./helpers');
+const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH } = require('../config');
+const { formatImageFileName, asyncForEach } = require('./helpers');
 
 const FONT_SCALE = 70 / (3000 * 4000);
 
@@ -13,7 +13,7 @@ program.parse();
 
 const ImageProcessor = {
   getList: async function () {
-    const data = await ff.readdir(IMAGES_PATH);
+    const data = await ff.readdir(STILL_PATH);
     const retval = [];
     const rejects = [];
     data.forEach(d => {
@@ -24,25 +24,26 @@ const ImageProcessor = {
         const pmaid = dParsed[0];
         const locid = dParsed[1];
         const name = dParsed[2];
-        const { slug, ext } = formatImageFileName(name);
-        const statObj = fs.statSync(ff.path(IMAGES_PATH, d));
+        const { name: formattedName ,slug, ext } = formatImageFileName(name);
+        const statObj = fs.statSync(ff.path(STILL_PATH, d));
         retval.push({
           pmaid,
           locid,
-          imageName: name,
-          parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
+          imageName: formattedName,
+          // parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
           slug,
           ext,
           lastChange: statObj?.ctime
         });
       }
-    })
+    });
+    retval.sort((a, b) => new Date(a.lastChange).getTime() - new Date(b.lastChange).getTime());
     await ff.writeJson(retval, LIVE_DATA_PATH, 'images.json', 2);
     await ff.writeJson(rejects, BASE_DATA_PATH, 'imagesRejected.json', 2);
   },
 
   getListAll: async function () {
-    const data = await ff.readdir(IMAGES_PATH);
+    const data = await ff.readdir(STILL_PATH);
     await ff.writeJson(data, BASE_DATA_PATH, 'imagesAll.json', 2);
   },
 
@@ -78,7 +79,7 @@ const ImageProcessor = {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
-      const imageFileFullPath = ff.path(isGif ? GIFS_PATH : IMAGES_PATH, imageFileName);
+      const imageFileFullPath = ff.path(isGif ? GIF_PATH : STILL_PATH, imageFileName);
       const imageFile = fs.readFileSync(imageFileFullPath);
       if (!metadata.width || !metadata.height) {
         const sharpImage = sharp(imageFileFullPath);
@@ -115,9 +116,9 @@ const ImageProcessor = {
   processImages: async function (imageDataList) {
     console.time('processImages')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, 'images.json');
-    for (let i = 0, len = imageDataList.length; i < len; i++) {
-      const imageFileName = `${imageDataList[i].pmaid}_${imageDataList[i].locid}_${imageDataList[i].imageName}`;
-      const imageFileFullPath = ff.path(IMAGES_PATH, imageFileName);
+    await asyncForEach(imageDataList, async imageData => {
+      const imageFileName = `${imageData.pmaid}_${imageData.locid}_${imageData.imageName}.${imageData.ext}`;
+      const imageFileFullPath = ff.path(STILL_PATH, imageFileName);
       console.info(`processing [${imageFileName}]`);
       const sharpImage = sharp(imageFileFullPath);
       if (sharpImage) {
@@ -126,25 +127,26 @@ const ImageProcessor = {
         const { name: formattedImageFileName, ext } = formatImageFileName(imageFileName);
         if (processedImage) {
           console.info(`saving [${imageFileName}]`);
-          await processedImage.toFile(ff.path(PROCESSED_IMAGES_PATH, `${formattedImageFileName}.${ext}`));
+          await processedImage.toFile(ff.path(PROCESSED_STILL_PATH, `${formattedImageFileName}.${ext}`));
         } else {
           throw new Error(`image undefined on [${imageFileName}]`);
         }
       } else {
         throw new Error(`file missing [${imageFileName}]`);
       }
-    }
+    });
     console.timeEnd('processImages');
   },
 
   sanitizeFileNames: async function () {
-    const list = await ff.readdir(GIFS_PATH);
-    console.log(list)
+    const list = await ff.readdir(STILL_PATH);
+    // console.log(list)
     for (let i = 0, len = list.length; i < len; i++) {
-      const srcPath = ff.path(GIFS_PATH, list[i]);
+      const srcPath = ff.path(STILL_PATH, list[i]);
       const { name, ext } = formatImageFileName(list[i]);
-      const destPath = ff.path(GIFS_PATH, `${name}.${ext}`);
+      const destPath = ff.path(STILL_PATH, `${name}.${ext}`);
       if (srcPath !== destPath) {
+        console.log(srcPath + ' --> ' + destPath);
         await ff.mv(srcPath, destPath);
       }
     }
@@ -156,7 +158,15 @@ const ImageProcessor = {
     const filtered = imageDataList.filter(data => new Date(data.lastChange).getTime() > yesterday);
     await this.processImages(filtered);
     // console.log(filtered.map(f => f.imageName));
-  }
+  },
+
+  // processMissing: async function () {
+  //   const selection = await ff.readJson(BASE_DATA_PATH, 'seattle_missing_images.json');
+  //   const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
+  //   const filtered = imageDataList.filter(data => selection.includes(data.imageName));
+  //   console.log(filtered.map(f => f.imageName));
+  // },
+
 
 };
 

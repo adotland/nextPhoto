@@ -7,19 +7,35 @@ const { COLORS } = require('../config');
 //   HIGH_SQ: 441.673, // sqrt(255^2 * 3)
 // };
 
-const formatImageFileName = function (fileName) {
-  const tmp = fileName.split('.');
-  const ext = tmp.pop().toLowerCase();
-  let sanitizedName = tmp.join('.');
-  const spaces_re = /['.,]/g;
-  const dashes_re = /[\s\(\)]/g;
-  sanitizedName = sanitizedName.replaceAll(spaces_re, ' ');
+const _doRegex = function(fileName) {
+  let sanitizedName = fileName;
+  // const remove_re = /[’]/g;
+  // const spaces_re = /['.,]/g;
+  // const dashes_re = /[\s\(\)]/g;
+  const dashes_re = /[\s]/g;
+  // let sanitizedName = fileName.replaceAll(remove_re, '');
+  // sanitizedName = sanitizedName.replaceAll(spaces_re, ' ');
   sanitizedName = sanitizedName.replaceAll(dashes_re, '-');
-  const slug = sanitizedName.toLowerCase();
+  sanitizedName = sanitizedName.replaceAll(/[^a-z0-9_-]/ig, '');
+  return sanitizedName;
+}
+
+const formatImageFileName = function (fileName) {
+  let tmp = fileName.split('.');
+  const ext = tmp.pop().toLowerCase();
+  tmp = tmp.join('.');
+  const sanitizedName = _doRegex(tmp);
   return {
     name: sanitizedName,
-    slug,
+    slug: sanitizedName.toLowerCase(),
     ext
+  }
+}
+const formatImageFileNameNoExt = function (fileName) {
+  const sanitizedName = _doRegex(fileName);
+  return {
+    name: sanitizedName,
+    slug: sanitizedName.toLowerCase(),
   }
 }
 const findDuplicates = function (arr) {
@@ -89,9 +105,16 @@ const getColorDiff = function (c1, c2) {
   return retval;
 };
 
+async function asyncForEach(array, callback) {
+  for (let index = 0; index < array.length; index++) {
+    await callback(array[index], index, array);
+  }
+}
 module.exports = {
   formatImageFileName,
   findDuplicates,
   getColorDiff,
-  toHex
+  toHex,
+  asyncForEach,
+  formatImageFileNameNoExt
 }
