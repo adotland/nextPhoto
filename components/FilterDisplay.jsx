@@ -3,7 +3,7 @@ import FilterTag from "./FilterTag";
 
 export default function FilterDisplay({ filterColor, filterType }) {
   return (
-    <Flex my={4}>
+    <Flex my={4} mx={'auto'} justifyContent={['center', 'center', 'center', 'left']}>
       <Text pt={2} mr={5}>Filters: </Text>
       <Flex
         justifyContent={['center', 'center', 'center', 'left']}
