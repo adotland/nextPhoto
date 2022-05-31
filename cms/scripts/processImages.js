@@ -2,7 +2,7 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH } = require('../config');
+const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, asyncForEach } = require('./helpers');
 
 const FONT_SCALE = 70 / (3000 * 4000);
@@ -13,29 +13,32 @@ program.parse();
 
 const ImageProcessor = {
   getList: async function () {
-    const data = await ff.readdir(STILL_PATH);
+    const pathList = [STILL_PATH, GIF_PATH];
     const retval = [];
     const rejects = [];
-    data.forEach(d => {
-      const dParsed = d.split('_');
-      if (dParsed.length !== 3 || (dParsed[0].match(/^[a-z]/i))) {
-        rejects.push(d);
-      } else {
-        const pmaid = dParsed[0];
-        const locid = dParsed[1];
-        const name = dParsed[2];
-        const { name: formattedName ,slug, ext } = formatImageFileName(name);
-        const statObj = fs.statSync(ff.path(STILL_PATH, d));
-        retval.push({
-          pmaid,
-          locid,
-          imageName: formattedName,
-          // parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
-          slug,
-          ext,
-          lastChange: statObj?.ctime
-        });
-      }
+    pathList.forEach(path => {
+      const data = fs.readdirSync(path);
+      data.forEach(d => {
+        const dParsed = d.split('_');
+        if (dParsed.length !== 3 || (dParsed[0].match(/^[a-z]/i))) {
+          rejects.push(d);
+        } else {
+          const pmaid = dParsed[0];
+          const locid = dParsed[1];
+          const name = dParsed[2];
+          const { name: formattedName, slug, ext } = formatImageFileName(name);
+          const statObj = fs.statSync(ff.path(path, d));
+          retval.push({
+            pmaid,
+            locid,
+            imageName: formattedName,
+            // parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
+            slug,
+            ext,
+            lastChange: statObj?.ctime
+          });
+        }
+      });
     });
     retval.sort((a, b) => new Date(a.lastChange).getTime() - new Date(b.lastChange).getTime());
     await ff.writeJson(retval, LIVE_DATA_PATH, 'images.json', 2);
@@ -75,7 +78,7 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (imageFileName = '238_1199_Blue-Ridge-Circle.jpg', metadata = {}, dump = true) {
+  addWatermark: async function (imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, dump = true) {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
@@ -84,14 +87,18 @@ const ImageProcessor = {
       if (!metadata.width || !metadata.height) {
         const sharpImage = sharp(imageFileFullPath);
         metadata = await sharpImage.metadata();
-        console.log(metadata.xmp.toString())
+        // console.log(metadata.xmp.toString())
       }
-      const watermarkBuffer = await this.createWatermark(metadata.width, metadata.height, true);
+      let watermarkBuffer;
       let image;
       if (isGif) {
+        watermarkBuffer = await this.createWatermark(metadata.width / 2, metadata.height / 2, true);
         image = sharp(imageFile, { animated: true });
-      }
-      else {
+        image = image.resize({ width: metadata.width / 2, height: metadata.height / 2 })
+          // .gif({ colors: 16 })
+          .webp({ effort: 6 })
+      } else {
+        watermarkBuffer = await this.createWatermark(metadata.width, metadata.height, true);
         image = sharp(imageFile);
       }
       image = image.composite([
@@ -138,13 +145,14 @@ const ImageProcessor = {
     console.timeEnd('processImages');
   },
 
-  sanitizeFileNames: async function () {
-    const list = await ff.readdir(STILL_PATH);
+  sanitizeFileNames: async function (isGif = true) {
+    const path = isGif ? GIF_PATH : STILL_PATH;
+    const list = await ff.readdir(path);
     // console.log(list)
     for (let i = 0, len = list.length; i < len; i++) {
-      const srcPath = ff.path(STILL_PATH, list[i]);
+      const srcPath = ff.path(path, list[i]);
       const { name, ext } = formatImageFileName(list[i]);
-      const destPath = ff.path(STILL_PATH, `${name}.${ext}`);
+      const destPath = ff.path(path, `${name}.${ext}`);
       if (srcPath !== destPath) {
         console.log(srcPath + ' --> ' + destPath);
         await ff.mv(srcPath, destPath);
@@ -158,6 +166,32 @@ const ImageProcessor = {
     const filtered = imageDataList.filter(data => new Date(data.lastChange).getTime() > yesterday);
     await this.processImages(filtered);
     // console.log(filtered.map(f => f.imageName));
+  },
+
+  processGifs: async function () {
+    console.time('processGifs')
+    const imageFileNameList = await ff.readdir(GIF_PATH);
+    await asyncForEach(imageFileNameList, async imageFileName => {
+      const imageFileFullPath = ff.path(GIF_PATH, imageFileName);
+      console.info(`processing [${imageFileName}]`);
+      const sharpImage = sharp(imageFileFullPath);
+      if (sharpImage) {
+        const metadata = await sharpImage.metadata();
+        const processedImage = await this.addWatermark(imageFileName, metadata, false);
+        const { name: formattedImageFileName, ext } = formatImageFileName(imageFileName);
+        if (processedImage) {
+          // const saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.${ext}`);
+          const saveFullPath = ff.path(PROCESSED_WEBP_PATH, `${formattedImageFileName}.webp`);
+          console.info(`saving [${saveFullPath}]`);
+          await processedImage.toFile(saveFullPath);
+        } else {
+          throw new Error(`image undefined on [${imageFileName}]`);
+        }
+      } else {
+        throw new Error(`file missing [${imageFileName}]`);
+      }
+    });
+    console.timeEnd('processGifs');
   },
 
   // processMissing: async function () {

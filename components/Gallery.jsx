@@ -5,26 +5,28 @@ import Link from "next/link";
 import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/home";
 
-function FiltersRow({ filterColor }) {
+function FiltersRow({ filterColor, filterType}) {
+  const displayable = filterColor || filterType;
   return (
 
-    filterColor && <Box
+    displayable && <Box
       w={"100%"}
       bg={useColorModeValue("gray.100", "gray.800")}
       pt={4}
       pl={4}
     >
       <Text display={'inline-block'} mr={5} fontSize="sm">Active Filters: </Text>
-      <FilterTagClose type={'color'} value={filterColor} />
+      {filterColor && <FilterTagClose type={'color'} value={filterColor} />}
+      {filterType && <FilterTagClose type={'type'} value={filterType} />}
     </Box>
   )
 }
 
-export default function Gallery({ dataList, filterColor }) {
+export default function Gallery({ dataList, filterColor, filterImageType }) {
   return (
     <>
       <SEO />
-      <FiltersRow filterColor={filterColor} />
+      <FiltersRow filterColor={filterColor} filterType={filterImageType} />
       <Box
         padding={4}
         w="100%"
@@ -43,7 +45,7 @@ export default function Gallery({ dataList, filterColor }) {
                 >
                   <Image
                     key={index}
-                    src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
+                    src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
                     alt={data.name || "image"}
                     layout="responsive"
                     width={data.width}

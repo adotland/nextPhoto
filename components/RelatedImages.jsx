@@ -16,7 +16,7 @@ export default function RelatedImages({ dataList }) {
               >
                 <Image
                   key={index}
-                  src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`}
+                  src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
                   alt={data.name || "image"}
                   layout="responsive"
                   width={data.width}

@@ -8,7 +8,7 @@ import RelatedImages from "../../components/RelatedImages";
 export async function getStaticPaths() {
   const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
   const displayable = dataList.filter(data => data.filters.live).map(data => {
-  // const displayable = dataList.map(data => {
+    // const displayable = dataList.map(data => {
     return {
       params: { slug: data.slug }
     }
@@ -35,6 +35,8 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function ({ currentData, related }) {
+  const ext = currentData.imageName.split('.').pop();
+  // const ext = 'webp'
   return (
     <>
       <SEO data={currentData} />
@@ -43,16 +45,29 @@ export default function ({ currentData, related }) {
           minW={currentData.width > currentData.height ? "60%" : "40%"}
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
-          <Image
-            key={currentData.id}
-            src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}.${currentData.ext}`}
-            alt={currentData.name ?? "image"}
-            layout="responsive"
-            width={currentData.width}
-            height={currentData.height}
-            // sizes="50vw"
-            priority
-          />
+          {ext === 'webp' ?
+          <Box maxW={478} mx={'auto'}>
+            <Image
+              key={currentData.id}
+              src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
+              alt={currentData.name ?? "image"}
+              layout="responsive"
+              width={currentData.width}
+              height={currentData.height}
+              priority
+            /></Box>
+            :
+            <Image
+              key={currentData.id}
+              src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
+              alt={currentData.name ?? "image"}
+              layout="responsive"
+              width={currentData.width}
+              height={currentData.height}
+              // sizes="50vw"
+              priority
+            />
+          }
         </Box>
         <Details data={currentData} />
       </Flex>

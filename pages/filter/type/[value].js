@@ -1,36 +1,10 @@
 import { ff } from "fssf";
 import Gallery from "../../../components/Gallery";
-// import { COLORS } from "../../../cms/config";
 
-const FILTER_NAME = 'matchColor'
-
-const COLORS = {
-  PALETTE: {
-    light: {
-      hex: '#ffffff',
-      rgb: { R: 255, G: 255, B: 255 },
-    },
-    earthy: {
-      hex: '#654321',
-      rgb: { R: 101, G: 67, B: 33 },
-    },
-    sky: {
-      hex: '#4bb5d8',
-      rgb: { R: 75, G: 181, B: 216 },
-    },
-    green: {
-      hex: '#37522c',
-      rgb: { R: 55, G: 82, B: 44 }, // blend green
-    },
-    bold: {
-      hex: '#000000',
-      rgb: { R: 0, G: 0, B: 0 },
-    }
-  }
-};
+const FILTER_NAME = 'type'
 
 export async function getStaticPaths() {
-  const paths = Object.keys(COLORS.PALETTE);
+  const paths = ['animated', 'still'];
   const displayable = paths.map(p => {
     return {
       params: { value: p }
@@ -61,13 +35,13 @@ export async function getStaticProps({ params: { value } }) {
   return {
     props: {
       dataList: retval,
-      filterColor: value,
+      filterImageType: value,
     }
   };
 }
 
-export default function ({ dataList, filterColor }) {
+export default function ({ dataList, filterImageType }) {
   return (
-    <Gallery dataList={dataList} filterColor={filterColor} />
+    <Gallery dataList={dataList} filterImageType={filterImageType} />
   )
 }

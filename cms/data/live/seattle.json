@@ -15,7 +15,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -34,7 +35,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -53,7 +55,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -72,7 +75,8 @@
     "height": 2979,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -91,7 +95,8 @@
     "height": 2966,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -110,7 +115,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -129,7 +135,8 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -148,7 +155,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -167,7 +175,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -186,7 +195,8 @@
     "height": 2453,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -205,7 +215,8 @@
     "height": 2524,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -224,7 +235,8 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -243,7 +255,8 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -262,7 +275,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -281,7 +295,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -300,7 +315,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -319,7 +335,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -338,7 +355,8 @@
     "height": 2280,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
@@ -357,11 +375,12 @@
     "height": 1776,
     "filters": {
       "weight": 9000,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 20,
+    "id": 19,
     "pmaid": "4405",
     "locid": "1649",
     "name": "Thyme Patch Park",
@@ -376,11 +395,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 21,
+    "id": 20,
     "pmaid": "3703",
     "locid": "1919",
     "name": "Bar-S Playground",
@@ -395,11 +415,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 22,
+    "id": 21,
     "pmaid": "258",
     "locid": "2021",
     "name": "Cheasty GS: Cheasty Blvd",
@@ -414,11 +435,12 @@
     "height": 3246,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 23,
+    "id": 22,
     "pmaid": "4083",
     "locid": "1692",
     "name": "Waterway 19",
@@ -433,11 +455,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 24,
+    "id": 22,
+    "pmaid": "4083",
+    "locid": "1692",
+    "name": "Waterway 19",
+    "address": "2119 N Northlake Way",
+    "zip_code": "98103",
+    "lat": "47.646349",
+    "long": "-122.332567",
+    "imageName": "4083_1692_Waterway-19.webp",
+    "slug": "waterway-19-anim",
+    "ext": "webp",
+    "width": 586,
+    "height": 459,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 23,
     "pmaid": "2975",
     "locid": "1323",
     "name": "Fairview Park",
@@ -452,11 +495,32 @@
     "height": 3024,
     "filters": {
       "weight": 8000,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 25,
+    "id": 23,
+    "pmaid": "2975",
+    "locid": "1323",
+    "name": "Fairview Park",
+    "address": "2900 Fairview Ave E",
+    "zip_code": "98102",
+    "lat": "47.647413",
+    "long": "-122.325368",
+    "imageName": "2975_1323_Fairview-Park.webp",
+    "slug": "fairview-park-anim",
+    "ext": "webp",
+    "width": 555,
+    "height": 452,
+    "filters": {
+      "weight": 8000,
+      "live": true,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 24,
     "pmaid": "4411",
     "locid": "1574",
     "name": "Ravenna Woods",
@@ -471,11 +535,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 26,
+    "id": 25,
     "pmaid": "4455",
     "locid": "1439",
     "name": "Junction Plaza",
@@ -490,11 +555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 27,
+    "id": 26,
     "pmaid": "268",
     "locid": "2590",
     "name": "Me-Kwa-Mooks Natural Area",
@@ -509,11 +575,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 28,
+    "id": 27,
     "pmaid": "473",
     "locid": "1539",
     "name": "Me-Kwa-Mooks Park",
@@ -528,11 +595,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 29,
+    "id": 28,
     "pmaid": "3921",
     "locid": "1326",
     "name": "Fauntleroy Place",
@@ -547,11 +615,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 30,
+    "id": 29,
     "pmaid": "400",
     "locid": "1074",
     "name": "Beacon Hill Playground",
@@ -566,11 +635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 31,
+    "id": 30,
     "pmaid": "4418",
     "locid": "1198",
     "name": "Blue Dog Pond",
@@ -585,11 +655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 32,
+    "id": 31,
     "pmaid": "3922",
     "locid": "2503",
     "name": "College Street Park",
@@ -604,11 +675,12 @@
     "height": 2942,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 33,
+    "id": 32,
     "pmaid": "3158",
     "locid": "2378",
     "name": "6th Ave NW Pocket Park",
@@ -623,11 +695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 34,
+    "id": 33,
     "pmaid": "3894",
     "locid": "1045",
     "name": "Webster Park",
@@ -642,11 +715,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 35,
+    "id": 34,
     "pmaid": "253",
     "locid": "1191",
     "name": "Bergen Place",
@@ -661,11 +735,12 @@
     "height": 1361,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 37,
+    "id": 35,
     "pmaid": "374",
     "locid": "1305",
     "name": "East Montlake Park",
@@ -680,11 +755,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 38,
+    "id": 36,
     "pmaid": "244",
     "locid": "1886",
     "name": "Albert Davis Park",
@@ -699,11 +775,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 39,
+    "id": 37,
     "pmaid": "333",
     "locid": "1457",
     "name": "Lake City Memorial Triangle",
@@ -718,11 +795,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 40,
+    "id": 38,
     "pmaid": "487",
     "locid": "1458",
     "name": "Lake City Mini Park",
@@ -737,11 +815,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 41,
+    "id": 39,
     "pmaid": "310",
     "locid": "1301",
     "name": "Discovery Park",
@@ -756,11 +835,12 @@
     "height": 1931,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 42,
+    "id": 40,
     "pmaid": "4075",
     "locid": "2494",
     "name": "Lynn Street Mini Park",
@@ -775,11 +855,12 @@
     "height": 2234,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 43,
+    "id": 41,
     "pmaid": "4424",
     "locid": "1343",
     "name": "Fremont Peak Park",
@@ -794,11 +875,12 @@
     "height": 1884,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 44,
+    "id": 42,
     "pmaid": "4452",
     "locid": "1563",
     "name": "Northlake Park",
@@ -813,11 +895,12 @@
     "height": 2628,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 45,
+    "id": 43,
     "pmaid": "4469",
     "locid": "1282",
     "name": "Crown Hill Park",
@@ -832,11 +915,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 46,
+    "id": 44,
     "pmaid": "331",
     "locid": "1289",
     "name": "David Rodgers Park",
@@ -851,11 +935,12 @@
     "height": 2433,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 47,
+    "id": 45,
     "pmaid": "1000399",
     "locid": "0",
     "name": "Volunteer Park Conservatory",
@@ -870,11 +955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 48,
+    "id": 46,
     "pmaid": "",
     "locid": "",
     "name": "Union Bay Boglands",
@@ -889,11 +975,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 49,
+    "id": 47,
     "pmaid": "4081",
     "locid": "1908",
     "name": "Atlantic City Boat Ramp",
@@ -908,11 +995,12 @@
     "height": 2282,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 50,
+    "id": 48,
     "pmaid": "457",
     "locid": "1137",
     "name": "Highland Park Playground",
@@ -927,11 +1015,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 51,
+    "id": 49,
     "pmaid": "459",
     "locid": "1441",
     "name": "Kilbourne Park",
@@ -946,11 +1035,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 52,
+    "id": 50,
     "pmaid": "355",
     "locid": "0",
     "name": "Harborview Park",
@@ -965,11 +1055,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 53,
+    "id": 51,
     "pmaid": "344",
     "locid": "1460",
     "name": "Lake Union Park",
@@ -984,11 +1075,12 @@
     "height": 2277,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 54,
+    "id": 52,
     "pmaid": "4157",
     "locid": "1372",
     "name": "Greg Davis Park",
@@ -1003,11 +1095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 55,
+    "id": 53,
     "pmaid": "3941",
     "locid": "1748",
     "name": "Walt Hundley Playfield",
@@ -1022,11 +1115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 56,
+    "id": 54,
     "pmaid": "1000292",
     "locid": "292",
     "name": "Woodland Park Rose Garden",
@@ -1041,11 +1135,12 @@
     "height": 2970,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 57,
+    "id": 55,
     "pmaid": "288",
     "locid": "1113",
     "name": "Bitter Lake Playfield",
@@ -1060,11 +1155,12 @@
     "height": 2373,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 58,
+    "id": 56,
     "pmaid": "4450",
     "locid": "1194",
     "name": "Bitter Lake Reservoir Open Space",
@@ -1079,11 +1175,12 @@
     "height": 2063,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 59,
+    "id": 57,
     "pmaid": "428",
     "locid": "1611",
     "name": "Seward Park",
@@ -1098,11 +1195,12 @@
     "height": 2328,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 60,
+    "id": 58,
     "pmaid": "3926",
     "locid": "1816",
     "name": "York Playground",
@@ -1117,11 +1215,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 61,
+    "id": 59,
     "pmaid": "405",
     "locid": "1263",
     "name": "Colman Park",
@@ -1136,11 +1235,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 62,
+    "id": 60,
     "pmaid": "423",
     "locid": "1162",
     "name": "Rainier Playfield",
@@ -1155,11 +1255,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 63,
+    "id": 61,
     "pmaid": "296",
     "locid": "296",
     "name": "3001 E Madison",
@@ -1174,11 +1275,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 64,
+    "id": 62,
     "pmaid": "3096",
     "locid": "0",
     "name": "Lambert Place",
@@ -1193,11 +1295,12 @@
     "height": 2453,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 65,
+    "id": 63,
     "pmaid": "747",
     "locid": "1477",
     "name": "Magnolia Manor Park",
@@ -1212,11 +1315,12 @@
     "height": 2137,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 66,
+    "id": 64,
     "pmaid": "316",
     "locid": "1054",
     "name": "Lawton Park",
@@ -1231,11 +1335,12 @@
     "height": 2264,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 67,
+    "id": 65,
     "pmaid": "4201",
     "locid": "1039",
     "name": "Puget Ridge Playground",
@@ -1250,11 +1355,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 68,
+    "id": 66,
     "pmaid": "4444",
     "locid": "1947",
     "name": "Pinehurst Pocket Park",
@@ -1269,11 +1375,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 69,
+    "id": 67,
     "pmaid": "416",
     "locid": "0",
     "name": "Thornton Creek Natural Area",
@@ -1288,11 +1395,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 70,
+    "id": 68,
     "pmaid": "4076",
     "locid": "1058",
     "name": "Lewis Park",
@@ -1307,11 +1415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 71,
+    "id": 69,
     "pmaid": "",
     "locid": "",
     "name": "University Heights Plaza",
@@ -1326,11 +1435,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 72,
+    "id": 70,
     "pmaid": "1104",
     "locid": "1149",
     "name": "Meridian Playground",
@@ -1345,11 +1455,12 @@
     "height": 2226,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 73,
+    "id": 71,
     "pmaid": "3881",
     "locid": "1105",
     "name": "Maple Leaf Resevoir Park",
@@ -1364,11 +1475,12 @@
     "height": 1711,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 74,
+    "id": 72,
     "pmaid": "292",
     "locid": "1815",
     "name": "Woodland Park",
@@ -1383,11 +1495,12 @@
     "height": 2780,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 75,
+    "id": 73,
     "pmaid": "4408",
     "locid": "1369",
     "name": "Greenwood Park",
@@ -1402,11 +1515,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 76,
+    "id": 74,
     "pmaid": "304",
     "locid": "1193",
     "name": "Bhy Kracke Park",
@@ -1421,11 +1535,12 @@
     "height": 2871,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 77,
+    "id": 75,
     "pmaid": "329",
     "locid": "2535",
     "name": "East Queen Anne Playground",
@@ -1440,11 +1555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 78,
+    "id": 76,
     "pmaid": "4422",
     "locid": "1069",
     "name": "MacLean Park",
@@ -1459,11 +1575,12 @@
     "height": 2995,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 79,
+    "id": 77,
     "pmaid": "241",
     "locid": "2552",
     "name": "B.F. Day Playground",
@@ -1478,11 +1595,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 80,
+    "id": 78,
     "pmaid": "245",
     "locid": "1371",
     "name": "Greenwood Triangle",
@@ -1497,11 +1615,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 81,
+    "id": 79,
     "pmaid": "362",
     "locid": "1066",
     "name": "Louisa Boren Park",
@@ -1516,11 +1635,12 @@
     "height": 2024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 82,
+    "id": 80,
     "pmaid": "3914",
     "locid": "1891",
     "name": "Alvin Larkins Park",
@@ -1535,11 +1655,12 @@
     "height": 3001,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 83,
+    "id": 81,
     "pmaid": "367",
     "locid": "1057",
     "name": "Leschi Park",
@@ -1554,11 +1675,12 @@
     "height": 2336,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 84,
+    "id": 82,
     "pmaid": "370",
     "locid": "1473",
     "name": "Madrona Park",
@@ -1573,11 +1695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 85,
+    "id": 83,
     "pmaid": "397",
     "locid": "1097",
     "name": "Judkins Park and Playfield",
@@ -1592,11 +1715,12 @@
     "height": 2304,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 86,
+    "id": 84,
     "pmaid": "",
     "locid": "",
     "name": "Julia Lee’s Park",
@@ -1611,11 +1735,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 87,
+    "id": 85,
     "pmaid": "",
     "locid": "",
     "name": "Lake Washington Boulevard",
@@ -1630,11 +1755,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 88,
+    "id": 86,
     "pmaid": "9064",
     "locid": "0",
     "name": "Roanoke St. Mini Park",
@@ -1649,11 +1775,12 @@
     "height": 2907,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 89,
+    "id": 87,
     "pmaid": "4448",
     "locid": "1245",
     "name": "Cesar Chavez Park",
@@ -1668,11 +1795,12 @@
     "height": 2917,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 90,
+    "id": 88,
     "pmaid": "496",
     "locid": "1083",
     "name": "Burke-Gilman Playground Park",
@@ -1687,11 +1815,12 @@
     "height": 2935,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 91,
+    "id": 89,
     "pmaid": "327",
     "locid": "1790",
     "name": "Jackson Park Golf Course",
@@ -1706,11 +1835,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 92,
+    "id": 90,
     "pmaid": "4414",
     "locid": "1929",
     "name": "Olympic Sculpture Park",
@@ -1725,11 +1855,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 93,
+    "id": 91,
     "pmaid": "1556",
     "locid": "1898",
     "name": "Arapahoe Triangle",
@@ -1744,11 +1875,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 94,
+    "id": 92,
     "pmaid": "4009",
     "locid": "1938",
     "name": "Parkmont Place",
@@ -1763,11 +1895,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 95,
+    "id": 93,
     "pmaid": "4007",
     "locid": "1658",
     "name": "Union Station Square",
@@ -1782,11 +1915,12 @@
     "height": 2467,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 96,
+    "id": 94,
     "pmaid": "351",
     "locid": "1331",
     "name": "Firehouse Mini Park",
@@ -1801,11 +1935,12 @@
     "height": 2671,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 97,
+    "id": 95,
     "pmaid": "424",
     "locid": "1659",
     "name": "University Circle",
@@ -1820,11 +1955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 98,
+    "id": 96,
     "pmaid": "4021",
     "locid": "2536",
     "name": "Montlake Boulevard",
@@ -1839,11 +1975,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 99,
+    "id": 97,
     "pmaid": "488",
     "locid": "1576",
     "name": "Ravenna-Eckstein Park",
@@ -1858,11 +1995,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 100,
+    "id": 98,
     "pmaid": "444",
     "locid": "1876",
     "name": "View Ridge Playfield",
@@ -1877,11 +2015,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 101,
+    "id": 99,
     "pmaid": "4438",
     "locid": "1084",
     "name": "Counterbalance Park: An Urban Oasis",
@@ -1896,11 +2035,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 102,
+    "id": 100,
     "pmaid": "4017",
     "locid": "1275",
     "name": "Corliss Place",
@@ -1915,11 +2055,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 103,
+    "id": 101,
     "pmaid": "497",
     "locid": "1108",
     "name": "Ballard Playground",
@@ -1934,11 +2075,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 104,
+    "id": 102,
     "pmaid": "4468",
     "locid": "1444",
     "name": "Kirke Park",
@@ -1953,11 +2095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 105,
+    "id": 103,
     "pmaid": "249",
     "locid": "1599",
     "name": "Salmon Bay Park",
@@ -1972,11 +2115,12 @@
     "height": 2913,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 106,
+    "id": 104,
     "pmaid": "252",
     "locid": "1638",
     "name": "Sunset Hill Park",
@@ -1991,11 +2135,12 @@
     "height": 2583,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 107,
+    "id": 105,
     "pmaid": "305",
     "locid": "1232",
     "name": "Carleton Center",
@@ -2010,11 +2155,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 108,
+    "id": 106,
     "pmaid": "4012",
     "locid": "1308",
     "name": "Eastmont Place",
@@ -2029,11 +2175,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 109,
+    "id": 107,
     "pmaid": "492",
     "locid": "1476",
     "name": "Magnolia Greenbelt",
@@ -2048,11 +2195,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 110,
+    "id": 108,
     "pmaid": "343",
     "locid": "1648",
     "name": "Thorndyke Park",
@@ -2067,11 +2215,12 @@
     "height": 2150,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 111,
+    "id": 109,
     "pmaid": "312",
     "locid": "2390",
     "name": "Freeway Park - Jim Ellis Freeway Park",
@@ -2086,11 +2235,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 112,
+    "id": 110,
     "pmaid": "384",
     "locid": "1076",
     "name": "Tashkent Park",
@@ -2105,11 +2255,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 113,
+    "id": 111,
     "pmaid": "3980",
     "locid": "1298",
     "name": "Denny Blaine Lake Park",
@@ -2124,11 +2275,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 114,
+    "id": 112,
     "pmaid": "3905",
     "locid": "1399",
     "name": "Hyde Place",
@@ -2143,11 +2295,12 @@
     "height": 1401,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 115,
+    "id": 113,
     "pmaid": "409",
     "locid": "1786",
     "name": "Genesee Park and Playfield",
@@ -2162,11 +2315,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 118,
+    "id": 114,
     "pmaid": "3901",
     "locid": "1639",
     "name": "Sunset Place",
@@ -2181,11 +2335,12 @@
     "height": 2474,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 119,
+    "id": 115,
     "pmaid": "4462",
     "locid": "1277",
     "name": "Cottage Grove Park",
@@ -2200,11 +2355,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 120,
+    "id": 116,
     "pmaid": "282",
     "locid": "1945",
     "name": "Pigeon Point Park",
@@ -2219,11 +2375,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 121,
+    "id": 117,
     "pmaid": "4158",
     "locid": "2405",
     "name": "Puget Boulevard Commons",
@@ -2238,11 +2395,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 122,
+    "id": 118,
     "pmaid": "462",
     "locid": "1961",
     "name": "Puget Park",
@@ -2257,11 +2415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 123,
+    "id": 119,
     "pmaid": "4162",
     "locid": "1053",
     "name": "Laurelhurst Triangle",
@@ -2276,11 +2435,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 124,
+    "id": 120,
     "pmaid": "321",
     "locid": "1530",
     "name": "Mayfair Park",
@@ -2295,11 +2455,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 125,
+    "id": 121,
     "pmaid": "3985",
     "locid": "1261",
     "name": "Coe Play Park",
@@ -2314,11 +2475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 126,
+    "id": 122,
     "pmaid": "338",
     "locid": "1664",
     "name": "Victor Steinbrueck Park",
@@ -2333,11 +2495,12 @@
     "height": 2442,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 127,
+    "id": 123,
     "pmaid": "448",
     "locid": "1212",
     "name": "California Place",
@@ -2352,11 +2515,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 128,
+    "id": 124,
     "pmaid": "80",
     "locid": "2497",
     "name": "Charles Richey Sr Viewpoint",
@@ -2371,11 +2535,12 @@
     "height": 2413,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 129,
+    "id": 125,
     "pmaid": "3966",
     "locid": "1694",
     "name": "Weather Watch Park",
@@ -2390,11 +2555,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 130,
+    "id": 126,
     "pmaid": "3149",
     "locid": "1324",
     "name": "Fauntleroy Creek Ravine",
@@ -2409,11 +2575,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 131,
+    "id": 127,
     "pmaid": "460",
     "locid": "1060",
     "name": "Lincoln Park",
@@ -2428,11 +2595,12 @@
     "height": 1517,
     "filters": {
       "weight": 500,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 132,
+    "id": 128,
     "pmaid": "3903",
     "locid": "2500",
     "name": "Sunnyside Ave N Boat Ramp",
@@ -2447,11 +2615,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 133,
+    "id": 129,
     "pmaid": "391",
     "locid": "1570",
     "name": "Ravenna Park",
@@ -2466,11 +2635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 134,
+    "id": 130,
     "pmaid": "4073",
     "locid": "2553",
     "name": "Banner Way Triangle",
@@ -2485,11 +2655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 135,
+    "id": 131,
     "pmaid": "1000003",
     "locid": "0",
     "name": "Eddie Vine Boat Ramp",
@@ -2504,11 +2675,12 @@
     "height": 2987,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 136,
+    "id": 132,
     "pmaid": "274",
     "locid": "1943",
     "name": "Piers 62 and 63",
@@ -2523,11 +2695,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 137,
+    "id": 132,
+    "pmaid": "274",
+    "locid": "1943",
+    "name": "Piers 62 and 63",
+    "address": "1951 Alaskan Way",
+    "zip_code": "98101",
+    "lat": "47.608656",
+    "long": "-122.345237",
+    "imageName": "274_1943_Piers-62-and-63.webp",
+    "slug": "piers-62-and-63-anim",
+    "ext": "webp",
+    "width": 478,
+    "height": 638,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 133,
     "pmaid": "313",
     "locid": "1407",
     "name": "Interbay Golf",
@@ -2542,11 +2735,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 138,
+    "id": 134,
     "pmaid": "324",
     "locid": "2415",
     "name": "Parsons Gardens",
@@ -2561,11 +2755,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 139,
+    "id": 135,
     "pmaid": "311",
     "locid": "1547",
     "name": "Myrtle Edwards Park",
@@ -2580,11 +2775,12 @@
     "height": 2985,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 140,
+    "id": 136,
     "pmaid": "4013",
     "locid": "2395",
     "name": "McGilvra Boulevard",
@@ -2599,11 +2795,12 @@
     "height": 2370,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 141,
+    "id": 137,
     "pmaid": "4015",
     "locid": "1541",
     "name": "Miller Triangle",
@@ -2618,11 +2815,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 142,
+    "id": 138,
     "pmaid": "357",
     "locid": "2438",
     "name": "Prentis I. Frazier Park",
@@ -2637,11 +2835,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 143,
+    "id": 139,
     "pmaid": "3981",
     "locid": "1631",
     "name": "Stevens Triangle",
@@ -2656,11 +2855,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 144,
+    "id": 140,
     "pmaid": "1000002",
     "locid": "0",
     "name": "Adams Street Boat Ramp",
@@ -2675,11 +2875,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 145,
+    "id": 141,
     "pmaid": "413",
     "locid": "2498",
     "name": "Ferdinand Street Boat Ramp",
@@ -2694,11 +2895,12 @@
     "height": 3024,
     "filters": {
       "weight": 500,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 146,
+    "id": 142,
     "pmaid": "426",
     "locid": "1892",
     "name": "Amy Yee Tennis Center",
@@ -2713,11 +2915,12 @@
     "height": 1659,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 147,
+    "id": 143,
     "pmaid": "3929",
     "locid": "1468",
     "name": "Landing Parkway",
@@ -2732,11 +2935,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 148,
+    "id": 144,
     "pmaid": "3923",
     "locid": "2615",
     "name": "Martin Luther King, Jr. Memorial",
@@ -2751,11 +2955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 149,
+    "id": 145,
     "pmaid": "3928",
     "locid": "1616",
     "name": "Sierra Place",
@@ -2770,11 +2975,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 150,
+    "id": 146,
     "pmaid": "2840",
     "locid": "1911",
     "name": "Baker Park on Crown Hill",
@@ -2789,11 +2995,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 151,
+    "id": 147,
     "pmaid": "239",
     "locid": "1200",
     "name": "Blue Ridge Place",
@@ -2808,11 +3015,12 @@
     "height": 2989,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 152,
+    "id": 148,
     "pmaid": "289",
     "locid": "1146",
     "name": "Loyal Heights Playfield",
@@ -2827,11 +3035,12 @@
     "height": 3023,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 153,
+    "id": 149,
     "pmaid": "247",
     "locid": "247",
     "name": "North Beach Park",
@@ -2846,11 +3055,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 154,
+    "id": 150,
     "pmaid": "250",
     "locid": "2493",
     "name": "Sandel Playground",
@@ -2865,11 +3075,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 155,
+    "id": 151,
     "pmaid": "4018",
     "locid": "1280",
     "name": "Crescent Place",
@@ -2884,11 +3095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 156,
+    "id": 152,
     "pmaid": "449",
     "locid": "2336",
     "name": "Wallingford Playfield",
@@ -2903,11 +3115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 157,
+    "id": 153,
     "pmaid": "3975",
     "locid": "2596",
     "name": "NE 60th Street Park",
@@ -2922,11 +3135,12 @@
     "height": 2037,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 158,
+    "id": 154,
     "pmaid": "398",
     "locid": "2394",
     "name": "Warren G. Magnuson Park",
@@ -2941,11 +3155,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 159,
+    "id": 155,
     "pmaid": "4006",
     "locid": "1910",
     "name": "Bagley Viewpoint",
@@ -2960,11 +3175,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 160,
+    "id": 156,
     "pmaid": "346",
     "locid": "1290",
     "name": "Belmont Place",
@@ -2979,11 +3195,12 @@
     "height": 3857,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 161,
+    "id": 157,
     "pmaid": "383",
     "locid": "1635",
     "name": "Summit Place",
@@ -2998,11 +3215,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 162,
+    "id": 158,
     "pmaid": "386",
     "locid": "1044",
     "name": "Thomas St. Mini Park",
@@ -3017,11 +3235,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 163,
+    "id": 159,
     "pmaid": "2970",
     "locid": "0",
     "name": "Magnolia Tidelands Park",
@@ -3036,11 +3255,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 164,
+    "id": 160,
     "pmaid": "303",
     "locid": "1110",
     "name": "Bayview Playground",
@@ -3055,11 +3275,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 165,
+    "id": 161,
     "pmaid": "3005",
     "locid": "1930",
     "name": "Open Water Park",
@@ -3074,11 +3295,12 @@
     "height": 2429,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 166,
+    "id": 162,
     "pmaid": "4451",
     "locid": "1757",
     "name": "Ursula Judkins Viewpoint",
@@ -3093,11 +3315,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 167,
+    "id": 163,
     "pmaid": "4011",
     "locid": "1341",
     "name": "Fremont Canal Park",
@@ -3112,11 +3335,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 168,
+    "id": 164,
     "pmaid": "293",
     "locid": "1349",
     "name": "Gas Works Park",
@@ -3131,11 +3355,12 @@
     "height": 2266,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 169,
+    "id": 165,
     "pmaid": "350",
     "locid": "1117",
     "name": "Cascade Playground",
@@ -3150,11 +3375,12 @@
     "height": 2883,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 170,
+    "id": 166,
     "pmaid": "4000",
     "locid": "1952",
     "name": "Plymouth Pillars Park",
@@ -3169,11 +3395,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 171,
+    "id": 167,
     "pmaid": "705",
     "locid": "1304",
     "name": "Duwamish Waterway Park",
@@ -3188,11 +3415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 172,
+    "id": 168,
     "pmaid": "114",
     "locid": "1434",
     "name": "Jefferson Park",
@@ -3207,11 +3435,12 @@
     "height": 3024,
     "filters": {
       "weight": 7000,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 173,
+    "id": 169,
     "pmaid": "4416",
     "locid": "1934",
     "name": "Oxbow Park",
@@ -3226,11 +3455,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 174,
+    "id": 170,
     "pmaid": "467",
     "locid": "1177",
     "name": "South Park Playground",
@@ -3245,11 +3475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 175,
+    "id": 171,
     "pmaid": "43",
     "locid": "1394",
     "name": "Horiuchi Park",
@@ -3264,11 +3495,12 @@
     "height": 2999,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 176,
+    "id": 172,
     "pmaid": "3919",
     "locid": "1630",
     "name": "Stevens Place",
@@ -3283,11 +3515,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 177,
+    "id": 173,
     "pmaid": "592",
     "locid": "1633",
     "name": "Sturgus Park",
@@ -3302,11 +3535,12 @@
     "height": 2630,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 178,
+    "id": 174,
     "pmaid": "",
     "locid": "",
     "name": "East Duwamish Greenbelt",
@@ -3321,11 +3555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 179,
+    "id": 175,
     "pmaid": "3979",
     "locid": "1384",
     "name": "Highland Place",
@@ -3340,11 +3575,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 180,
+    "id": 176,
     "pmaid": "279",
     "locid": "2618",
     "name": "Northeast Queen Anne Greenbelt",
@@ -3359,11 +3595,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 181,
+    "id": 177,
     "pmaid": "322",
     "locid": "1926",
     "name": "Observatory Courts",
@@ -3378,11 +3615,12 @@
     "height": 3981,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 182,
+    "id": 178,
     "pmaid": "1106",
     "locid": "1756",
     "name": "Thomas C. Wales Park",
@@ -3397,11 +3635,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 183,
+    "id": 179,
     "pmaid": "4421",
     "locid": "1654",
     "name": "Trolley Hill Park",
@@ -3416,11 +3655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 184,
+    "id": 180,
     "pmaid": "3984",
     "locid": "1040",
     "name": "Queen Anne Bowl Playfield",
@@ -3435,11 +3675,12 @@
     "height": 2925,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 185,
+    "id": 181,
     "pmaid": "3694",
     "locid": "2401",
     "name": "West Ewing Mini Park",
@@ -3454,11 +3695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 186,
+    "id": 182,
     "pmaid": "3119",
     "locid": "1923",
     "name": "Beacon Place",
@@ -3473,11 +3715,12 @@
     "height": 2916,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 187,
+    "id": 183,
     "pmaid": "433",
     "locid": "2490",
     "name": "Dr. Jose Rizal Park",
@@ -3492,11 +3735,12 @@
     "height": 2734,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 188,
+    "id": 184,
     "pmaid": "4028",
     "locid": "0",
     "name": "Beck Place",
@@ -3511,11 +3755,12 @@
     "height": 2881,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 189,
+    "id": 185,
     "pmaid": "483",
     "locid": "1279",
     "name": "Cowen Park",
@@ -3530,11 +3775,12 @@
     "height": 2652,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 190,
+    "id": 186,
     "pmaid": "4027",
     "locid": "1937",
     "name": "Park Home Circle",
@@ -3549,11 +3795,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 191,
+    "id": 187,
     "pmaid": "4080",
     "locid": "1572",
     "name": "Ravenna Park Triangle",
@@ -3568,11 +3815,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 192,
+    "id": 188,
     "pmaid": "248",
     "locid": "1812",
     "name": "Ross Playground",
@@ -3587,11 +3835,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 193,
+    "id": 189,
     "pmaid": "278",
     "locid": "1814",
     "name": "Wolf Creek Ravine Natural Area",
@@ -3606,11 +3855,12 @@
     "height": 2985,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 194,
+    "id": 190,
     "pmaid": "330",
     "locid": "2561",
     "name": "West Queen Anne Playfield",
@@ -3625,11 +3875,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 195,
+    "id": 191,
     "pmaid": "3918",
     "locid": "0",
     "name": "McClellan Place",
@@ -3644,11 +3895,12 @@
     "height": 2811,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 196,
+    "id": 192,
     "pmaid": "3909",
     "locid": "1651",
     "name": "Tilikum Place",
@@ -3663,11 +3915,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 197,
+    "id": 193,
     "pmaid": "3983",
     "locid": "1383",
     "name": "Highland Drive Parkway",
@@ -3682,11 +3935,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 198,
+    "id": 194,
     "pmaid": "763",
     "locid": "1684",
     "name": "Ward Springs Park",
@@ -3701,11 +3955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 199,
+    "id": 195,
     "pmaid": "3907",
     "locid": "1196",
     "name": "Blaine Place",
@@ -3720,11 +3975,12 @@
     "height": 1934,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 200,
+    "id": 196,
     "pmaid": "342",
     "locid": "2374",
     "name": "Kerry Park",
@@ -3739,11 +3995,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 201,
+    "id": 197,
     "pmaid": "4022",
     "locid": "1182",
     "name": "Bellevue Place",
@@ -3758,11 +4015,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 202,
+    "id": 198,
     "pmaid": "4461",
     "locid": "1636",
     "name": "Summit Slope Park",
@@ -3777,11 +4035,12 @@
     "height": 2987,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 203,
+    "id": 199,
     "pmaid": "349",
     "locid": "1202",
     "name": "Boylston Place",
@@ -3796,11 +4055,12 @@
     "height": 2022,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 204,
+    "id": 200,
     "pmaid": "399",
     "locid": "1669",
     "name": "Volunteer Park",
@@ -3815,11 +4075,12 @@
     "height": 1848,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 205,
+    "id": 201,
     "pmaid": "3102",
     "locid": "1211",
     "name": "Cal Anderson Park and Bobby Morris Playfield",
@@ -3834,11 +4095,12 @@
     "height": 2699,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 207,
+    "id": 202,
     "pmaid": "",
     "locid": "",
     "name": "Cheshiahud Lake Union Loop",
@@ -3853,11 +4115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 208,
+    "id": 203,
     "pmaid": "494",
     "locid": "1702",
     "name": "Westlake Greenbelt",
@@ -3872,11 +4135,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 209,
+    "id": 204,
     "pmaid": "286",
     "locid": "1059",
     "name": "Licton Springs Park",
@@ -3891,11 +4155,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 210,
+    "id": 205,
     "pmaid": "4029",
     "locid": "1940",
     "name": "Peace Park",
@@ -3910,11 +4175,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 211,
+    "id": 206,
     "pmaid": "4034",
     "locid": "1271",
     "name": "Columbia Park",
@@ -3929,11 +4195,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 212,
+    "id": 207,
     "pmaid": "415",
     "locid": "1450",
     "name": "Kubota Garden",
@@ -3948,11 +4215,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 213,
+    "id": 208,
     "pmaid": "339",
     "locid": "1536",
     "name": "McGraw Square",
@@ -3967,11 +4235,12 @@
     "height": 2691,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 215,
+    "id": 209,
     "pmaid": "332",
     "locid": "1703",
     "name": "Westlake Park",
@@ -3986,11 +4255,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 216,
+    "id": 209,
+    "pmaid": "332",
+    "locid": "1703",
+    "name": "Westlake Park",
+    "address": "401 Pine St",
+    "zip_code": "98101",
+    "lat": "47.611099",
+    "long": "-122.33724",
+    "imageName": "332_1703_Westlake-Park.webp",
+    "slug": "westlake-park-anim",
+    "ext": "webp",
+    "width": 638,
+    "height": 478,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 210,
     "pmaid": "335",
     "locid": "2384",
     "name": "Seattle Aquarium",
@@ -4005,11 +4295,12 @@
     "height": 2867,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 217,
+    "id": 211,
     "pmaid": "354",
     "locid": "1346",
     "name": "Grand Army of the Republic Cemetery",
@@ -4024,11 +4315,12 @@
     "height": 3886,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 219,
+    "id": 212,
     "pmaid": "4446",
     "locid": "1400",
     "name": "I-5 Colonnade",
@@ -4043,11 +4335,12 @@
     "height": 2297,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 220,
+    "id": 213,
     "pmaid": "3023",
     "locid": "1412",
     "name": "Interlaken Park",
@@ -4062,11 +4355,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 221,
+    "id": 214,
     "pmaid": "366",
     "locid": "1464",
     "name": "Lakeview Place",
@@ -4081,11 +4375,12 @@
     "height": 1217,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 222,
+    "id": 215,
     "pmaid": "379",
     "locid": "1591",
     "name": "Roanoke Park",
@@ -4100,11 +4395,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 223,
+    "id": 216,
     "pmaid": "380",
     "locid": "1165",
     "name": "Rogers Playground",
@@ -4119,11 +4415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 224,
+    "id": 217,
     "pmaid": "377",
     "locid": "2431",
     "name": "South Passage Point Park",
@@ -4138,11 +4435,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 225,
+    "id": 218,
     "pmaid": "2848",
     "locid": "2848",
     "name": "St. Mark's Greenbelt",
@@ -4157,11 +4455,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 226,
+    "id": 219,
     "pmaid": "3889",
     "locid": "1643",
     "name": "Terry Pettus Park",
@@ -4176,11 +4475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 227,
+    "id": 220,
     "pmaid": "4404",
     "locid": "2533",
     "name": "A. B. Ernst Park",
@@ -4195,11 +4495,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 228,
+    "id": 221,
     "pmaid": "3880",
     "locid": "1440",
     "name": "Keystone Place",
@@ -4214,11 +4515,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 229,
+    "id": 222,
     "pmaid": "1000004",
     "locid": "0",
     "name": "Wallingford Steps",
@@ -4233,11 +4535,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 230,
+    "id": 223,
     "pmaid": "358",
     "locid": "1093",
     "name": "Hing Hay Park",
@@ -4252,11 +4555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 231,
+    "id": 224,
     "pmaid": "364",
     "locid": "1413",
     "name": "International Children's Park",
@@ -4271,11 +4575,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 232,
+    "id": 225,
+    "pmaid": "323",
+    "locid": "1927",
+    "name": "Occidental Square",
+    "address": "117 S Washington St",
+    "zip_code": "98104",
+    "lat": "47.600463",
+    "long": "-122.333272",
+    "imageName": "323_1927_Occidental-Square.webp",
+    "slug": "occidental-square-anim",
+    "ext": "webp",
+    "width": 645,
+    "height": 483,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 225,
     "pmaid": "323",
     "locid": "1927",
     "name": "Occidental Square",
@@ -4290,11 +4615,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 233,
+    "id": 226,
     "pmaid": "325",
     "locid": "1949",
     "name": "Pioneer Square",
@@ -4309,11 +4635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 234,
+    "id": 227,
     "pmaid": "326",
     "locid": "1956",
     "name": "Prefontaine Place",
@@ -4328,11 +4655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 235,
+    "id": 228,
     "pmaid": "4165",
     "locid": "2499",
     "name": "Washington Street Public Boat Landing",
@@ -4347,11 +4675,12 @@
     "height": 3019,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 236,
+    "id": 229,
     "pmaid": "4563",
     "locid": "0",
     "name": "Yesler Playfield",
@@ -4366,11 +4695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 237,
+    "id": 230,
     "pmaid": "475",
     "locid": "1189",
     "name": "Belvoir Place",
@@ -4385,11 +4715,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 238,
+    "id": 231,
     "pmaid": "595",
     "locid": "1250",
     "name": "Christie Park",
@@ -4404,11 +4735,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 239,
+    "id": 232,
     "pmaid": "340",
     "locid": "1142",
     "name": "Laurelhurst Playfield",
@@ -4423,11 +4755,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 240,
+    "id": 233,
     "pmaid": "2956",
     "locid": "2487",
     "name": "North Passage Point Park",
@@ -4442,11 +4775,12 @@
     "height": 2605,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 241,
+    "id": 234,
     "pmaid": "435",
     "locid": "1180",
     "name": "University Playground",
@@ -4461,11 +4795,12 @@
     "height": 1183,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 242,
+    "id": 235,
     "pmaid": "450",
     "locid": "1124",
     "name": "Delridge Playfield",
@@ -4480,11 +4815,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 243,
+    "id": 236,
     "pmaid": "4412",
     "locid": "1381",
     "name": "Herring's House Park (T'ul'altx)",
@@ -4499,11 +4835,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 244,
+    "id": 237,
     "pmaid": "264",
     "locid": "2437",
     "name": "Longfellow Creek Greenspace",
@@ -4518,11 +4855,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 245,
+    "id": 238,
     "pmaid": "3993",
     "locid": "2247",
     "name": "Puget Creek Greenspace",
@@ -4537,11 +4875,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 246,
+    "id": 239,
     "pmaid": "463",
     "locid": "2269",
     "name": "Riverview Playfield",
@@ -4556,11 +4895,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 247,
+    "id": 240,
     "pmaid": "4401",
     "locid": "2603",
     "name": "West Duwamish Greenbelt",
@@ -4575,11 +4915,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 248,
+    "id": 241,
     "pmaid": "468",
     "locid": "1701",
     "name": "Westcrest Park",
@@ -4594,11 +4935,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 249,
+    "id": 242,
     "pmaid": "4010",
     "locid": "2546",
     "name": "14th Ave NW Boat Ramp",
@@ -4613,11 +4955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 250,
+    "id": 243,
     "pmaid": "4278",
     "locid": "1913",
     "name": "Ballard Commons Park",
@@ -4632,11 +4975,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 251,
+    "id": 244,
     "pmaid": "4428",
     "locid": "1914",
     "name": "Ballard Corners Park",
@@ -4651,11 +4995,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 252,
+    "id": 245,
     "pmaid": "3902",
     "locid": "1235",
     "name": "Cascade Place",
@@ -4670,11 +5015,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 253,
+    "id": 246,
     "pmaid": "308",
     "locid": "1272",
     "name": "Commodore Park",
@@ -4689,11 +5035,12 @@
     "height": 2593,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 254,
+    "id": 247,
     "pmaid": "242",
     "locid": "1134",
     "name": "Gilman Playground",
@@ -4708,11 +5055,12 @@
     "height": 2747,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 255,
+    "id": 248,
     "pmaid": "298",
     "locid": "1880",
     "name": "Marvin's Garden",
@@ -4727,11 +5075,12 @@
     "height": 3971,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 256,
+    "id": 249,
     "pmaid": "4161",
     "locid": "2599",
     "name": "Northwest 60th St. Viewpoint",
@@ -4746,11 +5095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 257,
+    "id": 250,
     "pmaid": "3999",
     "locid": "1568",
     "name": "Rainier Place",
@@ -4765,11 +5115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 258,
+    "id": 251,
     "pmaid": "404",
     "locid": "2026",
     "name": "Cleveland Playfield",
@@ -4784,11 +5135,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 259,
+    "id": 252,
     "pmaid": "410",
     "locid": "2094",
     "name": "Georgetown Playfield",
@@ -4803,11 +5155,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 260,
+    "id": 253,
     "pmaid": "4153",
     "locid": "1791",
     "name": "Jefferson Park Golf Course",
@@ -4822,11 +5175,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 261,
+    "id": 254,
     "pmaid": "4439",
     "locid": "1459",
     "name": "Lake People Park (Xacua'bs)",
@@ -4841,11 +5195,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 262,
+    "id": 255,
     "pmaid": "1630",
     "locid": "1523",
     "name": "Maple School Ravine",
@@ -4860,11 +5215,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 263,
+    "id": 256,
     "pmaid": "418",
     "locid": "1106",
     "name": "Maple Wood Playfield",
@@ -4879,11 +5235,12 @@
     "height": 2628,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 264,
+    "id": 257,
     "pmaid": "4048",
     "locid": "1624",
     "name": "South Park Meadow",
@@ -4898,11 +5255,12 @@
     "height": 2576,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 265,
+    "id": 258,
     "pmaid": "431",
     "locid": "1874",
     "name": "Van Asselt Playground",
@@ -4917,11 +5275,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 266,
+    "id": 259,
     "pmaid": "334",
     "locid": "1705",
     "name": "Westlake Square",
@@ -4936,11 +5295,52 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 267,
+    "id": 259,
+    "pmaid": "334",
+    "locid": "1705",
+    "name": "Westlake Square",
+    "address": "1900 Westlake Ave",
+    "zip_code": "98109",
+    "lat": "47.613627",
+    "long": "-122.337285",
+    "imageName": "334_1705_Westlake-Square.webp",
+    "slug": "westlake-square-anim",
+    "ext": "webp",
+    "width": 648,
+    "height": 485,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 260,
+    "pmaid": "309",
+    "locid": "1297",
+    "name": "Denny Park",
+    "address": "100 Dexter Ave N",
+    "zip_code": "98109",
+    "lat": "47.61913",
+    "long": "-122.341049",
+    "imageName": "309_1297_Denny-Park.webp",
+    "slug": "denny-park-anim",
+    "ext": "webp",
+    "width": 644,
+    "height": 482,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 260,
     "pmaid": "309",
     "locid": "1297",
     "name": "Denny Park",
@@ -4955,11 +5355,12 @@
     "height": 2118,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 268,
+    "id": 261,
     "pmaid": "3977",
     "locid": "0",
     "name": "Eastlake Triangle",
@@ -4974,11 +5375,12 @@
     "height": 2467,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 269,
+    "id": 262,
     "pmaid": "4155",
     "locid": "1461",
     "name": "Fairview Walkway",
@@ -4993,11 +5395,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 271,
+    "id": 263,
+    "pmaid": "1100393",
+    "locid": "393",
+    "name": "Washington Park Playfield",
+    "address": "1017 Lake Washington Blvd E",
+    "zip_code": "98112",
+    "lat": "47.627064",
+    "long": "-122.293925",
+    "imageName": "1100393_393_Washington-Park-Playfield.webp",
+    "slug": "washington-park-playfield-anim",
+    "ext": "webp",
+    "width": 644,
+    "height": 483,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 264,
     "pmaid": "3982",
     "locid": "1300",
     "name": "Denny Blaine Park",
@@ -5012,11 +5435,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 272,
+    "id": 265,
     "pmaid": "356",
     "locid": "1377",
     "name": "Harrison Ridge Greenbelt",
@@ -5031,11 +5455,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 273,
+    "id": 266,
     "pmaid": "1000393",
     "locid": "0",
     "name": "Japanese Garden",
@@ -5050,11 +5475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 274,
+    "id": 267,
     "pmaid": "365",
     "locid": "1463",
     "name": "Lakeview Park",
@@ -5069,11 +5495,12 @@
     "height": 2981,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 275,
+    "id": 268,
     "pmaid": "369",
     "locid": "1071",
     "name": "Madison Park",
@@ -5088,11 +5515,12 @@
     "height": 2215,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 276,
+    "id": 269,
     "pmaid": "4441",
     "locid": "2509",
     "name": "Madison Park North Beach",
@@ -5107,11 +5535,12 @@
     "height": 2784,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 277,
+    "id": 270,
     "pmaid": "373",
     "locid": "1150",
     "name": "Miller Playfield",
@@ -5126,11 +5555,12 @@
     "height": 2915,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 278,
+    "id": 271,
     "pmaid": "376",
     "locid": "2536",
     "name": "Montlake Playfield",
@@ -5145,11 +5575,12 @@
     "height": 2991,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 279,
+    "id": 272,
     "pmaid": "345",
     "locid": "1953",
     "name": "Powell Barnett Park",
@@ -5164,11 +5595,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 280,
+    "id": 273,
     "pmaid": "393",
     "locid": "0",
     "name": "Washington Park Arboretum",
@@ -5183,11 +5615,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 281,
+    "id": 274,
     "pmaid": "375",
     "locid": "2402",
     "name": "West Montlake Park",
@@ -5202,11 +5635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 282,
+    "id": 275,
     "pmaid": "482",
     "locid": "1082",
     "name": "Bryant Neighborhood Playground",
@@ -5221,11 +5655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 283,
+    "id": 276,
     "pmaid": "499",
     "locid": "1819",
     "name": "Dahl Playfield",
@@ -5240,11 +5675,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 284,
+    "id": 277,
     "pmaid": "287",
     "locid": "1128",
     "name": "Froula Playground",
@@ -5259,11 +5695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 285,
+    "id": 278,
     "pmaid": "307",
     "locid": "1366",
     "name": "Green Lake Park",
@@ -5278,11 +5715,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 286,
+    "id": 279,
     "pmaid": "4001",
     "locid": "1095",
     "name": "Inverness Ravine Park",
@@ -5297,11 +5735,12 @@
     "height": 2801,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 287,
+    "id": 280,
     "pmaid": "4482",
     "locid": "1102",
     "name": "LaVilla Meadows Natural Area on Thornton Creek",
@@ -5316,11 +5755,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 288,
+    "id": 281,
     "pmaid": "4479",
     "locid": "1103",
     "name": "Licorice Fern Natural Area on Thornton Creek",
@@ -5335,11 +5775,12 @@
     "height": 2997,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 289,
+    "id": 282,
     "pmaid": "432",
     "locid": "1527",
     "name": "Martha Washington Park",
@@ -5354,11 +5795,12 @@
     "height": 2845,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 290,
+    "id": 283,
     "pmaid": "347",
     "locid": "1529",
     "name": "Matthews Beach Park",
@@ -5373,11 +5815,12 @@
     "height": 3003,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 291,
+    "id": 284,
     "pmaid": "277",
     "locid": "1543",
     "name": "Mock Creek Ravine",
@@ -5392,11 +5835,12 @@
     "height": 2378,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 292,
+    "id": 285,
     "pmaid": "4045",
     "locid": "1565",
     "name": "Rainbow Point",
@@ -5411,11 +5855,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 293,
+    "id": 286,
     "pmaid": "254",
     "locid": "1571",
     "name": "Ravenna Ravine",
@@ -5430,11 +5875,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 294,
+    "id": 287,
     "pmaid": "394",
     "locid": "1168",
     "name": "Sacajawea Playground",
@@ -5449,11 +5895,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 295,
+    "id": 288,
     "pmaid": "3899",
     "locid": "1695",
     "name": "Wedgwood Square",
@@ -5468,11 +5915,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 296,
+    "id": 289,
     "pmaid": "445",
     "locid": "1888",
     "name": "Alki Beach Park",
@@ -5487,11 +5935,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 297,
+    "id": 290,
     "pmaid": "446",
     "locid": "1049",
     "name": "Alki Playground",
@@ -5506,11 +5955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 298,
+    "id": 291,
     "pmaid": "2927",
     "locid": "1894",
     "name": "Andover Place",
@@ -5525,11 +5975,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 299,
+    "id": 292,
     "pmaid": "260",
     "locid": "2504",
     "name": "College Street Ravine",
@@ -5544,11 +5995,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 300,
+    "id": 293,
     "pmaid": "295",
     "locid": "1276",
     "name": "Cormorant Cove",
@@ -5563,11 +6015,12 @@
     "height": 2621,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 301,
+    "id": 294,
     "pmaid": "575",
     "locid": "1287",
     "name": "Dakota Place Park",
@@ -5582,11 +6035,12 @@
     "height": 3933,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 302,
+    "id": 295,
     "pmaid": "3917",
     "locid": "1085",
     "name": "Don Armeni Park",
@@ -5601,11 +6055,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 303,
+    "id": 296,
     "pmaid": "3920",
     "locid": "1086",
     "name": "Emma Schmitz Memorial Overlook",
@@ -5620,11 +6075,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 304,
+    "id": 297,
     "pmaid": "1653",
     "locid": "1314",
     "name": "Endolyne Park",
@@ -5639,11 +6095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 305,
+    "id": 298,
     "pmaid": "4454",
     "locid": "1316",
     "name": "Ercolini Park",
@@ -5658,11 +6115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 306,
+    "id": 299,
     "pmaid": "454",
     "locid": "1375",
     "name": "Hamilton Viewpoint Park",
@@ -5677,11 +6135,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 307,
+    "id": 300,
     "pmaid": "456",
     "locid": "1788",
     "name": "Hiawatha Playfield",
@@ -5696,11 +6155,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 308,
+    "id": 301,
     "pmaid": "4236",
     "locid": "2539",
     "name": "Schmitz Boulevard",
@@ -5715,11 +6175,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 309,
+    "id": 302,
     "pmaid": "465",
     "locid": "1603",
     "name": "Schmitz Preserve Park",
@@ -5734,11 +6195,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 310,
+    "id": 303,
     "pmaid": "238",
     "locid": "1199",
     "name": "Blue Ridge Circle",
@@ -5753,11 +6215,12 @@
     "height": 2734,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 311,
+    "id": 304,
     "pmaid": "4070",
     "locid": "1281",
     "name": "Crown Hill Glen",
@@ -5772,11 +6235,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 312,
+    "id": 305,
     "pmaid": "243",
     "locid": "1361",
     "name": "Golden Gardens Park",
@@ -5791,11 +6255,12 @@
     "height": 2995,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 313,
+    "id": 306,
     "pmaid": "251",
     "locid": "1175",
     "name": "Soundview Playfield",
@@ -5810,11 +6275,12 @@
     "height": 2715,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 314,
+    "id": 307,
     "pmaid": "440",
     "locid": "1925",
     "name": "Beer Sheva Park",
@@ -5829,11 +6295,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 315,
+    "id": 308,
     "pmaid": "436",
     "locid": "1077",
     "name": "Benefit Playground",
@@ -5848,11 +6315,12 @@
     "height": 2136,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 316,
+    "id": 309,
     "pmaid": "402",
     "locid": "1115",
     "name": "Brighton Playfield",
@@ -5867,11 +6335,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 317,
+    "id": 310,
     "pmaid": "421",
     "locid": "1249",
     "name": "Chinook Beach Park",
@@ -5886,11 +6355,12 @@
     "height": 2929,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 318,
+    "id": 311,
     "pmaid": "3948",
     "locid": "1333",
     "name": "Fletcher Place",
@@ -5905,11 +6375,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 319,
+    "id": 312,
     "pmaid": "4413",
     "locid": "1389",
     "name": "Hitt's Hill Park",
@@ -5924,11 +6395,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 320,
+    "id": 313,
     "pmaid": "439",
     "locid": "1089",
     "name": "Hutchinson Playground",
@@ -5943,11 +6415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 321,
+    "id": 314,
     "pmaid": "429",
     "locid": "2560",
     "name": "John C. Little, Sr. Park",
@@ -5962,11 +6435,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 322,
+    "id": 315,
     "pmaid": "4040",
     "locid": "1465",
     "name": "Lakewood Moorage",
@@ -5981,11 +6455,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 323,
+    "id": 316,
     "pmaid": "414",
     "locid": "2167",
     "name": "Lakewood Playfield",
@@ -6000,11 +6475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 324,
+    "id": 317,
     "pmaid": "403",
     "locid": "1933",
     "name": "Othello Playground",
@@ -6019,11 +6495,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 325,
+    "id": 318,
     "pmaid": "420",
     "locid": "1957",
     "name": "Pritchard Island Beach",
@@ -6038,11 +6515,12 @@
     "height": 2379,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 326,
+    "id": 319,
     "pmaid": "425",
     "locid": "1844",
     "name": "Stan Sayres Memorial Park",
@@ -6057,11 +6535,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 327,
+    "id": 320,
     "pmaid": "290",
     "locid": "1633",
     "name": "Sturtevant Ravine",
@@ -6076,11 +6555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 328,
+    "id": 321,
     "pmaid": "281",
     "locid": "2545",
     "name": "12th and Howe Play Park",
@@ -6095,11 +6575,32 @@
     "height": 2987,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 329,
+    "id": 321,
+    "pmaid": "281",
+    "locid": "2545",
+    "name": "12th and Howe Play Park",
+    "address": "1200 W Howe St",
+    "zip_code": "98119",
+    "lat": "47.636097",
+    "long": "-122.372985",
+    "imageName": "281_2545_12th-and-Howe-Play-Park.webp",
+    "slug": "12th-and-howe-play-park-anim",
+    "ext": "webp",
+    "width": 607,
+    "height": 455,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 322,
     "pmaid": "306",
     "locid": "1252",
     "name": "City Hall Park",
@@ -6114,11 +6615,12 @@
     "height": 2538,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 330,
+    "id": 323,
     "pmaid": "314",
     "locid": "1442",
     "name": "Kinnear Park",
@@ -6133,11 +6635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 331,
+    "id": 324,
     "pmaid": "320",
     "locid": "1525",
     "name": "Marshall Park",
@@ -6152,11 +6655,12 @@
     "height": 2919,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 332,
+    "id": 325,
     "pmaid": "3987",
     "locid": "1738",
     "name": "Soundview Terrace",
@@ -6171,11 +6675,12 @@
     "height": 2666,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 333,
+    "id": 326,
     "pmaid": "234",
     "locid": "2416",
     "name": "SW Queen Anne Greenbelt",
@@ -6190,11 +6695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 334,
+    "id": 327,
     "pmaid": "4472",
     "locid": "2543",
     "name": "Bell Street Park",
@@ -6209,11 +6715,12 @@
     "height": 2633,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 335,
+    "id": 328,
     "pmaid": "4415",
     "locid": "1186",
     "name": "Belltown Cottage Park",
@@ -6228,11 +6735,32 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 336,
+    "id": 329,
+    "pmaid": "4008",
+    "locid": "1535",
+    "name": "McGilvra Place",
+    "address": "1425 E Madison St",
+    "zip_code": "98122",
+    "lat": "47.614233",
+    "long": "-122.313032",
+    "imageName": "4008_1535_McGilvra-Place.webp",
+    "slug": "mcgilvra-place-anim",
+    "ext": "webp",
+    "width": 604,
+    "height": 453,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 329,
     "pmaid": "4008",
     "locid": "1535",
     "name": "McGilvra Place",
@@ -6247,11 +6775,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 337,
+    "id": 330,
     "pmaid": "4467",
     "locid": "2382",
     "name": "12th Ave Square Park",
@@ -6266,11 +6795,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 338,
+    "id": 331,
     "pmaid": "4245",
     "locid": "1190",
     "name": "Benvenuto Viewpoint",
@@ -6285,11 +6815,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 339,
+    "id": 332,
     "pmaid": "348",
     "locid": "0",
     "name": "Boren Place",
@@ -6304,11 +6835,12 @@
     "height": 2842,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 340,
+    "id": 333,
     "pmaid": "406",
     "locid": "1121",
     "name": "Colman Playground",
@@ -6323,11 +6855,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 341,
+    "id": 334,
     "pmaid": "353",
     "locid": "1130",
     "name": "Garfield Playfield",
@@ -6342,11 +6875,12 @@
     "height": 2963,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 342,
+    "id": 335,
     "pmaid": "3759",
     "locid": "1359",
     "name": "Gerber Park",
@@ -6361,11 +6895,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 343,
+    "id": 336,
     "pmaid": "4426",
     "locid": "1392",
     "name": "Homer Harris Park",
@@ -6380,11 +6915,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 344,
+    "id": 337,
     "pmaid": "359",
     "locid": "1397",
     "name": "Howell Park",
@@ -6399,11 +6935,12 @@
     "height": 2970,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 345,
+    "id": 338,
     "pmaid": "263",
     "locid": "1808",
     "name": "Leschi-Lake Dell Natural Area",
@@ -6418,11 +6955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 346,
+    "id": 339,
     "pmaid": "371",
     "locid": "1147",
     "name": "Madrona Playground",
@@ -6437,11 +6975,12 @@
     "height": 3977,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 347,
+    "id": 340,
     "pmaid": "2856",
     "locid": "1474",
     "name": "Madrona Ravine",
@@ -6456,11 +6995,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 348,
+    "id": 341,
     "pmaid": "4403",
     "locid": "1557",
     "name": "Nora's Woods",
@@ -6475,11 +7015,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 349,
+    "id": 342,
     "pmaid": "378",
     "locid": "2239",
     "name": "Peppi's Playground",
@@ -6494,11 +7035,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 350,
+    "id": 343,
     "pmaid": "387",
     "locid": "1951",
     "name": "Plum Tree Park",
@@ -6513,11 +7055,12 @@
     "height": 3925,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 351,
+    "id": 344,
     "pmaid": "4242",
     "locid": "1600",
     "name": "Sam Smith Park",
@@ -6532,11 +7075,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 352,
+    "id": 345,
     "pmaid": "381",
     "locid": "2523",
     "name": "Spring Street Mini Park",
@@ -6551,11 +7095,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 353,
+    "id": 346,
     "pmaid": "3117",
     "locid": "2524",
     "name": "Spruce Street Mini Park",
@@ -6570,11 +7115,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 355,
+    "id": 347,
     "pmaid": "385",
     "locid": "2530",
     "name": "William Grose Park",
@@ -6589,11 +7135,12 @@
     "height": 2929,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 356,
+    "id": 348,
     "pmaid": "4481",
     "locid": "1075",
     "name": "Beaver Pond Natural Area on Thornton Creek",
@@ -6608,11 +7155,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 357,
+    "id": 349,
     "pmaid": "4167",
     "locid": "1237",
     "name": "Cedar Park",
@@ -6627,11 +7175,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 358,
+    "id": 350,
+    "pmaid": "4456",
+    "locid": "1398",
+    "name": "Hubbard Homestead",
+    "address": "11203 5th Ave NE",
+    "zip_code": "98125",
+    "lat": "47.709964",
+    "long": "-122.324674",
+    "imageName": "4456_1398_Hubbard-Homestead.webp",
+    "slug": "hubbard-homestead-anim",
+    "ext": "webp",
+    "width": 598,
+    "height": 354,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 350,
     "pmaid": "4456",
     "locid": "1398",
     "name": "Hubbard Homestead",
@@ -6646,11 +7215,12 @@
     "height": 1979,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 359,
+    "id": 351,
     "pmaid": "4480",
     "locid": "1099",
     "name": "Kingfisher Natural Area on Thornton Creek",
@@ -6665,11 +7235,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 360,
+    "id": 352,
     "pmaid": "297",
     "locid": "1064",
     "name": "Little Brook Park",
@@ -6684,11 +7255,12 @@
     "height": 1983,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 361,
+    "id": 353,
     "pmaid": "4434",
     "locid": "1522",
     "name": "Maple Leaf Community Garden",
@@ -6703,11 +7275,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 362,
+    "id": 354,
     "pmaid": "352",
     "locid": "1107",
     "name": "Meadowbrook Playfield",
@@ -6722,11 +7295,12 @@
     "height": 2822,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 363,
+    "id": 355,
     "pmaid": "4023",
     "locid": "1155",
     "name": "Nathan Hale Playfield",
@@ -6741,11 +7315,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 364,
+    "id": 356,
     "pmaid": "361",
     "locid": "361",
     "name": "Northacres Park",
@@ -6760,11 +7335,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 365,
+    "id": 357,
     "pmaid": "382",
     "locid": "1157",
     "name": "Pinehurst Playground",
@@ -6779,11 +7355,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 366,
+    "id": 358,
     "pmaid": "3998",
     "locid": "1662",
     "name": "University Lake Shore Place",
@@ -6798,11 +7375,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 367,
+    "id": 359,
     "pmaid": "4443",
     "locid": "1666",
     "name": "Victory Creek Park",
@@ -6817,11 +7395,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 368,
+    "id": 360,
     "pmaid": "438",
     "locid": "1875",
     "name": "Victory Heights Playground",
@@ -6836,11 +7415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 369,
+    "id": 361,
     "pmaid": "4002",
     "locid": "1668",
     "name": "Virgil Flaim Park",
@@ -6855,11 +7435,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 370,
+    "id": 362,
     "pmaid": "447",
     "locid": "1188",
     "name": "Belvedere Park",
@@ -6874,11 +7455,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 371,
+    "id": 363,
     "pmaid": "4154",
     "locid": "1213",
     "name": "Camp Long",
@@ -6893,11 +7475,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 372,
+    "id": 364,
     "pmaid": "408",
     "locid": "1291",
     "name": "Dearborn Park",
@@ -6912,11 +7495,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 373,
+    "id": 365,
     "pmaid": "458",
     "locid": "2534",
     "name": "E.C. Hughes Playground",
@@ -6931,11 +7515,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 374,
+    "id": 366,
     "pmaid": "4463",
     "locid": "1548",
     "name": "Myrtle Reservoir",
@@ -6950,11 +7535,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 375,
+    "id": 367,
     "pmaid": "4465",
     "locid": "1594",
     "name": "Rotary Viewpoint",
@@ -6969,11 +7555,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 376,
+    "id": 368,
     "pmaid": "464",
     "locid": "1595",
     "name": "Roxhill Park",
@@ -6988,11 +7575,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 377,
+    "id": 369,
     "pmaid": "455",
     "locid": "1605",
     "name": "Seacrest Park",
@@ -7007,11 +7595,12 @@
     "height": 2558,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 378,
+    "id": 370,
     "pmaid": "469",
     "locid": "2566",
     "name": "West Seattle Golf Course",
@@ -7026,11 +7615,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 379,
+    "id": 371,
     "pmaid": "472",
     "locid": "2528",
     "name": "West Seattle Stadium",
@@ -7045,11 +7635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 380,
+    "id": 372,
     "pmaid": "3997",
     "locid": "1207",
     "name": "Broadview Park",
@@ -7064,11 +7655,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 381,
+    "id": 373,
     "pmaid": "291",
     "locid": "1542",
     "name": "Mineral Springs Park",
@@ -7083,11 +7675,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 382,
+    "id": 374,
     "pmaid": "4453",
     "locid": "1619",
     "name": "Solstice Park",
@@ -7102,11 +7695,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 383,
+    "id": 375,
     "pmaid": "452",
     "locid": "1127",
     "name": "Fairmount Playfield",
@@ -7121,11 +7715,12 @@
     "height": 2866,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 384,
+    "id": 376,
     "pmaid": "453",
     "locid": "1325",
     "name": "Fauntleroy Park",
@@ -7140,11 +7735,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 385,
+    "id": 377,
     "pmaid": "461",
     "locid": "1067",
     "name": "Lowman Beach Park",
@@ -7159,11 +7755,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 386,
+    "id": 378,
     "pmaid": "4460",
     "locid": "1545",
     "name": "Morgan Junction",
@@ -7178,11 +7775,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 387,
+    "id": 379,
     "pmaid": "300",
     "locid": "2403",
     "name": "Orchard Street Ravine",
@@ -7197,11 +7795,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 388,
+    "id": 380,
     "pmaid": "237",
     "locid": "1810",
     "name": "Pelly Place Natural Area",
@@ -7216,11 +7815,12 @@
     "height": 1331,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 389,
+    "id": 381,
     "pmaid": "4159",
     "locid": "2387",
     "name": "12th Ave S Viewpoint",
@@ -7235,11 +7835,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 390,
+    "id": 382,
     "pmaid": "4243",
     "locid": "2541",
     "name": "Atlantic Street Park",
@@ -7254,11 +7855,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 391,
+    "id": 383,
     "pmaid": "4400",
     "locid": "1285",
     "name": "Daejeon Park",
@@ -7273,11 +7875,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 392,
+    "id": 384,
     "pmaid": "4082",
     "locid": "2505",
     "name": "Day Street Boat Ramp",
@@ -7292,11 +7895,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 393,
+    "id": 385,
     "pmaid": "395",
     "locid": "2496",
     "name": "Dr. Blanche Lavizzo Park",
@@ -7311,11 +7915,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 394,
+    "id": 386,
     "pmaid": "4241",
     "locid": "2507",
     "name": "East Portal Viewpoint",
@@ -7330,11 +7935,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 395,
+    "id": 387,
     "pmaid": "363",
     "locid": "1334",
     "name": "Flo Ware Park",
@@ -7349,11 +7955,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 396,
+    "id": 388,
     "pmaid": "392",
     "locid": "1345",
     "name": "Frink Park",
@@ -7368,11 +7975,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 397,
+    "id": 389,
     "pmaid": "3927",
     "locid": "1396",
     "name": "Horton Hill Corridor",
@@ -7387,11 +7995,12 @@
     "height": 2563,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 398,
+    "id": 390,
     "pmaid": "4032",
     "locid": "2391",
     "name": "Hunter Boulevard",
@@ -7406,11 +8015,12 @@
     "height": 2976,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 399,
+    "id": 391,
     "pmaid": "3121",
     "locid": "1437",
     "name": "Jimi Hendrix Park",
@@ -7425,11 +8035,12 @@
     "height": 1673,
     "filters": {
       "weight": 400,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 400,
+    "id": 392,
     "pmaid": "4244",
     "locid": "2491",
     "name": "Judge Charles M. Stokes Overlook",
@@ -7444,11 +8055,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 401,
+    "id": 393,
     "pmaid": "3122",
     "locid": "1098",
     "name": "Katie Black's Garden",
@@ -7463,11 +8075,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 402,
+    "id": 394,
     "pmaid": "4024",
     "locid": "1466",
     "name": "Lakewood Triangle",
@@ -7482,11 +8095,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 403,
+    "id": 395,
     "pmaid": "419",
     "locid": "2537",
     "name": "Mt. Baker Park",
@@ -7501,11 +8115,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 404,
+    "id": 396,
     "pmaid": "4019",
     "locid": "2595",
     "name": "Mt. Claire Park",
@@ -7520,11 +8135,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 405,
+    "id": 397,
     "pmaid": "390",
     "locid": "2404",
     "name": "Pratt Park",
@@ -7539,11 +8155,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 406,
+    "id": 398,
     "pmaid": "580",
     "locid": "1712",
     "name": "York Park",
@@ -7558,11 +8175,12 @@
     "height": 3584,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 407,
+    "id": 399,
     "pmaid": "485",
     "locid": "1907",
     "name": "Arroyos Natural Area",
@@ -7577,11 +8195,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 408,
+    "id": 400,
     "pmaid": "301",
     "locid": "1809",
     "name": "Llandover Woods Greenspace",
@@ -7596,11 +8215,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 409,
+    "id": 401,
     "pmaid": "411",
     "locid": "1462",
     "name": "Lakeridge Park",
@@ -7615,11 +8235,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 410,
+    "id": 402,
     "pmaid": "3972",
     "locid": "1140",
     "name": "Lakeridge Playfield",
@@ -7634,11 +8255,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 411,
+    "id": 403,
     "pmaid": "4014",
     "locid": "1644",
     "name": "Thayer Place",
@@ -7653,11 +8275,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 412,
+    "id": 404,
     "pmaid": "1000001",
     "locid": "0",
     "name": "32nd Ave W Boat Launch",
@@ -7672,11 +8295,12 @@
     "height": 2935,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 413,
+    "id": 405,
     "pmaid": "4049",
     "locid": "1233",
     "name": "Carleton Highlands",
@@ -7691,11 +8315,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 414,
+    "id": 406,
     "pmaid": "318",
     "locid": "1311",
     "name": "Ella Bailey Park",
@@ -7710,11 +8335,12 @@
     "height": 2740,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 415,
+    "id": 407,
     "pmaid": "246",
     "locid": "1100",
     "name": "Kiwanis Memorial Preserve Park",
@@ -7729,11 +8355,12 @@
     "height": 4032,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 416,
+    "id": 408,
     "pmaid": "317",
     "locid": "1478",
     "name": "Magnolia Park",
@@ -7748,11 +8375,12 @@
     "height": 2925,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 417,
+    "id": 409,
     "pmaid": "319",
     "locid": "2564",
     "name": "Magnolia Playfield",
@@ -7767,11 +8395,12 @@
     "height": 2597,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 418,
+    "id": 410,
     "pmaid": "4433",
     "locid": "1617",
     "name": "Smith Cove",
@@ -7786,11 +8415,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 419,
+    "id": 411,
     "pmaid": "",
     "locid": "",
     "name": "Magnolia Boulevard",
@@ -7805,11 +8435,12 @@
     "height": 2052,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 420,
+    "id": 412,
     "pmaid": "",
     "locid": "",
     "name": "Volunteer Parkway",
@@ -7824,11 +8455,32 @@
     "height": 3000,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 421,
+    "id": 413,
+    "pmaid": "",
+    "locid": "",
+    "name": "Fritz Hedges Waterway Park",
+    "address": "1117 NE Boat St, Seattle, WA 98105, USA",
+    "zip_code": "98105",
+    "lat": "47.6520661",
+    "long": "-122.3159908",
+    "imageName": "__Fritz-Hedges-Waterway-Park.webp",
+    "slug": "fritz-hedges-waterway-park-anim",
+    "ext": "webp",
+    "width": 641,
+    "height": 480,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 413,
     "pmaid": "",
     "locid": "",
     "name": "Fritz Hedges Waterway Park",
@@ -7843,11 +8495,12 @@
     "height": 2226,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 422,
+    "id": 414,
     "pmaid": "",
     "locid": "",
     "name": "Ravenna Boulevard",
@@ -7862,11 +8515,12 @@
     "height": 2016,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 423,
+    "id": 415,
     "pmaid": "",
     "locid": "",
     "name": "Gemenskap Park",
@@ -7881,11 +8535,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 424,
+    "id": 416,
     "pmaid": "",
     "locid": "",
     "name": "Georgetown Pump Station",
@@ -7900,11 +8555,12 @@
     "height": 2020,
     "filters": {
       "weight": 500,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 425,
+    "id": 417,
     "pmaid": "",
     "locid": "",
     "name": "Burke-Gilman Trail",
@@ -7919,11 +8575,12 @@
     "height": 2061,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 426,
+    "id": 418,
     "pmaid": "",
     "locid": "",
     "name": "Rainier Beach Urban Farm and Wetlands",
@@ -7938,11 +8595,32 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 427,
+    "id": 419,
+    "pmaid": "",
+    "locid": "",
+    "name": "Kinnear Place",
+    "address": "346 W Kinnear Pl, Seattle, WA 98119, USA",
+    "zip_code": "98119",
+    "lat": "47.6277505",
+    "long": "-122.3625405",
+    "imageName": "__Kinnear-Place.webp",
+    "slug": "kinnear-place-anim",
+    "ext": "webp",
+    "width": 632,
+    "height": 474,
+    "filters": {
+      "weight": 100,
+      "live": false,
+      "type": "animated"
+    }
+  },
+  {
+    "id": 419,
     "pmaid": "",
     "locid": "",
     "name": "Kinnear Place",
@@ -7957,11 +8635,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 428,
+    "id": 420,
     "pmaid": "",
     "locid": "",
     "name": "Queen Anne Boulevard",
@@ -7976,11 +8655,12 @@
     "height": 2763,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 429,
+    "id": 421,
     "pmaid": "",
     "locid": "",
     "name": "Urban Triangle Park",
@@ -7995,11 +8675,12 @@
     "height": 3024,
     "filters": {
       "weight": 500,
-      "live": true
+      "live": true,
+      "type": "still"
     }
   },
   {
-    "id": 430,
+    "id": 422,
     "pmaid": "",
     "locid": "",
     "name": "Cayton Corner Park",
@@ -8014,11 +8695,12 @@
     "height": 2447,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 431,
+    "id": 423,
     "pmaid": "",
     "locid": "",
     "name": "NE 130th Street End",
@@ -8033,11 +8715,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 432,
+    "id": 424,
     "pmaid": "",
     "locid": "",
     "name": "Watton Site",
@@ -8052,11 +8735,12 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 434,
+    "id": 425,
     "pmaid": "",
     "locid": "",
     "name": "Mount Baker Boulevard",
@@ -8071,11 +8755,12 @@
     "height": 2028,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   },
   {
-    "id": 435,
+    "id": 426,
     "pmaid": "",
     "locid": "",
     "name": "Trudy's Triangle",
@@ -8090,7 +8775,8 @@
     "height": 3024,
     "filters": {
       "weight": 100,
-      "live": false
+      "live": false,
+      "type": "still"
     }
   }
 ]
