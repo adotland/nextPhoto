@@ -1,10 +1,11 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import FilterTag from "./FilterTag";
+import { Box,  Heading, Text } from "@chakra-ui/react";
+import FilterDisplay from "./FilterDisplay";
 import Map from './Map';
 
 export default function Details({ data }) {
   const filterColor = data.filters?.matchColor
   const filterType = data.filters?.type
+  const displayFilter = filterColor || filterType
   return (
     <Box
       textAlign={['center', 'center', 'center', 'left']}
@@ -19,11 +20,7 @@ export default function Details({ data }) {
       <Text>{data.lat} // {data.long}</Text>
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
-      <Flex justifyContent={['center', 'center', 'center', 'left']} mt={7}>
-        {/* <ListIcon as={MdSettings} color={`gray.500`} />Filters:  */}
-        {filterColor && <FilterTag type={'color'} value={filterColor} />}
-        {filterType && <FilterTag type={'type'} value={filterType} />}
-      </Flex>
+      {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} />}
       <Map center={[data.lat, data.long]} name={data.name} />
 
     </Box>

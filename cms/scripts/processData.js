@@ -185,7 +185,16 @@ const ManageData = {
     }
 
     // sharp
-    const sharpImage = sharp(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
+    let sharpImage;
+    let image;
+    try {
+      image = await ff.read(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
+    } catch (err) {
+      console.error(err);
+      return;
+    }
+    sharpImage = sharp(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
+
     // background is almost always just region above mid
     const metadata = await sharpImage.metadata();
     const background = await sharpImage.extract({ left: 0, top: 0, width: metadata.width, height: Math.ceil(metadata.height / 1.5) }).toBuffer();
