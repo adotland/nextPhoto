@@ -14,6 +14,7 @@ export default function Logo(props) {
             color={useColorModeValue("brand.700", "brand.200")}
             backgroundColor={useColorModeValue("white", "gray.800")}
             p={1}
+            transform={'skew(-21deg)'}
           >
             TheParkAndTheBike
           </Heading>

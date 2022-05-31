@@ -65,8 +65,7 @@ const MenuItem = ({ children, isLast, to = "/", }) => {
           backgroundColor={useColorModeValue("white", "gray.800")}
           py={1}
           px={2}
-        
-          
+          transform={'skew(-21deg)'}
           _hover={{background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700')}}
           // fontWeight={""}
         >
