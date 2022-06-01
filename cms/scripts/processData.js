@@ -104,7 +104,6 @@ const ManageData = {
     });
 
     await Promise.all(imagesToProcess.map(async (imageDataObj, index) => {
-      // const imageData = matchingImageDataList[0];
       const long_name = imageDataObj.long_name;
       await Promise.all(imageDataObj.imageDataList.map(async imageData => {
         const isGif = imageData.ext === 'gif'
@@ -157,8 +156,8 @@ const ManageData = {
     }));
 
     await ff.writeJson(jsonData, LIVE_DATA_PATH, `${collection}_data.json`, 2);
-    await ff.writeJson(missingImages, BASE_DATA_PATH, `${collection}_missing_still_images.json`, 2);
-    await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_still_images.json`, 2);
+    await ff.writeJson(missingImages, BASE_DATA_PATH, `${collection}_missing_images.json`, 2);
+    await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_images.json`, 2);
   },
 
   sanitizeImageNamesInFile: async function (collection = 'seattle') {

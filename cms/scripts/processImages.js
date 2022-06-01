@@ -16,7 +16,7 @@ program.parse();
 const ImageProcessor = {
 
   getList: async function (collection = 'seattle') {
-    const pathList = [STILL_PATH(collection)];
+    const pathList = [STILL_PATH(collection), GIF_PATH(collection)];
     const retval = [];
     const rejects = [];
     pathList.forEach(path => {
@@ -105,7 +105,7 @@ const ImageProcessor = {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
-      const imageFileFullPath = ff.path(isGif ? GIF_PATH : STILL_PATH(collection), imageFileName);
+      const imageFileFullPath = ff.path(isGif ? GIF_PATH(collection) : STILL_PATH(collection), imageFileName);
       const imageFile = fs.readFileSync(imageFileFullPath);
       if (!metadata.width || !metadata.height) {
         const sharpImage = sharp(imageFileFullPath);
@@ -207,12 +207,13 @@ const ImageProcessor = {
 
   processGifs: async function (collection = 'seattle', imageDataList) {
     console.time('processGifs')
-    const imageFileNameList = await ff.readdir(GIF_PATH);
+    const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
-      const imageFileFullPath = ff.path(GIF_PATH, imageFileName);
-      const existingProcessed = fs.existsSync(PROCESSED_WEBP_PATH, imageFileName);
+      const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
+      const existingProcessed = fs.existsSync(ff.path(PROCESSED_WEBP_PATH, imageFileName.replace('gif','webp')));
+      // console.log(existingProcessed)
       if (existingProcessed) {
-        console.info(`file already processed, skipping [${imageFileName}]`);
+        // console.info(`file already processed, skipping [${imageFileName}]`);
         return;
       }
       console.info(`processing [${imageFileName}]`);
