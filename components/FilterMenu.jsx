@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Button, Menu, MenuList, MenuItem, MenuButton, useColorModeValue, MenuDivider, Box } from "@chakra-ui/react";
+import { Button, Menu, MenuList, MenuItem, MenuButton, useColorModeValue, MenuDivider, Text, } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsFilter } from 'react-icons/bs';
 
@@ -21,18 +21,20 @@ export default function FilterMenu() {
         rightIcon={<BsFilter />}
         color={useColorModeValue("brand.700", "brand.100")}
         backgroundColor={useColorModeValue("white", "gray.800")}
-        py={0.5}
+        py={1.5}
         h={'auto'}
         transform={'skew(-21deg)'}
         rounded="none"
-      >Filter
+        _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
+      >
+        <Text fontWeight={'normal'}>Filter</Text>
       </MenuButton>
-      <MenuList>
-        <MenuItem>Type</MenuItem>
+      <MenuList rounded={'none'}>
+        <MenuItem isDisabled="true">Type</MenuItem>
         <FilterMenuLink name={'type'} value={'Animated'} />
         <FilterMenuLink name={'type'} value={'Still'} />
         <MenuDivider />
-        <MenuItem>Color</MenuItem>
+        <MenuItem isDisabled="true">Color</MenuItem>
         <FilterMenuLink name={'color'} value={'Bold'} />
         <FilterMenuLink name={'color'} value={'Sky'} />
         <FilterMenuLink name={'color'} value={'Light'} />
