@@ -5,7 +5,8 @@ import Map from './Map';
 export default function Details({ data }) {
   const filterColor = data.filters?.matchColor
   const filterType = data.filters?.type
-  const displayFilter = filterColor || filterType
+  const filterFeatured = data.filters?.featured
+  const displayFilter = filterColor || filterType || filterFeatured
   return (
     <Box
       textAlign={['center', 'center', 'center', 'left']}
@@ -20,7 +21,7 @@ export default function Details({ data }) {
       <Text>{data.lat} // {data.long}</Text>
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
-      {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} />}
+      {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured}/>}
       <Map center={[data.lat, data.long]} name={data.name} />
 
     </Box>

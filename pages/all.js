@@ -14,7 +14,7 @@ export async function getStaticProps() {
   const sorted = dataList.sort(byWeight).sort(byColor);
   const retval = [];
   sorted.forEach(data => {
-    if (data.filters.live && data.filters.featured) {
+    if (data.filters.live) {
       retval.push({
         slug: data.slug,
         imageName: data.imageName,

@@ -18,6 +18,7 @@ const ManageData = {
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
     const filterLive = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
+    const filterFeatured = await ff.readJson(BASE_DATA_PATH, 'filter-featured.json');
     const jsonData = [];
     const missingImages = [];
     const duplicateImages = [];
@@ -95,6 +96,7 @@ const ManageData = {
         // filters
         const weight = filterWeight.filter(x => x.slug === imageData.slug);
         const live = filterLive.includes(imageData.slug);
+        const featured = filterFeatured.includes(imageData.slug);
 
         jsonData.push({
           id: index,
@@ -113,6 +115,7 @@ const ManageData = {
           filters: {
             weight: weight.length ? weight[0].weight : 100,
             live,
+            featured,
             type: isGif ? 'animated' : 'still'
           }
         });
@@ -239,6 +242,14 @@ const ManageData = {
 
   _get_live: async function (data) {
     const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
+    const newVal = updateList.includes(data.slug);
+    return {
+      live: newVal,
+    }
+  },
+
+  _get_featured: async function (data) {
+    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-featured.json');
     const newVal = updateList.includes(data.slug);
     return {
       live: newVal,
