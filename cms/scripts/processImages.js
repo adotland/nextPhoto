@@ -136,6 +136,11 @@ const ImageProcessor = {
     await asyncForEach(imageDataList, async imageData => {
       const imageFileName = `${imageData.pmaid}_${imageData.locid}_${imageData.imageName}.${imageData.ext}`;
       const imageFileFullPath = ff.path(STILL_PATH, imageFileName);
+      const existingProcessed = fs.existsSync(PROCESSED_STILL_PATH, imageFileName);
+      if (existingProcessed) {
+        console.info(`file already processed, skipping [${imageFileName}]`);
+        return;
+      }
       console.info(`processing [${imageFileName}]`);
       const sharpImage = sharp(imageFileFullPath);
       if (sharpImage) {
@@ -173,8 +178,10 @@ const ImageProcessor = {
   processRecent: async function () {
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
-    const filtered = imageDataList.filter(data => new Date(data.lastChange).getTime() > yesterday);
-    await this.processImages(filtered);
+    const filtered_stills = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'jpg'));
+    const filtered_gifs = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'gif'));
+    await this.processImages(filtered_stills);
+    await this.processImages(filtered_gifs);
     // console.log(filtered.map(f => f.imageName));
   },
 
@@ -183,6 +190,11 @@ const ImageProcessor = {
     const imageFileNameList = await ff.readdir(GIF_PATH);
     await asyncForEach(imageFileNameList, async imageFileName => {
       const imageFileFullPath = ff.path(GIF_PATH, imageFileName);
+      const existingProcessed = fs.existsSync(PROCESSED_WEBP_PATH, imageFileName);
+      if (existingProcessed) {
+        console.info(`file already processed, skipping [${imageFileName}]`);
+        return;
+      }
       console.info(`processing [${imageFileName}]`);
       const sharpImage = sharp(imageFileFullPath);
       if (sharpImage) {

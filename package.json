@@ -13,7 +13,8 @@
     "uf-live": "node ./cms/scripts/processData.js -x updateFilter -f live",
     "reProcessDataFull": "node ./cms/scripts/processData.js -x main && npm run uf-matchColor",
     "imagesList": "node ./cms/scripts/processImages.js -x getList",
-    "imagesRecent": "node ./cms/scripts/processImages.js -x processRecent",
+    "processStillsRecent": "node ./cms/scripts/processImages.js -x processRecent",
+    "processGifs": "node ./cms/scripts/processImages.js -x processGifs",
     "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames"
   },
   "dependencies": {

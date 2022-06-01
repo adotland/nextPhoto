@@ -148,13 +148,27 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, 'seattle_duplicate_slugs.json');
   },
 
-  updateFilter: async function (filter) {
+  updateFilter: async function (filter, newOnly = true) {
     console.time('updateFilter');
     const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+    let existing;
+    try {
+      existing = await ff.readJson(BASE_DATA_PATH, `filterData_${filter}.json`);
+    } catch (err) {
+      // noop
+    }
     const retval = [];
+    const dumpObj = {};
+    let newFilterObj;
     await Promise.all(dataList.map(async data => {
       try {
-        const newFilterObj = await this[`_get_${filter}`](data);
+        if (newOnly) {
+          if (existing?.[data.slug]) {
+            newFilterObj = existing[data.slug]
+          }
+        }
+        newFilterObj = newFilterObj || await this[`_get_${filter}`](data);
+        dumpObj[data.slug] = newFilterObj;
         retval.push({
           ...data,
           filters: {
@@ -168,6 +182,7 @@ const ManageData = {
       }
     }));
     await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
+    await ff.writeJson(dumpObj, BASE_DATA_PATH, `filterData_${filter}.json`, 2);
     console.timeEnd('updateFilter');
     // output color to avoid having to reprocess
   },
@@ -175,6 +190,8 @@ const ManageData = {
   _get_matchColor: async function (data) {
     // color thief
     // const color = await ColorThief.getColor(ff.path(PROCESSED_STILL_PATH, `${data.imageName}.${data.ext}`));
+
+
 
     let imageToProcess = '';
     if (data.ext === 'webp') {
