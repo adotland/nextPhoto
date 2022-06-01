@@ -2,7 +2,7 @@ const fs = require('fs');
 const { ff } = require('fssf');
 const sharp = require("sharp");
 
-const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL: SHARE_PATH, SHARE_PATH_GIF } = require('../config');
+const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
 const { formatImageFileName, asyncForEach, arrayDiff } = require('./helpers');
 
 const FONT_SCALE = 70 / (3000 * 4000);
@@ -48,7 +48,7 @@ const ImageProcessor = {
   getListAll: async function () {
     const local = await ff.readdir(STILL_PATH);
     await ff.writeJson(local.sort(), BASE_DATA_PATH, 'imagesAll_still.json', 2);
-    const data = await ff.readdir(SHARE_PATH);
+    const data = await ff.readdir(SHARE_PATH_STILL);
     await ff.writeJson(data.sort(), BASE_DATA_PATH, 'imagesAll_share.json', 2);
   },
 
@@ -102,13 +102,13 @@ const ImageProcessor = {
       let watermarkBuffer;
       let image;
       if (isGif) {
-        watermarkBuffer = await this.createWatermark(metadata.width / 2, metadata.height / 2, true);
+        watermarkBuffer = await this.createWatermark(metadata.width / 2, metadata.height / 2, false);
         image = sharp(imageFile, { animated: true });
         image = image.resize({ width: metadata.width / 2, height: metadata.height / 2 })
           // .gif({ colors: 16 })
           .webp({ effort: 6 })
       } else {
-        watermarkBuffer = await this.createWatermark(metadata.width, metadata.height, true);
+        watermarkBuffer = await this.createWatermark(metadata.width, metadata.height, false);
         image = sharp(imageFile);
       }
       image = image.composite([
@@ -130,15 +130,17 @@ const ImageProcessor = {
     }
   },
 
-  processImages: async function (imageDataList) {
-    console.time('processImages')
+  processStills: async function (imageDataList) {
+    console.time('processStills')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, 'images.json');
+    imageDataList = imageDataList.filter(data=>data.ext === 'jpg');
+    const reprocessList = await ff.readJson(BASE_DATA_PATH, 'reprocess_still.json');
     await asyncForEach(imageDataList, async imageData => {
       const imageFileName = `${imageData.pmaid}_${imageData.locid}_${imageData.imageName}.${imageData.ext}`;
       const imageFileFullPath = ff.path(STILL_PATH, imageFileName);
       const existingProcessed = fs.existsSync(PROCESSED_STILL_PATH, imageFileName);
-      if (existingProcessed) {
-        console.info(`file already processed, skipping [${imageFileName}]`);
+      if (existingProcessed && !reprocessList?.includes(imageData.slug)) {
+        // console.info(`file already processed, skipping [${imageFileName}]`);
         return;
       }
       console.info(`processing [${imageFileName}]`);
@@ -157,7 +159,7 @@ const ImageProcessor = {
         throw new Error(`file missing [${imageFileName}]`);
       }
     });
-    console.timeEnd('processImages');
+    console.timeEnd('processStills');
   },
 
   // sanitizeFileNames: async function (isGif = true) {
@@ -176,16 +178,16 @@ const ImageProcessor = {
   // },
 
   processRecent: async function () {
-    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
+    imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
     const filtered_stills = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'jpg'));
     const filtered_gifs = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'gif'));
-    await this.processImages(filtered_stills);
-    await this.processImages(filtered_gifs);
+    await this.processStills(filtered_stills);
+    await this.processGifs(filtered_gifs);
     // console.log(filtered.map(f => f.imageName));
   },
 
-  processGifs: async function () {
+  processGifs: async function (imageDataList) {
     console.time('processGifs')
     const imageFileNameList = await ff.readdir(GIF_PATH);
     await asyncForEach(imageFileNameList, async imageFileName => {

@@ -151,26 +151,40 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, 'seattle_duplicate_slugs.json');
   },
 
-  updateFilter: async function (filter, newOnly = true) {
-    console.time('updateFilter');
+  updateAllFilters: async function() {
+    let filterList = ['live', 'featured', 'weight'];
+    filterList = filterList.concat('matchColor');
+    await Promise.all(filterList.map(filter=>this.updateFilter(filter)));
+  },
+
+  updateFilter: async function (filter, newOnly = false) {
+    console.time(`updateFilter-${filter}`);
     const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+    let updateList;
+    let reprocessList;
+
     let existing;
-    try {
-      existing = await ff.readJson(BASE_DATA_PATH, `filterData_${filter}.json`);
-    } catch (err) {
-      // noop
+    if (filter === 'matchColor') {
+      reprocessList = await ff.readJson(BASE_DATA_PATH, 'reprocess_still.json');
+      try {
+        existing = await ff.readJson(BASE_DATA_PATH, `filterData_${filter}.json`);
+      } catch (err) {
+        // noop
+      }
+    } else {
+      updateList = await ff.readJson(BASE_DATA_PATH, `filter-${filter}.json`);
     }
     const retval = [];
     const dumpObj = {};
-    let newFilterObj;
     await Promise.all(dataList.map(async data => {
+      let newFilterObj;
       try {
-        if (newOnly) {
-          if (existing?.[data.slug]) {
+        // if (newOnly) {
+          if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
             newFilterObj = existing[data.slug]
           }
-        }
-        newFilterObj = newFilterObj || await this[`_get_${filter}`](data);
+        // }
+        newFilterObj = newFilterObj || await this[`_get_${filter}`](data, updateList);
         dumpObj[data.slug] = newFilterObj;
         retval.push({
           ...data,
@@ -186,7 +200,7 @@ const ManageData = {
     }));
     await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
     await ff.writeJson(dumpObj, BASE_DATA_PATH, `filterData_${filter}.json`, 2);
-    console.timeEnd('updateFilter');
+    console.timeEnd(`updateFilter-${filter}`);
     // output color to avoid having to reprocess
   },
 
@@ -232,27 +246,24 @@ const ManageData = {
     }
   },
 
-  _get_weight: async function (data) {
-    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
+  _get_weight: async function (data, updateList) {
     const newVal = updateList.filter(x => x.slug === data.slug);
     return {
       weight: newVal.length ? newVal[0].weight : 100,
     }
   },
 
-  _get_live: async function (data) {
-    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
+  _get_live: async function (data, updateList) {
     const newVal = updateList.includes(data.slug);
     return {
       live: newVal,
     }
   },
 
-  _get_featured: async function (data) {
-    const updateList = await ff.readJson(BASE_DATA_PATH, 'filter-featured.json');
+  _get_featured: async function (data, updateList) {
     const newVal = updateList.includes(data.slug);
     return {
-      live: newVal,
+      featured: newVal,
     }
   },
 

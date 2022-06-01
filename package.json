@@ -11,9 +11,12 @@
     "uf-matchColor": "node ./cms/scripts/processData.js -x updateFilter -f matchColor",
     "uf-weight": "node ./cms/scripts/processData.js -x updateFilter -f weight",
     "uf-live": "node ./cms/scripts/processData.js -x updateFilter -f live",
+    "uf-featured": "node ./cms/scripts/processData.js -x updateFilter -f featured",
+    "uf-all": "node ./cms/scripts/processData.js -x updateAllFilters",
     "reProcessDataFull": "node ./cms/scripts/processData.js -x main && npm run uf-matchColor",
     "imagesList": "node ./cms/scripts/processImages.js -x getList",
-    "processStillsRecent": "node ./cms/scripts/processImages.js -x processRecent",
+    "processRecent": "node ./cms/scripts/processImages.js -x processRecent",
+    "processStills": "node ./cms/scripts/processImages.js -x processStills",
     "processGifs": "node ./cms/scripts/processImages.js -x processGifs",
     "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames"
   },
