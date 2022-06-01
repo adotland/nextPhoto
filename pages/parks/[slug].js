@@ -5,6 +5,10 @@ import Details from "../../components/Details";
 import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
 
+function byWeight(a, b) {
+  return (b.filters?.weight || 0) - (a.filters?.weight || 0);
+}
+
 export async function getStaticPaths() {
   const collectionList = ['seattle', 'non-city'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
@@ -25,10 +29,10 @@ export async function getStaticProps({ params: { slug } }) {
   const collectionList = ['seattle', 'non-city'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const currentData = dataList.filter(d => d.slug == slug).pop();
-  const related = dataList
+  let related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live))
     // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
-    .slice(0, 3);
+  related = related.sort(byWeight).slice(0,3);
   return {
     props: {
       currentData,
