@@ -7,6 +7,12 @@ export default function Details({ data }) {
   const filterType = data.filters?.type
   const filterFeatured = data.filters?.featured
   const displayFilter = filterColor || filterType || filterFeatured
+  let collection = data.slug.split('_')
+  if (collection.length > 1) {
+    collection = collection[0]
+  } else {
+    collection = 'Seattle'
+  }
   return (
     <Box
       textAlign={['center', 'center', 'center', 'left']}
@@ -16,13 +22,13 @@ export default function Details({ data }) {
       minW="20rem"
     >
       <Heading>{data.name}</Heading>
-      <Heading as={'h3'} fontSize={'medium'} mb={3}>Seattle Collection</Heading>
+      <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
       <a href={data.link}>{data.link}</a>
-      <Text>{data.lat} // {data.long}</Text>
+      {data.lat && data.long && <Text>{data.lat} // {data.long}</Text>}
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
       {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured}/>}
-      <Map center={[data.lat, data.long]} name={data.name} />
+      {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.name} />}
 
     </Box>
   )

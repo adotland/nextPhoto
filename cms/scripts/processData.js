@@ -9,13 +9,56 @@ const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFil
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
 program.option('-f, --filter <filter>');
+program.option('-c, --collection <collection>', 'collection', 'seattle');
 program.parse();
 
 const ManageData = {
 
-  main: async function () {
-    const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE, true, '\t');
-    const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
+  processCmsData: function (collection = 'seattle', cmsDataList) {
+    const cmsDataObj = {};
+    if (collection === 'seattle') {
+      cmsDataList.forEach(cmsData => {
+        const long_name = cmsData[14];
+        if (!long_name) {
+          console.error('missing long_name');
+          process.exit(1);
+        } else {
+          cmsDataObj[long_name] = {
+            pmaid: cmsData[0],
+            locid: cmsData[1],
+            name: cmsData[2] || console.warn('missing name', cmsData),
+            address: cmsData[3] || console.warn('missing address', cmsData),
+            zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
+            lat: cmsData[5] || console.warn('missing lat', cmsData),
+            long: cmsData[6] || console.warn('missing long', cmsData),
+            collection: 'seattle',
+          }
+        }
+      });
+    } else if (collection === 'non-city') {
+      cmsDataList.forEach(cmsData => {
+        const long_name = cmsData[12];
+        if (!long_name) {
+          console.error('missing long_name');
+          process.exit(1);
+        } else {
+          cmsDataObj[long_name] = {
+            name: cmsData[0] || console.warn('missing name', cmsData),
+            address: cmsData[1] || console.warn('missing address', cmsData),
+            lat: cmsData[2] || console.warn('missing lat', cmsData),
+            long: cmsData[3] || console.warn('missing long', cmsData),
+            link: cmsData[4],
+            collection: cmsData[10] || console.warn('missing owner', cmsData),
+          }
+        }
+      });
+    }
+    return cmsDataObj;
+  },
+
+  main: async function (collection = 'seattle') {
+    const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE(collection), true, '\t');
+    const imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
     const filterLive = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
     const filterFeatured = await ff.readJson(BASE_DATA_PATH, 'filter-featured.json');
@@ -23,54 +66,41 @@ const ManageData = {
     const missingImages = [];
     const duplicateImages = [];
     const imagesToProcess = [];
-    const cmsDataObj = {};
+    const cmsDataObj = this.processCmsData(collection, cmsDataList);
 
-    cmsDataList.forEach(cmsData => {
-      const long_name = cmsData[14];
-      if (!long_name) {
-        console.error('missing long_name');
-        process.exit(1);
-      } else {
-        cmsDataObj[long_name] = {
-          pmaid: cmsData[0],
-          locid: cmsData[1],
-          name: cmsData[2] || console.warn('missing name', cmsData),
-          address: cmsData[3] || console.warn('missing address', cmsData),
-          zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
-          lat: cmsData[5] || console.warn('missing lat', cmsData),
-          long: cmsData[6] || console.warn('missing long', cmsData),
+    Object.keys(cmsDataObj).forEach(long_name => {
+
+      // match cms long_name to acutal image in file system
+      // seattle parks format XX_XX_name
+      // image data has image file name and parsed name upper case, only alpha chars
+
+      // const parsedLongName = long_name.replaceAll(/[^a-z]/ig, '').toUpperCase();
+      // const imageData = imageDataList.filter(d => d.parsed === parsedLongName);
+
+      const { name: formattedNameNoExt } = formatImageFileNameNoExt(long_name);
+
+      const matchingImageDataList = imageDataList.filter(d => {
+        let fullImageName;
+        if (collection === 'seattle') {
+          fullImageName = `${d.pmaid}_${d.locid}_${d.imageName}`
+        } else {
+          fullImageName = d.imageName
         }
+        return fullImageName === formattedNameNoExt;
+      });
+
+      if (matchingImageDataList.length < 1) {
+        // console.error(`missing image name [${parsedLongName}]`);
+        missingImages.push(long_name);
       }
-    })
-
-
-
-    cmsDataList.forEach(cmsData => {
-      if (cmsData[14]) {
-        const long_name = cmsData[14];
-        // match cms long_name to acutal image in file system
-        // seattle parks format XX_XX_name
-        // image data has image file name and parsed name upper case, only alpha chars
-
-        // const parsedLongName = long_name.replaceAll(/[^a-z]/ig, '').toUpperCase();
-        // const imageData = imageDataList.filter(d => d.parsed === parsedLongName);
-
-        const { name: formattedNameNoExt } = formatImageFileNameNoExt(long_name);
-
-        const matchingImageDataList = imageDataList.filter(d => `${d.pmaid}_${d.locid}_${d.imageName}` === formattedNameNoExt);
-
-        if (matchingImageDataList.length < 1) {
-          // console.error(`missing image name [${parsedLongName}]`);
-          missingImages.push(long_name);
-        }
-        // else if (matchingImageDataList.length > 1) {
-        //   // console.log(imageData.length, `has duplicates: ${imageData.map(d=>d.imageName)}`);
-        //   duplicateImages.push(matchingImageDataList.map(d => d.imageName));
-        // } 
-        else {
-          imagesToProcess.push({ long_name, imageDataList: [...matchingImageDataList] });
-        }
+      // else if (matchingImageDataList.length > 1) {
+      //   // console.log(imageData.length, `has duplicates: ${imageData.map(d=>d.imageName)}`);
+      //   duplicateImages.push(matchingImageDataList.map(d => d.imageName));
+      // } 
+      else {
+        imagesToProcess.push({ long_name, imageDataList: [...matchingImageDataList] });
       }
+
     });
 
     await Promise.all(imagesToProcess.map(async (imageDataObj, index) => {
@@ -78,13 +108,17 @@ const ManageData = {
       const long_name = imageDataObj.long_name;
       await Promise.all(imageDataObj.imageDataList.map(async imageData => {
         const isGif = imageData.ext === 'gif'
-        const path = isGif ? PROCESSED_WEBP_PATH : STILL_PATH;
+        const path = isGif ? PROCESSED_WEBP_PATH : STILL_PATH(collection);
         const currentImageName = imageData.imageName;
         let fullImageName;
         if (isGif) {
           fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.webp`;
         } else {
-          fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.${imageData.ext}`;
+          if (collection === 'seattle') {
+            fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.${imageData.ext}`;
+          } else {
+            fullImageName = `${currentImageName}.${imageData.ext}`;
+          }
         }
         console.log(`processing [${fullImageName}]`);
 
@@ -122,13 +156,13 @@ const ManageData = {
       }));
     }));
 
-    await ff.writeJson(jsonData, LIVE_DATA_PATH, 'seattle.json', 2);
-    await ff.writeJson(missingImages, BASE_DATA_PATH, 'seattle_missing_still_images.json', 2);
-    await ff.writeJson(duplicateImages, BASE_DATA_PATH, 'seattle_duplicate_still_images.json', 2);
+    await ff.writeJson(jsonData, LIVE_DATA_PATH, `${collection}_data.json`, 2);
+    await ff.writeJson(missingImages, BASE_DATA_PATH, `${collection}_missing_still_images.json`, 2);
+    await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_still_images.json`, 2);
   },
 
-  sanitizeImageNamesInFile: async function () {
-    const data = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+  sanitizeImageNamesInFile: async function (collection = 'seattle') {
+    const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     const retval = [];
     for (let i = 0, len = data.length; i < len; i++) {
       retval.push({
@@ -136,11 +170,11 @@ const ManageData = {
         imageName: formatImageFileName(data[i].imageName).name
       });
     }
-    await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, `${collection}_data.json`, 2);
   },
 
-  duplicateCheck: async function () {
-    const data = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+  duplicateCheck: async function (collection = 'settle') {
+    const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     const slugList = data.map(d => d.slug);
     const dups = findDuplicates(slugList);
     if (dups.length) {
@@ -148,18 +182,18 @@ const ManageData = {
     } else {
       console.info('no dups')
     }
-    await ff.writeJson(dups, BASE_DATA_PATH, 'seattle_duplicate_slugs.json');
+    await ff.writeJson(dups, BASE_DATA_PATH, `${collection}_duplicate_slugs.json`);
   },
 
-  updateAllFilters: async function() {
+  updateAllFilters: async function (collection = 'seattle') {
     let filterList = ['live', 'featured', 'weight'];
     filterList = filterList.concat('matchColor');
-    await Promise.all(filterList.map(filter=>this.updateFilter(filter)));
+    await Promise.all(filterList.map(filter => this.updateFilter(collection, filter)));
   },
 
-  updateFilter: async function (filter, newOnly = false) {
+  updateFilter: async function (collection = 'seattle', filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
-    const dataList = await ff.readJson(LIVE_DATA_PATH, 'seattle.json');
+    const dataList = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     let updateList;
     let reprocessList;
 
@@ -167,7 +201,7 @@ const ManageData = {
     if (filter === 'matchColor') {
       reprocessList = await ff.readJson(BASE_DATA_PATH, 'reprocess_still.json');
       try {
-        existing = await ff.readJson(BASE_DATA_PATH, `filterData_${filter}.json`);
+        existing = await ff.readJson(BASE_DATA_PATH, `filterData_${collection}_${filter}.json`);
       } catch (err) {
         // noop
       }
@@ -180,9 +214,9 @@ const ManageData = {
       let newFilterObj;
       try {
         // if (newOnly) {
-          if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
-            newFilterObj = existing[data.slug]
-          }
+        if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
+          newFilterObj = existing[data.slug]
+        }
         // }
         newFilterObj = newFilterObj || await this[`_get_${filter}`](data, updateList);
         dumpObj[data.slug] = newFilterObj;
@@ -193,13 +227,15 @@ const ManageData = {
             ...newFilterObj,
           }
         });
+        // just copy for anim gif webp for now
+        // if ()
       } catch (err) {
         console.error(err);
         process.exit(1);
       }
     }));
-    await ff.writeJson(retval, LIVE_DATA_PATH, 'seattle.json', 2);
-    await ff.writeJson(dumpObj, BASE_DATA_PATH, `filterData_${filter}.json`, 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, `${collection}_data.json`, 2);
+    await ff.writeJson(dumpObj, BASE_DATA_PATH, `filterData_${collection}_${filter}.json`, 2);
     console.timeEnd(`updateFilter-${filter}`);
     // output color to avoid having to reprocess
   },
@@ -207,8 +243,6 @@ const ManageData = {
   _get_matchColor: async function (data) {
     // color thief
     // const color = await ColorThief.getColor(ff.path(PROCESSED_STILL_PATH, `${data.imageName}.${data.ext}`));
-
-
 
     let imageToProcess = '';
     if (data.ext === 'webp') {
@@ -219,15 +253,11 @@ const ManageData = {
     }
 
     // sharp
-    let sharpImage;
-    let image;
-    try {
-      image = await ff.read(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
-    } catch (err) {
-      console.error(err);
+    if (!fs.existsSync(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`))) {
+      console.warn(`-- ${imageToProcess} does not exist in processed page`);
       return;
     }
-    sharpImage = sharp(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
+    const sharpImage = sharp(ff.path(PROCESSED_STILL_PATH, `${imageToProcess}`));
 
     // background is almost always just region above mid
     const metadata = await sharpImage.metadata();
@@ -235,7 +265,6 @@ const ManageData = {
 
     const { dominant } = await sharp(background).stats();
     const color = [dominant.r, dominant.g, dominant.b];
-
 
     console.info(`${imageToProcess} [${color}]`);
     const matchColor = getColorDiff(color);
@@ -267,6 +296,12 @@ const ManageData = {
     }
   },
 
+  getListAll: async function (collection = 'seattle') {
+    let retval = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+    retval = retval.map(d=>d.slug);
+    await ff.writeJson(retval.sort(), BASE_DATA_PATH, `slugsAll_${collection}.json`, 2);
+  },
+
 };
 
 
@@ -274,7 +309,7 @@ const ManageData = {
   try {
     const options = program.opts();
     if (options.method && ManageData[options.method]) {
-      await ManageData[options.method](options.filter);
+      await ManageData[options.method](options.collection, options.filter);
     } else {
       console.error('missing/bad method');
     }

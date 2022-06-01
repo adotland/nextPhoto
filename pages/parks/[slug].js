@@ -6,7 +6,9 @@ import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
 
 export async function getStaticPaths() {
-  const dataList = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
+  const collectionList = ['seattle', 'non-city'];
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
+  // console.log(dataList.map(d=>d.slug));
   const displayable = dataList.filter(data => data.filters.live).map(data => {
     // const displayable = dataList.map(data => {
     return {
@@ -20,9 +22,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const data = await ff.readJson(ff.path(process.cwd(), './cms/data/live/seattle.json'));
-  const currentData = data.filter(d => d.slug == slug).pop();
-  const related = data
+  const collectionList = ['seattle', 'non-city'];
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
+  const currentData = dataList.filter(d => d.slug == slug).pop();
+  const related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live))
     // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
     .slice(0, 3);

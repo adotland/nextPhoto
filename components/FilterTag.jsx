@@ -1,9 +1,9 @@
-import { Box, Flex, Tag, useColorModeValue, PseudoBox } from "@chakra-ui/react";
+import { Box, Flex, Tag, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function FilterTag({ type, value }) {
   return (
-    <Box as="Flex" mr={5}>
+    <Flex mr={5}>
       {/* <Text>{type}: </Text> */}
       <Box>
         <Link href={type === 'featured' ? '/' : `/filter/${type}/${value}`}>
@@ -18,6 +18,6 @@ export default function FilterTag({ type, value }) {
           </a>
         </Link>
       </Box>
-    </Box>
+    </Flex>
   )
 }

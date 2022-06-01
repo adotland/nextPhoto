@@ -7,7 +7,7 @@ const { COLORS } = require('../config');
 //   HIGH_SQ: 441.673, // sqrt(255^2 * 3)
 // };
 
-const _doRegex = function (fileName) {
+const _doRegex = function (fileName, collection) {
   let sanitizedName = fileName;
   // const remove_re = /[’]/g;
   // const spaces_re = /['.,]/g;
@@ -20,11 +20,11 @@ const _doRegex = function (fileName) {
   return sanitizedName;
 }
 
-const formatImageFileName = function (fileName) {
+const formatImageFileName = function (fileName, collection) {
   let tmp = fileName.split('.');
   const ext = tmp.pop().toLowerCase();
   tmp = tmp.join('.');
-  const sanitizedName = _doRegex(tmp);
+  const sanitizedName = _doRegex(tmp, collection);
   return {
     name: sanitizedName,
     slug: sanitizedName.toLowerCase(),
