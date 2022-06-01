@@ -14,7 +14,6 @@ const NavBar = (props) => {
     <NavBarContainer {...props}>
       <Logo />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
-      {/* <FilterMenu /> */}
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
   );
@@ -55,7 +54,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
   );
 };
 
-const MenuItem = ({ children, isLast, to = "/", }) => {
+const MenuItem = ({ children, to = "/", }) => {
   return (
     <Link href={to}>
       <a>
@@ -66,8 +65,7 @@ const MenuItem = ({ children, isLast, to = "/", }) => {
           py={1}
           px={2}
           transform={'skew(-21deg)'}
-          _hover={{background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700')}}
-          // fontWeight={""}
+          _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
         >
           {children}
         </Text>
@@ -89,6 +87,7 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
+        <FilterMenu />
         <MenuItem to="/all">Gallery</MenuItem>
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle />
