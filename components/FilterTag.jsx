@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FilterTag({ type, value }) {
   return (
-    <Box as="Flex" mr={5} _last={'margin-right:0'}>
+    <Box as="Flex" mr={5}>
       {/* <Text>{type}: </Text> */}
       <Box>
         <Link href={type === 'featured' ? '/' : `/filter/${type}/${value}`}>
