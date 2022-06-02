@@ -36,7 +36,7 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
       >
         {
           dataList.length ? dataList.map((data, index) => (
-            <Link href={`/parks/${data.slug}`} key={index}>
+            <Link href={`/park/${data.slug}`} key={index}>
               <a>
                 <Box
                   w="100%"

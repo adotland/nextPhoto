@@ -210,7 +210,7 @@ const ImageProcessor = {
     const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
       const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
-      const existingProcessed = fs.existsSync(ff.path(PROCESSED_WEBP_PATH, imageFileName.replace('gif','webp')));
+      const existingProcessed = fs.existsSync(ff.path(PROCESSED_WEBP_PATH, imageFileName.replace('gif', 'webp')));
       // console.log(existingProcessed)
       if (existingProcessed) {
         // console.info(`file already processed, skipping [${imageFileName}]`);
@@ -243,6 +243,12 @@ const ImageProcessor = {
   //   const filtered = imageDataList.filter(data => selection.includes(data.imageName));
   //   console.log(filtered.map(f => f.imageName));
   // },
+
+  resize: async function (src, dest) {
+    sharp(ff.path(src))
+      .resize({ width: 25 })
+      .toFile(dest);
+  }
 
 
 };

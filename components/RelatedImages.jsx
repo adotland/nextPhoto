@@ -7,7 +7,7 @@ export default function RelatedImages({ dataList }) {
     <Box w={"50%"} my={'auto'} ml={10}>
       <Heading as={'h3'} fontSize={'large'} mt={5}>Related Images</Heading>
         {dataList.map((data, index) => (
-          <Link href={`/parks/${data.slug}`} key={index}>
+          <Link href={`/park/${data.slug}`} key={index}>
             <a>
               <Box
                 minW="20%"

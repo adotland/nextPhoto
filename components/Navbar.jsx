@@ -88,6 +88,7 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <FilterMenu />
+        <MenuItem to="/map">Map</MenuItem>
         <MenuItem to="/all">Gallery</MenuItem>
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle />
