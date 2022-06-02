@@ -25,7 +25,7 @@ export default function Stats({ stats }) {
         <h2>
           <AccordionButton>
             <Box flex='1' textAlign='left'>
-              Statistics
+              Stats
             </Box>
             <AccordionIcon />
           </AccordionButton>

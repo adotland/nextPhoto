@@ -15,6 +15,10 @@ function getTypeAmount(type, list) {
   return amount;
 }
 
+function byFeatured(a, b) {
+  return (b.filters?.featured - a.filters?.featured);
+}
+
 export async function getStaticProps() {
   const collectionList = ['seattle', 'non-city'];
   const dataObj = {};
@@ -34,7 +38,7 @@ export async function getStaticProps() {
   statsObj['amount'].county = getTypeAmount('county', dataObj['non-city']);
 
   // dataList.splice(15) // TODO: load bounds
-  const dataList = dataObj.seattle.slice(0, 15);
+  const dataList = dataObj.seattle.sort(byFeatured).slice(0, 15);
 
   const mapDataList = dataList.map(data => {
     return {
@@ -73,7 +77,7 @@ export default function ({ mapDataList, statsObj, initCarouselDataList }) {
   useEffect(() => {
     const newData = initCarouselDataList.filter(d => d.slug === newParkSlug)
     if (newData.length)
-      setCarouselDataList(prevDataList => [...newData, ...prevDataList]);
+      setCarouselDataList(prevDataList => [...newData, ...prevDataList].slice(0,15));
   }, [newParkSlug])
 
   return (
