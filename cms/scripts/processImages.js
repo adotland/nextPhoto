@@ -4,9 +4,8 @@ const sharp = require("sharp");
 const differenceBy = require('lodash/differenceBy');
 
 const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
-const { formatImageFileName, asyncForEach, arrayDiff } = require('./helpers');
+const { formatImageFileName, asyncForEach, arrayDiff, getWmFontSize } = require('./helpers');
 
-const FONT_SCALE = 70 / (3000 * 4000);
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
@@ -78,7 +77,7 @@ const ImageProcessor = {
     const height = imageHeight || 3000;
     const text = String.fromCharCode(169) + "TheParkAndTheBike";
 
-    const fontSize = Math.ceil(FONT_SCALE * width * height);
+    const fontSize = getWmFontSize(width, height);
     // console.log(fontSize)
 
     const svgImage = `

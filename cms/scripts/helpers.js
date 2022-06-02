@@ -3,6 +3,9 @@ const diff = require('color-diff');
 const COLORS = require('../data/live/palette');
 // const Colour = require('./Colour');
 
+const FONT_SCALE = 70 / (3000 * 4000);
+const MIN_WM_FONT_SIZE = 9;
+
 // const constants = {
 //   HIGH_SQ: 441.673, // sqrt(255^2 * 3)
 // };
@@ -117,6 +120,11 @@ function arrayDiff(arr1, arr2) {
     .concat(arr2.filter(x => !arr1.includes(x)));
 }
 
+function getWmFontSize(width, height) {
+  const computed = Math.ceil(FONT_SCALE * width * height);
+  return computed < MIN_WM_FONT_SIZE ? MIN_WM_FONT_SIZE : computed;
+}
+
 module.exports = {
   formatImageFileName,
   findDuplicates,
@@ -124,5 +132,6 @@ module.exports = {
   toHex,
   asyncForEach,
   formatImageFileNameNoExt,
-  arrayDiff
+  arrayDiff,
+  getWmFontSize
 }
