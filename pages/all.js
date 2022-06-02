@@ -1,13 +1,6 @@
 import Gallery from "../components/Gallery";
 import { ff } from "fssf";
-
-function byWeight(a, b) {
-  return (b.filters?.weight || 0) - (a.filters?.weight || 0);
-}
-
-function byColor(a, b) {
-  return (Number.parseInt(b.filters?.matchColor?.substring(1), 16) - Number.parseInt(a.filters?.matchColor?.substring(1), 16));
-}
+import { byColor, byWeight } from "../utils/helpers";
 
 export async function getStaticProps() {
   const collectionList = ['seattle', 'non-city'];

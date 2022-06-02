@@ -4,10 +4,7 @@ import { ff } from "fssf";
 import Details from "../../components/Details";
 import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
-
-function byWeight(a, b) {
-  return (b.filters?.weight || 0) - (a.filters?.weight || 0);
-}
+import { byWeight } from "../../utils/helpers";
 
 export async function getStaticPaths() {
   const collectionList = ['seattle', 'non-city'];

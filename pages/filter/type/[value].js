@@ -1,5 +1,6 @@
 import { ff } from "fssf";
 import Gallery from "../../../components/Gallery";
+import { byWeight } from "../../../utils/helpers";
 
 const FILTER_NAME = 'type'
 
@@ -18,7 +19,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { value } }) {
   const collectionList = ['seattle', 'non-city'];
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat(); const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase());
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat(); const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
   const retval = [];
   filtered.forEach(data => {
     if (data.filters.live) {
