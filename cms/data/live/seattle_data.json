@@ -543,7 +543,7 @@
     "width": 4032,
     "height": 3024,
     "filters": {
-      "weight": 100,
+      "weight": 1,
       "live": true,
       "featured": false,
       "type": "still",

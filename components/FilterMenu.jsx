@@ -1,18 +1,50 @@
 // import { useState } from "react";
-import { Button, Menu, MenuList, MenuItem, MenuButton, useColorModeValue, MenuDivider, Text, } from "@chakra-ui/react";
+import { Button, Menu, MenuList, MenuItem, MenuButton, useColorModeValue, MenuDivider, Text, Box, Flex, } from "@chakra-ui/react";
 import Link from "next/link";
-import { BsFilter } from 'react-icons/bs';
+import { BsFilter, BsCameraReels } from 'react-icons/bs';
+import { AiOutlinePicture, AiOutlineCamera } from 'react-icons/ai';
+import { VscSymbolColor } from 'react-icons/vsc'
+import COLORS, { getAllColors } from "../cms/data/live/palette";
 
 
-export function FilterMenuLink({ name, value }) {
+export function FilterMenuLinkColor({ name, value, hex }) {
   return (
     <MenuItem justifyContent={'center'}>
-      <Link href={`/filter/${name}/${value.toLowerCase()}`}><a>{value}</a></Link>
+      <Link href={`/filter/${name}/${value}`}>
+        <a>
+          <Flex justifyContent={'flex-end'}>
+            <Text textTransform={'capitalize'}>
+              {value}
+            </Text>
+            <Box bg={hex} w='45px' h={'15px'} ml="0.5rem"></Box>
+          </Flex>
+        </a>
+      </Link>
+    </MenuItem>
+  )
+}
+
+export function FilterMenuLinkType({ value }) {
+  value = value.toLowerCase()
+  return (
+    <MenuItem justifyContent={'center'}>
+      <Link href={`/filter/type/${value}`}>
+        <a>
+          <Flex justifyContent={'flex-end'}>
+            <Text textTransform={'capitalize'}>{value}</Text>
+            <Box ml={2}>
+              {value === 'animated' ? <BsCameraReels /> : <AiOutlinePicture />}
+            </Box>
+          </Flex>
+        </a>
+      </Link>
     </MenuItem>
   )
 }
 
 export default function FilterMenu() {
+
+  const colors = getAllColors().sort();
 
   return (
     <Menu>
@@ -30,15 +62,20 @@ export default function FilterMenu() {
         <Text fontWeight={'normal'}>Filter</Text>
       </MenuButton>
       <MenuList rounded={'none'}>
-        <MenuItem isDisabled="true">Type</MenuItem>
-        <FilterMenuLink name={'type'} value={'Animated'} />
-        <FilterMenuLink name={'type'} value={'Still'} />
+        <MenuItem isDisabled="true">
+          <Text mr='2'>Type</Text>
+          <AiOutlineCamera />
+        </MenuItem>
+        <FilterMenuLinkType value={'Animated'} />
+        <FilterMenuLinkType value={'Still'} />
         <MenuDivider />
-        <MenuItem isDisabled="true">Color</MenuItem>
-        <FilterMenuLink name={'color'} value={'Bold'} />
-        <FilterMenuLink name={'color'} value={'Sky'} />
-        <FilterMenuLink name={'color'} value={'Light'} />
-        <FilterMenuLink name={'color'} value={'Green'} />
+        <MenuItem isDisabled="true">
+          <Text mr='2'>Color</Text>
+          <VscSymbolColor />
+        </MenuItem>
+        {colors.map(color => {
+          return <FilterMenuLinkColor name={'color'} value={color} hex={COLORS[color].displayHex} />
+        })}
       </MenuList>
     </Menu>
   )

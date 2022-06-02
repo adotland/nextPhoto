@@ -1,36 +1,11 @@
 import { ff } from "fssf";
+import { getAllColors } from "../../../cms/data/live/palette";
 import Gallery from "../../../components/Gallery";
-// import { COLORS } from "../../../cms/config";
 
 const FILTER_NAME = 'matchColor'
 
-const COLORS = {
-  PALETTE: {
-    light: {
-      hex: '#ffffff',
-      rgb: { R: 255, G: 255, B: 255 },
-    },
-    earthy: {
-      hex: '#654321',
-      rgb: { R: 101, G: 67, B: 33 },
-    },
-    sky: {
-      hex: '#4bb5d8',
-      rgb: { R: 75, G: 181, B: 216 },
-    },
-    green: {
-      hex: '#37522c',
-      rgb: { R: 55, G: 82, B: 44 }, // blend green
-    },
-    bold: {
-      hex: '#000000',
-      rgb: { R: 0, G: 0, B: 0 },
-    }
-  }
-};
-
 export async function getStaticPaths() {
-  const paths = Object.keys(COLORS.PALETTE);
+  const paths = getAllColors();
   const displayable = paths.map(p => {
     return {
       params: { value: p }

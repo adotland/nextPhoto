@@ -1,6 +1,6 @@
 // const { differenceCie76 } = require('d3-color-difference');
 const diff = require('color-diff');
-const { COLORS } = require('../config');
+const COLORS = require('../data/live/palette');
 // const Colour = require('./Colour');
 
 // const constants = {
@@ -89,7 +89,7 @@ const getColorDiff = function (c1, c2) {
   // var palette = [ {R: 0, G: 0, B: 0 }, {R: 255, G: 255, B: 255 } ];
 
   const color = { R: c1[0], G: c1[1], B: c1[2] }
-  const palette = COLORS.PALETTE;
+  const palette = COLORS;
 
   // { R: 66, G: 105, B: 47 }, // plant green
   // { R: 35, G: 42, B: 38 }, // tree green
