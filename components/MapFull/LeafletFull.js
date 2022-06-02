@@ -4,14 +4,14 @@ import 'leaflet/dist/leaflet.css';
 import styles from './LeafletFull.module.css';
 import osm from "../../cms/data/osm-providers";
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMapEvent, useMapEvents } from 'react-leaflet';
 
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import { useColorModeValue } from '@chakra-ui/react';
 
-const LeafletFull = ({ dataList, loadData }) => {
+const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
 
   useEffect(() => {
     (async function init() {
@@ -34,8 +34,32 @@ const LeafletFull = ({ dataList, loadData }) => {
 
   // <a href="https://www.flaticon.com/free-icons/christmas-tree" title="christmas tree icons">Christmas tree icons created by Pixel perfect - Flaticon</a>
 
+
+  function MapEventListener() {
+    const map = useMapEvents({
+      zoom: () => {
+        const bounds = map.getBounds()
+        getParksInBounds({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
+      },
+      moveend: () => {
+        const bounds = map.getBounds()
+        getParksInBounds({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
+        console.log({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
+
+      },
+    })
+    return null
+  }
+
+
   return (
-    <MapContainer className={styles.map} center={center} zoom={12} scrollWheelZoom={false}>
+    <MapContainer
+      className={styles.map}
+      center={center}
+      zoom={12}
+      scrollWheelZoom={false}
+    >
+      <MapEventListener />
       <TileLayer
         url={osm[tileProvider].url}
         attribution={osm[tileProvider].attribution}
