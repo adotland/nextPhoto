@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu";
+import { useRouter } from 'next/router'
 
 const NavBar = (props) => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [router.query])
 
   return (
     <NavBarContainer {...props}>
