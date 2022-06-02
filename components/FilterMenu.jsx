@@ -47,36 +47,38 @@ export default function FilterMenu() {
   const colors = getAllColors().sort();
 
   return (
-    <Menu>
-      <MenuButton
-        as={Button}
-        rightIcon={<BsFilter />}
-        color={useColorModeValue("brand.700", "brand.100")}
-        backgroundColor={useColorModeValue("white", "gray.800")}
-        py={1.5}
-        h={'auto'}
-        transform={'skew(-21deg)'}
-        rounded="none"
-        _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
-      >
-        <Text fontWeight={'normal'}>Filter</Text>
-      </MenuButton>
-      <MenuList rounded={'none'}>
-        <MenuItem isDisabled="true">
-          <Text mr='2'>Type</Text>
-          <AiOutlineCamera />
-        </MenuItem>
-        <FilterMenuLinkType value={'Animated'} />
-        <FilterMenuLinkType value={'Still'} />
-        <MenuDivider />
-        <MenuItem isDisabled="true">
-          <Text mr='2'>Color</Text>
-          <VscSymbolColor />
-        </MenuItem>
-        {colors.map(color => {
-          return <FilterMenuLinkColor name={'color'} value={color} hex={COLORS[color].displayHex} />
-        })}
-      </MenuList>
-    </Menu>
+    <Box>
+      <Menu>
+        <MenuButton
+          as={Button}
+          rightIcon={<BsFilter />}
+          color={useColorModeValue("brand.700", "brand.100")}
+          backgroundColor={useColorModeValue("white", "gray.800")}
+          py={1.5}
+          h={'auto'}
+          transform={'skew(-21deg)'}
+          rounded="none"
+          _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
+        >
+          <Text fontWeight={'normal'}>Filter</Text>
+        </MenuButton>
+        <MenuList rounded={'none'}>
+          <MenuItem isDisabled="true">
+            <Text mr='2'>Type</Text>
+            <AiOutlineCamera />
+          </MenuItem>
+          <FilterMenuLinkType value={'Animated'} />
+          <FilterMenuLinkType value={'Still'} />
+          <MenuDivider />
+          <MenuItem isDisabled="true">
+            <Text mr='2'>Color</Text>
+            <VscSymbolColor />
+          </MenuItem>
+          {colors.map((color, index) => {
+            return <FilterMenuLinkColor key={index} name={'color'} value={color} hex={COLORS[color].displayHex} />
+          })}
+        </MenuList>
+      </Menu>
+    </Box>
   )
 }
