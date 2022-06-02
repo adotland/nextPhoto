@@ -8,9 +8,12 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
 import '../public/nprogress.css'
+import useScrollRestoration from '../utils/hooks/useScrollRestoration';
 
 function App({ Component, pageProps }) {
   const router = useRouter()
+  useScrollRestoration(router);
+
   NProgress.configure({ showSpinner: false })
 
   useEffect(() => {
