@@ -12,7 +12,6 @@ function byColor(a, b) {
 export async function getStaticProps() {
   const collectionList = ['seattle', 'non-city'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
-  // console.log(dataList);
   const sorted = dataList.sort(byWeight).sort(byColor);
   const retval = [];
   sorted.forEach(data => {

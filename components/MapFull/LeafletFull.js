@@ -39,12 +39,11 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
     const map = useMapEvents({
       zoom: () => {
         const bounds = map.getBounds()
-        getParksInBounds({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
+        getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
       moveend: () => {
         const bounds = map.getBounds()
-        getParksInBounds({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
-        console.log({north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest()})
+        getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
 
       },
     })
@@ -64,9 +63,10 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
         url={osm[tileProvider].url}
         attribution={osm[tileProvider].attribution}
       />
-      {dataList.map(data => {
+      {dataList.map((data, index) => {
         if (data.lat && data.long) {
           return (<Marker
+            key={index}
             position={[data.lat, data.long]}
             icon={markerIcon}
             eventHandlers={{

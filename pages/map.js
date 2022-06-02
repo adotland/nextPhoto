@@ -83,13 +83,13 @@ export default function ({ initMapDataList, statsObj, initCarouselDataList, data
   const [newParkSlug, setNewParkSlug] = useState()
 
   const loadData = (data) => {
-    // console.log(data)
     setNewParkSlug(data)
   }
   useEffect(() => {
-    const newData = initCarouselDataList.filter(d => d.slug === newParkSlug)
-    if (newData.length)
+    const newData = dataList.filter(d => d.slug === newParkSlug)
+    if (newData.length) {
       setCarouselDataList(prevDataList => [...newData, ...prevDataList].slice(0, 15));
+    }
   }, [newParkSlug])
 
   const getParksInBounds = (bounds) => {
@@ -101,7 +101,6 @@ export default function ({ initMapDataList, statsObj, initCarouselDataList, data
       }
       return withinBounds;
     });
-    console.log(retval);
     const truncatedList = retval.slice(0, 15);
     setMapDataList(truncatedList)
     setCarouselDataList(truncatedList)

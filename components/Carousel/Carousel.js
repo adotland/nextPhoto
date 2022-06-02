@@ -1,18 +1,13 @@
-// import React, { useState, useEffect } from "react";
+// from https://codesandbox.io/s/chakra-carousel-prototype-jmqnh?file=/package.json
+
 import { capsFirst } from "./utils";
-// import "fontsource-inter/500.css";
-// import ReactDOM from "react-dom";
-// import theme from "./theme";
 
 import {
-  // ChakraProvider,
-  // extendTheme,
   Container,
   Heading,
   Button,
   VStack,
   HStack,
-  // Text,
   Flex,
   Tag,
   Box,
@@ -24,22 +19,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function ({ dataList }) {
-  // console.log(dataList)
-  // const [position, setPosition] = useState(() => map.getCenter())
-
-  // console.log(position)
-
-
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("https://jsonplaceholder.typicode.com/posts/")
-  //     .then((res) => res.json())
-  //     .then((res) => setData(res));
-  // }, []);
 
   return (
-    // <ChakraProvider theme={extendTheme(theme)}>
     <Container
       py={8}
       px={0}
@@ -103,7 +84,6 @@ export default function ({ dataList }) {
               <Link href={`/park/${data.slug}`}>
                 <a>
                   <Button
-                    // onClick={() => alert(`Post ${post.id - 5} clicked`)}
                     colorScheme="green"
                     fontWeight="bold"
                     color="gray.900"
@@ -120,9 +100,5 @@ export default function ({ dataList }) {
         ))}
       </ChakraCarousel>
     </Container>
-    // </ChakraProvider>
   );
 }
-
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);

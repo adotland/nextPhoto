@@ -12,7 +12,6 @@ function byWeight(a, b) {
 export async function getStaticPaths() {
   const collectionList = ['seattle', 'non-city'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
-  // console.log(dataList.map(d=>d.slug));
   const displayable = dataList.filter(data => data.filters.live).map(data => {
     // const displayable = dataList.map(data => {
     return {
