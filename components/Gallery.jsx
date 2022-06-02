@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/home";
+// import useDimensions from "react-cool-dimensions";
+
+
 
 function FiltersRow({ filterColor, filterType}) {
   const displayable = filterColor || filterType;
@@ -23,6 +26,16 @@ function FiltersRow({ filterColor, filterType}) {
 }
 
 export default function Gallery({ dataList, filterColor, filterImageType }) {
+
+  // const { observe, unobserve, width, height, entry } = useDimensions({
+  //   onResize: ({ observe, unobserve, width, height, entry }) => {
+  //     // Triggered whenever the size of the target is changed...
+  
+  //     unobserve(); // To stop observing the current target element
+  //     observe(); // To re-start observing the current target element
+  //   },
+  // });
+
   return (
     <>
       <SEO />
@@ -42,10 +55,14 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                   w="100%"
                   mb={2}
                   display="inline-block"
+                  // ref={observe}
                 >
                   <Image
                     key={index}
-                    src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
+                    src={data.ext === 'jpg' ? 
+                    `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}` :
+                    `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/t_${data.imageName}`
+                  }
                     alt={data.name || "image"}
                     layout="responsive"
                     width={data.width}

@@ -100,7 +100,7 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (collection = 'seattle', imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, dump = true) {
+  addWatermark: async function (collection = 'seattle', imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, isThumb = false, dump = true) {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
@@ -114,9 +114,12 @@ const ImageProcessor = {
       let watermarkBuffer;
       let image;
       if (isGif) {
-        watermarkBuffer = await this.createWatermark(metadata.width / 2, metadata.height / 2, false);
+        const scale = isThumb ? 4 : 2;
+        const scaledWidth = Math.ceil(metadata.width / scale)
+        const scaledHeight = Math.ceil(metadata.height / scale)
+        watermarkBuffer = await this.createWatermark(scaledWidth, scaledHeight, false);
         image = sharp(imageFile, { animated: true });
-        image = image.resize({ width: metadata.width / 2, height: metadata.height / 2 })
+        image = image.resize({ width: scaledWidth, height: scaledHeight })
           // .gif({ colors: 16 })
           .webp({ effort: 6 })
       } else {
@@ -142,7 +145,7 @@ const ImageProcessor = {
     }
   },
 
-  processStills: async function (collection = 'seattle', imageDataList) {
+  processStills: async function (collection = 'seattle', imageDataList, isThumb = false) {
     console.time('processStills')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     imageDataList = imageDataList.filter(data => data.ext === 'jpg');
@@ -164,7 +167,7 @@ const ImageProcessor = {
       const sharpImage = sharp(imageFileFullPath);
       if (sharpImage) {
         const metadata = await sharpImage.metadata();
-        const processedImage = await this.addWatermark(collection, imageFileName, metadata, false);
+        const processedImage = await this.addWatermark(collection, imageFileName, metadata, isThumb, false);
         const { name: formattedImageFileName, ext } = formatImageFileName(imageFileName);
         if (processedImage) {
           console.info(`saving [${imageFileName}]`);
@@ -204,14 +207,14 @@ const ImageProcessor = {
     // console.log(filtered.map(f => f.imageName));
   },
 
-  processGifs: async function (collection = 'seattle', imageDataList) {
+  processGifs: async function (collection = 'seattle', isThumb = true) {
     console.time('processGifs')
     const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
       const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
       const existingProcessed = fs.existsSync(ff.path(PROCESSED_WEBP_PATH, imageFileName.replace('gif', 'webp')));
       // console.log(existingProcessed)
-      if (existingProcessed) {
+      if (existingProcessed && !isThumb) {
         // console.info(`file already processed, skipping [${imageFileName}]`);
         return;
       }
@@ -219,11 +222,17 @@ const ImageProcessor = {
       const sharpImage = sharp(imageFileFullPath);
       if (sharpImage) {
         const metadata = await sharpImage.metadata();
-        const processedImage = await this.addWatermark(collection, imageFileName, metadata, false);
+        const processedImage = await this.addWatermark(collection, imageFileName, metadata, isThumb, false);
         const { name: formattedImageFileName, ext } = formatImageFileName(imageFileName);
+        let saveFullPath;
         if (processedImage) {
-          // const saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.${ext}`);
-          const saveFullPath = ff.path(PROCESSED_WEBP_PATH, `${formattedImageFileName}.webp`);
+          if (isThumb) {
+            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.${ext}`);
+            saveFullPath = ff.path(PROCESSED_WEBP_PATH, `t_${formattedImageFileName}.webp`);
+          } else {
+            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.${ext}`);
+            saveFullPath = ff.path(PROCESSED_WEBP_PATH, `${formattedImageFileName}.webp`);
+          }
           console.info(`saving [${saveFullPath}]`);
           await processedImage.toFile(saveFullPath);
         } else {
