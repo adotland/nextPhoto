@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
 import MapFull from "../components/MapFull";
 import Stats from "../components/Stats";
+import { shuffle } from "../utils/helpers";
 
 function getTypeAmount(type, list) {
   let amount = 0;
@@ -15,12 +16,8 @@ function getTypeAmount(type, list) {
   return amount;
 }
 
-function byFeatured(a, b) {
-  return (b.filters?.featured - a.filters?.featured);
-}
-
 export async function getStaticProps() {
-  const collectionList = ['seattle', 'non-city'];
+  const collectionList = ['seattle', 'non-city', 'mercer'];
   const dataObj = {};
   const statsObj = {
     amount: {
@@ -41,7 +38,11 @@ export async function getStaticProps() {
   // smallest 
   const initBounds = { north: 47.63694030290387, south: 47.58138923915503, east: -122.2716522216797, west: -122.3705291748047 }
 
-  const dataList = dataObj.seattle.sort(byFeatured);
+  const dataList = [];
+  for (const collection in dataObj) {
+    dataList.push(...dataObj[collection].filter(d=>d.filters?.live))
+  }
+  shuffle(dataList);
 
   const initParksWithinBounds = dataList.filter(data => {
     let withinBounds = false;

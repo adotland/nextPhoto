@@ -17,6 +17,7 @@
     "imagesList": "node ./cms/scripts/processImages.js -x getList",
     "processRecent": "node ./cms/scripts/processImages.js -x processRecent",
     "processStills": "node ./cms/scripts/processImages.js -x processStills",
+    "processFilteredStills": "node ./cms/scripts/processImages.js -x processFilteredStills",
     "processGifs": "node ./cms/scripts/processImages.js -x processGifs",
     "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames"
   },

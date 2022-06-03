@@ -6,15 +6,16 @@ const differenceBy = require('lodash/differenceBy');
 const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
 const { formatImageFileName, asyncForEach, arrayDiff, getWmFontSize } = require('./helpers');
 
+const DEFAULT_COLLECITON = 'mercer'
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
-program.option('-c, --collection <collection>');
+program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECITON);
 program.parse();
 
 const ImageProcessor = {
 
-  getList: async function (collection = 'seattle') {
+  getList: async function (collection = DEFAULT_COLLECITON) {
     const pathList = [STILL_PATH(collection), GIF_PATH(collection)];
     const retval = [];
     const rejects = [];
@@ -56,7 +57,7 @@ const ImageProcessor = {
     await ff.writeJson(rejects, BASE_DATA_PATH, `imagesRejected_${collection}.json`, 2);
   },
 
-  getListAll: async function (collection = 'seattle') {
+  getListAll: async function (collection = DEFAULT_COLLECITON) {
     const local = await ff.readdir(STILL_PATH(collection));
     await ff.writeJson(local.sort(), BASE_DATA_PATH, 'imagesAll_still.json', 2);
     const data = await ff.readdir(SHARE_PATH_STILL);
@@ -100,7 +101,7 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (collection = 'seattle', imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, isThumb = false, dump = true) {
+  addWatermark: async function (collection = DEFAULT_COLLECITON, imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, isThumb = false, dump = true) {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
@@ -145,7 +146,7 @@ const ImageProcessor = {
     }
   },
 
-  processStills: async function (collection = 'seattle', imageDataList, isThumb = false) {
+  processStills: async function (collection = DEFAULT_COLLECITON, imageDataList, isThumb = false) {
     console.time('processStills')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     imageDataList = imageDataList.filter(data => data.ext === 'jpg');
@@ -158,7 +159,7 @@ const ImageProcessor = {
         imageFileName = `${imageData.imageName}.${imageData.ext}`;
       }
       const imageFileFullPath = ff.path(STILL_PATH(collection), imageFileName);
-      const existingProcessed = fs.existsSync(PROCESSED_STILL_PATH, imageFileName);
+      const existingProcessed = fs.existsSync(ff.path(PROCESSED_STILL_PATH, imageFileName));
       if (existingProcessed && !reprocessList?.includes(imageData.slug)) {
         // console.info(`file already processed, skipping [${imageFileName}]`);
         return;
@@ -197,17 +198,18 @@ const ImageProcessor = {
   //   }
   // },
 
-  processRecent: async function (collection = 'seattle') {
+  processFilteredStills: async function (collection = DEFAULT_COLLECITON, filter = '') {
     imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
-    const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
-    const filtered_stills = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'jpg'));
-    const filtered_gifs = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'gif'));
-    await this.processStills(filtered_stills);
-    await this.processGifs(collection, filtered_gifs);
+    let filtered_stills = imageDataList;
+    if (filter === 'recent') {
+      const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
+      filtered_stills = imageDataList.filter(data => (new Date(data.lastChange).getTime() > yesterday && data.ext === 'jpg'));
+    }
+    await this.processStills(collection, filtered_stills);
     // console.log(filtered.map(f => f.imageName));
   },
 
-  processGifs: async function (collection = 'seattle', isThumb = true) {
+  processGifs: async function (collection = DEFAULT_COLLECITON, isThumb = true) {
     console.time('processGifs')
     const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
@@ -257,7 +259,6 @@ const ImageProcessor = {
       .resize({ width: 25 })
       .toFile(dest);
   }
-
 
 };
 

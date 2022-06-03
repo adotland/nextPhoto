@@ -3,18 +3,21 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
+const DEFAULT_COLLECITON = 'mercer'
+
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
 program.option('-f, --filter <filter>');
-program.option('-c, --collection <collection>', 'collection', 'seattle');
+program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECITON);
 program.parse();
+
 
 const ManageData = {
 
-  processCmsData: function (collection = 'seattle', cmsDataList) {
+  processCmsData: function (collection = DEFAULT_COLLECITON, cmsDataList) {
     const cmsDataObj = {};
     if (collection === 'seattle') {
       cmsDataList.forEach(cmsData => {
@@ -52,11 +55,27 @@ const ManageData = {
           }
         }
       });
+    } else if (collection === 'mercer') {
+      cmsDataList.forEach(cmsData => {
+        const long_name = cmsData[9].trim();
+        if (!long_name) {
+          console.error('missing long_name');
+          process.exit(1);
+        } else {
+          cmsDataObj[long_name] = {
+            name: cmsData[0] || console.warn('missing name', cmsData),
+            address: cmsData[1] || console.warn('missing address', cmsData),
+            lat: cmsData[2] || console.warn('missing lat', cmsData),
+            long: cmsData[3] || console.warn('missing long', cmsData),
+            collection: 'mercer'
+          }
+        }
+      });
     }
     return cmsDataObj;
   },
 
-  main: async function (collection = 'seattle') {
+  main: async function (collection = DEFAULT_COLLECITON) {
     const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE(collection), true, '\t');
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
@@ -128,7 +147,7 @@ const ManageData = {
 
         // filters
         const weight = filterWeight.filter(x => x.slug === imageData.slug);
-        const live = filterLive.includes(imageData.slug);
+        const live = !filterLive.includes(imageData.slug);
         const featured = filterFeatured.includes(imageData.slug);
 
         jsonData.push({
@@ -160,7 +179,7 @@ const ManageData = {
     await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_images.json`, 2);
   },
 
-  sanitizeImageNamesInFile: async function (collection = 'seattle') {
+  sanitizeImageNamesInFile: async function (collection = DEFAULT_COLLECITON) {
     const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     const retval = [];
     for (let i = 0, len = data.length; i < len; i++) {
@@ -184,13 +203,13 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, `${collection}_duplicate_slugs.json`);
   },
 
-  updateAllFilters: async function (collection = 'seattle') {
+  updateAllFilters: async function (collection = DEFAULT_COLLECITON) {
     let filterList = ['live', 'featured', 'weight'];
     filterList = filterList.concat('matchColor');
     await Promise.all(filterList.map(filter => this.updateFilter(collection, filter)));
   },
 
-  updateFilter: async function (collection = 'seattle', filter, newOnly = false) {
+  updateFilter: async function (collection = DEFAULT_COLLECITON, filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
     const dataList = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     let updateList;
@@ -284,7 +303,7 @@ const ManageData = {
   _get_live: async function (data, updateList) {
     const newVal = updateList.includes(data.slug);
     return {
-      live: newVal,
+      live: !newVal,
     }
   },
 
@@ -295,7 +314,7 @@ const ManageData = {
     }
   },
 
-  getListAll: async function (collection = 'seattle') {
+  getListAll: async function (collection = DEFAULT_COLLECITON) {
     let retval = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     retval = retval.map(d=>d.slug);
     await ff.writeJson(retval.sort(), BASE_DATA_PATH, `slugsAll_${collection}.json`, 2);

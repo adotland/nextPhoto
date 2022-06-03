@@ -11,7 +11,7 @@ const MIN_WM_FONT_SIZE = 9;
 // };
 
 const _doRegex = function (fileName, collection) {
-  let sanitizedName = fileName;
+  let sanitizedName = fileName.trim();
   // const remove_re = /[’]/g;
   // const spaces_re = /['.,]/g;
   // const dashes_re = /[\s\(\)]/g;
@@ -92,7 +92,7 @@ const getColorDiff = function (c1, c2) {
   // var palette = [ {R: 0, G: 0, B: 0 }, {R: 255, G: 255, B: 255 } ];
 
   const color = { R: c1[0], G: c1[1], B: c1[2] }
-  const palette = COLORS;
+  const palette = COLORS.default;
 
   // { R: 66, G: 105, B: 47 }, // plant green
   // { R: 35, G: 42, B: 38 }, // tree green
