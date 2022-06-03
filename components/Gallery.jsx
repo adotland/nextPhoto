@@ -2,10 +2,10 @@
 import { Box, Tag, TagCloseButton, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { shimmer, toBase64 } from "../utils/helpers";
 import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/home";
 // import useDimensions from "react-cool-dimensions";
-
 
 
 function FiltersRow({ filterColor, filterType}) {
@@ -67,6 +67,8 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                     layout="responsive"
                     width={data.width}
                     height={data.height}
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(data.width, data.height))}`}
                     sizes="33vw"
                   />
                 </Box>

@@ -4,7 +4,7 @@ import { ff } from "fssf";
 import Details from "../../components/Details";
 import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
-import { byWeight } from "../../utils/helpers";
+import { byWeight, shimmer, toBase64 } from "../../utils/helpers";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
@@ -26,7 +26,7 @@ export async function getStaticProps({ params: { slug } }) {
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const currentData = dataList.filter(d => d.slug == slug).pop();
   let related = dataList
-    .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live))
+    .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg'))
     // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
   related = related.sort(byWeight).slice(0,3);
   return {
@@ -57,6 +57,8 @@ export default function ({ currentData, related }) {
               layout="responsive"
               width={currentData.width}
               height={currentData.height}
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
               priority
             /></Box>
             :
@@ -68,6 +70,8 @@ export default function ({ currentData, related }) {
               width={currentData.width}
               height={currentData.height}
               // sizes="50vw"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
               priority
             />
           }
