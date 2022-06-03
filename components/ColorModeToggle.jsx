@@ -7,10 +7,10 @@ export default function ColorModeToggle() {
   return (
     <Box mx={'auto'}>
       <FormControl display='flex' alignItems='center'>
-        <FormLabel htmlFor='colorModeToggle' mb='0'>
+        <FormLabel htmlFor='colorModeToggle' mb='0' cursor={'pointer'}>
           {colorMode === 'light' ? <BsFillCircleFill /> : <BsMoonFill />}
         </FormLabel>
-        <Switch id='colorModeToggle' size={'md'} onChange={toggleColorMode} />
+        <Switch id='colorModeToggle' size={'md'} onChange={toggleColorMode} colorScheme='facebook' />
       </FormControl>
     </Box>
   )
