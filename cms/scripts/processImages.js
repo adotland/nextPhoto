@@ -6,7 +6,7 @@ const differenceBy = require('lodash/differenceBy');
 const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
 const { formatImageFileName, asyncForEach, arrayDiff, getWmFontSize } = require('./helpers');
 
-const DEFAULT_COLLECITON = 'state'
+const DEFAULT_COLLECITON = 'p-patch'
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');

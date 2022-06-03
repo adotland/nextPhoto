@@ -3,7 +3,7 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
-const DEFAULT_COLLECITON = 'state'
+const DEFAULT_COLLECITON = 'p-patch'
 
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
@@ -87,7 +87,23 @@ const ManageData = {
           }
         }
       });
-    }
+    } else if (collection === 'p-patch') {
+      cmsDataList.forEach(cmsData => {
+        const long_name = cmsData[9].trim();
+        if (!long_name) {
+          console.error('missing long_name');
+          process.exit(1);
+        } else {
+          cmsDataObj[long_name] = {
+            name: cmsData[0] || console.warn('missing name', cmsData),
+            address: cmsData[1] || console.warn('missing address', cmsData),
+            lat: cmsData[2] || console.warn('missing lat', cmsData),
+            long: cmsData[3] || console.warn('missing long', cmsData),
+            collection: 'mercer'
+          }
+        }
+      });
+    } 
     return cmsDataObj;
   },
 
