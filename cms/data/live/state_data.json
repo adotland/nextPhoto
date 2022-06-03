@@ -1,0 +1,59 @@
+[
+  {
+    "id": 0,
+    "name": "SAINT EDWARD STATE PARK",
+    "lat": "47.735009",
+    "long": "-122.2478278",
+    "imageName": "state_SAINT-EDWARD-STATE-PARK.jpg",
+    "slug": "state_saint-edward-state-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2415,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Lake Sammamish State Park",
+    "lat": "47.558863",
+    "long": "-122.057015",
+    "imageName": "state_Lake-Sammamish-State-Park.jpg",
+    "slug": "state_lake-sammamish-state-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bridle Trails State Park",
+    "lat": "47.654576",
+    "long": "-122.181594",
+    "imageName": "state_Bridle-Trails-State-Park.jpg",
+    "slug": "state_bridle-trails-state-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  }
+]

@@ -17,7 +17,7 @@ function getTypeAmount(type, list) {
 }
 
 export async function getStaticProps() {
-  const collectionList = ['seattle', 'non-city', 'mercer', 'county'];
+  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
   const dataObj = {};
   const statsObj = {
     amount: {

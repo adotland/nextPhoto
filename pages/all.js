@@ -3,7 +3,7 @@ import { ff } from "fssf";
 import { byColor, byWeight, shuffle } from "../utils/helpers";
 
 export async function getStaticProps() {
-  const collectionList = ['seattle', 'non-city', 'mercer', 'county'];
+  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const sorted = shuffle(dataList).sort(byWeight).sort(byColor);
   const retval = [];

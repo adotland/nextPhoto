@@ -3,7 +3,7 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
-const DEFAULT_COLLECITON = 'county'
+const DEFAULT_COLLECITON = 'state'
 
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
@@ -71,7 +71,7 @@ const ManageData = {
           }
         }
       });
-    } else if (collection === 'county') {
+    } else if (['state', 'county'].includes(collection)) {
       cmsDataList.forEach(cmsData => {
         const long_name = cmsData[9].trim();
         if (!long_name) {
@@ -83,7 +83,7 @@ const ManageData = {
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[4] || console.warn('missing lat', cmsData),
             long: cmsData[5] || console.warn('missing long', cmsData),
-            collection: 'county'
+            collection
           }
         }
       });

@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { value } }) {
-  const collectionList = ['seattle', 'non-city', 'mercer', 'county'];
+  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
   const retval = [];
