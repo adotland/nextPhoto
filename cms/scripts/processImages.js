@@ -3,10 +3,8 @@ const { ff } = require('fssf');
 const sharp = require("sharp");
 const differenceBy = require('lodash/differenceBy');
 
-const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
+const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF, DEFAULT_COLLECTION} = require('../config');
 const { formatImageFileName, asyncForEach, arrayDiff, getWmFontSize } = require('./helpers');
-
-const DEFAULT_COLLECTION = 'bainbridge'
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
