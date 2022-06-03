@@ -3,7 +3,7 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
-const DEFAULT_COLLECITON = 'bainbridge'
+const DEFAULT_COLLECTION = 'bainbridge'
 
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
@@ -11,13 +11,13 @@ const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFil
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
 program.option('-f, --filter <filter>');
-program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECITON);
+program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECTION);
 program.parse();
 
 
 const ManageData = {
 
-  processCmsData: function (collection = DEFAULT_COLLECITON, cmsDataList) {
+  processCmsData: function (collection = DEFAULT_COLLECTION, cmsDataList) {
     const cmsDataObj = {};
     if (collection === 'seattle') {
       cmsDataList.forEach(cmsData => {
@@ -123,7 +123,7 @@ const ManageData = {
     return cmsDataObj;
   },
 
-  main: async function (collection = DEFAULT_COLLECITON) {
+  main: async function (collection = DEFAULT_COLLECTION) {
     const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE(collection), true, '\t');
     const imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
@@ -227,7 +227,7 @@ const ManageData = {
     await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_images.json`, 2);
   },
 
-  sanitizeImageNamesInFile: async function (collection = DEFAULT_COLLECITON) {
+  sanitizeImageNamesInFile: async function (collection = DEFAULT_COLLECTION) {
     const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     const retval = [];
     for (let i = 0, len = data.length; i < len; i++) {
@@ -251,13 +251,13 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, `${collection}_duplicate_slugs.json`);
   },
 
-  updateAllFilters: async function (collection = DEFAULT_COLLECITON) {
+  updateAllFilters: async function (collection = DEFAULT_COLLECTION) {
     let filterList = ['live', 'featured', 'weight'];
     filterList = filterList.concat('matchColor');
     await Promise.all(filterList.map(filter => this.updateFilter(collection, filter)));
   },
 
-  updateFilter: async function (collection = DEFAULT_COLLECITON, filter, newOnly = false) {
+  updateFilter: async function (collection = DEFAULT_COLLECTION, filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
     const dataList = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     let updateList;
@@ -362,7 +362,7 @@ const ManageData = {
     }
   },
 
-  getListAll: async function (collection = DEFAULT_COLLECITON) {
+  getListAll: async function (collection = DEFAULT_COLLECTION) {
     let retval = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
     retval = retval.map(d => d.slug);
     await ff.writeJson(retval.sort(), BASE_DATA_PATH, `slugsAll_${collection}.json`, 2);

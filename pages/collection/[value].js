@@ -1,11 +1,10 @@
 import { ff } from "fssf";
-import Gallery from "../../../components/Gallery";
-import { byWeight } from "../../../utils/helpers";
+import Gallery from "../../components/Gallery";
+import { byWeight } from "../../utils/helpers";
 
-const FILTER_NAME = 'type'
 
 export async function getStaticPaths() {
-  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
+  const paths = await ff.readJson('./cms/data/live', 'enabled_collections.json');
   const displayable = paths.map(p => {
     return {
       params: { value: p }
@@ -18,8 +17,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { value } }) {
-  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat(); const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
+  const dataList = await ff.readJson(ff.path(`./cms/data/live/${value}_data.json`));
+  const filtered = dataList.sort(byWeight);
   const retval = [];
   filtered.forEach(data => {
     if (data.filters.live) {

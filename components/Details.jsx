@@ -1,6 +1,8 @@
 import { Box,  Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import FilterDisplay from "./FilterDisplay";
 import Map from './Map';
+import styles from './Details.module.css';
 
 export default function Details({ data }) {
   const filterColor = data.filters?.matchColor
@@ -22,7 +24,11 @@ export default function Details({ data }) {
       minW="20rem"
     >
       <Heading>{data.name}</Heading>
-      <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
+      <Link href={`/collection/${collection.toLowerCase()}`}>
+        <a className={styles.collectionLink}>
+        <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
+        </a>
+        </Link>
       <a href={data.link}>{data.link}</a>
       {data.lat && data.long && <Text>{data.lat} // {data.long}</Text>}
       {data.address && <Text>{data.address}</Text>}

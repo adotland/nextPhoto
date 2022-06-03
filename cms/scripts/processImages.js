@@ -6,16 +6,16 @@ const differenceBy = require('lodash/differenceBy');
 const { STILL_PATH, PROCESSED_STILL_PATH, LIVE_DATA_PATH, BASE_DATA_PATH, GIF_PATH, PROCESSED_GIF_PATH, PROCESSED_WEBP_PATH, SHARE_PATH_STILL, SHARE_PATH_GIF } = require('../config');
 const { formatImageFileName, asyncForEach, arrayDiff, getWmFontSize } = require('./helpers');
 
-const DEFAULT_COLLECITON = 'bainbridge'
+const DEFAULT_COLLECTION = 'bainbridge'
 
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
-program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECITON);
+program.option('-c, --collection <collection>', 'collection', DEFAULT_COLLECTION);
 program.parse();
 
 const ImageProcessor = {
 
-  getList: async function (collection = DEFAULT_COLLECITON) {
+  getList: async function (collection = DEFAULT_COLLECTION) {
     const pathList = [STILL_PATH(collection), GIF_PATH(collection)];
     const retval = [];
     const rejects = [];
@@ -57,7 +57,7 @@ const ImageProcessor = {
     await ff.writeJson(rejects, BASE_DATA_PATH, `imagesRejected_${collection}.json`, 2);
   },
 
-  getListAll: async function (collection = DEFAULT_COLLECITON) {
+  getListAll: async function (collection = DEFAULT_COLLECTION) {
     const local = await ff.readdir(STILL_PATH(collection));
     await ff.writeJson(local.sort(), BASE_DATA_PATH, 'imagesAll_still.json', 2);
     const data = await ff.readdir(SHARE_PATH_STILL);
@@ -101,7 +101,7 @@ const ImageProcessor = {
     }
   },
 
-  addWatermark: async function (collection = DEFAULT_COLLECITON, imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, isThumb = false, dump = true) {
+  addWatermark: async function (collection = DEFAULT_COLLECTION, imageFileName = '274_1943_Piers-62-and-63.gif', metadata = {}, isThumb = false, dump = true) {
     try {
       const ext = imageFileName.split('.').pop();
       const isGif = ext === 'gif';
@@ -146,7 +146,7 @@ const ImageProcessor = {
     }
   },
 
-  processStills: async function (collection = DEFAULT_COLLECITON, imageDataList, isThumb = false) {
+  processStills: async function (collection = DEFAULT_COLLECTION, imageDataList, isThumb = false) {
     console.time('processStills')
     imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     imageDataList = imageDataList.filter(data => data.ext === 'jpg');
@@ -198,7 +198,7 @@ const ImageProcessor = {
   //   }
   // },
 
-  processFilteredStills: async function (collection = DEFAULT_COLLECITON, filter = '') {
+  processFilteredStills: async function (collection = DEFAULT_COLLECTION, filter = '') {
     imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
     let filtered_stills = imageDataList;
     if (filter === 'recent') {
@@ -209,7 +209,7 @@ const ImageProcessor = {
     // console.log(filtered.map(f => f.imageName));
   },
 
-  processGifs: async function (collection = DEFAULT_COLLECITON, isThumb = true) {
+  processGifs: async function (collection = DEFAULT_COLLECTION, isThumb = true) {
     console.time('processGifs')
     const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
