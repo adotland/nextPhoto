@@ -153,7 +153,7 @@
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": false,
+      "featured": true,
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"

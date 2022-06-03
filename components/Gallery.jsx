@@ -18,7 +18,7 @@ function FiltersRow({ filterColor, filterType}) {
       pt={4}
       pl={4}
     >
-      <Text display={'inline-block'} mr={5} fontSize="sm">Active Filters: </Text>
+      <Text display={'inline-block'} mr={5} fontSize="sm" fontFamily={'Open sans'}>Active Filters: </Text>
       {filterColor && <FilterTagClose type={'color'} value={filterColor} />}
       {filterType && <FilterTagClose type={'type'} value={filterType} />}
     </Box>

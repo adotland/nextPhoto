@@ -24,7 +24,7 @@ export default function Details({ data }) {
       minW="20rem"
     >
       <Heading>{data.name}</Heading>
-      <Link href={`/collection/${collection.toLowerCase()}`}>
+      <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
         <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
         </a>

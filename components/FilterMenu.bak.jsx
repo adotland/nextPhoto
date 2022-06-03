@@ -46,7 +46,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
           backgroundColor={useColorModeValue("white", "gray.800")}
           py={1}
           px={2}
-          transform={'skew(-21deg)'}
+          // transform={'skew(-21deg)'}
           _hover={{background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700')}}>Filter 
       {isOpen ? <CloseIcon color={color} /> : <MenuIcon color={color} />}</Text>
     </Box>
@@ -63,7 +63,7 @@ const MenuItem = ({ children, to = "/", }) => {
           backgroundColor={useColorModeValue("white", "gray.800")}
           py={1}
           px={2}
-          transform={'skew(-21deg)'}
+          // transform={'skew(-21deg)'}
           _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
         >
           {children}

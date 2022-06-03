@@ -1,25 +1,5 @@
 [
   {
-    "id": 3,
-    "name": "Park at Bothell Landing",
-    "address": "9919 NE 180th St, Bothell, WA 98011",
-    "lat": "47.7582238",
-    "long": "-122.2076465",
-    "imageName": "bothel_Park-at-Bothell-Landing.jpg",
-    "slug": "bothel_park-at-bothell-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
     "id": 0,
     "name": "Isaan Evans Park",
     "lat": "47.332757",
@@ -29,32 +9,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2433,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Indian Tom Park",
-    "lat": "47.3132633",
-    "long": "-122.2135912",
-    "imageName": "auburn_Indian-Tom-Park.jpg",
-    "slug": "auburn_indian-tom-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
     }
   },
   {
@@ -67,53 +27,49 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
     }
   },
   {
-    "id": 5,
-    "name": "Blyth Park",
-    "address": "16950 W Riverside Dr, Bothell, WA 98011",
-    "lat": "47.7505268",
-    "long": "-122.2089671",
-    "imageName": "bothel_Blyth-Park.jpg",
-    "slug": "bothel_blyth-park",
+    "id": 2,
+    "name": "Indian Tom Park",
+    "lat": "47.3132633",
+    "long": "-122.2135912",
+    "imageName": "auburn_Indian-Tom-Park.jpg",
+    "slug": "auburn_indian-tom-park",
     "ext": "jpg",
     "width": 4032,
-    "height": 2216,
+    "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
+      "type": "still"
     }
   },
   {
-    "id": 10,
-    "name": "Log Boom Park",
-    "address": "17415 61st Ave NE, Kenmore, WA 98028",
-    "lat": "47.7574572",
-    "long": "-122.2645665",
-    "imageName": "kenmore_Log-Boom-Park.jpg",
-    "slug": "kenmore_log-boom-park",
+    "id": 3,
+    "name": "Park at Bothell Landing",
+    "address": "9919 NE 180th St, Bothell, WA 98011",
+    "lat": "47.7582238",
+    "long": "-122.2076465",
+    "imageName": "bothel_Park-at-Bothell-Landing.jpg",
+    "slug": "bothel_park-at-bothell-landing",
     "ext": "jpg",
     "width": 4032,
-    "height": 1419,
+    "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#78c8f8"
+      "type": "still"
     }
   },
   {
@@ -127,13 +83,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2791,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Blyth Park",
+    "address": "16950 W Riverside Dr, Bothell, WA 98011",
+    "lat": "47.7505268",
+    "long": "-122.2089671",
+    "imageName": "bothel_Blyth-Park.jpg",
+    "slug": "bothel_blyth-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2216,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -146,13 +120,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2583,
+    "collection": "non-city",
     "filters": {
       "weight": 10,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "type": "still"
     }
   },
   {
@@ -165,13 +138,67 @@
     "ext": "jpg",
     "width": 4010,
     "height": 2992,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "green",
-      "domColor": "#182808"
+      "type": "still"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Edmonds Public Fishing Pier",
+    "lat": "47.8110528",
+    "long": "-122.3865216",
+    "imageName": "edmonds_Edmonds-Public-Fishing-Pier.jpg",
+    "slug": "edmonds_edmonds-public-fishing-pier",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Marina Beach Park",
+    "lat": "47.8050898",
+    "long": "-122.3961657",
+    "imageName": "edmonds_Marina-Beach-Park.jpg",
+    "slug": "edmonds_marina-beach-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Log Boom Park",
+    "address": "17415 61st Ave NE, Kenmore, WA 98028",
+    "lat": "47.7574572",
+    "long": "-122.2645665",
+    "imageName": "kenmore_Log-Boom-Park.jpg",
+    "slug": "kenmore_log-boom-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 1419,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -185,51 +212,12 @@
     "ext": "jpg",
     "width": 3743,
     "height": 1948,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#b8d8f8"
-    }
-  },
-  {
-    "id": 8,
-    "name": "Edmonds Public Fishing Pier",
-    "lat": "47.8110528",
-    "long": "-122.3865216",
-    "imageName": "edmonds_Edmonds-Public-Fishing-Pier.jpg",
-    "slug": "edmonds_edmonds-public-fishing-pier",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#485888"
-    }
-  },
-  {
-    "id": 9,
-    "name": "Marina Beach Park",
-    "lat": "47.8050898",
-    "long": "-122.3961657",
-    "imageName": "edmonds_Marina-Beach-Park.jpg",
-    "slug": "edmonds_marina-beach-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#c8c8b8"
+      "type": "still"
     }
   },
   {
@@ -242,33 +230,28 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#98b8e8"
+      "type": "still"
     }
   },
   {
-    "id": 16,
-    "name": "Juanita Beach Park",
-    "address": "9703 NE Juanita Dr, Kirkland 98034",
-    "lat": "47.7053994",
-    "long": "-122.2181457",
-    "imageName": "kirkland_Juanita-Beach-Park.jpg",
-    "slug": "kirkland_juanita-beach-park",
+    "id": 13,
+    "name": "Wetlands Interurban Trail",
+    "imageName": "kent_Wetlands-Interurban-Trail.jpg",
+    "slug": "kent_wetlands-interurban-trail",
     "ext": "jpg",
     "width": 4032,
-    "height": 1881,
+    "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8f8f8"
+      "type": "still"
     }
   },
   {
@@ -282,30 +265,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 13,
-    "name": "Wetlands Interurban Trail",
-    "imageName": "kent_Wetlands-Interurban-Trail.jpg",
-    "slug": "kent_wetlands-interurban-trail",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
     }
   },
   {
@@ -319,33 +284,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
     }
   },
   {
-    "id": 20,
-    "name": "Ballard (Hiram M. Chittenden) Locks",
-    "address": "3015 NW 54th St, Seattle, WA 98107",
-    "lat": "47.6666723",
-    "long": "-122.3981392",
-    "imageName": "military_Ballard-Hiram-M-Chittenden-Locks.jpg",
-    "slug": "military_ballard-hiram-m-chittenden-locks",
+    "id": 16,
+    "name": "Juanita Beach Park",
+    "address": "9703 NE Juanita Dr, Kirkland 98034",
+    "lat": "47.7053994",
+    "long": "-122.2181457",
+    "imageName": "kirkland_Juanita-Beach-Park.jpg",
+    "slug": "kirkland_juanita-beach-park",
     "ext": "jpg",
     "width": 4032,
-    "height": 3024,
+    "height": 1881,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
+      "type": "still"
     }
   },
   {
@@ -359,13 +322,30 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
+      "type": "still"
+    }
+  },
+  {
+    "id": 18,
+    "name": "520 Bridge View Park",
+    "lat": "47.6373982",
+    "long": "-122.2410134",
+    "imageName": "medina_520-Bridge-View-Park.jpg",
+    "slug": "medina_520-bridge-view-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2844,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -379,52 +359,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
+      "type": "still"
     }
   },
   {
-    "id": 24,
-    "name": "Bridge Gear Park",
-    "address": "Southeast of 3431 11th Ave SW, Seattle, WA 98134",
-    "lat": "47.57251489999999",
-    "long": "-122.3504846",
-    "imageName": "port_Bridge-Gear-Park.jpg",
-    "slug": "port_bridge-gear-park",
+    "id": 20,
+    "name": "Ballard (Hiram M. Chittenden) Locks",
+    "address": "3015 NW 54th St, Seattle, WA 98107",
+    "lat": "47.6666723",
+    "long": "-122.3981392",
+    "imageName": "military_Ballard-Hiram-M-Chittenden-Locks.jpg",
+    "slug": "military_ballard-hiram-m-chittenden-locks",
     "ext": "jpg",
     "width": 4032,
-    "height": 1965,
+    "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
-    "id": 18,
-    "name": "520 Bridge View Park",
-    "lat": "47.6373982",
-    "long": "-122.2410134",
-    "imageName": "medina_520-Bridge-View-Park.jpg",
-    "slug": "medina_520-bridge-view-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2844,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8e8e8"
+      "type": "still"
     }
   },
   {
@@ -438,13 +397,30 @@
     "ext": "jpg",
     "width": 3971,
     "height": 2943,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
+      "type": "still"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Lake Boren Park",
+    "lat": "47.5283528",
+    "long": "-122.167774",
+    "imageName": "newcastle_Lake-Boren-Park.jpg",
+    "slug": "newcastle_lake-boren-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -458,52 +434,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
+      "type": "still"
     }
   },
   {
-    "id": 26,
-    "name": "Duwamish River People’s Park and Shoreline Habitat",
-    "address": "8700 Dallas Ave S | Seattle, WA 98108",
-    "lat": "47.5265564",
-    "long": "-122.3116541",
-    "imageName": "port_Duwamish-River-Peoples-Park-and-Shoreline-Habitat.jpg",
-    "slug": "port_duwamish-river-peoples-park-and-shoreline-habitat",
+    "id": 24,
+    "name": "Bridge Gear Park",
+    "address": "Southeast of 3431 11th Ave SW, Seattle, WA 98134",
+    "lat": "47.57251489999999",
+    "long": "-122.3504846",
+    "imageName": "port_Bridge-Gear-Park.jpg",
+    "slug": "port_bridge-gear-park",
     "ext": "jpg",
     "width": 4032,
-    "height": 2380,
+    "height": 1965,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#b8c8c8"
-    }
-  },
-  {
-    "id": 22,
-    "name": "Lake Boren Park",
-    "lat": "47.5283528",
-    "long": "-122.167774",
-    "imageName": "newcastle_Lake-Boren-Park.jpg",
-    "slug": "newcastle_lake-boren-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "type": "still"
     }
   },
   {
@@ -517,53 +472,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#78a8c8"
+      "type": "still"
     }
   },
   {
-    "id": 29,
-    "name": "Jack Perry Memorial Park",
-    "address": "1700 E Marginal Way S, Seattle, WA 98134",
-    "lat": "47.5868864",
-    "long": "-122.3399469",
-    "imageName": "port_Jack-Perry-Memorial-Park.jpg",
-    "slug": "port_jack-perry-memorial-park",
+    "id": 26,
+    "name": "Duwamish River People’s Park and Shoreline Habitat",
+    "address": "8700 Dallas Ave S | Seattle, WA 98108",
+    "lat": "47.5265564",
+    "long": "-122.3116541",
+    "imageName": "port_Duwamish-River-Peoples-Park-and-Shoreline-Habitat.jpg",
+    "slug": "port_duwamish-river-peoples-park-and-shoreline-habitat",
     "ext": "jpg",
-    "width": 3622,
-    "height": 2037,
+    "width": 4032,
+    "height": 2380,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 28,
-    "name": "Jack Block Park",
-    "address": "2130 Harbor Ave SW, Seattle, WA 98126",
-    "lat": "47.5848951",
-    "long": "-122.3752356",
-    "imageName": "port_Jack-Block-Park.jpg",
-    "slug": "port_jack-block-park",
-    "ext": "jpg",
-    "width": 3999,
-    "height": 2438,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "featured": true,
+      "type": "still"
     }
   },
   {
@@ -577,13 +510,50 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "type": "still"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Jack Block Park",
+    "address": "2130 Harbor Ave SW, Seattle, WA 98126",
+    "lat": "47.5848951",
+    "long": "-122.3752356",
+    "imageName": "port_Jack-Block-Park.jpg",
+    "slug": "port_jack-block-park",
+    "ext": "jpg",
+    "width": 3999,
+    "height": 2438,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Jack Perry Memorial Park",
+    "address": "1700 E Marginal Way S, Seattle, WA 98134",
+    "lat": "47.5868864",
+    "long": "-122.3399469",
+    "imageName": "port_Jack-Perry-Memorial-Park.jpg",
+    "slug": "port_jack-perry-memorial-park",
+    "ext": "jpg",
+    "width": 3622,
+    "height": 2037,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -597,13 +567,12 @@
     "ext": "jpg",
     "width": 3999,
     "height": 2949,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
+      "type": "still"
     }
   },
   {
@@ -617,13 +586,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#c8c8c8"
+      "type": "still"
     }
   },
   {
@@ -637,13 +605,12 @@
     "ext": "jpg",
     "width": 2985,
     "height": 4032,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
+      "type": "still"
     }
   },
   {
@@ -657,13 +624,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#8898a8"
+      "type": "still"
     }
   },
   {
@@ -677,33 +643,12 @@
     "ext": "jpg",
     "width": 4000,
     "height": 2980,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 36,
-    "name": "WATERFALL GARDEN PARK",
-    "address": "219 2nd Ave S, Seattle, WA 98104",
-    "lat": "47.6002312",
-    "long": "-122.3320588",
-    "imageName": "private_WATERFALL-GARDEN-PARK.jpg",
-    "slug": "private_waterfall-garden-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "type": "still"
     }
   },
   {
@@ -717,13 +662,31 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "type": "still"
+    }
+  },
+  {
+    "id": 36,
+    "name": "WATERFALL GARDEN PARK",
+    "address": "219 2nd Ave S, Seattle, WA 98104",
+    "lat": "47.6002312",
+    "long": "-122.3320588",
+    "imageName": "private_WATERFALL-GARDEN-PARK.jpg",
+    "slug": "private_waterfall-garden-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -737,13 +700,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 8000,
       "live": true,
       "featured": true,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
+      "type": "still"
     }
   },
   {
@@ -756,13 +718,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2498,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
+      "type": "still"
     }
   },
   {
@@ -776,13 +737,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#4898b8"
+      "type": "still"
     }
   },
   {
@@ -796,13 +756,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2895,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#98b8d8"
+      "type": "still"
     }
   },
   {
@@ -816,13 +775,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": true,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#081818"
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -836,73 +794,12 @@
     "ext": "jpg",
     "width": 4025,
     "height": 2264,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8d8d8"
-    }
-  },
-  {
-    "id": 44,
-    "name": "Duwamish Gardens Park",
-    "address": "Duwamish Trail, Tukwila, WA 98108",
-    "lat": "47.5268949",
-    "long": "-122.3229569",
-    "imageName": "tukwila_Duwamish-Gardens-Park.jpg",
-    "slug": "tukwila_duwamish-gardens-park",
-    "ext": "jpg",
-    "width": 4036,
-    "height": 2270,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#68b8e8"
-    }
-  },
-  {
-    "id": 46,
-    "name": "Madison Valley Stormwater Storage Facility",
-    "address": "30th Ave E, Seattle, WA 98112",
-    "lat": "47.6219647",
-    "long": "-122.2931105",
-    "imageName": "unknown_Madison-Valley-Stormwater-Storage-Facility.jpg",
-    "slug": "unknown_madison-valley-stormwater-storage-facility",
-    "ext": "jpg",
-    "width": 3990,
-    "height": 2580,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
-    }
-  },
-  {
-    "id": 45,
-    "name": "5th and Lynn Park",
-    "address": "2301 5th Ave N, Seattle, WA 98109",
-    "lat": "47.6391873",
-    "long": "-122.3472379",
-    "imageName": "unknown_5th-and-Lynn-Park.jpg",
-    "slug": "unknown_5th-and-lynn-park",
-    "ext": "jpg",
-    "width": 3993,
-    "height": 1922,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#4888b8"
+      "type": "still"
     }
   },
   {
@@ -916,13 +813,69 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "type": "still"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Duwamish Gardens Park",
+    "address": "Duwamish Trail, Tukwila, WA 98108",
+    "lat": "47.5268949",
+    "long": "-122.3229569",
+    "imageName": "tukwila_Duwamish-Gardens-Park.jpg",
+    "slug": "tukwila_duwamish-gardens-park",
+    "ext": "jpg",
+    "width": 4036,
+    "height": 2270,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
+    }
+  },
+  {
+    "id": 45,
+    "name": "5th and Lynn Park",
+    "address": "2301 5th Ave N, Seattle, WA 98109",
+    "lat": "47.6391873",
+    "long": "-122.3472379",
+    "imageName": "unknown_5th-and-Lynn-Park.jpg",
+    "slug": "unknown_5th-and-lynn-park",
+    "ext": "jpg",
+    "width": 3993,
+    "height": 1922,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Madison Valley Stormwater Storage Facility",
+    "address": "30th Ave E, Seattle, WA 98112",
+    "lat": "47.6219647",
+    "long": "-122.2931105",
+    "imageName": "unknown_Madison-Valley-Stormwater-Storage-Facility.jpg",
+    "slug": "unknown_madison-valley-stormwater-storage-facility",
+    "ext": "jpg",
+    "width": 3990,
+    "height": 2580,
+    "collection": "non-city",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still"
     }
   },
   {
@@ -936,13 +889,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#3898a8"
+      "type": "still"
     }
   },
   {
@@ -955,13 +907,12 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#3888c8"
+      "type": "still"
     }
   },
   {
@@ -974,13 +925,12 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "non-city",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": true,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#284878"
+      "type": "still"
     }
   }
 ]

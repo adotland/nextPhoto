@@ -56,11 +56,11 @@ export default function FilterMenu() {
           backgroundColor={useColorModeValue("white", "gray.800")}
           py={1.5}
           h={'auto'}
-          transform={'skew(-21deg)'}
+          // transform={'skew(-21deg)'}
           rounded="none"
           _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
         >
-          <Text fontWeight={'normal'}>Filter</Text>
+          <Text fontWeight={'normal'} fontFamily='Open Sans'>Filter</Text>
         </MenuButton>
         <MenuList rounded={'none'}>
           <MenuItem isDisabled="true">

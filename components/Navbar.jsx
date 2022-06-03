@@ -65,11 +65,12 @@ const MenuItem = ({ children, to = "/", }) => {
       <a>
         <Text
           display="block"
+          fontFamily='Open Sans'
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "gray.800")}
           py={1}
           px={2}
-          transform={'skew(-21deg)'}
+          // transform={'skew(-21deg)'}
           _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
         >
           {children}

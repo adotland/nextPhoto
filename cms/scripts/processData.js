@@ -210,6 +210,7 @@ const ManageData = {
           ext: isGif ? 'webp' : imageData.ext,
           width: metadata.width,
           height: metadata.height,
+          collection,
           filters: {
             weight: weight.length ? weight[0].weight : 100,
             live,
@@ -310,7 +311,9 @@ const ManageData = {
 
     let imageToProcess = '';
     if (data.ext === 'webp') {
-      imageToProcess = data.imageName.replace('webp', 'jpg');
+      // imageToProcess = data.imageName.replace('webp', 'jpg');
+      console.warn(`skipping webp file [${data.imageName}]`);
+      return; // better to skip for now
     }
     else {
       imageToProcess = data.imageName;

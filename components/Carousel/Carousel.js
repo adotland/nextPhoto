@@ -86,9 +86,10 @@ export default function ({ dataList }) {
                   <Button
                     colorScheme="green"
                     fontWeight="bold"
-                    color="gray.900"
+                    textColor={useColorModeValue("white", "blackAlpha.800")}
+                    fontFamily='Open Sans'
                     size="sm"
-                    transform={'skew(-21deg)'}
+                    // transform={'skew(-21deg)'}
                     rounded='none'
                   >
                     View &rarr;
