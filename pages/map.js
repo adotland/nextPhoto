@@ -31,7 +31,7 @@ export async function getStaticProps() {
     statsObj['amount'][collection] = singleImageList.length;
     statsObj['amount'].all += singleImageList.length;
   }));
-  statsObj['amount'].port = getTypeAmount('port', dataObj['non-city']);
+  statsObj['amount'].port = getTypeAmount('port', dataObj['extras']);
 
   // smallest 
   const initBounds = { north: 47.63694030290387, south: 47.58138923915503, east: -122.2716522216797, west: -122.3705291748047 }

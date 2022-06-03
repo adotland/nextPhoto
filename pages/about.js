@@ -8,9 +8,9 @@ export default function () {
       
       <Text mb={2}>Along the way, I learned about the P-Patches, so I also rode my bike to every <Link href={'/collection/p-patch'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>P-Patch</Text></a></Link>.</Text>
       
-      <Text mb={2}>Along the way, I learned about the Port of Seattle owned parks, so I rode my bike to every <Link href={'/collection/non-city'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Port of Seattle owned park</Text></a></Link>.</Text>
+      <Text mb={2}>Along the way, I learned about the Port of Seattle owned parks, so I rode my bike to every <Link href={'/collection/extras'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Port of Seattle owned park</Text></a></Link>.</Text>
       
-      <Text mb={2}>Along the way, I learned about the Seattle Public Utilities owned parks, so, can you guess what I did? I rode my bike to every <Link href={'/collection/non-city'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Seattle Public Utilities owned park</Text></a></Link>.</Text>
+      <Text mb={2}>Along the way, I learned about the Seattle Public Utilities owned parks, so, can you guess what I did? I rode my bike to every <Link href={'/collection/extras'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Seattle Public Utilities owned park</Text></a></Link>.</Text>
       
       <Text mb={2}>I also covered <Link href={'/collection/mercer'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Mercer Island</Text></a></Link>, and sampled parks from <Link href={'/collection/county'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>King County</Text></a></Link>, and a few other cities.</Text>
       

@@ -36,7 +36,7 @@ const ManageData = {
           }
         }
       });
-    } else if (collection === 'non-city') {
+    } else if (collection === 'extras') {
       cmsDataList.forEach(cmsData => {
         const long_name = cmsData[12];
         if (!long_name) {

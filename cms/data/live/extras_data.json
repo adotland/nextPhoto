@@ -9,7 +9,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2433,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -27,7 +27,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -45,7 +45,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -64,7 +64,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -83,7 +83,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2791,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -102,7 +102,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2216,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -120,7 +120,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2583,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 10,
       "live": true,
@@ -138,7 +138,7 @@
     "ext": "jpg",
     "width": 4010,
     "height": 2992,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -156,7 +156,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -174,7 +174,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -193,7 +193,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 1419,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -212,7 +212,7 @@
     "ext": "jpg",
     "width": 3743,
     "height": 1948,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -230,7 +230,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -246,7 +246,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -265,7 +265,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -284,7 +284,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -303,7 +303,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 1881,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -322,7 +322,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -340,7 +340,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2844,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -359,7 +359,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -378,7 +378,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -397,7 +397,7 @@
     "ext": "jpg",
     "width": 3971,
     "height": 2943,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -415,7 +415,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -434,7 +434,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -453,7 +453,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 1965,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -472,7 +472,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -491,7 +491,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2380,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -510,7 +510,7 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -529,7 +529,7 @@
     "ext": "jpg",
     "width": 3999,
     "height": 2438,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -548,7 +548,7 @@
     "ext": "jpg",
     "width": 3622,
     "height": 2037,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -567,7 +567,7 @@
     "ext": "jpg",
     "width": 3999,
     "height": 2949,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -586,7 +586,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -605,7 +605,7 @@
     "ext": "jpg",
     "width": 2985,
     "height": 4032,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -624,7 +624,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -643,7 +643,7 @@
     "ext": "jpg",
     "width": 4000,
     "height": 2980,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -662,7 +662,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -681,7 +681,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -700,7 +700,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 8000,
       "live": true,
@@ -718,7 +718,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2498,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -737,7 +737,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -756,7 +756,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2895,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -775,7 +775,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -794,7 +794,7 @@
     "ext": "jpg",
     "width": 4025,
     "height": 2264,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -813,7 +813,7 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -832,7 +832,7 @@
     "ext": "jpg",
     "width": 4036,
     "height": 2270,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -851,7 +851,7 @@
     "ext": "jpg",
     "width": 3993,
     "height": 1922,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -870,7 +870,7 @@
     "ext": "jpg",
     "width": 3990,
     "height": 2580,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -889,7 +889,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -907,7 +907,7 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
@@ -925,7 +925,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "collection": "non-city",
+    "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,

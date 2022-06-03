@@ -34,7 +34,7 @@ export default function Stats({ stats }) {
           <Wrap spacing='30px' justify='center'>
             <ParkStat name={'Total Parks Visited'} data={stats.amount.all} />
             <ParkStat name={'Seattle City'} data={stats.amount.seattle} />
-            <ParkStat name={'Seattle Other'} data={stats.amount['non-city']} />
+            <ParkStat name={'Seattle Other'} data={stats.amount['extras']} />
             <ParkStat name={'P-Patches'} data={stats.amount['p-patch']} />
             <ParkStat name={'Seattle Port'} data={stats.amount.port} />
             <ParkStat name={'Mercer Island'} data={stats.amount.mercer} />
