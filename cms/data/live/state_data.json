@@ -9,6 +9,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2415,
+    "collection": "state",
     "filters": {
       "weight": 100,
       "live": true,
@@ -28,6 +29,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "state",
     "filters": {
       "weight": 100,
       "live": true,
@@ -47,6 +49,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "state",
     "filters": {
       "weight": 100,
       "live": true,
