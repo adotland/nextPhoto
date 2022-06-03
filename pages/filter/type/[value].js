@@ -5,7 +5,7 @@ import { byWeight } from "../../../utils/helpers";
 const FILTER_NAME = 'type'
 
 export async function getStaticPaths() {
-  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
+  const paths = ['animated', 'still'];
   const displayable = paths.map(p => {
     return {
       params: { value: p }
