@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
 import Logo from "./Logo";
@@ -10,9 +10,12 @@ const NavBar = (props) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  // const executedRef = useRef(false);
 
   useEffect(() => {
+    // if (executedRef.current) return;
     setIsOpen(false)
+    // executedRef.current = true;
   }, [router.query])
 
   return (
@@ -96,6 +99,7 @@ const MenuLinks = ({ isOpen }) => {
         <FilterMenu />
         <MenuItem to="/map">Map</MenuItem>
         <MenuItem to="/all">Gallery</MenuItem>
+        {/* <MenuItem to="/stats">Stats</MenuItem> */}
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle />
       </Stack>

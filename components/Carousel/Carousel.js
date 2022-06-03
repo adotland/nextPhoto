@@ -20,6 +20,7 @@ import Image from "next/image";
 
 export default function ({ dataList }) {
 
+  if (dataList.length) {
   return (
     <Container
       py={8}
@@ -84,9 +85,9 @@ export default function ({ dataList }) {
               <Link href={`/park/${data.slug}`}>
                 <a>
                   <Button
-                    colorScheme="green"
+                    colorScheme="gray"
                     fontWeight="bold"
-                    textColor={useColorModeValue("white", "blackAlpha.800")}
+                    textColor={useColorModeValue("blackAlpha.800", "white", )}
                     fontFamily='Open Sans'
                     size="sm"
                     // transform={'skew(-21deg)'}
@@ -102,4 +103,9 @@ export default function ({ dataList }) {
       </ChakraCarousel>
     </Container>
   );
+        } else {
+          return (
+            'bruh'
+          )
+        }
 }

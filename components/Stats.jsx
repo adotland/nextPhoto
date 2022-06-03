@@ -4,16 +4,27 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  useColorModeValue
 } from "@chakra-ui/react";
+import Link from "next/link";
 
-function ParkStat({ name, data }) {
+function ParkStat({ name, data, link }) {
   return (
-    <WrapItem>
-      <Stat minW={30}>
-        <StatLabel>{name}</StatLabel>
-        <StatNumber>{data}</StatNumber>
-        <StatHelpText></StatHelpText>
-      </Stat>
+    <WrapItem
+      p='5px'
+      _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
+    >
+      <Link href={link} >
+        <a>
+          <Stat minW={30}>
+            <StatLabel>
+              {name}
+            </StatLabel>
+            <StatNumber textAlign={'center'}>{data}</StatNumber>
+            <StatHelpText></StatHelpText>
+          </Stat>
+        </a>
+      </Link>
     </WrapItem>
   )
 }
@@ -31,16 +42,16 @@ export default function Stats({ stats }) {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Wrap spacing='30px' justify='center'>
-            <ParkStat name={'Total Parks Visited'} data={stats.amount.all} />
-            <ParkStat name={'Seattle City'} data={stats.amount.seattle} />
-            <ParkStat name={'Seattle Other'} data={stats.amount['extras']} />
-            <ParkStat name={'P-Patches'} data={stats.amount['p-patch']} />
-            <ParkStat name={'Seattle Port'} data={stats.amount.port} />
-            <ParkStat name={'Mercer Island'} data={stats.amount.mercer} />
-            <ParkStat name={'WA State'} data={stats.amount.state} />
-            <ParkStat name={'King County'} data={stats.amount.county} />
-            <ParkStat name={'Bainbridge Island'} data={stats.amount.bainbridge} />
+          <Wrap spacing='20px' justify='center'>
+            <ParkStat name={'Total Parks Visited'} data={stats.amount.all} link={'/all'} />
+            <ParkStat name={'Seattle City'} data={stats.amount.seattle} link={'/collection/seattle'} />
+            <ParkStat name={'Seattle Other'} data={stats.amount['extras']} link={'/collection/extras'} />
+            <ParkStat name={'P-Patches'} data={stats.amount['p-patch']} link={'/collection/p-patch'} />
+            <ParkStat name={'Seattle Port'} data={stats.amount.port} link={'/collection/extras'} />
+            <ParkStat name={'Mercer Island'} data={stats.amount.mercer} link={'/collection/mercer'} />
+            <ParkStat name={'WA State'} data={stats.amount.state} link={'/collection/state'} />
+            <ParkStat name={'King County'} data={stats.amount.county} link={'/collection/county'} />
+            <ParkStat name={'Bainbridge Island'} data={stats.amount.bainbridge} link={'/collection/bainbridge'} />
           </Wrap>
         </AccordionPanel>
       </AccordionItem>

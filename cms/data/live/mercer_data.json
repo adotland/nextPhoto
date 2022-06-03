@@ -10,6 +10,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 1175,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -17,66 +18,6 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98a8b8"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Aubrey Davis Park",
-    "address": "2030 72nd Ave SE, Mercer Island, WA 98040",
-    "lat": "47.5921695",
-    "long": "-122.2441677",
-    "imageName": "mercer_park_Aubrey-Davis-Park.jpg",
-    "slug": "mercer_park_aubrey-davis-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#081818"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Calkins Landing",
-    "address": "SE 28th St & 60th Ave SE , Mercer Island, WA",
-    "lat": "47.5852955",
-    "long": "-122.2523804",
-    "imageName": "mercer_streetEnd_Calkins-Landing.jpg",
-    "slug": "mercer_streetend_calkins-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#68a8e8"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Bicentennial Park",
-    "address": "77th Ave SE & SE 32nd St, Mercer Island, WA",
-    "lat": "47.5818666",
-    "long": "-122.2350152",
-    "imageName": "mercer_park_Bicentennial-Park.jpg",
-    "slug": "mercer_park_bicentennial-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2547,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
     }
   },
   {
@@ -90,6 +31,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -100,23 +42,24 @@
     }
   },
   {
-    "id": 6,
-    "name": "Clise Park",
-    "address": "SE 40th St & Island Crest Way, Mercer Island, WA",
-    "lat": "47.5745766",
-    "long": "-122.2269247",
-    "imageName": "mercer_park_Clise-Park.jpg",
-    "slug": "mercer_park_clise-park",
+    "id": 3,
+    "name": "Bicentennial Park",
+    "address": "77th Ave SE & SE 32nd St, Mercer Island, WA",
+    "lat": "47.5818666",
+    "long": "-122.2350152",
+    "imageName": "mercer_park_Bicentennial-Park.jpg",
+    "slug": "mercer_park_bicentennial-park",
     "ext": "jpg",
     "width": 4032,
-    "height": 3024,
+    "height": 2547,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
-      "domColor": "#183838"
+      "matchColor": "bold",
+      "domColor": "#282818"
     }
   },
   {
@@ -130,6 +73,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -137,6 +81,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Aubrey Davis Park",
+    "address": "2030 72nd Ave SE, Mercer Island, WA 98040",
+    "lat": "47.5921695",
+    "long": "-122.2441677",
+    "imageName": "mercer_park_Aubrey-Davis-Park.jpg",
+    "slug": "mercer_park_aubrey-davis-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#081818"
     }
   },
   {
@@ -150,6 +115,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -160,63 +126,45 @@
     }
   },
   {
-    "id": 9,
-    "name": "Engstrom Open Space",
-    "address": "6500 Block E. Mercer Way, Mercer Island, WA",
-    "lat": "47.5450996",
-    "long": "-122.2149236",
-    "imageName": "mercer_park_Engstrom-Open-Space.jpg",
-    "slug": "mercer_park_engstrom-open-space",
+    "id": 4,
+    "name": "Calkins Landing",
+    "address": "SE 28th St & 60th Ave SE , Mercer Island, WA",
+    "lat": "47.5852955",
+    "long": "-122.2523804",
+    "imageName": "mercer_streetEnd_Calkins-Landing.jpg",
+    "slug": "mercer_streetend_calkins-landing",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
+      "matchColor": "sky",
+      "domColor": "#68a8e8"
     }
   },
   {
-    "id": 12,
-    "name": "Franklin Landing",
-    "address": "78th Ave SE & SE 42nd St, Mercer Island, WA",
-    "lat": "47.5710139",
-    "long": "-122.2367361",
-    "imageName": "mercer_streetEnd_Franklin-Landing.jpg",
-    "slug": "mercer_streetend_franklin-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2359,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 11,
-    "name": "Forest Landing",
-    "address": "SE 43rd St and Forest Ave SE, Mercer Island, WA",
-    "lat": "47.56813289999999",
-    "long": "-122.2324156",
-    "imageName": "mercer_streetEnd_Forest-Landing.jpg",
-    "slug": "mercer_streetend_forest-landing",
+    "id": 6,
+    "name": "Clise Park",
+    "address": "SE 40th St & Island Crest Way, Mercer Island, WA",
+    "lat": "47.5745766",
+    "long": "-122.2269247",
+    "imageName": "mercer_park_Clise-Park.jpg",
+    "slug": "mercer_park_clise-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
+      "matchColor": "green",
+      "domColor": "#183838"
     }
   },
   {
@@ -230,6 +178,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -237,6 +186,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Franklin Landing",
+    "address": "78th Ave SE & SE 42nd St, Mercer Island, WA",
+    "lat": "47.5710139",
+    "long": "-122.2367361",
+    "imageName": "mercer_streetEnd_Franklin-Landing.jpg",
+    "slug": "mercer_streetend_franklin-landing",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2359,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -250,6 +220,7 @@
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -257,6 +228,48 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Forest Landing",
+    "address": "SE 43rd St and Forest Ave SE, Mercer Island, WA",
+    "lat": "47.56813289999999",
+    "long": "-122.2324156",
+    "imageName": "mercer_streetEnd_Forest-Landing.jpg",
+    "slug": "mercer_streetend_forest-landing",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Engstrom Open Space",
+    "address": "6500 Block E. Mercer Way, Mercer Island, WA",
+    "lat": "47.5450996",
+    "long": "-122.2149236",
+    "imageName": "mercer_park_Engstrom-Open-Space.jpg",
+    "slug": "mercer_park_engstrom-open-space",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282818"
     }
   },
   {
@@ -270,6 +283,7 @@
     "ext": "jpg",
     "width": 3559,
     "height": 2198,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -277,26 +291,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 15,
-    "name": "Garfield Landing",
-    "address": "SE 30th St & 60th Ave SE, Mercer Island, WA",
-    "lat": "47.58379739999999",
-    "long": "-122.2518993",
-    "imageName": "mercer_streetEnd_Garfield-Landing.jpg",
-    "slug": "mercer_streetend_garfield-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
     }
   },
   {
@@ -310,6 +304,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -330,6 +325,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -337,26 +333,6 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8d8f8"
-    }
-  },
-  {
-    "id": 19,
-    "name": "Island Crest Park",
-    "address": "5500 Island Crest Way, Mercer Island, WA",
-    "lat": "47.5504092",
-    "long": "-122.2236182",
-    "imageName": "mercer_park_Island-Crest-Park.jpg",
-    "slug": "mercer_park_island-crest-park",
-    "ext": "jpg",
-    "width": 4025,
-    "height": 2262,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182838"
     }
   },
   {
@@ -370,6 +346,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -377,46 +354,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
-  },
-  {
-    "id": 17,
-    "name": "Hollerbach Open Space",
-    "address": "4501 90th Ave SE, Mercer Island, WA",
-    "lat": "47.5654789",
-    "long": "-122.2189077",
-    "imageName": "mercer_park_Hollerbach-Open-Space.jpg",
-    "slug": "mercer_park_hollerbach-open-space",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "green",
-      "domColor": "#182818"
-    }
-  },
-  {
-    "id": 20,
-    "name": "Lincoln Landing (McGilvra’s Landing)",
-    "address": "76th SE & SE 22nd, Mercer Island, WA",
-    "lat": "47.591382",
-    "long": "-122.2376685",
-    "imageName": "mercer_streetEnd_Lincoln-Landing-McGilvras-Landing.jpg",
-    "slug": "mercer_streetend_lincoln-landing-mcgilvras-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#88c8e8"
     }
   },
   {
@@ -430,6 +367,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -440,23 +378,45 @@
     }
   },
   {
-    "id": 25,
-    "name": "Park on the Lid",
-    "address": "72nd Ave SE & SE 22nd St, Mercer Island, WA",
-    "lat": "47.5915027",
-    "long": "-122.2430952",
-    "imageName": "mercer_park_Park-on-the-Lid.jpg",
-    "slug": "mercer_park_park-on-the-lid",
+    "id": 15,
+    "name": "Garfield Landing",
+    "address": "SE 30th St & 60th Ave SE, Mercer Island, WA",
+    "lat": "47.58379739999999",
+    "long": "-122.2518993",
+    "imageName": "mercer_streetEnd_Garfield-Landing.jpg",
+    "slug": "mercer_streetend_garfield-landing",
     "ext": "jpg",
     "width": 4032,
-    "height": 2422,
+    "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "sky",
-      "domColor": "#5888c8"
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Hollerbach Open Space",
+    "address": "4501 90th Ave SE, Mercer Island, WA",
+    "lat": "47.5654789",
+    "long": "-122.2189077",
+    "imageName": "mercer_park_Hollerbach-Open-Space.jpg",
+    "slug": "mercer_park_hollerbach-open-space",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "green",
+      "domColor": "#182818"
     }
   },
   {
@@ -470,6 +430,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -480,16 +441,59 @@
     }
   },
   {
-    "id": 24,
-    "name": "North Mercerdale Hillside",
-    "address": "7415 SE 27th St, Mercer Island, WA",
-    "lat": "47.5853814",
-    "long": "-122.2392736",
-    "imageName": "mercer_park_North-Mercerdale-Hillside.jpg",
-    "slug": "mercer_park_north-mercerdale-hillside",
+    "id": 20,
+    "name": "Lincoln Landing (McGilvra’s Landing)",
+    "address": "76th SE & SE 22nd, Mercer Island, WA",
+    "lat": "47.591382",
+    "long": "-122.2376685",
+    "imageName": "mercer_streetEnd_Lincoln-Landing-McGilvras-Landing.jpg",
+    "slug": "mercer_streetend_lincoln-landing-mcgilvras-landing",
     "ext": "jpg",
-    "width": 3024,
-    "height": 4032,
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#88c8e8"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Park on the Lid",
+    "address": "72nd Ave SE & SE 22nd St, Mercer Island, WA",
+    "lat": "47.5915027",
+    "long": "-122.2430952",
+    "imageName": "mercer_park_Park-on-the-Lid.jpg",
+    "slug": "mercer_park_park-on-the-lid",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2422,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#5888c8"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Island Crest Park",
+    "address": "5500 Island Crest Way, Mercer Island, WA",
+    "lat": "47.5504092",
+    "long": "-122.2236182",
+    "imageName": "mercer_park_Island-Crest-Park.jpg",
+    "slug": "mercer_park_island-crest-park",
+    "ext": "jpg",
+    "width": 4025,
+    "height": 2262,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -497,46 +501,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
-  },
-  {
-    "id": 27,
-    "name": "Pioneer Park",
-    "address": "SE 68th St & Island Crest Way, Mercer Island, WA",
-    "lat": "47.5420753",
-    "long": "-122.2216657",
-    "imageName": "mercer_park_Pioneer-Park.jpg",
-    "slug": "mercer_park_pioneer-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2304,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 23,
-    "name": "Miller Landing",
-    "address": "4765 Forest Ave SE, Mercer Island, WA",
-    "lat": "47.5611695",
-    "long": "-122.230452",
-    "imageName": "mercer_streetEnd_Miller-Landing.jpg",
-    "slug": "mercer_streetend_miller-landing",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#382828"
     }
   },
   {
@@ -550,6 +514,7 @@
     "ext": "jpg",
     "width": 3897,
     "height": 2847,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -557,6 +522,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Pioneer Park",
+    "address": "SE 68th St & Island Crest Way, Mercer Island, WA",
+    "lat": "47.5420753",
+    "long": "-122.2216657",
+    "imageName": "mercer_park_Pioneer-Park.jpg",
+    "slug": "mercer_park_pioneer-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2304,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
     }
   },
   {
@@ -570,6 +556,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -580,23 +567,24 @@
     }
   },
   {
-    "id": 30,
-    "name": "Roanoke Park",
-    "address": "70th Ave SE & West Mercer Way, Mercer Island, WA",
-    "lat": "47.594569",
-    "long": "-122.2451461",
-    "imageName": "mercer_park_Roanoke-Park.jpg",
-    "slug": "mercer_park_roanoke-park",
+    "id": 24,
+    "name": "North Mercerdale Hillside",
+    "address": "7415 SE 27th St, Mercer Island, WA",
+    "lat": "47.5853814",
+    "long": "-122.2392736",
+    "imageName": "mercer_park_North-Mercerdale-Hillside.jpg",
+    "slug": "mercer_park_north-mercerdale-hillside",
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8d8e8"
+      "matchColor": "bold",
+      "domColor": "#182838"
     }
   },
   {
@@ -610,6 +598,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -617,6 +606,90 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98d8f8"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Roanoke Park",
+    "address": "70th Ave SE & West Mercer Way, Mercer Island, WA",
+    "lat": "47.594569",
+    "long": "-122.2451461",
+    "imageName": "mercer_park_Roanoke-Park.jpg",
+    "slug": "mercer_park_roanoke-park",
+    "ext": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8d8e8"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Miller Landing",
+    "address": "4765 Forest Ave SE, Mercer Island, WA",
+    "lat": "47.5611695",
+    "long": "-122.230452",
+    "imageName": "mercer_streetEnd_Miller-Landing.jpg",
+    "slug": "mercer_streetend_miller-landing",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#382828"
+    }
+  },
+  {
+    "id": 33,
+    "name": "SE 53rd Open Space",
+    "address": "2 Brook Bay Rd, Mercer Island, WA",
+    "lat": "47.5526154",
+    "long": "-122.2322227",
+    "imageName": "mercer_park_SE-53rd-Open-Space.jpg",
+    "slug": "mercer_park_se-53rd-open-space",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 34,
+    "name": "SE 56th Street Landing",
+    "address": "5495 W Mercer Way, Mercer Island, WA",
+    "lat": "47.5530196",
+    "long": "-122.2296257",
+    "imageName": "mercer_streetEnd_SE-56th-Street-Landing.jpg",
+    "slug": "mercer_streetend_se-56th-street-landing",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "green",
+      "domColor": "#383828"
     }
   },
   {
@@ -630,6 +703,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2245,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -650,6 +724,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -660,56 +735,17 @@
     }
   },
   {
-    "id": 34,
-    "name": "SE 56th Street Landing",
-    "address": "5495 W Mercer Way, Mercer Island, WA",
-    "lat": "47.5530196",
-    "long": "-122.2296257",
-    "imageName": "mercer_streetEnd_SE-56th-Street-Landing.jpg",
-    "slug": "mercer_streetend_se-56th-street-landing",
+    "id": 36,
+    "name": "Secret Park",
+    "address": "2700 64th Ave SE, Mercer Island, WA",
+    "lat": "47.5870918",
+    "long": "-122.2488839",
+    "imageName": "mercer_park_Secret-Park.jpg",
+    "slug": "mercer_park_secret-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "green",
-      "domColor": "#383828"
-    }
-  },
-  {
-    "id": 35,
-    "name": "SE 72nd Street Landing",
-    "address": "9603 SE 72nd Pl, Mercer Island, WA",
-    "lat": "47.5382859",
-    "long": "-122.2107212",
-    "imageName": "mercer_streetEnd_SE-72nd-Street-Landing.jpg",
-    "slug": "mercer_streetend_se-72nd-street-landing",
-    "ext": "jpg",
-    "width": 4009,
-    "height": 2993,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 33,
-    "name": "SE 53rd Open Space",
-    "address": "2 Brook Bay Rd, Mercer Island, WA",
-    "lat": "47.5526154",
-    "long": "-122.2322227",
-    "imageName": "mercer_park_SE-53rd-Open-Space.jpg",
-    "slug": "mercer_park_se-53rd-open-space",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -717,26 +753,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
-  },
-  {
-    "id": 37,
-    "name": "Slater Park",
-    "address": "2835 60th Ave SE, Mercer Island, WA",
-    "lat": "47.5841803",
-    "long": "-122.2529602",
-    "imageName": "mercer_park_Slater-Park.jpg",
-    "slug": "mercer_park_slater-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#382828"
     }
   },
   {
@@ -750,6 +766,7 @@
     "ext": "jpg",
     "width": 3979,
     "height": 2274,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -770,6 +787,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
@@ -780,23 +798,45 @@
     }
   },
   {
-    "id": 36,
-    "name": "Secret Park",
-    "address": "2700 64th Ave SE, Mercer Island, WA",
-    "lat": "47.5870918",
-    "long": "-122.2488839",
-    "imageName": "mercer_park_Secret-Park.jpg",
-    "slug": "mercer_park_secret-park",
+    "id": 37,
+    "name": "Slater Park",
+    "address": "2835 60th Ave SE, Mercer Island, WA",
+    "lat": "47.5841803",
+    "long": "-122.2529602",
+    "imageName": "mercer_park_Slater-Park.jpg",
+    "slug": "mercer_park_slater-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "bold",
-      "domColor": "#181818"
+      "domColor": "#382828"
+    }
+  },
+  {
+    "id": 35,
+    "name": "SE 72nd Street Landing",
+    "address": "9603 SE 72nd Pl, Mercer Island, WA",
+    "lat": "47.5382859",
+    "long": "-122.2107212",
+    "imageName": "mercer_streetEnd_SE-72nd-Street-Landing.jpg",
+    "slug": "mercer_streetend_se-72nd-street-landing",
+    "ext": "jpg",
+    "width": 4009,
+    "height": 2993,
+    "collection": "mercer",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
     }
   },
   {
@@ -810,6 +850,7 @@
     "ext": "jpg",
     "width": 4029,
     "height": 3019,
+    "collection": "mercer",
     "filters": {
       "weight": 100,
       "live": true,

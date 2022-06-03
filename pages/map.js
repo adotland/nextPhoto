@@ -3,35 +3,35 @@ import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
 import MapFull from "../components/MapFull";
-import Stats from "../components/Stats";
+// import Stats from "../components/Stats";
 import { shuffle } from "../utils/helpers";
 
-function getTypeAmount(type, list) {
-  let amount = 0;
-  list.forEach(data => {
-    if (data.slug.indexOf(`${type}_`) === 0) {
-      amount++;
-    }
-  });
-  return amount;
-}
+// function getTypeAmount(type, list) {
+//   let amount = 0;
+//   list.forEach(data => {
+//     if (data.slug.indexOf(`${type}_`) === 0) {
+//       amount++;
+//     }
+//   });
+//   return amount;
+// }
 
 export async function getStaticProps() {
   const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
   const dataObj = {};
-  const statsObj = {
-    amount: {
-      all: 0
-    }
-  };
+  // const statsObj = {
+  //   amount: {
+  //     all: 0
+  //   }
+  // };
   await Promise.all(collectionList.map(async collection => {
     const data = await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))
-    dataObj[collection] = data.filter(d => d.ext === 'jpg'); //TODO
-    const singleImageList = data.filter(d => d.ext === 'jpg'); //TODO
-    statsObj['amount'][collection] = singleImageList.length;
-    statsObj['amount'].all += singleImageList.length;
+    dataObj[collection] = data.filter(d => d.ext === 'jpg');
+    // const singleImageList = dataObj[collection];
+    // statsObj['amount'][collection] = singleImageList.length;
+    // statsObj['amount'].all += singleImageList.length;
   }));
-  statsObj['amount'].port = getTypeAmount('port', dataObj['extras']);
+  // statsObj['amount'].port = getTypeAmount('port', dataObj['extras']);
 
   // smallest 
   const initBounds = { north: 47.63694030290387, south: 47.58138923915503, east: -122.2716522216797, west: -122.3705291748047 }
@@ -71,11 +71,11 @@ export async function getStaticProps() {
       filters: { featured: data.filters?.featured }
     }
   });
-  return { props: { initMapDataList, statsObj, initCarouselDataList, dataList } };
+  return { props: { initMapDataList, /*statsObj,*/ initCarouselDataList, dataList } };
 }
 
 
-export default function ({ initMapDataList, statsObj, initCarouselDataList, dataList }) {
+export default function ({ initMapDataList, /*statsObj,*/ initCarouselDataList, dataList }) {
 
   const [carouselDataList, setCarouselDataList] = useState(initCarouselDataList);
   const [mapDataList, setMapDataList] = useState(initMapDataList);
@@ -110,7 +110,7 @@ export default function ({ initMapDataList, statsObj, initCarouselDataList, data
       mx={4}
       mt={4}
     >
-      <Stats stats={statsObj} />
+      {/* <Stats stats={statsObj} /> */}
       <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} />
       <Text textAlign={'center'} pt={2}>&uarr; Pan and Zoom to discover &darr; </Text>
       <Carousel dataList={carouselDataList} />
