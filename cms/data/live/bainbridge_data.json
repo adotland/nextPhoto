@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Grand Forest",
+    "address": "Bainbridge Island, Wa, 98110",
+    "lat": "47.6562816",
+    "long": "-122.5478564",
+    "imageName": "bainbridge_Grand-Forest.jpg",
+    "slug": "bainbridge_grand-forest",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Meigs Park",
+    "address": "11085 State Highway 305 , Bainbridge Island, Wa, 98110",
+    "lat": "47.66434919",
+    "long": "-122.5275201",
+    "imageName": "bainbridge_Meigs-Park.jpg",
+    "slug": "bainbridge_meigs-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#283848"
+    }
+  },
+  {
+    "id": 0,
+    "name": "Cave Family Heritage Park",
+    "address": "259 Ferncliff Dr , Bainbridge Island, WA, 98110",
+    "lat": "47.626794",
+    "long": "-122.510352",
+    "imageName": "bainbridge_Cave-Family-Heritage-Park.jpg",
+    "slug": "bainbridge_cave-family-heritage-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282818"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Island Center Park",
+    "address": "8395 Fletcher Bay Rd , Bainbridge Island, Wa, 98110",
+    "lat": "47.63977",
+    "long": "-122.563083",
+    "imageName": "bainbridge_Island-Center-Park.jpg",
+    "slug": "bainbridge_island-center-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Red Pine Park",
+    "address": "418 Wood Ave SW , Bainbridge Is, Wa, 98110",
+    "lat": "47.622328",
+    "long": "-122.523512",
+    "imageName": "bainbridge_Red-Pine-Park.jpg",
+    "slug": "bainbridge_red-pine-park",
+    "ext": "jpg",
+    "width": 3931,
+    "height": 2405,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Williams-Olson Park",
+    "address": "6200 Williams Lane , Bainbridge Island, WA, 98110",
+    "lat": "47.6652841",
+    "long": "-122.5662878",
+    "imageName": "bainbridge_Williams-Olson-Park.jpg",
+    "slug": "bainbridge_williams-olson-park",
+    "ext": "jpg",
+    "width": 3985,
+    "height": 2620,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Schel Chelb Park",
+    "address": "7595 Heron Hall Lane NE , Bainbridge Island, Wa, 98110",
+    "lat": "47.6042289",
+    "long": "-122.5508147",
+    "imageName": "bainbridge_Schel-Chelb-Park.jpg",
+    "slug": "bainbridge_schel-chelb-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Waterfront Park",
+    "address": "625 Winslow Way E, Bainbridge Island, WA 98110",
+    "lat": "47.62285453",
+    "long": "-122.5162305",
+    "imageName": "bainbridge_Waterfront-Park.jpg",
+    "slug": "bainbridge_waterfront-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#283838"
+    }
+  }
+]

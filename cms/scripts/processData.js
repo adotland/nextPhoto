@@ -3,7 +3,7 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
-const DEFAULT_COLLECITON = 'p-patch'
+const DEFAULT_COLLECITON = 'bainbridge'
 
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
@@ -103,7 +103,23 @@ const ManageData = {
           }
         }
       });
-    } 
+    } else if (collection === 'bainbridge') {
+      cmsDataList.forEach(cmsData => {
+        const long_name = cmsData[7].trim();
+        if (!long_name) {
+          console.error('missing long_name');
+          process.exit(1);
+        } else {
+          cmsDataObj[long_name] = {
+            name: cmsData[0] || console.warn('missing name', cmsData),
+            address: cmsData[1] || console.warn('missing address', cmsData),
+            lat: cmsData[2] || console.warn('missing lat', cmsData),
+            long: cmsData[3] || console.warn('missing long', cmsData),
+            collection: 'mercer'
+          }
+        }
+      });
+    }
     return cmsDataObj;
   },
 
@@ -348,7 +364,7 @@ const ManageData = {
 
   getListAll: async function (collection = DEFAULT_COLLECITON) {
     let retval = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
-    retval = retval.map(d=>d.slug);
+    retval = retval.map(d => d.slug);
     await ff.writeJson(retval.sort(), BASE_DATA_PATH, `slugsAll_${collection}.json`, 2);
   },
 
