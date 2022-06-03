@@ -56,7 +56,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
       className={styles.map}
       center={center}
       zoom={12}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
     >
       <MapEventListener />
       <TileLayer
