@@ -1,85 +1,5 @@
 [
   {
-    "id": 0,
-    "name": "Thomas Street Gardens",
-    "address": "1010 E Thomas St, Seattle, WA",
-    "lat": "47.62116942",
-    "long": "-122.3193127",
-    "imageName": "p-patch_Thomas-Street-Gardens.jpg",
-    "slug": "p-patch_thomas-street-gardens",
-    "ext": "jpg",
-    "width": 3971,
-    "height": 2943,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 1,
-    "name": "Pinehurst",
-    "address": "11525 12th Ave NE, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_Pinehurst.jpg",
-    "slug": "p-patch_pinehurst",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Greg's Garden",
-    "address": "14th Ave NW & NW 54th St, Seattle, WA",
-    "lat": "47.701702",
-    "long": "-122.374108",
-    "imageName": "p-patch_Gregs-Garden.jpg",
-    "slug": "p-patch_gregs-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Squire Park",
-    "address": "14th Ave & E Fir St, Seattle, WA",
-    "lat": "47.600622",
-    "long": "-122.314191",
-    "imageName": "p-patch_Squire-Park.jpg",
-    "slug": "p-patch_squire-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
     "id": 2,
     "name": "Haller Lake",
     "address": "13045 1st Ave NE, Seattle, WA 98133",
@@ -90,6 +10,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2723,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -100,43 +21,24 @@
     }
   },
   {
-    "id": 9,
-    "name": "Beacon Bluff",
-    "address": "1701 15th Ave S, Seattle, WA",
-    "lat": "47.58796217",
-    "long": "-122.3139037",
-    "imageName": "p-patch_Beacon-Bluff.jpg",
-    "slug": "p-patch_beacon-bluff",
+    "id": 0,
+    "name": "Thomas Street Gardens",
+    "address": "1010 E Thomas St, Seattle, WA",
+    "lat": "47.62116942",
+    "long": "-122.3193127",
+    "imageName": "p-patch_Thomas-Street-Gardens.jpg",
+    "slug": "p-patch_thomas-street-gardens",
     "ext": "jpg",
-    "width": 3024,
-    "height": 4032,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
-    }
-  },
-  {
-    "id": 8,
-    "name": "Beacon Food Forest",
-    "address": "15th Ave S & S Dakota St, Seattle, WA",
-    "lat": "47.567492",
-    "long": "-122.313359",
-    "imageName": "p-patch_Beacon-Food-Forest.jpg",
-    "slug": "p-patch_beacon-food-forest",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
+    "width": 3971,
+    "height": 2943,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "light",
-      "domColor": "#e8e8e8"
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -150,6 +52,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -160,16 +63,59 @@
     }
   },
   {
-    "id": 11,
-    "name": "Bradner Gardens Park",
-    "address": "1750 Bradner Pl S, Seattle, WA",
-    "lat": "47.58765459",
-    "long": "-122.2958347",
-    "imageName": "p-patch_Bradner-Gardens-Park.jpg",
-    "slug": "p-patch_bradner-gardens-park",
+    "id": 1,
+    "name": "Pinehurst",
+    "address": "11525 12th Ave NE, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_Pinehurst.jpg",
+    "slug": "p-patch_pinehurst",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Beacon Food Forest",
+    "address": "15th Ave S & S Dakota St, Seattle, WA",
+    "lat": "47.567492",
+    "long": "-122.313359",
+    "imageName": "p-patch_Beacon-Food-Forest.jpg",
+    "slug": "p-patch_beacon-food-forest",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8e8e8"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Greg's Garden",
+    "address": "14th Ave NW & NW 54th St, Seattle, WA",
+    "lat": "47.701702",
+    "long": "-122.374108",
+    "imageName": "p-patch_Gregs-Garden.jpg",
+    "slug": "p-patch_gregs-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -180,23 +126,87 @@
     }
   },
   {
-    "id": 13,
-    "name": "Unpaving Paradise",
-    "address": "200 Summit Ave E, Seattle, WA",
-    "lat": "47.619809",
-    "long": "-122.325172",
-    "imageName": "p-patch_Unpaving-Paradise.jpg",
-    "slug": "p-patch_unpaving-paradise",
+    "id": 9,
+    "name": "Beacon Bluff",
+    "address": "1701 15th Ave S, Seattle, WA",
+    "lat": "47.58796217",
+    "long": "-122.3139037",
+    "imageName": "p-patch_Beacon-Bluff.jpg",
+    "slug": "p-patch_beacon-bluff",
+    "ext": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181828"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Squire Park",
+    "address": "14th Ave & E Fir St, Seattle, WA",
+    "lat": "47.600622",
+    "long": "-122.314191",
+    "imageName": "p-patch_Squire-Park.jpg",
+    "slug": "p-patch_squire-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Howell Collective",
+    "address": "1514 E Howell St, Seattle, WA",
+    "lat": "47.61771014",
+    "long": "-122.3124323",
+    "imageName": "p-patch_Howell-Collective.jpg",
+    "slug": "p-patch_howell-collective",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "light",
-      "domColor": "#f8e8e8"
+      "domColor": "#d8d8e8"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Hoa Mai",
+    "address": "221 10th Ave S, Seattle, WA",
+    "lat": "47.6004925",
+    "long": "-122.3202572",
+    "imageName": "p-patch_Hoa-Mai.jpg",
+    "slug": "p-patch_hoa-mai",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2784,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -210,6 +220,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -230,266 +241,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Howell Collective",
-    "address": "1514 E Howell St, Seattle, WA",
-    "lat": "47.61771014",
-    "long": "-122.3124323",
-    "imageName": "p-patch_Howell-Collective.jpg",
-    "slug": "p-patch_howell-collective",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8d8e8"
-    }
-  },
-  {
-    "id": 16,
-    "name": "Judkins",
-    "address": "24th Ave S & S Norman St, Seattle, WA",
-    "lat": "47.592655",
-    "long": "-122.301297",
-    "imageName": "p-patch_Judkins.jpg",
-    "slug": "p-patch_judkins",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2728,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 18,
-    "name": "High Point MacArthur Lane Park Garden",
-    "address": "2726 SW MacArthur Ln, Seattle, WA",
-    "lat": "47.5504841",
-    "long": "-122.36952",
-    "imageName": "p-patch_High-Point-MacArthur-Lane-Park-Garden.jpg",
-    "slug": "p-patch_high-point-macarthur-lane-park-garden",
-    "ext": "jpg",
-    "width": 3687,
-    "height": 2822,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 7,
-    "name": "Horiuchi Park",
-    "address": "156 Boren Ave, Seattle, WA",
-    "lat": "47.603166",
-    "long": "-122.318932",
-    "imageName": "p-patch_Horiuchi-Park.jpg",
-    "slug": "p-patch_horiuchi-park",
-    "ext": "jpg",
-    "width": 4013,
-    "height": 2999,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 20,
-    "name": "Eastlake",
-    "address": "2900 Fairview Ave E, Seattle, WA",
-    "lat": "47.64680445",
-    "long": "-122.3260495",
-    "imageName": "p-patch_Eastlake.jpg",
-    "slug": "p-patch_eastlake",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2770,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 19,
-    "name": "Thyme Patch Park",
-    "address": "2853 NW 58th St, Seattle, WA",
-    "lat": "47.67084031",
-    "long": "-122.3936898",
-    "imageName": "p-patch_Thyme-Patch-Park.jpg",
-    "slug": "p-patch_thyme-patch-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
-    }
-  },
-  {
-    "id": 22,
-    "name": "Rainier Vista Snoqualmie Garden",
-    "address": "2917 S Snoqualmie St, Seattle, WA",
-    "lat": "47.5612624",
-    "long": "-122.2950406",
-    "imageName": "p-patch_Rainier-Vista-Snoqualmie-Garden.jpg",
-    "slug": "p-patch_rainier-vista-snoqualmie-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2480,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 21,
-    "name": "Rainier Vista Dakota Garden",
-    "address": "2902 S Dakota St, Seattle, WA",
-    "lat": "47.566251",
-    "long": "-122.2978937",
-    "imageName": "p-patch_Rainier-Vista-Dakota-Garden.jpg",
-    "slug": "p-patch_rainier-vista-dakota-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2671,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8d8e8"
-    }
-  },
-  {
-    "id": 24,
-    "name": "UpGarden",
-    "address": "300 Mercer St, Seattle, WA",
-    "lat": "47.62498535",
-    "long": "-122.3502493",
-    "imageName": "p-patch_UpGarden.jpg",
-    "slug": "p-patch_upgarden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#081858"
-    }
-  },
-  {
-    "id": 28,
-    "name": "NewHolly Youth & Family",
-    "address": "32nd Ave S & S Brighton St, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_NewHolly-Youth--Family.jpg",
-    "slug": "p-patch_newholly-youth--family",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2251,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8e8e8"
-    }
-  },
-  {
-    "id": 23,
-    "name": "New Holly 29 Ave Garden",
-    "address": "29th Ave S & S Brighton St, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_New-Holly-29-Ave-Garden.jpg",
-    "slug": "p-patch_new-holly-29-ave-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "earthy",
-      "domColor": "#585858"
-    }
-  },
-  {
-    "id": 25,
-    "name": "Madison Valley",
-    "address": "3000 E Mercer St, Seattle, WA",
-    "lat": "47.6242994",
-    "long": "-122.3246763",
-    "imageName": "p-patch_Madison-Valley.jpg",
-    "slug": "p-patch_madison-valley",
-    "ext": "jpg",
-    "width": 3959,
-    "height": 2858,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 26,
-    "name": "Cascade",
-    "address": "310 Minor Ave N, Seattle, WA",
-    "lat": "47.62103116",
-    "long": "-122.3328656",
-    "imageName": "p-patch_Cascade.jpg",
-    "slug": "p-patch_cascade",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -510,6 +262,7 @@
     "ext": "jpg",
     "width": 2797,
     "height": 2821,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -520,123 +273,45 @@
     }
   },
   {
-    "id": 29,
-    "name": "High Point Juneau Community Garden and Market Garden",
-    "address": "32nd Ave SW & SW Juneau St, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_High-Point-Juneau-Community-Garden-and-Market-Garden.jpg",
-    "slug": "p-patch_high-point-juneau-community-garden-and-market-garden",
-    "ext": "jpg",
-    "width": 3976,
-    "height": 2713,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182838"
-    }
-  },
-  {
-    "id": 27,
-    "name": "High Point Commons Garden",
-    "address": "3108 SW Graham St, Seattle, WA",
-    "lat": "47.5470073",
-    "long": "-122.3724333",
-    "imageName": "p-patch_High-Point-Commons-Garden.jpg",
-    "slug": "p-patch_high-point-commons-garden",
+    "id": 11,
+    "name": "Bradner Gardens Park",
+    "address": "1750 Bradner Pl S, Seattle, WA",
+    "lat": "47.58765459",
+    "long": "-122.2958347",
+    "imageName": "p-patch_Bradner-Gardens-Park.jpg",
+    "slug": "p-patch_bradner-gardens-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "bold",
-      "domColor": "#181828"
+      "domColor": "#181818"
     }
   },
   {
-    "id": 30,
-    "name": "Rainier Vista Sunrise Garden",
-    "address": "33rd Ave S & S Oregon St, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_Rainier-Vista-Sunrise-Garden.jpg",
-    "slug": "p-patch_rainier-vista-sunrise-garden",
+    "id": 7,
+    "name": "Horiuchi Park",
+    "address": "156 Boren Ave, Seattle, WA",
+    "lat": "47.603166",
+    "long": "-122.318932",
+    "imageName": "p-patch_Horiuchi-Park.jpg",
+    "slug": "p-patch_horiuchi-park",
     "ext": "jpg",
-    "width": 4032,
-    "height": 2833,
+    "width": 4013,
+    "height": 2999,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "light",
-      "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 34,
-    "name": "Courtland Place",
-    "address": "3600 36th Ave S, Seattle, WA",
-    "lat": "47.57128",
-    "long": "-122.288127",
-    "imageName": "p-patch_Courtland-Place.jpg",
-    "slug": "p-patch_courtland-place",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2645,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 31,
-    "name": "Estelle Street",
-    "address": "3400 Rainier Ave S, Seattle, WA",
-    "lat": "47.57286545",
-    "long": "-122.2933854",
-    "imageName": "p-patch_Estelle-Street.jpg",
-    "slug": "p-patch_estelle-street",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
-    }
-  },
-  {
-    "id": 33,
-    "name": "Magnolia Manor Park",
-    "address": "3500 28th Ave W, Seattle, WA 98199",
-    "lat": "47.65161765",
-    "long": "-122.3924118",
-    "imageName": "p-patch_Magnolia-Manor-Park.jpg",
-    "slug": "p-patch_magnolia-manor-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -650,6 +325,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -660,16 +336,59 @@
     }
   },
   {
-    "id": 14,
-    "name": "Hoa Mai",
-    "address": "221 10th Ave S, Seattle, WA",
-    "lat": "47.6004925",
-    "long": "-122.3202572",
-    "imageName": "p-patch_Hoa-Mai.jpg",
-    "slug": "p-patch_hoa-mai",
+    "id": 13,
+    "name": "Unpaving Paradise",
+    "address": "200 Summit Ave E, Seattle, WA",
+    "lat": "47.619809",
+    "long": "-122.325172",
+    "imageName": "p-patch_Unpaving-Paradise.jpg",
+    "slug": "p-patch_unpaving-paradise",
     "ext": "jpg",
     "width": 4032,
-    "height": 2784,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8e8e8"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Thyme Patch Park",
+    "address": "2853 NW 58th St, Seattle, WA",
+    "lat": "47.67084031",
+    "long": "-122.3936898",
+    "imageName": "p-patch_Thyme-Patch-Park.jpg",
+    "slug": "p-patch_thyme-patch-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282818"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Eastlake",
+    "address": "2900 Fairview Ave E, Seattle, WA",
+    "lat": "47.64680445",
+    "long": "-122.3260495",
+    "imageName": "p-patch_Eastlake.jpg",
+    "slug": "p-patch_eastlake",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2770,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -677,6 +396,300 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Judkins",
+    "address": "24th Ave S & S Norman St, Seattle, WA",
+    "lat": "47.592655",
+    "long": "-122.301297",
+    "imageName": "p-patch_Judkins.jpg",
+    "slug": "p-patch_judkins",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2728,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Rainier Vista Dakota Garden",
+    "address": "2902 S Dakota St, Seattle, WA",
+    "lat": "47.566251",
+    "long": "-122.2978937",
+    "imageName": "p-patch_Rainier-Vista-Dakota-Garden.jpg",
+    "slug": "p-patch_rainier-vista-dakota-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2671,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8d8e8"
+    }
+  },
+  {
+    "id": 24,
+    "name": "UpGarden",
+    "address": "300 Mercer St, Seattle, WA",
+    "lat": "47.62498535",
+    "long": "-122.3502493",
+    "imageName": "p-patch_UpGarden.jpg",
+    "slug": "p-patch_upgarden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#081858"
+    }
+  },
+  {
+    "id": 18,
+    "name": "High Point MacArthur Lane Park Garden",
+    "address": "2726 SW MacArthur Ln, Seattle, WA",
+    "lat": "47.5504841",
+    "long": "-122.36952",
+    "imageName": "p-patch_High-Point-MacArthur-Lane-Park-Garden.jpg",
+    "slug": "p-patch_high-point-macarthur-lane-park-garden",
+    "ext": "jpg",
+    "width": 3687,
+    "height": 2822,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 23,
+    "name": "New Holly 29 Ave Garden",
+    "address": "29th Ave S & S Brighton St, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_New-Holly-29-Ave-Garden.jpg",
+    "slug": "p-patch_new-holly-29-ave-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "earthy",
+      "domColor": "#585858"
+    }
+  },
+  {
+    "id": 28,
+    "name": "NewHolly Youth & Family",
+    "address": "32nd Ave S & S Brighton St, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_NewHolly-Youth--Family.jpg",
+    "slug": "p-patch_newholly-youth--family",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2251,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8e8e8"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Cascade",
+    "address": "310 Minor Ave N, Seattle, WA",
+    "lat": "47.62103116",
+    "long": "-122.3328656",
+    "imageName": "p-patch_Cascade.jpg",
+    "slug": "p-patch_cascade",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Madison Valley",
+    "address": "3000 E Mercer St, Seattle, WA",
+    "lat": "47.6242994",
+    "long": "-122.3246763",
+    "imageName": "p-patch_Madison-Valley.jpg",
+    "slug": "p-patch_madison-valley",
+    "ext": "jpg",
+    "width": 3959,
+    "height": 2858,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 29,
+    "name": "High Point Juneau Community Garden and Market Garden",
+    "address": "32nd Ave SW & SW Juneau St, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_High-Point-Juneau-Community-Garden-and-Market-Garden.jpg",
+    "slug": "p-patch_high-point-juneau-community-garden-and-market-garden",
+    "ext": "jpg",
+    "width": 3976,
+    "height": 2713,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182838"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Rainier Vista Snoqualmie Garden",
+    "address": "2917 S Snoqualmie St, Seattle, WA",
+    "lat": "47.5612624",
+    "long": "-122.2950406",
+    "imageName": "p-patch_Rainier-Vista-Snoqualmie-Garden.jpg",
+    "slug": "p-patch_rainier-vista-snoqualmie-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2480,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Courtland Place",
+    "address": "3600 36th Ave S, Seattle, WA",
+    "lat": "47.57128",
+    "long": "-122.288127",
+    "imageName": "p-patch_Courtland-Place.jpg",
+    "slug": "p-patch_courtland-place",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2645,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Rainier Vista Sunrise Garden",
+    "address": "33rd Ave S & S Oregon St, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_Rainier-Vista-Sunrise-Garden.jpg",
+    "slug": "p-patch_rainier-vista-sunrise-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2833,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8e8e8"
+    }
+  },
+  {
+    "id": 27,
+    "name": "High Point Commons Garden",
+    "address": "3108 SW Graham St, Seattle, WA",
+    "lat": "47.5470073",
+    "long": "-122.3724333",
+    "imageName": "p-patch_High-Point-Commons-Garden.jpg",
+    "slug": "p-patch_high-point-commons-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181828"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Estelle Street",
+    "address": "3400 Rainier Ave S, Seattle, WA",
+    "lat": "47.57286545",
+    "long": "-122.2933854",
+    "imageName": "p-patch_Estelle-Street.jpg",
+    "slug": "p-patch_estelle-street",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181828"
     }
   },
   {
@@ -690,6 +703,7 @@
     "ext": "jpg",
     "width": 3979,
     "height": 2247,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -700,23 +714,24 @@
     }
   },
   {
-    "id": 39,
-    "name": "University District",
-    "address": "4009 8th Ave NE, Seattle, WA",
-    "lat": "47.65604965",
-    "long": "-122.3199207",
-    "imageName": "p-patch_University-District.jpg",
-    "slug": "p-patch_university-district",
+    "id": 32,
+    "name": "Greenwood",
+    "address": "343 NW 88th St, Seattle, WA",
+    "lat": "47.6925514",
+    "long": "-122.3620986",
+    "imageName": "p-patch_Greenwood.jpg",
+    "slug": "p-patch_greenwood",
     "ext": "jpg",
-    "width": 4032,
+    "width": 3897,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "sky",
-      "domColor": "#58a8e8"
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -730,186 +745,7 @@
     "ext": "jpg",
     "width": 3999,
     "height": 2979,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 41,
-    "name": "Snoqualmie",
-    "address": "4549 13th Ave S, Seattle, WA",
-    "lat": "47.5620506",
-    "long": "-122.3164515",
-    "imageName": "p-patch_Snoqualmie.jpg",
-    "slug": "p-patch_snoqualmie",
-    "ext": "jpg",
-    "width": 4003,
-    "height": 2525,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#b8c8d8"
-    }
-  },
-  {
-    "id": 40,
-    "name": "West Genesee Garden",
-    "address": "4101 SW Genesee St, Seattle, WA",
-    "lat": "47.564601",
-    "long": "-122.384315",
-    "imageName": "p-patch_West-Genesee-Garden.jpg",
-    "slug": "p-patch_west-genesee-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 46,
-    "name": "Broadway Hill",
-    "address": "500-598 Federal Ave E, Seattle, WA",
-    "lat": "47.623244",
-    "long": "-122.318733",
-    "imageName": "p-patch_Broadway-Hill.jpg",
-    "slug": "p-patch_broadway-hill",
-    "ext": "jpg",
-    "width": 1933,
-    "height": 2524,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
-    "id": 42,
-    "name": "Hillman City",
-    "address": "4613 S Lucile St, Seattle, WA",
-    "lat": "47.55256451",
-    "long": "-122.2750908",
-    "imageName": "p-patch_Hillman-City.jpg",
-    "slug": "p-patch_hillman-city",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 45,
-    "name": "Maa Nyei Lai Ndeic",
-    "address": "4913 Columbia Dr S, Seattle, WA",
-    "lat": "47.55755853",
-    "long": "-122.3051703",
-    "imageName": "p-patch_Maa-Nyei-Lai-Ndeic.jpg",
-    "slug": "p-patch_maa-nyei-lai-ndeic",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2412,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#081828"
-    }
-  },
-  {
-    "id": 43,
-    "name": "Good Shepherd",
-    "address": "4618 Bagley Ave N, Seattle, WA",
-    "lat": "47.6631643",
-    "long": "-122.332262",
-    "imageName": "p-patch_Good-Shepherd.jpg",
-    "slug": "p-patch_good-shepherd",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#382828"
-    }
-  },
-  {
-    "id": 47,
-    "name": "Republican",
-    "address": "503 20th Ave E, Seattle, WA 98112",
-    "lat": "47.62335251",
-    "long": "-122.3061297",
-    "imageName": "p-patch_Republican.jpg",
-    "slug": "p-patch_republican",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2371,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 36,
-    "name": "Fremont",
-    "address": "3935 Woodland Park Ave N, Seattle, WA",
-    "lat": "47.6551505",
-    "long": "-122.3450303",
-    "imageName": "p-patch_Fremont.jpg",
-    "slug": "p-patch_fremont",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#080808"
-    }
-  },
-  {
-    "id": 48,
-    "name": "University Heights",
-    "address": "5031 University Way NE, Seattle, WA",
-    "lat": "47.6658699",
-    "long": "-122.3135511",
-    "imageName": "p-patch_University-Heights.jpg",
-    "slug": "p-patch_university-heights",
-    "ext": "jpg",
-    "width": 3929,
-    "height": 2505,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -930,6 +766,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -937,6 +774,237 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Hillman City",
+    "address": "4613 S Lucile St, Seattle, WA",
+    "lat": "47.55256451",
+    "long": "-122.2750908",
+    "imageName": "p-patch_Hillman-City.jpg",
+    "slug": "p-patch_hillman-city",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Magnolia Manor Park",
+    "address": "3500 28th Ave W, Seattle, WA 98199",
+    "lat": "47.65161765",
+    "long": "-122.3924118",
+    "imageName": "p-patch_Magnolia-Manor-Park.jpg",
+    "slug": "p-patch_magnolia-manor-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 39,
+    "name": "University District",
+    "address": "4009 8th Ave NE, Seattle, WA",
+    "lat": "47.65604965",
+    "long": "-122.3199207",
+    "imageName": "p-patch_University-District.jpg",
+    "slug": "p-patch_university-district",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#58a8e8"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Fremont",
+    "address": "3935 Woodland Park Ave N, Seattle, WA",
+    "lat": "47.6551505",
+    "long": "-122.3450303",
+    "imageName": "p-patch_Fremont.jpg",
+    "slug": "p-patch_fremont",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#080808"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Maa Nyei Lai Ndeic",
+    "address": "4913 Columbia Dr S, Seattle, WA",
+    "lat": "47.55755853",
+    "long": "-122.3051703",
+    "imageName": "p-patch_Maa-Nyei-Lai-Ndeic.jpg",
+    "slug": "p-patch_maa-nyei-lai-ndeic",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2412,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#081828"
+    }
+  },
+  {
+    "id": 40,
+    "name": "West Genesee Garden",
+    "address": "4101 SW Genesee St, Seattle, WA",
+    "lat": "47.564601",
+    "long": "-122.384315",
+    "imageName": "p-patch_West-Genesee-Garden.jpg",
+    "slug": "p-patch_west-genesee-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Snoqualmie",
+    "address": "4549 13th Ave S, Seattle, WA",
+    "lat": "47.5620506",
+    "long": "-122.3164515",
+    "imageName": "p-patch_Snoqualmie.jpg",
+    "slug": "p-patch_snoqualmie",
+    "ext": "jpg",
+    "width": 4003,
+    "height": 2525,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#b8c8d8"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Good Shepherd",
+    "address": "4618 Bagley Ave N, Seattle, WA",
+    "lat": "47.6631643",
+    "long": "-122.332262",
+    "imageName": "p-patch_Good-Shepherd.jpg",
+    "slug": "p-patch_good-shepherd",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#382828"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Broadway Hill",
+    "address": "500-598 Federal Ave E, Seattle, WA",
+    "lat": "47.623244",
+    "long": "-122.318733",
+    "imageName": "p-patch_Broadway-Hill.jpg",
+    "slug": "p-patch_broadway-hill",
+    "ext": "jpg",
+    "width": 1933,
+    "height": 2524,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 48,
+    "name": "University Heights",
+    "address": "5031 University Way NE, Seattle, WA",
+    "lat": "47.6658699",
+    "long": "-122.3135511",
+    "imageName": "p-patch_University-Heights.jpg",
+    "slug": "p-patch_university-heights",
+    "ext": "jpg",
+    "width": 3929,
+    "height": 2505,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 47,
+    "name": "Republican",
+    "address": "503 20th Ave E, Seattle, WA 98112",
+    "lat": "47.62335251",
+    "long": "-122.3061297",
+    "imageName": "p-patch_Republican.jpg",
+    "slug": "p-patch_republican",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2371,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -950,6 +1018,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -960,43 +1029,24 @@
     }
   },
   {
-    "id": 52,
-    "name": "Ravenna",
-    "address": "5200 Ravenna Ave NE, Seattle, WA",
-    "lat": "47.6664252",
-    "long": "-122.3029968",
-    "imageName": "p-patch_Ravenna.jpg",
-    "slug": "p-patch_ravenna",
+    "id": 49,
+    "name": "Hawkins",
+    "address": "504 Martin Luther King Junior Way, Seattle, WA",
+    "lat": "47.60626063",
+    "long": "-122.2966597",
+    "imageName": "p-patch_Hawkins.jpg",
+    "slug": "p-patch_hawkins",
     "ext": "jpg",
-    "width": 3970,
-    "height": 2780,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 51,
-    "name": "Burke-Gilman Gardens",
-    "address": "5200 Mithun Pl NE, Seattle, WA",
-    "lat": "47.66763551",
-    "long": "-122.2820924",
-    "imageName": "p-patch_Burke-Gilman-Gardens.jpg",
-    "slug": "p-patch_burke-gilman-gardens",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
+    "width": 4007,
+    "height": 2989,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "bold",
-      "domColor": "#282828"
+      "domColor": "#282818"
     }
   },
   {
@@ -1010,6 +1060,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2734,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1017,6 +1068,48 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8b848"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Burke-Gilman Gardens",
+    "address": "5200 Mithun Pl NE, Seattle, WA",
+    "lat": "47.66763551",
+    "long": "-122.2820924",
+    "imageName": "p-patch_Burke-Gilman-Gardens.jpg",
+    "slug": "p-patch_burke-gilman-gardens",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 52,
+    "name": "Ravenna",
+    "address": "5200 Ravenna Ave NE, Seattle, WA",
+    "lat": "47.6664252",
+    "long": "-122.3029968",
+    "imageName": "p-patch_Ravenna.jpg",
+    "slug": "p-patch_ravenna",
+    "ext": "jpg",
+    "width": 3970,
+    "height": 2780,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8e8e8"
     }
   },
   {
@@ -1030,6 +1123,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2637,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1037,6 +1131,27 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98d8f8"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Delridge",
+    "address": "5078 25th Ave SW, Seattle, WA",
+    "lat": "47.55659148",
+    "long": "-122.3641441",
+    "imageName": "p-patch_Delridge.jpg",
+    "slug": "p-patch_delridge",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2793,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
     }
   },
   {
@@ -1050,6 +1165,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1070,6 +1186,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1077,26 +1194,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383838"
-    }
-  },
-  {
-    "id": 58,
-    "name": "Oxbow Park",
-    "address": "6400 Corson Ave S, Seattle, WA",
-    "lat": "47.5456597",
-    "long": "-122.3217992",
-    "imageName": "p-patch_Oxbow-Park.jpg",
-    "slug": "p-patch_oxbow-park",
-    "ext": "jpg",
-    "width": 3325,
-    "height": 1976,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
     }
   },
   {
@@ -1110,6 +1207,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1117,6 +1215,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
+    }
+  },
+  {
+    "id": 58,
+    "name": "Oxbow Park",
+    "address": "6400 Corson Ave S, Seattle, WA",
+    "lat": "47.5456597",
+    "long": "-122.3217992",
+    "imageName": "p-patch_Oxbow-Park.jpg",
+    "slug": "p-patch_oxbow-park",
+    "ext": "jpg",
+    "width": 3325,
+    "height": 1976,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
     }
   },
   {
@@ -1130,6 +1249,91 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2770,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 61,
+    "name": "New Holly Power Garden",
+    "address": "7123 Holly Park Dr S, Seattle, WA",
+    "lat": "47.5383932",
+    "long": "-122.2878747",
+    "imageName": "p-patch_New-Holly-Power-Garden.jpg",
+    "slug": "p-patch_new-holly-power-garden",
+    "ext": "jpg",
+    "width": 3793,
+    "height": 2526,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#5888c8"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Magnuson Park",
+    "address": "7400 Sand Point Way NE, Seattle, WA",
+    "lat": "47.682142",
+    "long": "-122.2633077",
+    "imageName": "p-patch_Magnuson-Park.jpg",
+    "slug": "p-patch_magnuson-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#b8b8c8"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Solstice",
+    "address": "7400 Fauntleroy Way SW, Seattle, WA",
+    "lat": "47.536193",
+    "long": "-122.39098",
+    "imageName": "p-patch_Solstice.jpg",
+    "slug": "p-patch_solstice",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8f8f8"
+    }
+  },
+  {
+    "id": 64,
+    "name": "New Holly Rockery Community Garden and Market Garden",
+    "address": "7409 40th Ave S, Seattle, WA",
+    "lat": "47.5360072",
+    "long": "-122.2819779",
+    "imageName": "p-patch_New-Holly-Rockery-Community-Garden-and-Market-Garden.jpg",
+    "slug": "p-patch_new-holly-rockery-community-garden-and-market-garden",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1150,6 +1354,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1157,46 +1362,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
-  },
-  {
-    "id": 61,
-    "name": "New Holly Power Garden",
-    "address": "7123 Holly Park Dr S, Seattle, WA",
-    "lat": "47.5383932",
-    "long": "-122.2878747",
-    "imageName": "p-patch_New-Holly-Power-Garden.jpg",
-    "slug": "p-patch_new-holly-power-garden",
-    "ext": "jpg",
-    "width": 3793,
-    "height": 2526,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#5888c8"
-    }
-  },
-  {
-    "id": 62,
-    "name": "Solstice",
-    "address": "7400 Fauntleroy Way SW, Seattle, WA",
-    "lat": "47.536193",
-    "long": "-122.39098",
-    "imageName": "p-patch_Solstice.jpg",
-    "slug": "p-patch_solstice",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8f8f8"
     }
   },
   {
@@ -1210,6 +1375,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1217,66 +1383,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 64,
-    "name": "New Holly Rockery Community Garden and Market Garden",
-    "address": "7409 40th Ave S, Seattle, WA",
-    "lat": "47.5360072",
-    "long": "-122.2819779",
-    "imageName": "p-patch_New-Holly-Rockery-Community-Garden-and-Market-Garden.jpg",
-    "slug": "p-patch_new-holly-rockery-community-garden-and-market-garden",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
-    "id": 63,
-    "name": "Magnuson Park",
-    "address": "7400 Sand Point Way NE, Seattle, WA",
-    "lat": "47.682142",
-    "long": "-122.2633077",
-    "imageName": "p-patch_Magnuson-Park.jpg",
-    "slug": "p-patch_magnuson-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#b8b8c8"
-    }
-  },
-  {
-    "id": 32,
-    "name": "Greenwood",
-    "address": "343 NW 88th St, Seattle, WA",
-    "lat": "47.6925514",
-    "long": "-122.3620986",
-    "imageName": "p-patch_Greenwood.jpg",
-    "slug": "p-patch_greenwood",
-    "ext": "jpg",
-    "width": 3897,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
     }
   },
   {
@@ -1290,6 +1396,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1297,46 +1404,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8b8a8"
-    }
-  },
-  {
-    "id": 49,
-    "name": "Hawkins",
-    "address": "504 Martin Luther King Junior Way, Seattle, WA",
-    "lat": "47.60626063",
-    "long": "-122.2966597",
-    "imageName": "p-patch_Hawkins.jpg",
-    "slug": "p-patch_hawkins",
-    "ext": "jpg",
-    "width": 4007,
-    "height": 2989,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
-    }
-  },
-  {
-    "id": 67,
-    "name": "Troll's Knoll",
-    "address": "820 N 36th St, Seattle, WA 98103, USA",
-    "lat": "47.6509438",
-    "long": "-122.3478054",
-    "imageName": "p-patch_Trolls-Knoll.jpg",
-    "slug": "p-patch_trolls-knoll",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#5898c8"
     }
   },
   {
@@ -1350,6 +1417,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2853,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1357,6 +1425,48 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 67,
+    "name": "Troll's Knoll",
+    "address": "820 N 36th St, Seattle, WA 98103, USA",
+    "lat": "47.6509438",
+    "long": "-122.3478054",
+    "imageName": "p-patch_Trolls-Knoll.jpg",
+    "slug": "p-patch_trolls-knoll",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#5898c8"
+    }
+  },
+  {
+    "id": 69,
+    "name": "Ballard",
+    "address": "8527 25th Ave NW, Seattle, WA",
+    "lat": "47.69089983",
+    "long": "-122.3889632",
+    "imageName": "p-patch_Ballard.jpg",
+    "slug": "p-patch_ballard",
+    "ext": "jpg",
+    "width": 3709,
+    "height": 2605,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#283838"
     }
   },
   {
@@ -1370,6 +1480,7 @@
     "ext": "jpg",
     "width": 4025,
     "height": 2264,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1380,23 +1491,45 @@
     }
   },
   {
-    "id": 75,
-    "name": "Ida Mia Garden",
-    "address": "E Madison St & Lake Washington Blvd E, Seattle, WA",
-    "lat": "47.625937",
-    "long": "-122.292759",
-    "imageName": "p-patch_Ida-Mia-Garden.jpg",
-    "slug": "p-patch_ida-mia-garden",
+    "id": 66,
+    "name": "Immaculate",
+    "address": "810 18th Ave, Seattle, WA 98122",
+    "lat": "47.60962895",
+    "long": "-122.3085235",
+    "imageName": "p-patch_Immaculate.jpg",
+    "slug": "p-patch_immaculate",
     "ext": "jpg",
-    "width": 3430,
-    "height": 2215,
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 73,
+    "name": "Hazel Heights",
+    "address": "Baker Ave NW & NW 42nd St, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_Hazel-Heights.jpg",
+    "slug": "p-patch_hazel-heights",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "bold",
-      "domColor": "#182828"
+      "domColor": "#282828"
     }
   },
   {
@@ -1410,6 +1543,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1430,6 +1564,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2557,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1440,36 +1575,17 @@
     }
   },
   {
-    "id": 69,
-    "name": "Ballard",
-    "address": "8527 25th Ave NW, Seattle, WA",
-    "lat": "47.69089983",
-    "long": "-122.3889632",
-    "imageName": "p-patch_Ballard.jpg",
-    "slug": "p-patch_ballard",
-    "ext": "jpg",
-    "width": 3709,
-    "height": 2605,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#283838"
-    }
-  },
-  {
-    "id": 73,
-    "name": "Hazel Heights",
-    "address": "Baker Ave NW & NW 42nd St, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_Hazel-Heights.jpg",
-    "slug": "p-patch_hazel-heights",
+    "id": 77,
+    "name": "Greenwood Station",
+    "address": "Fremont Ave N & N 89th St, Seattle, WA",
+    "lat": "47.655217",
+    "long": "-122.350042",
+    "imageName": "p-patch_Greenwood-Station.jpg",
+    "slug": "p-patch_greenwood-station",
     "ext": "jpg",
     "width": 4032,
-    "height": 3024,
+    "height": 2708,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1477,6 +1593,48 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
+    }
+  },
+  {
+    "id": 75,
+    "name": "Ida Mia Garden",
+    "address": "E Madison St & Lake Washington Blvd E, Seattle, WA",
+    "lat": "47.625937",
+    "long": "-122.292759",
+    "imageName": "p-patch_Ida-Mia-Garden.jpg",
+    "slug": "p-patch_ida-mia-garden",
+    "ext": "jpg",
+    "width": 3430,
+    "height": 2215,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 78,
+    "name": "Bitter Lake",
+    "address": "Linden Ave N & N 143rd St, Seattle, WA",
+    "lat": "47.681228",
+    "long": "-122.346811",
+    "imageName": "p-patch_Bitter-Lake.jpg",
+    "slug": "p-patch_bitter-lake",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -1490,6 +1648,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2562,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1510,6 +1669,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1517,46 +1677,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
-  },
-  {
-    "id": 78,
-    "name": "Bitter Lake",
-    "address": "Linden Ave N & N 143rd St, Seattle, WA",
-    "lat": "47.681228",
-    "long": "-122.346811",
-    "imageName": "p-patch_Bitter-Lake.jpg",
-    "slug": "p-patch_bitter-lake",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 50,
-    "name": "Delridge",
-    "address": "5078 25th Ave SW, Seattle, WA",
-    "lat": "47.55659148",
-    "long": "-122.3641441",
-    "imageName": "p-patch_Delridge.jpg",
-    "slug": "p-patch_delridge",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2793,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
     }
   },
   {
@@ -1570,6 +1690,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1577,46 +1698,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 84,
-    "name": "Longfellow Creek",
-    "address": "SW Thistle St & 25th Ave SW, Seattle, WA",
-    "lat": "47.6038321",
-    "long": "-122.330062",
-    "imageName": "p-patch_Longfellow-Creek.jpg",
-    "slug": "p-patch_longfellow-creek",
-    "ext": "jpg",
-    "width": 4025,
-    "height": 2264,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 82,
-    "name": "Leo Street",
-    "address": "S Leo St, Seattle, WA 98178",
-    "lat": "47.5025843",
-    "long": "-122.2662984",
-    "imageName": "p-patch_Leo-Street.jpg",
-    "slug": "p-patch_leo-street",
-    "ext": "jpg",
-    "width": 3946,
-    "height": 2588,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
     }
   },
   {
@@ -1630,6 +1711,7 @@
     "ext": "jpg",
     "width": 3972,
     "height": 2234,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1640,23 +1722,24 @@
     }
   },
   {
-    "id": 66,
-    "name": "Immaculate",
-    "address": "810 18th Ave, Seattle, WA 98122",
-    "lat": "47.60962895",
-    "long": "-122.3085235",
-    "imageName": "p-patch_Immaculate.jpg",
-    "slug": "p-patch_immaculate",
+    "id": 82,
+    "name": "Leo Street",
+    "address": "S Leo St, Seattle, WA 98178",
+    "lat": "47.5025843",
+    "long": "-122.2662984",
+    "imageName": "p-patch_Leo-Street.jpg",
+    "slug": "p-patch_leo-street",
     "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
+    "width": 3946,
+    "height": 2588,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -1670,6 +1753,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
@@ -1680,23 +1764,24 @@
     }
   },
   {
-    "id": 77,
-    "name": "Greenwood Station",
-    "address": "Fremont Ave N & N 89th St, Seattle, WA",
-    "lat": "47.655217",
-    "long": "-122.350042",
-    "imageName": "p-patch_Greenwood-Station.jpg",
-    "slug": "p-patch_greenwood-station",
+    "id": 84,
+    "name": "Longfellow Creek",
+    "address": "SW Thistle St & 25th Ave SW, Seattle, WA",
+    "lat": "47.6038321",
+    "long": "-122.330062",
+    "imageName": "p-patch_Longfellow-Creek.jpg",
+    "slug": "p-patch_longfellow-creek",
     "ext": "jpg",
-    "width": 4032,
-    "height": 2708,
+    "width": 4025,
+    "height": 2264,
+    "collection": "p-patch",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
       "matchColor": "bold",
-      "domColor": "#282828"
+      "domColor": "#181818"
     }
   }
 ]

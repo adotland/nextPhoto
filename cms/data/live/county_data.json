@@ -10,6 +10,7 @@
     "ext": "jpg",
     "width": 3549,
     "height": 2075,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -30,6 +31,28 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2572,
+    "collection": "county",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "green",
+      "domColor": "#283828"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gold Creek Park",
+    "address": "16020 148th Ave NE Woodinville WA 98072",
+    "lat": "47.74306139999999",
+    "long": "-122.141238",
+    "imageName": "county_Gold-Creek-Park.jpg",
+    "slug": "county_gold-creek-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -50,6 +73,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -70,6 +94,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 1960,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -77,66 +102,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Gold Creek Park",
-    "address": "16020 148th Ave NE Woodinville WA 98072",
-    "lat": "47.74306139999999",
-    "long": "-122.141238",
-    "imageName": "county_Gold-Creek-Park.jpg",
-    "slug": "county_gold-creek-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "green",
-      "domColor": "#283828"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Marymoor Park",
-    "address": "6046 West Lake Sammamish Pkwy NE Redmond WA 98052",
-    "lat": "47.6594346",
-    "long": "-122.1087919",
-    "imageName": "county_Marymoor-Park.jpg",
-    "slug": "county_marymoor-park",
-    "ext": "jpg",
-    "width": 3622,
-    "height": 2035,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Kingsgate Park",
-    "address": "116th Ave NE at NE 140th Kingsgate WA 98034",
-    "lat": "47.72577099999999",
-    "long": "-122.1866179",
-    "imageName": "county_Kingsgate-Park.jpg",
-    "slug": "county_kingsgate-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#080808"
     }
   },
   {
@@ -150,6 +115,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -170,6 +136,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -177,26 +144,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8e8"
-    }
-  },
-  {
-    "id": 10,
-    "name": "Sixty Acres Park",
-    "address": "NE 116th St and 154th Pl NE Redmond WA 98052",
-    "lat": "47.7047331",
-    "long": "-122.1338564",
-    "imageName": "county_Sixty-Acres-Park.jpg",
-    "slug": "county_sixty-acres-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
     }
   },
   {
@@ -210,6 +157,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -217,6 +165,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Sixty Acres Park",
+    "address": "NE 116th St and 154th Pl NE Redmond WA 98052",
+    "lat": "47.7047331",
+    "long": "-122.1338564",
+    "imageName": "county_Sixty-Acres-Park.jpg",
+    "slug": "county_sixty-acres-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "county",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
     }
   },
   {
@@ -230,6 +199,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -250,6 +220,7 @@
     "ext": "jpg",
     "width": 4032,
     "height": 2456,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -257,6 +228,27 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#5888c8"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Marymoor Park",
+    "address": "6046 West Lake Sammamish Pkwy NE Redmond WA 98052",
+    "lat": "47.6594346",
+    "long": "-122.1087919",
+    "imageName": "county_Marymoor-Park.jpg",
+    "slug": "county_marymoor-park",
+    "ext": "jpg",
+    "width": 3622,
+    "height": 2035,
+    "collection": "county",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -270,6 +262,7 @@
     "ext": "jpg",
     "width": 2912,
     "height": 3948,
+    "collection": "county",
     "filters": {
       "weight": 100,
       "live": true,
@@ -277,6 +270,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Kingsgate Park",
+    "address": "116th Ave NE at NE 140th Kingsgate WA 98034",
+    "lat": "47.72577099999999",
+    "long": "-122.1866179",
+    "imageName": "county_Kingsgate-Park.jpg",
+    "slug": "county_kingsgate-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "county",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#080808"
     }
   }
 ]
