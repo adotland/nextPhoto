@@ -1,0 +1,282 @@
+[
+  {
+    "id": 0,
+    "name": "Bryn Mawr Park",
+    "address": "118th St and 80th Ave S Renton WA 98059",
+    "lat": "47.497044",
+    "long": "-122.2320834",
+    "imageName": "county_Bryn-Mawr-Park.jpg",
+    "slug": "county_bryn-mawr-park",
+    "ext": "jpg",
+    "width": 3549,
+    "height": 2075,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#081828"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Cecil Moses Memorial Park",
+    "address": "112th St and Pacific Hwy S Tukwila WA 98168",
+    "lat": "47.502995",
+    "long": "-122.293126",
+    "imageName": "county_Cecil-Moses-Memorial-Park.jpg",
+    "slug": "county_cecil-moses-memorial-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2572,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "green",
+      "domColor": "#283828"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Dick Thurnau Memorial Park",
+    "address": "11050 10th Ave SW Seattle WA 98146",
+    "lat": "47.5037293",
+    "long": "-122.3453693",
+    "imageName": "county_Dick-Thurnau-Memorial-Park.jpg",
+    "slug": "county_dick-thurnau-memorial-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Marymoor Bellevue Ballfield Complex",
+    "address": "176th Ave NE and NE 65th St Redmond WA 98052",
+    "lat": "47.6640087",
+    "long": "-122.1055467",
+    "imageName": "county_Marymoor-Bellevue-Ballfield-Complex.jpg",
+    "slug": "county_marymoor-bellevue-ballfield-complex",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 1960,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Gold Creek Park",
+    "address": "16020 148th Ave NE Woodinville WA 98072",
+    "lat": "47.74306139999999",
+    "long": "-122.141238",
+    "imageName": "county_Gold-Creek-Park.jpg",
+    "slug": "county_gold-creek-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "green",
+      "domColor": "#283828"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Marymoor Park",
+    "address": "6046 West Lake Sammamish Pkwy NE Redmond WA 98052",
+    "lat": "47.6594346",
+    "long": "-122.1087919",
+    "imageName": "county_Marymoor-Park.jpg",
+    "slug": "county_marymoor-park",
+    "ext": "jpg",
+    "width": 3622,
+    "height": 2035,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181818"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Kingsgate Park",
+    "address": "116th Ave NE at NE 140th Kingsgate WA 98034",
+    "lat": "47.72577099999999",
+    "long": "-122.1866179",
+    "imageName": "county_Kingsgate-Park.jpg",
+    "slug": "county_kingsgate-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#080808"
+    }
+  },
+  {
+    "id": 7,
+    "name": "May Creek Park - County",
+    "address": "NE 31st St and Jones Ave NE Renton WA 98056",
+    "lat": "47.5213834851",
+    "long": "-122.1649735407",
+    "imageName": "county_May-Creek-Park---County.jpg",
+    "slug": "county_may-creek-park---county",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Northshore Athletic Fields",
+    "address": "14600 NE 145th St Woodinville WA 98072",
+    "lat": "47.7329268",
+    "long": "-122.1469189",
+    "imageName": "county_Northshore-Athletic-Fields.jpg",
+    "slug": "county_northshore-athletic-fields",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8e8e8"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Sixty Acres Park",
+    "address": "NE 116th St and 154th Pl NE Redmond WA 98052",
+    "lat": "47.7047331",
+    "long": "-122.1338564",
+    "imageName": "county_Sixty-Acres-Park.jpg",
+    "slug": "county_sixty-acres-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 8,
+    "name": "North Shorewood Park",
+    "address": "SW 102nd St and 24th Ave SW Seattle WA 98146",
+    "lat": "47.511831",
+    "long": "-122.3631641",
+    "imageName": "county_North-Shorewood-Park.jpg",
+    "slug": "county_north-shorewood-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Steve Cox Memorial Park",
+    "address": "1321 SW 102nd St Seattle WA 98146",
+    "lat": "47.5117145",
+    "long": "-122.3520779",
+    "imageName": "county_Steve-Cox-Memorial-Park.jpg",
+    "slug": "county_steve-cox-memorial-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#3878c8"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Skyway Park",
+    "address": "S 120th Pl and 70th Pl S Seattle WA 98178",
+    "lat": "47.4945022",
+    "long": "-122.2443115",
+    "imageName": "county_Skyway-Park.jpg",
+    "slug": "county_skyway-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2456,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#5888c8"
+    }
+  },
+  {
+    "id": 13,
+    "name": "White Center Heights Park",
+    "address": "SW 102nd St and 7th Ave SW Seattle WA 98146",
+    "lat": "47.5120164",
+    "long": "-122.3436372",
+    "imageName": "county_White-Center-Heights-Park.jpg",
+    "slug": "county_white-center-heights-park",
+    "ext": "jpg",
+    "width": 2912,
+    "height": 3948,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  }
+]

@@ -7,7 +7,7 @@ import RelatedImages from "../../components/RelatedImages";
 import { byWeight } from "../../utils/helpers";
 
 export async function getStaticPaths() {
-  const collectionList = ['seattle', 'non-city', 'mercer'];
+  const collectionList = ['seattle', 'non-city', 'mercer', 'county'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const displayable = dataList.filter(data => data.filters.live).map(data => {
     // const displayable = dataList.map(data => {
@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const collectionList = ['seattle', 'non-city', 'mercer'];
+  const collectionList = ['seattle', 'non-city', 'mercer', 'county'];
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
   const currentData = dataList.filter(d => d.slug == slug).pop();
   let related = dataList
