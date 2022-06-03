@@ -30,6 +30,7 @@ export async function getStaticProps() {
     statsObj['amount'].all += singleImageList.length;
   }));
   statsObj['amount'].port = getTypeAmount('port', dataObj['extras']);
+  statsObj['amount'].extras -= statsObj['amount'].port;
 
   return { props: { statsObj, } };
 }
