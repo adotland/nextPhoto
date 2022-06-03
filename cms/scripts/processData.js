@@ -3,7 +3,7 @@ const fs = require('fs');
 const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 
-const DEFAULT_COLLECITON = 'mercer'
+const DEFAULT_COLLECITON = 'non-city'
 
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, GIF_PATH, PROCESSED_WEBP_PATH } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
@@ -232,9 +232,9 @@ const ManageData = {
       let newFilterObj;
       try {
         // if (newOnly) {
-        if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
-          newFilterObj = existing[data.slug]
-        }
+        // if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
+        //   newFilterObj = existing[data.slug]
+        // }
         // }
         newFilterObj = newFilterObj || await this[`_get_${filter}`](data, updateList);
         dumpObj[data.slug] = newFilterObj;
