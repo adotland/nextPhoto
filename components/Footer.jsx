@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/layout"
-import { useColorModeValue } from "@chakra-ui/react"
-import { BsGithub } from "react-icons/bs"
+import { useColorModeValue, Link } from "@chakra-ui/react"
+import { BsGithub, BsTwitter } from "react-icons/bs"
 // import PillPity from 'pill-pity'
 
 function Footer() {
@@ -8,7 +8,6 @@ function Footer() {
     <Box
       pt={5}
       mt={3}
-      mx={[0, 0, 0, 7]}
       color='gray.600'
     >
       {/* <PillPity
@@ -28,8 +27,19 @@ function Footer() {
         px={10}
         justifyContent={'space-between'}
       >
-        &copy; {new Date().getFullYear()} A.Land
-        <BsGithub />
+        &copy; {new Date().getFullYear()} TheParkAndTheBike
+        <Flex justifyContent={'flex-end'}>
+          <Box ml={5}>
+            <Link href="https://twitter.com/TheParkAndTheB1" target={'_blank'}>
+              <BsTwitter />
+            </Link>
+          </Box>
+          <Box ml={5}>
+            <Link href="https://github.com/adotland" target={'_blank'}>
+              <BsGithub />
+            </Link>
+          </Box>
+        </Flex>
       </Flex>
       {/* </PillPity> */}
     </Box>
