@@ -1,6 +1,6 @@
 const config = {
   meta: {
-    canonicalUrl: "https://theparkandthebike.vercel.app",
+    canonicalUrl: "https://theparkandthebike.com",
     title: "TheParkAndTheBike",
     description: "Bikes in Parks Photo Blog",
     social: {
