@@ -3,8 +3,8 @@ import { ff } from "fssf";
 import { byColor, byWeight } from "../utils/helpers";
 
 export async function getStaticProps() {
-  const collectionList = await ff.readJson('./cms/data/live', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/${collection}_data.json`))))).flat();
+  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
   const sorted = dataList.sort(byWeight).sort(byColor);
   const retval = [];
   sorted.forEach(data => {

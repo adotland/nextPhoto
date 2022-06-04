@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsFilter, BsCameraReels } from 'react-icons/bs';
 import { AiOutlinePicture, AiOutlineCamera } from 'react-icons/ai';
 import { VscSymbolColor } from 'react-icons/vsc'
-import COLORS, { getAllColors } from "../cms/data/live/palette";
+import COLORS, { getAllColors } from "../cms/data/live/scripts/palette";
 
 
 export function FilterMenuLinkColor({ name, value, hex }) {

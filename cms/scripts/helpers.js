@@ -1,6 +1,6 @@
 // const { differenceCie76 } = require('d3-color-difference');
 const diff = require('color-diff');
-const COLORS = require('../data/live/palette');
+const COLORS = require('../data/live/scripts/palette');
 // const Colour = require('./Colour');
 
 const FONT_SCALE = 70 / (3000 * 4000);

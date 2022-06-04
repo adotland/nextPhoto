@@ -123,10 +123,10 @@ const ManageData = {
 
   main: async function (collection = DEFAULT_COLLECTION) {
     const cmsDataList = await ff.readCsv(BASE_DATA_PATH, CMS_EXPORT_FILE(collection), true, '\t');
-    const imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
-    const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filter-weight.json');
-    const filterLive = await ff.readJson(BASE_DATA_PATH, 'filter-live.json');
-    const filterFeatured = await ff.readJson(BASE_DATA_PATH, 'filter-featured.json');
+    const imageDataList = await ff.readJson(BASE_DATA_PATH, `images/images_${collection}.json`);
+    const filterWeight = await ff.readJson(BASE_DATA_PATH, 'filters/filter-weight.json');
+    const filterLive = await ff.readJson(BASE_DATA_PATH, 'filters/filter-live.json');
+    const filterFeatured = await ff.readJson(BASE_DATA_PATH, 'filters/filter-featured.json');
     const jsonData = [];
     const missingImages = [];
     const duplicateImages = [];
@@ -221,13 +221,13 @@ const ManageData = {
       }));
     }));
 
-    await ff.writeJson(jsonData, LIVE_DATA_PATH, `${collection}_data.json`, 2);
-    await ff.writeJson(missingImages, BASE_DATA_PATH, `${collection}_missing_images.json`, 2);
-    await ff.writeJson(duplicateImages, BASE_DATA_PATH, `${collection}_duplicate_images.json`, 2);
+    await ff.writeJson(jsonData, LIVE_DATA_PATH, `data/${collection}_data.json`, 2);
+    await ff.writeJson(missingImages, BASE_DATA_PATH, `mgmt/${collection}_missing_images.json`, 2);
+    await ff.writeJson(duplicateImages, BASE_DATA_PATH, `mgmt/${collection}_duplicate_images.json`, 2);
   },
 
   sanitizeImageNamesInFile: async function (collection = DEFAULT_COLLECTION) {
-    const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+    const data = await ff.readJson(LIVE_DATA_PATH, `data/${collection}_data.json`);
     const retval = [];
     for (let i = 0, len = data.length; i < len; i++) {
       retval.push({
@@ -235,11 +235,11 @@ const ManageData = {
         imageName: formatImageFileName(data[i].imageName).name
       });
     }
-    await ff.writeJson(retval, LIVE_DATA_PATH, `${collection}_data.json`, 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, `data/${collection}_data.json`, 2);
   },
 
   duplicateCheck: async function (collection = 'settle') {
-    const data = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+    const data = await ff.readJson(LIVE_DATA_PATH, `data/${collection}_data.json`);
     const slugList = data.map(d => d.slug);
     const dups = findDuplicates(slugList);
     if (dups.length) {
@@ -247,7 +247,7 @@ const ManageData = {
     } else {
       console.info('no dups')
     }
-    await ff.writeJson(dups, BASE_DATA_PATH, `${collection}_duplicate_slugs.json`);
+    await ff.writeJson(dups, BASE_DATA_PATH, `mgmt/${collection}_duplicate_slugs.json`);
   },
 
   updateAllFilters: async function (collection = DEFAULT_COLLECTION) {
@@ -258,7 +258,7 @@ const ManageData = {
 
   updateFilter: async function (collection = DEFAULT_COLLECTION, filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
-    const dataList = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+    const dataList = await ff.readJson(LIVE_DATA_PATH, `data/${collection}_data.json`);
     let updateList;
     let reprocessList;
 
@@ -266,12 +266,12 @@ const ManageData = {
     if (filter === 'matchColor') {
       reprocessList = await ff.readJson(BASE_DATA_PATH, 'reprocess_still.json');
       try {
-        existing = await ff.readJson(BASE_DATA_PATH, `filterData_${collection}_${filter}.json`);
+        existing = await ff.readJson(BASE_DATA_PATH, `filters/filterData_${collection}_${filter}.json`);
       } catch (err) {
         // noop
       }
     } else {
-      updateList = await ff.readJson(BASE_DATA_PATH, `filter-${filter}.json`);
+      updateList = await ff.readJson(BASE_DATA_PATH, `filters/filter-${filter}.json`);
     }
     const retval = [];
     const dumpObj = {};
@@ -299,8 +299,8 @@ const ManageData = {
         process.exit(1);
       }
     }));
-    await ff.writeJson(retval, LIVE_DATA_PATH, `${collection}_data.json`, 2);
-    await ff.writeJson(dumpObj, BASE_DATA_PATH, `filterData_${collection}_${filter}.json`, 2);
+    await ff.writeJson(retval, LIVE_DATA_PATH, `data/${collection}_data.json`, 2);
+    await ff.writeJson(dumpObj, BASE_DATA_PATH, `filters/filterData_${collection}_${filter}.json`, 2);
     console.timeEnd(`updateFilter-${filter}`);
     // output color to avoid having to reprocess
   },
@@ -364,7 +364,7 @@ const ManageData = {
   },
 
   getListAll: async function (collection = DEFAULT_COLLECTION) {
-    let retval = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+    let retval = await ff.readJson(LIVE_DATA_PATH, `data/${collection}_data.json`);
     retval = retval.map(d => d.slug);
     await ff.writeJson(retval.sort(), BASE_DATA_PATH, `slugsAll_${collection}.json`, 2);
   },

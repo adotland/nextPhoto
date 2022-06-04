@@ -51,8 +51,8 @@ const ImageProcessor = {
       });
     });
     retval.sort((a, b) => new Date(a.lastChange).getTime() - new Date(b.lastChange).getTime());
-    await ff.writeJson(retval, LIVE_DATA_PATH, `images_${collection}.json`, 2);
-    await ff.writeJson(rejects, BASE_DATA_PATH, `imagesRejected_${collection}.json`, 2);
+    await ff.writeJson(retval, BASE_DATA_PATH, `images/images_${collection}.json`, 2);
+    await ff.writeJson(rejects, BASE_DATA_PATH, `mgmt/imagesRejected_${collection}.json`, 2);
   },
 
   getListAll: async function (collection = DEFAULT_COLLECTION) {
@@ -63,7 +63,7 @@ const ImageProcessor = {
   },
 
   imageDiff: async function () {
-    let a = await ff.readJson(LIVE_DATA_PATH, 'images_seattle.json');
+    let a = await ff.readJson(BASE_DATA_PATH, 'images/images_seattle.json');
     let b = await ff.readJson(LIVE_DATA_PATH, 'images.json');
     // let diff = arrayDiff(a, b);
     // let shareDiff = difference(share, local);
@@ -146,7 +146,7 @@ const ImageProcessor = {
 
   processStills: async function (collection = DEFAULT_COLLECTION, imageDataList, isThumb = false) {
     console.time('processStills')
-    imageDataList = imageDataList || await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
+    imageDataList = imageDataList || await ff.readJson(BASE_DATA_PATH, `images/images_${collection}.json`);
     imageDataList = imageDataList.filter(data => data.ext === 'jpg');
     const reprocessList = await ff.readJson(BASE_DATA_PATH, 'reprocess_still.json');
     await asyncForEach(imageDataList, async imageData => {
@@ -197,7 +197,7 @@ const ImageProcessor = {
   // },
 
   processFilteredStills: async function (collection = DEFAULT_COLLECTION, filter = '') {
-    imageDataList = await ff.readJson(LIVE_DATA_PATH, `images_${collection}.json`);
+    imageDataList = await ff.readJson(BASE_DATA_PATH, `images/images_${collection}.json`);
     let filtered_stills = imageDataList;
     if (filter === 'recent') {
       const yesterday = Date.now() - (1 * 24 * 60 * 60 * 1000);
@@ -246,7 +246,7 @@ const ImageProcessor = {
   },
 
   // processMissing: async function () {
-  //   const selection = await ff.readJson(BASE_DATA_PATH, 'seattle_missing_images.json');
+  //   const selection = await ff.readJson(BASE_DATA_PATH, 'mgmt/seattle_missing_images.json');
   //   const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
   //   const filtered = imageDataList.filter(data => selection.includes(data.imageName));
   //   console.log(filtered.map(f => f.imageName));
