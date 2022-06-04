@@ -14,7 +14,7 @@ export default function SEO({ data }) {
       <meta name="og:image" content={mainImage} />
       <meta name="og:url" content={url} />
       <meta name="twitter:site" content={config.meta.social.twitter.id} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={config.meta.title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={mainImage} />
       <meta name="twitter:card" content="summary_large_image" />
