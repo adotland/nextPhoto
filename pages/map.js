@@ -112,7 +112,7 @@ export default function ({ initMapDataList, /*statsObj,*/ initCarouselDataList, 
     >
       {/* <Stats stats={statsObj} /> */}
       <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} />
-      <Text textAlign={'center'} pt={2}>&uarr; Pan and Zoom to discover &darr; </Text>
+      <Text textAlign={'center'} letterSpacing={'0.2em'} fontWeight={'bold'} pt={2}>&uarr; Click and Drag to discover &darr;</Text>
       <Carousel dataList={carouselDataList} />
     </Box>
   )

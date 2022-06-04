@@ -1,18 +1,24 @@
 .map {
   margin-top: 1rem;
   flex: none;
-  height: 15rem;
-  min-height: 15rem;
+  height: 10rem;
+  min-height: 10rem;
 }
 
 @media screen and (min-width: 62em) {
   .map {
     margin-top: 0;
-    height: 15rem;
+    /* height: 15rem; */
     /* margin-left: 2rem; */
     /* flex: 1; */
     /* height: auto; */
     /* max-height: 768px; */
     /* max-width: 40%; */
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .map {
+    height: 15rem;
   }
 }

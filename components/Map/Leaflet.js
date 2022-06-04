@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Leaflet.module.css';
@@ -33,7 +33,7 @@ const Leaflet = ({ center, name }) => {
     zoomControl: false,
     doubleClickZoom: false,
     closePopupOnClick: false,
-    dragging: true,
+    dragging: false,
     zoomSnap: true,
     zoomDelta: true,
     trackResize: true,
