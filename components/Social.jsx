@@ -2,11 +2,14 @@ import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { BsTwitter } from "react-icons/bs";
 import config from "../config";
 
-export default function Social({ endpoint }) {
+export default function Social({ endpoint, takenAt }) {
 
   const buildTwitterLink = () => {
-    const url = config.meta.canonicalUrl + endpoint;
-    return `https://twitter.com/intent/tweet?hashtags=theParkandtheBike&original_referer=${encodeURIComponent(url)}&text=${encodeURIComponent(config.meta.social.tagline)}&url=${encodeURIComponent(url)}&via=${config.meta.social.twitter.handle}`
+    const url = encodeURIComponent(config.meta.canonicalUrl + endpoint);
+    const tagline = encodeURIComponent(config.meta.social.tagline + (takenAt ? `, photo taken at ${takenAt}` : ''));
+    const handle = encodeURIComponent(config.meta.social.twitter.handle);
+
+    return `https://twitter.com/intent/tweet?hashtags=theParkandtheBike&original_referer=${url}&text=${tagline}&url=${url}&via=${handle}`
   }
 
   return (

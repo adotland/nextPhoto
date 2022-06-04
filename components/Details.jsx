@@ -35,7 +35,7 @@ export default function Details({ data }) {
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
       {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured} />}
-      <Social endpoint={`/park/${data.slug}`} />
+      <Social endpoint={`/park/${data.slug}`} takenAt={data.name} />
       {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.name} />}
 
     </Box>
