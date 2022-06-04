@@ -9,6 +9,7 @@ const config = {
         handle: "TheParkAndTheB1",
       },
       tagline: 'Nice Park, Nice Bike',
+      hashtag: '#theParkandTheBike',
       graphic:
        `${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/social/default-social-graphic.jpg`,
     },
