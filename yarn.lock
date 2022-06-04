@@ -624,6 +624,11 @@
   dependencies:
     "@chakra-ui/utils" "2.0.1"
 
+"@corex/deepmerge@^4.0.14":
+  version "4.0.16"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.16.tgz#2fca1db87ebdfd3faa2798cdbde1b02e73b11f4a"
+  integrity sha512-NjPTizUx0ovYv7WiC8Erq/yMGjc4OfSMywbEUkb1QpaBb4tgD9fe2DwRy3hfogrMZ30nWxwOtMg7hwuY67RYnQ==
+
 "@ctrl/tinycolor@^3.4.0":
   version "3.4.1"
   resolved "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz"
@@ -2600,6 +2605,14 @@ ndarray@^1.0.13:
   dependencies:
     iota-array "^1.0.0"
     is-buffer "^1.0.2"
+
+next-sitemap@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.0.5.tgz#6c031641455356db7fac9d34b42809dd4c43d1b2"
+  integrity sha512-YdiW5wYNruyZCvhGGOMAdTylCQuxQkZKbSFV9Fjuf/U7aAt8lJwc3HG/WvR0n3Q1Y8c1ZiW/24UDZLQPfoKsYg==
+  dependencies:
+    "@corex/deepmerge" "^4.0.14"
+    minimist "^1.2.6"
 
 next@12.1.6:
   version "12.1.6"

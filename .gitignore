@@ -38,3 +38,5 @@ cms/config.js
 cms/scripts/Colour.js
 
 pages/test.js
+public/sitemap*
+public/robots*
