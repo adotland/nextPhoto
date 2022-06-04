@@ -1,8 +1,9 @@
-import { Box,  Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
 import FilterDisplay from "./FilterDisplay";
 import Map from './Map';
 import styles from './Details.module.css';
+import Social from "./Social";
 
 export default function Details({ data }) {
   const filterColor = data.filters?.matchColor
@@ -26,14 +27,15 @@ export default function Details({ data }) {
       <Heading>{data.name}</Heading>
       <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
-        <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
+          <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
         </a>
-        </Link>
-      <a href={data.link}>{data.link}</a>
+      </Link>
+      {data.link && <ChakraLink href={data.link}>{data.link}</ChakraLink>}
       {data.lat && data.long && <Text>{data.lat} // {data.long}</Text>}
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
-      {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured}/>}
+      {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured} />}
+      <Social endpoint={`/park/${data.slug}`} />
       {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.name} />}
 
     </Box>

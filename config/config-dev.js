@@ -4,6 +4,11 @@ const config = {
     title: "TheParkAndTheBike",
     description: "Bikes in Parks Photo Blog",
     social: {
+      twitter:{
+        site: "@TheParkAndTheB1",
+        handle: "TheParkAndTheB1",
+      },
+      tagline: 'Nice Park, Nice Bike',
       graphic:
        `${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/social/default-social-graphic.jpg`,
     },
