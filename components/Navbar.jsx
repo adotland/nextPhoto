@@ -1,15 +1,21 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu";
 import { useRouter } from 'next/router'
+import Search from "./Search/Search";
 
 const NavBar = (props) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const handleKeyUp = (e) => {
+    if (e.keyCode === 13) {
+      setIsOpen(!isOpen)
+    }
+  }
   // const executedRef = useRef(false);
 
   useEffect(() => {
@@ -21,8 +27,8 @@ const NavBar = (props) => {
   return (
     <NavBarContainer {...props}>
       <Logo />
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
+      <MenuToggle toggle={toggle} isOpen={isOpen} handleKeyUp={handleKeyUp} />
+      <MenuLinks isOpen={isOpen} setIsOpen={setIsOpen} />
     </NavBarContainer>
   );
 };
@@ -49,12 +55,14 @@ const MenuIcon = ({ color }) => (
   </svg>
 );
 
-const MenuToggle = ({ toggle, isOpen }) => {
+const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
   const color = useColorModeValue("gray.800", "white")
   return (
     <Box
       display={{ base: "block", md: "none" }}
       onClick={toggle}
+      tabIndex={0}
+      onKeyDown={handleKeyUp}
 
     >
       {isOpen ? <CloseIcon color={color} /> : <MenuIcon color={color} />}
@@ -83,7 +91,7 @@ const MenuItem = ({ children, to = "/", }) => {
   );
 };
 
-const MenuLinks = ({ isOpen }) => {
+const MenuLinks = ({ isOpen, setIsOpen }) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -97,6 +105,7 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <FilterMenu />
+        <Search setNavbarIsOpen={setIsOpen} />
         <MenuItem to="/map">Map</MenuItem>
         <MenuItem to="/all">Gallery</MenuItem>
         {/* <MenuItem to="/stats">Stats</MenuItem> */}
