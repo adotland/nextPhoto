@@ -22,7 +22,7 @@ function Footer() {
       <Flex
         // patternFill={useColorModeValue("gray.200", "gray.600")}
         // opacity={useColorModeValue(0.4, 0.1)}
-        bgColor={useColorModeValue("gray.100", "gray.800")}
+        bgColor={useColorModeValue("gray.200", "blackAlpha.400")}
         py={5}
         px={10}
         justifyContent={'space-between'}

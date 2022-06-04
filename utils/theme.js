@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from '@chakra-ui/theme-tools';
 
 const theme = extendTheme({
   useSystemColorMode: true,
@@ -21,6 +22,14 @@ const theme = extendTheme({
     heading: `'Open Sans', sans-serif`,
     body: `'Raleway', sans-serif`,
   },
+  styles: {
+    global: props => ({
+      body: {
+        color: mode('gray.800', 'whiteAlpha.900')(props),
+        bg: mode('whiteAlpha.100', '#191a1a')(props),
+      },
+    }),
+  }
 });
 
 export default theme;
