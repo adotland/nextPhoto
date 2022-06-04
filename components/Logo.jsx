@@ -13,7 +13,7 @@ export default function Logo(props) {
             minW={180}
             color={useColorModeValue("brand.700", "brand.200")}
             // color={useColorModeValue("white", "black")}
-            backgroundColor={useColorModeValue("white", "gray.800")}
+            backgroundColor={useColorModeValue("white", "#191a1a")}
             p={1}
             transform={'skew(-21deg)'}
             // bgGradient={useColorModeValue("linear(to-l, green.300 ,#000)", "linear(to-l, green.300 ,#fff)")}

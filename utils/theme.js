@@ -29,6 +29,16 @@ const theme = extendTheme({
         bg: mode('whiteAlpha.100', '#191a1a')(props),
       },
     }),
+  },
+  components: {
+    Menu: {
+      // setup light/dark mode component defaults
+      baseStyle: props => ({
+        dialog: {
+          bg: mode('white', '#141214')(props),
+        },
+      }),
+    },
   }
 });
 

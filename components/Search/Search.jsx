@@ -98,7 +98,7 @@ export default function Search({ setNavbarIsOpen }) {
         as={Button}
         rightIcon={<Search2Icon />}
         color={useColorModeValue("brand.700", "brand.100")}
-        backgroundColor={useColorModeValue("white", "gray.800")}
+        backgroundColor={useColorModeValue("white", "#191a1a")}
         py={1.5}
         h={'auto'}
         rounded="none"

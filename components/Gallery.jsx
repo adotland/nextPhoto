@@ -14,7 +14,7 @@ function FiltersRow({ filterColor, filterType}) {
 
     displayable && <Box
       w={"100%"}
-      bg={useColorModeValue("gray.100", "gray.800")}
+      bg={useColorModeValue("gray.100", "#191a1a")}
       pt={4}
       pl={4}
     >
@@ -44,7 +44,7 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
         padding={4}
         w="100%"
         mx="auto"
-        bg={useColorModeValue("gray.100", "gray.800")}
+        bg={useColorModeValue("gray.100", "#191a1a")}
         sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
       >
         {

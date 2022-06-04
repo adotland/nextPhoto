@@ -53,7 +53,7 @@ export default function FilterMenu() {
           as={Button}
           rightIcon={<BsFilter />}
           color={useColorModeValue("brand.700", "brand.100")}
-          backgroundColor={useColorModeValue("white", "gray.800")}
+          backgroundColor={useColorModeValue("white", "#191a1a")}
           py={1.5}
           h={'auto'}
           // transform={'skew(-21deg)'}
@@ -62,7 +62,7 @@ export default function FilterMenu() {
         >
           <Text fontWeight={'normal'} fontFamily='Open Sans'>Filter</Text>
         </MenuButton>
-        <MenuList rounded={'none'}>
+        <MenuList rounded={'none'} bgColor={useColorModeValue("gray.200", "#191a1a")}>
           <MenuItem isDisabled="true">
             <Text mr='2'>Type</Text>
             <AiOutlineCamera />

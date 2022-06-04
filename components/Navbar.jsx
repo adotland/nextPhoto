@@ -78,7 +78,7 @@ const MenuItem = ({ children, to = "/", }) => {
           display="block"
           fontFamily='Open Sans'
           color={useColorModeValue("brand.700", "brand.100")}
-          backgroundColor={useColorModeValue("white", "gray.800")}
+          backgroundColor={useColorModeValue("white", "#191a1a")}
           py={1}
           px={2}
           // transform={'skew(-21deg)'}
