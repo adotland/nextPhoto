@@ -380,8 +380,7 @@ const ManageData = {
         });
       }
     })
-    await ff.writeJson(retval.sort(), LIVE_DATA_PATH, `api_data.json`, 0);
-    // await ff.write(`export const dataList = ${retval.sort()}`, '../../pages/api/park/api_data.js');
+    await ff.write(`export const dataList = ${JSON.stringify(retval.sort())}`, __dirname, `../../pages/api/park/api_data.js`);
   }
 
 };
