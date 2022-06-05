@@ -202,7 +202,7 @@ const ManageData = {
           lat: cmsDataObj[long_name].lat,
           long: cmsDataObj[long_name].long,
           imageName: fullImageName,
-          slug: isGif ? imageData.slug + '-anim' : imageData.slug,
+          slug: imageData.slug,
           ext: isGif ? 'webp' : imageData.ext,
           width: metadata.width,
           height: metadata.height,

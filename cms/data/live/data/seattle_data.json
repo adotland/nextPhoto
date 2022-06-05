@@ -432,30 +432,6 @@
     }
   },
   {
-    "id": 17,
-    "pmaid": "422",
-    "locid": "1160",
-    "name": "Rainier Beach Playfield",
-    "address": "8802 Rainier Ave S",
-    "zip_code": "98118",
-    "lat": "47.525041",
-    "long": "-122.273136",
-    "imageName": "422_1160_Rainier-Beach-Playfield.webp",
-    "slug": "rainier-beach-playfield-anim",
-    "ext": "webp",
-    "width": 645,
-    "height": 483,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "sky",
-      "domColor": "#98c8e8"
-    }
-  },
-  {
     "id": 18,
     "pmaid": "",
     "locid": "",
@@ -475,30 +451,6 @@
       "live": true,
       "featured": true,
       "type": "still",
-      "matchColor": "bold",
-      "domColor": "#080808"
-    }
-  },
-  {
-    "id": 18,
-    "pmaid": "",
-    "locid": "",
-    "name": "Alice Ball Park",
-    "address": "Alice Ball Park, 8100 Greenwood Ave N, Seattle, WA 98103, USA",
-    "zip_code": "98103",
-    "lat": "47.687872",
-    "long": "-122.3548669",
-    "imageName": "__Alice-Ball-Park.webp",
-    "slug": "alice-ball-park-anim",
-    "ext": "webp",
-    "width": 607,
-    "height": 328,
-    "collection": "seattle",
-    "filters": {
-      "weight": 7000,
-      "live": true,
-      "featured": true,
-      "type": "animated",
       "matchColor": "bold",
       "domColor": "#080808"
     }
@@ -597,54 +549,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
-  },
-  {
-    "id": 23,
-    "pmaid": "4083",
-    "locid": "1692",
-    "name": "Waterway 19",
-    "address": "2119 N Northlake Way",
-    "zip_code": "98103",
-    "lat": "47.646349",
-    "long": "-122.332567",
-    "imageName": "4083_1692_Waterway-19.webp",
-    "slug": "waterway-19-anim",
-    "ext": "webp",
-    "width": 586,
-    "height": 459,
-    "collection": "seattle",
-    "filters": {
-      "weight": 3000,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#181808"
-    }
-  },
-  {
-    "id": 24,
-    "pmaid": "2975",
-    "locid": "1323",
-    "name": "Fairview Park",
-    "address": "2900 Fairview Ave E",
-    "zip_code": "98102",
-    "lat": "47.647413",
-    "long": "-122.325368",
-    "imageName": "2975_1323_Fairview-Park.webp",
-    "slug": "fairview-park-anim",
-    "ext": "webp",
-    "width": 555,
-    "height": 452,
-    "collection": "seattle",
-    "filters": {
-      "weight": 8000,
-      "live": true,
-      "featured": true,
-      "type": "animated",
-      "matchColor": "light",
-      "domColor": "#f8f8e8"
     }
   },
   {
@@ -3312,30 +3216,6 @@
     }
   },
   {
-    "id": 134,
-    "pmaid": "274",
-    "locid": "1943",
-    "name": "Piers 62 and 63",
-    "address": "1951 Alaskan Way",
-    "zip_code": "98101",
-    "lat": "47.608656",
-    "long": "-122.345237",
-    "imageName": "274_1943_Piers-62-and-63.webp",
-    "slug": "piers-62-and-63-anim",
-    "ext": "webp",
-    "width": 478,
-    "height": 638,
-    "collection": "seattle",
-    "filters": {
-      "weight": 5000,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#080818"
-    }
-  },
-  {
     "id": 135,
     "pmaid": "313",
     "locid": "1407",
@@ -5184,30 +5064,6 @@
     }
   },
   {
-    "id": 211,
-    "pmaid": "332",
-    "locid": "1703",
-    "name": "Westlake Park",
-    "address": "401 Pine St",
-    "zip_code": "98101",
-    "lat": "47.611099",
-    "long": "-122.33724",
-    "imageName": "332_1703_Westlake-Park.webp",
-    "slug": "westlake-park-anim",
-    "ext": "webp",
-    "width": 638,
-    "height": 478,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#080808"
-    }
-  },
-  {
     "id": 212,
     "pmaid": "335",
     "locid": "2384",
@@ -5297,7 +5153,7 @@
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": false,
+      "featured": true,
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
@@ -5587,54 +5443,6 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
-    "id": 227,
-    "pmaid": "323",
-    "locid": "1927",
-    "name": "Occidental Square",
-    "address": "117 S Washington St",
-    "zip_code": "98104",
-    "lat": "47.600463",
-    "long": "-122.333272",
-    "imageName": "323_1927_Occidental-Square.webp",
-    "slug": "occidental-square-anim",
-    "ext": "webp",
-    "width": 645,
-    "height": 483,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#080808"
-    }
-  },
-  {
-    "id": 228,
-    "pmaid": "325",
-    "locid": "1949",
-    "name": "Pioneer Square",
-    "address": "100 Yesler Way",
-    "zip_code": "98104",
-    "lat": "47.602076",
-    "long": "-122.333886",
-    "imageName": "325_1949_Pioneer-Square.webp",
-    "slug": "pioneer-square-anim",
-    "ext": "webp",
-    "width": 644,
-    "height": 482,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
       "matchColor": "bold",
       "domColor": "#282828"
     }
@@ -6456,30 +6264,6 @@
     }
   },
   {
-    "id": 261,
-    "pmaid": "334",
-    "locid": "1705",
-    "name": "Westlake Square",
-    "address": "1900 Westlake Ave",
-    "zip_code": "98109",
-    "lat": "47.613627",
-    "long": "-122.337285",
-    "imageName": "334_1705_Westlake-Square.webp",
-    "slug": "westlake-square-anim",
-    "ext": "webp",
-    "width": 648,
-    "height": 485,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#080818"
-    }
-  },
-  {
     "id": 262,
     "pmaid": "309",
     "locid": "1297",
@@ -6501,30 +6285,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
-  },
-  {
-    "id": 262,
-    "pmaid": "309",
-    "locid": "1297",
-    "name": "Denny Park",
-    "address": "100 Dexter Ave N",
-    "zip_code": "98109",
-    "lat": "47.61913",
-    "long": "-122.341049",
-    "imageName": "309_1297_Denny-Park.webp",
-    "slug": "denny-park-anim",
-    "ext": "webp",
-    "width": 644,
-    "height": 482,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": true,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#080818"
     }
   },
   {
@@ -6597,30 +6357,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
-  },
-  {
-    "id": 265,
-    "pmaid": "1100393",
-    "locid": "393",
-    "name": "Washington Park Playfield",
-    "address": "1017 Lake Washington Blvd E",
-    "zip_code": "98112",
-    "lat": "47.627064",
-    "long": "-122.293925",
-    "imageName": "1100393_393_Washington-Park-Playfield.webp",
-    "slug": "washington-park-playfield-anim",
-    "ext": "webp",
-    "width": 644,
-    "height": 483,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#081838"
     }
   },
   {
@@ -6752,30 +6488,6 @@
     "zip_code": "98112",
     "lat": "47.639084",
     "long": "-122.276118",
-    "imageName": "4441_2509_Madison-Park-North-Beach.webp",
-    "slug": "madison-park-north-beach-anim",
-    "ext": "webp",
-    "width": 627,
-    "height": 476,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 271,
-    "pmaid": "4441",
-    "locid": "2509",
-    "name": "Madison Park North Beach",
-    "address": "2300 43rd Ave E",
-    "zip_code": "98112",
-    "lat": "47.639084",
-    "long": "-122.276118",
     "imageName": "4441_2509_Madison-Park-North-Beach.jpg",
     "slug": "madison-park-north-beach",
     "ext": "jpg",
@@ -6885,30 +6597,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
-  },
-  {
-    "id": 275,
-    "pmaid": "393",
-    "locid": "0",
-    "name": "Washington Park Arboretum",
-    "address": "2300 Arboretum Dr E",
-    "zip_code": "98112",
-    "lat": "47.636477",
-    "long": "-122.294835",
-    "imageName": "393_0_Washington-Park-Arboretum.webp",
-    "slug": "washington-park-arboretum-anim",
-    "ext": "webp",
-    "width": 400,
-    "height": 247,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
     }
   },
   {
@@ -7025,7 +6713,7 @@
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": false,
+      "featured": true,
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
@@ -8048,30 +7736,6 @@
     "zip_code": "98119",
     "lat": "47.636097",
     "long": "-122.372985",
-    "imageName": "281_2545_12th-and-Howe-Play-Park.webp",
-    "slug": "12th-and-howe-play-park-anim",
-    "ext": "webp",
-    "width": 607,
-    "height": 455,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 323,
-    "pmaid": "281",
-    "locid": "2545",
-    "name": "12th and Howe Play Park",
-    "address": "1200 W Howe St",
-    "zip_code": "98119",
-    "lat": "47.636097",
-    "long": "-122.372985",
     "imageName": "281_2545_12th-and-Howe-Play-Park.jpg",
     "slug": "12th-and-howe-play-park",
     "ext": "jpg",
@@ -8277,30 +7941,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282848"
-    }
-  },
-  {
-    "id": 331,
-    "pmaid": "4008",
-    "locid": "1535",
-    "name": "McGilvra Place",
-    "address": "1425 E Madison St",
-    "zip_code": "98122",
-    "lat": "47.614233",
-    "long": "-122.313032",
-    "imageName": "4008_1535_McGilvra-Place.webp",
-    "slug": "mcgilvra-place-anim",
-    "ext": "webp",
-    "width": 604,
-    "height": 453,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#081818"
     }
   },
   {
@@ -8805,30 +8445,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
-  },
-  {
-    "id": 352,
-    "pmaid": "4456",
-    "locid": "1398",
-    "name": "Hubbard Homestead",
-    "address": "11203 5th Ave NE",
-    "zip_code": "98125",
-    "lat": "47.709964",
-    "long": "-122.324674",
-    "imageName": "4456_1398_Hubbard-Homestead.webp",
-    "slug": "hubbard-homestead-anim",
-    "ext": "webp",
-    "width": 598,
-    "height": 354,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
     }
   },
   {
@@ -10344,30 +9960,6 @@
     }
   },
   {
-    "id": 415,
-    "pmaid": "",
-    "locid": "",
-    "name": "Fritz Hedges Waterway Park",
-    "address": "1117 NE Boat St, Seattle, WA 98105, USA",
-    "zip_code": "98105",
-    "lat": "47.6520661",
-    "long": "-122.3159908",
-    "imageName": "__Fritz-Hedges-Waterway-Park.webp",
-    "slug": "fritz-hedges-waterway-park-anim",
-    "ext": "webp",
-    "width": 641,
-    "height": 480,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "sky",
-      "domColor": "#8898a8"
-    }
-  },
-  {
     "id": 416,
     "pmaid": "",
     "locid": "",
@@ -10701,6 +10293,414 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 18,
+    "pmaid": "",
+    "locid": "",
+    "name": "Alice Ball Park",
+    "address": "Alice Ball Park, 8100 Greenwood Ave N, Seattle, WA 98103, USA",
+    "zip_code": "98103",
+    "lat": "47.687872",
+    "long": "-122.3548669",
+    "imageName": "__Alice-Ball-Park.webp",
+    "slug": "alice-ball-park-anim",
+    "ext": "webp",
+    "width": 607,
+    "height": 328,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080808"
+    }
+  },
+  {
+    "id": 17,
+    "pmaid": "422",
+    "locid": "1160",
+    "name": "Rainier Beach Playfield",
+    "address": "8802 Rainier Ave S",
+    "zip_code": "98118",
+    "lat": "47.525041",
+    "long": "-122.273136",
+    "imageName": "422_1160_Rainier-Beach-Playfield.webp",
+    "slug": "rainier-beach-playfield-anim",
+    "ext": "webp",
+    "width": 645,
+    "height": 483,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "sky",
+      "domColor": "#98c8e8"
+    }
+  },
+  {
+    "id": 24,
+    "pmaid": "2975",
+    "locid": "1323",
+    "name": "Fairview Park",
+    "address": "2900 Fairview Ave E",
+    "zip_code": "98102",
+    "lat": "47.647413",
+    "long": "-122.325368",
+    "imageName": "2975_1323_Fairview-Park.webp",
+    "slug": "fairview-park-anim",
+    "ext": "webp",
+    "width": 555,
+    "height": 452,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "light",
+      "domColor": "#f8f8e8"
+    }
+  },
+  {
+    "id": 23,
+    "pmaid": "4083",
+    "locid": "1692",
+    "name": "Waterway 19",
+    "address": "2119 N Northlake Way",
+    "zip_code": "98103",
+    "lat": "47.646349",
+    "long": "-122.332567",
+    "imageName": "4083_1692_Waterway-19.webp",
+    "slug": "waterway-19-anim",
+    "ext": "webp",
+    "width": 586,
+    "height": 459,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#181808"
+    }
+  },
+  {
+    "id": 211,
+    "pmaid": "332",
+    "locid": "1703",
+    "name": "Westlake Park",
+    "address": "401 Pine St",
+    "zip_code": "98101",
+    "lat": "47.611099",
+    "long": "-122.33724",
+    "imageName": "332_1703_Westlake-Park.webp",
+    "slug": "westlake-park-anim",
+    "ext": "webp",
+    "width": 638,
+    "height": 478,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080808"
+    }
+  },
+  {
+    "id": 227,
+    "pmaid": "323",
+    "locid": "1927",
+    "name": "Occidental Square",
+    "address": "117 S Washington St",
+    "zip_code": "98104",
+    "lat": "47.600463",
+    "long": "-122.333272",
+    "imageName": "323_1927_Occidental-Square.webp",
+    "slug": "occidental-square-anim",
+    "ext": "webp",
+    "width": 645,
+    "height": 483,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080808"
+    }
+  },
+  {
+    "id": 228,
+    "pmaid": "325",
+    "locid": "1949",
+    "name": "Pioneer Square",
+    "address": "100 Yesler Way",
+    "zip_code": "98104",
+    "lat": "47.602076",
+    "long": "-122.333886",
+    "imageName": "325_1949_Pioneer-Square.webp",
+    "slug": "pioneer-square-anim",
+    "ext": "webp",
+    "width": 644,
+    "height": 482,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 261,
+    "pmaid": "334",
+    "locid": "1705",
+    "name": "Westlake Square",
+    "address": "1900 Westlake Ave",
+    "zip_code": "98109",
+    "lat": "47.613627",
+    "long": "-122.337285",
+    "imageName": "334_1705_Westlake-Square.webp",
+    "slug": "westlake-square-anim",
+    "ext": "webp",
+    "width": 648,
+    "height": 485,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080818"
+    }
+  },
+  {
+    "id": 275,
+    "pmaid": "393",
+    "locid": "0",
+    "name": "Washington Park Arboretum",
+    "address": "2300 Arboretum Dr E",
+    "zip_code": "98112",
+    "lat": "47.636477",
+    "long": "-122.294835",
+    "imageName": "393_0_Washington-Park-Arboretum.webp",
+    "slug": "washington-park-arboretum-anim",
+    "ext": "webp",
+    "width": 400,
+    "height": 247,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 262,
+    "pmaid": "309",
+    "locid": "1297",
+    "name": "Denny Park",
+    "address": "100 Dexter Ave N",
+    "zip_code": "98109",
+    "lat": "47.61913",
+    "long": "-122.341049",
+    "imageName": "309_1297_Denny-Park.webp",
+    "slug": "denny-park-anim",
+    "ext": "webp",
+    "width": 644,
+    "height": 482,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080818"
+    }
+  },
+  {
+    "id": 265,
+    "pmaid": "1100393",
+    "locid": "393",
+    "name": "Washington Park Playfield",
+    "address": "1017 Lake Washington Blvd E",
+    "zip_code": "98112",
+    "lat": "47.627064",
+    "long": "-122.293925",
+    "imageName": "1100393_393_Washington-Park-Playfield.webp",
+    "slug": "washington-park-playfield-anim",
+    "ext": "webp",
+    "width": 644,
+    "height": 483,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#081838"
+    }
+  },
+  {
+    "id": 271,
+    "pmaid": "4441",
+    "locid": "2509",
+    "name": "Madison Park North Beach",
+    "address": "2300 43rd Ave E",
+    "zip_code": "98112",
+    "lat": "47.639084",
+    "long": "-122.276118",
+    "imageName": "4441_2509_Madison-Park-North-Beach.webp",
+    "slug": "madison-park-north-beach-anim",
+    "ext": "webp",
+    "width": 627,
+    "height": 476,
+    "collection": "seattle",
+    "filters": {
+      "weight": 1000,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 331,
+    "pmaid": "4008",
+    "locid": "1535",
+    "name": "McGilvra Place",
+    "address": "1425 E Madison St",
+    "zip_code": "98122",
+    "lat": "47.614233",
+    "long": "-122.313032",
+    "imageName": "4008_1535_McGilvra-Place.webp",
+    "slug": "mcgilvra-place-anim",
+    "ext": "webp",
+    "width": 604,
+    "height": 453,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#081818"
+    }
+  },
+  {
+    "id": 323,
+    "pmaid": "281",
+    "locid": "2545",
+    "name": "12th and Howe Play Park",
+    "address": "1200 W Howe St",
+    "zip_code": "98119",
+    "lat": "47.636097",
+    "long": "-122.372985",
+    "imageName": "281_2545_12th-and-Howe-Play-Park.webp",
+    "slug": "12th-and-howe-play-park-anim",
+    "ext": "webp",
+    "width": 607,
+    "height": 455,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 352,
+    "pmaid": "4456",
+    "locid": "1398",
+    "name": "Hubbard Homestead",
+    "address": "11203 5th Ave NE",
+    "zip_code": "98125",
+    "lat": "47.709964",
+    "long": "-122.324674",
+    "imageName": "4456_1398_Hubbard-Homestead.webp",
+    "slug": "hubbard-homestead-anim",
+    "ext": "webp",
+    "width": 598,
+    "height": 354,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 415,
+    "pmaid": "",
+    "locid": "",
+    "name": "Fritz Hedges Waterway Park",
+    "address": "1117 NE Boat St, Seattle, WA 98105, USA",
+    "zip_code": "98105",
+    "lat": "47.6520661",
+    "long": "-122.3159908",
+    "imageName": "__Fritz-Hedges-Waterway-Park.webp",
+    "slug": "fritz-hedges-waterway-park-anim",
+    "ext": "webp",
+    "width": 641,
+    "height": 480,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "animated",
+      "matchColor": "sky",
+      "domColor": "#8898a8"
+    }
+  },
+  {
+    "id": 134,
+    "pmaid": "274",
+    "locid": "1943",
+    "name": "Piers 62 and 63",
+    "address": "1951 Alaskan Way",
+    "zip_code": "98101",
+    "lat": "47.608656",
+    "long": "-122.345237",
+    "imageName": "274_1943_Piers-62-and-63.webp",
+    "slug": "piers-62-and-63-anim",
+    "ext": "webp",
+    "width": 478,
+    "height": 638,
+    "collection": "seattle",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#080818"
     }
   },
   {

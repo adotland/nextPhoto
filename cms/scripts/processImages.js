@@ -43,7 +43,7 @@ const ImageProcessor = {
             locid,
             imageName: formattedName,
             // parsed: name.replaceAll(/[^a-z]/ig, '').toUpperCase().replace(/JPG$/, ''),
-            slug,
+            slug: ext === 'gif' ? `${slug}-anim` : slug,
             ext,
             lastChange: statObj?.ctime
           });
