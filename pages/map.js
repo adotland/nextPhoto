@@ -73,6 +73,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
   const [carouselDataList, setCarouselDataList] = useState(initCarouselDataList);
   const [mapDataList, setMapDataList] = useState(initMapDataList);
   const [newParkSlug, setNewParkSlug] = useState()
+  const [activeCarouselItem, setActiveCarouselItem] = useState(0);
 
   const loadData = (data) => {
     setNewParkSlug(data)
@@ -103,7 +104,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
       mx={4}
       mt={4}
     >
-      <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} />
+      <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
       <Text
         textAlign={'center'}
         letterSpacing={'0.1em'}
@@ -115,7 +116,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
         borderBottom={'2px solid black'}
         pb={2}
       >&uarr; Click and Drag to discover &darr;</Text>
-      <Carousel dataList={carouselDataList} />
+      <Carousel dataList={carouselDataList} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
     </Box>
   )
 }

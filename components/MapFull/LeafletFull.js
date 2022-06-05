@@ -11,7 +11,7 @@ import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import { useColorModeValue } from '@chakra-ui/react';
 
-const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
+const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem }) => {
 
   useEffect(() => {
     (async function init() {
@@ -37,7 +37,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
 
   function MapEventListener() {
     const map = useMapEvents({
-      zoom: () => {
+      zoomend: () => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
@@ -47,7 +47,6 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
       moveend: () => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
-
       },
     })
     return null
@@ -85,12 +84,13 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
             icon={markerIcon}
             eventHandlers={{
               click: (e) => {
+                setActiveCarouselItem(0)
                 loadData(data.slug);
               },
             }}
           >
             <Popup>
-              {data.name}
+              data.name
             </Popup>
           </Marker>)
         }

@@ -36,11 +36,11 @@ const transitionProps = {
   mass: 3
 };
 
-const ChakraCarousel = ({ children, gap }) => {
+const ChakraCarousel = ({ children, gap, activeCarouselItem, setActiveCarouselItem }) => {
+
   const [trackIsActive, setTrackIsActive] = useState(false);
   const [multiplier, setMultiplier] = useState(0.35);
   const [sliderWidth, setSliderWidth] = useState(0);
-  const [activeItem, setActiveItem] = useState(0);
   const [constraint, setConstraint] = useState(0);
   const [itemWidth, setItemWidth] = useState(0);
 
@@ -84,8 +84,8 @@ const ChakraCarousel = ({ children, gap }) => {
   const sliderProps = {
     setTrackIsActive,
     initSliderWidth,
-    setActiveItem,
-    activeItem,
+    setActiveCarouselItem,
+    activeCarouselItem,
     constraint,
     itemWidth,
     positions,
@@ -95,9 +95,9 @@ const ChakraCarousel = ({ children, gap }) => {
   const trackProps = {
     setTrackIsActive,
     trackIsActive,
-    setActiveItem,
+    setActiveCarouselItem,
     sliderWidth,
-    activeItem,
+    activeCarouselItem,
     constraint,
     multiplier,
     itemWidth,
@@ -108,8 +108,8 @@ const ChakraCarousel = ({ children, gap }) => {
   const itemProps = {
     setTrackIsActive,
     trackIsActive,
-    setActiveItem,
-    activeItem,
+    setActiveCarouselItem,
+    activeCarouselItem,
     constraint,
     itemWidth,
     positions,
@@ -132,8 +132,8 @@ const ChakraCarousel = ({ children, gap }) => {
 const Slider = ({
   setTrackIsActive,
   initSliderWidth,
-  setActiveItem,
-  activeItem,
+  setActiveCarouselItem,
+  activeCarouselItem,
   constraint,
   itemWidth,
   positions,
@@ -151,14 +151,14 @@ const Slider = ({
 
   const handleDecrementClick = () => {
     setTrackIsActive(true);
-    !(activeItem === positions.length - positions.length) &&
-      setActiveItem((prev) => prev - 1);
+    !(activeCarouselItem === positions.length - positions.length) &&
+      setActiveCarouselItem((prev) => prev - 1);
   };
 
   const handleIncrementClick = () => {
     setTrackIsActive(true);
-    !(activeItem === positions.length - constraint) &&
-      setActiveItem((prev) => prev + 1);
+    !(activeCarouselItem === positions.length - constraint) &&
+      setActiveCarouselItem((prev) => prev + 1);
   };
 
   return (
@@ -171,7 +171,7 @@ const Slider = ({
         position="relative"
         overflow="hidden"
         _before={{
-          bgGradient: "linear(to-r, base.d400, transparent)",
+          bgGradient: "linear(to-r, blackAlpha400, transparent)",
           position: "absolute",
           w: `${gap / 2}px`,
           content: "''",
@@ -181,7 +181,7 @@ const Slider = ({
           top: 0
         }}
         _after={{
-          bgGradient: "linear(to-l, base.d400, transparent)",
+          bgGradient: "linear(to-l, blackAlpha400, transparent)",
           position: "absolute",
           w: `${gap / 2}px`,
           content: "''",
@@ -207,10 +207,10 @@ const Slider = ({
         </Button>
 
         <Progress
-          value={percentage(activeItem, positions.length - constraint)}
+          value={percentage(activeCarouselItem, positions.length - constraint)}
           alignSelf="center"
           borderRadius="2px"
-          bg="base.d100"
+          bg="blackAlpha100"
           flex={1}
           h="3px"
           sx={{
@@ -239,8 +239,8 @@ const Slider = ({
 const Track = ({
   setTrackIsActive,
   trackIsActive,
-  setActiveItem,
-  activeItem,
+  setActiveCarouselItem,
+  activeCarouselItem,
   constraint,
   multiplier,
   itemWidth,
@@ -252,7 +252,7 @@ const Track = ({
   const x = useMotionValue(0);
   const node = useRef(null);
 
-  const handleDragStart = () => setDragStartPosition(positions[activeItem]);
+  const handleDragStart = () => setDragStartPosition(positions[activeCarouselItem]);
 
   const handleDragEnd = (_, info) => {
     const distance = info.offset.x;
@@ -273,7 +273,7 @@ const Track = ({
     }, 0);
 
     if (!(closestPosition < positions[positions.length - constraint])) {
-      setActiveItem(positions.indexOf(closestPosition));
+      setActiveCarouselItem(positions.indexOf(closestPosition));
       controls.start({
         x: closestPosition,
         transition: {
@@ -282,7 +282,7 @@ const Track = ({
         }
       });
     } else {
-      setActiveItem(positions.length - constraint);
+      setActiveCarouselItem(positions.length - constraint);
       controls.start({
         x: positions[positions.length - constraint],
         transition: {
@@ -296,12 +296,12 @@ const Track = ({
   const handleResize = useCallback(
     () =>
       controls.start({
-        x: positions[activeItem],
+        x: positions[activeCarouselItem],
         transition: {
           ...transitionProps
         }
       }),
-    [activeItem, controls, positions]
+    [activeCarouselItem, controls, positions]
   );
 
   const handleClick = useCallback(
@@ -315,21 +315,21 @@ const Track = ({
   const handleKeyDown = useCallback(
     (event) => {
       if (trackIsActive) {
-        if (activeItem < positions.length - constraint) {
+        if (activeCarouselItem < positions.length - constraint) {
           if (event.key === "ArrowRight" || event.key === "ArrowUp") {
             event.preventDefault();
-            setActiveItem((prev) => prev + 1);
+            setActiveCarouselItem((prev) => prev + 1);
           }
         }
-        if (activeItem > positions.length - positions.length) {
+        if (activeCarouselItem > positions.length - positions.length) {
           if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
             event.preventDefault();
-            setActiveItem((prev) => prev - 1);
+            setActiveCarouselItem((prev) => prev - 1);
           }
         }
       }
     },
-    [trackIsActive, setActiveItem, activeItem, constraint, positions.length]
+    [trackIsActive, setActiveCarouselItem, activeCarouselItem, constraint, positions.length]
   );
 
   useEffect(() => {
@@ -369,8 +369,8 @@ const Track = ({
 
 const Item = ({
   setTrackIsActive,
-  setActiveItem,
-  activeItem,
+  setActiveCarouselItem,
+  activeCarouselItem,
   constraint,
   itemWidth,
   positions,
@@ -389,8 +389,8 @@ const Item = ({
 
   const handleKeyUp = (event) =>
     event.key === "Tab" &&
-    !(activeItem === positions.length - constraint) &&
-    setActiveItem(index);
+    !(activeCarouselItem === positions.length - constraint) &&
+    setActiveCarouselItem(index);
 
   const handleKeyDown = (event) => event.key === "Tab" && setUserDidTab(true);
 
