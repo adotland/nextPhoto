@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function RelatedImages({ dataList }) {
   return (
-    <Box w={"50%"} my={'auto'} ml={10}>
+    <Box w={"50%"} my={'auto'} ml={10} pb={5}>
       <Heading as={'h3'} fontSize={'large'} mt={5}>Related Images</Heading>
         {dataList.map((data, index) => (
           <Link href={`/park/${data.slug}`} key={index}>

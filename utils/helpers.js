@@ -44,3 +44,5 @@ export function toBase64(str) {
     ? Buffer.from(str).toString('base64')
     : window.btoa(str)
 }
+
+export const commonBlurImage = toBase64(shimmer(4032, 3024));

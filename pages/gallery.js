@@ -1,10 +1,9 @@
 import { useColorModeValue, Box, Text, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { shimmer, toBase64 } from "../utils/helpers";
+import { commonBlurImage, } from "../utils/helpers";
 
-
-function CollectionItem({ name, imageUrl, width, height, link }) {
+function CollectionItem({ name, imageUrl, link }) {
   return (
     <Box
       pos={'relative'}
@@ -29,7 +28,7 @@ function CollectionItem({ name, imageUrl, width, height, link }) {
         objectFit="cover"
         placeholder="blur"
         sizes="25vw"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer( width, height))}`}
+        blurDataURL={`data:image/svg+xml;base64,${commonBlurImage}`}
       />
       <Flex justifyContent={'center'} alignItems={'center'} h={200}>
         <Link href={`/collection/${link}`}>
@@ -43,21 +42,20 @@ function CollectionItem({ name, imageUrl, width, height, link }) {
               {name}
             </Text>
           </a>
-      </Link>
-    </Flex>
+        </Link>
+      </Flex>
     </Box >
   )
 }
 
-
 export default function () {
   return (
     <Box>
-      <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='310_1301_Discovery-Park.jpg' width={4032} height={3024} />
-      <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl='mercer_park_North-Mercerdale-Hillside.jpg' width={4032} height={3024} />
-      <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" width={4032} height={3024} />
-      <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' width={4032} height={3024} />
-      <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' width={4032} height={3024} />
+      <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='310_1301_Discovery-Park.jpg' />
+      <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl='mercer_park_North-Mercerdale-Hillside.jpg' />
+      <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" />
+      <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' />
+      <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' />
     </Box>
   )
 }
