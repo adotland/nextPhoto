@@ -90,7 +90,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
             }}
           >
             <Popup>
-              data.name
+              {data.name?.length > 20 ? `${data.name.substring(0, 20)}...` : data.name}
             </Popup>
           </Marker>)
         }
