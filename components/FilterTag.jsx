@@ -6,7 +6,7 @@ export default function FilterTag({ type, value }) {
     <Flex mr={5}>
       {/* <Text>{type}: </Text> */}
       <Box>
-        <Link href={type === 'featured' ? '/' : `/filter/${type}/${value}`}>
+        <Link href={type === 'featured' ? '/featured' : `/filter/${type}/${value}`}>
           <a>
             <Tag
               bg={useColorModeValue('blackAlpha.400', 'whiteAlpha.700')}

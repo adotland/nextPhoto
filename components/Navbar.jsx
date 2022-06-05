@@ -6,6 +6,7 @@ import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
+import { FaDice } from 'react-icons/fa';
 
 const NavBar = (props) => {
   const router = useRouter();
@@ -70,7 +71,7 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
   );
 };
 
-const MenuItem = ({ children, to = "/", }) => {
+const MenuItem = ({ children, to = "/", py}) => {
   return (
     <Link href={to}>
       <a>
@@ -79,7 +80,7 @@ const MenuItem = ({ children, to = "/", }) => {
           fontFamily='Open Sans'
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "#191a1a")}
-          py={1}
+          py={py || 1}
           px={2}
           // transform={'skew(-21deg)'}
           _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
@@ -107,7 +108,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         <FilterMenu />
         <Search setNavbarIsOpen={setIsOpen} />
         <MenuItem to="/map">Map</MenuItem>
-        <MenuItem to="/gallery">Gallery</MenuItem>
+        <MenuItem to="/featured" py={2}><FaDice /></MenuItem>
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle setIsOpen={setIsOpen}/>
       </Stack>
