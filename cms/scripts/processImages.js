@@ -181,20 +181,20 @@ const ImageProcessor = {
     console.timeEnd('processStills');
   },
 
-  // sanitizeFileNames: async function (isGif = true) {
-  //   const path = isGif ? GIF_PATH : STILL_PATH;
-  //   const list = await ff.readdir(path);
-  //   // console.log(list)
-  //   for (let i = 0, len = list.length; i < len; i++) {
-  //     const srcPath = ff.path(path, list[i]);
-  //     const { name, ext } = formatImageFileName(list[i]);
-  //     const destPath = ff.path(path, `${name}.${ext}`);
-  //     if (srcPath !== destPath) {
-  //       console.log(srcPath + ' --> ' + destPath);
-  //       fs.renameSync(srcPath, destPath);
-  //     }
-  //   }
-  // },
+  sanitizeFileNames: async function (collection = DEFAULT_COLLECTION, isGif = false) {
+    const path = isGif ? GIF_PATH(collection) : STILL_PATH(collection);
+    const list = await ff.readdir(path);
+    // console.log(list)
+    for (let i = 0, len = list.length; i < len; i++) {
+      const srcPath = ff.path(path, list[i]);
+      const { name, ext } = formatImageFileName(list[i]);
+      const destPath = ff.path(path, `${name}.${ext}`);
+      if (srcPath !== destPath) {
+        console.log(srcPath + ' --> ' + destPath);
+        fs.renameSync(srcPath, destPath);
+      }
+    }
+  },
 
   processFilteredStills: async function (collection = DEFAULT_COLLECTION, filter = '') {
     imageDataList = await ff.readJson(BASE_DATA_PATH, `images/images_${collection}.json`);
@@ -207,14 +207,14 @@ const ImageProcessor = {
     // console.log(filtered.map(f => f.imageName));
   },
 
-  processGifs: async function (collection = DEFAULT_COLLECTION, isThumb = true) {
+  processGifs: async function (collection = DEFAULT_COLLECTION, isThumb = true, reprocessAll = false) {
     console.time('processGifs')
     const imageFileNameList = await ff.readdir(GIF_PATH(collection));
     await asyncForEach(imageFileNameList, async imageFileName => {
       const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
       const existingProcessed = fs.existsSync(ff.path(PROCESSED_WEBP_PATH, imageFileName.replace('gif', 'webp')));
       // console.log(existingProcessed)
-      if (existingProcessed && !isThumb) {
+      if (existingProcessed && !isThumb && !reprocessAll) {
         // console.info(`file already processed, skipping [${imageFileName}]`);
         return;
       }

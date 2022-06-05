@@ -4,7 +4,7 @@ const COLORS = require('../data/live/scripts/palette');
 // const Colour = require('./Colour');
 
 const FONT_SCALE = 70 / (3000 * 4000);
-const MIN_WM_FONT_SIZE = 9;
+const MIN_WM_FONT_SIZE = 7;
 
 // const constants = {
 //   HIGH_SQ: 441.673, // sqrt(255^2 * 3)

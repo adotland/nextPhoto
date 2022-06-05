@@ -175,14 +175,10 @@ const ManageData = {
         const path = isGif ? PROCESSED_WEBP_PATH : STILL_PATH(collection);
         const currentImageName = imageData.imageName;
         let fullImageName;
-        if (isGif) {
-          fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.webp`;
+        if (collection === 'seattle') {
+          fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.${isGif ? 'webp' : imageData.ext}`;
         } else {
-          if (collection === 'seattle') {
-            fullImageName = `${imageData.pmaid}_${imageData.locid}_${currentImageName}.${imageData.ext}`;
-          } else {
-            fullImageName = `${currentImageName}.${imageData.ext}`;
-          }
+          fullImageName = `${currentImageName}.${isGif ? 'webp' : imageData.ext}`;
         }
         console.log(`processing [${fullImageName}]`);
 
@@ -259,7 +255,7 @@ const ManageData = {
   updateFilter: async function (collection = DEFAULT_COLLECTION, filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
     const dataList = (await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`))
-    let updateList;console.log(ff.path(LIVE_DATA_PATH, `${collection}_data.json`))
+    let updateList;
     let reprocessList;
 
     let existing;
@@ -279,9 +275,9 @@ const ManageData = {
       let newFilterObj;
       try {
         // if (newOnly) {
-        // if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
-        //   newFilterObj = existing[data.slug]
-        // }
+        if (existing?.[data.slug] && !reprocessList.includes(data.slug)) {
+          newFilterObj = existing[data.slug]
+        }
         // }
         newFilterObj = newFilterObj || await this[`_get_${filter}`](data, updateList);
         dumpObj[data.slug] = newFilterObj;
@@ -318,7 +314,7 @@ const ManageData = {
     //   return; // better to skip for now
     // }
     // else {
-      imageToProcess = data.imageName;
+    imageToProcess = data.imageName;
     // }
 
     // sharp
@@ -385,6 +381,7 @@ const ManageData = {
       }
     })
     await ff.writeJson(retval.sort(), LIVE_DATA_PATH, `api_data.json`, 0);
+    // await ff.write(`export const dataList = ${retval.sort()}`, '../../pages/api/park/api_data.js');
   }
 
 };

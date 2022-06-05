@@ -75,7 +75,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
               },
             }}
           >
-            <Popup >
+            <Popup>
               {data.name}
             </Popup>
           </Marker>)
