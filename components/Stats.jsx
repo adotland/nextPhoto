@@ -7,8 +7,12 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import Link from "next/link";
+import CountUp from 'react-countup';
 
 function ParkStat({ name, data, link }) {
+
+  const normScale = (amount) => Math.ceil((amount - 1) / (600))
+
   return (
     <WrapItem
       p='5px'
@@ -20,7 +24,7 @@ function ParkStat({ name, data, link }) {
             <StatLabel>
               {name}
             </StatLabel>
-            <StatNumber textAlign={'center'}>{data}</StatNumber>
+            <StatNumber textAlign={'center'}><CountUp end={data} duration={normScale(data)} /></StatNumber>
             <StatHelpText></StatHelpText>
           </Stat>
         </a>
