@@ -11,7 +11,7 @@ import CountUp from 'react-countup';
 
 function ParkStat({ name, data, link }) {
 
-  const normScale = (amount) => Math.ceil(amount / 600) + 0.5
+  const normScale = (amount) => Math.ceil(amount / 600)
 
   return (
     <WrapItem
