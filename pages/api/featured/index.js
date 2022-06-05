@@ -1,6 +1,3 @@
-import Gallery from "../../components/Gallery";
-// import fs from 'fs';
-
 import { dataList } from './featured_data'
 
 function shuffle(a) {
@@ -15,10 +12,8 @@ function byColor(a, b) {
   return (Number.parseInt(b.filters?.matchColor?.substring(1), 16) - Number.parseInt(a.filters?.matchColor?.substring(1), 16));
 }
 
-export async function getServerSideProps() {
-  // const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
-  // // const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
-  // const dataList = JSON.parse(fs.readFileSync(__dirname + '/featured/featured_data.json'))
+export default async function handler(req, res) {
+
   const sorted = shuffle(dataList).sort(byColor)
   const retval = [];
   sorted.forEach(data => {
@@ -33,11 +28,5 @@ export async function getServerSideProps() {
       });
     }
   })
-  return { props: { dataList: retval.slice(0,12) } };
-}
-
-export default function ({ dataList }) {
-  return (
-    <Gallery dataList={dataList} />
-  )
+  return res.status(200).json({ props: { dataList: retval.slice(0, 12) } });
 }
