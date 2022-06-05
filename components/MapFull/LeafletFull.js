@@ -41,6 +41,9 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
+      movestart: () => {
+        map.closePopup()
+      },
       moveend: () => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
@@ -50,13 +53,24 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds }) => {
     return null
   }
 
+  const interactionOptions = {
+    zoomControl: true,
+    doubleClickZoom: true,
+    closePopupOnClick: true,
+    dragging: true,
+    zoomSnap: false,
+    zoomDelta: true,
+    trackResize: true,
+    touchZoom: true,
+    scrollWheelZoom: true,
+  };
 
   return (
     <MapContainer
       className={styles.map}
       center={center}
       zoom={12}
-      scrollWheelZoom={true}
+      {...interactionOptions}
     >
       <MapEventListener />
       <TileLayer
