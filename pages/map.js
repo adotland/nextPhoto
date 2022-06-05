@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
@@ -38,7 +38,7 @@ export async function getStaticProps() {
 
   const dataList = [];
   for (const collection in dataObj) {
-    dataList.push(...dataObj[collection].filter(d=>d.filters?.live))
+    dataList.push(...dataObj[collection].filter(d => d.filters?.live))
   }
   shuffle(dataList);
 
@@ -112,7 +112,17 @@ export default function ({ initMapDataList, /*statsObj,*/ initCarouselDataList, 
     >
       {/* <Stats stats={statsObj} /> */}
       <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} />
-      <Text textAlign={'center'} letterSpacing={'0.2em'} fontWeight={'bold'} pt={2}>&uarr; Click and Drag to discover &darr;</Text>
+      <Text
+        textAlign={'center'}
+        letterSpacing={'0.1em'}
+        fontWeight={'bold'}
+        pt={2}
+        color={useColorModeValue("white", "#555")}
+        backgroundColor={useColorModeValue("#777", "#eee")}
+        borderTop={'2px solid black'}
+        borderBottom={'2px solid black'}
+        pb={2}
+      >&uarr; Click and Drag to discover &darr;</Text>
       <Carousel dataList={carouselDataList} />
     </Box>
   )
