@@ -110,7 +110,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         <MenuItem to="/all">Gallery</MenuItem>
         {/* <MenuItem to="/stats">Stats</MenuItem> */}
         <MenuItem to="/about">About</MenuItem>
-        <ColorModeToggle />
+        <ColorModeToggle setIsOpen={setIsOpen}/>
       </Stack>
     </Box>
   );
