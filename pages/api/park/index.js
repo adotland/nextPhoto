@@ -1,6 +1,6 @@
 import Fuse from 'fuse.js';
 
-import { dataList } from './api_data'
+import { dataList } from './park_search_data'
 
 export default async function handler(req, res) {
   let { query } = (req.query)

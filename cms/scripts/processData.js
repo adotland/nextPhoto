@@ -370,17 +370,34 @@ const ManageData = {
   getApiData: async function () {
     const collectionList = await ff.readJson(LIVE_DATA_PATH, 'enabled_collections.json');
     const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
-    const retval = [];
+    const searchApiData = [];
+    const featuredData = [];
     dataList.forEach(data => {
       if (data.filters.live) {
-        retval.push({
+        searchApiData.push({
           slug: data.slug,
           parkName: data.name.toLowerCase(),
           still: data.ext === 'jpg'
         });
+        if (data.filters.featured) {
+          featuredData.push({
+            width: data.width,
+            height: data.height,
+            slug: data.slug,
+            ext: data.ext,
+            parkName: data.name,
+            imageName: data.imageName,
+            filters: {
+              live: data.filters.live,
+              featured: data.filters.featured
+            }
+          })
+        }
       }
     })
-    await ff.write(`export const dataList = ${JSON.stringify(retval.sort())}`, __dirname, `../../pages/api/park/api_data.js`);
+    await ff.write(`export const dataList = ${JSON.stringify(searchApiData.sort())}`, __dirname, `../../pages/api/park/park_search_data.js`);
+    await ff.write(`export const dataList = ${JSON.stringify(featuredData)}`, __dirname, `../../pages/featured/featured_data.js`);
+    // await ff.write(JSON.stringify(featuredData), __dirname, `../../public/featured_data.json`);
   }
 
 };
