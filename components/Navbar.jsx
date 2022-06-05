@@ -107,7 +107,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         <FilterMenu />
         <Search setNavbarIsOpen={setIsOpen} />
         <MenuItem to="/map">Map</MenuItem>
-        <MenuItem to="/all">Gallery</MenuItem>
+        <MenuItem to="/gallery">Gallery</MenuItem>
         {/* <MenuItem to="/stats">Stats</MenuItem> */}
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle setIsOpen={setIsOpen}/>
