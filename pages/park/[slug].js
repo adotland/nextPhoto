@@ -43,7 +43,7 @@ export default function ({ currentData, related }) {
   return (
     <>
       <SEO data={currentData} />
-      <Flex m={[0, 0, 0, 7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']} mt={[4, 4, 4, 4]}>
+      <Flex m={[0, 0, 0, 7]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'column', 'row']} mt={[4, 4, 16, 4]}>
         <Box flex={1}
           minW={currentData.width > currentData.height ? "60%" : "40%"}
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}

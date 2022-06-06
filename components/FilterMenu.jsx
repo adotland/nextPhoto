@@ -51,7 +51,7 @@ export default function FilterMenu() {
       <Menu>
         <MenuButton
           as={Button}
-          rightIcon={<BsFilter />}
+          rightIcon={<BsFilter size={'1.4em'} />}
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "#191a1a")}
           py={1.5}

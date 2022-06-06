@@ -101,14 +101,14 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
       <Stack
         spacing={8}
         align="center"
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        direction={["column", "row", "row", "row"]}
+        justify={["center", "center", "flex-end", "flex-end"]}
+        direction={["column", "column", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
         <FilterMenu />
         <Search setNavbarIsOpen={setIsOpen} />
         <MenuItem to="/map">Map</MenuItem>
-        <MenuItem to="/featured" py={2}><FaDice /></MenuItem>
+        <MenuItem to="/featured" py={2}><FaDice size={'1.4em'} /></MenuItem>
         <MenuItem to="/about">About</MenuItem>
         <ColorModeToggle setIsOpen={setIsOpen}/>
       </Stack>
@@ -121,7 +121,7 @@ const NavBarContainer = ({ children, ...props }) => {
     <Flex
       as="nav"
       align="center"
-      justify="space-between"
+      justify={["space-between","space-between","space-around", "space-between"]}
       wrap="wrap"
       maxWidth="1500px"
       w="100%"
