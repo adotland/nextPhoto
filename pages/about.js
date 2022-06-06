@@ -47,9 +47,9 @@ export default function ({ statsObj }) {
         <Stats stats={statsObj} />
       </Box>
       <Box my={30} mx={'auto'} maxW={["90%", "90%", "90%", "50%"]}>
-        <Text mb={2}>I got more serious about cycling in 2020 as a way to get exercise and explore the city, and got the idea to ride to every park in the Seattle. I did not expect there to be over four hundred!</Text>
+        <Text mb={2}>I got more serious about cycling in 2020 as a way to get exercise and explore the city, and got the idea to ride to every park in the Seattle. I was a little surprised to find there was well over four hundred.</Text>
 
-        <Text mb={2}>Along the way, I learned about the P-Patches, so I also rode my bike to every <Link href={'/collection/p-patch'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>P-Patch</Text></a></Link>.</Text>
+        <Text mb={2}>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone <Link href={'/collection/p-patch'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>P-Patch</Text></a></Link> as well.</Text>
 
         <Text mb={2}>Along the way, I learned about the Port of Seattle owned parks, so I rode my bike to every <Link href={'/collection/extras'}><a><Text color={useColorModeValue('green.500', 'green.300')} as='span'>Port of Seattle owned park</Text></a></Link>.</Text>
 
