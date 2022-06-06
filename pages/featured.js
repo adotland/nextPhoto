@@ -1,10 +1,10 @@
 // import { useEffect, useState } from "react";
 import Gallery from "../components/Gallery";
-// import config from "../config";
+import config from "../config";
 
 // TODO 
 export async function getServerSideProps() {
-  const api_url = process.env.API_URL
+  const api_url = config.endpoints.api
   const response = await fetch(`${api_url}/api/featured/`)
   const { props } = await response.json()
   return {

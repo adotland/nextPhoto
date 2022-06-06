@@ -3,6 +3,7 @@ import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
 import MapFull from "../components/MapFull";
+import SEO from "../components/SEO/general";
 import { shuffle } from "../utils/helpers";
 
 export async function getStaticProps() {
@@ -100,23 +101,26 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
   }
 
   return (
-    <Box
-      mx={4}
-      mt={4}
-    >
-      <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
-      <Text
-        textAlign={'center'}
-        letterSpacing={'0.1em'}
-        fontWeight={'bold'}
-        pt={2}
-        color={useColorModeValue("white", "#555")}
-        backgroundColor={useColorModeValue("#777", "#eee")}
-        borderTop={'2px solid black'}
-        borderBottom={'2px solid black'}
-        pb={2}
-      >&uarr; Click and Drag to discover &darr;</Text>
-      <Carousel dataList={carouselDataList} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
-    </Box>
+    <>
+      <SEO />
+      <Box
+        mx={4}
+        mt={4}
+      >
+        <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
+        <Text
+          textAlign={'center'}
+          letterSpacing={'0.1em'}
+          fontWeight={'bold'}
+          pt={2}
+          color={useColorModeValue("white", "#555")}
+          backgroundColor={useColorModeValue("#777", "#eee")}
+          borderTop={'2px solid black'}
+          borderBottom={'2px solid black'}
+          pb={2}
+        >&uarr; Click and Drag to discover &darr;</Text>
+        <Carousel dataList={carouselDataList} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
+      </Box>
+    </>
   )
 }

@@ -5,7 +5,7 @@ export default function SEO() {
   const title = `${config.meta.title}`;
   const mainImage = `${config.meta.social.graphic}`;
   const description = title;
-  let url = `${config.meta.canonicalUrl}`;
+  let url = `${config.endpoints.canonical}`;
   return (
     <Head>
       <title>{title}</title>
@@ -13,7 +13,7 @@ export default function SEO() {
       <meta name="og:type" content="article" />
       <meta name="og:image" content={mainImage} />
       <meta name="og:url" content={url} />
-      <meta name="twitter:site" content={config.meta.social.twitter.id} />
+      <meta name="twitter:site" content={config.meta.social.twitter.site} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={mainImage} />

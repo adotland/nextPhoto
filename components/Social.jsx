@@ -2,10 +2,10 @@ import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import { BsReddit, BsTwitter } from "react-icons/bs";
 import config from "../config";
 
-export default function Social({ endpoint, takenAt }) {
+export default function Social({ path, takenAt }) {
 
   const buildTwitterLink = () => {
-    const url = encodeURIComponent(config.meta.canonicalUrl + endpoint);
+    const url = encodeURIComponent(config.endpoints.canonical + path);
     const tagline = encodeURIComponent(config.meta.social.tagline + (takenAt ? `, photo taken at ${takenAt}` : ''));
     const handle = encodeURIComponent(config.meta.social.twitter.handle);
 
@@ -13,7 +13,7 @@ export default function Social({ endpoint, takenAt }) {
   }
 
   const buildRedditLink = () => {
-    const url = encodeURIComponent(config.meta.canonicalUrl + endpoint);
+    const url = encodeURIComponent(config.endpoints.canonical + path);
     const title = encodeURIComponent(config.meta.social.hashtag);
     return `https://www.reddit.com/submit?url=${url}&title=${title}`
   }

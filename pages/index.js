@@ -1,6 +1,7 @@
 import { useColorModeValue, Box, Text, Flex, Link as ChakraLink } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import SEO from "../components/SEO/general";
 import { commonBlurImage, } from "../utils/helpers";
 
 function CollectionItemContainer({ children }) {
@@ -90,13 +91,16 @@ function FeaturedCollectionItem({ imageUrl }) {
 
 export default function () {
   return (
-    <Box>
-      <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' />
-      <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='__Alice-Ball-Park.jpg' />
-      <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl='mercer_park_North-Mercerdale-Hillside.jpg' />
-      <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" />
-      <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' />
-      <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' />
-    </Box>
+    <>
+      <SEO />
+      <Box>
+        <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' />
+        <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='__Alice-Ball-Park.jpg' />
+        <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl='mercer_park_North-Mercerdale-Hillside.jpg' />
+        <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" />
+        <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' />
+        <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' />
+      </Box>
+    </>
   )
 }

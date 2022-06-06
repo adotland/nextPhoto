@@ -5,7 +5,7 @@ export default function SEO({ data }) {
   const title = `${data.name} - ${config.meta.title}`;
   const mainImage = `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`;
   const description = title + (data.description ? ` - ${data.description}` : '');
-  let url = `${config.meta.canonicalUrl}` + (data?.slug ? `/${data.slug}` : '');
+  let url = `${config.endpoints.canonical}` + (data?.slug ? `/${data.slug}` : '');
   return (
     <Head>
       <title>{title}</title>
@@ -13,7 +13,7 @@ export default function SEO({ data }) {
       <meta name="og:type" content="article" />
       <meta name="og:image" content={mainImage} />
       <meta name="og:url" content={url} />
-      <meta name="twitter:site" content={config.meta.social.twitter.id} />
+      <meta name="twitter:site" content={config.meta.social.twitter.site} />
       <meta name="twitter:title" content={config.meta.title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={mainImage} />

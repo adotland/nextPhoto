@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
 import FilterTagClose from "./FilterTagClose";
-import SEO from "./SEO/home";
+import SEO from "./SEO/general";
 import styles from './Gallery.module.css'
 
 function FiltersRow({ filterColor, filterType }) {
