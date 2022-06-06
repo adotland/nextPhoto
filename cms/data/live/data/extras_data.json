@@ -20,13 +20,12 @@
     }
   },
   {
-    "id": 3,
-    "name": "Park at Bothell Landing",
-    "address": "9919 NE 180th St, Bothell, WA 98011",
-    "lat": "47.7582238",
-    "long": "-122.2076465",
-    "imageName": "bothel_Park-at-Bothell-Landing.jpg",
-    "slug": "bothel_park-at-bothell-landing",
+    "id": 1,
+    "name": "Scootie Brown Park",
+    "lat": "47.3146936",
+    "long": "-122.2122532",
+    "imageName": "auburn_Scootie-Brown-Park.jpg",
+    "slug": "auburn_scootie-brown-park",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
@@ -36,8 +35,8 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -61,15 +60,37 @@
     }
   },
   {
-    "id": 1,
-    "name": "Scootie Brown Park",
-    "lat": "47.3146936",
-    "long": "-122.2122532",
-    "imageName": "auburn_Scootie-Brown-Park.jpg",
-    "slug": "auburn_scootie-brown-park",
+    "id": 3,
+    "name": "Park at Bothell Landing",
+    "address": "9919 NE 180th St, Bothell, WA 98011",
+    "lat": "47.7582238",
+    "long": "-122.2076465",
+    "imageName": "bothel_Park-at-Bothell-Landing.jpg",
+    "slug": "bothel_park-at-bothell-landing",
     "ext": "jpg",
     "width": 4032,
     "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Old Bothell Walking Bridge",
+    "address": "9919 NE 180th St, Bothell, WA 98011",
+    "lat": "47.7582238",
+    "long": "-122.2076465",
+    "imageName": "bothel_Old-Bothell-Walking-Bridge.jpg",
+    "slug": "bothel_old-bothell-walking-bridge",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2791,
     "collection": "extras",
     "filters": {
       "weight": 100,
@@ -99,48 +120,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Old Bothell Walking Bridge",
-    "address": "9919 NE 180th St, Bothell, WA 98011",
-    "lat": "47.7582238",
-    "long": "-122.2076465",
-    "imageName": "bothel_Old-Bothell-Walking-Bridge.jpg",
-    "slug": "bothel_old-bothell-walking-bridge",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2791,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 10,
-    "name": "Log Boom Park",
-    "address": "17415 61st Ave NE, Kenmore, WA 98028",
-    "lat": "47.7574572",
-    "long": "-122.2645665",
-    "imageName": "kenmore_Log-Boom-Park.jpg",
-    "slug": "kenmore_log-boom-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 1419,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#78c8f8"
     }
   },
   {
@@ -184,6 +163,26 @@
     }
   },
   {
+    "id": 8,
+    "name": "Edmonds Public Fishing Pier",
+    "lat": "47.8110528",
+    "long": "-122.3865216",
+    "imageName": "edmonds_Edmonds-Public-Fishing-Pier.jpg",
+    "slug": "edmonds_edmonds-public-fishing-pier",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#485888"
+    }
+  },
+  {
     "id": 9,
     "name": "Marina Beach Park",
     "lat": "47.8050898",
@@ -204,23 +203,24 @@
     }
   },
   {
-    "id": 8,
-    "name": "Edmonds Public Fishing Pier",
-    "lat": "47.8110528",
-    "long": "-122.3865216",
-    "imageName": "edmonds_Edmonds-Public-Fishing-Pier.jpg",
-    "slug": "edmonds_edmonds-public-fishing-pier",
+    "id": 10,
+    "name": "Log Boom Park",
+    "address": "17415 61st Ave NE, Kenmore, WA 98028",
+    "lat": "47.7574572",
+    "long": "-122.2645665",
+    "imageName": "kenmore_Log-Boom-Park.jpg",
+    "slug": "kenmore_log-boom-park",
     "ext": "jpg",
     "width": 4032,
-    "height": 3024,
+    "height": 1419,
     "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
-      "domColor": "#485888"
+      "matchColor": "sky",
+      "domColor": "#78c8f8"
     }
   },
   {
@@ -346,27 +346,6 @@
     }
   },
   {
-    "id": 20,
-    "name": "Ballard (Hiram M. Chittenden) Locks",
-    "address": "3015 NW 54th St, Seattle, WA 98107",
-    "lat": "47.6666723",
-    "long": "-122.3981392",
-    "imageName": "military_Ballard-Hiram-M-Chittenden-Locks.jpg",
-    "slug": "military_ballard-hiram-m-chittenden-locks",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
     "id": 17,
     "name": "Juanita Bay Park",
     "address": "2201 Market St, Kirkland 98033",
@@ -405,6 +384,48 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8e8"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Carl S. English Jr. Botanical Gardens",
+    "address": "3015 NW 54th St, Seattle, WA 98107",
+    "lat": "47.66667229999999",
+    "long": "-122.3981392",
+    "imageName": "military_Carl-S-English-Jr-Botanical-Gardens.jpg",
+    "slug": "military_carl-s-english-jr-botanical-gardens",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282818"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Ballard (Hiram M. Chittenden) Locks",
+    "address": "3015 NW 54th St, Seattle, WA 98107",
+    "lat": "47.6666723",
+    "long": "-122.3981392",
+    "imageName": "military_Ballard-Hiram-M-Chittenden-Locks.jpg",
+    "slug": "military_ballard-hiram-m-chittenden-locks",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
     }
   },
   {
@@ -449,70 +470,7 @@
     }
   },
   {
-    "id": 26,
-    "name": "Duwamish River People’s Park and Shoreline Habitat",
-    "address": "8700 Dallas Ave S | Seattle, WA 98108",
-    "lat": "47.5265564",
-    "long": "-122.3116541",
-    "imageName": "port_Duwamish-River-Peoples-Park-and-Shoreline-Habitat.jpg",
-    "slug": "port_duwamish-river-peoples-park-and-shoreline-habitat",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2380,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": true,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#b8c8c8"
-    }
-  },
-  {
-    "id": 19,
-    "name": "Carl S. English Jr. Botanical Gardens",
-    "address": "3015 NW 54th St, Seattle, WA 98107",
-    "lat": "47.66667229999999",
-    "long": "-122.3981392",
-    "imageName": "military_Carl-S-English-Jr-Botanical-Gardens.jpg",
-    "slug": "military_carl-s-english-jr-botanical-gardens",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
-    }
-  },
-  {
-    "id": 29,
-    "name": "Jack Perry Memorial Park",
-    "address": "1700 E Marginal Way S, Seattle, WA 98134",
-    "lat": "47.5868864",
-    "long": "-122.3399469",
-    "imageName": "port_Jack-Perry-Memorial-Park.jpg",
-    "slug": "port_jack-perry-memorial-park",
-    "ext": "jpg",
-    "width": 3622,
-    "height": 2037,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
-    }
-  },
-  {
-    "id": 23,
+    "id": 24,
     "name": "Wetmore Community Farm",
     "address": "3025 S Estelle St, Seattle, WA 98144",
     "lat": "47.57206710000001",
@@ -534,6 +492,27 @@
   },
   {
     "id": 25,
+    "name": "Bridge Gear Park",
+    "address": "Southeast of 3431 11th Ave SW, Seattle, WA 98134",
+    "lat": "47.57251489999999",
+    "long": "-122.3504846",
+    "imageName": "port_Bridge-Gear-Park.jpg",
+    "slug": "port_bridge-gear-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 1965,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282828"
+    }
+  },
+  {
+    "id": 26,
     "name": "Centennial Park",
     "address": "2711 Alaskan Way, Seattle, WA 98121",
     "lat": "47.6138725",
@@ -555,6 +534,27 @@
   },
   {
     "id": 27,
+    "name": "Duwamish River People's Park and Shoreline Habitat",
+    "address": "8700 Dallas Ave S | Seattle, WA 98108",
+    "lat": "47.5265564",
+    "long": "-122.3116541",
+    "imageName": "port_Duwamish-River-Peoples-Park-and-Shoreline-Habitat.jpg",
+    "slug": "port_duwamish-river-peoples-park-and-shoreline-habitat",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2380,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#b8c8c8"
+    }
+  },
+  {
+    "id": 28,
     "name": "həʔapus Village Park and Shoreline Habitat",
     "address": "4500 Duwamish Trail | Seattle, WA 98106",
     "lat": "47.5619205",
@@ -575,28 +575,7 @@
     }
   },
   {
-    "id": 35,
-    "name": "Terminal 91 Bike Trail (Elliott Bay Trail)",
-    "address": "2001 W Garfield St",
-    "lat": "47.6328088",
-    "long": "-122.3803383",
-    "imageName": "port_Terminal-91-Bike-Trail-Elliott-Bay-Trail.jpg",
-    "slug": "port_terminal-91-bike-trail-elliott-bay-trail",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 1545,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 28,
+    "id": 29,
     "name": "Jack Block Park",
     "address": "2130 Harbor Ave SW, Seattle, WA 98126",
     "lat": "47.5848951",
@@ -617,37 +596,16 @@
     }
   },
   {
-    "id": 34,
-    "name": "Terminal 18 Park",
-    "address": "3401 Klickitat Ave SW Seattle, WA 98134",
-    "lat": "47.5725588",
-    "long": "-122.3537989",
-    "imageName": "port_Terminal-18-Park.jpg",
-    "slug": "port_terminal-18-park",
+    "id": 30,
+    "name": "Jack Perry Memorial Park",
+    "address": "1700 E Marginal Way S, Seattle, WA 98134",
+    "lat": "47.5868864",
+    "long": "-122.3399469",
+    "imageName": "port_Jack-Perry-Memorial-Park.jpg",
+    "slug": "port_jack-perry-memorial-park",
     "ext": "jpg",
-    "width": 4032,
-    "height": 2378,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": true,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 32,
-    "name": "Seattle Fishermen's Memorial",
-    "address": "3919 18th Avenue West, Seattle, WA 98119",
-    "lat": "47.6553825",
-    "long": "-122.3800456",
-    "imageName": "port_Seattle-Fishermens-Memorial.jpg",
-    "slug": "port_seattle-fishermens-memorial",
-    "ext": "jpg",
-    "width": 2985,
-    "height": 4032,
+    "width": 3622,
+    "height": 2037,
     "collection": "extras",
     "filters": {
       "weight": 100,
@@ -659,7 +617,7 @@
     }
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Salmon Cove Park and Shoreline Habitat",
     "address": "Salmon Cove Park and Shoreline Habitat | Tukwila, WA 98168, USA",
     "lat": "47.5112685",
@@ -680,279 +638,7 @@
     }
   },
   {
-    "id": 36,
-    "name": "t̓uʔəlaltxʷ Village Park and Shoreline Habitat",
-    "address": "4260 W Marginal Way SW | Seattle, WA 98106 ",
-    "lat": "47.5637505",
-    "long": "-122.3505911",
-    "imageName": "port_tulaltx-Village-Park-and-Shoreline-Habitat.jpg",
-    "slug": "port_tulaltx-village-park-and-shoreline-habitat",
-    "ext": "jpg",
-    "width": 4000,
-    "height": 2980,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#182828"
-    }
-  },
-  {
-    "id": 39,
-    "name": "Duwamish Hill Preserve",
-    "address": "3800 S 115th St, Tukwila, WA 98168",
-    "lat": "47.5010549",
-    "long": "-122.2866179",
-    "imageName": "private_Duwamish-Hill-Preserve.jpg",
-    "slug": "private_duwamish-hill-preserve",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 8000,
-      "live": true,
-      "featured": true,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#181828"
-    }
-  },
-  {
-    "id": 37,
-    "name": "Streissguth Gardens",
-    "address": "E Blaine St & 10th Ave E, Seattle, WA 98102",
-    "lat": "47.6350326",
-    "long": "-122.3201059",
-    "imageName": "private_Streissguth-Gardens.jpg",
-    "slug": "private_streissguth-gardens",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 40,
-    "name": "Gene Coulon Park",
-    "lat": "47.5068943",
-    "long": "-122.2042151",
-    "imageName": "renton_Gene-Coulon-Park.jpg",
-    "slug": "renton_gene-coulon-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2498,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282818"
-    }
-  },
-  {
-    "id": 38,
-    "name": "WATERFALL GARDEN PARK",
-    "address": "219 2nd Ave S, Seattle, WA 98104",
-    "lat": "47.6002312",
-    "long": "-122.3320588",
-    "imageName": "private_WATERFALL-GARDEN-PARK.jpg",
-    "slug": "private_waterfall-garden-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": 42,
-    "name": "Meadowbrook Pond",
-    "address": "10538 39th Ave N, seattle wa",
-    "lat": "47.7057794",
-    "long": "-122.28678",
-    "imageName": "spu_Meadowbrook-Pond.jpg",
-    "slug": "spu_meadowbrook-pond",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2895,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#98b8d8"
-    }
-  },
-  {
-    "id": 43,
-    "name": "Denny Substation",
-    "address": "1250 Denny Way, Seattle, WA 98109",
-    "lat": "47.6195096",
-    "long": "-122.3339596",
-    "imageName": "spu_Denny-Substation.jpg",
-    "slug": "spu_denny-substation",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#081818"
-    }
-  },
-  {
-    "id": 44,
-    "name": "Seattle Chinese Garden",
-    "address": "5640 16th Ave. SW, Seattle, 98106",
-    "lat": "47.5519452",
-    "long": "-122.3544895",
-    "imageName": "ssc_Seattle-Chinese-Garden.jpg",
-    "slug": "ssc_seattle-chinese-garden",
-    "ext": "jpg",
-    "width": 4025,
-    "height": 2264,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8d8d8"
-    }
-  },
-  {
-    "id": 24,
-    "name": "Bridge Gear Park",
-    "address": "Southeast of 3431 11th Ave SW, Seattle, WA 98134",
-    "lat": "47.57251489999999",
-    "long": "-122.3504846",
-    "imageName": "port_Bridge-Gear-Park.jpg",
-    "slug": "port_bridge-gear-park",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 1965,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "bold",
-      "domColor": "#282828"
-    }
-  },
-  {
-    "id": 41,
-    "name": "Dragonfly Pavilion",
-    "address": "4111 26th Ave SW, Seattle, WA 98106",
-    "lat": "47.566448",
-    "long": "-122.365806",
-    "imageName": "spu_Dragonfly-Pavilion.jpg",
-    "slug": "spu_dragonfly-pavilion",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#4898b8"
-    }
-  },
-  {
-    "id": 49,
-    "name": "Heart of Phinney Park",
-    "address": "6532 Phinney Ave N, Seattle, WA 98103",
-    "lat": "47.6771071",
-    "long": "-122.3539963",
-    "imageName": "unknown_Heart-of-Phinney-Park.webp",
-    "slug": "unknown_heart-of-phinney-park-anim",
-    "ext": "webp",
-    "width": 475,
-    "height": 634,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "animated",
-      "matchColor": "bold",
-      "domColor": "#181818"
-    }
-  },
-  {
-    "id": 46,
-    "name": "Duwamish Gardens Park",
-    "address": "Duwamish Trail, Tukwila, WA 98108",
-    "lat": "47.5268949",
-    "long": "-122.3229569",
-    "imageName": "tukwila_Duwamish-Gardens-Park.jpg",
-    "slug": "tukwila_duwamish-gardens-park",
-    "ext": "jpg",
-    "width": 4036,
-    "height": 2270,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#68b8e8"
-    }
-  },
-  {
-    "id": 47,
-    "name": "5th and Lynn Park",
-    "address": "2301 5th Ave N, Seattle, WA 98109",
-    "lat": "47.6391873",
-    "long": "-122.3472379",
-    "imageName": "unknown_5th-and-Lynn-Park.jpg",
-    "slug": "unknown_5th-and-lynn-park",
-    "ext": "jpg",
-    "width": 3993,
-    "height": 1922,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#4888b8"
-    }
-  },
-  {
-    "id": 31,
+    "id": 32,
     "name": "sbəq̓ʷaʔ Park and Shoreline Habitat",
     "address": "4663 Diagonal Ave S, Seattle, WA 98134",
     "lat": "47.5619554",
@@ -966,7 +652,7 @@
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": false,
+      "featured": true,
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
@@ -974,6 +660,27 @@
   },
   {
     "id": 33,
+    "name": "Seattle Fishermen's Memorial",
+    "address": "3919 18th Avenue West, Seattle, WA 98119",
+    "lat": "47.6553825",
+    "long": "-122.3800456",
+    "imageName": "port_Seattle-Fishermens-Memorial.jpg",
+    "slug": "port_seattle-fishermens-memorial",
+    "ext": "jpg",
+    "width": 2985,
+    "height": 4032,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8e8e8"
+    }
+  },
+  {
+    "id": 34,
     "name": "t̓ałt̓ałucid Park and Shoreline Habitat",
     "address": "7797 8th Ave South | Seattle, WA 98108",
     "lat": "47.5326922",
@@ -994,7 +701,321 @@
     }
   },
   {
+    "id": 35,
+    "name": "Terminal 18 Park",
+    "address": "3401 Klickitat Ave SW Seattle, WA 98134",
+    "lat": "47.5725588",
+    "long": "-122.3537989",
+    "imageName": "port_Terminal-18-Park.jpg",
+    "slug": "port_terminal-18-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2378,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Terminal 91 Bike Trail (Elliott Bay Trail)",
+    "address": "2001 W Garfield St",
+    "lat": "47.6328088",
+    "long": "-122.3803383",
+    "imageName": "port_Terminal-91-Bike-Trail-Elliott-Bay-Trail.jpg",
+    "slug": "port_terminal-91-bike-trail-elliott-bay-trail",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 1545,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 37,
+    "name": "t̓uʔəlaltxʷ Village Park and Shoreline Habitat",
+    "address": "4260 W Marginal Way SW | Seattle, WA 98106 ",
+    "lat": "47.5637505",
+    "long": "-122.3505911",
+    "imageName": "port_tulaltx-Village-Park-and-Shoreline-Habitat.jpg",
+    "slug": "port_tulaltx-village-park-and-shoreline-habitat",
+    "ext": "jpg",
+    "width": 4000,
+    "height": 2980,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#182828"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Streissguth Gardens",
+    "address": "E Blaine St & 10th Ave E, Seattle, WA 98102",
+    "lat": "47.6350326",
+    "long": "-122.3201059",
+    "imageName": "private_Streissguth-Gardens.jpg",
+    "slug": "private_streissguth-gardens",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 39,
+    "name": "WATERFALL GARDEN PARK",
+    "address": "219 2nd Ave S, Seattle, WA 98104",
+    "lat": "47.6002312",
+    "long": "-122.3320588",
+    "imageName": "private_WATERFALL-GARDEN-PARK.jpg",
+    "slug": "private_waterfall-garden-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Duwamish Hill Preserve",
+    "address": "3800 S 115th St, Tukwila, WA 98168",
+    "lat": "47.5010549",
+    "long": "-122.2866179",
+    "imageName": "private_Duwamish-Hill-Preserve.jpg",
+    "slug": "private_duwamish-hill-preserve",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 8000,
+      "live": true,
+      "featured": true,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#181828"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Gene Coulon Park",
+    "lat": "47.5068943",
+    "long": "-122.2042151",
+    "imageName": "renton_Gene-Coulon-Park.jpg",
+    "slug": "renton_gene-coulon-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2498,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#282818"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Dragonfly Pavilion",
+    "address": "4111 26th Ave SW, Seattle, WA 98106",
+    "lat": "47.566448",
+    "long": "-122.365806",
+    "imageName": "spu_Dragonfly-Pavilion.jpg",
+    "slug": "spu_dragonfly-pavilion",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#4898b8"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Meadowbrook Pond",
+    "address": "10538 39th Ave N, seattle wa",
+    "lat": "47.7057794",
+    "long": "-122.28678",
+    "imageName": "spu_Meadowbrook-Pond.jpg",
+    "slug": "spu_meadowbrook-pond",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2895,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#98b8d8"
+    }
+  },
+  {
+    "id": 44,
+    "name": "North Transfer Station Playground",
+    "address": "N 35th St & Carr Pl N, Seattle, WA 98103",
+    "lat": "47.6492127",
+    "long": "-122.3393676",
+    "imageName": "spu_North-Transfer-Station-Playground.jpg",
+    "slug": "spu_north-transfer-station-playground",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#88a8b8"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Denny Substation",
+    "address": "1250 Denny Way, Seattle, WA 98109",
+    "lat": "47.6195096",
+    "long": "-122.3339596",
+    "imageName": "spu_Denny-Substation.jpg",
+    "slug": "spu_denny-substation",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": true,
+      "type": "still",
+      "matchColor": "bold",
+      "domColor": "#081818"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Seattle Chinese Garden",
+    "address": "5640 16th Ave. SW, Seattle, 98106",
+    "lat": "47.5519452",
+    "long": "-122.3544895",
+    "imageName": "ssc_Seattle-Chinese-Garden.jpg",
+    "slug": "ssc_seattle-chinese-garden",
+    "ext": "jpg",
+    "width": 4025,
+    "height": 2264,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8d8d8"
+    }
+  },
+  {
+    "id": 47,
+    "name": "South Seattle College Arboretum ",
+    "address": "6000 16th Ave SW, Seattle, WA 98106",
+    "lat": "47.5482796",
+    "long": "-122.3522151",
+    "imageName": "ssc_South-Seattle-College-Arboretum.jpg",
+    "slug": "ssc_south-seattle-college-arboretum",
+    "ext": "jpg",
+    "width": 3024,
+    "height": 4032,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#f8f8f8"
+    }
+  },
+  {
     "id": 48,
+    "name": "Duwamish Gardens Park",
+    "address": "Duwamish Trail, Tukwila, WA 98108",
+    "lat": "47.5268949",
+    "long": "-122.3229569",
+    "imageName": "tukwila_Duwamish-Gardens-Park.jpg",
+    "slug": "tukwila_duwamish-gardens-park",
+    "ext": "jpg",
+    "width": 4036,
+    "height": 2270,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#68b8e8"
+    }
+  },
+  {
+    "id": 49,
+    "name": "5th and Lynn Park",
+    "address": "2301 5th Ave N, Seattle, WA 98109",
+    "lat": "47.6391873",
+    "long": "-122.3472379",
+    "imageName": "unknown_5th-and-Lynn-Park.jpg",
+    "slug": "unknown_5th-and-lynn-park",
+    "ext": "jpg",
+    "width": 3993,
+    "height": 1922,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#4888b8"
+    }
+  },
+  {
+    "id": 50,
     "name": "Madison Valley Stormwater Storage Facility",
     "address": "30th Ave E, Seattle, WA 98112",
     "lat": "47.6219647",
@@ -1015,7 +1036,7 @@
     }
   },
   {
-    "id": 49,
+    "id": 51,
     "name": "Heart of Phinney Park",
     "address": "6532 Phinney Ave N, Seattle, WA 98103",
     "lat": "47.6771071",
@@ -1036,44 +1057,24 @@
     }
   },
   {
-    "id": 50,
-    "name": "Union Bay Natural Area",
-    "address": "3501 NE 41st St, Seattle, WA 98105",
-    "lat": "47.6579199",
-    "long": "-122.2905517",
-    "imageName": "uw_Union-Bay-Natural-Area.jpg",
-    "slug": "uw_union-bay-natural-area",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "extras",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#3898a8"
-    }
-  },
-  {
     "id": 51,
-    "name": "KVI Beach",
-    "lat": "47.421863",
-    "long": "-122.4319717",
-    "imageName": "vashon_KVI-Beach.jpg",
-    "slug": "vashon_kvi-beach",
-    "ext": "jpg",
-    "width": 3024,
-    "height": 4032,
+    "name": "Heart of Phinney Park",
+    "address": "6532 Phinney Ave N, Seattle, WA 98103",
+    "lat": "47.6771071",
+    "long": "-122.3539963",
+    "imageName": "unknown_Heart-of-Phinney-Park.webp",
+    "slug": "unknown_heart-of-phinney-park-anim",
+    "ext": "webp",
+    "width": 475,
+    "height": 634,
     "collection": "extras",
     "filters": {
       "weight": 100,
       "live": true,
       "featured": false,
-      "type": "still",
-      "matchColor": "sky",
-      "domColor": "#3888c8"
+      "type": "animated",
+      "matchColor": "bold",
+      "domColor": "#181818"
     }
   },
   {
@@ -1097,13 +1098,33 @@
     }
   },
   {
-    "id": 45,
-    "name": "South Seattle College Arboretum ",
-    "address": "6000 16th Ave SW, Seattle, WA 98106",
-    "lat": "47.5482796",
-    "long": "-122.3522151",
-    "imageName": "ssc_South-Seattle-College-Arboretum.jpg",
-    "slug": "ssc_south-seattle-college-arboretum",
+    "id": 53,
+    "name": "Union Bay Natural Area",
+    "address": "3501 NE 41st St, Seattle, WA 98105",
+    "lat": "47.6579199",
+    "long": "-122.2905517",
+    "imageName": "uw_Union-Bay-Natural-Area.jpg",
+    "slug": "uw_union-bay-natural-area",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#3898a8"
+    }
+  },
+  {
+    "id": 54,
+    "name": "KVI Beach",
+    "lat": "47.421863",
+    "long": "-122.4319717",
+    "imageName": "vashon_KVI-Beach.jpg",
+    "slug": "vashon_kvi-beach",
     "ext": "jpg",
     "width": 3024,
     "height": 4032,
@@ -1113,8 +1134,50 @@
       "live": true,
       "featured": false,
       "type": "still",
+      "matchColor": "sky",
+      "domColor": "#3888c8"
+    }
+  },
+  {
+    "id": 55,
+    "name": "O O Denny Park",
+    "address": "12302 Holmes Point Dr NE, Kirkland, WA 98034",
+    "lat": "47.7091246",
+    "long": "-122.2511114",
+    "imageName": "kirkland_O-O-Denny-Park.jpg",
+    "slug": "kirkland_o-o-denny-park",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
       "matchColor": "light",
-      "domColor": "#f8f8f8"
+      "domColor": "#d8d8d8"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Danny Woo Garden",
+    "address": "701 South Main St, Seattle, Washington",
+    "lat": "47.5998442",
+    "long": "-122.3234032",
+    "imageName": "non-profit_Danny-Woo-Garden.jpg",
+    "slug": "non-profit_danny-woo-garden",
+    "ext": "jpg",
+    "width": 7495,
+    "height": 1933,
+    "collection": "extras",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "sky",
+      "domColor": "#a8b8c8"
     }
   }
 ]

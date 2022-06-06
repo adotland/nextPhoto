@@ -396,7 +396,7 @@ const ManageData = {
       }
     })
     await ff.write(`export const dataList = ${JSON.stringify(searchApiData.sort())}`, __dirname, `../../pages/api/park/park_search_data.js`);
-    await ff.write(`export const dataList = ${JSON.stringify(featuredData)}`, __dirname, `../../pages/featured/featured_data.js`);
+    await ff.write(`export const dataList = ${JSON.stringify(featuredData)}`, __dirname, `../../pages/api/featured/featured_data.js`);
     // await ff.write(JSON.stringify(featuredData), __dirname, `../../public/featured_data.json`);
   }
 

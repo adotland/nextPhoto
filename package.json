@@ -14,13 +14,14 @@
     "uf-live": "node ./cms/scripts/processData.js -x updateFilter -f live",
     "uf-featured": "node ./cms/scripts/processData.js -x updateFilter -f featured",
     "uf-all": "node ./cms/scripts/processData.js -x updateAllFilters",
-    "reProcessDataFull": "node ./cms/scripts/processData.js -x main && npm run uf-matchColor",
     "imagesList": "node ./cms/scripts/processImages.js -x getList",
     "processRecent": "node ./cms/scripts/processImages.js -x processRecent",
     "processStills": "node ./cms/scripts/processImages.js -x processStills",
     "processFilteredStills": "node ./cms/scripts/processImages.js -x processFilteredStills",
     "processGifs": "node ./cms/scripts/processImages.js -x processGifs",
-    "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames"
+    "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames",
+    "updateApiData": "node cms/scripts/processData.js -x getApiData",
+    "reProcessDataFull": "npm run processData && npm run uf-matchColor && npm run updateApiData"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.1",
