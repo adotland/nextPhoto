@@ -84,9 +84,9 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                 <Link href={`/park/${data.slug}`}>
                   <a>
                     <Button
-                      colorScheme="gray"
+                      colorScheme={useColorModeValue("blackAlpha", "green",)}
                       fontWeight="bold"
-                      textColor={useColorModeValue("blackAlpha.800", "white",)}
+                      // textColor={useColorModeValue("blackAlpha.800", "white",)}
                       fontFamily='Open Sans'
                       size="sm"
                       // transform={'skew(-21deg)'}
