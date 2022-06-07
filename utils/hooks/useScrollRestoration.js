@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import Router from 'next/router';
 
-const allowList = ['/park/[slug]'];
+const allowList = ['/park/[slug]', '/featured'];
 
 function saveScrollPos(url) {
   const scrollPos = { x: window.scrollX, y: window.scrollY };
