@@ -16,7 +16,7 @@ export default class Document extends NextDocument {
   render() {
     let csp = `default-src 'self'; img-src https://*.jawg.io 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://vitals.vercel-insights.com;`
     if (process.env.NODE_ENV === 'development') {
-      csp = `default-src 'self'; img-src https://*.jawg.io 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline' 'unsafe-eval' 'self';  connect-src 'self' https://vitals.vercel-insights.com;`
+      csp = `default-src 'self'; img-src https://*.jawg.io 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://vitals.vercel-insights.com;`
     }
 
 // ${cspHashOf(NextScript.getInlineScriptSource(this.props))}
