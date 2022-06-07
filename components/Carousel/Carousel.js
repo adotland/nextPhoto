@@ -50,7 +50,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
               <VStack mb={6}>
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
-                  textAlign="left"
+                  textAlign="center"
                   w="full"
                   mb={2}
                   textColor={useColorModeValue("brand.700", "brand.200")}
