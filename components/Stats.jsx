@@ -47,7 +47,7 @@ export default function Stats({ stats }) {
         </h2>
         <AccordionPanel pb={4}>
           <Wrap spacing='20px' justify='center'>
-            <ParkStat name={'Total Parks Visited'} data={stats.amount.all} link={'/all'} />
+            <ParkStat name={'Total Parks Visited'} data={stats.amount.all} link={'/map'} />
             <ParkStat name={'Seattle City'} data={stats.amount.seattle} link={'/collection/seattle'} />
             <ParkStat name={'Seattle Other'} data={stats.amount['extras']} link={'/collection/extras'} />
             <ParkStat name={'P-Patches'} data={stats.amount['p-patch']} link={'/collection/p-patch'} />

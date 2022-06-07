@@ -9,6 +9,7 @@ export default function SEO() {
   return (
     <Head>
       <title>{title}</title>
+      <link rel="canonical" href={url} />
       <meta name="og:title" content={title} />
       <meta name="og:type" content="article" />
       <meta name="og:image" content={mainImage} />
