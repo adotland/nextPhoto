@@ -42,7 +42,7 @@ export default function ({ statsObj }) {
       <SEO />
       <Box
         mx={4}
-        mt={4}
+        mt={[4, 14, 14, 4]}
       >
         <Stats stats={statsObj} />
       </Box>

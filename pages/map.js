@@ -105,7 +105,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
       <SEO />
       <Box
         mx={4}
-        mt={4}
+        mt={[4, 14, 14, 4]}
       >
         <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
         <Text

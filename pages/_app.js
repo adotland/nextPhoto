@@ -7,7 +7,7 @@ import '@fontsource/open-sans/700.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import NProgress from 'nprogress'
-import '../public/nprogress.css'
+import '../public/global.css'
 import useScrollRestoration from '../utils/hooks/useScrollRestoration';
 
 function App({ Component, pageProps }) {

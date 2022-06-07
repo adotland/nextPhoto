@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FilterTagClose({ type, value }) {
   return (
-    <Link href={'/'}>
+    <Link href={'/all'}>
       <a>
         <Tag
           bg={useColorModeValue('blackAlpha.400', 'whiteAlpha.700')}

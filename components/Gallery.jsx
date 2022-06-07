@@ -27,7 +27,7 @@ function FiltersRow({ filterColor, filterType }) {
 export default function Gallery({ dataList, filterColor, filterImageType }) {
 
   return (
-    <>
+    <Box mt={[4, 4, 14, 4]} >
       <SEO />
       <FiltersRow filterColor={filterColor} filterType={filterImageType} />
       <Box
@@ -48,8 +48,8 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                     className={styles.galleryContainer}
                   >
                     <Box
-                    className={styles.galleryOverlay}
-                    bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')}
+                      className={styles.galleryOverlay}
+                      bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')}
                     />
                     <Image
                       key={index}
@@ -70,7 +70,7 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                       className={styles.galleryCaption}
                     >
                       <Text
-                      color={useColorModeValue('black.100', 'white.100')}
+                        color={useColorModeValue('black.100', 'white.100')}
                       >{data.name}</Text>
                     </Box>
                   </Box>
@@ -81,6 +81,6 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
             <Text>No Parks matching this filter</Text>
         }
       </Box>
-    </>
+    </Box>
   );
 }

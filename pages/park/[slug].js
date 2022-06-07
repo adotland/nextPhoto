@@ -27,8 +27,8 @@ export async function getStaticProps({ params: { slug } }) {
   const currentData = dataList.filter(d => d.slug == slug).pop();
   let related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg'))
-    // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
-  related = related.sort(byWeight).slice(0,3);
+  // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
+  related = related.sort(byWeight).slice(0, 3);
   return {
     props: {
       currentData,
@@ -49,34 +49,47 @@ export default function ({ currentData, related }) {
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
           {ext === 'webp' ?
-          <Box maxW={478} mx={'auto'}>
-            <Image
-              key={currentData.id}
-              src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
-              alt={currentData.name ?? "image"}
-              layout="responsive"
-              width={currentData.width}
-              height={currentData.height}
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
-              priority
-            /></Box>
+            <Box maxW={478} mx={'auto'} boxShadow={'lg'}>
+              <Image
+                key={currentData.id}
+                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
+                alt={currentData.name ?? "image"}
+                layout="responsive"
+                width={currentData.width}
+                height={currentData.height}
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
+                priority
+              />
+            </Box>
             :
-            <Image
-              key={currentData.id}
-              src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
-              alt={currentData.name ?? "image"}
-              layout="responsive"
-              width={currentData.width}
-              height={currentData.height}
-              // sizes="50vw"
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
-              priority
-            />
+            <Box boxShadow={'lg'}>
+              {/* <Box style={{boxShadow: `0px 0px 3px 0px ${currentData.filters.domColor}`}}> */}
+              <Image
+                key={currentData.id}
+                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
+                alt={currentData.name ?? "image"}
+                layout="responsive"
+                width={currentData.width}
+                height={currentData.height}
+                // sizes="50vw"
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
+                priority
+              />
+            </Box>
           }
         </Box>
-        <Details data={currentData} />
+        <Details
+          data={currentData}
+          textAlign={['center', 'center', 'center', 'left']}
+          lineHeight={10}
+          mt={["2em", "1.5em", "1em", 0]}
+          ml={[0, 0, 0, 10]}
+          minW="20rem"
+          // maxW={["100%", "100%", "100%", "40rem"]}
+          width={["100%", "100%", "100%", "40rem"]}
+          />
       </Flex>
       <RelatedImages dataList={related} />
     </>

@@ -1,11 +1,12 @@
-import { Box, Heading, Text, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, Heading, Text, Link as ChakraLink, Flex } from "@chakra-ui/react";
 import Link from "next/link";
 import FilterDisplay from "./FilterDisplay";
 import Map from './Map';
 import styles from './Details.module.css';
 import Social from "./Social";
+import { MdCollections } from 'react-icons/md'
 
-export default function Details({ data }) {
+export default function Details({ data, ...props }) {
   const filterColor = data.filters?.matchColor
   const filterType = data.filters?.type
   const filterFeatured = data.filters?.featured
@@ -17,17 +18,16 @@ export default function Details({ data }) {
     collection = 'Seattle'
   }
   return (
-    <Box
-      textAlign={['center', 'center', 'center', 'left']}
-      lineHeight={10}
-      mt={["2em", "1.5em", "1em", 0]}
-      ml={[0, 0, 0, 10]}
-      minW="20rem"
-    >
-      <Heading>{data.name}</Heading>
+    <Box {...props}>
+      <Heading pb={3}>{data.name}</Heading>
       <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
-          <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>{collection} Collection</Heading>
+          <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>
+            <Flex justifyContent={['center', 'center', 'center', 'flex-start']}>
+              <Text mr={2}>{collection} Collection</Text>
+              <MdCollections />
+            </Flex>
+          </Heading>
         </a>
       </Link>
       {data.link && <ChakraLink href={data.link}>{data.link}</ChakraLink>}

@@ -108,7 +108,7 @@ export default function Search({ setNavbarIsOpen }) {
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} isCentered={true} initialFocusRef={initialRef}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent bg={useColorModeValue('whiteAlpha.800', 'blackAlpha.800')}>
           <ModalHeader>Park Search</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
