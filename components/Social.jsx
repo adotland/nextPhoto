@@ -6,7 +6,8 @@ export default function Social({ path, takenAt }) {
 
   const buildTwitterLink = () => {
     const url = encodeURIComponent(config.endpoints.canonical + path);
-    const tagline = encodeURIComponent(config.meta.social.tagline + (takenAt ? `, photo taken at ${takenAt}` : ''));
+    // const tagline = encodeURIComponent(config.meta.social.tagline + (takenAt ? `, photo taken at ${takenAt}` : ''));
+    const tagline = encodeURIComponent(`photo taken at ${takenAt}`);
     const handle = encodeURIComponent(config.meta.social.twitter.handle);
 
     return `https://twitter.com/intent/tweet?hashtags=theParkandtheBike&original_referer=${url}&text=${tagline}&url=${url}&via=${handle}`

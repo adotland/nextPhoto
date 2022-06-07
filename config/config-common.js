@@ -10,7 +10,7 @@ const configCommon = {
         site: "@TheParkAndTheB1",
         handle: "TheParkAndTheB1",
       },
-      tagline: 'Nice Park, Nice Bike',
+      tagline: '',
       hashtag: '#theParkandTheBike',
       graphic:
         `${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/social/default-social-graphic.jpg`,
