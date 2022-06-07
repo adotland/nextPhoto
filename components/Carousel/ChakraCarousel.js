@@ -202,6 +202,7 @@ const Slider = ({
           color="gray.200"
           variant="link"
           minW={0}
+          aria-label='scroll left'
         >
           <ChevronLeftIcon boxSize={9} />
         </Button>
@@ -218,6 +219,7 @@ const Slider = ({
               backgroundColor: "gray.400"
             }
           }}
+          aria-label='progress bar'
         />
 
         <Button
@@ -228,6 +230,7 @@ const Slider = ({
           variant="link"
           zIndex={2}
           minW={0}
+          aria-label='scroll right'
         >
           <ChevronRightIcon boxSize={9} />
         </Button>

@@ -1,5 +1,5 @@
 
-import { Box, Tag, TagCloseButton, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
@@ -57,7 +57,7 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                         `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}` :
                         `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/t_${data.imageName}`
                       }
-                      alt={data.name || "image"}
+                      alt={data.name ? `image of ${data.name}` : "image"}
                       layout="responsive"
                       width={data.width}
                       height={data.height}

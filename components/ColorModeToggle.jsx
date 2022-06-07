@@ -15,7 +15,7 @@ export default function ColorModeToggle({ setIsOpen }) {
         <FormLabel htmlFor='colorModeToggle' mb='0' cursor={'pointer'}>
           {colorMode === 'light' ? <BsFillCircleFill /> : <BsMoonFill />}
         </FormLabel>
-        <Switch id='colorModeToggle' size={'md'} onChange={handleChange} colorScheme='green' />
+        <Switch id='colorModeToggle' size={'md'} onChange={handleChange} colorScheme='green' title='colorModeToggle' />
       </FormControl>
     </Box>
   )

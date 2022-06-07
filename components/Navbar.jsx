@@ -71,16 +71,16 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
   );
 };
 
-const MenuItem = ({ children, to = "/", py}) => {
+const MenuItem = ({ children, to = "/", name}) => {
   return (
     <Link href={to}>
-      <a>
+      <a aria-label={name}>
         <Text
           display="block"
           fontFamily='Open Sans'
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "#191a1a")}
-          py={py || 1}
+          py={1}
           px={2}
           // transform={'skew(-21deg)'}
           _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
@@ -107,9 +107,9 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
       >
         <FilterMenu />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItem to="/map">Map</MenuItem>
-        <MenuItem to="/featured"><FaDice size={'1.4em'} /></MenuItem>
-        <MenuItem to="/about">About</MenuItem>
+        <MenuItem to="/map" name="map">Map</MenuItem>
+        <MenuItem to="/featured" name="featured"><FaDice size={'1.4em'} /></MenuItem>
+        <MenuItem to="/about" name="about">About</MenuItem>
         <ColorModeToggle setIsOpen={setIsOpen}/>
       </Stack>
     </Box>

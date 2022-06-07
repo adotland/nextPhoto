@@ -62,7 +62,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   <Image
                     key={index}
                     src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
-                    alt={data.name || "image"}
+                    alt={data.name ? `image of ${data.name}` : "image"}
                     layout="fill"
                     objectFit="contain"
                   />

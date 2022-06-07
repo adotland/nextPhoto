@@ -5,7 +5,7 @@ import { BsGithub, BsTwitter } from "react-icons/bs"
 function Footer() {
   return (
     <Box
-      color='gray.600'
+      color={useColorModeValue('gray.800', 'gray.300')}
     >
       <Flex
         bgColor={useColorModeValue("gray.200", "blackAlpha.300")}
@@ -16,12 +16,12 @@ function Footer() {
         &copy; {new Date().getFullYear()} TheParkAndTheBike
         <Flex justifyContent={'flex-end'}>
           <Box ml={5}>
-            <Link href="https://twitter.com/TheParkAndTheB1" target={'_blank'}>
+            <Link href="https://twitter.com/TheParkAndTheB1" target={'_blank'} title='twitter'>
               <BsTwitter />
             </Link>
           </Box>
           <Box ml={5}>
-            <Link href="https://github.com/adotland" target={'_blank'}>
+            <Link href="https://github.com/adotland" target={'_blank'} title='github'>
               <BsGithub />
             </Link>
           </Box>

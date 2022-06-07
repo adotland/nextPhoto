@@ -1,13 +1,13 @@
-import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function Logo(props) {
   return (
-    <Box {...props} mb={[0,0,5,0]}>
+    <Box {...props} mb={[0, 0, 5, 0]}>
       <Link href="/">
         <a>
-          <Heading
-            as={'h1'}
+          <Text
+            fontFamily={'Open sans'}
             fontSize="lg"
             fontWeight="bold"
             minW={180}
@@ -16,11 +16,11 @@ export default function Logo(props) {
             backgroundColor={useColorModeValue("white", "#191a1a")}
             p={1}
             transform={'skew(-21deg)'}
-            // bgGradient={useColorModeValue("linear(to-l, green.300 ,#000)", "linear(to-l, green.300 ,#fff)")}
-            // bgClip="text"
+          // bgGradient={useColorModeValue("linear(to-l, green.300 ,#000)", "linear(to-l, green.300 ,#fff)")}
+          // bgClip="text"
           >
             TheParkAndTheBike
-          </Heading>
+          </Text>
         </a>
       </Link>
     </Box>

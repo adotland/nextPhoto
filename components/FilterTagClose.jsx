@@ -1,4 +1,4 @@
-import { Tag, TagCloseButton, useColorModeValue } from "@chakra-ui/react";
+import { Tag, TagCloseButton, useColorModeValue, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function FilterTagClose({ type, value }) {
@@ -13,7 +13,7 @@ export default function FilterTagClose({ type, value }) {
           boxShadow='md'
           _hover={{background: useColorModeValue('blackAlpha.200', 'white')}}
         >
-          {value}
+          <Heading as={'h1'} fontSize="sm" fontWeight={'normal'}> {value}</Heading>
           <TagCloseButton />
         </Tag>
       </a>
