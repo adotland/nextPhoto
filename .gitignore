@@ -40,3 +40,6 @@ cms/scripts/Colour.js
 pages/test.js
 public/sitemap*
 public/robots*
+
+.eslintrc.json
+.babelrc
