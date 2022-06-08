@@ -72,7 +72,7 @@ const Leaflet = ({ center, name }) => {
       boxShadow='inner'
       p={2}
       rounded='md'
-      bg={useColorModeValue('white.600', 'blackAlpha.200')}
+      bg={useColorModeValue('white', 'blackAlpha.200')}
     >
       <MapContainer
         className={styles.map}

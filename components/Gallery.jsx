@@ -70,7 +70,7 @@ export default function Gallery({ dataList, filterColor, filterImageType }) {
                       className={styles.galleryCaption}
                     >
                       <Text
-                        color={useColorModeValue('black.100', 'white.100')}
+                        color={useColorModeValue('black', 'white')}
                       >{data.name}</Text>
                     </Box>
                   </Box>

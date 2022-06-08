@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link as ChakraLink, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, Link as ChakraLink, Flex, useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import FilterDisplay from "./FilterDisplay";
 import Map from './Map';
@@ -19,7 +19,7 @@ export default function Details({ data, ...props }) {
   }
   return (
     <Box {...props}>
-      <Heading pb={3}>{data.name}</Heading>
+      <Heading pb={3} color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}>{data.name}</Heading>
       <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
           <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>
