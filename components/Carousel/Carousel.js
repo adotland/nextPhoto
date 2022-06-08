@@ -1,4 +1,4 @@
-// from https://codesandbox.io/s/chakra-carousel-prototype-jmqnh?file=/package.json
+// adapted from https://codesandbox.io/s/chakra-carousel-prototype-jmqnh?file=/package.json
 
 import { capsFirst } from "./utils";
 
@@ -65,7 +65,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                     alt={data.name ? `image of ${data.name}` : "image"}
                     layout="fill"
                     objectFit="contain"
-                    sizes="15vw"
+                    sizes="5vw"
                   />
                 </Box>
               </VStack>
@@ -105,7 +105,9 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
     );
   } else {
     return (
-      'bruh'
+      <Flex height={300} fontSize={'large'} justify='center' align={'center'}>
+        <span>Zoom and scroll to find more</span>
+      </Flex>
     )
   }
 }
