@@ -113,8 +113,8 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
           letterSpacing={'0.1em'}
           fontWeight={'bold'}
           pt={2}
-          color={useColorModeValue("white", "#555")}
-          backgroundColor={useColorModeValue("#777", "#eee")}
+          color={useColorModeValue("#111", "#111")}
+          backgroundColor={useColorModeValue("#eee", "#777")}
           borderTop={'2px solid black'}
           borderBottom={'2px solid black'}
           pb={2}
