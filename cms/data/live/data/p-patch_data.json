@@ -588,27 +588,6 @@
     }
   },
   {
-    "id": 28,
-    "name": "NewHolly Youth & Family",
-    "address": "32nd Ave S & S Brighton St, Seattle, WA",
-    "lat": "47.5413238",
-    "long": "-122.2931961",
-    "imageName": "p-patch_NewHolly-Youth--Family.jpg",
-    "slug": "p-patch_newholly-youth--family",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 2251,
-    "collection": "p-patch",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#d8e8e8"
-    }
-  },
-  {
     "id": 29,
     "name": "High Point Juneau Community Garden and Market Garden",
     "address": "32nd Ave SW & SW Juneau St, Seattle, WA",
@@ -801,8 +780,8 @@
     "id": 38,
     "name": "Queen Anne",
     "address": "3rd Ave N & Lynn St, Seattle, WA",
-    "lat": "47.639176",
-    "long": "-122.277133",
+    "lat": "47.6388499",
+    "long": "-122.3523158",
     "imageName": "p-patch_Queen-Anne.jpg",
     "slug": "p-patch_queen-anne",
     "ext": "jpg",
@@ -1512,6 +1491,27 @@
     }
   },
   {
+    "id": 72,
+    "name": "Marra Farm",
+    "address": "9026 4th Ave S, Seattle, WA",
+    "lat": "47.522002",
+    "long": "-122.329279",
+    "imageName": "p-patch_Marra-Farm.jpg",
+    "slug": "p-patch_marra-farm",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 3024,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#e8e8e8"
+    }
+  },
+  {
     "id": 73,
     "name": "Hazel Heights",
     "address": "Baker Ave NW & NW 42nd St, Seattle, WA",
@@ -1551,27 +1551,6 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
-  },
-  {
-    "id": 72,
-    "name": "Marra Farm",
-    "address": "9026 4th Ave S, Seattle, WA",
-    "lat": "47.522002",
-    "long": "-122.329279",
-    "imageName": "p-patch_Marra-Farm.jpg",
-    "slug": "p-patch_marra-farm",
-    "ext": "jpg",
-    "width": 4032,
-    "height": 3024,
-    "collection": "p-patch",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#e8e8e8"
     }
   },
   {
@@ -1641,8 +1620,8 @@
     "id": 78,
     "name": "Bitter Lake",
     "address": "Linden Ave N & N 143rd St, Seattle, WA",
-    "lat": "47.681228",
-    "long": "-122.346811",
+    "lat": "47.732137",
+    "long": "-122.3517071",
     "imageName": "p-patch_Bitter-Lake.jpg",
     "slug": "p-patch_bitter-lake",
     "ext": "jpg",
@@ -1782,6 +1761,27 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
+    }
+  },
+  {
+    "id": 28,
+    "name": "New Holly Youth & Family",
+    "address": "32nd Ave S & S Brighton St, Seattle, WA",
+    "lat": "47.5413238",
+    "long": "-122.2931961",
+    "imageName": "p-patch_New-Holly-Youth--Family.jpg",
+    "slug": "p-patch_new-holly-youth--family",
+    "ext": "jpg",
+    "width": 4032,
+    "height": 2251,
+    "collection": "p-patch",
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#d8e8e8"
     }
   }
 ]

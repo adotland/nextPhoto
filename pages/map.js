@@ -102,13 +102,12 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
 
   return (
     <>
-      <SEO pageTitle={'Map'}/>
+      <SEO pageTitle={'Map'} />
       <Box
         mx={4}
         mt={[4, 14, 14, 4]}
       >
-        <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
-        <Text
+        {/* <Text
           textAlign={'center'}
           letterSpacing={'0.1em'}
           fontWeight={'bold'}
@@ -118,7 +117,8 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
           borderTop={'2px solid black'}
           borderBottom={'2px solid black'}
           pb={2}
-        >&uarr; Click and Drag to discover &darr;</Text>
+        >&uarr; Click and Drag to discover &darr;</Text> */}
+        <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
         <Carousel dataList={carouselDataList} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
       </Box>
     </>

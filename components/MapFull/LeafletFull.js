@@ -44,7 +44,10 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
 const center = [47.6092355, -122.317784] // seattle univ
 
 const markerIcon = new L.Icon({
-  iconUrl: '/tree-t.png'
+  iconUrl: '/tree-t.png',
+  iconSize: [25, 25],
+  iconAnchor: [12, 25],
+  popupAnchor: [0, -25],
 })
 
 // <a href="https://www.flaticon.com/free-icons/christmas-tree" title="christmas tree icons">Christmas tree icons created by Pixel perfect - Flaticon</a>

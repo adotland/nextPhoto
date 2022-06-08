@@ -63,7 +63,10 @@ const Leaflet = ({ center, name }) => {
   }
 
   const markerIcon = new L.Icon({
-    iconUrl: '/tree-t.png'
+    iconUrl: '/tree-t.png',
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
   })
 
   return (
