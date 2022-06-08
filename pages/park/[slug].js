@@ -4,7 +4,7 @@ import { ff } from "fssf";
 import Details from "../../components/Details";
 import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
-import { byWeight, shimmer, toBase64 } from "../../utils/helpers";
+import { byWeight, shimmer, shuffle, toBase64 } from "../../utils/helpers";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
@@ -28,7 +28,7 @@ export async function getStaticProps({ params: { slug } }) {
   let related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg'))
   // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
-  related = related.sort(byWeight).filter(i=>i.height < i.width).slice(0, 3);
+  related = shuffle(related.sort(byWeight).filter(i=>i.height < i.width)).slice(0, 3);
   return {
     props: {
       currentData,
