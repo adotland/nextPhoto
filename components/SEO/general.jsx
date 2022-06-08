@@ -1,10 +1,10 @@
 import Head from "next/head";
 import config from "../../config";
 
-export default function SEO() {
-  const title = `${config.meta.title}`;
+export default function SEO({pageTitle}) {
+  const title = `${pageTitle} // ${config.meta.title}`;
   const mainImage = `${config.meta.social.graphic}`;
-  const description = title;
+  const description = `${pageTitle}, photographs of bicycles in parks located in the Greater Seattle area`;
   let url = `${config.endpoints.canonical}`;
   return (
     <Head>

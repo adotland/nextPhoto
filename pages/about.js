@@ -45,7 +45,7 @@ export async function getStaticProps() {
 export default function ({ statsObj }) {
   return (
     <>
-      <SEO />
+      <SEO pageTitle={'About'}/>
       <Box
         mx={4}
         mt={[4, 14, 14, 4]}

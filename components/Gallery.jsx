@@ -2,7 +2,7 @@
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
+import { capFirst, commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
 import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/general";
 import styles from './Gallery.module.css'
@@ -24,11 +24,11 @@ function FiltersRow({ filterColor, filterType }) {
   )
 }
 
-export default function Gallery({ dataList, filterColor, filterImageType }) {
+export default function Gallery({ dataList, filterColor, filterImageType, isFeatured }) {
 
   return (
     <Box mt={[4, 4, 14, 4]} >
-      <SEO />
+      <SEO pageTitle={filterImageType && `${capFirst(filterImageType)} Gallery` || filterColor && `${capFirst(filterColor)} Gallery` || isFeatured && 'Featured Gallery'}/>
       <FiltersRow filterColor={filterColor} filterType={filterImageType} />
       <Box
         padding={4}

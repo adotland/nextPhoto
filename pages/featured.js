@@ -28,6 +28,6 @@ export default function ({ dataList }) {
   // }, [])
 
   return (
-    <Gallery dataList={dataList} />
+    <Gallery dataList={dataList} isFeatured={true} />
   )
 }

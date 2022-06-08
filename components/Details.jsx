@@ -19,10 +19,10 @@ export default function Details({ data, ...props }) {
   }
   return (
     <Box {...props}>
-      <Heading pb={3} color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}>{data.name}</Heading>
+      <Heading as={'h1'} pb={3} color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}>{data.name}</Heading>
       <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
-          <Heading as={'h3'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>
+          <Heading as={'h2'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>
             <Flex justifyContent={['center', 'center', 'center', 'flex-start']}>
               <Text mr={2}>{collection} Collection</Text>
               <MdCollections />

@@ -3,8 +3,9 @@ import config from "../../config";
 
 export default function SEO({ data }) {
   const title = `${data.name} - ${config.meta.title}`;
-  const mainImage = `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}.${data.ext}`;
-  const description = title + (data.description ? ` - ${data.description}` : '');
+  const mainImage = `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`;
+  // const description = title + (data.description ? ` - ${data.description}` : '');
+  const description = `${data.name}, photographs of bicycles in parks located in the Greater Seattle area`;
   let url = `${config.endpoints.canonical}` + (data?.slug ? `/${data.slug}` : '');
   return (
     <Head>

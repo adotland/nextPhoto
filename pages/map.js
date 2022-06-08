@@ -102,7 +102,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
 
   return (
     <>
-      <SEO />
+      <SEO pageTitle={'Map'}/>
       <Box
         mx={4}
         mt={[4, 14, 14, 4]}
