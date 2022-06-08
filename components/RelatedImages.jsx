@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,15 +20,19 @@ export default function RelatedImages({ dataList }) {
               minW="20%"
               m={2}
               display="inline-block"
+              rounded={'lg'}
+              height={100}
+              overflow={'hidden'}
+              border={`1px solid ${useColorModeValue('white', 'black')}`}
+              _hover={{border: `1px solid #777`}}
             >
               <Image
                 key={index}
                 src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
                 alt={data.name || "image"}
-                layout="responsive"
-                width={data.width}
-                height={data.height}
-                sizes="15vw"
+                layout={'fixed'}
+                width={150}
+                height={100}
               />
             </Box>
           </a>
