@@ -65,7 +65,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                     alt={data.name ? `image of ${data.name}` : "image"}
                     layout="fill"
                     objectFit="contain"
-                    sizes="5vw"
+                    sizes="15vw"
                   />
                 </Box>
               </VStack>
