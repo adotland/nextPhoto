@@ -22,7 +22,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
   if (dataList.length) {
     return (
       <Container
-        py={8}
+        py={4}
         px={0}
         maxW={{
           base: "100%",
@@ -33,7 +33,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
           xxl: "87.5rem"
         }}
       >
-        <ChakraCarousel gap={32} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem}>
+        <ChakraCarousel gap={30} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem}>
           {dataList.map((data, index) => (
             <Flex
               key={index}
@@ -51,21 +51,32 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign="center"
-                  w="full"
+                  // w="full"
+                  maxW={'300px'}
                   mb={2}
                   textColor={useColorModeValue("brand.700", "brand.200")}
+                  overflow={'hidden'}
+                  textOverflow={'ellipsis'}
+                  whiteSpace={'nowrap'}
                 >
                   {capFirst(data.name)}
                 </Heading>
                 {/* <Text w="full">{capFirst(data.name)}</Text> */}
-                <Box w='200px' h='100px' position='relative'>
+                <Box
+                  w='150px'
+                  h='100px'
+                  position='relative'
+                  rounded={'lg'}
+                  overflow={'hidden'}
+                  border={`1px solid ${useColorModeValue('white', 'black')}`}
+                >
                   <Image
                     key={index}
                     src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
                     alt={data.name ? `image of ${data.name}` : "image"}
-                    layout="fill"
-                    objectFit="contain"
-                    sizes="15vw"
+                    layout={'fixed'}
+                    width={150}
+                    height={100}
                   />
                 </Box>
               </VStack>
