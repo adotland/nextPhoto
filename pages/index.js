@@ -92,7 +92,7 @@ function FeaturedCollectionItem({ imageUrl }) {
 export default function () {
   return (
     <>
-      <SEO />
+      <SEO pageTitle={'Home'} />
       <Box>
         <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' />
         <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='__Alice-Ball-Park.jpg' />

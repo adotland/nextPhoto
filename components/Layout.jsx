@@ -9,7 +9,6 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>TheParkAndTheBike</title>
       </Head>
       <Box maxWidth='1500px' m='auto'>
         <header>
