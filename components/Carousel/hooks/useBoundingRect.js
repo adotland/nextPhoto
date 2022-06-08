@@ -1,14 +1,5 @@
 import { useState, useCallback, useLayoutEffect } from "react";
-
-const debounce = (limit, callback) => {
-  let timeoutId;
-  return (...args) => {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    timeoutId = setTimeout(callback, limit, args);
-  };
-};
+import { debounce } from "../../../utils/helpers";
 
 function getDimensionObject(node) {
   const rect = node.getBoundingClientRect();

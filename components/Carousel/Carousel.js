@@ -1,6 +1,6 @@
 // adapted from https://codesandbox.io/s/chakra-carousel-prototype-jmqnh?file=/package.json
 
-import { capsFirst } from "./utils";
+import { capFirst } from "../../utils/helpers"
 
 import {
   Container,
@@ -55,9 +55,9 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   mb={2}
                   textColor={useColorModeValue("brand.700", "brand.200")}
                 >
-                  {capsFirst(data.name)}
+                  {capFirst(data.name)}
                 </Heading>
-                {/* <Text w="full">{capsFirst(data.name)}</Text> */}
+                {/* <Text w="full">{capFirst(data.name)}</Text> */}
                 <Box w='200px' h='100px' position='relative'>
                   <Image
                     key={index}
