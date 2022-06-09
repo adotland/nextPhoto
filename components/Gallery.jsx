@@ -1,35 +1,41 @@
 
-import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { capFirst, commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
-import FilterTagClose from "./FilterTagClose";
 import SEO from "./SEO/general";
 import styles from './Gallery.module.css'
 
-function FiltersRow({ filterColor, filterType }) {
-  const displayable = filterColor || filterType;
+function GalleryHeader({ children }) {
   return (
-
-    displayable && <Box
+    <Box
       w={"100%"}
       bg={useColorModeValue("gray.100", "#191a1a")}
       pt={4}
-      pl={4}
+      pl={['auto', 'auto', 'auto', 8]}
+      textAlign={['center', 'center', 'center', 'left']}
     >
-      <Text display={'inline-block'} mr={5} fontSize="sm" fontFamily={'Open sans'}>Active Filters: </Text>
-      {filterColor && <FilterTagClose type={'color'} value={filterColor} />}
-      {filterType && <FilterTagClose type={'type'} value={filterType} />}
+      <Heading as={'h1'} fontSize={'lg'} color={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}>{children}</Heading>
     </Box>
   )
+}
+
+function GalleryTitle({ filterColor, filterImageType }) {
+  if (filterImageType) {
+    return (<GalleryHeader>{`${capFirst(filterImageType)} Collection`}</GalleryHeader >)
+  } else if (filterColor) {
+    return (<GalleryHeader>{`${capFirst(filterColor)} Collection`}</GalleryHeader>)
+  } else {
+    return (<GalleryHeader>Featured Collection</GalleryHeader>)
+  }
 }
 
 export default function Gallery({ dataList, filterColor, filterImageType, isFeatured }) {
 
   return (
     <Box mt={[4, 4, 14, 4]} >
-      <SEO pageTitle={filterImageType && `${capFirst(filterImageType)} Gallery` || filterColor && `${capFirst(filterColor)} Gallery` || isFeatured && 'Featured Gallery'}/>
-      <FiltersRow filterColor={filterColor} filterType={filterImageType} />
+      <SEO pageTitle={filterImageType && `${capFirst(filterImageType)} Collection` || filterColor && `${capFirst(filterColor)} Collection` || isFeatured && 'Featured Collection'} />
+      <GalleryTitle filterColor={filterColor} filterImageType={filterImageType} />
       <Box
         padding={4}
         w="100%"
