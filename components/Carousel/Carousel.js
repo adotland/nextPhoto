@@ -52,7 +52,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign="center"
                   // w="full"
-                  maxW={'300px'}
+                  maxW={'90%'}
                   mb={2}
                   textColor={useColorModeValue("brand.700", "brand.200")}
                   overflow={'hidden'}

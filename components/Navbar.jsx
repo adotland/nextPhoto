@@ -64,14 +64,16 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
       onClick={toggle}
       tabIndex={0}
       onKeyDown={handleKeyUp}
-
+      bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.600')}
+      p={1}
+      transform={'skew(-21deg)'}
     >
       {isOpen ? <CloseIcon color={color} /> : <MenuIcon color={color} />}
     </Box>
   );
 };
 
-const MenuItem = ({ children, to = "/", name}) => {
+const MenuItem = ({ children, to = "/", name }) => {
   return (
     <Link href={to}>
       <a aria-label={name}>
@@ -82,8 +84,9 @@ const MenuItem = ({ children, to = "/", name}) => {
           backgroundColor={useColorModeValue("white", "#191a1a")}
           py={1}
           px={2}
+          rounded={'md'}
           // transform={'skew(-21deg)'}
-          _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
+          _hover={{background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800')}}
         >
           {children}
         </Text>
@@ -97,6 +100,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
       flexBasis={{ base: "100%", md: "auto" }}
+      ml={'20px'}
     >
       <Stack
         spacing={8}
@@ -110,7 +114,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         <MenuItem to="/map" name="map">Map</MenuItem>
         <MenuItem to="/featured" name="featured"><FaDice size={'1.4em'} /></MenuItem>
         <MenuItem to="/about" name="about">About</MenuItem>
-        <ColorModeToggle setIsOpen={setIsOpen}/>
+        <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>
   );
@@ -120,8 +124,8 @@ const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
       as="nav"
-      align="center"
-      justify={["space-between","space-between","space-around", "space-between"]}
+      align="flex-start"
+      justify={["space-between", "space-between", "space-around", "space-between"]}
       wrap="wrap"
       maxWidth="1500px"
       w="100%"

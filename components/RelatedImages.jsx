@@ -10,14 +10,14 @@ export default function RelatedImages({ dataList }) {
       pt={15}
       mb={5}
       mr={['auto']}
-      ml={[0, 'auto', 'auto', '8']}
+      pl={[0, 'auto', 'auto', '8']}
       // flexDir={'row'}
       // flexWrap={'wrap'}
     >
       <Box mb={2} ml={4}>
         <Heading as={'h3'} fontSize={'large'} mt={5}>Related Images</Heading>
       </Box>
-      <Flex overflow={['scroll', 'hidden']} justifyContent={['flex-start', 'center', 'center', 'flex-start']}>
+      <Flex overflowY={'hidden'} overflowX={['scroll', 'hidden']} justifyContent={['flex-start', 'center', 'center', 'flex-start']}>
         {dataList.map((data, index) => (
           <Link href={`/park/${data.slug}`} key={index}>
             <a>

@@ -101,14 +101,14 @@ export default function Search({ setNavbarIsOpen }) {
         backgroundColor={useColorModeValue("white", "#191a1a")}
         py={1.5}
         h={'auto'}
-        rounded="none"
-        _hover={{ background: useColorModeValue('blackAlpha.200', 'white'), color: "brand.700", borderColor: useColorModeValue('black', 'whiteAlpha.700') }}
-      >
+        rounded="md"
+        _hover={{background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800')}}
+        >
         <Text fontWeight={'normal'} fontFamily='Open Sans'>Search</Text>
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} isCentered={true} initialFocusRef={initialRef}>
         <ModalOverlay />
-        <ModalContent bg={useColorModeValue('whiteAlpha.800', 'blackAlpha.800')}>
+        <ModalContent bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.800')}>
           <ModalHeader>Park Search</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

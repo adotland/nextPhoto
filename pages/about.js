@@ -55,7 +55,7 @@ export default function ({ statsObj }) {
       <Box my={30} mx={'auto'} maxW={["90%", "90%", "90%", "50%"]}>
         <Text mb={2}>I got more serious about cycling in 2020 as a way to get exercise and explore the city, and got the idea to ride to every park in the Seattle. I was a little surprised to find there was well over four hundred.</Text>
 
-        <Text mb={2}>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone  <AboutLink text='P-Patch' path='/collection/p-patch' /> as well.</Text>
+        <Text mb={2}>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone  <AboutLink text='P-Patch' path='/collection/p-patch' />.</Text>
 
         <Text mb={2}>Along the way, I learned about the Port of Seattle owned parks, so I rode my bike to every <AboutLink text='Port of Seattle owned park' path='/collection/extras' />.</Text>
 
