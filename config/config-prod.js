@@ -6,6 +6,7 @@ img-src 'self' https://*.jawg.io data:;
 style-src 'self' 'unsafe-inline';
 script-src 'self' 'unsafe-inline';
 connect-src 'self' https://vitals.vercel-insights.com;
+font-src 'self' data:;
 `
 
 const config = {
