@@ -14,6 +14,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -38,6 +39,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -62,6 +64,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -86,6 +89,7 @@
     "width": 3999,
     "height": 2979,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -110,6 +114,7 @@
     "width": 3825,
     "height": 2966,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -134,6 +139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -158,6 +164,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -182,6 +189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -206,6 +214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -230,6 +239,7 @@
     "width": 4032,
     "height": 2453,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -254,6 +264,7 @@
     "width": 1933,
     "height": 2524,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -278,6 +289,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -302,6 +314,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -326,6 +339,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -350,6 +364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -374,6 +389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -387,7 +403,7 @@
     "id": "e6c77b8af3628cd749b640addfc1c620",
     "pmaid": "",
     "locid": "",
-    "name": "Troll's Knoll Park",
+    "name": "Troll’s Knoll Park",
     "address": "Troll's Knoll Park, 820 N 36th St, Seattle, WA 98103, USA",
     "zip_code": "98103",
     "lat": "47.6511954",
@@ -398,6 +414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -422,6 +439,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -446,6 +464,7 @@
     "width": 645,
     "height": 483,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -470,6 +489,7 @@
     "width": 3309,
     "height": 1776,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 7000,
       "live": true,
@@ -494,6 +514,7 @@
     "width": 607,
     "height": 328,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -518,6 +539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -542,6 +564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -566,6 +589,7 @@
     "width": 4032,
     "height": 1628,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -590,6 +614,7 @@
     "width": 2319,
     "height": 3246,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -614,6 +639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 3000,
       "live": true,
@@ -638,6 +664,7 @@
     "width": 586,
     "height": 459,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -662,6 +689,7 @@
     "width": 4010,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 8000,
       "live": true,
@@ -686,6 +714,7 @@
     "width": 555,
     "height": 452,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -710,6 +739,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -734,6 +764,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -758,6 +789,7 @@
     "width": 3991,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -782,6 +814,7 @@
     "width": 3690,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -806,6 +839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -830,6 +864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -854,6 +889,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -878,6 +914,7 @@
     "width": 4007,
     "height": 2942,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -902,6 +939,7 @@
     "width": 3584,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -926,6 +964,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -950,6 +989,7 @@
     "width": 2176,
     "height": 1361,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -974,6 +1014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -998,6 +1039,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1022,6 +1064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1046,6 +1089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1070,6 +1114,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1094,6 +1139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 9000,
       "live": true,
@@ -1118,6 +1164,7 @@
     "width": 3971,
     "height": 2234,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1142,6 +1189,7 @@
     "width": 3510,
     "height": 1884,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1166,6 +1214,7 @@
     "width": 4032,
     "height": 2628,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1190,6 +1239,7 @@
     "width": 3821,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1214,6 +1264,7 @@
     "width": 3672,
     "height": 2433,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1238,6 +1289,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1262,6 +1314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1286,6 +1339,7 @@
     "width": 4032,
     "height": 2282,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1310,6 +1364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1334,6 +1389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1358,6 +1414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1382,6 +1439,7 @@
     "width": 3826,
     "height": 2277,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1406,6 +1464,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1430,6 +1489,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1454,6 +1514,7 @@
     "width": 3990,
     "height": 2970,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1478,6 +1539,7 @@
     "width": 3944,
     "height": 2373,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1502,6 +1564,7 @@
     "width": 4032,
     "height": 2063,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1526,6 +1589,7 @@
     "width": 3979,
     "height": 2328,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 5000,
       "live": true,
@@ -1550,6 +1614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1574,6 +1639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1598,6 +1664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -1622,6 +1689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1646,6 +1714,7 @@
     "width": 4032,
     "height": 2453,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1670,6 +1739,7 @@
     "width": 1866,
     "height": 2137,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1694,6 +1764,7 @@
     "width": 4025,
     "height": 2264,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1718,6 +1789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -1742,6 +1814,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1766,6 +1839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1790,6 +1864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1814,6 +1889,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1838,6 +1914,7 @@
     "width": 3975,
     "height": 2226,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1862,6 +1939,7 @@
     "width": 4032,
     "height": 1711,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1886,6 +1964,7 @@
     "width": 4032,
     "height": 2780,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1910,6 +1989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1934,6 +2014,7 @@
     "width": 3917,
     "height": 2871,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1958,6 +2039,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -1982,6 +2064,7 @@
     "width": 4009,
     "height": 2995,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2006,6 +2089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2030,6 +2114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -2054,6 +2139,7 @@
     "width": 3987,
     "height": 2024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2078,6 +2164,7 @@
     "width": 4015,
     "height": 3001,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2102,6 +2189,7 @@
     "width": 3942,
     "height": 2336,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2126,6 +2214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2150,6 +2239,7 @@
     "width": 4032,
     "height": 2304,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2163,7 +2253,7 @@
     "id": "20dbc0c825f51887123c254df78908b6",
     "pmaid": "",
     "locid": "",
-    "name": "Julia Lees Park",
+    "name": "Julia Lee’s Park",
     "address": "2701 E Harrison St, Seattle, WA 98112, USA",
     "zip_code": "98112",
     "lat": "47.6223176",
@@ -2174,6 +2264,7 @@
     "width": 3943,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2198,6 +2289,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2222,6 +2314,7 @@
     "width": 3943,
     "height": 2907,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2246,6 +2339,7 @@
     "width": 3953,
     "height": 2917,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2270,6 +2364,7 @@
     "width": 3965,
     "height": 2935,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2294,6 +2389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2318,6 +2414,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2342,6 +2439,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -2366,6 +2464,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2390,6 +2489,7 @@
     "width": 2854,
     "height": 2467,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2414,6 +2514,7 @@
     "width": 3914,
     "height": 2671,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2438,6 +2539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2462,6 +2564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2486,6 +2589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2510,6 +2614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2534,6 +2639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2558,6 +2664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2582,6 +2689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2606,6 +2714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2630,6 +2739,7 @@
     "width": 3949,
     "height": 2913,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2654,6 +2764,7 @@
     "width": 3915,
     "height": 2583,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2678,6 +2789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2702,6 +2814,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2726,6 +2839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2750,6 +2864,7 @@
     "width": 2950,
     "height": 2150,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2774,6 +2889,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 300,
       "live": true,
@@ -2798,6 +2914,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2822,6 +2939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2846,6 +2964,7 @@
     "width": 2772,
     "height": 1401,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2870,6 +2989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2894,6 +3014,7 @@
     "width": 3622,
     "height": 2474,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2918,6 +3039,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2942,6 +3064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2966,6 +3089,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -2990,6 +3114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3014,6 +3139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3038,6 +3164,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3062,6 +3189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3086,6 +3214,7 @@
     "width": 3798,
     "height": 2442,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3110,6 +3239,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3134,6 +3264,7 @@
     "width": 3587,
     "height": 2413,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3158,6 +3289,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3182,6 +3314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3206,6 +3339,7 @@
     "width": 4032,
     "height": 1517,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 500,
       "live": true,
@@ -3230,6 +3364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3254,6 +3389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3278,6 +3414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3302,6 +3439,7 @@
     "width": 4005,
     "height": 2987,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3326,6 +3464,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 5000,
       "live": true,
@@ -3350,6 +3489,7 @@
     "width": 478,
     "height": 638,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3374,6 +3514,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -3398,6 +3539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3422,6 +3564,7 @@
     "width": 4003,
     "height": 2985,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3446,6 +3589,7 @@
     "width": 3597,
     "height": 2370,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3470,6 +3614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3494,6 +3639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -3518,6 +3664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3542,6 +3689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3566,6 +3714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 500,
       "live": true,
@@ -3590,6 +3739,7 @@
     "width": 4032,
     "height": 1659,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3614,6 +3764,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3638,6 +3789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3662,6 +3814,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -3686,6 +3839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3710,6 +3864,7 @@
     "width": 4005,
     "height": 2989,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3734,6 +3889,7 @@
     "width": 4031,
     "height": 3023,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3758,6 +3914,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3782,6 +3939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3806,6 +3964,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3830,6 +3989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3854,6 +4014,7 @@
     "width": 3913,
     "height": 2037,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3878,6 +4039,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3902,6 +4064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3926,6 +4089,7 @@
     "width": 2789,
     "height": 3857,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3950,6 +4114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3974,6 +4139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -3998,6 +4164,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4022,6 +4189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4046,6 +4214,7 @@
     "width": 3476,
     "height": 2429,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4070,6 +4239,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4094,6 +4264,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4118,6 +4289,7 @@
     "width": 4028,
     "height": 2266,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4142,6 +4314,7 @@
     "width": 4032,
     "height": 2883,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4166,6 +4339,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4190,6 +4364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4214,6 +4389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4238,6 +4414,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4262,6 +4439,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4286,6 +4464,7 @@
     "width": 4013,
     "height": 2999,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4310,6 +4489,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4334,6 +4514,7 @@
     "width": 3734,
     "height": 2630,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4358,6 +4539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 5000,
       "live": true,
@@ -4382,6 +4564,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4406,6 +4589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4430,6 +4614,7 @@
     "width": 2957,
     "height": 3981,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4454,6 +4639,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4478,6 +4664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4502,6 +4689,7 @@
     "width": 3957,
     "height": 2925,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4526,6 +4714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4550,6 +4739,7 @@
     "width": 3617,
     "height": 2916,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4574,6 +4764,7 @@
     "width": 4012,
     "height": 2734,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4598,6 +4789,7 @@
     "width": 3923,
     "height": 2881,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -4622,6 +4814,7 @@
     "width": 3756,
     "height": 2652,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4646,6 +4839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4670,6 +4864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4694,6 +4889,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4718,6 +4914,7 @@
     "width": 4003,
     "height": 2985,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4742,6 +4939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4766,6 +4964,7 @@
     "width": 3922,
     "height": 2811,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -4790,6 +4989,7 @@
     "width": 2925,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4814,6 +5014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4838,6 +5039,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4862,6 +5064,7 @@
     "width": 3920,
     "height": 1934,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4886,6 +5089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4910,6 +5114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4934,6 +5139,7 @@
     "width": 4005,
     "height": 2987,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4958,6 +5164,7 @@
     "width": 3258,
     "height": 2022,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -4982,6 +5189,7 @@
     "width": 3530,
     "height": 1848,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5006,6 +5214,7 @@
     "width": 4032,
     "height": 2699,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5030,6 +5239,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5054,6 +5264,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5078,6 +5289,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5102,6 +5314,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5126,6 +5339,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5150,6 +5364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5174,6 +5389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5198,6 +5414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5222,6 +5439,7 @@
     "width": 638,
     "height": 478,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5246,6 +5464,7 @@
     "width": 4032,
     "height": 2867,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5270,6 +5489,7 @@
     "width": 2832,
     "height": 3886,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -5294,6 +5514,7 @@
     "width": 3279,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5318,6 +5539,7 @@
     "width": 3633,
     "height": 2297,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5342,6 +5564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5366,6 +5589,7 @@
     "width": 3928,
     "height": 1217,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5390,6 +5614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5414,6 +5639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5438,6 +5664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5462,6 +5689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5486,6 +5714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5510,6 +5739,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5534,6 +5764,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5558,6 +5789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5582,6 +5814,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5606,6 +5839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5630,6 +5864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5654,6 +5889,7 @@
     "width": 645,
     "height": 483,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5678,6 +5914,7 @@
     "width": 644,
     "height": 482,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5702,6 +5939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5726,6 +5964,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -5750,6 +5989,7 @@
     "width": 4029,
     "height": 3019,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5774,6 +6014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5798,6 +6039,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5822,6 +6064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5846,6 +6089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5870,6 +6114,7 @@
     "width": 3762,
     "height": 2605,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5894,6 +6139,7 @@
     "width": 3809,
     "height": 1183,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5918,6 +6164,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5942,6 +6189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5966,6 +6214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -5990,6 +6239,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6014,6 +6264,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6038,6 +6289,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6062,6 +6314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6086,6 +6339,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6110,6 +6364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6134,6 +6389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6158,6 +6414,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -6182,6 +6439,7 @@
     "width": 4032,
     "height": 2593,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6206,6 +6464,7 @@
     "width": 3819,
     "height": 2747,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6230,6 +6489,7 @@
     "width": 2943,
     "height": 3971,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6254,6 +6514,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6278,6 +6539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -6302,6 +6564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -6326,6 +6589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6350,6 +6614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -6374,6 +6639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6398,6 +6664,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6422,6 +6689,7 @@
     "width": 4032,
     "height": 2628,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6446,6 +6714,7 @@
     "width": 4032,
     "height": 2576,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6470,6 +6739,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6494,6 +6764,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6518,6 +6789,7 @@
     "width": 648,
     "height": 485,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6542,6 +6814,7 @@
     "width": 3950,
     "height": 2118,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6566,6 +6839,7 @@
     "width": 644,
     "height": 482,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6590,6 +6864,7 @@
     "width": 4032,
     "height": 2467,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6614,6 +6889,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6638,6 +6914,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6662,6 +6939,7 @@
     "width": 644,
     "height": 483,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6686,6 +6964,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6710,6 +6989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -6734,6 +7014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6758,6 +7039,7 @@
     "width": 3998,
     "height": 2981,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6782,6 +7064,7 @@
     "width": 3873,
     "height": 2215,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6806,6 +7089,7 @@
     "width": 627,
     "height": 476,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 1000,
       "live": true,
@@ -6830,6 +7114,7 @@
     "width": 2788,
     "height": 1541,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6854,6 +7139,7 @@
     "width": 3949,
     "height": 2915,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6878,6 +7164,7 @@
     "width": 3828,
     "height": 2991,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6902,6 +7189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6926,6 +7214,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6950,6 +7239,7 @@
     "width": 400,
     "height": 247,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6974,6 +7264,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -6998,6 +7289,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7022,6 +7314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7046,6 +7339,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7070,6 +7364,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7094,6 +7389,7 @@
     "width": 3861,
     "height": 2801,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7118,6 +7414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7142,6 +7439,7 @@
     "width": 4011,
     "height": 2997,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7166,6 +7464,7 @@
     "width": 3897,
     "height": 2845,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 10,
       "live": true,
@@ -7190,6 +7489,7 @@
     "width": 4015,
     "height": 3003,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7214,6 +7514,7 @@
     "width": 4025,
     "height": 2378,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7238,6 +7539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7262,6 +7564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7286,6 +7589,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7310,6 +7614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7334,6 +7639,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7358,6 +7664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7382,6 +7689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7406,6 +7714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7430,6 +7739,7 @@
     "width": 4001,
     "height": 2621,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7454,6 +7764,7 @@
     "width": 2893,
     "height": 3933,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7478,6 +7789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7502,6 +7814,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7526,6 +7839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7550,6 +7864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7574,6 +7889,7 @@
     "width": 3841,
     "height": 1980,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7598,6 +7914,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7622,6 +7939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7646,6 +7964,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7670,6 +7989,7 @@
     "width": 2278,
     "height": 2734,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7694,6 +8014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7718,6 +8039,7 @@
     "width": 4011,
     "height": 2995,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7742,6 +8064,7 @@
     "width": 3865,
     "height": 2715,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7766,6 +8089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7790,6 +8114,7 @@
     "width": 4032,
     "height": 2136,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7814,6 +8139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7838,6 +8164,7 @@
     "width": 4025,
     "height": 2929,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -7862,6 +8189,7 @@
     "width": 3926,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -7886,6 +8214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7910,6 +8239,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7934,6 +8264,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7958,6 +8289,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -7982,6 +8314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8006,6 +8339,7 @@
     "width": 4029,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8030,6 +8364,7 @@
     "width": 3998,
     "height": 2379,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8054,6 +8389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8078,6 +8414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8102,6 +8439,7 @@
     "width": 607,
     "height": 455,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8126,6 +8464,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8150,6 +8489,7 @@
     "width": 4015,
     "height": 2538,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8174,6 +8514,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8198,6 +8539,7 @@
     "width": 3953,
     "height": 2919,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8222,6 +8564,7 @@
     "width": 4032,
     "height": 2666,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8246,6 +8589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8270,6 +8614,7 @@
     "width": 3731,
     "height": 2633,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8294,6 +8639,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8318,6 +8664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8342,6 +8689,7 @@
     "width": 604,
     "height": 453,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8366,6 +8714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8390,6 +8739,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8414,6 +8764,7 @@
     "width": 4032,
     "height": 2842,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -8438,6 +8789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8462,6 +8814,7 @@
     "width": 3985,
     "height": 2963,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8486,6 +8839,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8510,6 +8864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8534,6 +8889,7 @@
     "width": 3990,
     "height": 2970,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8558,6 +8914,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8582,6 +8939,7 @@
     "width": 2913,
     "height": 3977,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8606,6 +8964,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8630,6 +8989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8654,6 +9014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -8678,6 +9039,7 @@
     "width": 2883,
     "height": 3925,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8702,6 +9064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8726,6 +9089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8750,6 +9114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -8774,6 +9139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8798,6 +9164,7 @@
     "width": 4011,
     "height": 2929,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8822,6 +9189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8846,6 +9214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8870,6 +9239,7 @@
     "width": 4032,
     "height": 1979,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8894,6 +9264,7 @@
     "width": 598,
     "height": 354,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8918,6 +9289,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8942,6 +9314,7 @@
     "width": 3112,
     "height": 1983,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -8966,6 +9339,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -8990,6 +9364,7 @@
     "width": 3880,
     "height": 2822,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9014,6 +9389,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9038,6 +9414,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9062,6 +9439,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -9086,6 +9464,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9110,6 +9489,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9134,6 +9514,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9158,6 +9539,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9182,6 +9564,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9206,6 +9589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9230,6 +9614,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9254,6 +9639,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -9278,6 +9664,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9302,6 +9689,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9326,6 +9714,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9350,6 +9739,7 @@
     "width": 3892,
     "height": 2558,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9374,6 +9764,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9398,6 +9789,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9422,6 +9814,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -9446,6 +9839,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9470,6 +9864,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9494,6 +9889,7 @@
     "width": 3914,
     "height": 2866,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9518,6 +9914,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9542,6 +9939,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9566,6 +9964,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9590,6 +9989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9614,6 +10014,7 @@
     "width": 4025,
     "height": 1331,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9638,6 +10039,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9662,6 +10064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9686,6 +10089,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9710,6 +10114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9734,6 +10139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9758,6 +10164,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9782,6 +10189,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9806,6 +10214,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9830,6 +10239,7 @@
     "width": 4032,
     "height": 2563,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9854,6 +10264,7 @@
     "width": 3996,
     "height": 2976,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9878,6 +10289,7 @@
     "width": 3437,
     "height": 1673,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 400,
       "live": true,
@@ -9902,6 +10314,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9926,6 +10339,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9950,6 +10364,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9974,6 +10389,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -9998,6 +10414,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10022,6 +10439,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10046,6 +10464,7 @@
     "width": 3024,
     "height": 3584,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10070,6 +10489,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10094,6 +10514,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 200,
       "live": true,
@@ -10118,6 +10539,7 @@
     "width": 4029,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10142,6 +10564,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10166,6 +10589,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10190,6 +10614,7 @@
     "width": 3965,
     "height": 2935,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10214,6 +10639,7 @@
     "width": 2757,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 1,
       "live": true,
@@ -10238,6 +10664,7 @@
     "width": 3990,
     "height": 2740,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10262,6 +10689,7 @@
     "width": 3024,
     "height": 4032,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10286,6 +10714,7 @@
     "width": 4032,
     "height": 2925,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10310,6 +10739,7 @@
     "width": 3939,
     "height": 2597,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10334,6 +10764,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10358,6 +10789,7 @@
     "width": 4006,
     "height": 2052,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10382,6 +10814,7 @@
     "width": 3946,
     "height": 3000,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10406,6 +10839,7 @@
     "width": 4032,
     "height": 2226,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10430,6 +10864,7 @@
     "width": 641,
     "height": 480,
     "collection": "seattle",
+    "hasAnim": true,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10454,6 +10889,7 @@
     "width": 4032,
     "height": 2016,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10478,6 +10914,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10502,6 +10939,7 @@
     "width": 4032,
     "height": 2020,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 6000,
       "live": true,
@@ -10526,6 +10964,7 @@
     "width": 4032,
     "height": 2061,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10550,6 +10989,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10574,6 +11014,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10581,6 +11022,31 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
+    }
+  },
+  {
+    "id": "1b51dec7954d679158dcdf16e393a91e",
+    "pmaid": "",
+    "locid": "",
+    "name": "Queen Anne Boulevard",
+    "address": "322 W Highland Dr, Seattle, WA 98119, USA",
+    "zip_code": "98119",
+    "lat": "47.629588",
+    "long": "-122.3613234",
+    "imageName": "__Queen-Anne-Boulevard.jpg",
+    "slug": "queen-anne-boulevard",
+    "ext": "jpg",
+    "width": 5071,
+    "height": 2303,
+    "collection": "seattle",
+    "hasAnim": false,
+    "filters": {
+      "weight": 100,
+      "live": true,
+      "featured": false,
+      "type": "still",
+      "matchColor": "light",
+      "domColor": "#b8b8b8"
     }
   },
   {
@@ -10598,6 +11064,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 500,
       "live": true,
@@ -10622,6 +11089,7 @@
     "width": 4032,
     "height": 2447,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10646,6 +11114,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10670,6 +11139,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 300,
       "live": true,
@@ -10694,6 +11164,7 @@
     "width": 3982,
     "height": 2767,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10718,6 +11189,7 @@
     "width": 4032,
     "height": 2028,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10742,6 +11214,7 @@
     "width": 4032,
     "height": 3024,
     "collection": "seattle",
+    "hasAnim": false,
     "filters": {
       "weight": 100,
       "live": true,
@@ -10749,30 +11222,6 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
-  },
-  {
-    "id": "1b51dec7954d679158dcdf16e393a91e",
-    "pmaid": "",
-    "locid": "",
-    "name": "Queen Anne Boulevard",
-    "address": "322 W Highland Dr, Seattle, WA 98119, USA",
-    "zip_code": "98119",
-    "lat": "47.629588",
-    "long": "-122.3613234",
-    "imageName": "__Queen-Anne-Boulevard.jpg",
-    "slug": "queen-anne-boulevard",
-    "ext": "jpg",
-    "width": 5071,
-    "height": 2303,
-    "collection": "seattle",
-    "filters": {
-      "weight": 100,
-      "live": true,
-      "featured": false,
-      "type": "still",
-      "matchColor": "light",
-      "domColor": "#b8b8b8"
     }
   }
 ]

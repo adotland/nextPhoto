@@ -5,6 +5,7 @@ import Details from "../../components/Details";
 import SEO from "../../components/SEO/park";
 import RelatedImages from "../../components/RelatedImages";
 import { byWeight, shimmer, shuffle, toBase64 } from "../../utils/helpers";
+import ImageVersionLink from "../../components/ImageVersionLink";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
@@ -28,7 +29,7 @@ export async function getStaticProps({ params: { slug } }) {
   let related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg'))
   // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
-  related = shuffle(related.sort(byWeight).filter(i=>i.height < i.width)).slice(0, 3);
+  related = shuffle(related.sort(byWeight).filter(i => i.height < i.width)).slice(0, 3);
   return {
     props: {
       currentData,
@@ -37,9 +38,8 @@ export async function getStaticProps({ params: { slug } }) {
   };
 }
 
+
 export default function ({ currentData, related }) {
-  const ext = currentData.imageName.split('.').pop();
-  // const ext = 'webp'
   return (
     <>
       <SEO data={currentData} />
@@ -48,7 +48,7 @@ export default function ({ currentData, related }) {
           minW={currentData.width > currentData.height ? "60%" : "40%"}
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
-          {ext === 'webp' ?
+          {currentData.ext === 'webp' ?
             <Box maxW={478} mx={'auto'} boxShadow={'lg'}>
               <Image
                 key={currentData.id}
@@ -89,8 +89,10 @@ export default function ({ currentData, related }) {
           minW="20rem"
           // maxW={["100%", "100%", "100%", "40rem"]}
           width={["100%", "100%", "100%", "40rem"]}
-          />
+        />
       </Flex>
+      {currentData.ext === 'jpg' && currentData.hasAnim && <ImageVersionLink slug={currentData.slug} type={'animated'} />}
+      {currentData.ext === 'webp' && currentData.hasAnim && <ImageVersionLink slug={currentData.slug} type={'still'} />}
       <RelatedImages dataList={related} />
     </>
   )

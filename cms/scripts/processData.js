@@ -171,6 +171,7 @@ const ManageData = {
 
     await Promise.all(imagesToProcess.map(async (imageDataObj, index) => {
       const long_name = imageDataObj.long_name;
+      const hasAnim = imageDataObj.imageDataList.length > 1;
       await Promise.all(imageDataObj.imageDataList.map(async imageData => {
         const isGif = imageData.ext === 'gif'
         const path = isGif ? PROCESSED_WEBP_PATH : STILL_PATH(collection);
@@ -208,6 +209,7 @@ const ManageData = {
           width: metadata.width,
           height: metadata.height,
           collection,
+          hasAnim,
           filters: {
             weight: weight.length ? weight[0].weight : 100,
             live,
