@@ -27,9 +27,8 @@ export async function getStaticProps({ params: { slug } }) {
   const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
   const currentData = dataList.filter(d => d.slug == slug).pop();
   let related = dataList
-    .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg'))
-  // .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug))
-  related = shuffle(related.sort(byWeight).filter(i => i.height < i.width)).slice(0, 3);
+    .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg' && ((d.height < d.width) && (d.filters.weight > 1))))
+  related = shuffle(related.sort(byWeight)).slice(0, 3);
   return {
     props: {
       currentData,
