@@ -23,4 +23,8 @@ async function headers() {
   ]
 }
 
-module.exports = {...nextConfig, headers}
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = withBundleAnalyzer({...nextConfig, headers})
