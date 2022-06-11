@@ -35,11 +35,11 @@
         displayHex: '#f8f0e3',
         rgb: { R: 255, G: 255, B: 255 },
       },
-      earthy: {
-        hex: '#654321',
-        displayHex: '#654321',
-        rgb: { R: 101, G: 67, B: 33 },
-      },
+      // earth: {
+      //   hex: '#654321',
+      //   displayHex: '#654321',
+      //   rgb: { R: 101, G: 67, B: 33 },
+      // },
       sky: {
         hex: '#4bb5d8',
         displayHex: '#4bb5d8',
