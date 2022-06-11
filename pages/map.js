@@ -24,7 +24,7 @@ export async function getStaticProps() {
       .filter(d => d.filters?.live)
       .map(d => {
         return {
-          name: d.name,
+          parkName: d.parkName,
           slug: d.slug,
           lat: d.lat || null,
           long: d.long || null,
@@ -47,7 +47,7 @@ export async function getStaticProps() {
 
   const initMapDataList = initParksWithinBounds.map(data => {
     return {
-      name: data.name,
+      parkName: data.parkName,
       slug: data.slug,
       lat: data.lat || null,
       long: data.long || null,
@@ -55,7 +55,7 @@ export async function getStaticProps() {
   });
   const initCarouselDataList = initParksWithinBounds.map(data => {
     return {
-      name: data.name,
+      parkName: data.parkName,
       slug: data.slug,
       // lat: data.lat || null,
       // long: data.long || null,

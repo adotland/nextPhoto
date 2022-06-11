@@ -3,10 +3,10 @@ import config from "../../config";
 import { capFirst } from "../../utils/helpers";
 
 export default function SEO({ data }) {
-  const title = `${data.name} // ${data.collection ? `${capFirst(data.collection)} // ` : ''}${config.meta.title}`;
+  const title = `${data.parkName} // ${data.collection ? `${capFirst(data.collection)} // ` : ''}${config.meta.title}`;
   const mainImage = `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`;
   // const description = title + (data.description ? ` - ${data.description}` : '');
-  const description = `${data.name} @ ${config.meta.title}, photoblog for bicycles in ${capFirst(data.collection)} and parks located in the Greater Seattle area`;
+  const description = `${data.parkName} @ ${config.meta.title}, photoblog for bicycles in ${capFirst(data.collection)} and parks located in the Greater Seattle area`;
   let url = `${config.endpoints.canonical}` + (data?.slug ? `/${data.slug}` : '');
   return (
     <Head>

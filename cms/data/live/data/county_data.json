@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Bryn Mawr Park",
+    "parkName": "Bryn Mawr Park",
     "address": "118th St and 80th Ave S Renton WA 98059",
     "lat": "47.497044",
     "long": "-122.2320834",
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "name": "Cecil Moses Memorial Park",
+    "parkName": "Cecil Moses Memorial Park",
     "address": "112th St and Pacific Hwy S Tukwila WA 98168",
     "lat": "47.502995",
     "long": "-122.293126",
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "name": "Dick Thurnau Memorial Park",
+    "parkName": "Dick Thurnau Memorial Park",
     "address": "11050 10th Ave SW Seattle WA 98146",
     "lat": "47.5037293",
     "long": "-122.3453693",
@@ -64,7 +64,7 @@
   },
   {
     "id": 4,
-    "name": "Gold Creek Park",
+    "parkName": "Gold Creek Park",
     "address": "16020 148th Ave NE Woodinville WA 98072",
     "lat": "47.74306139999999",
     "long": "-122.141238",
@@ -85,7 +85,7 @@
   },
   {
     "id": 5,
-    "name": "Kingsgate Park",
+    "parkName": "Kingsgate Park",
     "address": "116th Ave NE at NE 140th Kingsgate WA 98034",
     "lat": "47.72577099999999",
     "long": "-122.1866179",
@@ -106,7 +106,7 @@
   },
   {
     "id": 6,
-    "name": "Marymoor Bellevue Ballfield Complex",
+    "parkName": "Marymoor Bellevue Ballfield Complex",
     "address": "176th Ave NE and NE 65th St Redmond WA 98052",
     "lat": "47.6640087",
     "long": "-122.1055467",
@@ -127,7 +127,7 @@
   },
   {
     "id": 7,
-    "name": "Marymoor Park",
+    "parkName": "Marymoor Park",
     "address": "6046 West Lake Sammamish Pkwy NE Redmond WA 98052",
     "lat": "47.6594346",
     "long": "-122.1087919",
@@ -148,7 +148,7 @@
   },
   {
     "id": 8,
-    "name": "May Creek Park - County",
+    "parkName": "May Creek Park - County",
     "address": "NE 31st St and Jones Ave NE Renton WA 98056",
     "lat": "47.5213834851",
     "long": "-122.1649735407",
@@ -169,7 +169,7 @@
   },
   {
     "id": 9,
-    "name": "North Shorewood Park",
+    "parkName": "North Shorewood Park",
     "address": "SW 102nd St and 24th Ave SW Seattle WA 98146",
     "lat": "47.511831",
     "long": "-122.3631641",
@@ -190,7 +190,7 @@
   },
   {
     "id": 10,
-    "name": "Northshore Athletic Fields",
+    "parkName": "Northshore Athletic Fields",
     "address": "14600 NE 145th St Woodinville WA 98072",
     "lat": "47.7329268",
     "long": "-122.1469189",
@@ -211,7 +211,7 @@
   },
   {
     "id": 11,
-    "name": "Sixty Acres Park",
+    "parkName": "Sixty Acres Park",
     "address": "NE 116th St and 154th Pl NE Redmond WA 98052",
     "lat": "47.7047331",
     "long": "-122.1338564",
@@ -232,7 +232,7 @@
   },
   {
     "id": 12,
-    "name": "Skyway Park",
+    "parkName": "Skyway Park",
     "address": "S 120th Pl and 70th Pl S Seattle WA 98178",
     "lat": "47.4945022",
     "long": "-122.2443115",
@@ -253,7 +253,7 @@
   },
   {
     "id": 13,
-    "name": "Steve Cox Memorial Park",
+    "parkName": "Steve Cox Memorial Park",
     "address": "1321 SW 102nd St Seattle WA 98146",
     "lat": "47.5117145",
     "long": "-122.3520779",
@@ -274,7 +274,7 @@
   },
   {
     "id": 14,
-    "name": "White Center Heights Park",
+    "parkName": "White Center Heights Park",
     "address": "SW 102nd St and 7th Ave SW Seattle WA 98146",
     "lat": "47.5120164",
     "long": "-122.3436372",
@@ -295,7 +295,7 @@
   },
   {
     "id": 15,
-    "name": "Cove Park",
+    "parkName": "Cove Park",
     "address": "4807 SW Barton St, Seattle, WA 98136",
     "lat": "47.5229663",
     "long": "-122.3936866",
@@ -316,7 +316,7 @@
   },
   {
     "id": 16,
-    "name": "Ruby Chow Park",
+    "parkName": "Ruby Chow Park",
     "address": "1136 S Albro Pl, Seattle, WA 98108",
     "lat": "47.5464302",
     "long": "-122.3169504",
@@ -337,7 +337,7 @@
   },
   {
     "id": 17,
-    "name": "Ricardi Reach Natural Area",
+    "parkName": "Ricardi Reach Natural Area",
     "address": "17901 Renton-Maple Valley Rd, Renton, WA 98058",
     "lat": "47.4635713",
     "long": "-122.1040151",
@@ -358,7 +358,7 @@
   },
   {
     "id": 1,
-    "name": "Cavanaugh Pond",
+    "parkName": "Cavanaugh Pond",
     "address": "18015 SE Renton Maple Vlalley Hwy, Renton, 98058",
     "lat": "47.4620834",
     "long": "-122.1015714",

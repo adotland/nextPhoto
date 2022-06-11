@@ -27,6 +27,18 @@ export default function ({ dataList }) {
   //     })
   // }, [])
 
+  // useEffect(() => {
+  //   fetch(`/featured_data.json`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data)
+  //       setDataList(data)
+  //     })
+  //     .catch(err => {
+  //       // console.log(err)
+  //     })
+  // }, [])
+
   return (
     <Gallery dataList={dataList} isFeatured={true} />
   )

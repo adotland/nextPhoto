@@ -59,9 +59,9 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   textOverflow={'ellipsis'}
                   whiteSpace={'nowrap'}
                 >
-                  {capFirst(data.name)}
+                  {capFirst(data.parkName)}
                 </Heading>
-                {/* <Text w="full">{capFirst(data.name)}</Text> */}
+                {/* <Text w="full">{capFirst(data.parkName)}</Text> */}
                 <Box
                   w='150px'
                   h='100px'
@@ -73,7 +73,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   <Image
                     key={index}
                     src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
-                    alt={data.name ? `image of ${data.name}` : "image"}
+                    alt={data.parkName ? `image of ${data.parkName}` : "image"}
                     layout={'fixed'}
                     width={150}
                     height={100}

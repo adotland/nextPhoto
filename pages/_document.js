@@ -1,6 +1,6 @@
 // pages/_document.js
 
-import { ColorModeScript, } from '@chakra-ui/react'
+import { ColorModeScript } from '@chakra-ui/color-mode'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import config from '../config'
 import theme from '../utils/theme'

@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         slug: data.slug,
         imageName: data.imageName,
         ext: data.ext,
-        name: data.parkName,
+        parkName: data.parkName,
         width: data.width,
         height: data.height,
       });

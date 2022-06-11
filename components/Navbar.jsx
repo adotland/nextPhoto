@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
-import FilterMenu from "./FilterMenu";
+import FilterMenu from "./FilterMenu/FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
 import { FaDice } from 'react-icons/fa';
@@ -109,7 +109,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         direction={["column", "column", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <FilterMenu />
+        <FilterMenu setNavbarIsOpen={setIsOpen}/>
         <Search setNavbarIsOpen={setIsOpen} />
         <MenuItem to="/map" name="map">Map</MenuItem>
         <MenuItem to="/featured" name="featured"><FaDice size={'1.4em'} /></MenuItem>
@@ -135,7 +135,7 @@ const NavBarContainer = ({ children, ...props }) => {
       color={useColorModeValue("brand.700", "brand.200")}
       position="fixed"
       backdropFilter="saturate(180%) blur(5px)"
-      zIndex={99999}
+      zIndex={1000}
       {...props}
     >
       {children}

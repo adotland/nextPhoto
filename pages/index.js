@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import SEO from "../components/SEO/general";
 import { commonBlurImage, } from "../utils/helpers";
+import styles from '../components/Home.module.css'
 
 function CollectionItemContainer({ children }) {
   return (
     <Box
       pos={'relative'}
       h={200}
+      mb={2}
       _after={{
         backgroundColor: useColorModeValue('#eee', '#111'),
         opacity: '60%',
@@ -27,7 +29,7 @@ function CollectionItemContainer({ children }) {
   )
 }
 
-function CollectionImage({ imageUrl }) {
+function CollectionImage({ imageUrl, isPriority = false }) {
   return (
     <Image
       src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${imageUrl}`}
@@ -37,19 +39,18 @@ function CollectionImage({ imageUrl }) {
       placeholder="blur"
       sizes="25vw"
       blurDataURL={`data:image/svg+xml;base64,${commonBlurImage}`}
+      priority={isPriority}
     />
   )
 }
 
-function CollectionItem({ name, imageUrl, link }) {
+function CollectionItem({ name, imageUrl, link, isPriority }) {
   return (
-    <CollectionItemContainer >
-      <CollectionImage imageUrl={imageUrl} />
+    <CollectionItemContainer>
+      <CollectionImage imageUrl={imageUrl} isPriority={isPriority} />
       <Flex justifyContent={'center'} alignItems={'center'} h={200}>
-        <Link href={`/collection/${link}`} passHref={true}>
-          <ChakraLink zIndex={999}
-            _hover={{ borderBottom: '1px solid' }}
-            style={{ zIndex: 999 }} >
+        <Link href={`/collection/${link}`}>
+          <a className={styles.homeLink}>
             <Text
               color={useColorModeValue('#111', '#eee')}
               fontSize={['3xl', '4xl', '5xl']}
@@ -58,7 +59,7 @@ function CollectionItem({ name, imageUrl, link }) {
             >
               {name}
             </Text>
-          </ChakraLink>
+          </a>
         </Link>
       </Flex>
     </CollectionItemContainer>
@@ -71,9 +72,7 @@ function FeaturedCollectionItem({ imageUrl }) {
       <CollectionImage imageUrl={imageUrl} />
       <Flex justifyContent={'center'} alignItems={'center'} h={200}>
         <Link href={`/featured`}>
-          <ChakraLink zIndex={999}
-            _hover={{ borderBottom: '1px solid' }}
-            style={{ zIndex: 999 }} >
+          <a className={styles.homeLink}>
             <Text
               color={useColorModeValue('#111', '#eee')}
               fontSize={['3xl', '4xl', '5xl']}
@@ -82,7 +81,7 @@ function FeaturedCollectionItem({ imageUrl }) {
             >
               Featured
             </Text>
-          </ChakraLink>
+          </a>
         </Link>
       </Flex>
     </CollectionItemContainer>
@@ -93,10 +92,10 @@ export default function () {
   return (
     <>
       <SEO pageTitle={'Home'} />
-      <Box>
-        <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' />
-        <CollectionItem name={'Seattle'} link={'seattle'} imageUrl='__Alice-Ball-Park.jpg' />
-        <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl='mercer_park_North-Mercerdale-Hillside.jpg' />
+      <Box mt={[4, 4, 14, 4]} >
+        <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' isPriority={true} />
+        <CollectionItem name={'Seattle'} link={'seattle'} imageUrl="309_1297_Denny-Park.jpg" />
+        <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl="mercer_streetEnd_77th-Avenue-SE-Landing.jpg" />
         <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" />
         <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' />
         <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' />

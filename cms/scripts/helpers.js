@@ -29,7 +29,7 @@ const formatImageFileName = function (fileName, collection) {
   tmp = tmp.join('.');
   const sanitizedName = _doRegex(tmp, collection);
   return {
-    name: sanitizedName,
+    sanitizedName,
     slug: sanitizedName.toLowerCase(),
     ext
   }
@@ -37,7 +37,7 @@ const formatImageFileName = function (fileName, collection) {
 const formatImageFileNameNoExt = function (fileName) {
   const sanitizedName = _doRegex(fileName);
   return {
-    name: sanitizedName,
+    sanitizedName,
     slug: sanitizedName.toLowerCase(),
   }
 }

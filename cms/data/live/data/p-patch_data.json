@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Thomas Street Gardens",
+    "parkName": "Thomas Street Gardens",
     "address": "1010 E Thomas St, Seattle, WA",
     "lat": "47.62116942",
     "long": "-122.3193127",
@@ -22,7 +22,7 @@
   },
   {
     "id": 1,
-    "name": "Pinehurst",
+    "parkName": "Pinehurst",
     "address": "11525 12th Ave NE, Seattle, WA",
     "lat": "47.7128851",
     "long": "-122.3177009",
@@ -43,7 +43,7 @@
   },
   {
     "id": 2,
-    "name": "Haller Lake",
+    "parkName": "Haller Lake",
     "address": "13045 1st Ave NE, Seattle, WA 98133",
     "lat": "47.72352211",
     "long": "-122.3290358",
@@ -64,7 +64,7 @@
   },
   {
     "id": 3,
-    "name": "Jackson Park",
+    "parkName": "Jackson Park",
     "address": "13049 10th Ave NE, Seattle, WA",
     "lat": "47.724524",
     "long": "-122.3205708",
@@ -85,7 +85,7 @@
   },
   {
     "id": 4,
-    "name": "Squire Park",
+    "parkName": "Squire Park",
     "address": "14th Ave & E Fir St, Seattle, WA",
     "lat": "47.600622",
     "long": "-122.314191",
@@ -106,7 +106,7 @@
   },
   {
     "id": 5,
-    "name": "Greg's Garden",
+    "parkName": "Greg's Garden",
     "address": "14th Ave NW & NW 54th St, Seattle, WA",
     "lat": "47.701702",
     "long": "-122.374108",
@@ -127,7 +127,7 @@
   },
   {
     "id": 6,
-    "name": "Howell Collective",
+    "parkName": "Howell Collective",
     "address": "1514 E Howell St, Seattle, WA",
     "lat": "47.61771014",
     "long": "-122.3124323",
@@ -148,7 +148,7 @@
   },
   {
     "id": 7,
-    "name": "Horiuchi Park",
+    "parkName": "Horiuchi Park",
     "address": "156 Boren Ave, Seattle, WA",
     "lat": "47.603166",
     "long": "-122.318932",
@@ -169,7 +169,7 @@
   },
   {
     "id": 8,
-    "name": "Beacon Food Forest",
+    "parkName": "Beacon Food Forest",
     "address": "15th Ave S & S Dakota St, Seattle, WA",
     "lat": "47.567492",
     "long": "-122.313359",
@@ -190,7 +190,7 @@
   },
   {
     "id": 9,
-    "name": "Beacon Bluff",
+    "parkName": "Beacon Bluff",
     "address": "1701 15th Ave S, Seattle, WA",
     "lat": "47.58796217",
     "long": "-122.3139037",
@@ -211,7 +211,7 @@
   },
   {
     "id": 10,
-    "name": "Colman Park",
+    "parkName": "Colman Park",
     "address": "1716 32nd Ave S, Seattle, WA",
     "lat": "47.5871258",
     "long": "-122.2918077",
@@ -232,7 +232,7 @@
   },
   {
     "id": 11,
-    "name": "Bradner Gardens Park",
+    "parkName": "Bradner Gardens Park",
     "address": "1750 Bradner Pl S, Seattle, WA",
     "lat": "47.58765459",
     "long": "-122.2958347",
@@ -253,7 +253,7 @@
   },
   {
     "id": 12,
-    "name": "Pelican Tea Garden",
+    "parkName": "Pelican Tea Garden",
     "address": "1909 E Roy St, Seattle, WA",
     "lat": "47.6251069",
     "long": "-122.3066628",
@@ -274,7 +274,7 @@
   },
   {
     "id": 13,
-    "name": "Unpaving Paradise",
+    "parkName": "Unpaving Paradise",
     "address": "200 Summit Ave E, Seattle, WA",
     "lat": "47.619809",
     "long": "-122.325172",
@@ -295,7 +295,7 @@
   },
   {
     "id": 14,
-    "name": "Hoa Mai",
+    "parkName": "Hoa Mai",
     "address": "221 10th Ave S, Seattle, WA",
     "lat": "47.6004925",
     "long": "-122.3202572",
@@ -316,7 +316,7 @@
   },
   {
     "id": 15,
-    "name": "Interbay",
+    "parkName": "Interbay",
     "address": "2451 15th Ave W, Seattle, WA",
     "lat": "47.6414561",
     "long": "-122.3769596",
@@ -337,7 +337,7 @@
   },
   {
     "id": 16,
-    "name": "Judkins",
+    "parkName": "Judkins",
     "address": "24th Ave S & S Norman St, Seattle, WA",
     "lat": "47.592655",
     "long": "-122.301297",
@@ -358,7 +358,7 @@
   },
   {
     "id": 17,
-    "name": "Belltown",
+    "parkName": "Belltown",
     "address": "2512 Elliott Ave, Seattle, WA 98121",
     "lat": "47.6137972",
     "long": "-122.3508246",
@@ -379,7 +379,7 @@
   },
   {
     "id": 18,
-    "name": "High Point MacArthur Lane Park Garden",
+    "parkName": "High Point MacArthur Lane Park Garden",
     "address": "2726 SW MacArthur Ln, Seattle, WA",
     "lat": "47.5504841",
     "long": "-122.36952",
@@ -400,7 +400,7 @@
   },
   {
     "id": 19,
-    "name": "Thyme Patch Park",
+    "parkName": "Thyme Patch Park",
     "address": "2853 NW 58th St, Seattle, WA",
     "lat": "47.67084031",
     "long": "-122.3936898",
@@ -421,7 +421,7 @@
   },
   {
     "id": 20,
-    "name": "Eastlake",
+    "parkName": "Eastlake",
     "address": "2900 Fairview Ave E, Seattle, WA",
     "lat": "47.64680445",
     "long": "-122.3260495",
@@ -442,7 +442,7 @@
   },
   {
     "id": 21,
-    "name": "Rainier Vista Dakota Garden",
+    "parkName": "Rainier Vista Dakota Garden",
     "address": "2902 S Dakota St, Seattle, WA",
     "lat": "47.566251",
     "long": "-122.2978937",
@@ -463,7 +463,7 @@
   },
   {
     "id": 22,
-    "name": "Rainier Vista Snoqualmie Garden",
+    "parkName": "Rainier Vista Snoqualmie Garden",
     "address": "2917 S Snoqualmie St, Seattle, WA",
     "lat": "47.5612624",
     "long": "-122.2950406",
@@ -484,7 +484,7 @@
   },
   {
     "id": 23,
-    "name": "New Holly 29 Ave Garden",
+    "parkName": "New Holly 29 Ave Garden",
     "address": "29th Ave S & S Brighton St, Seattle, WA",
     "lat": "47.5415103",
     "long": "-122.2980193",
@@ -505,7 +505,7 @@
   },
   {
     "id": 24,
-    "name": "UpGarden",
+    "parkName": "UpGarden",
     "address": "300 Mercer St, Seattle, WA",
     "lat": "47.62498535",
     "long": "-122.3502493",
@@ -526,7 +526,7 @@
   },
   {
     "id": 25,
-    "name": "Madison Valley",
+    "parkName": "Madison Valley",
     "address": "3000 E Mercer St, Seattle, WA",
     "lat": "47.6242994",
     "long": "-122.3246763",
@@ -547,7 +547,7 @@
   },
   {
     "id": 26,
-    "name": "Cascade",
+    "parkName": "Cascade",
     "address": "310 Minor Ave N, Seattle, WA",
     "lat": "47.62103116",
     "long": "-122.3328656",
@@ -568,7 +568,7 @@
   },
   {
     "id": 27,
-    "name": "High Point Commons Garden",
+    "parkName": "High Point Commons Garden",
     "address": "3108 SW Graham St, Seattle, WA",
     "lat": "47.5470073",
     "long": "-122.3724333",
@@ -589,7 +589,7 @@
   },
   {
     "id": 29,
-    "name": "High Point Juneau Community Garden and Market Garden",
+    "parkName": "High Point Juneau Community Garden and Market Garden",
     "address": "32nd Ave SW & SW Juneau St, Seattle, WA",
     "lat": "47.5501344",
     "long": "-122.3758125",
@@ -610,7 +610,7 @@
   },
   {
     "id": 30,
-    "name": "Rainier Vista Sunrise Garden",
+    "parkName": "Rainier Vista Sunrise Garden",
     "address": "33rd Ave S & S Oregon St, Seattle, WA",
     "lat": "47.5628332",
     "long": "-122.2934281",
@@ -631,7 +631,7 @@
   },
   {
     "id": 31,
-    "name": "Estelle Street",
+    "parkName": "Estelle Street",
     "address": "3400 Rainier Ave S, Seattle, WA",
     "lat": "47.57286545",
     "long": "-122.2933854",
@@ -652,7 +652,7 @@
   },
   {
     "id": 32,
-    "name": "Greenwood",
+    "parkName": "Greenwood",
     "address": "343 NW 88th St, Seattle, WA",
     "lat": "47.6925514",
     "long": "-122.3620986",
@@ -673,7 +673,7 @@
   },
   {
     "id": 33,
-    "name": "Magnolia Manor Park",
+    "parkName": "Magnolia Manor Park",
     "address": "3500 28th Ave W, Seattle, WA 98199",
     "lat": "47.65161765",
     "long": "-122.3924118",
@@ -694,7 +694,7 @@
   },
   {
     "id": 34,
-    "name": "Courtland Place",
+    "parkName": "Courtland Place",
     "address": "3600 36th Ave S, Seattle, WA",
     "lat": "47.57128",
     "long": "-122.288127",
@@ -715,7 +715,7 @@
   },
   {
     "id": 35,
-    "name": "John C. Little Garden",
+    "parkName": "John C. Little Garden",
     "address": "37th Ave S & S Willow St, Seattle, WA",
     "lat": "47.5406157",
     "long": "-122.2884517",
@@ -736,7 +736,7 @@
   },
   {
     "id": 36,
-    "name": "Fremont",
+    "parkName": "Fremont",
     "address": "3935 Woodland Park Ave N, Seattle, WA",
     "lat": "47.6551505",
     "long": "-122.3450303",
@@ -757,7 +757,7 @@
   },
   {
     "id": 37,
-    "name": "Angel Morgan",
+    "parkName": "Angel Morgan",
     "address": "3956 S Morgan St, Seattle",
     "lat": "47.54396055",
     "long": "-122.2827202",
@@ -778,7 +778,7 @@
   },
   {
     "id": 38,
-    "name": "Queen Anne",
+    "parkName": "Queen Anne",
     "address": "3rd Ave N & Lynn St, Seattle, WA",
     "lat": "47.6388499",
     "long": "-122.3523158",
@@ -799,7 +799,7 @@
   },
   {
     "id": 39,
-    "name": "University District",
+    "parkName": "University District",
     "address": "4009 8th Ave NE, Seattle, WA",
     "lat": "47.65604965",
     "long": "-122.3199207",
@@ -820,7 +820,7 @@
   },
   {
     "id": 40,
-    "name": "West Genesee Garden",
+    "parkName": "West Genesee Garden",
     "address": "4101 SW Genesee St, Seattle, WA",
     "lat": "47.564601",
     "long": "-122.384315",
@@ -841,7 +841,7 @@
   },
   {
     "id": 41,
-    "name": "Snoqualmie",
+    "parkName": "Snoqualmie",
     "address": "4549 13th Ave S, Seattle, WA",
     "lat": "47.5620506",
     "long": "-122.3164515",
@@ -862,7 +862,7 @@
   },
   {
     "id": 42,
-    "name": "Hillman City",
+    "parkName": "Hillman City",
     "address": "4613 S Lucile St, Seattle, WA",
     "lat": "47.55256451",
     "long": "-122.2750908",
@@ -883,7 +883,7 @@
   },
   {
     "id": 43,
-    "name": "Good Shepherd",
+    "parkName": "Good Shepherd",
     "address": "4618 Bagley Ave N, Seattle, WA",
     "lat": "47.6631643",
     "long": "-122.332262",
@@ -904,7 +904,7 @@
   },
   {
     "id": 44,
-    "name": "Brandon Street Orchard",
+    "parkName": "Brandon Street Orchard",
     "address": "4625 S Brandon St, Seattle, WA",
     "lat": "47.5531164",
     "long": "-122.2742283",
@@ -925,7 +925,7 @@
   },
   {
     "id": 45,
-    "name": "Maa Nyei Lai Ndeic",
+    "parkName": "Maa Nyei Lai Ndeic",
     "address": "4913 Columbia Dr S, Seattle, WA",
     "lat": "47.55755853",
     "long": "-122.3051703",
@@ -946,7 +946,7 @@
   },
   {
     "id": 46,
-    "name": "Broadway Hill",
+    "parkName": "Broadway Hill",
     "address": "500-598 Federal Ave E, Seattle, WA",
     "lat": "47.623244",
     "long": "-122.318733",
@@ -967,7 +967,7 @@
   },
   {
     "id": 47,
-    "name": "Republican",
+    "parkName": "Republican",
     "address": "503 20th Ave E, Seattle, WA 98112",
     "lat": "47.62335251",
     "long": "-122.3061297",
@@ -988,7 +988,7 @@
   },
   {
     "id": 48,
-    "name": "University Heights",
+    "parkName": "University Heights",
     "address": "5031 University Way NE, Seattle, WA",
     "lat": "47.6658699",
     "long": "-122.3135511",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": 49,
-    "name": "Hawkins",
+    "parkName": "Hawkins",
     "address": "504 Martin Luther King Junior Way, Seattle, WA",
     "lat": "47.60626063",
     "long": "-122.2966597",
@@ -1030,7 +1030,7 @@
   },
   {
     "id": 50,
-    "name": "Delridge",
+    "parkName": "Delridge",
     "address": "5078 25th Ave SW, Seattle, WA",
     "lat": "47.55659148",
     "long": "-122.3641441",
@@ -1051,7 +1051,7 @@
   },
   {
     "id": 51,
-    "name": "Burke-Gilman Gardens",
+    "parkName": "Burke-Gilman Gardens",
     "address": "5200 Mithun Pl NE, Seattle, WA",
     "lat": "47.66763551",
     "long": "-122.2820924",
@@ -1072,7 +1072,7 @@
   },
   {
     "id": 52,
-    "name": "Ravenna",
+    "parkName": "Ravenna",
     "address": "5200 Ravenna Ave NE, Seattle, WA",
     "lat": "47.6664252",
     "long": "-122.3029968",
@@ -1093,7 +1093,7 @@
   },
   {
     "id": 53,
-    "name": "Shiga's Garden",
+    "parkName": "Shiga's Garden",
     "address": "5522 University Way NE, Seattle, WA",
     "lat": "47.66879398",
     "long": "-122.3128979",
@@ -1114,7 +1114,7 @@
   },
   {
     "id": 54,
-    "name": "Phinney Ridge",
+    "parkName": "Phinney Ridge",
     "address": "5926 3rd Ave NW, Seattle, WA",
     "lat": "47.6721834",
     "long": "-122.3605938",
@@ -1135,7 +1135,7 @@
   },
   {
     "id": 55,
-    "name": "Queen Pea",
+    "parkName": "Queen Pea",
     "address": "5th Ave N & Howe St, Seattle, WA",
     "lat": "47.636042",
     "long": "-122.364997",
@@ -1156,7 +1156,7 @@
   },
   {
     "id": 56,
-    "name": "Maple Leaf",
+    "parkName": "Maple Leaf",
     "address": "5th Ave NE & NE 103rd St, Seattle, WA",
     "lat": "47.70362",
     "long": "-122.323171",
@@ -1177,7 +1177,7 @@
   },
   {
     "id": 57,
-    "name": "Evanston",
+    "parkName": "Evanston",
     "address": "604 N 101st St, Seattle, WA",
     "lat": "47.7022766",
     "long": "-122.350827",
@@ -1198,7 +1198,7 @@
   },
   {
     "id": 58,
-    "name": "Oxbow Park",
+    "parkName": "Oxbow Park",
     "address": "6400 Corson Ave S, Seattle, WA",
     "lat": "47.5456597",
     "long": "-122.3217992",
@@ -1219,7 +1219,7 @@
   },
   {
     "id": 59,
-    "name": "Roosevelt",
+    "parkName": "Roosevelt",
     "address": "7012 12th Ave NE, Seattle, WA",
     "lat": "47.6799448",
     "long": "-122.3153054",
@@ -1240,7 +1240,7 @@
   },
   {
     "id": 60,
-    "name": "Kirke Park",
+    "parkName": "Kirke Park",
     "address": "7028 9th Ave NW, Seattle, WA",
     "lat": "47.67982666",
     "long": "-122.3682054",
@@ -1261,7 +1261,7 @@
   },
   {
     "id": 61,
-    "name": "New Holly Power Garden",
+    "parkName": "New Holly Power Garden",
     "address": "7123 Holly Park Dr S, Seattle, WA",
     "lat": "47.5383932",
     "long": "-122.2878747",
@@ -1282,7 +1282,7 @@
   },
   {
     "id": 62,
-    "name": "Solstice",
+    "parkName": "Solstice",
     "address": "7400 Fauntleroy Way SW, Seattle, WA",
     "lat": "47.536193",
     "long": "-122.39098",
@@ -1303,7 +1303,7 @@
   },
   {
     "id": 63,
-    "name": "Magnuson Park",
+    "parkName": "Magnuson Park",
     "address": "7400 Sand Point Way NE, Seattle, WA",
     "lat": "47.682142",
     "long": "-122.2633077",
@@ -1324,7 +1324,7 @@
   },
   {
     "id": 64,
-    "name": "New Holly Rockery Community Garden and Market Garden",
+    "parkName": "New Holly Rockery Community Garden and Market Garden",
     "address": "7409 40th Ave S, Seattle, WA",
     "lat": "47.5360072",
     "long": "-122.2819779",
@@ -1345,7 +1345,7 @@
   },
   {
     "id": 65,
-    "name": "Picardo Farm",
+    "parkName": "Picardo Farm",
     "address": "8040 25th Ave NE, Seattle, WA",
     "lat": "47.6880103",
     "long": "-122.3001555",
@@ -1366,7 +1366,7 @@
   },
   {
     "id": 66,
-    "name": "Immaculate",
+    "parkName": "Immaculate",
     "address": "810 18th Ave, Seattle, WA 98122",
     "lat": "47.60962895",
     "long": "-122.3085235",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": 67,
-    "name": "Troll's Knoll",
+    "parkName": "Troll's Knoll",
     "address": "820 N 36th St, Seattle, WA 98103, USA",
     "lat": "47.6509438",
     "long": "-122.3478054",
@@ -1408,7 +1408,7 @@
   },
   {
     "id": 68,
-    "name": "Thistle",
+    "parkName": "Thistle",
     "address": "8400 42nd Ave S, Seattle, Washington",
     "lat": "47.526642",
     "long": "-122.280732",
@@ -1429,7 +1429,7 @@
   },
   {
     "id": 69,
-    "name": "Ballard",
+    "parkName": "Ballard",
     "address": "8527 25th Ave NW, Seattle, WA",
     "lat": "47.69089983",
     "long": "-122.3889632",
@@ -1450,7 +1450,7 @@
   },
   {
     "id": 70,
-    "name": "Climbing Water",
+    "parkName": "Climbing Water",
     "address": "895 Hiawatha Pl S, Seattle, WA",
     "lat": "47.59455388",
     "long": "-122.30935",
@@ -1471,7 +1471,7 @@
   },
   {
     "id": 71,
-    "name": "Westcrest Garden",
+    "parkName": "Westcrest Garden",
     "address": "9000 8th Ave SW, Seattle, WA",
     "lat": "47.522731",
     "long": "-122.345454",
@@ -1492,7 +1492,7 @@
   },
   {
     "id": 72,
-    "name": "Marra Farm",
+    "parkName": "Marra Farm",
     "address": "9026 4th Ave S, Seattle, WA",
     "lat": "47.522002",
     "long": "-122.329279",
@@ -1513,7 +1513,7 @@
   },
   {
     "id": 73,
-    "name": "Hazel Heights",
+    "parkName": "Hazel Heights",
     "address": "Baker Ave NW & NW 42nd St, Seattle, WA",
     "lat": "47.6577575",
     "long": "-122.3617648",
@@ -1534,7 +1534,7 @@
   },
   {
     "id": 74,
-    "name": "Licton Springs",
+    "parkName": "Licton Springs",
     "address": "College Way N & N 92nd St, Seattle, WA",
     "lat": "47.699224",
     "long": "-122.334889",
@@ -1555,7 +1555,7 @@
   },
   {
     "id": 75,
-    "name": "Ida Mia Garden",
+    "parkName": "Ida Mia Garden",
     "address": "E Madison St & Lake Washington Blvd E, Seattle, WA",
     "lat": "47.625937",
     "long": "-122.292759",
@@ -1576,7 +1576,7 @@
   },
   {
     "id": 76,
-    "name": "Spring Street",
+    "parkName": "Spring Street",
     "address": "E Spring St & 25th Ave, Seattle, WA",
     "lat": "47.611642",
     "long": "-122.289671",
@@ -1597,7 +1597,7 @@
   },
   {
     "id": 77,
-    "name": "Greenwood Station",
+    "parkName": "Greenwood Station",
     "address": "Fremont Ave N & N 89th St, Seattle, WA",
     "lat": "47.655217",
     "long": "-122.350042",
@@ -1618,7 +1618,7 @@
   },
   {
     "id": 78,
-    "name": "Bitter Lake",
+    "parkName": "Bitter Lake",
     "address": "Linden Ave N & N 143rd St, Seattle, WA",
     "lat": "47.732137",
     "long": "-122.3517071",
@@ -1639,7 +1639,7 @@
   },
   {
     "id": 79,
-    "name": "Linden Orchard",
+    "parkName": "Linden Orchard",
     "address": "Linden Ave N & N 67th St, Seattle, WA",
     "lat": "47.681228",
     "long": "-122.346811",
@@ -1660,7 +1660,7 @@
   },
   {
     "id": 80,
-    "name": "Hillside Garden",
+    "parkName": "Hillside Garden",
     "address": "MLK Jr Wy S and S McClellan St, Seattle, WA",
     "lat": "47.5783534",
     "long": "-122.2983545",
@@ -1681,7 +1681,7 @@
   },
   {
     "id": 81,
-    "name": "New Holly Lucky Garden",
+    "parkName": "New Holly Lucky Garden",
     "address": "S Holly St & Shaffer Ave S, Seattle, WA",
     "lat": "47.5426474",
     "long": "-122.2969402",
@@ -1702,7 +1702,7 @@
   },
   {
     "id": 82,
-    "name": "Leo Street",
+    "parkName": "Leo Street",
     "address": "S Leo St, Seattle, WA 98178",
     "lat": "47.5025843",
     "long": "-122.2662984",
@@ -1723,7 +1723,7 @@
   },
   {
     "id": 83,
-    "name": "Barton Street",
+    "parkName": "Barton Street",
     "address": "SW Barton St & 34th Ave SW, Seattle, WA",
     "lat": "47.521076",
     "long": "-122.376357",
@@ -1744,7 +1744,7 @@
   },
   {
     "id": 84,
-    "name": "Longfellow Creek",
+    "parkName": "Longfellow Creek",
     "address": "SW Thistle St & 25th Ave SW, Seattle, WA",
     "lat": "47.5282744",
     "long": "-122.3666793",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": 28,
-    "name": "New Holly Youth & Family",
+    "parkName": "New Holly Youth & Family",
     "address": "32nd Ave S & S Brighton St, Seattle, WA",
     "lat": "47.5413238",
     "long": "-122.2931961",

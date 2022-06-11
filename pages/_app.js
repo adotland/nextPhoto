@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/provider';
 import Layout from '../components/Layout';
 import theme from '../utils/theme'
 import '@fontsource/raleway/400.css'

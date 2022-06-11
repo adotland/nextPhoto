@@ -26,7 +26,7 @@ export async function getStaticProps({ params: { value } }) {
         slug: data.slug,
         imageName: data.imageName,
         ext: data.ext,
-        name: data.name,
+        parkName: data.parkName,
         width: data.width,
         height: data.height,
       });

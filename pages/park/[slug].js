@@ -52,7 +52,7 @@ export default function ({ currentData, related }) {
               <Image
                 key={currentData.id}
                 src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
-                alt={currentData.name ?? "image"}
+                alt={currentData.parkName ?? "image"}
                 layout="responsive"
                 width={currentData.width}
                 height={currentData.height}
@@ -67,7 +67,7 @@ export default function ({ currentData, related }) {
               <Image
                 key={currentData.id}
                 src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
-                alt={currentData.name ?? "image"}
+                alt={currentData.parkName ?? "image"}
                 layout="responsive"
                 width={currentData.width}
                 height={currentData.height}

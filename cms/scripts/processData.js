@@ -28,7 +28,7 @@ const ManageData = {
           cmsDataObj[long_name] = {
             pmaid: cmsData[0],
             locid: cmsData[1],
-            name: cmsData[2] || console.warn('missing name', cmsData),
+            parkName: cmsData[2] || console.warn('missing name', cmsData),
             address: cmsData[3] || console.warn('missing address', cmsData),
             zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
             lat: cmsData[5] || console.warn('missing lat', cmsData),
@@ -45,7 +45,7 @@ const ManageData = {
           process.exit(1);
         } else {
           cmsDataObj[long_name] = {
-            name: cmsData[0] || console.warn('missing name', cmsData),
+            parkName: cmsData[0] || console.warn('missing name', cmsData),
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[2] || console.warn('missing lat', cmsData),
             long: cmsData[3] || console.warn('missing long', cmsData),
@@ -62,7 +62,7 @@ const ManageData = {
           process.exit(1);
         } else {
           cmsDataObj[long_name] = {
-            name: cmsData[0] || console.warn('missing name', cmsData),
+            parkName: cmsData[0] || console.warn('missing name', cmsData),
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[2] || console.warn('missing lat', cmsData),
             long: cmsData[3] || console.warn('missing long', cmsData),
@@ -78,7 +78,7 @@ const ManageData = {
           process.exit(1);
         } else {
           cmsDataObj[long_name] = {
-            name: cmsData[0] || console.warn('missing name', cmsData),
+            parkName: cmsData[0] || console.warn('missing name', cmsData),
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[4] || console.warn('missing lat', cmsData),
             long: cmsData[5] || console.warn('missing long', cmsData),
@@ -94,7 +94,7 @@ const ManageData = {
           process.exit(1);
         } else {
           cmsDataObj[long_name] = {
-            name: cmsData[0] || console.warn('missing name', cmsData),
+            parkName: cmsData[0] || console.warn('missing name', cmsData),
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[2] || console.warn('missing lat', cmsData),
             long: cmsData[3] || console.warn('missing long', cmsData),
@@ -110,7 +110,7 @@ const ManageData = {
           process.exit(1);
         } else {
           cmsDataObj[long_name] = {
-            name: cmsData[0] || console.warn('missing name', cmsData),
+            parkName: cmsData[0] || console.warn('missing name', cmsData),
             address: cmsData[1] || console.warn('missing address', cmsData),
             lat: cmsData[2] || console.warn('missing lat', cmsData),
             long: cmsData[3] || console.warn('missing long', cmsData),
@@ -143,7 +143,7 @@ const ManageData = {
       // const parsedLongName = long_name.replaceAll(/[^a-z]/ig, '').toUpperCase();
       // const imageData = imageDataList.filter(d => d.parsed === parsedLongName);
 
-      const { name: formattedNameNoExt } = formatImageFileNameNoExt(long_name);
+      const { sanitizedName: formattedNameNoExt } = formatImageFileNameNoExt(long_name);
 
       const matchingImageDataList = imageDataList.filter(d => {
         let fullImageName;
@@ -198,7 +198,7 @@ const ManageData = {
           id: md5(imageData.slug),
           pmaid: cmsDataObj[long_name].pmaid,
           locid: cmsDataObj[long_name].locid,
-          name: cmsDataObj[long_name].name,
+          parkName: cmsDataObj[long_name].parkName,
           address: cmsDataObj[long_name].address,
           zip_code: cmsDataObj[long_name].zip_code,
           lat: cmsDataObj[long_name].lat,
@@ -231,7 +231,7 @@ const ManageData = {
     for (let i = 0, len = data.length; i < len; i++) {
       retval.push({
         ...data[i],
-        imageName: formatImageFileName(data[i].imageName).name
+        imageName: formatImageFileName(data[i].imageName).sanitizedName
       });
     }
     await ff.writeJson(retval, LIVE_DATA_PATH, `${collection}_data.json`, 2);

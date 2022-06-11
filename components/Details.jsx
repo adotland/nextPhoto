@@ -19,7 +19,7 @@ export default function Details({ data, ...props }) {
   }
   return (
     <Box {...props}>
-      <Heading as={'h1'} pb={3} color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}>{data.name}</Heading>
+      <Heading as={'h1'} pb={3} color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}>{data.parkName}</Heading>
       <Link href={`/collection/${data.collection.toLowerCase()}`}>
         <a className={styles.collectionLink}>
           <Heading as={'h2'} fontSize={'medium'} mb={3} textTransform={'capitalize'}>
@@ -35,8 +35,8 @@ export default function Details({ data, ...props }) {
       {data.address && <Text>{data.address}</Text>}
       {data.description && <Text>{data.description}</Text>}
       {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured} />}
-      <Social path={`/park/${data.slug}`} takenAt={data.name} />
-      {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.name} />}
+      <Social path={`/park/${data.slug}`} takenAt={data.parkName} />
+      {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.parkName} />}
 
     </Box>
   )

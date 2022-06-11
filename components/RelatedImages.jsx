@@ -34,7 +34,7 @@ export default function RelatedImages({ dataList }) {
                 <Image
                   key={index}
                   src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
-                  alt={data.name || "image"}
+                  alt={data.parkName || "image"}
                   layout={'fixed'}
                   width={150}
                   height={100}

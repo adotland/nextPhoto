@@ -110,7 +110,7 @@ return (
           }}
         >
           <Popup>
-            {data.name?.length > 20 ? `${data.name.substring(0, 20)}...` : data.name}
+            {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
           </Popup>
         </Marker>)
       }

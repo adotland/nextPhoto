@@ -48,7 +48,7 @@
   top: 85%;
   /* right: 100%; */
   z-index: 9999;
-  text-shadow: -1px 1px gray;
+  text-shadow: 0px 1px 3px grey;
 }
 
 .galleryContainer:hover .galleryCaption{

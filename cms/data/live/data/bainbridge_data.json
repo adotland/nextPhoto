@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Cave Family Heritage Park",
+    "parkName": "Cave Family Heritage Park",
     "address": "259 Ferncliff Dr , Bainbridge Island, WA, 98110",
     "lat": "47.626794",
     "long": "-122.510352",
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "name": "Island Center Park",
+    "parkName": "Island Center Park",
     "address": "8395 Fletcher Bay Rd , Bainbridge Island, Wa, 98110",
     "lat": "47.63977",
     "long": "-122.563083",
@@ -43,7 +43,7 @@
   },
   {
     "id": 1,
-    "name": "Grand Forest",
+    "parkName": "Grand Forest",
     "address": "Bainbridge Island, Wa, 98110",
     "lat": "47.6562816",
     "long": "-122.5478564",
@@ -64,7 +64,7 @@
   },
   {
     "id": 3,
-    "name": "Meigs Park",
+    "parkName": "Meigs Park",
     "address": "11085 State Highway 305 , Bainbridge Island, Wa, 98110",
     "lat": "47.66434919",
     "long": "-122.5275201",
@@ -85,7 +85,7 @@
   },
   {
     "id": 4,
-    "name": "Red Pine Park",
+    "parkName": "Red Pine Park",
     "address": "418 Wood Ave SW , Bainbridge Is, Wa, 98110",
     "lat": "47.622328",
     "long": "-122.523512",
@@ -106,7 +106,7 @@
   },
   {
     "id": 7,
-    "name": "Waterfront Park",
+    "parkName": "Waterfront Park",
     "address": "625 Winslow Way E, Bainbridge Island, WA 98110",
     "lat": "47.62285453",
     "long": "-122.5162305",
@@ -127,7 +127,7 @@
   },
   {
     "id": 5,
-    "name": "Schel Chelb Park",
+    "parkName": "Schel Chelb Park",
     "address": "7595 Heron Hall Lane NE , Bainbridge Island, Wa, 98110",
     "lat": "47.6042289",
     "long": "-122.5508147",
@@ -148,7 +148,7 @@
   },
   {
     "id": 6,
-    "name": "Williams-Olson Park",
+    "parkName": "Williams-Olson Park",
     "address": "6200 Williams Lane , Bainbridge Island, WA, 98110",
     "lat": "47.6652841",
     "long": "-122.5662878",

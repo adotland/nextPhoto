@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "name": "SAINT EDWARD STATE PARK",
+    "parkName": "SAINT EDWARD STATE PARK",
     "lat": "47.735009",
     "long": "-122.2478278",
     "imageName": "state_SAINT-EDWARD-STATE-PARK.jpg",
@@ -21,7 +21,7 @@
   },
   {
     "id": 1,
-    "name": "Lake Sammamish State Park",
+    "parkName": "Lake Sammamish State Park",
     "lat": "47.558863",
     "long": "-122.057015",
     "imageName": "state_Lake-Sammamish-State-Park.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": 2,
-    "name": "Bridle Trails State Park",
+    "parkName": "Bridle Trails State Park",
     "lat": "47.654576",
     "long": "-122.181594",
     "imageName": "state_Bridle-Trails-State-Park.jpg",

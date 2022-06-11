@@ -1,5 +1,6 @@
 
-import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/layout";
+import { useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { capFirst, commonBlurImage, shimmer, toBase64 } from "../utils/helpers";
@@ -63,7 +64,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                         `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}` :
                         `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/t_${data.imageName}`
                       }
-                      alt={data.name ? `image of ${data.name}` : "image"}
+                      alt={data.parkName ? `image of ${data.parkName}` : "image"}
                       layout="responsive"
                       width={data.width}
                       height={data.height}
@@ -77,7 +78,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                     >
                       <Text
                         color={useColorModeValue('black', 'white')}
-                      >{data.name}</Text>
+                      >{data.parkName}</Text>
                     </Box>
                   </Box>
                 </a>
