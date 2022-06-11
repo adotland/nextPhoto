@@ -77,6 +77,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                     layout={'fixed'}
                     width={150}
                     height={100}
+                    objectFit={'cover'}
                   />
                 </Box>
               </VStack>

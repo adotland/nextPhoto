@@ -13,7 +13,6 @@ export default function FilterDisplay({ filterColor, filterType, filterFeatured 
         rounded='md'
         bg={useColorModeValue('white', 'blackAlpha.200')}
       >
-        {/* <ListIcon as={MdSettings} color={`gray.500`} />Filters:  */}
         {filterColor && <FilterTag type={'color'} value={filterColor} />}
         {filterType && <FilterTag type={'type'} value={filterType} />}
         {filterFeatured && <FilterTag type={'featured'} value={'featured'} />}

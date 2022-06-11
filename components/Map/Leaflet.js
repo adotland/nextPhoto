@@ -76,6 +76,7 @@ const Leaflet = ({ center, name }) => {
       p={2}
       rounded='md'
       bg={useColorModeValue('white', 'blackAlpha.200')}
+      maxW={['auto','auto','auto','25rem']}
     >
       <MapContainer
         className={styles.map}
