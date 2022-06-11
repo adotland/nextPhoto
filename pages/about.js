@@ -53,7 +53,7 @@ export default function ({ statsObj }) {
       >
         <Stats stats={statsObj} />
       </Box>
-      <Box mt={2} ml={8}>
+      <Box mt={2} ml={4}>
         <Heading as={'h2'} fontSize={'1rem'} >Why</Heading>
       </Box>
       <Box my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
@@ -70,7 +70,7 @@ export default function ({ statsObj }) {
         <Text mb={2}>After completing this challenge, I was down three bikes: one sold, one traded, and one stolen. I was also down 30 lbs and felt much closer to being a Seattlelite. This blog is about the <AboutLink text='experience' path='/map' />.</Text>
 
       </Box>
-      <Box mt={2} ml={6} pl={2} pt={2} borderTop={'1px solid'} borderColor={'chakra-border-color'}>
+      <Box mt={2} pl={4} pt={2} borderTop={'1px solid'} borderColor={'chakra-border-color'}>
         <Heading as={'h2'} fontSize={'1rem'} >How</Heading>
       </Box>
 
