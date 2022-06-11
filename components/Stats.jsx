@@ -4,7 +4,8 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  useColorModeValue
+  useColorModeValue,
+  Heading
 } from "@chakra-ui/react";
 import Link from "next/link";
 import CountUp from 'react-countup';
@@ -37,14 +38,14 @@ export default function Stats({ stats }) {
   return (
     <Accordion allowToggle defaultIndex={0}>
       <AccordionItem>
-        <h2>
+        <Heading as={'h2'}>
           <AccordionButton>
             <Box flex='1' textAlign='left'>
               Stats
             </Box>
             <AccordionIcon />
           </AccordionButton>
-        </h2>
+        </Heading>
         <AccordionPanel pb={4}>
           <Wrap spacing='20px' justify='center'>
             <ParkStat name={'Total Parks Visited'} data={stats.amount.all} link={'/map'} />
