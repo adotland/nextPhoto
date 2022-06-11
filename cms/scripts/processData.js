@@ -25,12 +25,14 @@ const ManageData = {
           console.error('missing long_name');
           process.exit(1);
         } else {
+          const address = `${cmsData[3]}, Seattle, WA ${cmsData[4]}`;
           cmsDataObj[long_name] = {
             pmaid: cmsData[0],
             locid: cmsData[1],
             parkName: cmsData[2] || console.warn('missing name', cmsData),
-            address: cmsData[3] || console.warn('missing address', cmsData),
-            zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
+            address,
+            // address: cmsData[3] || console.warn('missing address', cmsData),
+            // zip_code: cmsData[4] || console.warn('missing zip_code', cmsData),
             lat: cmsData[5] || console.warn('missing lat', cmsData),
             long: cmsData[6] || console.warn('missing long', cmsData),
             collection: 'seattle',
@@ -196,8 +198,8 @@ const ManageData = {
 
         jsonData.push({
           id: md5(imageData.slug),
-          pmaid: cmsDataObj[long_name].pmaid,
-          locid: cmsDataObj[long_name].locid,
+          // pmaid: cmsDataObj[long_name].pmaid,
+          // locid: cmsDataObj[long_name].locid,
           parkName: cmsDataObj[long_name].parkName,
           address: cmsDataObj[long_name].address,
           zip_code: cmsDataObj[long_name].zip_code,
@@ -379,7 +381,7 @@ const ManageData = {
       if (data.filters.live) {
         searchApiData.push({
           slug: data.slug,
-          parkName: data.name.toLowerCase(),
+          parkName: data.parkName.toLowerCase(),
           still: data.ext === 'jpg'
         });
         if (data.filters.featured) {
@@ -388,7 +390,7 @@ const ManageData = {
             height: data.height,
             slug: data.slug,
             ext: data.ext,
-            parkName: data.name,
+            parkName: data.parkName,
             imageName: data.imageName,
             filters: {
               live: data.filters.live,
