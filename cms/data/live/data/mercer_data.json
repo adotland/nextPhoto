@@ -96,7 +96,7 @@
     "height": 3024,
     "collection": "mercer",
     "filters": {
-      "weight": 100,
+      "weight": 1,
       "live": true,
       "featured": false,
       "type": "still",
@@ -474,7 +474,7 @@
     "height": 2422,
     "collection": "mercer",
     "filters": {
-      "weight": 100,
+      "weight": 1,
       "live": true,
       "featured": false,
       "type": "still",
@@ -579,7 +579,7 @@
     "height": 4032,
     "collection": "mercer",
     "filters": {
-      "weight": 100,
+      "weight": 1000,
       "live": true,
       "featured": false,
       "type": "still",

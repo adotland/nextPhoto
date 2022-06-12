@@ -1,4 +1,4 @@
-import { Box, Heading, List, Text, useColorModeValue, Link as ChakraLink, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Box, Heading, Text, useColorModeValue, Link as ChakraLink, UnorderedList, ListItem } from "@chakra-ui/react";
 import Link from "next/link";
 
 import { ff } from "fssf";
@@ -45,7 +45,7 @@ export async function getStaticProps() {
 export default function ({ statsObj }) {
   return (
     <Box
-        mx={[4,4,4,24]}>
+      mx={[4, 4, 4, 24]}>
       <SEO pageTitle={'About'} />
       <Box
         // mx={[4,4,4,14]}
@@ -75,11 +75,12 @@ export default function ({ statsObj }) {
       </Box>
 
       <Box my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
-        <Heading as={'h3'} fontSize={'medium'} mb={4}>Tools used to find efficient and safe routes:</Heading>
+        <Heading as={'h3'} fontSize={'medium'} mb={4}>Tools used to find efficient and safer routes:</Heading>
         <UnorderedList>
           <ListItem><ChakraLink href={'https://www.komoot.com/plan'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Komoot Route Planner</ChakraLink></ListItem>
           <ListItem><ChakraLink href={'https://web6.seattle.gov/travelers/'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>SDOT</ChakraLink> for up to date road closures</ListItem>
           <ListItem><ChakraLink href={'https://maps.google.com/'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Goole Maps</ChakraLink> with biking layer and imaging</ListItem>
+          <ListItem><ChakraLink href={'https://twitter.com/SeattleParks'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Seattle Parks Twitter</ChakraLink> for park event info</ListItem>
         </UnorderedList>
       </Box>
 
