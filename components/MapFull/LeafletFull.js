@@ -41,82 +41,82 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
     })();
   }, []);
 
-const center = [47.6092355, -122.317784] // seattle univ
+  const center = [47.6092355, -122.317784] // seattle univ
 
-const markerIcon = new L.Icon({
-  iconUrl: '/tree-t.png',
-  iconSize: [25, 25],
-  iconAnchor: [12, 25],
-  popupAnchor: [0, -25],
-})
-
-// <a href="https://www.flaticon.com/free-icons/christmas-tree" title="christmas tree icons">Christmas tree icons created by Pixel perfect - Flaticon</a>
-
-function MapEventListener() {
-  const map = useMapEvents({
-    zoomend: () => {
-      const bounds = map.getBounds()
-      getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
-    },
-    movestart: () => {
-      map.closePopup()
-    },
-    moveend: () => {
-      const bounds = map.getBounds()
-      getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
-    },
+  const markerIcon = new L.Icon({
+    iconUrl: '/tree-t.png',
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
   })
-  return null
-}
 
-const interactionOptions = {
-  zoomControl: true,
-  doubleClickZoom: true,
-  closePopupOnClick: true,
-  dragging: true,
-  zoomSnap: false,
-  zoomDelta: true,
-  trackResize: true,
-  touchZoom: true,
-  scrollWheelZoom: true,
-};
+  // <a href="https://www.flaticon.com/free-icons/christmas-tree" title="christmas tree icons">Christmas tree icons created by Pixel perfect - Flaticon</a>
 
-return (
-  <MapContainer
-    className={styles.map}
-    center={center}
-    zoom={12}
-    attributionControl={false}
-    ref={setMapState}
-    {...interactionOptions}
-  >
-    <MapEventListener />
-    <TileLayer
-      url={osm[tileProvider].url}
-      attribution={osm[tileProvider].attribution}
-      ref={setCurrentTiles}
-    />
-    {dataList.map((data, index) => {
-      if (data.lat && data.long) {
-        return (<Marker
-          key={index}
-          position={[data.lat, data.long]}
-          icon={markerIcon}
-          eventHandlers={{
-            click: (e) => {
-              setActiveCarouselItem(0)
-              loadData(data.slug);
-            },
-          }}
-        >
-          <Popup>
-            {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
-          </Popup>
-        </Marker>)
-      }
-    })}
-  </MapContainer>
-)
+  function MapEventListener() {
+    const map = useMapEvents({
+      zoomend: () => {
+        const bounds = map.getBounds()
+        getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
+      },
+      movestart: () => {
+        map.closePopup()
+      },
+      moveend: () => {
+        const bounds = map.getBounds()
+        getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
+      },
+    })
+    return null
+  }
+
+  const interactionOptions = {
+    zoomControl: true,
+    doubleClickZoom: true,
+    closePopupOnClick: true,
+    dragging: true,
+    zoomSnap: false,
+    zoomDelta: true,
+    trackResize: true,
+    touchZoom: true,
+    scrollWheelZoom: true,
+  };
+
+  return (
+    <MapContainer
+      className={styles.map}
+      center={center}
+      zoom={12}
+      attributionControl={false}
+      ref={setMapState}
+      {...interactionOptions}
+    >
+      <MapEventListener />
+      <TileLayer
+        url={osm[tileProvider].url}
+        attribution={osm[tileProvider].attribution}
+        ref={setCurrentTiles}
+      />
+      {dataList.map((data, index) => {
+        if (data.lat && data.long) {
+          return (<Marker
+            key={index}
+            position={[data.lat, data.long]}
+            icon={markerIcon}
+            eventHandlers={{
+              click: (e) => {
+                setActiveCarouselItem(0)
+                loadData(data.slug);
+              },
+            }}
+          >
+            <Popup>
+              {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
+            </Popup>
+          </Marker>)
+        }
+      })}
+    </MapContainer>
+  )
 }
 
 export default LeafletFull;
