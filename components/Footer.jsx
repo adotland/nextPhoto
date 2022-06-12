@@ -6,9 +6,10 @@ function Footer() {
   return (
     <Box
       color={useColorModeValue('gray.800', 'gray.300')}
+      
     >
       <Flex
-        bgColor={useColorModeValue("gray.200", "blackAlpha.300")}
+        bgGradient={useColorModeValue("linear(to-t, #cad2d3, transparent)", "linear(to-t, blackAlpha.300, transparent)")}
         py={5}
         px={10}
         justifyContent={'space-between'}
