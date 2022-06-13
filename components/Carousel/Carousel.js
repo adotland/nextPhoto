@@ -47,7 +47,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem, 
               flex={1}
               p={4}
             >
-              <VStack mb={6}>
+              <VStack>
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign="center"
@@ -58,60 +58,62 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem, 
                   overflow={'hidden'}
                   textOverflow={'ellipsis'}
                   whiteSpace={'nowrap'}
-                  onClick={() => {setActiveMarker(data.slug)}}
-                  _hover={{cursor: 'pointer'}}
+                  onClick={() => { setActiveMarker(data.slug) }}
+                  _hover={{ cursor: 'pointer' }}
                 >
                   {capFirst(data.parkName)}
                 </Heading>
-                {/* <Text w="full">{capFirst(data.parkName)}</Text> */}
-                <Box
-                  w='150px'
-                  h='100px'
-                  position='relative'
-                  rounded={'lg'}
-                  overflow={'hidden'}
-                  border={`1px solid ${useColorModeValue('white', 'black')}`}
-                >
-                  <Image
-                    key={index}
-                    src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
-                    alt={data.parkName ? `image of ${data.parkName}` : "image"}
-                    layout={'fixed'}
-                    width={150}
-                    height={100}
-                    objectFit={'cover'}
-                  />
-                </Box>
+                <Flex>
+                  <Box
+                    w='150px'
+                    h='100px'
+                    position='relative'
+                    rounded={'lg'}
+                    overflow={'hidden'}
+                    border={`1px solid ${useColorModeValue('white', 'black')}`}
+                  >
+                    <Image
+                      key={index}
+                      src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${data.imageName}`}
+                      alt={data.parkName ? `image of ${data.parkName}` : "image"}
+                      layout={'fixed'}
+                      width={150}
+                      height={100}
+                      objectFit={'cover'}
+                    />
+                  </Box>
+                  <VStack spacing={4} ml={2} alignItems={'flex-start'}>
+                    <Box ml={2}>
+                      <HStack flexWrap={'wrap'} mb={2}>
+                        {data.filters?.matchColor && <Link href={`/filter/color/${data.filters.matchColor}`}><a><Tag size="sm" variant="outline" colorScheme="green">
+                          {data.filters.matchColor}
+                        </Tag></a></Link>}
+                        {data.filters?.type && <Link href={`/filter/type/${data.filters.type}`}><a><Tag size="sm" variant="outline" colorScheme="gray">
+                          {data.filters.type}
+                        </Tag></a></Link>}
+                        {data.filters?.featured && <Link href={`/featured`}><a><Tag size="sm" variant="outline" colorScheme="blue">
+                          featured
+                        </Tag></a></Link>}
+                      </HStack>
+                      <Link href={`/park/${data.slug}`}>
+                        <a>
+                          <Button
+                            colorScheme={useColorModeValue("blackAlpha", "green",)}
+                            fontWeight="bold"
+                            // textColor={useColorModeValue("blackAlpha.800", "white",)}
+                            fontFamily='Open Sans'
+                            size="sm"
+                            // transform={'skew(-21deg)'}
+                            rounded='none'
+                          >
+                            View &rarr;
+                          </Button>
+                        </a>
+                      </Link>
+                    </Box>
+                  </VStack>
+                </Flex>
               </VStack>
-
-              <Flex justifyContent='space-between'>
-                <HStack spacing={2}>
-                  {data.filters?.matchColor && <Tag size="sm" variant="outline" colorScheme="green">
-                    {data.filters.matchColor}
-                  </Tag>}
-                  {data.filters?.type && <Tag size="sm" variant="outline" colorScheme="green">
-                    {data.filters.type}
-                  </Tag>}
-                  {data.filters?.featured && <Tag size="sm" variant="outline" colorScheme="green">
-                    featured
-                  </Tag>}
-                </HStack>
-                <Link href={`/park/${data.slug}`}>
-                  <a>
-                    <Button
-                      colorScheme={useColorModeValue("blackAlpha", "green",)}
-                      fontWeight="bold"
-                      // textColor={useColorModeValue("blackAlpha.800", "white",)}
-                      fontFamily='Open Sans'
-                      size="sm"
-                      // transform={'skew(-21deg)'}
-                      rounded='none'
-                    >
-                      View &rarr;
-                    </Button>
-                  </a>
-                </Link>
-              </Flex>
             </Flex>
           ))}
         </ChakraCarousel>
