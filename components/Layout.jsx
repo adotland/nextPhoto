@@ -4,8 +4,11 @@ import { Box } from '@chakra-ui/layout'
 
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
+  const router = useRouter();
+  const padding = router.pathname.indexOf('/map') === -1 ? "88px" : "0px"; // TODO
   return (
     <>
       <Head>
@@ -15,7 +18,7 @@ export default function Layout({ children }) {
           <header>
             <Navbar />
           </header>
-          <main style={{ paddingTop: "88px", paddingBottom: '6rem' }}>
+          <main style={{ paddingTop: padding, paddingBottom: '6rem' }}>
             {children}
           </main>
         </Box>

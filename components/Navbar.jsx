@@ -121,6 +121,7 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
 };
 
 const NavBarContainer = ({ children, ...props }) => {
+  const router = useRouter();
   return (
     <Flex
       as="nav"
@@ -133,7 +134,7 @@ const NavBarContainer = ({ children, ...props }) => {
       p={8}
       bg={"transparent"}
       color={useColorModeValue("brand.700", "brand.200")}
-      position="fixed"
+      position={router.pathname.indexOf('/map') === -1 ? "fixed" : "relative"}
       backdropFilter="saturate(180%) blur(5px)"
       zIndex={1000}
       {...props}
