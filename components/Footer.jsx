@@ -13,6 +13,8 @@ function Footer() {
         py={5}
         px={10}
         justifyContent={'space-between'}
+        height={'6rem'}
+        alignItems={'center'}
       >
         &copy; {new Date().getFullYear()} TheParkAndTheBike
         <Flex justifyContent={'flex-end'}>

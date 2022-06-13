@@ -10,14 +10,14 @@ export default function Layout({ children }) {
     <>
       <Head>
       </Head>
-      <Box maxWidth='1500px' m='auto'>
+      <Box maxWidth='1500px' m='auto' style={{ position: 'relative', minHeight: '100vh' }}>
         <header>
           <Navbar />
         </header>
-        <main style={{paddingTop: "88px"}}> {/* feature not bug */}
+        <main style={{ paddingTop: "88px", paddingBottom: '6rem' }}>
           {children}
         </main>
-        <footer>
+        <footer style={{position: 'absolute', bottom: 0, width: '100%', height: '6rem'}}>
           <Footer />
         </footer>
       </Box>
