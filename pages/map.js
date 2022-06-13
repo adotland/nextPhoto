@@ -34,6 +34,7 @@ export async function getStaticProps() {
       })
     )
   }
+
   shuffle(dataList);
 
   const initParksWithinBounds = dataList.filter(data => {
@@ -53,6 +54,7 @@ export async function getStaticProps() {
       long: data.long || null,
     }
   });
+
   const initCarouselDataList = initParksWithinBounds.map(data => {
     return {
       parkName: data.parkName,
@@ -65,9 +67,9 @@ export async function getStaticProps() {
       filters: data.filters,
     }
   });
+
   return { props: { initMapDataList, initCarouselDataList, dataList } };
 }
-
 
 export default function ({ initMapDataList, initCarouselDataList, dataList }) {
 
@@ -75,10 +77,12 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
   const [mapDataList, setMapDataList] = useState(initMapDataList);
   const [newParkSlug, setNewParkSlug] = useState()
   const [activeCarouselItem, setActiveCarouselItem] = useState(0);
+  const [activeMarker, setActiveMarker] = useState()
 
   const loadData = (data) => {
     setNewParkSlug(data)
   }
+
   useEffect(() => {
     const newData = dataList.filter(d => d.slug === newParkSlug)
     if (newData.length) {
@@ -118,8 +122,20 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
           borderBottom={'2px solid black'}
           pb={2}
         >&uarr; Click and Drag to discover &darr;</Text> */}
-        <MapFull dataList={mapDataList} loadData={loadData} getParksInBounds={getParksInBounds} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
-        <Carousel dataList={carouselDataList} activeCarouselItem={activeCarouselItem} setActiveCarouselItem={setActiveCarouselItem} />
+        <MapFull
+          dataList={mapDataList}
+          loadData={loadData}
+          getParksInBounds={getParksInBounds}
+          activeCarouselItem={activeCarouselItem}
+          setActiveCarouselItem={setActiveCarouselItem}
+          activeMarker={activeMarker}
+        />
+        <Carousel
+          dataList={carouselDataList}
+          activeCarouselItem={activeCarouselItem}
+          setActiveCarouselItem={setActiveCarouselItem}
+          setActiveMarker={setActiveMarker}
+        />
       </Box>
     </>
   )

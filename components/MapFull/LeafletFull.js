@@ -4,19 +4,60 @@ import 'leaflet/dist/leaflet.css';
 import styles from './LeafletFull.module.css';
 import osm from "../../cms/data/live/scripts/osm-providers";
 
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Tooltip, useMapEvents } from 'react-leaflet';
 
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import { useColorModeValue, useColorMode } from '@chakra-ui/react';
 
-const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem }) => {
+const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker }) => {
   const { colorMode } = useColorMode()
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
+  const [markersObj, setMarkersObj] = useState({})
+  const [markerRefObj, setMarkerRefObj] = useState({})
 
   let tileProvider = useColorModeValue('jawgLight', 'jawgDark');
+
+  useEffect(() => {
+    if (activeMarker) {
+      const marker = markerRefObj[activeMarker]
+      if (marker) {
+        marker.openTooltip()
+      }
+    }
+  }, [activeMarker])
+
+  useEffect(() => {
+    if (dataList?.length) {
+      const newMarkersObj = {}
+      const newMarkerRefObj = {}
+      dataList.forEach((data, index) => {
+        if (data.lat && data.long) {
+          newMarkersObj[data.slug] = (
+            <Marker
+              key={index}
+              position={[data.lat, data.long]}
+              icon={markerIcon}
+              eventHandlers={{
+                click: (e) => {
+                  setActiveCarouselItem(0)
+                  loadData(data.slug);
+                },
+              }}
+              ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
+            >
+              <Tooltip sticky>
+                {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
+              </Tooltip>
+            </Marker>)
+        }
+      })
+      setMarkersObj(newMarkersObj)
+      setMarkerRefObj(newMarkerRefObj)
+    }
+  }, [dataList])
 
   useEffect(() => {
     if (!mapState) return
@@ -96,25 +137,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         attribution={osm[tileProvider].attribution}
         ref={setCurrentTiles}
       />
-      {dataList.map((data, index) => {
-        if (data.lat && data.long) {
-          return (<Marker
-            key={index}
-            position={[data.lat, data.long]}
-            icon={markerIcon}
-            eventHandlers={{
-              click: (e) => {
-                setActiveCarouselItem(0)
-                loadData(data.slug);
-              },
-            }}
-          >
-            <Popup>
-              {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
-            </Popup>
-          </Marker>)
-        }
-      })}
+      {Object.values(markersObj)}
     </MapContainer>
   )
 }

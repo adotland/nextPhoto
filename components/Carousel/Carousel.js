@@ -18,7 +18,7 @@ import ChakraCarousel from "./ChakraCarousel";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }) {
+export default function ({ dataList, activeCarouselItem, setActiveCarouselItem, setActiveMarker }) {
   if (dataList.length) {
     return (
       <Container
@@ -58,6 +58,8 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem }
                   overflow={'hidden'}
                   textOverflow={'ellipsis'}
                   whiteSpace={'nowrap'}
+                  onClick={() => {setActiveMarker(data.slug)}}
+                  _hover={{cursor: 'pointer'}}
                 >
                   {capFirst(data.parkName)}
                 </Heading>
