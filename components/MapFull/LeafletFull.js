@@ -1,17 +1,27 @@
+import { useColorModeValue, useColorMode } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './LeafletFull.module.css';
 import osm from "../../cms/data/live/scripts/osm-providers";
+import "leaflet.heat"
+import 'leaflet.fullscreen/Control.FullScreen.js'
+import 'leaflet.fullscreen/Control.FullScreen.css'
 
-import { MapContainer, TileLayer, Marker, Tooltip, useMapEvents } from 'react-leaflet';
-
+import { MapContainer, TileLayer, Marker, Tooltip, useMapEvents, useMap, LayersControl, LayerGroup, FeatureGroup } from 'react-leaflet';
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
-import { useColorModeValue, useColorMode } from '@chakra-ui/react';
 
-const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker }) => {
+function HeatmapLayer({ heatmapData }) {
+  const map = useMap()
+  useEffect(() => {
+    L.heatLayer(heatmapData, { radius: 40 }).addTo(map);
+  }, []);
+}
+
+const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker, heatmapData }) => {
   const { colorMode } = useColorMode()
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
@@ -19,6 +29,8 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
   const [markerRefObj, setMarkerRefObj] = useState({})
 
   let tileProvider = useColorModeValue('jawgLight', 'jawgDark');
+
+
 
   useEffect(() => {
     if (activeMarker) {
@@ -80,6 +92,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         shadowUrl: shadowUrl.src,
       });
     })();
+
   }, []);
 
   const center = [47.6092355, -122.317784] // seattle univ
@@ -99,9 +112,9 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
-      movestart: () => {
-        map.closePopup()
-      },
+      // movestart: () => {
+      //   map.closeTooltip()
+      // },
       moveend: () => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
@@ -129,6 +142,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
       zoom={12}
       attributionControl={false}
       ref={setMapState}
+      fullscreenControl={true}
       {...interactionOptions}
     >
       <MapEventListener />
@@ -137,7 +151,18 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         attribution={osm[tileProvider].attribution}
         ref={setCurrentTiles}
       />
-      {Object.values(markersObj)}
+      <LayersControl position="topright">
+        <LayersControl.Overlay name="Parks Visited" checked>
+          <LayerGroup>
+            {Object.values(markersObj)}
+          </LayerGroup>
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name="Heatmap" checked>
+          <LayerGroup>
+            <HeatmapLayer heatmapData={heatmapData} />
+          </LayerGroup>
+        </LayersControl.Overlay>
+      </LayersControl>
     </MapContainer>
   )
 }

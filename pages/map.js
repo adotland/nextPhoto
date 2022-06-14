@@ -35,6 +35,8 @@ export async function getStaticProps() {
     )
   }
 
+  const heatmapData = dataList.map(data=>[Number(data.lat), Number(data.long)])
+
   shuffle(dataList);
 
   const initParksWithinBounds = dataList.filter(data => {
@@ -68,10 +70,10 @@ export async function getStaticProps() {
     }
   });
 
-  return { props: { initMapDataList, initCarouselDataList, dataList } };
+  return { props: { initMapDataList, initCarouselDataList, dataList, heatmapData } };
 }
 
-export default function ({ initMapDataList, initCarouselDataList, dataList }) {
+export default function ({ initMapDataList, initCarouselDataList, dataList, heatmapData }) {
 
   const [carouselDataList, setCarouselDataList] = useState(initCarouselDataList);
   const [mapDataList, setMapDataList] = useState(initMapDataList);
@@ -129,6 +131,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList }) {
           activeCarouselItem={activeCarouselItem}
           setActiveCarouselItem={setActiveCarouselItem}
           activeMarker={activeMarker}
+          heatmapData={heatmapData}
         />
         <Carousel
           dataList={carouselDataList}
