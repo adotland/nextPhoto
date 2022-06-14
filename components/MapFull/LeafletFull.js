@@ -1,5 +1,5 @@
 import { useColorModeValue, useColorMode } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef, forwardRef } from 'react';
 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -9,17 +9,20 @@ import "leaflet.heat"
 import 'leaflet.fullscreen/Control.FullScreen.js'
 import 'leaflet.fullscreen/Control.FullScreen.css'
 
-import { MapContainer, TileLayer, Marker, Tooltip, useMapEvents, useMap, LayersControl, LayerGroup, FeatureGroup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Tooltip, useMapEvents, useMap, LayersControl, LayerGroup } from 'react-leaflet';
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
-function HeatmapLayer({ heatmapData }) {
+const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
   const map = useMap()
   useEffect(() => {
-    L.heatLayer(heatmapData, { radius: 40 }).addTo(map);
+    const layer = L.heatLayer(heatmapData, { radius: 40 });
+    if (map.hasLayer(layer)) return
+    layer.addTo(map);
+    ref.current = layer;
   }, []);
-}
+})
 
 const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker, heatmapData }) => {
   const { colorMode } = useColorMode()
@@ -30,7 +33,8 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
 
   let tileProvider = useColorModeValue('jawgLight', 'jawgDark');
 
-
+  const heatmapLayerGroupRef = useRef();
+  const heatmapLayerRef = useRef();
 
   useEffect(() => {
     if (activeMarker) {
@@ -112,13 +116,24 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
-      // movestart: () => {
-      //   map.closeTooltip()
-      // },
       moveend: () => {
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
+      layeradd: (e) => {
+        console.log('layeradd')
+        if (map && heatmapLayerRef.current && e.layer?._leaflet_id === heatmapLayerGroupRef?.current?._leaflet_id) {
+          if (map.hasLayer(heatmapLayerRef.current)) return
+          map.addLayer(heatmapLayerRef.current)
+        }
+      },
+      layerremove: (e) => {
+        console.log('layerremove')
+        if (map && heatmapLayerRef.current && e.layer?._leaflet_id === heatmapLayerGroupRef?.current?._leaflet_id) {
+          if (!map.hasLayer(heatmapLayerRef.current)) return
+          map.removeLayer(heatmapLayerRef.current)
+        }
+      }
     })
     return null
   }
@@ -146,20 +161,20 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
       {...interactionOptions}
     >
       <MapEventListener />
-      <TileLayer
-        url={osm[tileProvider].url}
-        attribution={osm[tileProvider].attribution}
-        ref={setCurrentTiles}
-      />
       <LayersControl position="topright">
+        <TileLayer
+          url={osm[tileProvider].url}
+          attribution={osm[tileProvider].attribution}
+          ref={setCurrentTiles}
+        />
+        <LayersControl.Overlay name="Heatmap" checked>
+          <LayerGroup ref={heatmapLayerGroupRef} >
+            <HeatmapLayer heatmapData={heatmapData} ref={heatmapLayerRef} />
+          </LayerGroup>
+        </LayersControl.Overlay>
         <LayersControl.Overlay name="Parks Visited" checked>
           <LayerGroup>
             {Object.values(markersObj)}
-          </LayerGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Heatmap" checked>
-          <LayerGroup>
-            <HeatmapLayer heatmapData={heatmapData} />
           </LayerGroup>
         </LayersControl.Overlay>
       </LayersControl>
