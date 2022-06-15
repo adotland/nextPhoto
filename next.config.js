@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [process.env.IMG_HOST_DOMAIN]
+    domains: [process.env.IMG_HOST_DOMAIN],
+    minimumCacheTTL: 2630000 // 1mo
   }
 }
 
