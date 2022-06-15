@@ -1,8 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/provider';
 import Layout from '../components/Layout';
 import theme from '../utils/theme'
-import '@fontsource/raleway/400.css'
-import '@fontsource/open-sans/700.css'
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'

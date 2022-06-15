@@ -1,6 +1,6 @@
 import { BsCameraReels } from 'react-icons/bs';
 import { AiOutlinePicture } from 'react-icons/ai';
-import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
 export default function ImageVersionLink({ slug, type }) {

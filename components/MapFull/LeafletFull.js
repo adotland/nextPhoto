@@ -17,7 +17,7 @@ import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
   const map = useMap()
   useEffect(() => {
-    const layer = L.heatLayer(heatmapData, { radius: 40 });
+    const layer = L.heatLayer(heatmapData, { radius: 40, gradient: {0.1: 'blue', 0.3: 'lime', 0.5: 'red'} });
     if (map.hasLayer(layer)) return
     layer.addTo(map);
     ref.current = layer;
@@ -120,6 +120,7 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
         const bounds = map.getBounds()
         getParksInBounds({ north: bounds.getNorth(), south: bounds.getSouth(), east: bounds.getEast(), west: bounds.getWest() })
       },
+      //TODO
       layeradd: (e) => {
         console.log('layeradd')
         if (map && heatmapLayerRef.current && e.layer?._leaflet_id === heatmapLayerGroupRef?.current?._leaflet_id) {

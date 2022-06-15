@@ -64,9 +64,10 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
       onClick={toggle}
       tabIndex={0}
       onKeyDown={handleKeyUp}
-      bg={useColorModeValue('whiteAlpha.900', 'blackAlpha.600')}
+      backgroundColor={useColorModeValue("white", "#191a1a")}
       p={1}
       transform={'skew(-21deg)'}
+      _hover={{cursor: 'pointer'}}
     >
       {isOpen ? <CloseIcon color={color} /> : <MenuIcon color={color} />}
     </Box>
@@ -80,6 +81,8 @@ const MenuItem = ({ children, to = "/", name }) => {
         <Text
           display="block"
           fontFamily='Open Sans'
+          fontWeight={'bold'}
+          fontSize={'md'}
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "#191a1a")}
           py={1}

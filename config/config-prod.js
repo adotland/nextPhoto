@@ -3,10 +3,10 @@ import configCommon from "./config-common";
 const csp = `
 default-src 'self';
 img-src 'self' https://*.jawg.io data:;
-style-src 'self' 'unsafe-inline';
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 script-src 'self' 'unsafe-inline';
 connect-src 'self' https://vitals.vercel-insights.com;
-font-src 'self' data:;
+font-src 'self' data: https://fonts.googleapis.com;
 `
 
 const config = {

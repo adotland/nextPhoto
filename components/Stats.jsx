@@ -40,7 +40,7 @@ export default function Stats({ stats }) {
       <AccordionItem>
         <Heading as={'h2'}>
           <AccordionButton>
-            <Box flex='1' textAlign='left'>
+            <Box flex='1' textAlign='left' fontWeight={'bold'}>
               Stats
             </Box>
             <AccordionIcon />

@@ -92,7 +92,7 @@ export default function () {
   return (
     <>
       <SEO pageTitle={'Home'} />
-      <Box mt={[4, 4, 14, 4]} >
+      <Box mt={[4, 4, 14, 4]} width={'95%'} mx={'auto'}>
         <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' isPriority={true} />
         <CollectionItem name={'Seattle'} link={'seattle'} imageUrl="309_1297_Denny-Park.jpg" />
         <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl="mercer_streetEnd_77th-Avenue-SE-Landing.jpg" />

@@ -22,8 +22,18 @@ function FilterLinkColor({ name, value, hex }) {
   return (
     <Link href={`/filter/${name}/${value}`}>
       <a>
-        <Flex justifyContent={'flex-end'} m={2} alignItems={'center'} rounded={'md'} border={'1px solid gray'} py={1} px={2}
-          _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}>
+        <Flex
+          justifyContent={'flex-end'}
+          alignItems={'center'}
+          m={2}
+          py={1}
+          px={2}
+          rounded={'md'}
+          border={'1px solid gray'}
+          _hover={{
+            background: useColorModeValue("blackAlpha.400", "whiteAlpha.300"),
+          }}
+        >
           <Text textTransform={'capitalize'}>
             {value}
           </Text>
@@ -39,8 +49,17 @@ function FilterLinkType({ value }) {
   return (
     <Link href={`/filter/type/${value}`}>
       <a>
-        <Flex justifyContent={'flex-end'} m={2} alignItems={'center'} rounded={'md'} border={'1px solid gray'} py={1} px={2}
-          _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}
+      <Flex
+          justifyContent={'flex-end'}
+          alignItems={'center'}
+          m={2}
+          py={1}
+          px={2}
+          rounded={'md'}
+          border={'1px solid gray'}
+          _hover={{
+            background: useColorModeValue("blackAlpha.400", "whiteAlpha.300"),
+          }}
         >
           <Text textTransform={'capitalize'}>{value}</Text>
           <Box ml={2}>
@@ -68,7 +87,7 @@ export default function ({ isOpen, onClose, btnRef }) {
       placement={'bottom'}
     >
       <DrawerOverlay />
-      <DrawerContent bgColor={useColorModeValue("whiteAlpha.900", "blackAlpha.900")}>
+      <DrawerContent bgColor={useColorModeValue("whiteAlpha.900", "blackAlpha.900")} pb={5}>
         <DrawerCloseButton />
         <DrawerHeader>Filters</DrawerHeader>
         <DrawerHeader display={'flex'} alignItems={'center'}>Type&nbsp;<AiOutlineCamera /></DrawerHeader>

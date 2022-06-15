@@ -1,6 +1,6 @@
 {
   "name": "the-bike-and-the-park",
-  "version": "2.1.0",
+  "version": "2.8.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -31,8 +31,6 @@
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@fontsource/open-sans": "^4.5.10",
-    "@fontsource/raleway": "^4.5.8",
     "framer-motion": "^6",
     "fssf": "^0.7.0",
     "fuse.js": "^6.6.2",

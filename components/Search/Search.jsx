@@ -79,7 +79,7 @@ export default function Search({ setNavbarIsOpen }) {
         rounded="md"
         _hover={{background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800')}}
         >
-        <Text fontWeight={'normal'} fontFamily='Open Sans'>Search</Text>
+        <Text fontWeight={'bold'} fontFamily='Open Sans'>Search</Text>
       </Button>
       <SearchModal isOpen={isOpen} onClose={onClose} initialRef={initialRef} handleSearchInputChange={handleSearchInputChange} resultsList={resultsList} isLoading={isLoading}/>
     </>

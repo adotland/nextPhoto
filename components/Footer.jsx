@@ -10,7 +10,7 @@ function Footer() {
 
     >
       <Flex
-        py={5}
+        pt={5}
         px={10}
         justifyContent={'space-between'}
         height={'6rem'}

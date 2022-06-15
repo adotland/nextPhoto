@@ -8,7 +8,7 @@ export default function Logo(props) {
         <a>
           <Text
             fontFamily={'Open sans'}
-            fontSize="lg"
+            fontSize="md"
             fontWeight="bold"
             minW={180}
             color={useColorModeValue("brand.700", "brand.200")}
