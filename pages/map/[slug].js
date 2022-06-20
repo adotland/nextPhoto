@@ -21,6 +21,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
+  slug = slug.replace('-anim', '');
   const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
   const dataObj = {};
 
@@ -51,7 +52,7 @@ export async function getStaticProps({ params: { slug } }) {
   const initZoom = 16;
   const initBounds = getBounds(...initCenter, initZoom);
 
-  const heatmapData = dataList.map(data=>[Number(data.lat), Number(data.long)]);
+  const heatmapData = dataList.map(data => [Number(data.lat), Number(data.long)]);
 
   shuffle(dataList);
 
