@@ -48,7 +48,6 @@ export default function ({ statsObj }) {
       mx={[4, 4, 4, 24]}>
       <SEO pageTitle={'About'} />
       <Box
-        // mx={[4,4,4,14]}
         mt={[4, 14, 14, 4]}
       >
         <Stats stats={statsObj} />

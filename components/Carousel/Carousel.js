@@ -59,7 +59,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem, 
                   textOverflow={'ellipsis'}
                   whiteSpace={'nowrap'}
                   onClick={() => { setActiveMarker(data.slug) }}
-                  _hover={{ cursor: 'pointer' }}
+                  _hover={{ cursor: 'pointer', textDecoration: 'underline' }}
                 >
                   {capFirst(data.parkName)}
                 </Heading>
@@ -80,6 +80,7 @@ export default function ({ dataList, activeCarouselItem, setActiveCarouselItem, 
                       width={150}
                       height={100}
                       objectFit={'cover'}
+                      onClick={() => { setActiveMarker(data.slug) }}
                     />
                   </Box>
                   <VStack spacing={4} ml={2} alignItems={'flex-start'}>
