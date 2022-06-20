@@ -1,3 +1,8 @@
-.collectionLink:hover {
+.collectionLink:hover, .mapLink:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mapLink {
+  font-size: small;
 }

@@ -36,8 +36,8 @@ export default function Details({ data, ...props }) {
       {data.description && <Text>{data.description}</Text>}
       {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured} />}
       <Social path={`/park/${data.slug}`} takenAt={data.parkName} />
-      {data.lat && data.long && <Map center={[data.lat, data.long]} name={data.parkName} />}
-
+      {data.lat && data.long && <Map center={[data.lat, data.long]} slug={data.slug} />}
+      <Link href={`/map/${data.slug}`}><a className={styles.mapLink}>View on Interactive Map &rarr;</a></Link>
     </Box>
   )
 }

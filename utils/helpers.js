@@ -64,3 +64,36 @@ export function debounce(limit, callback) {
 export function percentage(x, y) {
   return 100 / (y / x)
 }
+
+
+// LatLng {lat: 47.560035580011096, lng: -122.31904141792397}
+// _northEast: LatLng
+// lat: 47.56177315221082
+// lng: -122.310941146699
+// [[Prototype]]: Object
+// _southWest: LatLng
+// lat: 47.55829795018273
+// lng: -122.32714168914895
+
+
+export function getBounds(lat, long, zoom = 12) {
+  const latCoef = zoom === 12 ? 0.027775532 : 0.0017376010140459641;
+  const longCoef = zoom === 12 ? 0.049438476 : 0.008100271224975586;
+  return {
+    north: lat + latCoef,
+    south: lat - latCoef,
+    east: long + longCoef,
+    west: long - longCoef
+  }
+}
+
+export function findParksInBounds(list, bounds, amount) {
+  return list.filter(data => {
+    let withinBounds = false;
+    if ((data.lat && (data.lat > bounds.south)) && (data.lat && (data.lat < bounds.north)) && (data.long && (data.long > bounds.west)) && (data.long && (data.long < bounds.east))) {
+      withinBounds = true;
+    }
+    return withinBounds;
+  })
+    .slice(0, amount);
+}

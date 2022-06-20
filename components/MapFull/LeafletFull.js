@@ -17,14 +17,14 @@ import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
   const map = useMap()
   useEffect(() => {
-    const layer = L.heatLayer(heatmapData, { radius: 40, gradient: {0.1: 'blue', 0.3: 'lime', 0.5: 'red'} });
+    const layer = L.heatLayer(heatmapData, { radius: 40, gradient: { 0: 'green', 1.0: 'green' } });
     if (map.hasLayer(layer)) return
     layer.addTo(map);
     ref.current = layer;
   }, []);
 })
 
-const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker, heatmapData }) => {
+const LeafletFull = ({ dataList, initCenter, initZoom, loadData, getParksInBounds, activeCarouselItem, setActiveCarouselItem, activeMarker, heatmapData }) => {
   const { colorMode } = useColorMode()
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
@@ -99,8 +99,6 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
 
   }, []);
 
-  const center = [47.6092355, -122.317784] // seattle univ
-
   const markerIcon = new L.Icon({
     iconUrl: '/tree-t.png',
     iconSize: [25, 25],
@@ -122,14 +120,14 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
       },
       //TODO
       layeradd: (e) => {
-        console.log('layeradd')
+        // console.log('layeradd')
         if (map && heatmapLayerRef.current && e.layer?._leaflet_id === heatmapLayerGroupRef?.current?._leaflet_id) {
           if (map.hasLayer(heatmapLayerRef.current)) return
           map.addLayer(heatmapLayerRef.current)
         }
       },
       layerremove: (e) => {
-        console.log('layerremove')
+        // console.log('layerremove')
         if (map && heatmapLayerRef.current && e.layer?._leaflet_id === heatmapLayerGroupRef?.current?._leaflet_id) {
           if (!map.hasLayer(heatmapLayerRef.current)) return
           map.removeLayer(heatmapLayerRef.current)
@@ -154,8 +152,8 @@ const LeafletFull = ({ dataList, loadData, getParksInBounds, activeCarouselItem,
   return (
     <MapContainer
       className={styles.map}
-      center={center}
-      zoom={12}
+      center={initCenter}
+      zoom={initZoom}
       attributionControl={false}
       ref={setMapState}
       fullscreenControl={true}

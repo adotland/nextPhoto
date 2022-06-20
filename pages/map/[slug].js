@@ -1,12 +1,26 @@
-import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import PageWrap from "../../components/PageWrap";
 import { ff } from "fssf";
 import { useEffect, useState } from "react";
-import Carousel from "../components/Carousel";
-import MapFull from "../components/MapFull";
-import SEO from "../components/SEO/general";
-import { shuffle } from "../utils/helpers";
+import Carousel from "../../components/Carousel";
+import MapFull from "../../components/MapFull";
+import SEO from "../../components/SEO/general";
+import { getBounds, shuffle, findParksInBounds } from "../../utils/helpers";
 
-export async function getStaticProps() {
+export async function getStaticPaths() {
+  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
+  const displayable = dataList.filter(data => data.filters.live).map(data => {
+    return {
+      params: { slug: data.slug }
+    }
+  })
+  return {
+    paths: displayable,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params: { slug } }) {
   const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
   const dataObj = {};
 
@@ -14,9 +28,6 @@ export async function getStaticProps() {
     const data = await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))
     dataObj[collection] = data.filter(d => d.ext === 'jpg');
   }));
-
-  // smallest 
-  const initBounds = { north: 47.63694030290387, south: 47.58138923915503, east: -122.2716522216797, west: -122.3705291748047 }
 
   const dataList = [];
   for (const collection in dataObj) {
@@ -35,18 +46,16 @@ export async function getStaticProps() {
     )
   }
 
-  const heatmapData = dataList.map(data=>[Number(data.lat), Number(data.long)])
+  const currentData = dataList.filter(d => d.slug == slug).pop();
+  const initCenter = [currentData.lat, currentData.long];
+  const initZoom = 16;
+  const initBounds = getBounds(...initCenter, initZoom);
+
+  const heatmapData = dataList.map(data=>[Number(data.lat), Number(data.long)]);
 
   shuffle(dataList);
 
-  const initParksWithinBounds = dataList.filter(data => {
-    let withinBounds = false;
-    if ((data.lat && (data.lat > initBounds.south)) && (data.lat && (data.lat < initBounds.north)) && (data.long && (data.long > initBounds.west)) && (data.long && (data.long < initBounds.east))) {
-      withinBounds = true;
-    }
-    return withinBounds;
-  })
-    .slice(0, 15);
+  const initParksWithinBounds = findParksInBounds(dataList, initBounds, 15)
 
   const initMapDataList = initParksWithinBounds.map(data => {
     return {
@@ -70,10 +79,10 @@ export async function getStaticProps() {
     }
   });
 
-  return { props: { initMapDataList, initCarouselDataList, dataList, heatmapData } };
+  return { props: { initMapDataList, initCarouselDataList, dataList, heatmapData, initCenter } };
 }
 
-export default function ({ initMapDataList, initCarouselDataList, dataList, heatmapData }) {
+export default function MapPage({ initMapDataList, initCarouselDataList, dataList, heatmapData, initCenter }) {
 
   const [carouselDataList, setCarouselDataList] = useState(initCarouselDataList);
   const [mapDataList, setMapDataList] = useState(initMapDataList);
@@ -94,36 +103,15 @@ export default function ({ initMapDataList, initCarouselDataList, dataList, heat
 
   const getParksInBounds = (bounds) => {
     // get every park with lat > s, lat < n, long > w, long < e
-    const retval = dataList.filter(data => {
-      let withinBounds = false;
-      if ((data.lat && (data.lat > bounds.south)) && (data.lat && (data.lat < bounds.north)) && (data.long && (data.long > bounds.west)) && (data.long && (data.long < bounds.east))) {
-        withinBounds = true;
-      }
-      return withinBounds;
-    });
-    const truncatedList = retval.slice(0, 15);
-    setMapDataList(truncatedList)
-    setCarouselDataList(truncatedList)
+    const parksInBounds = findParksInBounds(dataList, bounds, 15)
+    setMapDataList(parksInBounds)
+    setCarouselDataList(parksInBounds)
   }
 
   return (
     <>
       <SEO pageTitle={'Map'} />
-      <Box
-        mx={4}
-        mt={[4, 14, 14, 4]}
-      >
-        {/* <Text
-          textAlign={'center'}
-          letterSpacing={'0.1em'}
-          fontWeight={'bold'}
-          pt={2}
-          color={useColorModeValue("#111", "#111")}
-          backgroundColor={useColorModeValue("#eee", "#777")}
-          borderTop={'2px solid black'}
-          borderBottom={'2px solid black'}
-          pb={2}
-        >&uarr; Click and Drag to discover &darr;</Text> */}
+      <PageWrap>
         <MapFull
           dataList={mapDataList}
           loadData={loadData}
@@ -132,6 +120,8 @@ export default function ({ initMapDataList, initCarouselDataList, dataList, heat
           setActiveCarouselItem={setActiveCarouselItem}
           activeMarker={activeMarker}
           heatmapData={heatmapData}
+          initCenter={initCenter}
+          initZoom={16}
         />
         <Carousel
           dataList={carouselDataList}
@@ -139,7 +129,7 @@ export default function ({ initMapDataList, initCarouselDataList, dataList, heat
           setActiveCarouselItem={setActiveCarouselItem}
           setActiveMarker={setActiveMarker}
         />
-      </Box>
+      </PageWrap>
     </>
   )
 }

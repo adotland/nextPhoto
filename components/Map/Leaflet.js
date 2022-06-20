@@ -10,8 +10,9 @@ import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 import { useColorModeValue, Box, useColorMode } from '@chakra-ui/react';
+import Link from 'next/link';
 
-const Leaflet = ({ center, name }) => {
+const Leaflet = ({ center, slug }) => {
   const { colorMode } = useColorMode()
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
@@ -76,7 +77,7 @@ const Leaflet = ({ center, name }) => {
       p={2}
       rounded='md'
       bg={useColorModeValue('white', 'blackAlpha.200')}
-      maxW={['auto','auto','auto','25rem']}
+      maxW={['auto', 'auto', 'auto', '25rem']}
     >
       <MapContainer
         className={styles.map}
@@ -93,6 +94,9 @@ const Leaflet = ({ center, name }) => {
           ref={setCurrentTiles}
         />
         <Marker position={center} icon={markerIcon}>
+          <Popup>
+            <Link href={`/map/${slug}`}><a>View on Interactive Map</a></Link>
+          </Popup>
         </Marker>
       </MapContainer>
     </Box>
