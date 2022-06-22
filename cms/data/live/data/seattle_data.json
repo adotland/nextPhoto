@@ -19,7 +19,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "9,451 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "a25a52a548830c58a89ffe25afd0fa51",
@@ -41,7 +44,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "f7775377fe2ebcbb81583d933d42b936",
@@ -63,7 +72,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "84f2b7f87e9e077b4fa8c924fa16d2ad",
@@ -85,7 +97,23 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8d8"
-    }
+    },
+    "area": "178.2 Acres",
+    "hours": "Park Hours: 6 a.m.-10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Creek",
+      "Waterfront",
+      "Environmental Learning Center",
+      "Restrooms",
+      "View",
+      "Woods",
+      "Picnic Sites (ADA Compliant)",
+      "Rental Facility",
+      "Picnic Sites",
+      "Weddings and Ceremonies",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "eb30d580ea506863b894611acaa175e7",
@@ -107,7 +135,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "7.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Soccer",
+      "Restrooms",
+      "T-Ball"
+    ]
   },
   {
     "id": "fe7cbc150115d3d46ccb180920b42bb1",
@@ -129,7 +165,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383838"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0c9f60a04f1d80bec9e29219a149b35c",
@@ -151,7 +190,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": "9.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "a9ca4f3dbcf45a8fdaa0fbdff6ff96e7",
@@ -173,7 +217,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "5,044 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0ad38878c4a74f5ce078f3db675a1bf4",
@@ -195,7 +242,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "1.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Garden",
+      "Community Building",
+      "Restrooms (ADA Compliant)",
+      "P-Patch Community Garden",
+      "Play Area (ADA Compliant)",
+      "Pesticide Free",
+      "View"
+    ]
   },
   {
     "id": "12884a2c1261a70d56896dc5d9849a05",
@@ -217,7 +275,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8d8e8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space",
+      "NO Beach Access"
+    ]
   },
   {
     "id": "c3a9c373653bf220fb2a9f91325dcfa5",
@@ -239,7 +303,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1d24dcfc99549739979f94c02a3a1e74",
@@ -261,7 +328,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5,696 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "67b49b538cf830dbed5a06e5ae879d61",
@@ -283,7 +353,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Paths",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "6119e8e1cb2d1ed92149a19f539102ab",
@@ -305,7 +381,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "3c3e8ae1145095243811878441d574e9",
@@ -327,7 +406,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": null,
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "ad963553c5bb90e3295c406553f5362a",
@@ -349,7 +433,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "1.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pesticide Free"
+    ]
   },
   {
     "id": "e6c77b8af3628cd749b640addfc1c620",
@@ -371,7 +460,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "7b3910763c996b256c1afb93db208c22",
@@ -393,7 +485,16 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#58b8e8"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "Tennis Lights",
+      "Soccer",
+      "Restrooms",
+      "Pool (Indoor)"
+    ]
   },
   {
     "id": "604655d9dcdca27fe707bf6d26890212",
@@ -415,7 +516,16 @@
       "type": "animated",
       "matchColor": "sky",
       "domColor": "#98c8e8"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "Tennis Lights",
+      "Soccer",
+      "Restrooms",
+      "Pool (Indoor)"
+    ]
   },
   {
     "id": "a93bf91885e978614aea2a3f9b11bf69",
@@ -437,7 +547,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0a5c0c1528ceffe05dd70d91547d925f",
@@ -459,7 +572,10 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "825b64caa717a86a1b493d95a265b91b",
@@ -481,7 +597,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "8.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "a414e3076766fdaa698211643f424ea7",
@@ -503,7 +624,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "4,857 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "b653626fc144143ab9dc42a5eba5b846",
@@ -525,7 +652,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
-    }
+    },
+    "area": "4.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "4d089919aa09bed88706c81658adcd64",
@@ -547,7 +679,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "40.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "6f6839d3eedbf80b236904c2c521bd80",
@@ -569,7 +704,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.9 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "ca976c6c8f8abe19c1c0fbdbfb7c135d",
@@ -591,7 +729,10 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#181808"
-    }
+    },
+    "area": "1.9 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "cc362527f89176b413a5bdd5e220e2e8",
@@ -613,7 +754,15 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#58a8e8"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Boat Launch (Hand Carry)",
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "373f0ff2e0b4d96c31162ebb99993717",
@@ -635,7 +784,15 @@
       "type": "animated",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Boat Launch (Hand Carry)",
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "e2c28acd4faef170af043634c31d3a9a",
@@ -657,7 +814,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "1.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "a6debcb57bda36848bb62749c987a388",
@@ -679,7 +841,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "6,810 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "e48d40b5975a61fb1a7cab4c69bc854b",
@@ -701,7 +866,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "6.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods"
+    ]
   },
   {
     "id": "569dbdb0c325cebb89801097d3b550c5",
@@ -723,7 +893,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "17.3 Acres",
+    "hours": "6 a.m. - 11 p.m.",
+    "features": [
+      "Woods",
+      "Picnic Sites"
+    ]
   },
   {
     "id": "cf1437fbecfa570be8f6daab8cc7fd3e",
@@ -745,7 +921,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "2,973 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1eae0042e9aabf66c63755ee1858b8ac",
@@ -767,7 +946,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "3.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Wading Pool or Water Feature",
+      "Soccer",
+      "Baseball/Softball",
+      "Play Area (ADA Compliant)",
+      "Tennis Court (Outdoor)",
+      "Restrooms (ADA Compliant)",
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "e67cf1d821894c6818e83dd3ff4348ba",
@@ -789,7 +980,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "2.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Dog Off Leash Area"
+    ]
   },
   {
     "id": "19de641504040cd09b78bd57096c9ec8",
@@ -811,7 +1007,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "96b507f8e2020451551a3f3e529fe6ed",
@@ -833,7 +1032,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "9,007 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "46d02ecb8ea3f5c750c160e70c065e52",
@@ -855,7 +1057,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pesticide Free",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "c08f86d6dd36a0d1e22945907b22d21f",
@@ -877,7 +1085,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "6,891 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2686f6b8e42aac4a4caff76a3d922ff3",
@@ -899,7 +1110,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#283818"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "9a80d708f51d60084a3fdd212c3f9e1b",
@@ -921,7 +1135,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "7.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "da54efd06ca12d08a70e7d6065878a68",
@@ -943,7 +1162,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
+    },
+    "area": "1.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "551c35d04bf307842fcba699a2612f38",
@@ -965,7 +1187,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "234 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "74df9c2bdb38a16f1c793ea0dd06d019",
@@ -987,7 +1212,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "7,398 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "ea6d26dd00f86d010e55ebc99e266b48",
@@ -1009,7 +1237,25 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "517.7 Acres",
+    "hours": "Park Hours: Daily 4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Full)",
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Rental Facility",
+      "Weddings and Ceremonies",
+      "Historic Landmark",
+      "Restrooms",
+      "Environmental Learning Center",
+      "Waterfront",
+      "Woods",
+      "Tennis Court (Outdoor)",
+      "View",
+      "Play Area (ADA Compliant)",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "a809532969276cbabec7dbda7f116203",
@@ -1031,7 +1277,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": "4,698 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "38354d7205468146e4abefb78b97386d",
@@ -1053,7 +1304,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Paths"
+    ]
   },
   {
     "id": "a30f8d6dbea3eb3cd8efd4d6ecad62cc",
@@ -1075,7 +1332,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
+    },
+    "area": "1,660 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "ff66f6a9a2d44ab4720156869b7464e8",
@@ -1097,7 +1359,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "1.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Skatepark",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "2822bec07084e3e29719423947931249",
@@ -1119,7 +1388,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Backboard (Outdoor)",
+      "Paths",
+      "Track",
+      "Play Area (ADA Compliant)",
+      "Tennis Court (Outdoor)",
+      "Woods"
+    ]
   },
   {
     "id": "f9705a6f36e6a0dd2a1849baaa186fa5",
@@ -1141,7 +1420,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": null,
+    "hours": "",
+    "features": [
+      "Weddings and Ceremonies",
+      "Garden"
+    ]
   },
   {
     "id": "1d3b68d23cd221e425011134990846c7",
@@ -1163,7 +1448,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2b511cf0690acbda8ea7cb2444735ccc",
@@ -1185,7 +1473,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8d8f8"
-    }
+    },
+    "area": "6.4 Acres",
+    "hours": "24 Hours",
+    "features": [
+      "Waterfront",
+      "Boat Launch (Motorized)"
+    ]
   },
   {
     "id": "3ee04bbccc3352655750c9d958558f2c",
@@ -1207,7 +1501,16 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#3868b8"
-    }
+    },
+    "area": "6.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "T-Ball",
+      "Soccer",
+      "Wading Pool or Water Feature",
+      "Restrooms",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "f28b39462079952a6f115dbe5fc87234",
@@ -1229,7 +1532,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1ebb0694b618f35981d2896abf0226fc",
@@ -1251,7 +1557,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "e6db6ca1f693b4944a9c97f4a9ddfe3f",
@@ -1273,7 +1582,19 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98b8c8"
-    }
+    },
+    "area": "10.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Rental Facility",
+      "Wading Pool or Water Feature",
+      "Model Boat Pond",
+      "Waterfront",
+      "View",
+      "Boat Launch (Hand Carry)",
+      "Pesticide Free"
+    ]
   },
   {
     "id": "53d9c04c5fb3d448f21d385d82de5ef7",
@@ -1295,7 +1616,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "b44b418c0566a655cc1daf0e30ef40ea",
@@ -1317,7 +1643,17 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8d8e8"
-    }
+    },
+    "area": "11.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Baseball/Softball",
+      "Restrooms",
+      "Restrooms (ADA Compliant)",
+      "Community Center",
+      "Flag Football",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "c9606a513adb82fa9887e12af8b1f974",
@@ -1339,7 +1675,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": null,
+    "hours": "7 a.m. - 10 p.m.",
+    "features": [
+      "Garden",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "bbe7eebeecceb9f556b89a13e91fcffe",
@@ -1361,7 +1703,20 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8f8"
-    }
+    },
+    "area": "7.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Lights",
+      "Restrooms",
+      "T-Ball",
+      "Tennis Court (Outdoor)",
+      "Waterfront",
+      "Wading Pool or Water Feature",
+      "Play Area (ADA Compliant)",
+      "Community Center",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "6200f96449e64cb0077e656d51036f62",
@@ -1383,7 +1738,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "2.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Adult Fitness Equipment",
+      "Paths"
+    ]
   },
   {
     "id": "aaa18d476d1144618667c029b4d5f50b",
@@ -1405,7 +1767,24 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
+    },
+    "area": "294.1 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Weddings and Ceremonies",
+      "Picnic Sites",
+      "Restrooms",
+      "Environmental Learning Center",
+      "Waterfront",
+      "Woods",
+      "View",
+      "Tennis Court (Outdoor)",
+      "Play Area (ADA Compliant)",
+      "Boat Launch (Hand Carry)",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "0ff1602109b5d2b07a9caf66c0965641",
@@ -1427,7 +1806,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bc4d6b3d7ddcdca8a5896ffe5e9a1af9",
@@ -1449,7 +1831,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "13.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "Woods",
+      "Soccer",
+      "Waterfront",
+      "P-Patch Community Garden",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "98c0eb0ac98f2729f636b3ecfaa2d255",
@@ -1471,7 +1863,18 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Community Center",
+      "Football",
+      "Basketball (Full)",
+      "Tennis Lights",
+      "Tennis Court (Outdoor)",
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "bbfb7e36aef00235cefec0ceec4166a5",
@@ -1493,7 +1896,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "191a58b103599091c9a4fbf773fbfc36",
@@ -1515,7 +1921,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "1af95c6ad3a0c54655ca4b445fa27adf",
@@ -1537,7 +1946,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8d8e8"
-    }
+    },
+    "area": "6.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "227c491f6a2a1569ad11ea64ea1cd260",
@@ -1559,7 +1971,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Soccer",
+      "Woods",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "bd61f7ab03e076298d59de040f2725d6",
@@ -1581,7 +2001,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "6,262 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "c40f85954a5aedfc38afde9416c3c8c2",
@@ -1603,7 +2028,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "8,105 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "85b83a9d4c87828942c4486e31950f21",
@@ -1625,7 +2053,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "2.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space",
+      "Creek",
+      "Woods"
+    ]
   },
   {
     "id": "46385c61324463053a929ad22c69c608",
@@ -1647,7 +2082,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "3.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "e1ec3e1c180cdba22a573ca74df39ae2",
@@ -1669,7 +2107,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8d8d8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "35cdb33e12c15fb3cf6fde72122ca0ad",
@@ -1691,7 +2132,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "6.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Play Area",
+      "Pesticide Free",
+      "Basketball (Half)",
+      "Weddings and Ceremonies",
+      "Picnic Sites"
+    ]
   },
   {
     "id": "e541d777f32a05ab914db7480974ec7c",
@@ -1713,7 +2164,18 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8c8d8"
-    }
+    },
+    "area": "24.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Paths (ADA Compliant)",
+      "Baseball/Softball",
+      "Basketball (Half)",
+      "Pickleball Court",
+      "Restrooms (ADA Compliant)",
+      "Restrooms"
+    ]
   },
   {
     "id": "0620d5f8e3d246b26ccec3422e6c107a",
@@ -1735,7 +2197,21 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "99.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Horseshoe Pits",
+      "Restrooms (ADA Compliant)",
+      "Paths",
+      "Play Area (ADA Compliant)",
+      "Track",
+      "Baseball/Softball",
+      "Tennis Lights",
+      "Lawn Bowling",
+      "Restrooms",
+      "Soccer"
+    ]
   },
   {
     "id": "f49c5800c66cd231a0bea50f25617c22",
@@ -1757,7 +2233,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "856185d7ad101b0ef410d8c992c5e0ad",
@@ -1779,7 +2261,14 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#3888d8"
-    }
+    },
+    "area": "1.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "View",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "939acff86eb4cfed7f35fec4ef958484",
@@ -1801,7 +2290,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Restrooms (ADA Compliant)",
+      "Basketball (Half)",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "196ad7bb275d734bf08f691197f58d90",
@@ -1823,7 +2320,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "ca137f0f8bd6d77ba1d274d4496e9227",
@@ -1845,7 +2347,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "Play Area (ADA Compliant)",
+      "Soccer"
+    ]
   },
   {
     "id": "4af084a870bea02ef72653972a8b0887",
@@ -1867,7 +2376,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "4,503 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "75d252fb24e6bdccba2b997d025eb82e",
@@ -1889,7 +2401,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#78a8e8"
-    }
+    },
+    "area": "7.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "Paths"
+    ]
   },
   {
     "id": "e2d3962bb5cb4d87ba9d7513c95019e2",
@@ -1911,7 +2429,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "6c3d73814451f9e0720422f792eb901d",
@@ -1933,7 +2456,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "12.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Paths",
+      "Boat Moorage",
+      "Tennis Court (Outdoor)",
+      "View",
+      "Woods",
+      "Restrooms"
+    ]
   },
   {
     "id": "7d172f6a1b231399c67df4f6440500f4",
@@ -1955,7 +2489,21 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "28.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Play Area",
+      "Weddings and Ceremonies",
+      "Picnic Sites",
+      "Woods",
+      "View",
+      "Restrooms",
+      "Waterfront",
+      "Creek",
+      "Guarded Beach"
+    ]
   },
   {
     "id": "0edf6a2616ce0b1ea4658b9ed7d011ac",
@@ -1977,7 +2525,20 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#5888c8"
-    }
+    },
+    "area": "18.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Picnic Sites",
+      "Decorative Fountain",
+      "Football",
+      "Paths",
+      "Basketball (Full)",
+      "Paths (ADA Compliant)",
+      "Baseball/Softball",
+      "Play Area (ADA Compliant)",
+      "Bike Polo"
+    ]
   },
   {
     "id": "20dbc0c825f51887123c254df78908b6",
@@ -1999,7 +2560,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182838"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "11f4d8f91f3c481c0be6986a2fc359ac",
@@ -2021,7 +2585,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898d8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "ee1a1555ee235136738bd36b49172c2a",
@@ -2043,7 +2610,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "7dd4e0f299b6a81659e9a0f7da357946",
@@ -2065,7 +2635,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "7,605 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f3c2061fb3c2c7ce3ac7894facf627da",
@@ -2087,7 +2660,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "7.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Basketball (Half)",
+      "Play Area (ADA Compliant)",
+      "Restrooms"
+    ]
   },
   {
     "id": "79ecd39167078ed7bfcd11eb3fe9c7ba",
@@ -2109,7 +2690,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "152.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Golf"
+    ]
   },
   {
     "id": "f27d11706b123fec6d664ac9c4193a02",
@@ -2131,7 +2717,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#386878"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "c7d95120f3e7c3e6d6661b8666aa107c",
@@ -2153,7 +2742,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "1,554 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f947e45843f56befd5a046a82b69d848",
@@ -2175,7 +2767,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "9,188 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bb1f9b42fea499921f83094e378febac",
@@ -2197,7 +2792,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "1,528 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "4cdf8ebdde9b3f1039c49d323095cf4f",
@@ -2219,7 +2817,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "68d6c795238f7f0d792f2f9acc3e014a",
@@ -2241,7 +2844,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#88a8c8"
-    }
+    },
+    "area": "8,171 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "4dcee5a48754480278a7d85e9869ed3b",
@@ -2263,7 +2869,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "fb677f9b00bfcce799d0ba2509e0fd1d",
@@ -2285,7 +2894,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "3.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "Basketball (Full)",
+      "Community Center"
+    ]
   },
   {
     "id": "1c19bf9b83ede2ca6375abb3da648f98",
@@ -2307,7 +2923,18 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#a8a8a8"
-    }
+    },
+    "area": "9.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths (ADA Compliant)",
+      "Paths",
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball",
+      "Restrooms",
+      "Soccer",
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "ae7de40a5fab7ebdc5baa119dda0910e",
@@ -2329,7 +2956,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "8ebb5a9287b5e17f1043829e0e99fa0d",
@@ -2351,7 +2981,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "6,586 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "437692d07551970552a27c9946f996e7",
@@ -2373,7 +3006,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "3.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Baseball/Softball",
+      "Pool (Indoor)",
+      "Soccer"
+    ]
   },
   {
     "id": "afa3ba7973ca14ab73885f44630ad0af",
@@ -2395,7 +3035,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "ceef957b388d8a65f48b22acf2d7200c",
@@ -2417,7 +3063,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "2.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "ef5bf06bb1208ef0cca768ef5e1100f8",
@@ -2439,7 +3091,13 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#283828"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "18be31b2476b679a184c1b2e0ee8d365",
@@ -2461,7 +3119,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8c8f8"
-    }
+    },
+    "area": "3,813 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "3ba7cfbcb7b404b07517efc5b520d214",
@@ -2483,7 +3144,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8c8d8"
-    }
+    },
+    "area": "1,486 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "8ac668b96539750388e1f71e181168e8",
@@ -2505,7 +3171,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8d8d8"
-    }
+    },
+    "area": "3.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space",
+      "Woods"
+    ]
   },
   {
     "id": "065752752ccade10c6ee66f56deb7c03",
@@ -2527,7 +3199,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "aaa0769c629a5400f4f49a77248e556d",
@@ -2549,7 +3226,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#a8a898"
-    }
+    },
+    "area": "5.2 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Decorative Fountain",
+      "Paths",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "9c4afb664661c3ee4c9e94ff53ee0405",
@@ -2571,7 +3255,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#7898d8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "35f837d815e8df8db9d7396963c528ed",
@@ -2593,7 +3280,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8c8c8"
-    }
+    },
+    "area": "8,160 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pesticide Free"
+    ]
   },
   {
     "id": "e483fbff6ed3bf70078c8a28a5e11d78",
@@ -2615,7 +3307,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "385 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "02121d23bd785d7637339487e2097b91",
@@ -2637,7 +3332,16 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#88a8d8"
-    }
+    },
+    "area": "57.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Play Area (ADA Compliant)",
+      "Hiking Trails",
+      "Dog Off Leash Area"
+    ]
   },
   {
     "id": "40ac66ce9aec02265f4dfc6cfef2dec4",
@@ -2659,7 +3363,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "4,762 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "c2dfae8f1f7f7a186714f6295d53644a",
@@ -2681,7 +3388,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6888b8"
-    }
+    },
+    "area": "1.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "725a44999cffc9ddec4710b2b63fbec4",
@@ -2703,7 +3415,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "30.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Green Space"
+    ]
   },
   {
     "id": "d6614cb42ce5d01361bc11f2b9b3bf78",
@@ -2725,7 +3443,14 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#78a8d8"
-    }
+    },
+    "area": "5.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Woods",
+      "Lawn Bowling"
+    ]
   },
   {
     "id": "c1c0ff9668d2b93357cfac792ad9a074",
@@ -2747,7 +3472,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181808"
-    }
+    },
+    "area": "22.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Creek",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "1579eaee6eaa3d6d6b0c3e1ccc71d36e",
@@ -2769,7 +3500,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "913 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "93209c5a7aa28d42d2788c6dd63a39b4",
@@ -2791,7 +3525,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pesticide Free"
+    ]
   },
   {
     "id": "84ab62b79041cda663d338662aaec99c",
@@ -2813,7 +3552,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "7,013 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "e43511ad780f630f687f1116e4d5b684",
@@ -2835,7 +3577,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms"
+    ]
   },
   {
     "id": "b02da1f86d2b138ecc1accf6bea5a00f",
@@ -2857,7 +3604,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2bfc14b80902aa0a8db6714bbc088eeb",
@@ -2879,7 +3629,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "11.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "View"
+    ]
   },
   {
     "id": "0dbccaed800a975fe29d5d8e407bff4e",
@@ -2901,7 +3657,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#487898"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "View"
+    ]
   },
   {
     "id": "5cf9c5425778a3891797b27485ce55b7",
@@ -2923,7 +3685,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "8,367 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2bb2c33362e977c17b8c0534da9f8942",
@@ -2945,7 +3710,23 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#5898d8"
-    }
+    },
+    "area": "127.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Picnic Sites",
+      "Wading Pool or Water Feature",
+      "Horseshoe Pits",
+      "Pool (Outdoor)",
+      "Restrooms",
+      "Soccer",
+      "View",
+      "Woods",
+      "Hiking Trails",
+      "Boat Launch (Hand Carry)",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "4ca9558423c89d6298ecb75586c1c831",
@@ -2967,7 +3748,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898c8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "24 Hours",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "7897620ebe035fe0353e1f6f34cb01e0",
@@ -2989,7 +3775,21 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "49.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Creek",
+      "Baseball/Softball",
+      "Restrooms",
+      "Woods",
+      "Tennis Court (Outdoor)",
+      "Wading Pool or Water Feature",
+      "Picnic Sites",
+      "Restrooms (ADA Compliant)",
+      "Paths"
+    ]
   },
   {
     "id": "352223fa136d9c3950724c919b43ad7c",
@@ -3011,7 +3811,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "9,611 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "44b47d37346ed238421c9d696e3577ea",
@@ -3033,7 +3836,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#5888a8"
-    }
+    },
+    "area": null,
+    "hours": "24 Hours",
+    "features": [
+      "Fishing",
+      "Waterfront"
+    ]
   },
   {
     "id": "1037b247d7601e98cb0cafbb8552816d",
@@ -3055,7 +3864,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "2.0 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "c10de58bfb79b4bbe2455d806765796c",
@@ -3077,7 +3891,12 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "2.0 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "370f65d2ce012811570ea4fbb50c5850",
@@ -3099,7 +3918,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
-    }
+    },
+    "area": "40.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "9318e906afa1284ce2b98a2bbda3714a",
@@ -3121,7 +3943,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Garden",
+      "Weddings and Ceremonies",
+      "Historic Landmark"
+    ]
   },
   {
     "id": "f27076169119b90a910bc3d8fd1837c4",
@@ -3143,7 +3972,15 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#989898"
-    }
+    },
+    "area": "4.8 Acres",
+    "hours": "24 Hours",
+    "features": [
+      "Paths (ADA Compliant)",
+      "Bike Trail",
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "e21d3d8ee97e0e3799cafa66eb573f56",
@@ -3165,7 +4002,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8e8f8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "7660844fbfdd4bfe1faf4ae8dda72df4",
@@ -3187,7 +4029,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "8,180 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f81bc80822f9ebb73c392cff0b034899",
@@ -3209,7 +4054,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "Play Area"
+    ]
   },
   {
     "id": "6c77030a8bfff6a06867238eec913c1d",
@@ -3231,7 +4082,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "3,097 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "67f5eb1575c15c0e8c52a1f6a2ae4cb0",
@@ -3253,7 +4107,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8c8d8"
-    }
+    },
+    "area": null,
+    "hours": "6 a.m. - 10:00 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "6a436e6634c304189f22db84b07261c3",
@@ -3275,7 +4134,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "82.9 Acres",
+    "hours": "24 hours",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "Picnic Sites"
+    ]
   },
   {
     "id": "b9e3a98c1e84087025fad0577af0c740",
@@ -3297,7 +4162,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8e8"
-    }
+    },
+    "area": "8.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "d2642d0eb6285dc5eaa8892541a28e6b",
@@ -3319,7 +4187,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8a898"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "07ba696dec46d0759796f1088e23398d",
@@ -3341,7 +4212,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "4.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "47e95510ee6d40191e7c1a6ba706d739",
@@ -3363,7 +4239,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8e8"
-    }
+    },
+    "area": "640 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "4f94e945d0b568f13e4ad37973b8caf5",
@@ -3385,7 +4264,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "638d368f086f528f5dc313a89e67494d",
@@ -3407,7 +4291,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "8,637 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "cb37228902764712af6e47c4ad9b3927",
@@ -3429,7 +4316,17 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#487848"
-    }
+    },
+    "area": "6.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Baseball/Softball",
+      "Play Area (ADA Compliant)",
+      "Community Center",
+      "Basketball (Half)",
+      "Restrooms",
+      "Football"
+    ]
   },
   {
     "id": "6f918844335c670764d125db31265ea9",
@@ -3451,7 +4348,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "8.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Creek",
+      "Woods",
+      "Green Space"
+    ]
   },
   {
     "id": "43e2b8bf43ead8751b5c736b104115f9",
@@ -3473,7 +4377,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8d8f8"
-    }
+    },
+    "area": "3.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Full)",
+      "Wading Pool or Water Feature",
+      "Restrooms",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "d91888ef26b45dc98e978338f8db3084",
@@ -3495,7 +4407,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "846 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1992a9e1dfa83c300ee5059acde6614e",
@@ -3517,7 +4432,16 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "4.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Paths",
+      "Restrooms",
+      "Soccer",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "a0b4dc66e729f1b3edb4647bc9f8d17c",
@@ -3539,7 +4463,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "254ea42d94e0388cda0afb1a8dc53d14",
@@ -3561,7 +4488,30 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#9898a8"
-    }
+    },
+    "area": "308.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Guarded Beach",
+      "Baseball/Softball",
+      "Play Area (ADA Compliant)",
+      "Dog Off Leash Area",
+      "Tennis Court (Outdoor)",
+      "View",
+      "Soccer",
+      "Restrooms",
+      "Lacrosse",
+      "Waterfront",
+      "Cricket",
+      "Wading Pool or Water Feature",
+      "Ultimate",
+      "Picnic Sites",
+      "Bike Trail",
+      "Rugby",
+      "Rental Facility",
+      "Paths",
+      "Boat Launch (Motorized)"
+    ]
   },
   {
     "id": "e49530ea0860b151ef810ea7d4e54012",
@@ -3583,7 +4533,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "6,224 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "48a42fb4f0b5f6acd211e745ba010633",
@@ -3605,7 +4560,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "759 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bc2aa437effc258b0b2a016676fc89d9",
@@ -3627,7 +4585,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "765 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "40a3ffc0e370eb227c48591ca18353ef",
@@ -3649,7 +4610,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "0.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bf47640d14a52a2a05751b1ba2a9cb56",
@@ -3671,7 +4635,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898b8"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "03ebeaf280a3827912c3de194b6cc21b",
@@ -3693,7 +4660,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
+    },
+    "area": "4.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "View",
+      "Restrooms",
+      "Soccer",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "cb89d848bf91344e8b6e69ef22f525ff",
@@ -3715,7 +4691,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#384868"
-    }
+    },
+    "area": "14.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "5c10cfea836084b4b7ef76043618365a",
@@ -3737,7 +4718,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "bb028d6361dfcec3692caa000851b249",
@@ -3759,7 +4745,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Waterfront",
+      "Paths"
+    ]
   },
   {
     "id": "1def2a2eef9e42dda2ccc57c00a33d6a",
@@ -3781,7 +4774,17 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#4898d8"
-    }
+    },
+    "area": "21.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Paths",
+      "Play Area",
+      "Restrooms",
+      "Waterfront"
+    ]
   },
   {
     "id": "0d0e2b15c45a82047880a153ea062b4f",
@@ -3803,7 +4806,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "2.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "P-Patch Community Garden",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "353353837d54a034d2584ead179d6ecc",
@@ -3825,7 +4835,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "View",
+      "Dog Off Leash Area"
+    ]
   },
   {
     "id": "cff111677c99a2a45706007ba32c4073",
@@ -3847,7 +4863,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "1.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "View"
+    ]
   },
   {
     "id": "ee1cfe47094bb2d7bc549710be1f88e4",
@@ -3869,7 +4891,26 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "45.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball",
+      "Tennis Lights",
+      "Lawn Bowling",
+      "Soccer",
+      "Skatepark",
+      "Tennis Court (Outdoor)",
+      "View",
+      "Rental Facility",
+      "Picnic Sites",
+      "Cricket",
+      "Wading Pool or Water Feature",
+      "Weddings and Ceremonies",
+      "Community Center",
+      "Basketball (Full)"
+    ]
   },
   {
     "id": "6ab5d6a3f938c784357655ab05ba9387",
@@ -3891,7 +4932,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8d8d8"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Play Area"
+    ]
   },
   {
     "id": "aa85a6da8e7542e6bdbd9ae35ac2aee0",
@@ -3913,7 +4960,16 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
-    }
+    },
+    "area": "5.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Soccer",
+      "Baseball/Softball",
+      "Community Center",
+      "Play Area",
+      "Wading Pool or Water Feature"
+    ]
   },
   {
     "id": "2280cb29ea1751f1443a80cb9d4e7e65",
@@ -3935,7 +4991,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "332d9355f027f2d4a9f7f48e450d3aeb",
@@ -3957,7 +5018,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "8,070 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bac6f8cc1ea9db78158b4061948c565a",
@@ -3979,7 +5043,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "2.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Paths",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "b5ddb3acc2796260964d985adef5e486",
@@ -4001,7 +5072,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "3b4537aede753825a95b435ce7206f1b",
@@ -4023,7 +5097,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1,588 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "288cca48ae0ca0b604bb8729709566d3",
@@ -4045,7 +5122,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "9.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Hiking Trails",
+      "Woods"
+    ]
   },
   {
     "id": "50eb088c54ba62f9f17be4868ec289a2",
@@ -4067,7 +5150,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "6a0f122cb64911b1d6e77b40f34063b7",
@@ -4089,7 +5177,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "1.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "801ceaa21794a9c0e9fbd3aa5888a63d",
@@ -4111,7 +5202,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8f8"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "View",
+      "Play Area"
+    ]
   },
   {
     "id": "c41f27df1ad0a837d7cfdabe04323629",
@@ -4133,7 +5231,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
-    }
+    },
+    "area": "5.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Track",
+      "Restrooms"
+    ]
   },
   {
     "id": "4b42de52c155eeb1a96d3ce3563c6b70",
@@ -4155,7 +5259,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Paths"
+    ]
   },
   {
     "id": "816f17d23133f45f1cd5e0326df9cf49",
@@ -4177,7 +5287,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "032f1e783f5c3b4049ea446e7f25c442",
@@ -4199,7 +5312,17 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898c8"
-    }
+    },
+    "area": "9.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Restrooms",
+      "Woods",
+      "View",
+      "Dog Off Leash Area",
+      "Picnic Sites"
+    ]
   },
   {
     "id": "63c7dea1000548d887527fba9ee7e1cb",
@@ -4221,7 +5344,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "7f230f67d631253a3fc02bc624ab4cef",
@@ -4243,7 +5369,19 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8f8"
-    }
+    },
+    "area": "8.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Rental Facility",
+      "Historic Landmark",
+      "Restrooms",
+      "Woods",
+      "Tennis Court (Outdoor)",
+      "Play Area (ADA Compliant)",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "baddc8fc88beb5be29bac27ae2f83377",
@@ -4265,7 +5403,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "2,827 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "d07a3e5caa5b392ef2e7bffec64dca2a",
@@ -4287,7 +5428,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "eb2910c618440f3b7c9693af35b943c3",
@@ -4309,7 +5453,16 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "2.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Rental Facility",
+      "Play Area (ADA Compliant)",
+      "Basketball (Half)",
+      "Restrooms",
+      "T-Ball"
+    ]
   },
   {
     "id": "e3b0d15c6b68a795727263ce341aa73d",
@@ -4331,7 +5484,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8d8"
-    }
+    },
+    "area": "1.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "8bba120f132599cbddf2c283ad11a9fd",
@@ -4353,7 +5509,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8f8"
-    }
+    },
+    "area": "6.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pool (Indoor)",
+      "Baseball/Softball",
+      "Community Center",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "a195bd0de1319d3f3272ce453cdbb8bd",
@@ -4375,7 +5539,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "eef71b4beb6537a6942341152613b3a2",
@@ -4397,7 +5564,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "1,756 Sq. Ft.",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Decorative Fountain",
+      "Historic Landmark"
+    ]
   },
   {
     "id": "84029a6e23fc80fb84697b39075e3905",
@@ -4419,7 +5592,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "3,331 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "113a5d69235e607669c5c0e8c9fee907",
@@ -4441,7 +5617,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Rental Facility",
+      "Paths",
+      "Play Area (ADA Compliant)",
+      "View"
+    ]
   },
   {
     "id": "f1632675c8532b38ff58a104b964d95d",
@@ -4463,7 +5647,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
+    },
+    "area": "1,354 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "a5e9fefb0e2d2ca2b7366758b40064d3",
@@ -4485,7 +5672,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "24 hours",
+    "features": [
+      "Basketball (Half)",
+      "View",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "88a73bd01fc470f06c1cbb0f643c503c",
@@ -4507,7 +5701,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "1.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths (ADA Compliant)",
+      "Paths"
+    ]
   },
   {
     "id": "b653221b8b8afdd024a67bc7ec9c9bf4",
@@ -4529,7 +5729,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8e8e8"
-    }
+    },
+    "area": "9,605 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f4848c9be4a29599816c7818a1a1542c",
@@ -4551,7 +5754,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#486878"
-    }
+    },
+    "area": "200 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "baa6978ffe6d31915c79f485af66d4e3",
@@ -4573,7 +5779,19 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "48.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Tennis Court (Outdoor)",
+      "Restrooms",
+      "Tennis Lights",
+      "Wading Pool or Water Feature",
+      "Historic Landmark",
+      "Paths",
+      "Tennis Backboard (Outdoor)"
+    ]
   },
   {
     "id": "e321fb4c42ff2265e22c06f03b097b53",
@@ -4595,7 +5813,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "11.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Wading Pool or Water Feature",
+      "Paths",
+      "Paths (ADA Compliant)",
+      "Baseball/Softball",
+      "Play Area (ADA Compliant)",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "e8e391a469e775f75cc1c51d55dd76eb",
@@ -4617,7 +5845,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#9898a8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "571ad9c624ad18017900d108ef30dd0d",
@@ -4639,7 +5870,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "d3cc855e396a067a83a72a12a8606629",
@@ -4661,7 +5897,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "7.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Restrooms",
+      "Woods",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "e8e4d8d8490b50287534be68606f1997",
@@ -4683,7 +5927,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "04817cc2a6643cad12d05e5a7237c54b",
@@ -4705,7 +5954,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8d8d8"
-    }
+    },
+    "area": "2.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "1f1368a048d916dc046d9ecad9ddd797",
@@ -4727,7 +5981,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "19.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "Garden",
+      "Historic Landmark"
+    ]
   },
   {
     "id": "6da5c5c6365c1c2dd6ce5fe3fe3db566",
@@ -4749,7 +6010,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#283828"
-    }
+    },
+    "area": "645 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "aec3f484b31c45cff7ae685ec9342ff3",
@@ -4771,7 +6035,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area",
+      "Decorative Fountain"
+    ]
   },
   {
     "id": "6389473bbe6d3ec8b7e0f19094034d8a",
@@ -4793,7 +6063,13 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area",
+      "Decorative Fountain"
+    ]
   },
   {
     "id": "7d927b5fa68fce8d73b9f8dad1a013f5",
@@ -4815,7 +6091,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "4.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0d6e4f3b71f8c160bec4f48e80a45da2",
@@ -4837,7 +6116,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "2.9 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "d1c4b86e3db4800925920763c428e91c",
@@ -4859,7 +6141,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383838"
-    }
+    },
+    "area": "6,402 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "4ae08d89ebc8ecc3375e2c82e47a776e",
@@ -4881,7 +6166,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "8.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Dog Off Leash Area",
+      "View",
+      "Bike Trail"
+    ]
   },
   {
     "id": "9568eb1eeba7aa615550e78c24956cc9",
@@ -4903,7 +6195,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "52.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Bike Trail",
+      "Paths",
+      "Hiking Trails",
+      "Woods"
+    ]
   },
   {
     "id": "56a60bb990364778e31402b4aec08891",
@@ -4925,7 +6225,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "180 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "3fe8dabff8460d5ed5f213df1439944b",
@@ -4947,7 +6250,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "2.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "9a37dd58a5a741a213585dcf68d7209d",
@@ -4969,7 +6277,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "1.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Soccer",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "62b61c551b75f4c08dc1c81f03dae8da",
@@ -4991,7 +6306,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8e8f8"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "View"
+    ]
   },
   {
     "id": "45a497157036f26f70926439a9de0b21",
@@ -5013,7 +6334,14 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "3.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Creek",
+      "Green Space"
+    ]
   },
   {
     "id": "5740a3ab6c9d93dd3a5db40c77201d6c",
@@ -5035,7 +6363,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "Waterfront",
+      "View"
+    ]
   },
   {
     "id": "8c86e924dc2bf87578baa7204853e482",
@@ -5057,7 +6392,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "6f96f99cb05be9efd64f3ed5916c380d",
@@ -5079,7 +6419,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "9,779 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2383320f2c3a49814ca45348198acabb",
@@ -5101,7 +6444,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "3099adac36462aa738c3ecf28e8e2c59",
@@ -5123,7 +6469,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8c8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "a6a9023a2f90fa514a87cc7ec017cd3b",
@@ -5145,7 +6496,12 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "9,988 Sq. Ft.",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "4d985ace707c1a4c28776f2a21ef9786",
@@ -5167,7 +6523,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Decorative Fountain",
+      "Restrooms"
+    ]
   },
   {
     "id": "5736c4bb2be24c9fb11477deccc47fa2",
@@ -5189,7 +6551,13 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Decorative Fountain",
+      "Restrooms"
+    ]
   },
   {
     "id": "4f533936b9c1b6bfb63b57503af629ca",
@@ -5211,7 +6579,12 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Historic Landmark"
+    ]
   },
   {
     "id": "e6fc563414c0a6b912ecd36ad9a70ec3",
@@ -5233,7 +6606,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Historic Landmark"
+    ]
   },
   {
     "id": "bc9365f7b792e32c55662ff6584f3261",
@@ -5255,7 +6633,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898a8"
-    }
+    },
+    "area": "1,810 Sq. Ft.",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Decorative Fountain"
+    ]
   },
   {
     "id": "849b377634bed36ddbe651a2dc002213",
@@ -5277,7 +6660,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": null,
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Waterfront"
+    ]
   },
   {
     "id": "7f18c6c117302ec78570a20a9fafe235",
@@ -5299,7 +6687,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "31ceef22f9ba9cd0d4924bbc2fc2977b",
@@ -5321,7 +6714,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "Fishing",
+      "Pesticide Free",
+      "Waterfront"
+    ]
   },
   {
     "id": "2c02eb179573bcdefa74b3d6bcf5043a",
@@ -5343,7 +6744,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8e8e8"
-    }
+    },
+    "area": "9,973 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "21bb29c5669ca480adf268feaec6e755",
@@ -5365,7 +6771,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "13.2 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Tennis Backboard (Outdoor)",
+      "Community Center",
+      "Soccer",
+      "Tennis Lights",
+      "Tennis Court (Outdoor)",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "ded7cf878b94bdea08776103d57df995",
@@ -5387,7 +6804,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "18d6b3634ba159dbca719dee0778d772",
@@ -5409,7 +6832,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "Tennis Backboard (Outdoor)",
+      "Soccer",
+      "Adult Fitness Equipment",
+      "Pesticide Free",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "b02aa57af50a96ab28dddfffa0908b15",
@@ -5431,7 +6864,20 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "14.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Skatepark",
+      "Play Area (ADA Compliant)",
+      "Wading Pool or Water Feature",
+      "Soccer",
+      "Restrooms",
+      "Tennis Court (Outdoor)",
+      "Basketball (Full)",
+      "Community Center",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "77bb3f4388754e699df5100fadaa73e6",
@@ -5453,7 +6899,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "15.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "View"
+    ]
   },
   {
     "id": "2ee8b430e8076a851078448ff297bbc6",
@@ -5475,7 +6927,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "5.9 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bbeed202dddfef2888c4cad042050f6a",
@@ -5497,7 +6952,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "7.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "680ca72db60fd631d842214a2d561705",
@@ -5519,7 +6977,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "42.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Soccer",
+      "Restrooms",
+      "Tennis Court (Outdoor)",
+      "Woods",
+      "Basketball (Full)"
+    ]
   },
   {
     "id": "2c86d785207780f970fbdd6d7c08a4f3",
@@ -5541,7 +7008,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "58.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "541a0e9f2ed9cd126fd821486c8b210a",
@@ -5563,7 +7033,15 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383818"
-    }
+    },
+    "area": "129.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Picnic Sites",
+      "Dog Off Leash Area",
+      "Woods",
+      "Restrooms"
+    ]
   },
   {
     "id": "98a29cb8b12f67d792b95a98eff9b12b",
@@ -5585,7 +7063,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#88b8d8"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "Boat Launch (Motorized)"
+    ]
   },
   {
     "id": "3f01f69b93eb4320ccb072dd5f386d3e",
@@ -5607,7 +7091,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Wading Pool or Water Feature"
+    ]
   },
   {
     "id": "c2b5fae4fa3d0da3710fba3b5bf07cee",
@@ -5629,7 +7118,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "2f7d484887f2f3e8e227035367d9303d",
@@ -5651,7 +7143,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8f8"
-    }
+    },
+    "area": "1,206 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "8693b05b4e156880a4750c887aaadd5b",
@@ -5673,7 +7168,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081818"
-    }
+    },
+    "area": "4.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "View",
+      "Restrooms"
+    ]
   },
   {
     "id": "a8aff323c20e01b92f1452bb04b90771",
@@ -5695,7 +7197,16 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#284828"
-    }
+    },
+    "area": "3.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Baseball/Softball",
+      "Tennis Court (Outdoor)",
+      "Wading Pool or Water Feature",
+      "Play Area (ADA Compliant)",
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "be6e3527c705dd6327a423bb8911c695",
@@ -5717,7 +7228,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "4,482 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "d1f6e83bc98f0e411f7beeb4bdcd8cd0",
@@ -5739,7 +7253,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8e8e8"
-    }
+    },
+    "area": "5,347 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "43d152c33336112ec2c50f8163564a59",
@@ -5761,7 +7280,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8e8e8"
-    }
+    },
+    "area": "412 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "02580cea4cd6838251e083aaef871d33",
@@ -5783,7 +7305,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "2.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Soccer",
+      "Football",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "6dd3d00a5d3d40cf7c7ab451f9102f0f",
@@ -5805,7 +7334,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "5.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Basketball (Half)",
+      "Play Area (ADA Compliant)",
+      "Restrooms"
+    ]
   },
   {
     "id": "dff9d5d12be7bdee88333834fdcfcd7e",
@@ -5827,7 +7364,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "120.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Golf"
+    ]
   },
   {
     "id": "c79e68a89695dd4723ae63841644ac19",
@@ -5849,7 +7391,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "5230e2e1279ce807f899a3aed7841899",
@@ -5871,7 +7418,13 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "7.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Green Space"
+    ]
   },
   {
     "id": "f55ca382e33b781de7a0fa852bd221c6",
@@ -5893,7 +7446,17 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "15.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Baseball/Softball",
+      "Basketball (Half)",
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Soccer"
+    ]
   },
   {
     "id": "0f7e47dce5c6ec1701958d562272a707",
@@ -5915,7 +7478,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": null,
+    "features": []
   },
   {
     "id": "ce04594a974dd3f998a0fc884a8868e0",
@@ -5937,7 +7503,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "9.0 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Wading Pool or Water Feature",
+      "Baseball/Softball",
+      "Basketball (Full)",
+      "Play Area (ADA Compliant)",
+      "Community Center"
+    ]
   },
   {
     "id": "4dd8ff119500fdc13e86d207e8bcd913",
@@ -5959,7 +7534,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "469 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0513a5290a644a0bab31d1909f326c4c",
@@ -5981,7 +7559,10 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "469 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "a0e048ec7e53067879ba2651578e0d57",
@@ -6003,7 +7584,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#081828"
-    }
+    },
+    "area": "4.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Dog Off Leash Area",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "db30fd73642c18b02a0c2d790e496e54",
@@ -6025,7 +7612,13 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "4.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Dog Off Leash Area",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "d1ab490176fcc5898d271fec0fabe1bd",
@@ -6047,7 +7640,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "e0397196b55c37b6f973b74f6c1e5d79",
@@ -6069,7 +7665,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "39b4f7c9f7caf82734504e70a3782eb6",
@@ -6091,7 +7690,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Soccer",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "83db92fb97164fe9331746dff5b13b80",
@@ -6113,7 +7718,13 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#081838"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Soccer",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "3e3c4701c5e7e4d0b2bcc229469fdc54",
@@ -6135,7 +7746,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "View",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "dc6f313fc80a161a3189e9912979f73b",
@@ -6157,7 +7775,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "3.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space",
+      "Woods"
+    ]
   },
   {
     "id": "797bb8140a23f59296a71fa89d9dd96f",
@@ -6179,7 +7803,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "f5a53f774633a13c212485ab3f5a9f84",
@@ -6201,7 +7828,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98b8c8"
-    }
+    },
+    "area": "4.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "cdb8108ba8500ad760ba88e37426049e",
@@ -6223,7 +7855,17 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "8.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "View",
+      "Tennis Lights",
+      "Waterfront",
+      "Weddings and Ceremonies",
+      "Rental Facility"
+    ]
   },
   {
     "id": "16b4701f929bb930ed48d872a8bfef01",
@@ -6245,7 +7887,13 @@
       "type": "animated",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "4.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "View"
+    ]
   },
   {
     "id": "9c2d62b9443850d0fef106ddafca8ead",
@@ -6267,7 +7915,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#889898"
-    }
+    },
+    "area": "4.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "View"
+    ]
   },
   {
     "id": "79cac98822f3eeaf771d7456b517c4c9",
@@ -6289,7 +7943,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "7.6 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms",
+      "Tennis Lights",
+      "Tennis Court (Outdoor)",
+      "Soccer",
+      "Decorative Fountain",
+      "Basketball (Full)",
+      "Wading Pool or Water Feature"
+    ]
   },
   {
     "id": "cbf539860eea7da614a91c90161f6c50",
@@ -6311,7 +7976,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "26.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "Paths (ADA Compliant)",
+      "Track",
+      "Soccer",
+      "Restrooms (ADA Compliant)",
+      "Tennis Court (Outdoor)",
+      "Community Center",
+      "View"
+    ]
   },
   {
     "id": "692969ffd5cfcbeb32177f03ef990cb3",
@@ -6333,7 +8010,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "4.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Wading Pool or Water Feature",
+      "Basketball (Full)",
+      "Restrooms (ADA Compliant)"
+    ]
   },
   {
     "id": "aaa2071e3cb52d2d0f45687c394306c8",
@@ -6355,7 +8039,21 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "31.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Hiking Trails",
+      "Boat Launch (Hand Carry)",
+      "View",
+      "Woods",
+      "Waterfront",
+      "Restrooms",
+      "Garden",
+      "Weddings and Ceremonies",
+      "Play Area",
+      "Paths"
+    ]
   },
   {
     "id": "667298c6a5cf34ed3f89c042ab736d16",
@@ -6377,7 +8075,21 @@
       "type": "animated",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "31.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Hiking Trails",
+      "Boat Launch (Hand Carry)",
+      "View",
+      "Woods",
+      "Waterfront",
+      "Restrooms",
+      "Garden",
+      "Weddings and Ceremonies",
+      "Play Area",
+      "Paths"
+    ]
   },
   {
     "id": "c08bf4f4604eb0c4ffc5f7ccce4d9d81",
@@ -6399,7 +8111,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "2.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Pesticide Free",
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "e1a4235a1bff607f9822140fdc9834cb",
@@ -6421,7 +8140,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "3.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "5d64091d4a278b767ba03b4abdd69969",
@@ -6443,7 +8168,16 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "14.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball",
+      "Basketball (Half)",
+      "Soccer",
+      "Restrooms"
+    ]
   },
   {
     "id": "c6704c03a9a1fe22fb76dda56dd11356",
@@ -6465,7 +8199,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "e1e16629b2be0ca67635dcee5c6ed8ea",
@@ -6487,7 +8227,26 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "256.0 Acres",
+    "hours": "24 Hours",
+    "features": [
+      "Golf",
+      "Waterfront",
+      "Restrooms",
+      "Woods",
+      "Fishing",
+      "Play Area (ADA Compliant)",
+      "Boat Launch (Hand Carry)",
+      "Baseball/Softball",
+      "Guarded Beach",
+      "Paths (ADA Compliant)",
+      "Community Center",
+      "Basketball (Full)",
+      "Restrooms (ADA Compliant)",
+      "Paths",
+      "Rental Facility"
+    ]
   },
   {
     "id": "bbd8b633dac96a6e250d56b94cfe20d6",
@@ -6509,7 +8268,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "fed1da90088109142597ed9f6ab63c4b",
@@ -6531,7 +8293,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#483838"
-    }
+    },
+    "area": "4.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "9ee5bb89424c4f07b5b1e95d3f7455f5",
@@ -6553,7 +8318,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "7.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "220d662f46d0b0b046ccad6a924e8bd3",
@@ -6575,7 +8343,16 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8e8"
-    }
+    },
+    "area": "9.6 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Paths",
+      "Waterfront",
+      "View",
+      "Boat Launch (Hand Carry)",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "accba4ccf2c3bd015503f387858f05e9",
@@ -6597,7 +8374,21 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "21.9 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Picnic Sites",
+      "Restrooms (ADA Compliant)",
+      "Paths",
+      "Boat Launch (Hand Carry)",
+      "Play Area (ADA Compliant)",
+      "Hiking Trails",
+      "Creek",
+      "Guarded Beach",
+      "Restrooms",
+      "Waterfront"
+    ]
   },
   {
     "id": "9ad50b9349695d511c5f7c42eb5e750a",
@@ -6619,7 +8410,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "5c09eca2217810ea8d34559d5f41be25",
@@ -6641,7 +8437,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8d8"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "View"
+    ]
   },
   {
     "id": "239632445583f0c235058a2b58f24713",
@@ -6663,7 +8465,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": null,
+    "features": []
   },
   {
     "id": "64d832f19db35889576fe6727aad127c",
@@ -6685,7 +8490,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8f8f8"
-    }
+    },
+    "area": "2.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area"
+    ]
   },
   {
     "id": "8eadeb35ba6cc990da0dd2b0372740fc",
@@ -6707,7 +8517,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "2,972 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "a6000a063d5a6ac323ec0ffff52c2330",
@@ -6729,7 +8542,18 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8d8d8"
-    }
+    },
+    "area": "135.9 Acres",
+    "hours": "4 a.m.-11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "View",
+      "Waterfront",
+      "Restrooms",
+      "Picnic Sites",
+      "Rental Facility",
+      "Paths"
+    ]
   },
   {
     "id": "e5368e0182a2d74c00107a9a0ead9c45",
@@ -6751,7 +8575,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "4.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Community Center",
+      "Tennis Lights",
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball",
+      "Pesticide Free",
+      "Basketball (Half)",
+      "Soccer"
+    ]
   },
   {
     "id": "3f1c2f4b805a4740a665525ca3ec1f3c",
@@ -6773,7 +8609,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "8,357 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "49fd8de369b76f8b9baf8a0768e2fe86",
@@ -6795,7 +8636,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "2.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "b43e99b64b954530238709436fadc2c0",
@@ -6817,7 +8661,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8d8"
-    }
+    },
+    "area": "2.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)",
+      "Waterfront",
+      "View"
+    ]
   },
   {
     "id": "a2cd032a02ef001b43c61a3c3cc8c308",
@@ -6839,7 +8690,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#88b8d8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1979b49ef2d3526f2c708413dbd0ab9a",
@@ -6861,7 +8715,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "4.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m. except for vehicles with boats trailers and permits",
+    "features": [
+      "Waterfront",
+      "Restrooms",
+      "View",
+      "Picnic Sites",
+      "Weddings and Ceremonies"
+    ]
   },
   {
     "id": "cfb520dea37f7768f6ac806c62491ca5",
@@ -6883,7 +8746,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "17.4 Acres",
+    "hours": "6 a.m. - 11 p.m.",
+    "features": [
+      "Paths",
+      "View"
+    ]
   },
   {
     "id": "8a53851bc7911f0f8edc27610874f670",
@@ -6905,7 +8774,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "5,505 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "174697cfc86066292cfeb78fcca9532e",
@@ -6927,7 +8799,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "bb0ed5d77d75d5578edd89997fd456c2",
@@ -6949,7 +8826,14 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8b8c8"
-    }
+    },
+    "area": "19.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Weddings and Ceremonies",
+      "View"
+    ]
   },
   {
     "id": "2e3add7c7fdd2ae9382cd999db4f35c9",
@@ -6971,7 +8855,24 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "12.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Historic Landmark",
+      "Restrooms",
+      "Play Area (ADA Compliant)",
+      "Soccer",
+      "Paths (ADA Compliant)",
+      "Tennis Backboard (Outdoor)",
+      "Track",
+      "Tennis Lights",
+      "Community Center",
+      "Restrooms (ADA Compliant)",
+      "Basketball (Half)",
+      "Wading Pool or Water Feature",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "768d9fcee9b9b40ea683de1d835cef9c",
@@ -6993,7 +8894,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "5252be7f80da22ca6355128715f45a50",
@@ -7015,7 +8919,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "53.1 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Creek",
+      "Woods",
+      "Paths"
+    ]
   },
   {
     "id": "384a97f0aed4089e11b8af022afc8f8f",
@@ -7037,7 +8948,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "4,276 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "5468a2446d378f9066ded2ed2d5cceca",
@@ -7059,7 +8973,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods"
+    ]
   },
   {
     "id": "9f83833750a8442dc229db4c288d6987",
@@ -7081,7 +9000,21 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "99.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Paths (ADA Compliant)",
+      "Fire Pit",
+      "Restrooms (ADA Compliant)",
+      "Creek",
+      "Hiking Trails",
+      "Boat Launch (Hand Carry)",
+      "Play Area (ADA Compliant)",
+      "View",
+      "Dog Off Leash Area"
+    ]
   },
   {
     "id": "c7b871351663d4aa5b12e89502afaaa2",
@@ -7103,7 +9036,18 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#3888d8"
-    }
+    },
+    "area": "10.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Soccer",
+      "Restrooms",
+      "Wading Pool or Water Feature",
+      "Football",
+      "Rugby",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "f51c807ae473e02e3294f2206f5f767c",
@@ -7125,7 +9069,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "5.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Picnic Sites",
+      "View",
+      "Restrooms",
+      "Waterfront"
+    ]
   },
   {
     "id": "72d06827c8b8f3362d073bb61ed90348",
@@ -7147,7 +9099,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Skatepark",
+      "Basketball (Full)",
+      "Play Area (ADA Compliant)",
+      "View",
+      "Paths",
+      "Pesticide Free"
+    ]
   },
   {
     "id": "a4bbd863941d9ec897e6730bff14fe2e",
@@ -7169,7 +9131,15 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "12.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Basketball (Full)",
+      "Baseball/Softball",
+      "Tennis Court (Outdoor)",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "2e2e85ae0d42be1d5bcfe45db2ca4c6f",
@@ -7191,7 +9161,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "5848495e2b569f96f49827c2d4aa52c7",
@@ -7213,7 +9188,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282848"
-    }
+    },
+    "area": "2,716 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "97a2b6950da0ddf066cf006a99531194",
@@ -7235,7 +9213,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#785858"
-    }
+    },
+    "area": "3.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "521e9a0b040f16500a07ca91837909a1",
@@ -7257,7 +9240,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "4.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Rugby",
+      "Soccer",
+      "Tennis Court (Outdoor)",
+      "Restrooms"
+    ]
   },
   {
     "id": "d2f05ecc9ebc7ee03c8f63a323379f45",
@@ -7279,7 +9270,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.8 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Wading Pool or Water Feature",
+      "Basketball (Full)",
+      "Paths",
+      "Play Area (ADA Compliant)",
+      "Adult Fitness Equipment",
+      "Restrooms",
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "b888ae812dc7dd9c1194f1ba61fc556d",
@@ -7301,7 +9303,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#c8c8b8"
-    }
+    },
+    "area": "12.4 Acres",
+    "hours": "Tuesday thru Saturday 11 a.m. - 5 p.m.",
+    "features": [
+      "Waterfront",
+      "Boat Launch (Hand Carry)"
+    ]
   },
   {
     "id": "3dc210d60666780c0eb542f0b05b9399",
@@ -7323,7 +9331,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "2.0 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Soccer",
+      "Pesticide Free",
+      "Restrooms"
+    ]
   },
   {
     "id": "ffee2706631f04c55ac9548a94ff63e9",
@@ -7345,7 +9361,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383838"
-    }
+    },
+    "area": "7.6 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "Picnic Sites",
+      "Restrooms",
+      "Paths"
+    ]
   },
   {
     "id": "c0687d6536434f870fcf9d845ef479a0",
@@ -7367,7 +9391,14 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#6898d8"
-    }
+    },
+    "area": "13.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Guarded Beach",
+      "View"
+    ]
   },
   {
     "id": "8a836be3e92b252756ed8de71376d6ca",
@@ -7389,7 +9420,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "22.2 Acres",
+    "hours": "6:00 a.m. to 10:00 p.m. ",
+    "features": [
+      "Waterfront",
+      "Fishing",
+      "Boat Launch (Hand Carry)",
+      "Paths (ADA Compliant)",
+      "Boat Launch (Motorized)",
+      "Paths"
+    ]
   },
   {
     "id": "f5fcd6995c6b3d239a644bbb426623b1",
@@ -7411,7 +9452,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "2.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "32e658f56817c8d6d84c339ea8908743",
@@ -7433,7 +9479,10 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "1.1 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "46a4483d36732ec31203c61468b684ff",
@@ -7455,7 +9504,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#283828"
-    }
+    },
+    "area": "1.1 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "15f9864f2b26e1527f3478910719e54d",
@@ -7477,7 +9529,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "6bef1ff009bed7d8856b82149ea35214",
@@ -7499,7 +9554,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "14.1 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Woods",
+      "Historic Landmark",
+      "Weddings and Ceremonies",
+      "Restrooms",
+      "Dog Off Leash Area",
+      "Tennis Court (Outdoor)",
+      "View",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "21cf6a98b19230fd83ce59334cc7336e",
@@ -7521,7 +9588,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "5c9e511ed590a1eaceb758995dcda279",
@@ -7543,7 +9615,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "99288e9ce28ee7986329432b6985e1a8",
@@ -7565,7 +9640,13 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#283828"
-    }
+    },
+    "area": "12.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Green Space"
+    ]
   },
   {
     "id": "7e2fe078abbf06960a579aa7a2d6535e",
@@ -7587,7 +9668,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "1.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "87900c7c12d89e8c25bb7d7358f4907b",
@@ -7609,7 +9693,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8e858"
-    }
+    },
+    "area": "7,215 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Historic Landmark",
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "5c264a8269f9f5b38fc7fac0e517fa6f",
@@ -7631,7 +9721,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282848"
-    }
+    },
+    "area": "2,652 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "62196259f2b3fd7a96f699f7a3030e73",
@@ -7653,7 +9746,10 @@
       "type": "animated",
       "matchColor": "bold",
       "domColor": "#081818"
-    }
+    },
+    "area": "2,652 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1a1c44c315ea6e80e18f160606c481e2",
@@ -7675,7 +9771,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "7,316 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "ba2064ab256bbb468e747ebd4a4f36fe",
@@ -7697,7 +9796,12 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8d8e8"
-    }
+    },
+    "area": "1.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "050277be0552428078da921b5eab43de",
@@ -7719,7 +9823,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "4f117af1edc3005da45695966c6cbbef",
@@ -7741,7 +9848,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#082828"
-    }
+    },
+    "area": "2.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms"
+    ]
   },
   {
     "id": "84e00159ff0b8bfaa9f8b836bae6d43f",
@@ -7763,7 +9875,20 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "8.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Football",
+      "Baseball/Softball",
+      "Restrooms",
+      "Pool (Indoor)",
+      "Community Center",
+      "Tennis Court (Outdoor)",
+      "Restrooms (ADA Compliant)",
+      "Tennis Lights",
+      "Soccer"
+    ]
   },
   {
     "id": "6ec2060372abbf88ae954322ac8933d1",
@@ -7785,7 +9910,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "7,127 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f809f6b28071aee4868d228639790cc4",
@@ -7807,7 +9935,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Play Area (ADA Compliant)",
+      "Paths"
+    ]
   },
   {
     "id": "6143819bc614495f1970a9f399ad495d",
@@ -7829,7 +9964,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View",
+      "Waterfront"
+    ]
   },
   {
     "id": "4179d3cbc403677389c6a43cd770c633",
@@ -7851,7 +9992,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383838"
-    }
+    },
+    "area": "3.8 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Hiking Trails",
+      "Green Space"
+    ]
   },
   {
     "id": "a8c265f5e318833a93f523ac908d9c39",
@@ -7873,7 +10020,18 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#a8c8c8"
-    }
+    },
+    "area": "1.8 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Rental Facility",
+      "Play Area (ADA Compliant)",
+      "Restrooms",
+      "Tennis Lights",
+      "Soccer",
+      "Baseball/Softball",
+      "Basketball (Half)"
+    ]
   },
   {
     "id": "fdbc96bfd79f8fcaf1e66964fd8aea65",
@@ -7895,7 +10053,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bc5c78f5e319f7c6d59fbdb325f87570",
@@ -7917,7 +10078,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths"
+    ]
   },
   {
     "id": "5c8f70d2448b543ba9d838c43f203d75",
@@ -7939,7 +10105,14 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383818"
-    }
+    },
+    "area": "2.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Wading Pool or Water Feature",
+      "Restrooms (ADA Compliant)",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "9b0486005eab26dd0367e530eb404bd6",
@@ -7961,7 +10134,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "bde292e870c681e382b5635b2ceacdf1",
@@ -7983,7 +10159,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "21.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Play Area (ADA Compliant)",
+      "View",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "b4d48b32b0929ab224c8d35ea458e397",
@@ -8005,7 +10189,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "304cdfffcfb4a75f66fd3d4d9ed10c8d",
@@ -8027,7 +10214,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "1e690f7c64d4ecfd9e81c2174088b5ca",
@@ -8049,7 +10241,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "1.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Paths",
+      "Pesticide Free"
+    ]
   },
   {
     "id": "fc75051f2217f49545361541ec43c010",
@@ -8071,7 +10270,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "6f44b2dbf9b369f31c5238b932132295",
@@ -8093,7 +10295,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "6.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "03e47959a8350c883d0acd002e8702c6",
@@ -8115,7 +10320,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "2.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths (ADA Compliant)",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "58bfc88d279b01b9714fa2db5d6a044e",
@@ -8137,7 +10348,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "3.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Adult Fitness Equipment",
+      "Skatespot"
+    ]
   },
   {
     "id": "f802a512dc677781ac4dc0f2b4371112",
@@ -8159,7 +10376,13 @@
       "type": "animated",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "3.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Adult Fitness Equipment",
+      "Skatespot"
+    ]
   },
   {
     "id": "d293109e9f3be8eb16cc58eab66cb46b",
@@ -8181,7 +10404,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "15.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "3e8f6acdca2dd87b002cc10318abe256",
@@ -8203,7 +10429,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "0.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms",
+      "Play Area (ADA Compliant)",
+      "Creek"
+    ]
   },
   {
     "id": "46bb8e2e25d16c9256b14809cd9e0a78",
@@ -8225,7 +10458,12 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#183838"
-    }
+    },
+    "area": "0.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden"
+    ]
   },
   {
     "id": "18a4881fafb68616ffda09d99c2b61e7",
@@ -8247,7 +10485,19 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "19.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Pool (Indoor)",
+      "Baseball/Softball",
+      "Restrooms",
+      "Community Center",
+      "Creek",
+      "Tennis Lights",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "e8423eb77be86456ed2506ac2fefe034",
@@ -8269,7 +10519,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "bec90e163d2c532ba6e06ff7583f0250",
@@ -8291,7 +10544,20 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": "20.7 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Woods",
+      "Restrooms",
+      "Baseball/Softball",
+      "Hiking Trails",
+      "Play Area (ADA Compliant)",
+      "Paths",
+      "Restrooms (ADA Compliant)",
+      "Wading Pool or Water Feature",
+      "Picnic Sites"
+    ]
   },
   {
     "id": "21b53f84cfd2f0ac0491f0c4292d0aaa",
@@ -8313,7 +10579,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Restrooms",
+      "Basketball (Half)",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "6e279c1df6dc730a47367163426dd43f",
@@ -8335,7 +10609,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "6,619 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f48fe0eae0b6495865c8e058478831cf",
@@ -8357,7 +10634,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Creek",
+      "Woods"
+    ]
   },
   {
     "id": "be6109c0487bcbd0d6d81aad32604fbe",
@@ -8379,7 +10663,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "1.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "00284464bbb56d373c6cd59018f1e83f",
@@ -8401,7 +10690,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "2.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "325c94e8e683716b438f13e252db8efa",
@@ -8423,7 +10715,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#288898"
-    }
+    },
+    "area": "1.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "View"
+    ]
   },
   {
     "id": "9968d1eb11e08eec431bb55a8fc5a9e5",
@@ -8445,7 +10743,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "54.5 Acres",
+    "hours": "Tuesday - Sunday 10 a.m. - 6 p.m. ",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Rental Facility",
+      "Weddings and Ceremonies",
+      "Restrooms",
+      "Environmental Learning Center",
+      "Woods",
+      "Hiking Trails"
+    ]
   },
   {
     "id": "db9bd4c2e84c146ea9b831b86879f9f5",
@@ -8467,7 +10777,17 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "7.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Paths (ADA Compliant)",
+      "Play Area (ADA Compliant)",
+      "Hiking Trails",
+      "Woods",
+      "Tennis Court (Outdoor)"
+    ]
   },
   {
     "id": "bfa0153b87d986512e1b150fa88c4b31",
@@ -8489,7 +10809,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "6.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Basketball (Half)",
+      "Play Area (ADA Compliant)",
+      "Baseball/Softball",
+      "Restrooms"
+    ]
   },
   {
     "id": "11a8155f1d24e141c2d6762360b48d62",
@@ -8511,7 +10839,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "3.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "4bd1df86e5d195cbacb5970fa22aa743",
@@ -8533,7 +10864,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8c8d8"
-    }
+    },
+    "area": "2.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "View"
+    ]
   },
   {
     "id": "4c5e6b2b19dcf013273837ee6695b96c",
@@ -8555,7 +10892,16 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "13.4 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Picnic Sites",
+      "Skatepark",
+      "Restrooms",
+      "Soccer",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "edb213ff9d1dba111116994100344f90",
@@ -8577,7 +10923,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "16.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Marination Ma Kai",
+      "Scuba Diving",
+      "Fishing",
+      "Boat Launch (Hand Carry)",
+      "View"
+    ]
   },
   {
     "id": "8608c087792fa4b6923a0a179cfc2315",
@@ -8599,7 +10954,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "138.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Weddings and Ceremonies",
+      "Golf",
+      "Restrooms"
+    ]
   },
   {
     "id": "67fa0ad7d838e3a4946ae43726c50241",
@@ -8621,7 +10983,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "11.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Football",
+      "Restrooms"
+    ]
   },
   {
     "id": "2aab11d8ebc3e5235388f1c49d8bf44a",
@@ -8643,7 +11012,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#382818"
-    }
+    },
+    "area": null,
+    "hours": null,
+    "features": []
   },
   {
     "id": "a838c316bb64e75e5a533373d2e6a079",
@@ -8665,7 +11037,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "4.0 Acres",
+    "hours": "4 a.m. - 10 p.m.",
+    "features": [
+      "Disc Golf",
+      "Paths"
+    ]
   },
   {
     "id": "5b9f208b9ef0e5ab38eb11afa673528b",
@@ -8687,7 +11065,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "7.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "P-Patch Community Garden",
+      "Tennis Backboard (Outdoor)",
+      "Paths"
+    ]
   },
   {
     "id": "f67dc957b63d4b896b2b67db8562fd42",
@@ -8709,7 +11094,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "5.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Soccer",
+      "Pesticide Free"
+    ]
   },
   {
     "id": "163c569178676befe4d3a601a435466f",
@@ -8731,7 +11122,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "32.3 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Hiking Trails",
+      "Creek",
+      "Green Space",
+      "Paths"
+    ]
   },
   {
     "id": "166694d3cd4ff20347a327bcd663eb0c",
@@ -8753,7 +11152,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#d8e8e8"
-    }
+    },
+    "area": "4.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "Boat Launch (Hand Carry)",
+      "Play Area"
+    ]
   },
   {
     "id": "c05bfb85404f91ebaff094ce324b89a8",
@@ -8775,7 +11181,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "8e27314ab660c6a3b5b0b2b53636b230",
@@ -8797,7 +11206,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "1.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "4d95bc1a12409c11a52989f72b9c7501",
@@ -8819,7 +11233,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "1.0 Acre",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space"
+    ]
   },
   {
     "id": "fa8d6f8fd5eaca81e210537e793981d1",
@@ -8841,7 +11260,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8c8c8"
-    }
+    },
+    "area": "1.1 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "b718d19b1bde97725f490f1072483a6d",
@@ -8863,7 +11287,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Adult Fitness Equipment",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "eacdfdf1abfd45a7170c416cf2de1f91",
@@ -8885,7 +11316,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8f8f8"
-    }
+    },
+    "area": "3.5 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "fb5a421fd99942dafaa82eb5958bdd2e",
@@ -8907,7 +11341,14 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "3.9 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Pesticide Free",
+      "Boat Launch (Hand Carry)",
+      "View"
+    ]
   },
   {
     "id": "85daa9e1bc375030055d353db27e3d06",
@@ -8929,7 +11370,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "2.1 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Restrooms",
+      "Play Area (ADA Compliant)",
+      "Paths (ADA Compliant)",
+      "Community Center",
+      "Paths"
+    ]
   },
   {
     "id": "97d096acd2690d45269356a873fb1dd4",
@@ -8951,7 +11401,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "7.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "930d989a0cca499b5da6fcc35da2c7fd",
@@ -8973,7 +11426,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8f8"
-    }
+    },
+    "area": "0.5 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "583d426540062e7c27b164d5af4883bb",
@@ -8995,7 +11453,14 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "16.9 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Hiking Trails",
+      "Creek"
+    ]
   },
   {
     "id": "45c12d84430f25d65cb7c9eccab19f4b",
@@ -9017,7 +11482,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "736de1390e36c55b8730cdae6579c9dc",
@@ -9039,7 +11507,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f30741e8156c2aeb5f74689dbbe2eba1",
@@ -9061,7 +11532,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8d8d8"
-    }
+    },
+    "area": "2.3 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1bd53bcbd0e468ee9e5734db5c03fdac",
@@ -9083,7 +11557,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#281818"
-    }
+    },
+    "area": "5.2 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "7b766953b8a9d5ab52261db849b7fae8",
@@ -9105,7 +11582,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#382828"
-    }
+    },
+    "area": "0.7 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Garden"
+    ]
   },
   {
     "id": "4f0d3d90822741bdc58ec261c18f8b2e",
@@ -9127,7 +11610,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8f8"
-    }
+    },
+    "area": "5,371 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "58d8e82c61262edd5889bc8b20b8a13e",
@@ -9149,7 +11635,20 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "24.7 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Tennis Lights",
+      "View",
+      "Tennis Court (Outdoor)",
+      "Hiking Trails",
+      "Play Area (ADA Compliant)",
+      "Guarded Beach",
+      "Creek",
+      "Restrooms (ADA Compliant)",
+      "Paths"
+    ]
   },
   {
     "id": "1e333576e64296c3e532dd6fe74474fe",
@@ -9171,7 +11670,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "1.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "fcdff56579cc12f55979b44019cb1185",
@@ -9193,7 +11697,20 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "5.5 Acres",
+    "hours": "6 a.m. - 10 p.m.",
+    "features": [
+      "Play Area (ADA Compliant)",
+      "Basketball (Half)",
+      "Restrooms",
+      "Decorative Fountain",
+      "Wading Pool or Water Feature",
+      "Picnic Sites",
+      "Paths (ADA Compliant)",
+      "Restrooms (ADA Compliant)",
+      "Basketball (Full)"
+    ]
   },
   {
     "id": "325af110136b77ac81dddade366470f2",
@@ -9215,7 +11732,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#e8e8e8"
-    }
+    },
+    "area": "0.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Paths",
+      "Paths (ADA Compliant)"
+    ]
   },
   {
     "id": "e57297b83004ef01e6ed07d65e8d928d",
@@ -9237,7 +11760,13 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#b8d8f8"
-    }
+    },
+    "area": "3.6 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "Green Space"
+    ]
   },
   {
     "id": "79264d42f5a46e19209c5dbc91629f16",
@@ -9259,7 +11788,13 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "9.1 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Green Space",
+      "Woods"
+    ]
   },
   {
     "id": "ba50c3219bdd514c0936c4e76b623e23",
@@ -9281,7 +11816,16 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "35.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Play Area",
+      "Green Space",
+      "Creek",
+      "Hiking Trails",
+      "Woods"
+    ]
   },
   {
     "id": "6e844a6e85d47b9e44377639474d97ca",
@@ -9303,7 +11847,15 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "4.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Restrooms (ADA Compliant)",
+      "Basketball (Full)",
+      "Restrooms",
+      "Baseball/Softball"
+    ]
   },
   {
     "id": "82ff6fc9f2e4791d5b46c55b07dd4f25",
@@ -9325,7 +11877,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#98c8e8"
-    }
+    },
+    "area": "3,342 Sq. Ft.",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1c0dc26ec22403f8fcb5cb6722e54f97",
@@ -9347,7 +11902,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": null,
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Boat Launch (Hand Carry)"
+    ]
   },
   {
     "id": "f54466f32936ef89f214a17a3444ec67",
@@ -9369,7 +11929,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282818"
-    }
+    },
+    "area": "0.8 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "5d7b8a039b9ea03d2414e25757c7bf2b",
@@ -9391,7 +11954,12 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8d8e8"
-    }
+    },
+    "area": "2.4 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "View"
+    ]
   },
   {
     "id": "532518d29799a44d206c6351e333f579",
@@ -9413,7 +11981,12 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#182828"
-    }
+    },
+    "area": "16.2 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods"
+    ]
   },
   {
     "id": "336e1a8b3eb74c1fcbcf3d6179d55cff",
@@ -9435,7 +12008,19 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
-    }
+    },
+    "area": "965 Sq. Ft.",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Woods",
+      "View",
+      "Tennis Court (Outdoor)",
+      "Restrooms",
+      "Waterfront",
+      "Weddings and Ceremonies",
+      "Picnic Sites",
+      "Paths"
+    ]
   },
   {
     "id": "a31a61bd4d3a3edd63314e89126fb47d",
@@ -9457,7 +12042,18 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "15.3 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "T-Ball",
+      "Restrooms",
+      "Pool (Outdoor)",
+      "Baseball/Softball",
+      "Restrooms (ADA Compliant)",
+      "Soccer",
+      "Play Area (ADA Compliant)"
+    ]
   },
   {
     "id": "7d6feeb6665ce4b4382b5929431419c7",
@@ -9479,7 +12075,13 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "9.5 Acres",
+    "hours": "4 a.m. - 11:30 p.m.",
+    "features": [
+      "Waterfront",
+      "View"
+    ]
   },
   {
     "id": "2493576ee774a4b93b34cbab77ae1b23",
@@ -9501,7 +12103,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "50e2d8bbc9b538209b0b449bf4b55c8d",
@@ -9523,7 +12128,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "55809156d8251c210104181e611ab5e0",
@@ -9545,7 +12153,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "a7069967ed01508c72abc70161f63e52",
@@ -9567,7 +12178,10 @@
       "type": "animated",
       "matchColor": "sky",
       "domColor": "#8898a8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "5149cc0c9b8af0c041ad7077e837422a",
@@ -9589,7 +12203,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "eb0c082c597063edce7d3940bbbfaff8",
@@ -9611,7 +12228,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080818"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "02da264c5938a73d6cb54f147bcf3ef2",
@@ -9633,7 +12253,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "012e4d0d21fb56e8e042c035c1cb54b0",
@@ -9655,7 +12278,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "40bcb2449033122ff584497f00a88e42",
@@ -9677,7 +12303,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "f921dcdafeb76376af34746ad0f3c0df",
@@ -9699,7 +12328,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "1b51dec7954d679158dcdf16e393a91e",
@@ -9721,7 +12353,10 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#b8b8b8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "38274cea0352c04423e3f8d651c0ae5f",
@@ -9743,7 +12378,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "008e91a90e5eae86b2be8d62a0db275b",
@@ -9765,7 +12403,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#383848"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "b418ab82d589b3a9ff95cd2a6dcfdaed",
@@ -9787,7 +12428,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "0a0f0f24a4cca45d176dd9b21f7aaed0",
@@ -9809,7 +12453,10 @@
       "type": "still",
       "matchColor": "bold",
       "domColor": "#080808"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "b7f633c9d2175673588016dc12589ba8",
@@ -9831,7 +12478,10 @@
       "type": "still",
       "matchColor": "sky",
       "domColor": "#78a8c8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "eac792ad30c3ed549255d0b3b7ab69ce",
@@ -9853,7 +12503,10 @@
       "type": "still",
       "matchColor": "green",
       "domColor": "#383828"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   },
   {
     "id": "6d61866ed817acf27aef8dae615e41bd",
@@ -9875,6 +12528,9 @@
       "type": "still",
       "matchColor": "light",
       "domColor": "#f8f8f8"
-    }
+    },
+    "area": "5.0 Acres",
+    "hours": null,
+    "features": []
   }
 ]

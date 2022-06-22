@@ -6,6 +6,16 @@ import styles from './Details.module.css';
 import Social from "./Social";
 import { MdCollections } from 'react-icons/md'
 
+function Detail({ title, data }) {
+  return (
+    <Box>
+      <Text display={'inline-block'} fontWeight={'bold'}>{title}:</Text>
+      &nbsp;
+      <Text display={'inline-block'} ml={2}>{data}</Text>
+    </Box>
+  )
+}
+
 export default function Details({ data, ...props }) {
   const filterColor = data.filters?.matchColor
   const filterType = data.filters?.type
@@ -33,7 +43,10 @@ export default function Details({ data, ...props }) {
       {data.link && <ChakraLink href={data.link}>{data.link}</ChakraLink>}
       {data.lat && data.long && <Text>{data.lat} // {data.long}</Text>}
       {data.address && <Text>{data.address}</Text>}
-      {data.description && <Text>{data.description}</Text>}
+      {data.hours && <Detail title={'Hours'} data={data.hours} />}
+      {data.area && <Detail title={'Area'} data={data.area} />}
+      {data.features?.length > 0 && <Detail title={'Features'} data={data.features.join(', ')} />}
+      {data.description && <Detail title={'Description'} data={data.description} />}
       {displayFilter && <FilterDisplay filterType={filterType} filterColor={filterColor} filterFeatured={filterFeatured} />}
       <Social path={`/park/${data.slug}`} takenAt={data.parkName} />
       {data.lat && data.long && <Map center={[data.lat, data.long]} slug={data.slug} />}
