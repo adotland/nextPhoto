@@ -1,5 +1,5 @@
-import { useColorModeValue, useColorMode } from '@chakra-ui/react';
-import { useEffect, useState, useRef, forwardRef } from 'react';
+import { useColorModeValue, useColorMode, Flex } from '@chakra-ui/react';
+import { useEffect, useState, useMemo } from 'react';
 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -10,6 +10,8 @@ import 'leaflet.fullscreen/Control.FullScreen.js'
 import 'leaflet.fullscreen/Control.FullScreen.css'
 
 import { MapContainer, TileLayer, Tooltip, useMapEvents, useMap, LayersControl, LayerGroup, GeoJSON, Marker, FeatureGroup, ScaleControl } from 'react-leaflet';
+import LeafletLegend from '../LeafletLegend';
+import MapLayerButtons from '../MapLayerButtons';
 
 const markerIcon = new L.Icon({
   iconUrl: '/tree-t.png',
@@ -46,7 +48,7 @@ const ParkMarkerLayer = ({ dataList }) => {
   })
 }
 
-const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks }) => {
+const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }) => {
   const { colorMode } = useColorMode()
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
@@ -102,26 +104,15 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
     return pallete[scaled]
   }
 
+  const getLegendColor = (num) => getColor(num, generalPallete, false)
+
   const style = {
-    poc: (feature) => {
-      const {
-        properties: { PTL_PEOPLE_OF_COLOR }
-      } = feature
-      return {
-        fillColor: getColor(PTL_PEOPLE_OF_COLOR, skinTonePallete),
-        weight: 0.3,
-        opacity: 1,
-        color: outlineColor,
-        dashArray: "3",
-        fillOpacity: 0.5
-      }
-    },
     health: (feature) => {
       const {
         properties: { HEALTH_PERCENTILE }
       } = feature
       return {
-        fillColor: getColor(HEALTH_PERCENTILE, blueRedPallete, true),
+        fillColor: getColor(HEALTH_PERCENTILE, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -129,12 +120,25 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
         fillOpacity: 0.5
       }
     },
-    foreign: (feature) => {
+    // obese: (feature) => {
+    //   const {
+    //     properties: { PTL_ADULT_OBESE }
+    //   } = feature
+    //   return {
+    //     fillColor: getColor(PTL_ADULT_OBESE, generalPallete, true),
+    //     weight: 0.3,
+    //     opacity: 1,
+    //     color: outlineColor,
+    //     dashArray: "3",
+    //     fillOpacity: 0.5
+    //   }
+    // },
+    econ: (feature) => {
       const {
-        properties: { PTL_FOREIGN_BORN }
+        properties: { SOCIOECONOMIC_PERCENTILE }
       } = feature
       return {
-        fillColor: getColor(PTL_FOREIGN_BORN, blueRedPallete, true),
+        fillColor: getColor(SOCIOECONOMIC_PERCENTILE, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -142,12 +146,12 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
         fillOpacity: 0.5
       }
     },
-    obese: (feature) => {
+    mentalHealth: (feature) => {
       const {
-        properties: { PTL_ADULT_OBESE }
+        properties: { PTL_ADULTMENTALHEALTHNOTGOOD }
       } = feature
       return {
-        fillColor: getColor(PTL_ADULT_OBESE, blueRedPallete, true),
+        fillColor: getColor(PTL_ADULTMENTALHEALTHNOTGOOD, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -155,12 +159,12 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
         fillOpacity: 0.5
       }
     },
-    black: (feature) => {
+    activity: (feature) => {
       const {
-        properties: { F2020_PL_data_BLACK_NOT_HISPANI, F2020_PL_data_TOT_POP }
+        properties: { PTL_ADULTNOLEISUREPHYSACTIVITY }
       } = feature
       return {
-        fillColor: getColor(F2020_PL_data_BLACK_NOT_HISPANI / F2020_PL_data_TOT_POP, skinTonePallete),
+        fillColor: getColor(PTL_ADULTNOLEISUREPHYSACTIVITY, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -168,38 +172,47 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
         fillOpacity: 0.5
       }
     },
-    black90: (feature) => {
+    parkAreaPtl: (feature) => {
       const {
-        properties: { F1990_PL_data_BLACK_NOT, F1990_PL_data_TOT_POP }
+        properties: { parkAreaPtl }
       } = feature
       return {
-        fillColor: getColor(F1990_PL_data_BLACK_NOT / F1990_PL_data_TOT_POP, skinTonePallete),
+        fillColor: getColor(parkAreaPtl / 100, generalPallete, false),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
         fillOpacity: 0.5
       }
-    }
+    },
+    parkAmountPtl: (feature) => {
+      const {
+        properties: { parkAmountPtl }
+      } = feature
+      return {
+        fillColor: getColor(parkAmountPtl / 100, generalPallete, false),
+        weight: 0.3,
+        opacity: 1,
+        color: outlineColor,
+        dashArray: "3",
+        fillOpacity: 0.5
+      }
+    },
   }
-
-  function onEachArea_black(feature, layer) {
+  function onEachArea_tractId(feature, layer) {
     if (feature.properties) {
       const {
-        properties: { F2020_PL_data_BLACK_NOT_HISPANI, F2020_PL_data_TOT_POP }
+        properties: { TRACT_20_LABEL }
       } = feature
-      const pct = parseInt((F2020_PL_data_BLACK_NOT_HISPANI / F2020_PL_data_TOT_POP) * 100).toString()
-      layer.bindTooltip(pct, { permanent: true, opacity: 0.7 }).openTooltip()
+      layer.bindTooltip(TRACT_20_LABEL, { permanent: true, opacity: 0.7 }).openTooltip()
     }
   }
-
-  function onEachArea_black90(feature, layer) {
+  function onEachArea_parkPtl(feature, layer) {
     if (feature.properties) {
       const {
-        properties: { F1990_PL_data_BLACK_NOT, F1990_PL_data_TOT_POP }
+        properties: { parkAreaPtl }
       } = feature
-      const pct = parseInt((F1990_PL_data_BLACK_NOT / F1990_PL_data_TOT_POP) * 100).toString()
-      layer.bindTooltip(pct, { permanent: true, opacity: 0.7 }).openTooltip()
+      layer.bindTooltip(parkAreaPtl.toFixed(0), { permanent: true, opacity: 0.7 }).openTooltip()
     }
   }
 
@@ -230,72 +243,91 @@ const LeafletExp = ({ data_geo_race, data_geo_census, seattleParks, pPatchParks 
     touchZoom: true,
     scrollWheelZoom: true,
   };
-  return (
-    <MapContainer
-      className={styles.map}
-      center={center}
-      zoom={12}
-      attributionControl={false}
-      ref={setMapState}
-      fullscreenControl={true}
-      {...interactionOptions}
-    >
-      {/* <MapEventListener /> */}
-      <LayersControl position="topright">
-        <TileLayer
-          url={osm[tileProvider].url}
-          attribution={osm[tileProvider].attribution}
-          ref={setCurrentTiles}
-        />
-        {/* <LayersControl.Overlay name="Heatmap" checked>
-          <LayerGroup ref={heatmapLayerGroupRef} >
-            <HeatmapLayer heatmapData={heatmapData} ref={heatmapLayerRef} />
-          </LayerGroup>
-        </LayersControl.Overlay> */}
-        <LayersControl.Overlay name="Obesity">
+
+  const displayMap = useMemo(
+    () => (
+      <MapContainer
+        className={styles.map}
+        center={center}
+        zoom={11}
+        attributionControl={false}
+        ref={setMapState}
+        fullscreenControl={true}
+        {...interactionOptions}
+      >
+        {/* <MapEventListener /> */}
+        <LayersControl position="topright">
+          <TileLayer
+            url={osm[tileProvider].url}
+            attribution={osm[tileProvider].attribution}
+            ref={setCurrentTiles}
+          />
+          <LayersControl.Overlay name="Overall Health">
+            <FeatureGroup >
+              <GeoJSON data={data_geo_demog} style={style.health} />
+            </FeatureGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="Mental Health">
+            <FeatureGroup >
+              <GeoJSON data={data_geo_demog} style={style.mentalHealth} />
+            </FeatureGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="Exercise Time Available">
+            <FeatureGroup >
+              <GeoJSON data={data_geo_demog} style={style.activity} />
+            </FeatureGroup>
+          </LayersControl.Overlay>
+          {/* <LayersControl.Overlay name="Obesity">
           <FeatureGroup >
             <GeoJSON data={data_geo_race} style={style.obese} />
           </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Health">
-          <FeatureGroup >
-            <GeoJSON data={data_geo_race} style={style.health} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Foreign Born">
-          <FeatureGroup >
-            <GeoJSON data={data_geo_race} style={style.foreign} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Racial Diversity">
-          <FeatureGroup >
-            <GeoJSON data={data_geo_race} style={style.poc} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Black Population" checked>
-          <FeatureGroup >
-            <GeoJSON data={data_geo_census} style={style.black} onEachFeature={onEachArea_black} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="1990 Black Population">
-          <FeatureGroup >
-            <GeoJSON data={data_geo_census} style={style.black90} onEachFeature={onEachArea_black90} />
-          </FeatureGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Seattle Parks">
+        </LayersControl.Overlay> */}
+          <LayersControl.Overlay name="Financial Health">
+            <FeatureGroup >
+              <GeoJSON data={data_geo_demog} style={style.econ} />
+            </FeatureGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="Park Area" checked>
+            <LayerGroup>
+              {/* <GeoJSON data={data_geo_park} style={style.parkAreaPtl} onEachFeature={onEachArea_parkPtl} /> */}
+              <GeoJSON data={data_geo_park} style={style.parkAreaPtl} />
+            </LayerGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="Park Amount">
+            <LayerGroup>
+              {/* <GeoJSON data={data_geo_park} style={style.parkAreaPtl} onEachFeature={onEachArea_parkPtl} /> */}
+              <GeoJSON data={data_geo_park} style={style.parkAmountPtl} />
+            </LayerGroup>
+          </LayersControl.Overlay>
+          {/* <LayersControl.Overlay name="CensusTracts">
           <LayerGroup>
-            <ParkMarkerLayer dataList={seattleParks} />
+            <GeoJSON data={data_geo_census} onEachFeature={onEachArea_tractId} />
           </LayerGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="P-Patches">
-          <LayerGroup>
-            <ParkMarkerLayer dataList={pPatchParks} />
-          </LayerGroup>
-        </LayersControl.Overlay>
-      </LayersControl>
-      <ScaleControl position={"bottomleft"} />
+        </LayersControl.Overlay> */}
+          <LayersControl.Overlay name="Seattle Parks">
+            <LayerGroup>
+              <ParkMarkerLayer dataList={seattleParks} />
+            </LayerGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="P-Patches">
+            <LayerGroup>
+              <ParkMarkerLayer dataList={pPatchParks} />
+            </LayerGroup>
+          </LayersControl.Overlay>
+        </LayersControl>
 
-    </MapContainer>
+        <ScaleControl position={"bottomleft"} />
+        <LeafletLegend map={mapState} getColor={getLegendColor} />
+
+      </MapContainer>
+    ),
+    [],
+  )
+  return (
+    <Flex m={[0, 0, 0, 0]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'row']} mt={[4, 4, 16, 4]}>
+      {displayMap}
+      {mapState ? <MapLayerButtons /> : null}
+    </Flex>
   )
 }
 

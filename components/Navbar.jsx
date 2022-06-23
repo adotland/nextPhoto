@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Box, Flex, Text, Stack, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, Stack, useColorModeValue, Tooltip } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu/FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
 import { FaDice } from 'react-icons/fa';
+import { GoBeaker } from 'react-icons/go';
 
 const NavBar = (props) => {
   const router = useRouter();
@@ -67,7 +68,7 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
       backgroundColor={useColorModeValue("white", "#191a1a")}
       p={1}
       transform={'skew(-21deg)'}
-      _hover={{cursor: 'pointer'}}
+      _hover={{ cursor: 'pointer' }}
     >
       {isOpen ? <CloseIcon color={color} /> : <MenuIcon color={color} />}
     </Box>
@@ -88,11 +89,35 @@ const MenuItem = ({ children, to = "/", name }) => {
           py={1}
           px={2}
           rounded={'md'}
-          // transform={'skew(-21deg)'}
-          _hover={{background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800')}}
+          _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}
         >
           {children}
         </Text>
+      </a>
+    </Link>
+  );
+};
+
+const MenuItemToolTip = ({ children, to = "/", name }) => {
+  return (
+    <Link href={to}>
+      <a aria-label={name}>
+        <Tooltip label={name}>
+          <Text
+            display="block"
+            fontFamily='Open Sans'
+            fontWeight={'bold'}
+            fontSize={'md'}
+            color={useColorModeValue("brand.700", "brand.100")}
+            backgroundColor={useColorModeValue("white", "#191a1a")}
+            py={1}
+            px={2}
+            rounded={'md'}
+            _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}
+          >
+            {children}
+          </Text>
+        </Tooltip>
       </a>
     </Link>
   );
@@ -112,11 +137,12 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         direction={["column", "column", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <FilterMenu setNavbarIsOpen={setIsOpen}/>
+        <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItem to="/map" name="map">Map</MenuItem>
-        <MenuItem to="/featured" name="featured"><FaDice size={'1.4em'} /></MenuItem>
-        <MenuItem to="/about" name="about">About</MenuItem>
+        <MenuItem to="/map" name="Park Map">Map</MenuItem>
+        <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map"><GoBeaker size={'1.4em'} /></MenuItemToolTip>
+        <MenuItemToolTip to="/featured" name="Featured"><FaDice size={'1.4em'} /></MenuItemToolTip>
+        <MenuItem to="/about" name="About">About</MenuItem>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>

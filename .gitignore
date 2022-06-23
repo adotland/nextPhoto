@@ -27,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -43,3 +44,6 @@ public/robots*
 
 .eslintrc.json
 .babelrc
+
+_*
+prisma

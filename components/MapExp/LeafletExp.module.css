@@ -3,12 +3,13 @@
   flex: none;
   height: 70vh;
   min-height: 70vh;
-  width: 50%;
+  width: 100%;
 }
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 48em) {
   .map {
     margin-top: 0;
+    width: 50%;
     /* height: 25rem; */
     /* margin-left: 2rem; */
     /* flex: 1; */

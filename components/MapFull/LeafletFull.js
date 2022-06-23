@@ -17,7 +17,7 @@ import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
   const map = useMap()
   useEffect(() => {
-    const layer = L.heatLayer(heatmapData, { radius: 40, gradient: { 0: 'green', 1.0: 'green' } });
+    const layer = L.heatLayer(heatmapData, { radius: 40, gradient: { 0: 'blue', 1.0: 'blue' } });
     if (map.hasLayer(layer)) return
     layer.addTo(map);
     ref.current = layer;
