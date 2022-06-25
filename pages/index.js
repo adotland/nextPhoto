@@ -14,7 +14,7 @@ function CollectionItemContainer({ children }) {
       _after={{
         backgroundColor: useColorModeValue('#eee', '#111'),
         opacity: '60%',
-        backdropFilter: "saturate(180%) blur(5px)",
+        backdropFilter: "saturate(200%) blur(10px)",
         position: "absolute",
         content: "''",
         zIndex: 1,
@@ -37,9 +37,10 @@ function CollectionImage({ imageUrl, isPriority = false }) {
       layout="fill"
       objectFit="cover"
       placeholder="blur"
-      sizes="25vw"
+      sizes="33vw"
       blurDataURL={`data:image/svg+xml;base64,${commonBlurImage}`}
       priority={isPriority}
+      quality={75}
     />
   )
 }
@@ -93,12 +94,12 @@ export default function () {
     <>
       <SEO pageTitle={'Home'} />
       <Box mt={[4, 4, 14, 4]} width={'95%'} mx={'auto'}>
-        <FeaturedCollectionItem imageUrl='310_1301_Discovery-Park.jpg' isPriority={true} />
+        <FeaturedCollectionItem imageUrl='port_Terminal-18-Park.jpg' isPriority={true} />
         <CollectionItem name={'Seattle'} link={'seattle'} imageUrl="309_1297_Denny-Park.jpg" />
         <CollectionItem name={'Mercer Island'} link={'mercer'} imageUrl="mercer_streetEnd_77th-Avenue-SE-Landing.jpg" />
-        <CollectionItem name={'King County'} link={'county'} imageUrl="county_May-Creek-Park---County.jpg" />
-        <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Pelican-Tea-Garden.jpg' />
-        <CollectionItem name={'Extra'} link={'extras'} imageUrl='private_Duwamish-Hill-Preserve.jpg' />
+        <CollectionItem name={'King County'} link={'county'} imageUrl="county_Marymoor-Park.jpg" />
+        <CollectionItem name={'P-Patch'} link={'p-patch'} imageUrl='p-patch_Queen-Anne.jpg' />
+        <CollectionItem name={'Extra'} link={'extras'} imageUrl='kenmore_Log-Boom-Park.jpg' />
       </Box>
     </>
   )

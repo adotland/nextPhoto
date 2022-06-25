@@ -57,7 +57,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                   >
                     <Box
                       className={styles.galleryOverlay}
-                      bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.700')}
+                      bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
                     />
                     <Image
                       key={index}
@@ -71,7 +71,8 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                       height={data.height}
                       placeholder="blur"
                       blurDataURL={`data:image/svg+xml;base64,${blurImage || toBase64(shimmer(data.width, data.height))}`}
-                      sizes="33vw"
+                      sizes={data.ext === 'jpg' ? "384" : "33vw"}
+                      quality={50}
                       className={styles.galleryImage}
                     />
                     <Box
