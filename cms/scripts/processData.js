@@ -4,7 +4,7 @@ const sharp = require("sharp");
 // const ColorThief = require('colorthief');
 const md5 = require('md5')
 
-const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, PROCESSED_WEBP_PATH, DEFAULT_COLLECTION } = require('../config');
+const { ALL_FILTERS, STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, PROCESSED_WEBP_PATH, DEFAULT_COLLECTION } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
 
 const { PrismaClient } = require('@prisma/client');
@@ -255,13 +255,41 @@ const ManageData = {
     await ff.writeJson(dups, BASE_DATA_PATH, `mgmt/${collection}_duplicate_slugs.json`);
   },
 
-  updateAllFilters: async function (collection = DEFAULT_COLLECTION) {
-    let filterList = ['live', 'featured', 'weight'];
-    filterList = filterList.concat('matchColor');
-    await Promise.all(filterList.map(filter => this.updateFilter(collection, filter)));
+  updateFiltersDb: async function () {
+    const imageDTOList = await prisma.imageData.findMany();
+    const imageDTOObj = imageDTOList.reduce((acc, curr) => {
+      const newObj = {}
+      newObj[curr.slug] = curr
+      return {
+        ...acc,
+        ...newObj,
+      }
+    }, {})
+    const collectionList = await ff.readJson(LIVE_DATA_PATH, 'enabled_collections.json');
+    // for each collection file,
+    await Promise.all(collectionList.map(async collection => {
+      const dataList = await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`);
+      // for each imageData
+      const newDataList = dataList.map(data => {
+        // update filters object
+        const dbData = imageDTOObj[data.slug];
+        return {
+          ...data,
+          filters: {
+            ...data.filters,
+            live: dbData.filter_live,
+            weight: dbData.filter_weight,
+            matchColor: dbData.filter_matchColor,
+            featured: dbData.filter_featured,
+          }
+        }
+      })
+      // write file
+      await ff.writeJson(newDataList, LIVE_DATA_PATH, `${collection}_data.json`, 2);
+    }))
   },
 
-  updateFilter: async function (collection = DEFAULT_COLLECTION, filter, newOnly = false) {
+  updateFilter_JSON: async function (collection = DEFAULT_COLLECTION, filter, newOnly = false) {
     console.time(`updateFilter-${filter}`);
     const dataList = (await ff.readJson(LIVE_DATA_PATH, `${collection}_data.json`))
     let updateList;
