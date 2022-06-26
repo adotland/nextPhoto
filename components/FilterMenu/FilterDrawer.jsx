@@ -13,7 +13,7 @@ import Link from "next/link";
 import { BsCameraReels } from 'react-icons/bs';
 import { AiOutlinePicture, AiOutlineCamera } from 'react-icons/ai';
 import { VscSymbolColor } from 'react-icons/vsc'
-import COLORS, { getAllColors } from "../../cms/data/live/scripts/palette";
+import COLORS, { getAllColors } from "../../data/scripts/palette";
 
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';

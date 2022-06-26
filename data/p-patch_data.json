@@ -919,7 +919,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#283828"
     }
   },
@@ -1171,7 +1171,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#183838"
     }
   },

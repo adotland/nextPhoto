@@ -1,5 +1,5 @@
 import { ff } from "fssf";
-import { getAllColors } from "../../../cms/data/live/scripts/palette";
+import { getAllColors } from "../../../data/scripts/palette";
 import Gallery from "../../../components/Gallery";
 import { byWeight } from "../../../utils/helpers";
 
@@ -19,8 +19,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { value } }) {
-  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
+  const collectionList = await ff.readJson('./data', 'enabled_collections.json');
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
   const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
   const retval = [];
   filtered.forEach(data => {

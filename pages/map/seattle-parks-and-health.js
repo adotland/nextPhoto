@@ -18,7 +18,7 @@ export async function getStaticProps() {
   const dataObj = {};
 
   await Promise.all(collectionList.map(async collection => {
-    const data = await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))
+    const data = await ff.readJson(ff.path(`./data/${collection}_data.json`))
     dataObj[collection] = data
       .filter(d => d.ext === 'jpg')
       .map(d => {

@@ -45,7 +45,7 @@
         displayHex: '#4bb5d8',
         rgb: { R: 75, G: 181, B: 216 },
       },
-      green: {
+      forest: {
         hex: '#37522c',
         displayHex: '#37522c',
         rgb: { R: 55, G: 82, B: 44 }, // blend green

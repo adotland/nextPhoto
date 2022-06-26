@@ -22,7 +22,7 @@ function AboutLink({ text, path }) {
 }
 
 export async function getStaticProps() {
-  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
+  const collectionList = await ff.readJson('./data', 'enabled_collections.json');
   const dataObj = {};
   const statsObj = {
     amount: {
@@ -30,7 +30,7 @@ export async function getStaticProps() {
     }
   };
   await Promise.all(collectionList.map(async collection => {
-    const data = await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))
+    const data = await ff.readJson(ff.path(`./data/${collection}_data.json`))
     dataObj[collection] = data.filter(d => d.ext === 'jpg');
     const singleImageList = dataObj[collection];
     statsObj['amount'][collection] = singleImageList.length;

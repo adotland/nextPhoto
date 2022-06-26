@@ -4,7 +4,7 @@ import { useEffect, useState, useRef, forwardRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './LeafletFull.module.css';
-import osm from "../../cms/data/live/scripts/osm-providers";
+import osm from "../../data/scripts/osm-providers";
 import "leaflet.heat"
 import 'leaflet.fullscreen/Control.FullScreen.js'
 import 'leaflet.fullscreen/Control.FullScreen.css'

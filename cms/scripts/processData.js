@@ -7,6 +7,10 @@ const md5 = require('md5')
 const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, PROCESSED_WEBP_PATH, DEFAULT_COLLECTION } = require('../config');
 const { formatImageFileName, findDuplicates, getColorDiff, toHex, formatImageFileNameNoExt, asyncForEach } = require('./helpers');
 
+const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient();
+
 const { program } = require('commander');
 program.requiredOption('-x, --method <method>');
 program.option('-f, --filter <filter>');
@@ -374,7 +378,7 @@ const ManageData = {
 
   getApiData: async function () {
     const collectionList = await ff.readJson(LIVE_DATA_PATH, 'enabled_collections.json');
-    const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
+    const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
     const searchApiData = [];
     const featuredData = [];
     dataList.forEach(data => {
@@ -403,7 +407,59 @@ const ManageData = {
     await ff.write(`export const dataList = ${JSON.stringify(searchApiData.sort())}`, __dirname, `../../pages/api/park/park_search_data.js`);
     await ff.write(`export const dataList = ${JSON.stringify(featuredData)}`, __dirname, `../../pages/api/featured/featured_data.js`);
     // await ff.write(JSON.stringify(featuredData), __dirname, `../../public/featured_data.json`);
-  }
+  },
+
+  insertAllParksMissingTract: async function () {
+    const slugList = await ff.readJson('./cms/data/base/cityData/etl/missingTract.json');
+    const collectionList = await ff.readJson('./cms/data/base/', 'collections_all.json');
+    const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
+
+    const retval = slugList.map(slug => {
+      const parkData = dataList.filter(park => slug === park.slug)[0];
+      return {
+        name: parkData.parkName,
+        lat: Number(parkData.lat),
+        long: Number(parkData.long),
+        live: true,
+        slug: parkData.slug,
+        collection: parkData.collection,
+      }
+    })
+
+    await prisma.park.createMany({
+      data: retval
+    })
+  },
+
+  generateSeedImageData: async function () {
+    // for each slug
+    // return attributes from every matching filter
+    // add park id from db
+    const parkDTOList = await prisma.park.findMany({ select: { slug: true, id: true } });
+    const collectionList = await ff.readJson('./cms/data/base/', 'collections_all.json');
+    const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
+
+    const retval = dataList.map(data => {
+      const parkDTO = parkDTOList.filter(parkDTO => data.slug.replace('-anim', '') === parkDTO.slug);
+      return {
+        slug: data.slug,
+        parkId: parkDTO[0].id,
+        file_name: data.imageName,
+        width: data.width,
+        height: data.height,
+        filter_weight: data.filters.weight,
+        filter_live: data.filters.live,
+        filter_featured: data.filters.featured,
+        filter_color: data.filters.matchColor,
+        filter_type: data.filters.type,
+        dom_color: data.filters.domColor,
+        collection: data.collection,
+      }
+    })
+    await prisma.imageData.createMany({
+      data: retval
+    })
+  },
 
 };
 

@@ -4,7 +4,7 @@ import { byWeight } from "../../utils/helpers";
 
 
 export async function getStaticPaths() {
-  const paths = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
+  const paths = await ff.readJson('./data', 'enabled_collections.json');
   const displayable = paths.map(p => {
     return {
       params: { value: p }
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { value } }) {
-  const dataList = await ff.readJson(ff.path(`./cms/data/live/data/${value}_data.json`));
+  const dataList = await ff.readJson(ff.path(`./data/${value}_data.json`));
   const filtered = dataList.sort(byWeight);
   const retval = [];
   filtered.forEach(data => {

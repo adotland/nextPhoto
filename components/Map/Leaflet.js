@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Leaflet.module.css';
-import osm from "../../cms/data/live/scripts/osm-providers";
+import osm from "../../data/scripts/osm-providers";
 
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 

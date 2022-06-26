@@ -9,6 +9,8 @@ import '../public/global.css'
 import useScrollRestoration from '../utils/hooks/useScrollRestoration';
 
 function App({ Component, pageProps }) {
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout || ((page) => page)
   const router = useRouter()
   useScrollRestoration(router);
 
@@ -33,13 +35,17 @@ function App({ Component, pageProps }) {
     }
   }, [router])
 
-  return (
-    <ChakraProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ChakraProvider>
-  );
+  if (Component.getLayout) {
+    return getLayout(<Component {...pageProps} />)
+  } else {
+    return (
+      <ChakraProvider theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
+    )
+  }
 }
 
 export default App;

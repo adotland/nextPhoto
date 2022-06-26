@@ -163,7 +163,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#183838"
     }
   },
@@ -415,7 +415,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#182818"
     }
   },
@@ -688,7 +688,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#383828"
     }
   },
@@ -709,7 +709,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "green",
+      "matchColor": "forest",
       "domColor": "#182818"
     }
   },

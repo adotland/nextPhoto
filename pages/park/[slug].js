@@ -8,8 +8,8 @@ import { byWeight, shimmer, shuffle, toBase64 } from "../../utils/helpers";
 import ImageVersionLink from "../../components/ImageVersionLink";
 
 export async function getStaticPaths() {
-  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
+  const collectionList = await ff.readJson('./data', 'enabled_collections.json');
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
   const displayable = dataList.filter(data => data.filters.live).map(data => {
     // const displayable = dataList.map(data => {
     return {
@@ -23,8 +23,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const collectionList = await ff.readJson('./cms/data/live/data', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./cms/data/live/data/${collection}_data.json`))))).flat();
+  const collectionList = await ff.readJson('./data', 'enabled_collections.json');
+  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
   const currentData = dataList.filter(d => d.slug == slug).pop();
   let related = dataList
     .filter(d => (d.filters.matchColor === currentData.filters.matchColor && d.slug !== currentData.slug && d.filters.live && d.ext === 'jpg' && ((d.height < d.width) && (d.filters.weight > 1))))

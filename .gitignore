@@ -34,9 +34,9 @@ yarn-error.log*
 
 .vscode
 
-cms/data/base
-cms/config.js
-cms/scripts/Colour.js
+cms
+pages/cms
+api/cms
 
 pages/test.js
 public/sitemap*

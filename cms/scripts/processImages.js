@@ -256,8 +256,7 @@ const ImageProcessor = {
     sharp(ff.path(src))
       .resize({ width: 25 })
       .toFile(dest);
-  }
-
+  },
 };
 
 (async () => {
