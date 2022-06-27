@@ -58,7 +58,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#282818"
     }
   },
@@ -268,7 +268,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#282818"
     }
   },
@@ -310,7 +310,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#081818"
     }
   },
@@ -499,7 +499,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#182838"
     }
   },
@@ -583,7 +583,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#182838"
     }
   },
@@ -667,7 +667,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#181818"
     }
   },
@@ -688,7 +688,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "forest",
+      "matchColor": "bold",
       "domColor": "#383828"
     }
   },
@@ -730,7 +730,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#282828"
     }
   },
@@ -856,7 +856,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "light",
+      "matchColor": "forest",
       "domColor": "#f8f8f8"
     }
   }

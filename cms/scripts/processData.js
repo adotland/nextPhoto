@@ -258,12 +258,8 @@ const ManageData = {
   updateFiltersDb: async function () {
     const imageDTOList = await prisma.imageData.findMany();
     const imageDTOObj = imageDTOList.reduce((acc, curr) => {
-      const newObj = {}
-      newObj[curr.slug] = curr
-      return {
-        ...acc,
-        ...newObj,
-      }
+      acc[curr.slug] = curr;
+      return acc;
     }, {})
     const collectionList = await ff.readJson(LIVE_DATA_PATH, 'enabled_collections.json');
     // for each collection file,
