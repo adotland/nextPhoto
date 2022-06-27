@@ -1052,7 +1052,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     }
   },
@@ -1073,7 +1073,7 @@
       "live": true,
       "featured": false,
       "type": "animated",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#181818"
     }
   },

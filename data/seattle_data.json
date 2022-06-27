@@ -458,7 +458,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "5.0 Acres",
@@ -570,7 +570,7 @@
       "live": true,
       "featured": false,
       "type": "animated",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "5.0 Acres",
@@ -3862,7 +3862,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "2.0 Acres",
@@ -4716,7 +4716,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "2.4 Acres",
@@ -6033,7 +6033,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "0.5 Acres",
@@ -6549,7 +6549,7 @@
       "live": true,
       "featured": false,
       "type": "animated",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "0.6 Acres",
@@ -6577,7 +6577,7 @@
       "live": true,
       "featured": false,
       "type": "animated",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#282828"
     },
     "area": "0.3 Acres",
@@ -6604,7 +6604,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#181818"
     },
     "area": "0.3 Acres",
@@ -7532,7 +7532,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080808"
     },
     "area": "469 Sq. Ft.",
@@ -7557,7 +7557,7 @@
       "live": true,
       "featured": false,
       "type": "animated",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#080818"
     },
     "area": "469 Sq. Ft.",
@@ -7885,7 +7885,7 @@
       "live": true,
       "featured": true,
       "type": "animated",
-      "matchColor": "light",
+      "matchColor": "noir",
       "domColor": "#f8f8f8"
     },
     "area": "4.5 Acres",
@@ -11120,7 +11120,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "forest",
       "domColor": "#181818"
     },
     "area": "32.3 Acres",
@@ -12376,7 +12376,7 @@
       "live": true,
       "featured": true,
       "type": "still",
-      "matchColor": "bold",
+      "matchColor": "noir",
       "domColor": "#181828"
     },
     "area": "5.0 Acres",

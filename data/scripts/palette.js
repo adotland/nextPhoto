@@ -54,6 +54,11 @@
         hex: '#000000',
         displayHex: '#301934',
         rgb: { R: 0, G: 0, B: 0 },
+      },
+      noir: {
+        hex: '#000000',
+        displayHex: '#000000',
+        rgb: { R: 0, G: 0, B: 0 },
       }
     }
   }
