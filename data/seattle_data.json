@@ -215,7 +215,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "forest",
+      "matchColor": "sky",
       "domColor": "#383828"
     },
     "area": "5,044 Sq. Ft.",
@@ -978,7 +978,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "forest",
+      "matchColor": "bold",
       "domColor": "#f8f8f8"
     },
     "area": "2.3 Acres",
@@ -7195,7 +7195,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "forest",
+      "matchColor": "sky",
       "domColor": "#284828"
     },
     "area": "3.9 Acres",

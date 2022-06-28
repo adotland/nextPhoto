@@ -159,7 +159,7 @@
     "height": 3024,
     "collection": "county",
     "filters": {
-      "weight": 100,
+      "weight": 1000,
       "live": true,
       "featured": true,
       "type": "still",
