@@ -21,6 +21,7 @@ export default class Document extends NextDocument {
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="robots" content="follow, index" />
+          <script async defer data-website-id="0720928a-0552-4e9c-9964-9bcc3c677ded" data-host-url="https://umami-dv2zlejdw-adotland.vercel.app/umami.js" src="/asdf.js" data-domains="www.theparkandthebike.com,theparkandthebike.com"></script>
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.initialColorMode} />
