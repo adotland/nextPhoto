@@ -1,5 +1,5 @@
 # Photoblog made with Next.js
-- custom "cms" with image processing
+- custom cms with image processing and tag management
 - majority of the site is statically generated (SSG), with small parts using SSR and API calls
 - uilizing [vercel's](https://github.com/vercel/next.js) image optimization
 - design elements from [Chakra-UI](https://github.com/chakra-ui/chakra-ui) and [react-icons](https://github.com/react-icons/react-icons)
