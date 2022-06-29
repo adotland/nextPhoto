@@ -1,5 +1,7 @@
 import { dataList } from './featured_data'
 
+const IMAGES_PER_PAGE = 9;
+
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -28,5 +30,5 @@ export default async function handler(req, res) {
       });
     }
   })
-  return res.status(200).json({ props: { dataList: retval.slice(0, 12) } });
+  return res.status(200).json({ props: { dataList: retval.slice(0, IMAGES_PER_PAGE) } });
 }
