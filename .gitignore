@@ -45,5 +45,5 @@ public/robots*
 .eslintrc.json
 .babelrc
 
-_*
+_/*
 prisma
