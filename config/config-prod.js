@@ -5,7 +5,7 @@ default-src 'self';
 img-src 'self' https://*.jawg.io data:;
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 script-src 'self' 'unsafe-inline';
-connect-src 'self' https://vitals.vercel-insights.com;
+connect-src 'self' https://vitals.vercel-insights.com https://umami-dv2zlejdw-adotland.vercel.app;
 font-src 'self' data: https://fonts.gstatic.com;
 `
 
