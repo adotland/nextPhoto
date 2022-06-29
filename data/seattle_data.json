@@ -1206,9 +1206,9 @@
     "collection": "seattle",
     "hasAnim": false,
     "filters": {
-      "weight": 100,
+      "weight": 400,
       "live": true,
-      "featured": true,
+      "featured": false,
       "type": "still",
       "matchColor": "bold",
       "domColor": "#181818"
@@ -3359,7 +3359,7 @@
     "filters": {
       "weight": 100,
       "live": true,
-      "featured": true,
+      "featured": false,
       "type": "still",
       "matchColor": "bold",
       "domColor": "#282828"
