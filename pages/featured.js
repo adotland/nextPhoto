@@ -12,7 +12,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function ({ dataList }) {
+export default function Featured({ dataList }) {
 
   // const [dataList, setDataList] = useState([])
 

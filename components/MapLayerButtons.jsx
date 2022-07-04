@@ -29,7 +29,7 @@ const MapLayerButtons = () => {
       <Text>From Socioeconomic Disadvantage Index*: ranks census tracts by an index of two equally weighted measures:</Text>
       <UnorderedList>
         <ListItem> Income below 200% of poverty level </ListItem>
-        <ListItem>grad Educational attainment less than a bachelor's degree</ListItem>
+        <ListItem>grad Educational attainment less than a bachelor&apos;s degree</ListItem>
       </UnorderedList>
       <Text mt={4} fontWeight={'bold'}>Park Area Percentile: </Text>
       <Text>Ranks each census tract by percentage area of parks to total area (i.e., how much of this tract is park space?)</Text>

@@ -41,7 +41,7 @@ export default function Details({ data, ...props }) {
         </a>
       </Link>
       {data.link && <ChakraLink href={data.link}>{data.link}</ChakraLink>}
-      {data.lat && data.long && <Text>{data.lat} // {data.long}</Text>}
+      {data.lat && data.long && <Text>{data.lat} &sol;&sol; {data.long}</Text>}
       {data.address && <Text>{data.address}</Text>}
       {data.hours && <Detail title={'Hours'} data={data.hours} />}
       {data.area && <Detail title={'Area'} data={data.area} />}

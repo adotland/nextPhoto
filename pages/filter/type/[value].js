@@ -41,7 +41,7 @@ export async function getStaticProps({ params: { value } }) {
   };
 }
 
-export default function ({ dataList, filterImageType }) {
+export default function FilterTypeValue({ dataList, filterImageType }) {
   return (
     <Gallery dataList={dataList} filterImageType={filterImageType} />
   )

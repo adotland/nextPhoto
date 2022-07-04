@@ -38,7 +38,7 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 
-export default function ({ currentData, related }) {
+export default function ParkSlug({ currentData, related }) {
   return (
     <>
       <SEO data={currentData} />

@@ -89,7 +89,7 @@ function FeaturedCollectionItem({ imageUrl }) {
   )
 }
 
-export default function () {
+export default function IndexPage() {
   return (
     <>
       <SEO pageTitle={'Home'} />

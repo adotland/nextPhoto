@@ -32,6 +32,8 @@ function GalleryTitle({ filterColor, filterImageType }) {
 }
 
 export default function Gallery({ dataList, filterColor, filterImageType, isFeatured }) {
+  const boxBgColor = useColorModeValue('whiteAlpha.500', 'blackAlpha.500')
+  const textColor = useColorModeValue('black', 'white')
 
   return (
     <Box mt={[4, 4, 14, 4]} >
@@ -57,7 +59,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                   >
                     <Box
                       className={styles.galleryOverlay}
-                      bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.500')}
+                      bg={boxBgColor}
                     />
                     <Image
                       key={index}
@@ -79,7 +81,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
                       className={styles.galleryCaption}
                     >
                       <Text
-                        color={useColorModeValue('black', 'white')}
+                        color={textColor}
                       >{data.parkName}</Text>
                     </Box>
                   </Box>

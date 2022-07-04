@@ -33,7 +33,7 @@ export async function getStaticProps() {
   return { props: { data_geo_demog, data_geo_tpatb, seattleParks: dataObj.seattle, pPatchParks: dataObj['p-patch'] } };
 }
 
-export default function ({ data_geo_demog, data_geo_tpatb, seattleParks, pPatchParks }) {
+export default function SeattleParksAndHealth({ data_geo_demog, data_geo_tpatb, seattleParks, pPatchParks }) {
 
   return (
     <>
@@ -43,7 +43,7 @@ export default function ({ data_geo_demog, data_geo_tpatb, seattleParks, pPatchP
           <Flex flexDir={'column'} maxW={['100%', '100%', '100%', '75%']}>
             <Heading mb={4}>Parks and Health in Seattle</Heading>
             <Text>
-              Is there a connection between a Seattle neighborhood's health and ease of access to recreational space? That was the initial purpose for creating this map, and the results seem mixed. There appears to arguably be some small connection, but it is largely dwarfed by the correlation between health and socioeconomic circumstances. Initially the focus was on physical health, but studies have also been done to <Link href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4049158/' target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>link park proximity to mental health</Link>, so I've included mental health data in the map as well.
+              Is there a connection between a Seattle neighborhood&apos;s health and ease of access to recreational space? That was the initial purpose for creating this map, and the results seem mixed. There appears to arguably be some small connection, but it is largely dwarfed by the correlation between health and socioeconomic circumstances. Initially the focus was on physical health, but studies have also been done to <Link href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4049158/' target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>link park proximity to mental health</Link>, so I&apos;ve included mental health data in the map as well.
             </Text>
           </Flex>
         </Flex>

@@ -43,7 +43,7 @@ export async function getStaticProps({ params: { value } }) {
   };
 }
 
-export default function ({ dataList, filterColor }) {
+export default function FilterColorValue({ dataList, filterColor }) {
   return (
     <Gallery dataList={dataList} filterColor={filterColor} />
   )

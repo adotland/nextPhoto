@@ -42,7 +42,7 @@ export async function getStaticProps() {
   return { props: { statsObj, } };
 }
 
-export default function ({ statsObj }) {
+export default function About({ statsObj }) {
   return (
     <Box
       mx={[4, 4, 4, 24]}>

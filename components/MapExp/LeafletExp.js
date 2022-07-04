@@ -1,24 +1,36 @@
-import { useColorModeValue, useColorMode, Flex } from '@chakra-ui/react';
-import { useEffect, useState, useMemo } from 'react';
+import { useColorModeValue, useColorMode, Flex } from "@chakra-ui/react";
+import { useEffect, useState, useMemo } from "react";
 
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import styles from './LeafletExp.module.css';
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import styles from "./LeafletExp.module.css";
 import osm from "../../data/scripts/osm-providers";
-import "leaflet.heat"
-import 'leaflet.fullscreen/Control.FullScreen.js'
-import 'leaflet.fullscreen/Control.FullScreen.css'
+import "leaflet.heat";
+import "leaflet.fullscreen/Control.FullScreen.js";
+import "leaflet.fullscreen/Control.FullScreen.css";
 
-import { MapContainer, TileLayer, Tooltip, useMapEvents, useMap, LayersControl, LayerGroup, GeoJSON, Marker, FeatureGroup, ScaleControl } from 'react-leaflet';
-import LeafletLegend from '../LeafletLegend';
-import MapLayerButtons from '../MapLayerButtons';
+import {
+  MapContainer,
+  TileLayer,
+  Tooltip,
+  useMapEvents,
+  useMap,
+  LayersControl,
+  LayerGroup,
+  GeoJSON,
+  Marker,
+  FeatureGroup,
+  ScaleControl,
+} from "react-leaflet";
+import LeafletLegend from "../LeafletLegend";
+import MapLayerButtons from "../MapLayerButtons";
 
 const markerIcon = new L.Icon({
-  iconUrl: '/tree-t.png',
+  iconUrl: "/tree-t.png",
   iconSize: [25, 25],
   iconAnchor: [12, 25],
   popupAnchor: [0, -25],
-})
+});
 
 // const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
 //   const map = useMap()
@@ -38,23 +50,31 @@ const ParkMarkerLayer = ({ dataList }) => {
           key={index}
           position={[data.lat, data.long]}
           icon={markerIcon}
-        // ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
+          // ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
         >
           <Tooltip sticky>
-            {data.parkName?.length > 20 ? `${data.parkName.substring(0, 20)}...` : data.parkName}
+            {data.parkName?.length > 20
+              ? `${data.parkName.substring(0, 20)}...`
+              : data.parkName}
           </Tooltip>
-        </Marker>)
+        </Marker>
+      );
     }
-  })
-}
+  });
+};
 
-const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }) => {
-  const { colorMode } = useColorMode()
+const LeafletExp = ({
+  data_geo_demog,
+  data_geo_park,
+  seattleParks,
+  pPatchParks,
+}) => {
+  const { colorMode } = useColorMode();
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
-  const outlineColor = useColorModeValue('black', 'white');
+  const outlineColor = useColorModeValue("black", "white");
 
-  let tileProvider = useColorModeValue('jawgLight', 'jawgDark');
+  let tileProvider = useColorModeValue("jawgLight", "jawgDark");
 
   const skinTonePallete = {
     10: "#2D221E",
@@ -68,7 +88,7 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
     2: "#D5B690",
     1: "#EAC99E",
     0: "#FFDBAC",
-  }
+  };
 
   const generalPallete = {
     10: "#00FF00",
@@ -82,7 +102,7 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
     2: "#CC3300",
     1: "#E61A00",
     0: "#FF0000",
-  }
+  };
 
   const blueRedPallete = {
     10: "#0000FF",
@@ -96,29 +116,29 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
     2: "#CC0033",
     1: "#E6001A",
     0: "#FF0000",
-  }
+  };
 
   const getColor = (num, pallete, invert = false) => {
     num = invert ? 1 - num : num;
-    const scaled = Math.round(num * 10)
-    return pallete[scaled]
-  }
+    const scaled = Math.round(num * 10);
+    return pallete[scaled];
+  };
 
-  const getLegendColor = (num) => getColor(num, generalPallete, false)
+  const getLegendColor = (num) => getColor(num, generalPallete, false);
 
   const style = {
     health: (feature) => {
       const {
-        properties: { HEALTH_PERCENTILE }
-      } = feature
+        properties: { HEALTH_PERCENTILE },
+      } = feature;
       return {
         fillColor: getColor(HEALTH_PERCENTILE, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
     // obese: (feature) => {
     //   const {
@@ -135,84 +155,92 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
     // },
     econ: (feature) => {
       const {
-        properties: { SOCIOECONOMIC_PERCENTILE }
-      } = feature
+        properties: { SOCIOECONOMIC_PERCENTILE },
+      } = feature;
       return {
         fillColor: getColor(SOCIOECONOMIC_PERCENTILE, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
     mentalHealth: (feature) => {
       const {
-        properties: { PTL_ADULTMENTALHEALTHNOTGOOD }
-      } = feature
+        properties: { PTL_ADULTMENTALHEALTHNOTGOOD },
+      } = feature;
       return {
         fillColor: getColor(PTL_ADULTMENTALHEALTHNOTGOOD, generalPallete, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
     activity: (feature) => {
       const {
-        properties: { PTL_ADULTNOLEISUREPHYSACTIVITY }
-      } = feature
+        properties: { PTL_ADULTNOLEISUREPHYSACTIVITY },
+      } = feature;
       return {
-        fillColor: getColor(PTL_ADULTNOLEISUREPHYSACTIVITY, generalPallete, true),
+        fillColor: getColor(
+          PTL_ADULTNOLEISUREPHYSACTIVITY,
+          generalPallete,
+          true
+        ),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
     parkAreaPtl: (feature) => {
       const {
-        properties: { parkAreaPtl }
-      } = feature
+        properties: { parkAreaPtl },
+      } = feature;
       return {
         fillColor: getColor(parkAreaPtl / 100, generalPallete, false),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
     parkAmountPtl: (feature) => {
       const {
-        properties: { parkAmountPtl }
-      } = feature
+        properties: { parkAmountPtl },
+      } = feature;
       return {
         fillColor: getColor(parkAmountPtl / 100, generalPallete, false),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
         dashArray: "3",
-        fillOpacity: 0.5
-      }
+        fillOpacity: 0.5,
+      };
     },
-  }
+  };
   function onEachArea_tractId(feature, layer) {
     if (feature.properties) {
       const {
-        properties: { TRACT_20_LABEL }
-      } = feature
-      layer.bindTooltip(TRACT_20_LABEL, { permanent: true, opacity: 0.7 }).openTooltip()
+        properties: { TRACT_20_LABEL },
+      } = feature;
+      layer
+        .bindTooltip(TRACT_20_LABEL, { permanent: true, opacity: 0.7 })
+        .openTooltip();
     }
   }
   function onEachArea_parkPtl(feature, layer) {
     if (feature.properties) {
       const {
-        properties: { parkAreaPtl }
-      } = feature
-      layer.bindTooltip(parkAreaPtl.toFixed(0), { permanent: true, opacity: 0.7 }).openTooltip()
+        properties: { parkAreaPtl },
+      } = feature;
+      layer
+        .bindTooltip(parkAreaPtl.toFixed(0), { permanent: true, opacity: 0.7 })
+        .openTooltip();
     }
   }
 
@@ -220,17 +248,20 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
   // const heatmapLayerRef = useRef();
 
   useEffect(() => {
-    if (!mapState) return
+    if (!mapState) return;
     if (mapState.hasLayer(currentTiles)) {
-      currentTiles.remove()
+      currentTiles.remove();
     }
-    let tileProvider = colorMode === 'light' ? 'jawgLight' : 'jawgDark';
-    let tmp = L.tileLayer(osm[tileProvider].url, { attribution: osm[tileProvider].attribution })
+    let tileProvider = colorMode === "light" ? "jawgLight" : "jawgDark";
+    let tmp = L.tileLayer(osm[tileProvider].url, {
+      attribution: osm[tileProvider].attribution,
+    });
     mapState.addLayer(tmp);
-    setCurrentTiles(tmp)
-  }, [colorMode])
+    setCurrentTiles(tmp);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [colorMode]);
 
-  const center = [47.6092355, -122.317784] // seattle univ
+  const center = [47.6092355, -122.317784]; // seattle univ
 
   const interactionOptions = {
     zoomControl: true,
@@ -263,17 +294,17 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
             ref={setCurrentTiles}
           />
           <LayersControl.Overlay name="Overall Health">
-            <FeatureGroup >
+            <FeatureGroup>
               <GeoJSON data={data_geo_demog} style={style.health} />
             </FeatureGroup>
           </LayersControl.Overlay>
           <LayersControl.Overlay name="Mental Health">
-            <FeatureGroup >
+            <FeatureGroup>
               <GeoJSON data={data_geo_demog} style={style.mentalHealth} />
             </FeatureGroup>
           </LayersControl.Overlay>
           <LayersControl.Overlay name="Exercise Time Available">
-            <FeatureGroup >
+            <FeatureGroup>
               <GeoJSON data={data_geo_demog} style={style.activity} />
             </FeatureGroup>
           </LayersControl.Overlay>
@@ -283,7 +314,7 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
           </FeatureGroup>
         </LayersControl.Overlay> */}
           <LayersControl.Overlay name="Financial Health">
-            <FeatureGroup >
+            <FeatureGroup>
               <GeoJSON data={data_geo_demog} style={style.econ} />
             </FeatureGroup>
           </LayersControl.Overlay>
@@ -318,17 +349,22 @@ const LeafletExp = ({ data_geo_demog, data_geo_park, seattleParks, pPatchParks }
 
         <ScaleControl position={"bottomleft"} />
         <LeafletLegend map={mapState} getColor={getLegendColor} />
-
       </MapContainer>
     ),
-    [],
-  )
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
+  );
   return (
-    <Flex m={[0, 0, 0, 0]} justifyContent={'space-evenly'} flexDir={['column', 'column', 'row']} mt={[4, 4, 16, 4]}>
+    <Flex
+      m={[0, 0, 0, 0]}
+      justifyContent={"space-evenly"}
+      flexDir={["column", "column", "row"]}
+      mt={[4, 4, 16, 4]}
+    >
       {displayMap}
       {mapState ? <MapLayerButtons /> : null}
     </Flex>
-  )
-}
+  );
+};
 
 export default LeafletExp;

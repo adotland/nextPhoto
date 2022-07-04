@@ -100,7 +100,8 @@ export default function MapPage({ initMapDataList, initCarouselDataList, dataLis
     if (newData.length) {
       setCarouselDataList(prevDataList => [...newData, ...prevDataList].slice(0, 15));
     }
-  }, [newParkSlug])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [newParkSlug])
 
   const getParksInBounds = (bounds) => {
     // get every park with lat > s, lat < n, long > w, long < e

@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { useMap } from "react-leaflet";
 
 export default function LeafletLegend({ getColor }) {
-
   const map = useMap();
 
   useEffect(() => {
@@ -23,9 +22,11 @@ export default function LeafletLegend({ getColor }) {
         to = grades[i + 1];
 
         labels.push(
-          '<i style="width: 18px;height: 18px;float: left;margin-right: 8px;opacity: 0.7;background:' + getColor(from) + '"></i> ' +
-          (from * 100) +
-          (to ? "&ndash;" + (to * 100) : "+")
+          '<i style="width: 18px;height: 18px;float: left;margin-right: 8px;opacity: 0.7;background:' +
+            getColor(from) +
+            '"></i> ' +
+            from * 100 +
+            (to ? "&ndash;" + to * 100 : "+")
         );
       }
 
@@ -34,5 +35,6 @@ export default function LeafletLegend({ getColor }) {
     };
 
     legend.addTo(map);
-  }, [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 }
