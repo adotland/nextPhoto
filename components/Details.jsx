@@ -33,12 +33,15 @@ export default function Details({ data, ...props }) {
   const filterFeatured = data.filters?.featured;
   const displayFilter = filterColor || filterType || filterFeatured;
   const latlngSeparator = "//";
+  const isPPatch = data.slug.indexOf("p-patch") === 0;
+
   let collection = data.slug.split("_");
   if (collection.length > 1) {
     collection = collection[0];
   } else {
     collection = "Seattle";
   }
+
   return (
     <Box {...props}>
       <Heading
@@ -91,7 +94,11 @@ export default function Details({ data, ...props }) {
       )}
       <Social path={`/park/${data.slug}`} takenAt={data.parkName} />
       {data.lat && data.long && (
-        <Map center={[data.lat, data.long]} slug={data.slug} />
+        <Map
+          isPPatch={isPPatch}
+          center={[data.lat, data.long]}
+          slug={data.slug}
+        />
       )}
       <Link href={`/map/${data.slug}`}>
         <a className={styles.mapLink}>View on Interactive Map &rarr;</a>

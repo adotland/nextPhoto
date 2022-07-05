@@ -12,7 +12,7 @@ import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 import { useColorModeValue, Box, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 
-const Leaflet = ({ center, slug }) => {
+const Leaflet = ({ center, slug, isPPatch }) => {
   const { colorMode } = useColorMode();
   const [mapState, setMapState] = useState(null);
   const [currentTiles, setCurrentTiles] = useState(null);
@@ -67,7 +67,7 @@ const Leaflet = ({ center, slug }) => {
   }
 
   const markerIcon = new L.Icon({
-    iconUrl: "/tree-t.png",
+    iconUrl: isPPatch ? "/plant.png" : "/tree-t.png",
     iconSize: [25, 25],
     iconAnchor: [12, 25],
     popupAnchor: [0, -25],

@@ -32,6 +32,13 @@ const markerIcon = new L.Icon({
   popupAnchor: [0, -25],
 });
 
+const markerIcon_pPatch = new L.Icon({
+  iconUrl: "/plant.png",
+  iconSize: [25, 25],
+  iconAnchor: [12, 25],
+  popupAnchor: [0, -25],
+});
+
 // const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
 //   const map = useMap()
 //   useEffect(() => {
@@ -42,14 +49,14 @@ const markerIcon = new L.Icon({
 //   }, []);
 // })
 
-const ParkMarkerLayer = ({ dataList }) => {
+const ParkMarkerLayer = ({ dataList, isPPatch = false }) => {
   return dataList.map((data, index) => {
     if (data.lat && data.long) {
       return (
         <Marker
           key={index}
           position={[data.lat, data.long]}
-          icon={markerIcon}
+          icon={isPPatch ? markerIcon_pPatch : markerIcon}
           // ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
         >
           <Tooltip sticky>
@@ -342,7 +349,7 @@ const LeafletExp = ({
           </LayersControl.Overlay>
           <LayersControl.Overlay name="P-Patches">
             <LayerGroup>
-              <ParkMarkerLayer dataList={pPatchParks} />
+              <ParkMarkerLayer dataList={pPatchParks} isPPatch={true} />
             </LayerGroup>
           </LayersControl.Overlay>
         </LayersControl>

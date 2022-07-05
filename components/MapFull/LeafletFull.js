@@ -75,12 +75,13 @@ const LeafletFull = ({
       const newMarkersObj = {};
       const newMarkerRefObj = {};
       dataList.forEach((data, index) => {
+        const isPPatch = data.slug.indexOf("p-patch") === 0;
         if (data.lat && data.long) {
           newMarkersObj[data.slug] = (
             <Marker
               key={index}
               position={[data.lat, data.long]}
-              icon={markerIcon}
+              icon={isPPatch ? markerIcon_pPatch : markerIcon}
               eventHandlers={{
                 click: (e) => {
                   setActiveCarouselItem(0);
@@ -132,6 +133,13 @@ const LeafletFull = ({
 
   const markerIcon = new L.Icon({
     iconUrl: "/tree-t.png",
+    iconSize: [25, 25],
+    iconAnchor: [12, 25],
+    popupAnchor: [0, -25],
+  });
+
+  const markerIcon_pPatch = new L.Icon({
+    iconUrl: "/plant.png",
     iconSize: [25, 25],
     iconAnchor: [12, 25],
     popupAnchor: [0, -25],
