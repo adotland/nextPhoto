@@ -70,7 +70,7 @@ export default function Details({ data, ...props }) {
       {data.lat && data.long && (
         <Link href={`/map/${data.slug}`}>
           <a>
-            <Text>
+            <Text _hover={{textDecoration: 'underline', textUnderlineOffset: 3}}>
               {data.lat} {latlngSeparator} {data.long}
             </Text>
           </a>
