@@ -11,9 +11,9 @@ function GalleryHeader({ children }) {
   return (
     <Box
       w={"100%"}
-      bg={useColorModeValue("gray.100", "#191a1a")}
+      bg={useColorModeValue("gray.100", "blackAlpha.300")}
       pt={4}
-      pl={['auto', 'auto', 'auto', 8]}
+      pl={['initial', 'initial', 'initial', 8]}
       textAlign={['center', 'center', 'center', 'left']}
     >
       <Heading as={'h1'} fontSize={'lg'} color={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}>{children}</Heading>
@@ -32,7 +32,7 @@ function GalleryTitle({ filterColor, filterImageType }) {
 }
 
 export default function Gallery({ dataList, filterColor, filterImageType, isFeatured }) {
-  const boxBgColor = useColorModeValue('whiteAlpha.500', 'blackAlpha.500')
+  const boxBgColor = useColorModeValue('whiteAlpha.500', 'blackAlpha.300')
   const textColor = useColorModeValue('black', 'white')
 
   return (
@@ -44,7 +44,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
         w="100%"
         mx="auto"
         // bg={useColorModeValue("gray.100", "#191a1a")}
-        bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-t, blackAlpha.300, transparent)")}
+        bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
         sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
       >
         {
