@@ -24,7 +24,8 @@
     "processGifs": "node ./cms/scripts/processImages.js -x processGifs",
     "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames",
     "updateApiData": "node cms/scripts/processData.js -x getApiData",
-    "reProcessDataFull": "npm run processData && npm run uf-matchColor && npm run updateApiData"
+    "reProcessDataFull": "npm run processData && npm run uf-matchColor && npm run updateApiData",
+    "updateFiltersDb": "node ./cms/scripts/processData.js -x updateFiltersDb"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.1",
@@ -61,6 +62,8 @@
     "cross-env": "^7.0.3",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0",
     "lodash": "^4.17.21",
     "md5": "^2.3.0",
     "point-in-polygon": "^1.1.0",

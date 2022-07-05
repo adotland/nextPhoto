@@ -431,7 +431,7 @@
       "live": true,
       "featured": false,
       "type": "still",
-      "matchColor": "light",
+      "matchColor": "noir",
       "domColor": "#f8f8f8"
     },
     "area": "1.2 Acres",
@@ -7713,7 +7713,7 @@
     "hasAnim": true,
     "filters": {
       "weight": 100,
-      "live": true,
+      "live": false,
       "featured": false,
       "type": "animated",
       "matchColor": "bold",

@@ -48,7 +48,7 @@ export default function ParkSlug({ currentData, related }) {
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
           {currentData.ext === 'webp' ?
-            <Box maxW={478} mx={'auto'} boxShadow={'lg'}>
+            <Box boxShadow={'lg'}>
               <Image
                 key={currentData.id}
                 src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
