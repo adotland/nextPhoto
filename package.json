@@ -1,6 +1,6 @@
 {
   "name": "the-bike-and-the-park",
-  "version": "3.1.0",
+  "version": "3.4.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -62,8 +62,6 @@
     "cross-env": "^7.0.3",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
-    "imagemin": "^8.0.1",
-    "imagemin-webp": "^7.0.0",
     "lodash": "^4.17.21",
     "md5": "^2.3.0",
     "point-in-polygon": "^1.1.0",
