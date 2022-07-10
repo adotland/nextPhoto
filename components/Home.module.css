@@ -7,3 +7,38 @@
   border-bottom: 1px solid;
   margin-bottom: 0
 }
+
+.homeVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* opacity: 0.8; */
+}
+
+.videoBox {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: calc(100vh - 6.5em);
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #03a9f4;
+  mix-blend-mode: overlay; */
+}

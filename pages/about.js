@@ -83,7 +83,7 @@ export default function About({ statsObj }) {
         </UnorderedList>
       </Box>
 
-      <Text fontSize={'xs'} my={10} ml={7} pt={5}>This blog is not affiliated with any of the organizations representing the places or bicycles pictured</Text>
+      <Text fontSize={'xs'} my={10} ml={7} pt={5}>This blog is not affiliated with any of the organizations representing the places or bicycles pictured. <a target="_blank" rel="noreferrer" href="https://www.pexels.com/video/aerial-view-of-a-town-beside-a-lake-2355554/">Intro video from Pexels</a>. All photographs &copy; TheParkAndTheBike</Text>
 
     </Box>
   )

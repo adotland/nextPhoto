@@ -7,6 +7,7 @@ style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 script-src 'self' 'unsafe-inline';
 connect-src 'self' https://vitals.vercel-insights.com https://umami-seven-weld.vercel.app;
 font-src 'self' data: https://fonts.gstatic.com;
+media-src https://theparkandthebike.s3.us-west-2.amazonaws.com;
 `
 
 const config = {
