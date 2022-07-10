@@ -23,6 +23,8 @@
   width: 100%;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100%;
   padding: 100px;
   display: flex;
   justify-content: space-between;
