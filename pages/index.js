@@ -1,4 +1,9 @@
-import { useColorModeValue, Box, Flex, Link as ChakraLink } from "@chakra-ui/react";
+import {
+  useColorModeValue,
+  Box,
+  Flex,
+  Link as ChakraLink,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import SEO from "../components/SEO/general";
 import styles from "../components/Home.module.css";
@@ -11,9 +16,8 @@ function HomeTextBox({ children }) {
     <Flex
       color={useColorModeValue("#111", "#eee")}
       fontSize={["xl", "xl", "2xl"]}
-      maxW={['initial','initial',"333px"]}
-      w={['100%']}
-      mr={['initial',"5em"]}
+      w={["333px"]}
+      mr={["initial", "initial", "initial", "5em"]}
       zIndex={999}
       pos={"relative"}
       // letterSpacing={"0.2em"}
@@ -21,6 +25,7 @@ function HomeTextBox({ children }) {
       p={4}
       justify={"space-between"}
       align={"center"}
+      boxShadow={"xl"}
       _after={{
         backgroundColor: useColorModeValue("#eee", "#111"),
         opacity: "60%",
@@ -49,10 +54,14 @@ function HomeLinkBox({ link, children }) {
 }
 
 export async function getStaticProps() {
-  return { props: { videoLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/seattle_video_3mBR_loop_1.mp4`, } };
+  return {
+    props: {
+      videoLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/seattle_video_3mBR_loop_1.mp4`,
+    },
+  };
 }
 
-export default function IndexPage({videoLink}) {
+export default function IndexPage({ videoLink }) {
   return (
     <Box mt={[4, 4, 14, 4]}>
       <SEO pageTitle={"Home"} />
@@ -62,9 +71,14 @@ export default function IndexPage({videoLink}) {
         </video>
         <Box className={styles.overlay}></Box>
       </Box>
-      <Box mt={[4, 4, 14, 4]} width={"95%"} mx={"auto"} pt={["1px", "1px", "24px"]}>
-        <Flex wrap={["wrap", "wrap", "nowrap"]} justify={['space-between']}>
-          <Box w={["100%", "100%", "40%"]} mr={[0,0,'24px']}>
+      <Box
+        mt={[4, 4, 14, 4]}
+        width={"95%"}
+        mx={"auto"}
+        pt={["1px", "1px", "24px"]}
+      >
+        <Flex wrap={["wrap", "wrap", "nowrap"]} justify={["space-between"]}>
+          <Box w={["100%", "100%", "100%", "40%"]} mr={[0, 0, "24px"]}>
             <HomeTextBox>
               Welcome to TheParkAndTheBike,
               <br />
@@ -73,16 +87,22 @@ export default function IndexPage({videoLink}) {
           </Box>
           <Flex wrap={"wrap"}>
             <HomeLinkBox link={"/map"}>
-              <Box w={"100%"}>Find parks via the interactive Map </Box>
+              <Box w={"100%"}>
+                Find parks via the <br />
+                interactive Map{" "}
+              </Box>
               <FaMapMarkerAlt size={"1.4em"} />
             </HomeLinkBox>
             <HomeLinkBox link={"/map/seattle-parks-and-health"}>
-              Explore data in the experiments section
+              Explore data in the <br />
+              experiments section
               <GoBeaker size={"1.4em"} />
             </HomeLinkBox>
             <HomeLinkBox link={"/featured"}>
-              See featured photos in the randomized feature gallery
-              <FaDice size={"2.4em"} />
+              See featured photos
+              <br /> in the randomized <br />
+              feature gallery
+              <FaDice size={"2em"} />
             </HomeLinkBox>
             <HomeTextBox>
               From the Menu, Search for any park, or Filter image types
