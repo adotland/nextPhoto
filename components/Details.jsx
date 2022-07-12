@@ -71,7 +71,7 @@ export default function Details({ data, ...props }) {
         <Link href={`/map/${data.slug}`}>
           <a>
             <Text _hover={{textDecoration: 'underline', textUnderlineOffset: 3}}>
-              {data.lat} {latlngSeparator} {data.long}
+              {data.lat.substring(0,9)} {latlngSeparator} {data.long.substring(0,12)}
             </Text>
           </a>
         </Link>
