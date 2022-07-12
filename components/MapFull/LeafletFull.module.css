@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 1367px) {
   .map {
     margin-top: 0;
     height: 25rem;
