@@ -16,7 +16,7 @@ function HomeTextBox({ children }) {
     <Flex
       color={useColorModeValue("#111", "#eee")}
       fontSize={["xl", "xl", "2xl"]}
-      w={["333px"]}
+      w={["303px", "333px"]}
       mr={["initial", "initial", "initial", "5em"]}
       zIndex={999}
       pos={"relative"}
@@ -69,7 +69,7 @@ export default function IndexPage({ videoLink }) {
         <video autoPlay loop muted playsInline className={styles.homeVideo}>
           <source src={videoLink} />
         </video>
-        <Box className={styles.overlay}></Box>
+        {/* <Box className={styles.overlay}></Box> */}
       </Box>
       <Box
         mt={[4, 4, 14, 4]}
@@ -80,32 +80,46 @@ export default function IndexPage({ videoLink }) {
         <Flex wrap={["wrap", "wrap", "nowrap"]} justify={["space-between"]}>
           <Box w={["100%", "100%", "100%", "40%"]} mr={[0, 0, "24px"]}>
             <HomeTextBox>
-              Welcome to TheParkAndTheBike,
-              <br />
-              an exploration of the Greater Seattle Area parks
+              <div>
+                Welcome to{" "}
+                <span style={{ fontWeight: "bold" }}>TheParkAndTheBike</span>,
+                <br />
+                an exploration of parks in
+                <br />
+                the Greater Seattle Area
+              </div>
             </HomeTextBox>
           </Box>
           <Flex wrap={"wrap"}>
             <HomeLinkBox link={"/map"}>
-              <Box w={"100%"}>
-                Find parks via the <br />
-                interactive Map{" "}
-              </Box>
+              <div>
+                Find parks on the <br />
+                interactive <span style={{ fontWeight: "bold" }}>Map</span>
+              </div>
               <FaMapMarkerAlt size={"1.4em"} />
             </HomeLinkBox>
             <HomeLinkBox link={"/map/seattle-parks-and-health"}>
-              Explore data in the <br />
-              experiments section
+              <div>
+                Explore data in the
+                <br />
+                <span style={{ fontWeight: "bold" }}>Experiments</span> section
+              </div>
               <GoBeaker size={"1.4em"} />
             </HomeLinkBox>
             <HomeLinkBox link={"/featured"}>
-              See featured photos
-              <br /> in the randomized <br />
-              feature gallery
+              <div>
+                See park photos
+                <br /> in the random <br />
+                <span style={{ fontWeight: "bold" }}>Featured gallery</span>
+              </div>
               <FaDice size={"2em"} />
             </HomeLinkBox>
             <HomeTextBox>
-              From the Menu, Search for any park, or Filter image types
+              <div>
+                <span style={{ fontWeight: "bold" }}>Search</span> for any park,
+                or <span style={{ fontWeight: "bold" }}>Filter</span> by image
+                type from the Menu above
+              </div>
             </HomeTextBox>
           </Flex>
         </Flex>

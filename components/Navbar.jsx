@@ -6,8 +6,9 @@ import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu/FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
-import { FaDice } from 'react-icons/fa';
+import { FaDice, FaMapMarkerAlt } from 'react-icons/fa';
 import { GoBeaker } from 'react-icons/go';
+import { BiInfoCircle } from 'react-icons/bi'
 
 const NavBar = (props) => {
   const router = useRouter();
@@ -139,10 +140,10 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
       >
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItem to="/map" name="Park Map">Map</MenuItem>
+        <MenuItemToolTip to="/map" name="Park Map"><FaMapMarkerAlt size={"1.4em"} /></MenuItemToolTip>
         <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map"><GoBeaker size={'1.4em'} /></MenuItemToolTip>
         <MenuItemToolTip to="/featured" name="Featured"><FaDice size={'1.4em'} /></MenuItemToolTip>
-        <MenuItem to="/about" name="About">About</MenuItem>
+        <MenuItemToolTip to="/about" name="About"><BiInfoCircle size={'1.4em'} /></MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>
