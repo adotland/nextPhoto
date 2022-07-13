@@ -1,12 +1,17 @@
+import path from "path";
+import * as fs from "fs";
+const dataList = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "data/") + "park_search_data.json",
+    "utf8"
+  )
+);
+
 import Fuse from "fuse.js";
-
-import { dataList } from "./park_search_data";
-
 const options = {
   includeScore: false,
   keys: ["parkName"],
 };
-
 const fuse = new Fuse(dataList, options);
 
 export default async function handler(req, res) {

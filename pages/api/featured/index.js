@@ -1,4 +1,11 @@
-import { dataList } from './featured_data'
+import path from "path";
+import * as fs from "fs";
+const dataList = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "data/") + "featured_data.json",
+    "utf8"
+  )
+);
 
 const IMAGES_PER_PAGE = 9;
 
@@ -11,14 +18,16 @@ function shuffle(a) {
 }
 
 function byColor(a, b) {
-  return (Number.parseInt(b.filters?.matchColor?.substring(1), 16) - Number.parseInt(a.filters?.matchColor?.substring(1), 16));
+  return (
+    Number.parseInt(b.filters?.matchColor?.substring(1), 16) -
+    Number.parseInt(a.filters?.matchColor?.substring(1), 16)
+  );
 }
 
 export default async function handler(req, res) {
-
-  const sorted = shuffle(dataList).sort(byColor)
+  const sorted = shuffle(dataList).sort(byColor);
   const retval = [];
-  sorted.forEach(data => {
+  sorted.forEach((data) => {
     if (data.filters.live && data.filters.featured) {
       retval.push({
         slug: data.slug,
@@ -29,6 +38,8 @@ export default async function handler(req, res) {
         height: data.height,
       });
     }
-  })
-  return res.status(200).json({ props: { dataList: retval.slice(0, IMAGES_PER_PAGE) } });
+  });
+  return res
+    .status(200)
+    .json({ props: { dataList: retval.slice(0, IMAGES_PER_PAGE) } });
 }
