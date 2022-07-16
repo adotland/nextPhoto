@@ -1,8 +1,12 @@
 const fs = require("fs");
 const { ff } = require("fssf");
 const sharp = require("sharp");
+const ffmpeg = require("fluent-ffmpeg");
+const ffmpeg_o = require("ffmpeg");
+const util = require("util");
+const getMeta = util.promisify(ffmpeg.ffprobe);
+// const processVid = util.promisify(ffmpeg_o.process);
 const differenceBy = require("lodash/differenceBy");
-
 
 const {
   STILL_PATH,
@@ -15,6 +19,8 @@ const {
   SHARE_PATH_STILL,
   SHARE_PATH_GIF,
   DEFAULT_COLLECTION,
+  WEBM_PATH,
+  PROCESSED_WEBM_PATH,
 } = require("../config");
 const {
   formatImageFileName,
@@ -33,16 +39,16 @@ program.option(
 program.parse();
 
 class ImageProcessor {
-  constructor(imagemin, imageminWebp) {
-    this.imagemin = imagemin;
-    this.imageminWebp = imageminWebp;
-  }
+  // constructor(imagemin, imageminWebp) {
+  //   this.imagemin = imagemin;
+  //   this.imageminWebp = imageminWebp;
+  // }
 
-  static async init() {
-    const { default: imagemin } = await import("imagemin");
-    const { default: imageminWebp } = await import("imagemin-webp");
-    return new ImageProcessor(imagemin, imageminWebp);
-  }
+  // static async init() {
+  // const { default: imagemin } = await import("imagemin");
+  // const { default: imageminWebp } = await import("imagemin-webp");
+  // return new ImageProcessor(imagemin, imageminWebp);
+  // }
 
   async getList(collection = DEFAULT_COLLECTION) {
     const pathList = [STILL_PATH(collection), GIF_PATH(collection)];
@@ -122,13 +128,12 @@ class ImageProcessor {
     await ff.writeJson({ diff }, BASE_DATA_PATH, "imageDiff.json", 2);
   }
 
-  async createWatermark(imageWidth, imageHeight, dump) {
+  async createWatermark(imageWidth, imageHeight, dump, fontSize) {
     const width = imageWidth || 4000;
     const height = imageHeight || 3000;
     const text = String.fromCharCode(169) + "TheParkAndTheBike";
 
-    const fontSize = getWmFontSize(width, height);
-    // console.log(fontSize)
+    fontSize = fontSize || getWmFontSize(width, height);
 
     const svgImage = `
     <svg width="${width}" height="${height}">
@@ -152,7 +157,7 @@ class ImageProcessor {
 
   async addWatermark(
     collection = DEFAULT_COLLECTION,
-    imageFileName = "4456_1398_Hubbard-Homestead.gif",
+    imageFileName = "3121_1437_Jimi-Hendrix-Park.jpg",
     metadata = {},
     isThumb = false,
     dump = true
@@ -197,7 +202,7 @@ class ImageProcessor {
           metadata.height,
           false
         );
-        image = sharp(imageFile);
+        image = sharp(imageFile).jpeg({ mozjpeg: true });
       }
       image = image.composite([
         {
@@ -209,18 +214,80 @@ class ImageProcessor {
         },
       ]);
       if (dump) {
-        // image.toFile(ff.path(__dirname, `p-${imageFileName.replace('.gif','.webp')}`));
-        console.log(imageFileName)
-        await this.imagemin([ff.path(__dirname, `p-${imageFileName}`)], {
-          destination: ff.path(__dirname,'asdf'),
-          plugins: [this.imageminWebp({ quality: 50})],//crop: {width: 598, height: 354 }
-        });
+        await image.toFile(
+          ff.path(__dirname, `p3-${imageFileName.replace(".gif", ".webp")}`)
+        );
+        console.log(imageFileName);
+        // await this.imagemin([ff.path(__dirname, `p-${imageFileName}`)], {
+        //   destination: ff.path(__dirname,'asdf'),
+        //   plugins: [this.imageminWebp({ quality: 50})],//crop: {width: 598, height: 354 }
+        // });
       } else {
         return image;
       }
     } catch (err) {
       console.error(err);
     }
+  }
+
+  async addWatermarkMovie() {
+    const videoFileList = await ff.readdir(WEBM_PATH);
+    await asyncForEach(videoFileList, async (videoFileName) => {
+      try {
+        const pathToVideo = ff.path(WEBM_PATH, videoFileName);
+        const ffmpegObject = await new ffmpeg_o(pathToVideo);
+        const metadata = await getMeta(pathToVideo);
+        console.info(metadata.format.filename, metadata.format.bit_rate);return;
+        if (metadata.streams[0].width) {
+          const watermarkBuffer = await this.createWatermark(
+            metadata.streams[0].width,
+            metadata.streams[0].height,
+            false,
+            15
+          );
+          const watermarkPath = ff.path(
+            __dirname,
+            `wm_${videoFileName.replace("webm", "png")}`
+          );
+          await sharp(watermarkBuffer).toFile(watermarkPath);
+          const newFilepath = ff.path(PROCESSED_WEBM_PATH, videoFileName);
+          const watermarkSettings = {
+            position: "SE", // Position: NE NC NW SE SC SW C CE CW
+            margin_nord: null, // Margin nord
+            margin_sud: null, // Margin sud
+            margin_east: null, // Margin east
+            margin_west: null, // Margin west
+          };
+          // var callback = function (error, files) {
+          //   if (error) {
+          //     console.log("error: ", error);
+          //   } else {
+          //     console.log("success:", files);
+          //   }
+          // };
+          //add watermark
+          console.log("processing: " + videoFileName);
+          // ffmpeg -i
+          // '/home/lando/Pictures/tpatb/webm/1100393_393_Washington-Park-Playfield.webm -i /home/lando/source/bikepark/the-bike-and-the-park/cms/scripts/wm_1100393_393_Washington-Park-Playfield.png'
+          // '-filter_complex "overlay=0-0+0:main_h-overlay_h-0+0"'
+          // '/home/lando/Pictures/tpatb/webm-processed/1100393_393_Washington-Park-Playfield.webm'
+          fs.unlinkSync(newFilepath);
+
+          const result = await ffmpegObject.fnAddWatermark(
+            watermarkPath,
+            newFilepath,
+            watermarkSettings
+          );
+          console.dir(result);
+        } else {
+          console.error("failed to get metadata for vid: " + videoFileName);
+        }
+      } catch (e) {
+        console.error(e);
+        console.error(e.code);
+        console.error(e.msg);
+      }
+    });
   }
 
   async processStills(
@@ -369,6 +436,63 @@ class ImageProcessor {
     console.timeEnd("processGifs");
   }
 
+  async processMovies(
+    collection = DEFAULT_COLLECTION,
+    isThumb = false,
+    reprocessAll = true
+  ) {
+    console.time("processGifs");
+    const imageFileNameList = await ff.readdir(GIF_PATH(collection));
+    await asyncForEach(imageFileNameList, async (imageFileName) => {
+      const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
+      const existingProcessed = fs.existsSync(
+        ff.path(PROCESSED_WEBP_PATH, imageFileName.replace("gif", "webp"))
+      );
+      // console.log(existingProcessed)
+      if (existingProcessed && !isThumb && !reprocessAll) {
+        // console.info(`file already processed, skipping [${imageFileName}]`);
+        return;
+      }
+      console.info(`processing [${imageFileName}]`);
+      const sharpImage = sharp(imageFileFullPath);
+      if (sharpImage) {
+        const metadata = await sharpImage.metadata();
+        const processedImage = await this.addWatermark(
+          collection,
+          imageFileName,
+          metadata,
+          isThumb,
+          false
+        );
+        const { sanitizedName: formattedImageFileName } =
+          formatImageFileName(imageFileName);
+        let saveFullPath;
+        if (processedImage) {
+          if (isThumb) {
+            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.gif`);
+            saveFullPath = ff.path(
+              PROCESSED_WEBP_PATH,
+              `t_${formattedImageFileName}.webp`
+            );
+          } else {
+            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.gif`);
+            saveFullPath = ff.path(
+              PROCESSED_WEBP_PATH,
+              `${formattedImageFileName}.webp`
+            );
+          }
+          console.info(`saving [${saveFullPath}]`);
+          await processedImage.toFile(saveFullPath);
+        } else {
+          throw new Error(`image undefined on [${imageFileName}]`);
+        }
+      } else {
+        throw new Error(`file missing [${imageFileName}]`);
+      }
+    });
+    console.timeEnd("processGifs");
+  }
+
   // processMissing() {
   //   const selection = await ff.readJson(BASE_DATA_PATH, 'mgmt/seattle_missing_images.json');
   //   const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
@@ -384,7 +508,8 @@ class ImageProcessor {
 (async () => {
   try {
     const options = program.opts();
-    const imageProcessor = await ImageProcessor.init();
+    // const imageProcessor = await ImageProcessor.init();
+    const imageProcessor = new ImageProcessor();
     if (options.method && imageProcessor[options.method]) {
       await imageProcessor[options.method](options.collection);
     } else {
