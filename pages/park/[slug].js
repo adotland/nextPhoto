@@ -48,10 +48,16 @@ export default function ParkSlug({ currentData, related }) {
           maxW={currentData.width > currentData.height ? ["100%", "100%", "100%", "65%"] : ["100%", "100%", "100%", "40%"]}
         >
           {currentData.ext === 'webp' ?
-            <Box boxShadow={'lg'}>
-              <Image
+            <Box boxShadow={'lg'} width={currentData.width} mx='auto'>
+              <video width={currentData.width}
+                height={currentData.height}
+                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/t_${currentData.imageName.replace('webp','webm')}`}
+                autoPlay={true}
+                loop={true}
+/>
+              {/* <Image
                 key={currentData.id}
-                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
+                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/${currentData.imageName.replace('webp','webm')}`}
                 alt={currentData.parkName ?? "image"}
                 layout="responsive"
                 width={currentData.width}
@@ -59,7 +65,7 @@ export default function ParkSlug({ currentData, related }) {
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
                 priority
-              />
+              /> */}
             </Box>
             :
             <Box boxShadow={'lg'}>
