@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false })
 
   useEffect(() => {
-    const handleStart = (url) => {
+    const handleStart = () => {
       NProgress.start()
     }
     const handleStop = () => {

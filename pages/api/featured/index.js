@@ -24,7 +24,7 @@ function byColor(a, b) {
   );
 }
 
-export default async function handler(req, res) {
+export default async function handler(_req, res) {
   const sorted = shuffle(dataList).sort(byColor);
   const retval = [];
   sorted.forEach((data) => {

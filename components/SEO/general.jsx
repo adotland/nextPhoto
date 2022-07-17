@@ -27,7 +27,7 @@ export default function SEO({pageTitle}) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Website",
             "name": title,
             "about": description,

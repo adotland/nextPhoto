@@ -47,3 +47,5 @@ public/robots*
 
 _/*
 prisma
+.scan.js
+.*/

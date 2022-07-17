@@ -26,7 +26,7 @@ export function SearchResultList({ resultsList, isLoading }) {
   if (resultsList.length) {
     return (<VStack spacing={5} my={5}>{resultsList?.map((result, index) => <SearchResult key={index} still={result.item?.still} parkName={result.item?.parkName} slug={result.item?.slug} />)}</VStack>)
   } else {
-    return ''
+    return <Box mt={4} textAlign={'center'}>no result</Box>
   }
 }
 

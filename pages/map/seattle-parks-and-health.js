@@ -5,14 +5,8 @@ import PageWrap from "../../components/PageWrap";
 import SEO from "../../components/SEO/general";
 
 export async function getStaticProps() {
-  //TODO MERGE
-  // const data_geo_tpatb = await ff.readJson('./cms/data/base/data/censusDataParks.geojson');
-  // const data_geo_demog = await ff.readJson('./cms/data/base/data/tmp_RASECI.geojson');
-
-  let data = await fetch('https://theparkandthebike.s3.us-west-2.amazonaws.com/data/censusDataParks.geojson');
-  const data_geo_tpatb = await data.json();
-  data = await fetch('https://theparkandthebike.s3.us-west-2.amazonaws.com/data/tmp_RASECI.geojson');
-  const data_geo_demog = await data.json();
+  const data_geo_tpatb = await (await fetch('https://theparkandthebike.s3.us-west-2.amazonaws.com/data/censusDataParks.geojson')).json();
+  const data_geo_demog = await (await fetch('https://theparkandthebike.s3.us-west-2.amazonaws.com/data/tmp_RASECI.geojson')).json();
 
   const collectionList = ['seattle', 'p-patch']
   const dataObj = {};

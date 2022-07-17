@@ -19,12 +19,9 @@ const NavBar = (props) => {
       setIsOpen(!isOpen)
     }
   }
-  // const executedRef = useRef(false);
 
   useEffect(() => {
-    // if (executedRef.current) return;
     setIsOpen(false)
-    // executedRef.current = true;
   }, [router.query])
 
   return (

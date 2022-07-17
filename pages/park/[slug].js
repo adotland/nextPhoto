@@ -14,9 +14,8 @@ export async function getStaticPaths() {
   );
   const dataList = (
     await Promise.all(
-      collectionList.map(
-        async (collection) =>
-          await ff.readJson(ff.path(`./data/${collection}_data.json`))
+      collectionList.map(async (collection) =>
+        ff.readJson(ff.path(`./data/${collection}_data.json`))
       )
     )
   ).flat();
@@ -41,9 +40,8 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const dataList = (
     await Promise.all(
-      collectionList.map(
-        async (collection) =>
-          await ff.readJson(ff.path(`./data/${collection}_data.json`))
+      collectionList.map(async (collection) =>
+        ff.readJson(ff.path(`./data/${collection}_data.json`))
       )
     )
   ).flat();

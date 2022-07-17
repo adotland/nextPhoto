@@ -19,8 +19,8 @@ export default function useBoundingRect(limit) {
   const [dimensions, setDimensions] = useState({});
   const [node, setNode] = useState(null);
 
-  const ref = useCallback((node) => {
-    setNode(node);
+  const ref = useCallback((currentNode) => {
+    setNode(currentNode);
   }, []);
 
   useLayoutEffect(() => {

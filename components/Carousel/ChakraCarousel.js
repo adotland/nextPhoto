@@ -1,4 +1,4 @@
-// from https://codesandbox.io/s/chakra-carousel-prototype-jmqnh?file=/package.json
+// adapted from https://codesandbox.io/s/dd8vn?file=/src/ChakraCarousel.js
 
 
 //TODO: Properly handle user tabbing
@@ -152,13 +152,13 @@ const Slider = ({
 
   const handleDecrementClick = () => {
     setTrackIsActive(true);
-    !(activeCarouselItem === positions.length - positions.length) &&
+    (activeCarouselItem !== 0) &&
       setActiveCarouselItem((prev) => prev - 1);
   };
 
   const handleIncrementClick = () => {
     setTrackIsActive(true);
-    !(activeCarouselItem === positions.length - constraint) &&
+    (activeCarouselItem !== positions.length - constraint) &&
       setActiveCarouselItem((prev) => prev + 1);
   };
 
@@ -276,7 +276,7 @@ const Track = ({
         : prev;
     }, 0);
 
-    if (!(closestPosition < positions[positions.length - constraint])) {
+    if ((closestPosition >= positions[positions.length - constraint])) {
       setActiveCarouselItem(positions.indexOf(closestPosition));
       controls.start({
         x: closestPosition,
@@ -325,7 +325,7 @@ const Track = ({
             setActiveCarouselItem((prev) => prev + 1);
           }
         }
-        if (activeCarouselItem > positions.length - positions.length) {
+        if (activeCarouselItem > 0) {
           if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
             event.preventDefault();
             setActiveCarouselItem((prev) => prev - 1);
@@ -393,7 +393,7 @@ const Item = ({
 
   const handleKeyUp = (event) =>
     event.key === "Tab" &&
-    !(activeCarouselItem === positions.length - constraint) &&
+    (activeCarouselItem !== positions.length - constraint) &&
     setActiveCarouselItem(index);
 
   const handleKeyDown = (event) => event.key === "Tab" && setUserDidTab(true);

@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { value } }) {
   const collectionList = await ff.readJson('./data', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat(); const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
+  const dataList = (await Promise.all(collectionList.map(async collection => ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat(); const filtered = dataList.filter(d => d.filters?.[FILTER_NAME]?.toLowerCase() == value?.toLowerCase()).sort(byWeight);
   const retval = [];
   filtered.forEach(data => {
     if (data.filters.live) {

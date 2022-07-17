@@ -8,8 +8,7 @@ import Link from "next/link";
 import SEO from "../components/SEO/general";
 import styles from "../components/Home.module.css";
 import { GoBeaker } from "react-icons/go";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaDice } from "react-icons/fa";
+import { FaMapMarkerAlt, FaDice } from "react-icons/fa";
 
 function HomeTextBox({ children }) {
   return (

@@ -25,7 +25,8 @@
     "imagesSanitize": "node ./cms/scripts/processImages.js -x sanitizeFileNames",
     "updateApiData": "node cms/scripts/processData.js -x getApiData",
     "reProcessDataFull": "npm run processData && npm run uf-matchColor && npm run updateApiData",
-    "updateFiltersDb": "node ./cms/scripts/processData.js -x updateFiltersDb"
+    "updateFiltersDb": "node ./cms/scripts/processData.js -x updateFiltersDb",
+    "scan": "node .scan.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.1",

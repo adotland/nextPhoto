@@ -8,7 +8,7 @@ import { getBounds, shuffle, findParksInBounds } from "../../utils/helpers";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./data', 'enabled_collections.json');
-  const dataList = (await Promise.all(collectionList.map(async collection => await ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
+  const dataList = (await Promise.all(collectionList.map(async collection => ff.readJson(ff.path(`./data/${collection}_data.json`))))).flat();
   const displayable = dataList.filter(data => data.filters.live).map(data => {
     return {
       params: { slug: data.slug }
