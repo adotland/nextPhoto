@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [process.env.IMG_HOST_DOMAIN],
-    minimumCacheTTL: 0 // 2630000 // 1mo
+    minimumCacheTTL: 2630000 // 1mo
   },
 };
 
@@ -26,8 +26,25 @@ async function headers() {
   ];
 }
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+// const withBundleAnalyzer = require("@next/bundle-analyzer")({
+//   enabled: process.env.ANALYZE === "true",
+// });
 
-module.exports = withBundleAnalyzer({ ...nextConfig, headers });
+// module.exports = withBundleAnalyzer({ ...nextConfig, headers });
+
+// const withVideos = require("next-videos");
+
+// module.exports = withVideos({
+//   ...nextConfig,
+//   headers,
+// assetPrefix: `https://${process.env.IMG_HOST_DOMAIN}`,
+
+// webpack(config, options) {
+//   return config;
+// },
+// });
+
+module.exports = {
+  ...nextConfig,
+  headers,
+};
