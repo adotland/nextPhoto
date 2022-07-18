@@ -230,66 +230,6 @@ class ImageProcessor {
     }
   }
 
-  async addWatermarkMovie() {
-    const videoFileList = await ff.readdir(WEBM_PATH);
-    await asyncForEach(videoFileList, async (videoFileName) => {
-      try {
-        const pathToVideo = ff.path(WEBM_PATH, videoFileName);
-        const ffmpegObject = await new ffmpeg_o(pathToVideo);
-        const metadata = await getMeta(pathToVideo);
-        console.info(metadata.format.filename, metadata.format.bit_rate);return;
-        if (metadata.streams[0].width) {
-          const watermarkBuffer = await this.createWatermark(
-            metadata.streams[0].width,
-            metadata.streams[0].height,
-            false,
-            15
-          );
-          const watermarkPath = ff.path(
-            __dirname,
-            `wm_${videoFileName.replace("webm", "png")}`
-          );
-          await sharp(watermarkBuffer).toFile(watermarkPath);
-          const newFilepath = ff.path(PROCESSED_WEBM_PATH, videoFileName);
-          const watermarkSettings = {
-            position: "SE", // Position: NE NC NW SE SC SW C CE CW
-            margin_nord: null, // Margin nord
-            margin_sud: null, // Margin sud
-            margin_east: null, // Margin east
-            margin_west: null, // Margin west
-          };
-          // var callback = function (error, files) {
-          //   if (error) {
-          //     console.log("error: ", error);
-          //   } else {
-          //     console.log("success:", files);
-          //   }
-          // };
-          //add watermark
-          console.log("processing: " + videoFileName);
-          // ffmpeg -i
-          // '/home/lando/Pictures/tpatb/webm/1100393_393_Washington-Park-Playfield.webm -i /home/lando/source/bikepark/the-bike-and-the-park/cms/scripts/wm_1100393_393_Washington-Park-Playfield.png'
-          // '-filter_complex "overlay=0-0+0:main_h-overlay_h-0+0"'
-          // '/home/lando/Pictures/tpatb/webm-processed/1100393_393_Washington-Park-Playfield.webm'
-          fs.unlinkSync(newFilepath);
-
-          const result = await ffmpegObject.fnAddWatermark(
-            watermarkPath,
-            newFilepath,
-            watermarkSettings
-          );
-          console.dir(result);
-        } else {
-          console.error("failed to get metadata for vid: " + videoFileName);
-        }
-      } catch (e) {
-        console.error(e);
-        console.error(e.code);
-        console.error(e.msg);
-      }
-    });
-  }
-
   async processStills(
     collection = DEFAULT_COLLECTION,
     imageDataList,
@@ -436,63 +376,6 @@ class ImageProcessor {
     console.timeEnd("processGifs");
   }
 
-  async processMovies(
-    collection = DEFAULT_COLLECTION,
-    isThumb = false,
-    reprocessAll = true
-  ) {
-    console.time("processGifs");
-    const imageFileNameList = await ff.readdir(GIF_PATH(collection));
-    await asyncForEach(imageFileNameList, async (imageFileName) => {
-      const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
-      const existingProcessed = fs.existsSync(
-        ff.path(PROCESSED_WEBP_PATH, imageFileName.replace("gif", "webp"))
-      );
-      // console.log(existingProcessed)
-      if (existingProcessed && !isThumb && !reprocessAll) {
-        // console.info(`file already processed, skipping [${imageFileName}]`);
-        return;
-      }
-      console.info(`processing [${imageFileName}]`);
-      const sharpImage = sharp(imageFileFullPath);
-      if (sharpImage) {
-        const metadata = await sharpImage.metadata();
-        const processedImage = await this.addWatermark(
-          collection,
-          imageFileName,
-          metadata,
-          isThumb,
-          false
-        );
-        const { sanitizedName: formattedImageFileName } =
-          formatImageFileName(imageFileName);
-        let saveFullPath;
-        if (processedImage) {
-          if (isThumb) {
-            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.gif`);
-            saveFullPath = ff.path(
-              PROCESSED_WEBP_PATH,
-              `t_${formattedImageFileName}.webp`
-            );
-          } else {
-            // saveFullPath = ff.path(PROCESSED_GIF_PATH, `${formattedImageFileName}.gif`);
-            saveFullPath = ff.path(
-              PROCESSED_WEBP_PATH,
-              `${formattedImageFileName}.webp`
-            );
-          }
-          console.info(`saving [${saveFullPath}]`);
-          await processedImage.toFile(saveFullPath);
-        } else {
-          throw new Error(`image undefined on [${imageFileName}]`);
-        }
-      } else {
-        throw new Error(`file missing [${imageFileName}]`);
-      }
-    });
-    console.timeEnd("processGifs");
-  }
-
   // processMissing() {
   //   const selection = await ff.readJson(BASE_DATA_PATH, 'mgmt/seattle_missing_images.json');
   //   const imageDataList = await ff.readJson(LIVE_DATA_PATH, 'images.json');
@@ -502,6 +385,76 @@ class ImageProcessor {
 
   resize(src, dest) {
     sharp(ff.path(src)).resize({ width: 25 }).toFile(dest);
+  }
+
+  async processVideo({ thumb }) {
+    const videoFileList = ["private_Heart-of-Phinney.webm"];
+    // const videoFileList = await ff.readdir(WEBM_PATH);
+    await asyncForEach(videoFileList, async (videoFileName) => {
+  
+      const inputFilePath = ff.path(WEBM_PATH, videoFileName);
+      const outputFilePath = ff.path(
+        PROCESSED_WEBM_PATH,
+        thumb ? "t_" + videoFileName : videoFileName
+      );
+  
+      const metadata = await getMeta(inputFilePath);
+      const inputWidth = metadata.streams[0].width;
+      const inputHeight = metadata.streams[0].height;
+      const sizeRatio = inputWidth / inputHeight;
+      const thumbWidth = 500;
+      const thumbHeight = Math.ceil(inputHeight / sizeRatio);
+  
+      const watermarkBuffer = await createWatermark(
+        inputWidth,
+        inputHeight,
+        false,
+        15
+      );
+      const watermarkPath = ff.path(
+        __dirname,
+        thumb
+          ? `../cms/scripts/t_wm_${videoFileName.replace("webm", "png")}`
+          : `../cms/scripts/wm_${videoFileName.replace("webm", "png")}`
+      );
+      await sharp(watermarkBuffer).toFile(watermarkPath);
+  
+      const inputBitrate = metadata.format.bit_rate;
+      const outputBitrate = Math.ceil(inputBitrate / (thumb ? 3 : 2));
+      const command = `ffmpeg -y -i ${inputFilePath} -i ${watermarkPath} -filter_complex "overlay=0-0+0:main_h-overlay_h-0+0" -crf 18 -preset slow -b:v ${outputBitrate} -maxrate ${inputBitrate} -coder 1 -movflags +faststart -c:a copy ${
+        thumb ? `-s ${thumbWidth}x${thumbHeight}` : ""
+      } ${outputFilePath}`;
+      try {
+        const { stdout } = await exec(command);
+        console.info("success: " + videoFileName, stdout);
+      } catch (e) {
+        console.error("error: " + videoFileName, e);
+      }
+    });
+  }
+  
+  async processTranscode({ format }) {
+    // const videoFileList = ["private_Heart-of-Phinney.webm"];
+    const videoFileList = await ff.readdir(PROCESSED_WEBM_PATH);
+    await asyncForEach(videoFileList, async (videoFileName) => {
+  
+      const inputFilePath = ff.path(PROCESSED_WEBM_PATH, videoFileName);
+      const outputFilePath = ff.path(
+        PROCESSED_MP4_PATH,
+        videoFileName.replace(".webm", `.${format}`)
+      );
+      const metadata = await getMeta(inputFilePath);
+      const inputWidth = metadata.streams[0].width;
+      let inputHeight = metadata.streams[0].height;
+      if (inputHeight % 2 === 1) inputHeight++;
+      const command = `ffmpeg -y -i ${inputFilePath} -c:v libx264 -s ${inputWidth}x${inputHeight} ${outputFilePath}`;
+      try {
+        const { stdout } = await exec(command);
+        console.info("success: " + videoFileName, stdout);
+      } catch (e) {
+        console.error("error: " + videoFileName, e);
+      }
+    });
   }
 }
 

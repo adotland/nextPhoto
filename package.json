@@ -1,6 +1,6 @@
 {
   "name": "the-bike-and-the-park",
-  "version": "3.4.5",
+  "version": "3.5.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
