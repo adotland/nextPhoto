@@ -34,7 +34,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "framer-motion": "^6",
-    "fssf": "^0.9.0",
+    "fssf": "^1",
     "fuse.js": "^6.6.2",
     "leaflet": "^1.8.0",
     "leaflet.fullscreen": "^2.4.0",
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.9.2",
     "@next/bundle-analyzer": "^12.1.6",
+    "@next/env": "^12.2.2",
     "@prisma/client": "3.15.2",
     "@reduxjs/toolkit": "^1.8.2",
     "axios": "^0.27.2",

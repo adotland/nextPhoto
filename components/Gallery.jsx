@@ -42,8 +42,6 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
       <Box
         padding={4}
         w="100%"
-        mx="auto"
-        // bg={useColorModeValue("gray.100", "#191a1a")}
         bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
         sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
       >

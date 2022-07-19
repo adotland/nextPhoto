@@ -789,6 +789,11 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.6.tgz#5f44823a78335355f00f1687cfc4f1dafa3eca08"
   integrity sha512-Te/OBDXFSodPU6jlXYPAXpmZr/AkG6DCATAxttQxqOWaq6eDFX25Db3dK0120GZrSZmv4QCe9KsZmJKDbWs4OA==
 
+"@next/env@^12.2.2":
+  version "12.2.2"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.2.2.tgz#cc1a0a445bd254499e30f632968c03192455f4cc"
+  integrity sha512-BqDwE4gDl1F608TpnNxZqrCn6g48MBjvmWFEmeX5wEXDXh3IkAOw6ASKUgjT8H4OUePYFqghDFUss5ZhnbOUjw==
+
 "@next/eslint-plugin-next@12.1.6":
   version "12.1.6"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.6.tgz#dde3f98831f15923b25244588d924c716956292e"
@@ -2025,10 +2030,10 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fssf@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/fssf/-/fssf-0.9.0.tgz#df892d0731234e1cd4cc12914682b7b11f42f7ec"
-  integrity sha512-bkxyEla4GJ//Ham5mRGkARxLxYtFE9G/BOJQFwoDa7kRI6IMeBp3La1xa964jheXHW3IJUfgek0rA+j3uY6Nlw==
+fssf@^1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/fssf/-/fssf-1.1.0.tgz#94098c6c761db1ba3c322b274725f59e2192ea4f"
+  integrity sha512-kyAb0DnZPV9KjilJ45FXijsZ9v8mRWGFDWZtl3rJLYc2ETP6YYJaDX+NhrouMaLzt8f5Rwn1Kp4B6+uGi0JY4g==
 
 function-bind@^1.1.1:
   version "1.1.1"

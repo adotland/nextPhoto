@@ -93,7 +93,7 @@ export default function ParkSlug({ currentData, related }) {
                 loop={true}
                 muted={true}
                 playsInline={true}
-                style={{ width: "100%", maxHeight: "100%;" }}
+                style={{ width: "100%", maxHeight: "100%" }}
               >
                 <source
                   src={`https://${
