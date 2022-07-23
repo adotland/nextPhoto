@@ -31,7 +31,7 @@ export default function SeattleParksAndHealth({ data_geo_demog, data_geo_tpatb, 
 
   return (
     <>
-      <SEO pageTitle={'Seattle Park Data Map'} />
+      <SEO pageTitle={'Seattle Park Data Map - Health'} />
       <PageWrap>
         <Flex flexDir={'column'} mt={5} mb={8}>
           <Flex flexDir={'column'} maxW={['100%', '100%', '100%', '75%']}>

@@ -12,6 +12,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <meta name="robots" content="follow, index" />
       </Head>
       <Box style={{ position: 'relative', minHeight: '100vh' }}>
         <Box maxWidth='1500px' m='auto'>

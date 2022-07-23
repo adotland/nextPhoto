@@ -158,7 +158,7 @@ export default function MapPage({
 
   return (
     <>
-      <SEO pageTitle={"Map"} />
+      <SEO pageTitle={"Map of Parks in the Greater Seattle Area"} />
       <PageWrap>
         <MapFull
           dataList={mapDataList}

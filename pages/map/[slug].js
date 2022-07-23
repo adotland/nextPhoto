@@ -5,6 +5,7 @@ import Carousel from "../../components/Carousel";
 import MapFull from "../../components/MapFull";
 import SEO from "../../components/SEO/general";
 import { getBounds, shuffle, findParksInBounds } from "../../utils/helpers";
+import Head from "next/head";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./data', 'enabled_collections.json');
@@ -100,8 +101,8 @@ export default function MapPage({ initMapDataList, initCarouselDataList, dataLis
     if (newData.length) {
       setCarouselDataList(prevDataList => [...newData, ...prevDataList].slice(0, 15));
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-}, [newParkSlug])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [newParkSlug])
 
   const getParksInBounds = (bounds) => {
     // get every park with lat > s, lat < n, long > w, long < e
@@ -113,6 +114,9 @@ export default function MapPage({ initMapDataList, initCarouselDataList, dataLis
   return (
     <>
       <SEO pageTitle={'Map'} />
+      <Head>
+        <meta name="robots" content="nofollow, noindex" />
+      </Head>
       <PageWrap>
         <MapFull
           dataList={mapDataList}
