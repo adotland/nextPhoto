@@ -9,10 +9,11 @@ import { BsCameraReels } from 'react-icons/bs';
 export function SearchResult({ slug, parkName, still }) {
   return (
     <Link href={`/park/${slug}`}>
-      <a>
+      <a className={"umami--search--resultClick"}>
         <Flex>
           <Box mr={2}>{still ? <AiOutlinePicture /> : <BsCameraReels />}</Box>
-          <Text textTransform={'capitalize'}>{parkName}</Text>
+          <Text textTransform={'capitalize'}
+          >{parkName}</Text>
         </Flex>
       </a>
     </Link>

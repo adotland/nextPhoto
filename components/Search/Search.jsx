@@ -81,6 +81,7 @@ export default function Search({ setNavbarIsOpen }) {
           background: useColorModeValue("blackAlpha.800", "white"),
           color: useColorModeValue("white", "blackAlpha.800"),
         }}
+        className={"umami--search--modalOpen"}
       >
         <Text fontWeight={"bold"} fontFamily="Open Sans">
           Search
