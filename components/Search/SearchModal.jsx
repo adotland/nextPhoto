@@ -6,10 +6,14 @@ import Link from 'next/link';
 import { AiOutlinePicture } from 'react-icons/ai';
 import { BsCameraReels } from 'react-icons/bs';
 
+function handleResultClick(parkName) {
+  umami.trackEvent(parkName, 'search');
+}
+
 export function SearchResult({ slug, parkName, still }) {
   return (
     <Link href={`/park/${slug}`}>
-      <a className={"umami--search--resultClick"}>
+      <a className={"umami--search--resultClick"} onClick={() => handleResultClick(parkName)}>
         <Flex>
           <Box mr={2}>{still ? <AiOutlinePicture /> : <BsCameraReels />}</Box>
           <Text textTransform={'capitalize'}

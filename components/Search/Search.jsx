@@ -58,6 +58,7 @@ export default function Search({ setNavbarIsOpen }) {
   function handleSearchClick() {
     setIsOpen(true);
     setNavbarIsOpen(false);
+    umami.trackEvent('modal-open', 'search');
   }
 
   function handleSearchInputChange(e) {
