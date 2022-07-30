@@ -157,7 +157,7 @@ class ImageProcessor {
 
   async addWatermark(
     collection = DEFAULT_COLLECTION,
-    imageFileName = "3121_1437_Jimi-Hendrix-Park.jpg",
+    imageFileName = "__Alice-Ball-Park.gif",
     metadata = {},
     isThumb = false,
     dump = true
@@ -179,8 +179,8 @@ class ImageProcessor {
       let image;
       if (isAnim) {
         const scale = isThumb ? 4 : 2;
-        const scaledWidth = Math.ceil(metadata.width / scale);
-        const scaledHeight = Math.ceil(metadata.height / scale);
+        const scaledWidth = metadata.width;//Math.ceil(metadata.width / scale);
+        const scaledHeight = metadata.height;//Math.ceil(metadata.height / scale);
         watermarkBuffer = await this.createWatermark(
           scaledWidth,
           scaledHeight,
@@ -190,12 +190,13 @@ class ImageProcessor {
         image = image
           .resize({ width: scaledWidth, height: scaledHeight })
           // .gif({ colors: 16 })
-          .webp({
-            effort: 6,
-            smartSubsample: false,
-            quality: 50,
-            nearLossless: false,
-          });
+          .gif()
+        // .webp({
+        //   effort: 6,
+        //   smartSubsample: false,
+        //   quality: 50,
+        //   nearLossless: false,
+        // });
       } else {
         watermarkBuffer = await this.createWatermark(
           metadata.width,
@@ -215,7 +216,8 @@ class ImageProcessor {
       ]);
       if (dump) {
         await image.toFile(
-          ff.path(__dirname, `p3-${imageFileName.replace(".gif", ".webp")}`)
+          // ff.path(__dirname, `p3-${imageFileName.replace(".gif", ".webp")}`)
+          ff.path(__dirname, `${imageFileName}`)
         );
         console.log(imageFileName);
         // await this.imagemin([ff.path(__dirname, `p-${imageFileName}`)], {
@@ -325,7 +327,8 @@ class ImageProcessor {
     reprocessAll = true
   ) {
     console.time("processGifs");
-    const imageFileNameList = await ff.readdir(GIF_PATH(collection));
+    // const imageFileNameList = await ff.readdir(GIF_PATH(collection));
+    const imageFileNameList = ['__Alice-Ball-Park.gif'];
     await asyncForEach(imageFileNameList, async (imageFileName) => {
       const imageFileFullPath = ff.path(GIF_PATH(collection), imageFileName);
       const existingProcessed = fs.existsSync(
@@ -391,20 +394,20 @@ class ImageProcessor {
     const videoFileList = ["private_Heart-of-Phinney.webm"];
     // const videoFileList = await ff.readdir(WEBM_PATH);
     await asyncForEach(videoFileList, async (videoFileName) => {
-  
+
       const inputFilePath = ff.path(WEBM_PATH, videoFileName);
       const outputFilePath = ff.path(
         PROCESSED_WEBM_PATH,
         thumb ? "t_" + videoFileName : videoFileName
       );
-  
+
       const metadata = await getMeta(inputFilePath);
       const inputWidth = metadata.streams[0].width;
       const inputHeight = metadata.streams[0].height;
       const sizeRatio = inputWidth / inputHeight;
       const thumbWidth = 500;
       const thumbHeight = Math.ceil(inputHeight / sizeRatio);
-  
+
       const watermarkBuffer = await createWatermark(
         inputWidth,
         inputHeight,
@@ -418,12 +421,11 @@ class ImageProcessor {
           : `../cms/scripts/wm_${videoFileName.replace("webm", "png")}`
       );
       await sharp(watermarkBuffer).toFile(watermarkPath);
-  
+
       const inputBitrate = metadata.format.bit_rate;
       const outputBitrate = Math.ceil(inputBitrate / (thumb ? 3 : 2));
-      const command = `ffmpeg -y -i ${inputFilePath} -i ${watermarkPath} -filter_complex "overlay=0-0+0:main_h-overlay_h-0+0" -crf 18 -preset slow -b:v ${outputBitrate} -maxrate ${inputBitrate} -coder 1 -movflags +faststart -c:a copy ${
-        thumb ? `-s ${thumbWidth}x${thumbHeight}` : ""
-      } ${outputFilePath}`;
+      const command = `ffmpeg -y -i ${inputFilePath} -i ${watermarkPath} -filter_complex "overlay=0-0+0:main_h-overlay_h-0+0" -crf 18 -preset slow -b:v ${outputBitrate} -maxrate ${inputBitrate} -coder 1 -movflags +faststart -c:a copy ${thumb ? `-s ${thumbWidth}x${thumbHeight}` : ""
+        } ${outputFilePath}`;
       try {
         const { stdout } = await exec(command);
         console.info("success: " + videoFileName, stdout);
@@ -432,12 +434,12 @@ class ImageProcessor {
       }
     });
   }
-  
+
   async processTranscode({ format }) {
     // const videoFileList = ["private_Heart-of-Phinney.webm"];
     const videoFileList = await ff.readdir(PROCESSED_WEBM_PATH);
     await asyncForEach(videoFileList, async (videoFileName) => {
-  
+
       const inputFilePath = ff.path(PROCESSED_WEBM_PATH, videoFileName);
       const outputFilePath = ff.path(
         PROCESSED_MP4_PATH,

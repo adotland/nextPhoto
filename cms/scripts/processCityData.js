@@ -1,9 +1,7 @@
 const { ff } = require("fssf");
-const fs = require('fs');
 const pointInPolygon = require('point-in-polygon')
 
-const { STILL_PATH, CMS_EXPORT_FILE, BASE_DATA_PATH, LIVE_DATA_PATH, PROCESSED_STILL_PATH, PROCESSED_WEBP_PATH, DEFAULT_COLLECTION } = require('../config');
-const { asyncForEach } = require('./helpers');
+const { BASE_DATA_PATH, LIVE_DATA_PATH, DEFAULT_COLLECTION } = require('../config');
 
 const { PrismaClient } = require('@prisma/client')
 
@@ -23,7 +21,7 @@ async function initData() {
 
   seattle_censusData = (await ff.readJson(BASE_DATA_PATH, 'cityData/Census_2020_Tracts_with_PL_94-171_Redistricting__Data_for_1990-2020.geojson')).features;
 
-  RSECI_DataList = (await ff.readJson(BASE_DATA_PATH, 'cityData/Racial_and_Social_Equity_Composite_Index.geojson')).features;
+  RSECI_DataList = (await ff.readJson(BASE_DATA_PATH, 'cityData/RSECI.geojson')).features;
 }
 
 // all X park map

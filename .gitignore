@@ -35,6 +35,7 @@ yarn-error.log*
 .vscode
 
 cms
+!cms/scripts
 pages/cms
 api/cms
 
