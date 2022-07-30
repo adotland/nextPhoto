@@ -50,3 +50,6 @@ _/*
 prisma
 .scan.js
 .*/
+
+# Sentry
+.sentryclirc
