@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: process.env.SITE_URL || 'https://example.com',
+  siteUrl: process.env.SITE_URL,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   changefreq: 'weekly',
@@ -16,6 +16,8 @@ const config = {
         alternateRefs: config.alternateRefs ?? [],
       }
     }
+    else if (path.match(/\/map\/[a-z0-9]+/)) return {}
+
     // Use default transformation for all other cases
     return {
       loc: path, // => this will be exported as http(s)://<config.siteUrl>/<path>
