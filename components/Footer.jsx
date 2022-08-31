@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/layout";
 import { useColorModeValue, Link } from "@chakra-ui/react";
-import { BsGithub, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
 import { useRouter } from "next/router";
 
 function Footer() {
@@ -46,6 +46,15 @@ function Footer() {
               title="github"
             >
               <BsGithub />
+            </Link>
+          </Box>
+          <Box ml={5}>
+            <Link
+              href="https://instagram.com/theparkandthebike"
+              target={"_blank"}
+              title="instagram"
+            >
+              <BsInstagram />
             </Link>
           </Box>
         </Flex>
