@@ -28,8 +28,8 @@ const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
   const map = useMap();
   useEffect(() => {
     const layer = L.heatLayer(heatmapData, {
-      radius: 40,
-      gradient: { 0: "blue", 1.0: "blue" },
+      radius: 20,
+      gradient: { 0: "#87CEEB", 1: "#87CEEB" },
     });
     if (map.hasLayer(layer)) return;
     layer.addTo(map);

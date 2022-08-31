@@ -27,6 +27,7 @@ export default function Carousel({
   const headerTextColor = useColorModeValue("brand.700", "brand.200");
   const borderColor = useColorModeValue("white", "black");
   const buttonColor = useColorModeValue("blackAlpha", "green");
+  const carouselItemBgColor = useColorModeValue("whiteAlpha.100", "blackAlpha.100");
 
   if (dataList.length) {
     return (
@@ -55,10 +56,10 @@ export default function Carousel({
               flexDirection="column"
               overflow="hidden"
               color="gray.300"
-              bg="blackAlpha.100"
+              bg={carouselItemBgColor}
               rounded={1}
               flex={1}
-              p={4}
+              py={4}
             >
               <VStack>
                 <Heading
