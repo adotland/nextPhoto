@@ -5,7 +5,6 @@ import Carousel from "../../components/Carousel";
 import MapFull from "../../components/MapFull";
 import SEO from "../../components/SEO/general";
 import { getBounds, shuffle, findParksInBounds } from "../../utils/helpers";
-import Head from "next/head";
 
 export async function getStaticPaths() {
   const collectionList = await ff.readJson('./data', 'enabled_collections.json');
@@ -113,10 +112,7 @@ export default function MapPage({ initMapDataList, initCarouselDataList, dataLis
 
   return (
     <>
-      <SEO pageTitle={'Map'} />
-      <Head>
-        <meta name="robots" content="nofollow, noindex" />
-      </Head>
+      <SEO pageTitle={'Map'} isMap={true} />
       <PageWrap>
         <MapFull
           dataList={mapDataList}
