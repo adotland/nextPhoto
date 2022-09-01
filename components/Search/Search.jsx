@@ -79,8 +79,7 @@ export default function Search({ setNavbarIsOpen }) {
         h={"auto"}
         rounded="md"
         _hover={{
-          background: useColorModeValue("blackAlpha.800", "white"),
-          color: useColorModeValue("white", "blackAlpha.800"),
+          background: useColorModeValue("#eee", "555"),
         }}
         className={"umami--search--modalOpen"}
       >

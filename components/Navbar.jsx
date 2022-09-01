@@ -111,7 +111,7 @@ const MenuItemToolTip = ({ children, to = "/", name }) => {
             py={1}
             px={2}
             rounded={'md'}
-            _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}
+            _hover={{ background: useColorModeValue("#eee", "#555") }}
           >
             {children}
           </Text>
