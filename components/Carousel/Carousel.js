@@ -57,7 +57,8 @@ export default function Carousel({
               overflow="hidden"
               color="gray.300"
               bg={carouselItemBgColor}
-              rounded={1}
+              rounded={'3xl'}
+              // boxShadow={'md'}
               flex={1}
               py={4}
             >
