@@ -41,15 +41,6 @@ function Footer() {
           </Box>
           <Box ml={5}>
             <Link
-              href="https://github.com/adotland"
-              target={"_blank"}
-              title="github"
-            >
-              <BsGithub />
-            </Link>
-          </Box>
-          <Box ml={5}>
-            <Link
               href="https://instagram.com/theparkandthebike"
               target={"_blank"}
               title="instagram"
