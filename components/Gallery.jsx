@@ -43,7 +43,7 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
         padding={4}
         w="100%"
         bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
-        sx={{ columnCount: [1, 2, 3], columnGap: "1rem" }}
+        sx={{ columnCount: [1, 2, 3, 4], columnGap: "1rem" }}
       >
         {
           dataList.length ? dataList.map((data, index) => {
