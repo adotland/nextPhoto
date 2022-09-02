@@ -30,7 +30,7 @@ export default function FilterMenu({ setNavbarIsOpen }) {
         h={'auto'}
         // transform={'skew(-21deg)'}
         rounded="md"
-        _hover={{ background: useColorModeValue("#eee", "555"), }}
+        _hover={{ background: useColorModeValue("#eee", "#555"), }}
         onClick={onButtonClick}
         ref={btnRef}
       >

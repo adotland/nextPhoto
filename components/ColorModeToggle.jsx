@@ -22,7 +22,7 @@ export default function ColorModeToggle({ setIsOpen }) {
       bg={useColorModeValue("white", "#191a1a")}
       p={2}
       borderRadius={"md"}
-      _hover={{ background: useColorModeValue("#eee", "555") }}
+      _hover={{ background: useColorModeValue("#eee", "#555") }}
 
     >
       <FormControl display="flex" alignItems="center">
