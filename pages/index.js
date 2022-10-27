@@ -56,19 +56,20 @@ export async function getStaticProps() {
   return {
     props: {
       videoLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/seattle_video_3mBR_loop_1.mp4`,
+      bgLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/heatmap_parks_bg_0.jpg`,
     },
   };
 }
 
-export default function IndexPage({ videoLink }) {
+export default function IndexPage({ videoLink,bgLink }) {
+  const bg = `backgroundImage:${bgLink}`;
   return (
     <Box mt={[4, 4, 14, 4]}>
       <SEO pageTitle={"Home"} />
-      <Box className={styles.videoBox}>
-        <video autoPlay loop muted playsInline className={styles.homeVideo}>
+      <Box className={styles.videoBox} style={{backgroundImage: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/heatmap_parks_bg_0.jpg`}}>
+        {/* <video autoPlay loop muted playsInline className={styles.homeVideo}>
           <source src={videoLink} />
-        </video>
-        {/* <Box className={styles.overlay}></Box> */}
+        </video> */}
       </Box>
       <Box
         mt={[4, 4, 14, 4]}

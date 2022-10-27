@@ -31,6 +31,12 @@
   align-items: center;
   background: #111;
   z-index: -1;
+
+  /* background-image: url('/heatmap_parks_bg_0.jpg'); */
+  background-image: url('https://theparkandthebike.s3.us-west-2.amazonaws.com/heatmap_parks_bg_0.jpg');
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: aquamarine;
 }
 
 .overlay
@@ -41,3 +47,11 @@
   width: 100%;
   height: 100%;
 }
+
+/* 
+.bg {
+  background-image: url('/heatmap_parks_bg_0.jpg');
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: aquamarine;
+} */
