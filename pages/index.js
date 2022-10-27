@@ -9,6 +9,7 @@ import SEO from "../components/SEO/general";
 import styles from "../components/Home.module.css";
 import { GoBeaker } from "react-icons/go";
 import { FaMapMarkerAlt, FaDice } from "react-icons/fa";
+import Image from "next/image";
 
 function HomeTextBox({ children }) {
   return (
@@ -27,7 +28,7 @@ function HomeTextBox({ children }) {
       boxShadow={"xl"}
       _after={{
         backgroundColor: useColorModeValue("#eee", "#111"),
-        opacity: "60%",
+        opacity: "80%",
         backdropFilter: "saturate(200%) blur(10px)",
         position: "absolute",
         content: "''",
@@ -36,6 +37,7 @@ function HomeTextBox({ children }) {
         w: "100%",
         right: 0,
         top: 0,
+        borderRadius: 10
       }}
     >
       {children}
@@ -61,12 +63,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function IndexPage({ videoLink,bgLink }) {
-  const bg = `backgroundImage:${bgLink}`;
+export default function IndexPage({ videoLink, bgLink }) {
   return (
     <Box mt={[4, 4, 14, 4]}>
       <SEO pageTitle={"Home"} />
-      <Box className={styles.videoBox} style={{backgroundImage: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/heatmap_parks_bg_0.jpg`}}>
+      <Box className={styles.videoBox}>
+        <Image
+          src={bgLink}
+          alt={"background map image"}
+          layout="fill"
+          objectFit="cover"
+          quality={85}
+        />
         {/* <video autoPlay loop muted playsInline className={styles.homeVideo}>
           <source src={videoLink} />
         </video> */}
