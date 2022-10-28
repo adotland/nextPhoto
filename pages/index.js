@@ -58,7 +58,7 @@ export async function getStaticProps() {
   return {
     props: {
       videoLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/seattle_video_3mBR_loop_1.mp4`,
-      bgLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/heatmap_parks_bg_0.jpg`,
+      bgLink: `https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/general/background_map.jpg`,
     },
   };
 }
@@ -67,7 +67,9 @@ export default function IndexPage({ videoLink, bgLink }) {
   return (
     <Box mt={[4, 4, 14, 4]}>
       <SEO pageTitle={"Home"} />
-      <Box className={styles.videoBox}>
+      <Box
+      className={`${styles.videoBox} ${useColorModeValue("", styles.videoBoxDark)}`}
+      >
         <Image
           src={bgLink}
           alt={"background map image"}
