@@ -20,7 +20,7 @@ const MapLayerButtons = () => {
         <ListItem>        No leisure-time physical activity</ListItem>
         <ListItem>Diagnosed diabetes</ListItem>
         <ListItem>Obesity</ListItem>
-        <ListItem>Mental health not good</ListItem>
+        <ListItem>Mental health not good **</ListItem>
         <ListItem>Asthma</ListItem>
         <ListItem>Low life expectancy at birth</ListItem>
         <ListItem>Disability</ListItem>

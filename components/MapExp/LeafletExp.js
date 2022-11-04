@@ -111,6 +111,21 @@ const LeafletExp = ({
     0: "#FF0000",
   };
 
+
+  const generalPallete_condensed = {
+    10: "#00FF00",
+    9: "#33CC00",
+    8: "#33CC00",
+    7: "#669900",
+    6: "#669900",
+    5: "#996600",
+    4: "#B34D00",
+    3: "#B34D00",
+    2: "#E61A00",
+    1: "#E61A00",
+    0: "#FF0000",
+  };
+
   const blueRedPallete = {
     10: "#0000FF",
     9: "#1A00E6",
@@ -123,6 +138,20 @@ const LeafletExp = ({
     2: "#CC0033",
     1: "#E6001A",
     0: "#FF0000",
+  };
+
+  const whiteBluePallete = {
+    10: "#0000ff",
+    9: "#4646FF",
+    8: "#4646FF",
+    7: "#7474FF",
+    6: "#7474FF",
+    5: "#A2A2FF",
+    4: "#A2A2FF",
+    3: "#D1D1FF",
+    2: "#D1D1FF",
+    1: "#fff",
+    0: "#fff",
   };
 
   const getColor = (num, pallete, invert = false) => {
@@ -139,7 +168,7 @@ const LeafletExp = ({
         properties: { HEALTH_PERCENTILE },
       } = feature;
       return {
-        fillColor: getColor(HEALTH_PERCENTILE, generalPallete, true),
+        fillColor: getColor(HEALTH_PERCENTILE, generalPallete_condensed, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -152,7 +181,7 @@ const LeafletExp = ({
     //     properties: { PTL_ADULT_OBESE }
     //   } = feature
     //   return {
-    //     fillColor: getColor(PTL_ADULT_OBESE, generalPallete, true),
+    //     fillColor: getColor(PTL_ADULT_OBESE, generalPallete_condensed, true),
     //     weight: 0.3,
     //     opacity: 1,
     //     color: outlineColor,
@@ -165,7 +194,7 @@ const LeafletExp = ({
         properties: { SOCIOECONOMIC_PERCENTILE },
       } = feature;
       return {
-        fillColor: getColor(SOCIOECONOMIC_PERCENTILE, generalPallete, true),
+        fillColor: getColor(SOCIOECONOMIC_PERCENTILE, generalPallete_condensed, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -178,7 +207,7 @@ const LeafletExp = ({
         properties: { PTL_ADULTMENTALHEALTHNOTGOOD },
       } = feature;
       return {
-        fillColor: getColor(PTL_ADULTMENTALHEALTHNOTGOOD, generalPallete, true),
+        fillColor: getColor(PTL_ADULTMENTALHEALTHNOTGOOD, generalPallete_condensed, true),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -193,7 +222,7 @@ const LeafletExp = ({
       return {
         fillColor: getColor(
           PTL_ADULTNOLEISUREPHYSACTIVITY,
-          generalPallete,
+          generalPallete_condensed,
           true
         ),
         weight: 0.3,
@@ -208,7 +237,7 @@ const LeafletExp = ({
         properties: { parkAreaPtl },
       } = feature;
       return {
-        fillColor: getColor(parkAreaPtl / 100, generalPallete, false),
+        fillColor: getColor(parkAreaPtl / 100, generalPallete_condensed, false),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -221,7 +250,7 @@ const LeafletExp = ({
         properties: { parkAmountPtl },
       } = feature;
       return {
-        fillColor: getColor(parkAmountPtl / 100, generalPallete, false),
+        fillColor: getColor(parkAmountPtl / 100, generalPallete_condensed, false),
         weight: 0.3,
         opacity: 1,
         color: outlineColor,
@@ -310,7 +339,7 @@ const LeafletExp = ({
               <GeoJSON data={data_geo_demog} style={style.mentalHealth} />
             </FeatureGroup>
           </LayersControl.Overlay>
-          <LayersControl.Overlay name="Exercise Time Available">
+          <LayersControl.Overlay name="Time For Exercise">
             <FeatureGroup>
               <GeoJSON data={data_geo_demog} style={style.activity} />
             </FeatureGroup>
