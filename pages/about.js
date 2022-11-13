@@ -70,7 +70,7 @@ export default function About({ statsObj }) {
 
         <Text mb={2}>...along with a few extra parks from <AboutLink text='King County' path='/collection/county' />, and a few other cities.</Text>
 
-        <Text mb={2}>After completing this challenge, I was down three bikes: one sold, one traded, and one stolen. However, my health and knowledge of the city were greatly improved and I felt much closer to being a Seattlelite. This blog is about the <AboutLink text='experience' path='/map' />.</Text>
+        <Text mb={2}>After completing this challenge, I was down three bikes: one sold, one traded, and one stolen. However, my health and knowledge of the city were greatly improved and I felt much closer to being a Seattlelite. This blog is about the <AboutLink text='experience' path='/map' />, and to provide some information, thoughts, and opinions on the connections between parks, bikes, and communities.</Text>
 
       </Box>
       <Box mt={2} pl={4} pt={2} borderTop={'1px solid'} borderColor={'chakra-border-color'}>
