@@ -74,11 +74,11 @@ export default function About({ statsObj }) {
       </Box>
 
       <Box as="section" className="how" my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
-        <Heading as={'h3'} fontSize={'medium'} mb={4}>Tools used to find efficient and safer routes:</Heading>
+        <Heading as={'h3'} fontSize={'medium'} mb={4}>Tools used to find bikeable routes:</Heading>
         <UnorderedList>
           <ListItem><ChakraLink href={'https://www.komoot.com/plan'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Komoot Route Planner</ChakraLink></ListItem>
           <ListItem><ChakraLink href={'https://web6.seattle.gov/travelers/'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>SDOT</ChakraLink> for up to date road closures</ListItem>
-          <ListItem><ChakraLink href={'https://maps.google.com/'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Goole Maps</ChakraLink> with biking layer and imaging</ListItem>
+          <ListItem><ChakraLink href={'https://maps.google.com/'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Goole Maps</ChakraLink> with biking layer and imaging (--not recommended--)</ListItem>
           <ListItem><ChakraLink href={'https://twitter.com/SeattleParks'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Seattle Parks Twitter</ChakraLink> for park event info</ListItem>
         </UnorderedList>
       </Box>

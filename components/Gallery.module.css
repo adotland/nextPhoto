@@ -22,11 +22,11 @@
   z-index: 999;
 }
 
-.galleryContainer:hover .galleryOverlay{
+.galleryContainer:hover .galleryOverlay {
   opacity: 1;
 }
 
-.galleryImage{
+.galleryImage {
   width: 100%;
 }
 
@@ -51,9 +51,33 @@
   text-shadow: 0px 1px 2px grey;
 }
 
-.galleryContainer:hover .galleryCaption{
+.galleryContainer:hover .galleryCaption {
   top: 85%;
   /* left: 50%; */
   opacity: 1;
+}
+
+.socialImageGrid {
+  column-gap: "1rem";
+  column-count: 1;
+}
+
+@media screen and (min-width: 30em) {
+  .socialImageGrid {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .socialImageGrid {
+    column-count: 3;
+  }
+}
+
+
+@media screen and (min-width: 62em) {
+  .socialImageGrid {
+    column-count: 4;
+  }
 }
 
