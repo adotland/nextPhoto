@@ -56,15 +56,19 @@ export default function About({ statsObj }) {
         <Heading as={'h2'} fontSize={'1rem'} >Why</Heading>
       </Box>
       <Box as="section" className="content" my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
-        <Text mb={2}>I got more serious about cycling in 2020 as a way to get exercise and explore the city, and got the idea to ride to every park in the Seattle. I was a little surprised to find there was well over four hundred.</Text>
+        <Text mb={2}>Welcome to TheParkAndTheBike. Seattle is full of incredible sights. In 2020, as a way to get exercise and explore the city, I decided to ride a bicycle to every park in Seattle. I was surprised to find there was over four hundred.</Text>
 
-        <Text mb={2}>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone  <AboutLink text='P-Patch' path='/collection/p-patch' />.</Text>
+        <Text mb={2}>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone <AboutLink text='P-Patch' path='/collection/p-patch' />.</Text>
 
-        <Text mb={2}>Along the way, I learned about the Port of Seattle owned parks, so I rode my bike to every <AboutLink text='Port of Seattle owned park' path='/collection/extras' />.</Text>
+        <Text mb={2}>I also covered: </Text>
 
-        <Text mb={2}>Along the way, I learned about the Seattle Public Utilities owned parks, so, can you guess what I did? I rode my bike to every <AboutLink text='Seattle Public Utilities owned park' path='/collection/extras' />.</Text>
+        <UnorderedList mb={2}>
+          <ListItem><AboutLink text='Port of Seattle owned parks' path='/collection/extras' /></ListItem>
+          <ListItem><AboutLink text='Seattle Public Utilities owned parks' path='/collection/extras' /></ListItem>
+          <ListItem><AboutLink text='Mercer Island' path='/collection/mercer' /></ListItem>
+        </UnorderedList>
 
-        <Text mb={2}>I also covered <AboutLink text='Mercer Island' path='/collection/mercer' />, and sampled parks from <AboutLink text='King County' path='/collection/county' />, and a few other cities.</Text>
+        <Text mb={2}>...along with a few extra parks from <AboutLink text='King County' path='/collection/county' />, and a few other cities.</Text>
 
         <Text mb={2}>After completing this challenge, I was down three bikes: one sold, one traded, and one stolen. However, my health and knowledge of the city were greatly improved and I felt much closer to being a Seattlelite. This blog is about the <AboutLink text='experience' path='/map' />.</Text>
 
@@ -85,6 +89,6 @@ export default function About({ statsObj }) {
 
       <Text fontSize={'xs'} my={10} ml={7} pt={5}>This blog is not affiliated with any of the organizations representing the places or bicycles pictured. <a target="_blank" rel="noreferrer" href="https://www.pexels.com/video/aerial-view-of-a-town-beside-a-lake-2355554/">Intro video from Pexels</a>. All photographs &copy; TheParkAndTheBike</Text>
 
-    </Box>
+    </Box >
   )
 }
