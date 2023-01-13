@@ -75,13 +75,16 @@ export default function Search({ setNavbarIsOpen }) {
         rightIcon={<Search2Icon />}
         color={useColorModeValue("brand.700", "brand.100")}
         backgroundColor={useColorModeValue("white", "#191a1a")}
-        py={1.5}
+        py={2.5}
+        px={2}
+        rounded={'md'}
+        border={{base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none"}}
         h={"auto"}
-        rounded="md"
         _hover={{
           background: useColorModeValue("#eee", "#555"),
         }}
         className={"umami--search--modalOpen"}
+        justifyContent={'space-between'}
       >
         <Text fontWeight={"bold"} fontFamily="Open Sans">
           Search

@@ -20,8 +20,10 @@ export default function ColorModeToggle({ setIsOpen }) {
     <Box
       mx={"auto"}
       bg={useColorModeValue("white", "#191a1a")}
-      p={2}
-      borderRadius={"md"}
+      py={2.5}
+      px={2}
+      rounded={'md'}
+      border={{base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none"}}
       _hover={{ background: useColorModeValue("#eee", "#555") }}
 
     >

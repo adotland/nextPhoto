@@ -59,7 +59,7 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
   const color = useColorModeValue("gray.800", "white")
   return (
     <Box
-      display={{ base: "block", md: "none" }}
+      display={{ base: "block", lg: "none" }}
       onClick={toggle}
       tabIndex={0}
       onKeyDown={handleKeyUp}
@@ -96,7 +96,7 @@ const MenuItem = ({ children, to = "/", name }) => {
   );
 };
 
-const MenuItemToolTip = ({ children, to = "/", name }) => {
+const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
   return (
     <Link href={to}>
       <a aria-label={name}>
@@ -108,12 +108,16 @@ const MenuItemToolTip = ({ children, to = "/", name }) => {
             fontSize={'md'}
             color={useColorModeValue("brand.700", "brand.100")}
             backgroundColor={useColorModeValue("white", "#191a1a")}
-            py={1}
+            py={2.5}
             px={2}
             rounded={'md'}
+            border={{base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none"}}
             _hover={{ background: useColorModeValue("#eee", "#555") }}
           >
-            {children}
+            <Flex justify={'space-between'}>
+              <Text mr={1}>{children}</Text>
+              {icon}
+            </Flex>
           </Text>
         </Tooltip>
       </a>
@@ -124,23 +128,23 @@ const MenuItemToolTip = ({ children, to = "/", name }) => {
 const MenuLinks = ({ isOpen, setIsOpen }) => {
   return (
     <Box
-      display={{ base: isOpen ? "block" : "none", md: "block" }}
-      flexBasis={{ base: "100%", md: "auto" }}
+      display={{ base: isOpen ? "block" : "none", lg: "block" }}
+      flexBasis={{ base: "100%", lg: "auto" }}
       ml={'20px'}
     >
       <Stack
-        spacing={8}
-        align="center"
-        justify={["center", "center", "flex-end", "flex-end"]}
-        direction={["column", "column", "row", "row"]}
-        pt={[4, 4, 0, 0]}
+        spacing={2}
+        align="right"
+        justify={"flex-end"}
+        direction={["column", "column", "column", "row"]}
+        pt={[2, 4, 0, 0]}
       >
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItemToolTip to="/map" name="Park Map"><FaMapMarkerAlt size={"1.4em"} /></MenuItemToolTip>
-        <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map"><GoBeaker size={'1.4em'} /></MenuItemToolTip>
-        <MenuItemToolTip to="/featured" name="Featured"><FaDice size={'1.4em'} /></MenuItemToolTip>
-        <MenuItemToolTip to="/about" name="About"><BiInfoCircle size={'1.4em'} /></MenuItemToolTip>
+        <MenuItemToolTip to="/map" name="Park Map" icon={<FaMapMarkerAlt size={"1.4em"} />}>Parks Map</MenuItemToolTip>
+        <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />}>Data Experiments</MenuItemToolTip>
+        <MenuItemToolTip to="/featured" name="Featured" icon={<FaDice size={'1.4em'} />}>Featured</MenuItemToolTip>
+        <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />}>About</MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>
@@ -153,7 +157,7 @@ const NavBarContainer = ({ children, ...props }) => {
     <Flex
       as="nav"
       align="flex-start"
-      justify={["space-between", "space-between", "space-around", "space-between"]}
+      justify={["space-between", "space-between", "space-between", "space-between"]}
       wrap="wrap"
       maxWidth="1500px"
       w="100%"
