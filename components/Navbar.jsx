@@ -101,8 +101,7 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
     <Link href={to}>
       <a aria-label={name}>
         <Tooltip label={name}>
-          <Text
-            display="block"
+          <Box
             fontFamily='Open Sans'
             fontWeight={'bold'}
             fontSize={'md'}
@@ -118,7 +117,7 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
               <Text mr={1}>{children}</Text>
               {icon}
             </Flex>
-          </Text>
+          </Box>
         </Tooltip>
       </a>
     </Link>
