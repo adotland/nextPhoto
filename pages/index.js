@@ -68,7 +68,8 @@ export default function IndexPage({ videoLink, bgLink }) {
     <Box mt={[4, 4, 14, 4]}>
       <SEO pageTitle={"Home"} />
       <Box
-      className={`${styles.videoBox} ${useColorModeValue("", styles.videoBoxDark)}`}
+      // className={`${styles.videoBox} ${useColorModeValue("", styles.videoBoxDark)}`}
+      className={`${styles.videoBox}`}
       >
         <Image
           src={bgLink}
