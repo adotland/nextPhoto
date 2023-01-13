@@ -6,7 +6,7 @@ import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu/FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
-import { FaDice, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBicycle, FaMapMarkerAlt, FaTree } from 'react-icons/fa';
 import { GoBeaker } from 'react-icons/go';
 import { BiInfoCircle } from 'react-icons/bi'
 
@@ -100,25 +100,25 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
   return (
     <Link href={to}>
       <a aria-label={name}>
-        <Tooltip label={name}>
-          <Box
-            fontFamily='Open Sans'
-            fontWeight={'bold'}
-            fontSize={'md'}
-            color={useColorModeValue("brand.700", "brand.100")}
-            backgroundColor={useColorModeValue("white", "#191a1a")}
-            py={2.5}
-            px={2}
-            rounded={'md'}
-            border={{base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none"}}
-            _hover={{ background: useColorModeValue("#eee", "#555") }}
-          >
-            <Flex justify={'space-between'}>
-              <Text mr={1}>{children}</Text>
-              {icon}
-            </Flex>
-          </Box>
-        </Tooltip>
+        {/* <Tooltip label={name}> */}
+        <Box
+          fontFamily='Open Sans'
+          fontWeight={'bold'}
+          fontSize={'md'}
+          color={useColorModeValue("brand.700", "brand.100")}
+          backgroundColor={useColorModeValue("white", "#191a1a")}
+          py={2.5}
+          px={2}
+          rounded={'md'}
+          border={{ base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none" }}
+          _hover={{ background: useColorModeValue("#eee", "#555") }}
+        >
+          <Flex justify={'space-between'}>
+            <Text mr={1}>{children}</Text>
+            {icon}
+          </Flex>
+        </Box>
+        {/* </Tooltip> */}
       </a>
     </Link>
   );
@@ -138,11 +138,11 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         direction={["column", "column", "column", "row"]}
         pt={[2, 4, 0, 0]}
       >
+        <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1.4em'} />}>Featured Parks</MenuItemToolTip>
+        <MenuItemToolTip to="/map" name="Park Map" icon={<FaMapMarkerAlt size={"1.4em"} />}>View Map</MenuItemToolTip>
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItemToolTip to="/map" name="Park Map" icon={<FaMapMarkerAlt size={"1.4em"} />}>Parks Map</MenuItemToolTip>
         <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />}>Data Experiments</MenuItemToolTip>
-        <MenuItemToolTip to="/featured" name="Featured" icon={<FaDice size={'1.4em'} />}>Featured</MenuItemToolTip>
         <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />}>About</MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
