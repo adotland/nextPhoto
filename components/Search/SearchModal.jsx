@@ -31,7 +31,7 @@ export function SearchResultList({ resultsList, isLoading }) {
   if (resultsList.length) {
     return (<VStack spacing={5} my={5}>{resultsList?.map((result, index) => <SearchResult key={index} still={result.item?.still} parkName={result.item?.parkName} slug={result.item?.slug} />)}</VStack>)
   } else {
-    return <Box mt={4} textAlign={'center'}>no result</Box>
+    return <Box mt={4} textAlign={'center'}></Box>
   }
 }
 
@@ -48,7 +48,7 @@ export default function SearchModal({ isOpen, onClose, initialRef, handleSearchI
               ref={initialRef}
               variant="outline"
               type="text"
-              placeholder="Enter a name..."
+              placeholder="Start typing a name..."
               onInput={handleSearchInputChange} />
             <SearchResultList resultsList={resultsList} isLoading={isLoading} />
           </Box>
