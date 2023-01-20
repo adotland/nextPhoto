@@ -77,7 +77,7 @@ export default function Carousel({
                 backgroundSize: 'cover',
               }}
             >
-              <VStack>
+              <VStack zIndex={999} pos='relative'>
                 <Heading
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign="center"
