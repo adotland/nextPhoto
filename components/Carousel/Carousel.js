@@ -61,6 +61,21 @@ export default function Carousel({
               // boxShadow={'md'}
               flex={1}
               py={4}
+              pos={'relative'}
+              _before={{
+                content: `" "`,
+                display: "block",
+                position: "absolute",
+                left: 0,
+                top: 0,
+                width: '100%',
+                height: '100%',
+                opacity: 0.4,
+                backgroundImage: `url('/_next/image?url=https%3A%2F%2Ftheparkandthebike.s3.us-west-2.amazonaws.com%2F${data.imageName}&w=384&q=75')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '50% 0',
+                backgroundSize: 'cover',
+              }}
             >
               <VStack>
                 <Heading
