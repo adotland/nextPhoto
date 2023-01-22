@@ -191,7 +191,7 @@ export default function Carousel({
   } else {
     return (
       <Flex height={300} fontSize={"large"} justify="center" align={"center"}>
-        <span>Zoom and scroll to find more</span>
+        <span>Zoom and scroll to find parks</span>
       </Flex>
     );
   }

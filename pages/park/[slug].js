@@ -86,9 +86,6 @@ export default function ParkSlug({ currentData, related }) {
           {currentData.ext === "webp" ? (
             <Box boxShadow={"lg"} maxW={currentData.width} minW={320} mx="auto">
               <video
-                // width={currentData.width}
-                //   height={currentData.height}
-                // maxW
                 autoPlay={true}
                 loop={true}
                 muted={true}
@@ -108,21 +105,9 @@ export default function ParkSlug({ currentData, related }) {
                   type='video/webm; codecs="vp9, vorbis"'
                 />
               </video>
-              {/* <Image
-                key={currentData.id}
-                src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/video/${currentData.imageName.replace('webp','webm')}`}
-                alt={currentData.parkName ?? "image"}
-                layout="responsive"
-                width={currentData.width}
-                height={currentData.height}
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(currentData.width, currentData.height))}`}
-                priority
-              /> */}
             </Box>
           ) : (
             <Box boxShadow={"lg"}>
-              {/* <Box style={{boxShadow: `0px 0px 3px 0px ${currentData.filters.domColor}`}}> */}
               <Image
                 key={currentData.id}
                 src={`https://${process.env.NEXT_PUBLIC_IMG_HOST_DOMAIN}/${currentData.imageName}`}
@@ -130,7 +115,6 @@ export default function ParkSlug({ currentData, related }) {
                 layout="responsive"
                 width={currentData.width}
                 height={currentData.height}
-                // sizes="50vw"
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
                   shimmer(currentData.width, currentData.height)
@@ -147,7 +131,6 @@ export default function ParkSlug({ currentData, related }) {
           mt={["2em", "1.5em", "1em", 0]}
           ml={[0, 0, 0, 10]}
           minW="20rem"
-          // maxW={["100%", "100%", "100%", "40rem"]}
           width={["100%", "100%", "100%", "40rem"]}
         />
       </Flex>
