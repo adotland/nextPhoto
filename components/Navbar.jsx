@@ -9,6 +9,7 @@ import Search from "./Search/Search";
 import { FaBicycle, FaMapMarkerAlt, FaTree } from 'react-icons/fa';
 import { GoBeaker } from 'react-icons/go';
 import { BiInfoCircle } from 'react-icons/bi'
+import { BsMap, BsPinMapFill } from "react-icons/bs";
 
 const NavBar = (props) => {
   const router = useRouter();
@@ -108,7 +109,7 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
           color={useColorModeValue("brand.700", "brand.100")}
           backgroundColor={useColorModeValue("white", "#191a1a")}
           py={2.5}
-          px={2}
+          px={2.5}
           rounded={'md'}
           border={{ base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none" }}
           _hover={{ background: useColorModeValue("#eee", "#555") }}
@@ -139,7 +140,8 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         pt={[2, 4, 0, 0]}
       >
         <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1.4em'} />}>Featured Parks</MenuItemToolTip>
-        <MenuItemToolTip to="/map" name="Park Map" icon={<FaMapMarkerAlt size={"1.4em"} />}>View Map</MenuItemToolTip>
+        <MenuItemToolTip to="/routes" name="Featured" icon={<BsPinMapFill size={'1.4em'} />}>Routes</MenuItemToolTip>
+        <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1.4em"} />}>Full Map</MenuItemToolTip>
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
         <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />}>Data Experiments</MenuItemToolTip>
