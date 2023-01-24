@@ -18,7 +18,7 @@ function MainHomeTextBox({ children }) {
     flexDir={'column'}
       color={useColorModeValue("#111", "#eee")}
       fontSize={["xl", "xl", "2xl"]}
-      w={["303px", "333px"]}
+      w={["100%", "333px"]}
       h={['initial', 'initial', 'initial', '90%']}
       maxH={'420px'}
       mr={["initial", "initial", "initial", "5em"]}
@@ -50,8 +50,8 @@ function MainHomeTextBox({ children }) {
           src={'/profile.jpg'}
           alt={"profile image"}
           layout={"fixed"}
-          width={'222px'}
-          height={'222px'}
+          width={'161px'}
+          height={'161px'}
           objectFit={"cover"}
         />
       </Box>
@@ -64,7 +64,7 @@ function HomeTextBox({ children }) {
     <Flex
       color={useColorModeValue("#111", "#eee")}
       fontSize={["xl", "xl", "2xl"]}
-      w={["303px", "333px"]}
+      w={["100%", "333px"]}
       mr={["initial", "initial", "initial", "5em"]}
       zIndex={999}
       pos={"relative"}
@@ -94,8 +94,8 @@ function HomeTextBox({ children }) {
 }
 function HomeLinkBox({ link, children }) {
   return (
-    <Link href={link} passHref>
-      <ChakraLink>
+    <Link href={link} passHref >
+      <ChakraLink style={{display: 'contents'}}>
         <HomeTextBox>{children}</HomeTextBox>
       </ChakraLink>
     </Link>
