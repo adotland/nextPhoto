@@ -6,7 +6,7 @@ import ColorModeToggle from "./ColorModeToggle";
 import FilterMenu from "./FilterMenu/FilterMenu";
 import { useRouter } from 'next/router'
 import Search from "./Search/Search";
-import { FaBicycle, FaMapMarkerAlt, FaTree } from 'react-icons/fa';
+import { FaTree } from 'react-icons/fa';
 import { GoBeaker } from 'react-icons/go';
 import { BiInfoCircle } from 'react-icons/bi'
 import { BsMap, BsPinMapFill } from "react-icons/bs";
@@ -14,6 +14,7 @@ import { BsMap, BsPinMapFill } from "react-icons/bs";
 const NavBar = (props) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [pathname, setPathname] = useState(router.pathname ?? '');
   const toggle = () => setIsOpen(!isOpen);
   const handleKeyUp = (e) => {
     if (e.keyCode === 13) {
@@ -25,11 +26,15 @@ const NavBar = (props) => {
     setIsOpen(false)
   }, [router.query])
 
+  useEffect(() => {
+    setPathname(router.pathname)
+  }, [router.pathname])
+
   return (
     <NavBarContainer {...props}>
       <Logo />
       <MenuToggle toggle={toggle} isOpen={isOpen} handleKeyUp={handleKeyUp} />
-      <MenuLinks isOpen={isOpen} setIsOpen={setIsOpen} />
+      <MenuLinks isOpen={isOpen} setIsOpen={setIsOpen} pathname={pathname} />
     </NavBarContainer>
   );
 };
@@ -74,30 +79,10 @@ const MenuToggle = ({ toggle, isOpen, handleKeyUp }) => {
   );
 };
 
-const MenuItem = ({ children, to = "/", name }) => {
-  return (
-    <Link href={to}>
-      <a aria-label={name}>
-        <Text
-          display="block"
-          fontFamily='Open Sans'
-          fontWeight={'bold'}
-          fontSize={'md'}
-          color={useColorModeValue("brand.700", "brand.100")}
-          backgroundColor={useColorModeValue("white", "#191a1a")}
-          py={1}
-          px={2}
-          rounded={'md'}
-          _hover={{ background: useColorModeValue("blackAlpha.800", "white"), color: useColorModeValue('white', 'blackAlpha.800') }}
-        >
-          {children}
-        </Text>
-      </a>
-    </Link>
-  );
-};
 
-const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
+const MenuItemToolTip = ({ children, to = "/", name, icon, pathname }) => {
+  const activeColor = useColorModeValue("#eee", "#555");
+  const inactiveColor = useColorModeValue("white", "#191a1a");
   return (
     <Link href={to}>
       <a aria-label={name}>
@@ -107,12 +92,12 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
           fontWeight={'bold'}
           fontSize={'md'}
           color={useColorModeValue("brand.700", "brand.100")}
-          backgroundColor={useColorModeValue("white", "#191a1a")}
+          backgroundColor={pathname.includes(to) ? activeColor : inactiveColor}
           py={2.5}
           px={2.5}
           rounded={'md'}
           border={{ base: `1px solid ${useColorModeValue("#191a1a", "#555")}`, lg: "none" }}
-          _hover={{ background: useColorModeValue("#eee", "#555") }}
+          _hover={{ background: activeColor }}
         >
           <Flex justify={'space-between'}>
             <Text mr={1}>{children}</Text>
@@ -125,7 +110,7 @@ const MenuItemToolTip = ({ children, to = "/", name, icon }) => {
   );
 };
 
-const MenuLinks = ({ isOpen, setIsOpen }) => {
+const MenuLinks = ({ isOpen, setIsOpen, pathname }) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", lg: "block" }}
@@ -139,13 +124,13 @@ const MenuLinks = ({ isOpen, setIsOpen }) => {
         direction={["column", "column", "column", "row"]}
         pt={[2, 4, 0, 0]}
       >
-        <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1.4em'} />}>Featured Parks</MenuItemToolTip>
-        <MenuItemToolTip to="/routes" name="Featured" icon={<BsPinMapFill size={'1.4em'} />}>Routes</MenuItemToolTip>
-        <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1.4em"} />}>Full Map</MenuItemToolTip>
+        <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1.4em'} />} pathname={pathname}>Featured Parks</MenuItemToolTip>
+        <MenuItemToolTip to="/routes" name="Routes" icon={<BsPinMapFill size={'1.4em'} />} pathname={pathname}>Routes</MenuItemToolTip>
+        <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1.4em"} />} pathname={pathname}>Full Map</MenuItemToolTip>
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItemToolTip to="/map/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />}>Data Experiments</MenuItemToolTip>
-        <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />}>About</MenuItemToolTip>
+        <MenuItemToolTip to="/data/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />} pathname={pathname}>Data Experiments</MenuItemToolTip>
+        <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />} pathname={pathname}>About</MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>
