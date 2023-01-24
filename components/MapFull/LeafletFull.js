@@ -207,32 +207,35 @@ const LeafletFull = ({
   };
 
   return (
-    <MapContainer
-      className={styles.map}
-      center={initCenter}
-      zoom={initZoom}
-      attributionControl={false}
-      ref={setMapState}
-      fullscreenControl={true}
-      {...interactionOptions}
-    >
-      <MapEventListener />
-      <LayersControl position="topright">
-        <TileLayer
-          url={osm[tileProvider].url}
-          attribution={osm[tileProvider].attribution}
-          ref={setCurrentTiles}
-        />
-        <LayersControl.Overlay name="Heatmap" checked>
-          <LayerGroup ref={heatmapLayerGroupRef}>
-            <HeatmapLayer heatmapData={heatmapData} ref={heatmapLayerRef} />
-          </LayerGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Parks Visited" checked>
-          <LayerGroup>{Object.values(markersObj)}</LayerGroup>
-        </LayersControl.Overlay>
-      </LayersControl>
-    </MapContainer>
+    <>
+      <h2 style={{textAlign: 'center', fontWeight: 'bold', fontSize: '1.5rem'}}>Parks Map</h2>
+      <MapContainer
+        className={styles.map}
+        center={initCenter}
+        zoom={initZoom}
+        attributionControl={false}
+        ref={setMapState}
+        fullscreenControl={true}
+        {...interactionOptions}
+      >
+        <MapEventListener />
+        <LayersControl position="topright">
+          <TileLayer
+            url={osm[tileProvider].url}
+            attribution={osm[tileProvider].attribution}
+            ref={setCurrentTiles}
+          />
+          <LayersControl.Overlay name="Heatmap" checked>
+            <LayerGroup ref={heatmapLayerGroupRef}>
+              <HeatmapLayer heatmapData={heatmapData} ref={heatmapLayerRef} />
+            </LayerGroup>
+          </LayersControl.Overlay>
+          <LayersControl.Overlay name="Parks Visited" checked>
+            <LayerGroup>{Object.values(markersObj)}</LayerGroup>
+          </LayersControl.Overlay>
+        </LayersControl>
+      </MapContainer>
+    </>
   );
 };
 

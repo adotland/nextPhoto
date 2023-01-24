@@ -91,7 +91,7 @@ export default function FilterDrawer({ isOpen, onClose, btnRef }) {
         pb={5}
       >
         <DrawerCloseButton />
-        <DrawerHeader>Filters</DrawerHeader>
+        <DrawerHeader>Park Photo Filters</DrawerHeader>
         <DrawerHeader display={"flex"} alignItems={"center"}>
           Type&nbsp;
           <AiOutlineCamera />

@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, Text, useColorModeValue } from "@chakra-ui/react";
 import { ff } from "fssf";
 import Link from "next/link";
 import { useState } from "react";
@@ -65,14 +65,19 @@ function RouteContainer({ children }) {
   )
 }
 
-function Route({
+function RouteCard({
   data
 }) {
   return (
     <Link href={`/routes/${data.slug}`}>
       <a>
-        <Box className={styles.grow} bgSize={'cover'} width="333px" height={'133px'} rounded={'lg'} p={'15px'} m={2} backgroundImage={`url('/_next/image?url=https%3A%2F%2Ftheparkandthebike.s3.us-west-2.amazonaws.com%2F${data.imageList[0]}&w=384&q=75')`}>
-          <Box>{data.name}</Box>
+        <Box className={styles.grow} bgSize={'cover'} width="303px" height={'133px'} rounded={'lg'} m={2} backgroundImage={`url('/_next/image?url=https%3A%2F%2Ftheparkandthebike.s3.us-west-2.amazonaws.com%2F${data.imageList[0]}&w=384&q=75')`}>
+          <Box
+            p={'10px'}
+            roundedTop={'lg'}
+            backgroundColor={useColorModeValue("whiteAlpha.900", "blackAlpha.600")}
+            fontWeight={'bold'}
+          >{data.name}</Box>
         </Box>
       </a>
     </Link>
@@ -93,24 +98,24 @@ export default function RouteListPage({
             <Text mb={4}>{`Each of these routes will take to you several parks in Seattle. If you complete all of the routes, you will have gone to every park and P-Patch in the city! Routes vary in length and difficulty, but most are short tours of parks that are close to each other. For this reason, I suggest incorporating them into an existing ride. The shorter ones also work well as run or walk routes.`}
             </Text>
             {/* <Flex mb={4}> */}
-            <Text fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow us on `}
+            <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow us on `}
               <a
                 href="https://instagram.com/theparkandthebike"
                 title="instagram"
                 target={"_blank"}
                 rel="noreferrer"
+                style={{display: 'inline-block', margin: '5px', borderBottom: '2px solid'}}
               >
-                {/* <Flex alignItems={'center'}> */}
+                <span style={{ display: 'inline-block', marginRight: '5px' }}>
+                  <BsInstagram />
+                </span>
                 Instagram!
-                {/* <BsInstagram display={'inline !important'} /> */}
-                {/* </Flex> */}
               </a>
             </Text>
-            {/* </Flex> */}
             <RouteFilters data={filteredList} setData={setFilteredList} />
             <RouteContainer>
               {
-                filteredList.length && filteredList.map(data => <Route data={data} key={data.name} />)
+                filteredList.length && filteredList.map(data => <RouteCard data={data} key={data.name} />)
               }
             </RouteContainer>
           </Flex>

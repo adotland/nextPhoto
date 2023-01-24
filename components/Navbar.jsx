@@ -162,7 +162,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       maxWidth="1500px"
       w="100%"
-      mb={8}
+      // mb={8}
       p={8}
       bg={"transparent"}
       color={useColorModeValue("brand.700", "brand.200")}

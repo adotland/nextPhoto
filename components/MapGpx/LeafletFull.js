@@ -7,7 +7,6 @@ import styles from "./LeafletFull.module.css";
 import osm from "../../data/scripts/osm-providers";
 import "leaflet.fullscreen/Control.FullScreen.js";
 import "leaflet.fullscreen/Control.FullScreen.css";
-import GpxParser from "gpxparser";
 
 import {
   MapContainer,
@@ -16,7 +15,6 @@ import {
   Tooltip,
   useMapEvents,
   useMap,
-  LayersControl,
   LayerGroup,
 } from "react-leaflet";
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
@@ -29,10 +27,10 @@ const GpxLayer = forwardRef(({ routeData }, ref) => {
 
   useEffect(() => {
     const layer = new L.Polyline(routeData.positions, {
-      pathOptions: { fillColor: 'red', color: 'blue' },
-      
+      // pathOptions: { fillColor: 'red', color: 'blue' },
+
     });
-    // if (map.hasLayer(layer)) return;
+    if (map.hasLayer(layer)) return;
     layer.addTo(map);
     // map.setView(layer.getCenter());
     map.fitBounds(layer.getBounds().pad(0.3));
@@ -189,28 +187,21 @@ const LeafletFull = ({
     <MapContainer
       className={styles.map}
       center={routeData.initCenter}
-      // zoom={routeData.initZoom}
       attributionControl={false}
       ref={setMapState}
       fullscreenControl={true}
       {...interactionOptions}
     >
       <MapEventListener />
-      <LayersControl position="topright">
-        <TileLayer
-          url={osm[tileProvider].url}
-          attribution={osm[tileProvider].attribution}
-          ref={setCurrentTiles}
-        />
-        <LayersControl.Overlay name="Gpx" checked>
-          <LayerGroup ref={GpxLayerGroupRef}>
-            <GpxLayer routeData={routeData} ref={GpxLayerRef} />
-          </LayerGroup>
-        </LayersControl.Overlay>
-        <LayersControl.Overlay name="Parks Visited" checked>
-          <LayerGroup>{Object.values(markersObj)}</LayerGroup>
-        </LayersControl.Overlay>
-      </LayersControl>
+      <TileLayer
+        url={osm[tileProvider].url}
+        attribution={osm[tileProvider].attribution}
+        ref={setCurrentTiles}
+      />
+      <LayerGroup ref={GpxLayerGroupRef}>
+        <GpxLayer routeData={routeData} ref={GpxLayerRef} />
+      </LayerGroup>
+      <LayerGroup>{Object.values(markersObj)}</LayerGroup>
     </MapContainer>
   );
 };

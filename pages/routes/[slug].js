@@ -1,13 +1,12 @@
-import PageWrap from "../../components/PageWrap";
 import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../../components/Carousel";
 import MapGpx from "../../components/MapGpx";
 import SEO from "../../components/SEO/general";
-import { getBounds, shuffle, findParksInBounds, meterToMile, getCentroid2 } from "../../utils/helpers";
+import { getBounds, findParksInBounds, meterToMile, getCentroid2 } from "../../utils/helpers";
 import GpxParser from "gpxparser";
 import RouteDetails from "../../components/MapGpx/RouteDetails";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 
 const INITIAL_ZOOM = 14;
 
@@ -81,6 +80,7 @@ export async function getStaticProps({ params: { slug } }) {
       // width: data.width,
       // height: data.height,
       filters: data.filters,
+      collection: data.collection,
     }
   });
 
@@ -122,48 +122,53 @@ export default function MapRoutePage({ initMapDataList, initCarouselDataList, pa
 
   return (
     <>
-      <SEO pageTitle={'Map'} isMap={true} />
-      <Flex
-        m={[0, 0, 0, 7]}
-        justifyContent={"space-evenly"}
-        flexDir={["column", "column", "column", "row"]}
-        mt={[4, 4, 16, 4]}
+      <SEO pageTitle={`Route - ${routeDetails.routeName}`} isMap={true} />
+      <Box
+        bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
+        padding={[0, 0, 0, '33px']}
       >
-        <Box
-          flex={1}
-          minW={width > height ? "60%" : "40%"}
-          maxW={
-            width > height
-              ? ["100%", "100%", "100%", "65%"]
-              : ["100%", "100%", "100%", "40%"]
-          }
+        <Flex
+          m={[0, 0, 0, 7]}
+          justifyContent={"space-evenly"}
+          flexDir={["column", "column", "column", "row"]}
+          mt={[4, 4, 16, 4]}
         >
-          <MapGpx
-            dataList={mapDataList}
-            loadData={loadData}
-            getParksInBounds={getParksInBounds}
-            activeCarouselItem={activeCarouselItem}
-            setActiveCarouselItem={setActiveCarouselItem}
-            activeMarker={activeMarker}
-            routeData={routeData}
+          <Box
+            flex={1}
+            minW={width > height ? "60%" : "40%"}
+            maxW={
+              width > height
+                ? ["100%", "100%", "100%", "65%"]
+                : ["100%", "100%", "100%", "40%"]
+            }
+          >
+            <MapGpx
+              dataList={mapDataList}
+              loadData={loadData}
+              getParksInBounds={getParksInBounds}
+              activeCarouselItem={activeCarouselItem}
+              setActiveCarouselItem={setActiveCarouselItem}
+              activeMarker={activeMarker}
+              routeData={routeData}
+            />
+          </Box>
+          <RouteDetails
+            data={routeDetails}
+            textAlign={["center", "center", "center", "left"]}
+            lineHeight={10}
+            mt={["2em", "1.5em", "1em", 0]}
+            ml={[0, 0, 0, 10]}
+            minW="20rem"
+            width={["100%", "100%", "100%", "40rem"]}
           />
-        </Box>
-        <RouteDetails
-          data={routeDetails}
-          textAlign={["center", "center", "center", "left"]}
-          lineHeight={10}
-          mt={["2em", "1.5em", "1em", 0]}
-          ml={[0, 0, 0, 10]}
-          minW="20rem"
-          width={["100%", "100%", "100%", "40rem"]}
+        </Flex>
+        <Carousel
+          dataList={carouselDataList}
+          activeCarouselItem={activeCarouselItem}
+          setActiveCarouselItem={setActiveCarouselItem}
+          setActiveMarker={setActiveMarker}
         />
-      </Flex>
-      <Carousel
-        dataList={carouselDataList}
-        activeCarouselItem={activeCarouselItem}
-        setActiveCarouselItem={setActiveCarouselItem}
-        setActiveMarker={setActiveMarker}
-      />
+      </Box>
     </>
   )
 }

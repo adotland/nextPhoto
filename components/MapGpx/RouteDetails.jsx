@@ -7,6 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { BsArrowDownRight, BsArrowUpRight } from "react-icons/bs";
+import RouteInteractions from "./RouteInteractions";
 
 function Detail({ title, data }) {
   return (
@@ -62,6 +63,7 @@ export default function RouteDetails({ data, ...props }) {
       >
         {data.routeName}
       </Heading>
+      <RouteInteractions />
 
       {data.distance && <Detail title={"Distance"} data={`${data.distance} mi`} />}
       {data.elevation && <ElevationDetail data={data.elevation} />}

@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function FilterTag({ type, value }) {
   return (
     <Flex mr={5}>
-      {/* <Text>{type}: </Text> */}
       <Box>
         <Link href={type === 'featured' ? '/featured' : `/filter/${type}/${value}`}>
           <a>

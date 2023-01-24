@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo(props) {
   return (
-    <Box {...props} mb={[0, 0, 5, 0]}>
+    <Box {...props} mb={[0, 0, 5, 0]} alignSelf={'center'}>
       <Link href="/">
         <a>
           <Text
