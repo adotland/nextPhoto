@@ -1,7 +1,7 @@
 import { Box, Flex, Tag, useColorModeValue } from "@chakra-ui/react";
 
 function handleGpxDownload(slug) {
-  umami.trackEvent('gpx-download', slug);
+  umami.trackEvent(slug, 'gpx-download');
   window.location.href = `/api/gpx?query=${slug}`;
 }
 
