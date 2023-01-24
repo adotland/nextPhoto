@@ -57,7 +57,7 @@ const ParkMarkerLayer = ({ dataList, isPPatch = false }) => {
           key={index}
           position={[data.lat, data.long]}
           icon={isPPatch ? markerIcon_pPatch : markerIcon}
-          // ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
+        // ref={(markerRef) => newMarkerRefObj[data.slug] = markerRef}
         >
           <Tooltip sticky>
             {data.parkName?.length > 20
@@ -311,10 +311,13 @@ const LeafletExp = ({
     scrollWheelZoom: true,
   };
 
+  const mapBgColor = useColorModeValue("white", "#191a1a");
+
   const displayMap = useMemo(
     () => (
       <MapContainer
         className={styles.map}
+        style={{ backgroundColor: mapBgColor }}
         center={center}
         zoom={11}
         attributionControl={false}

@@ -73,6 +73,8 @@ const Leaflet = ({ center, slug, isPPatch }) => {
     popupAnchor: [0, -25],
   });
 
+  const mapBgColor = useColorModeValue("white", "#191a1a");
+
   return (
     <Box
       justifyContent={["center", "center", "center", "left"]}
@@ -84,6 +86,7 @@ const Leaflet = ({ center, slug, isPPatch }) => {
     >
       <MapContainer
         className={styles.map}
+        style={{ backgroundColor: mapBgColor }}
         center={center}
         zoom={ZOOM}
         attributionControl={false}

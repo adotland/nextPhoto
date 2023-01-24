@@ -206,6 +206,7 @@ const LeafletFull = ({
     scrollWheelZoom: true,
   };
 
+  const mapBgColor = useColorModeValue("white", "#191a1a");
   return (
     <Box textAlign={'center'} p={7}
       bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
@@ -214,6 +215,7 @@ const LeafletFull = ({
       <Text mb={2}>scroll and zoom to discover parks</Text>
       <MapContainer
         className={styles.map}
+        style={{ backgroundColor: mapBgColor }}
         center={initCenter}
         zoom={initZoom}
         attributionControl={false}

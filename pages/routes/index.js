@@ -118,6 +118,7 @@ export default function RouteListPage({
                 filteredList.length && filteredList.map(data => <RouteCard data={data} key={data.name} />)
               }
             </RouteContainer>
+            more coming soon!
           </Flex>
         </Flex>
       </PageWrap>

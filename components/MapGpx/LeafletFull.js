@@ -183,9 +183,12 @@ const LeafletFull = ({
     scrollWheelZoom: true,
   };
 
+  const mapBgColor = useColorModeValue("white", "#191a1a");
+
   return (
     <MapContainer
       className={styles.map}
+      style={{ backgroundColor: mapBgColor }}
       center={routeData.initCenter}
       attributionControl={false}
       ref={setMapState}
