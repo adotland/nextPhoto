@@ -65,7 +65,8 @@ export async function getStaticProps({ params: { slug } }) {
     elevation: gpx.tracks[0].elevation,
     routeName: data.name,
     gpxFileLocation: data.gpxFileLocation ?? '',
-    parkNameList: parkList.map(p => p.parkName)
+    parkNameList: parkList.map(p => p.parkName),
+    slug: data.slug,
   };
 
   const initMapDataList = parkList

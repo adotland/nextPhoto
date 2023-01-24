@@ -63,7 +63,7 @@ export default function RouteDetails({ data, ...props }) {
       >
         {data.routeName}
       </Heading>
-      <RouteInteractions />
+      <RouteInteractions slug={data.slug} />
 
       {data.distance && <Detail title={"Distance"} data={`${data.distance} mi`} />}
       {data.elevation && <ElevationDetail data={data.elevation} />}
