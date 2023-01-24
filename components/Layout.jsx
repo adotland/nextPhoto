@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const padding = router.pathname.indexOf('/map') === -1 ? "7rem" : "0px"; // TODO
+  const padding = router.pathname.indexOf('/map') === -1 ? "6rem" : "0px"; // TODO
   return (
     <>
       <Head>

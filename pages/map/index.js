@@ -37,6 +37,7 @@ export async function getStaticProps() {
             long: d.long || null,
             imageName: d.imageName,
             filters: d.filters,
+            collection: d.collection,
           };
         })
     );
@@ -74,6 +75,7 @@ export async function getStaticProps() {
       slug: data.slug,
       lat: data.lat || null,
       long: data.long || null,
+      collection: data.collection,
     };
   });
 
@@ -87,6 +89,7 @@ export async function getStaticProps() {
       // width: data.width,
       // height: data.height,
       filters: data.filters,
+      collection: data.collection,
     };
   });
 

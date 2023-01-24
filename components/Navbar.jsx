@@ -148,7 +148,9 @@ const NavBarContainer = ({ children, ...props }) => {
       maxWidth="1500px"
       w="100%"
       // mb={8}
-      p={8}
+      px={8}
+      paddingTop={8}
+      paddingBottom={4}
       bg={"transparent"}
       color={useColorModeValue("brand.700", "brand.200")}
       position={router.pathname.indexOf('/map') === -1 ? "fixed" : "relative"}
