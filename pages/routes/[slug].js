@@ -7,7 +7,7 @@ import { getBounds, findParksInBounds, meterToMile, getCentroid2 } from "../../u
 import GpxParser from "gpxparser";
 import RouteDetails from "../../components/MapGpx/RouteDetails";
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
-// import clientPromise from '../../lib/mongodb'
+import clientPromise from '../../lib/mongodb'
 
 const INITIAL_ZOOM = 14;
 
@@ -41,16 +41,16 @@ export async function getServerSideProps({ params: { slug } }) {
   const positions = gpx.tracks[0].points.map(p => [p.lat, p.lon]);
   const initCenter = getCentroid2(positions);
   let initialLikeCount = 0;
-  // try {
-  //   const client = await clientPromise;
-  //   const db = client.db(process.env.MONGODB_DBNAME);
-  //   const dbResponse = (await db.collection('likes').findOne({slug}));
-  //   initialLikeCount = dbResponse?.count ?? 0;
-  //   if (isNaN(initialLikeCount)) initialLikeCount = 0;
-  //   if (!initialLikeCount) initialLikeCount = 0;
-  // } catch (err) {
-  //   console.log(err)
-  // }
+  try {
+    const client = await clientPromise;
+    const db = client.db(process.env.MONGODB_DBNAME);
+    const dbResponse = (await db.collection('likes').findOne({slug}));
+    initialLikeCount = dbResponse?.count ?? 0;
+    if (isNaN(initialLikeCount)) initialLikeCount = 0;
+    if (!initialLikeCount) initialLikeCount = 0;
+  } catch (err) {
+    console.log(err)
+  }
 
 
   const routeData = {

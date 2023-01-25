@@ -38,6 +38,7 @@ function Like({ slug, initialLikeCount }) {
   useEffect(() => {
     const alreadyLiked = window.localStorage.getItem(itemName);
     if ( alreadyLiked !== null ) setIsLike(JSON.parse(alreadyLiked));
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -47,16 +48,16 @@ function Like({ slug, initialLikeCount }) {
 
 
   const updateLikeCount = async (isIncrement) => {
-    // try {
-    //   const response = await fetch('/api/like', { method: 'POST', body: JSON.stringify({ isIncrement, slug, count }) })
-    //   const data = await response.json()
-    //   if (!data.error) {
-    //     setCount(data.data)
-    //   }
-    // } catch (err) {
-    //   // sentry
-    //   console.error(err)
-    // }
+    try {
+      const response = await fetch('/api/like', { method: 'POST', body: JSON.stringify({ isIncrement, slug, count }) })
+      const data = await response.json()
+      if (!data.error) {
+        setCount(data.data)
+      }
+    } catch (err) {
+      // sentry
+      console.error(err)
+    }
   }
 
   const handleLikeClick = async () => {
@@ -77,9 +78,9 @@ function Like({ slug, initialLikeCount }) {
         onClick={handleLikeClick}
         variant={isLike ? 'solid' : 'outline'}
       />
-      {/* <Text ml={5}>
+      <Text ml={5}>
         {count}
-      </Text> */}
+      </Text>
     </>
   );
 }

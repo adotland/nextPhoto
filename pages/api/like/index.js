@@ -2,7 +2,7 @@ import { withSentry } from "@sentry/nextjs";
 import clientPromise from '../../../lib/mongodb'
 
 async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(401).send({ error: 'bad request' });
+  if (req.method !== 'POST') return res.status(400).send({ error: 'bad request' });
   const { isIncrement, slug, count } = JSON.parse(req.body);
   try {
     const client = await clientPromise;
