@@ -43,9 +43,9 @@ export async function getServerSideProps({ params: { slug } }) {
   let initialLikeCount = 0;
   try {
     const client = await clientPromise;
-    console.log('is connected')
     const db = client.db(process.env.MONGODB_DBNAME);
-    initialLikeCount = (await db.collection('likes').findOne({slug})).count;
+    const dbResponse = (await db.collection('likes').findOne({slug}));
+    initialLikeCount = dbResponse?.count ?? 0;
     if (isNaN(initialLikeCount)) initialLikeCount = 0;
     if (!initialLikeCount) initialLikeCount = 0;
   } catch (err) {

@@ -6,7 +6,6 @@ async function handler(req, res) {
   const { isIncrement, slug, count } = JSON.parse(req.body);
   try {
     const client = await clientPromise;
-    console.log('is connected')
     const db = client.db(process.env.MONGODB_DBNAME);
     const likes = db.collection('likes');
 
@@ -30,7 +29,7 @@ async function handler(req, res) {
       },
     };
     const result = await likes.updateOne(filter, updateDoc, options);
-    if (result.modifiedCount) {
+    if (result.modifiedCount || result.upsertedCount) {
       res.status(200).json({ data: newCount })
     } else {
       res.status(500).json({ error: `error updating like count for ${slug}` });

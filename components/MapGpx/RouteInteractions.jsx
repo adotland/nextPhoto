@@ -56,6 +56,7 @@ function Like({ slug, initialLikeCount }) {
       }
     } catch (err) {
       // sentry
+      console.error(err)
     }
   }
 
