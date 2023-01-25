@@ -32,7 +32,6 @@ export default function Carousel({
   const carouselButtonBgColor = useColorModeValue("whiteAlpha.400", "blackAlpha.400");
 
   if (dataList.length) {
-    console.log(dataList)
     return (
       <Container
         py={4}
