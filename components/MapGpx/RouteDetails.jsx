@@ -53,7 +53,6 @@ function ElevationDetail({ data }) {
 }
 
 export default function RouteDetails({ data, ...props }) {
-
   return (
     <Box {...props}>
       <Heading
@@ -63,8 +62,7 @@ export default function RouteDetails({ data, ...props }) {
       >
         {data.routeName}
       </Heading>
-      <RouteInteractions slug={data.slug} />
-
+      <RouteInteractions slug={data.slug} initialLikeCount={data.initialLikeCount} />
       {data.distance && <Detail title={"Distance"} data={`${data.distance} mi`} />}
       {data.elevation && <ElevationDetail data={data.elevation} />}
       {data.parkNameList?.length > 0 && (

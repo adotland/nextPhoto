@@ -7,19 +7,9 @@ import { getBounds, findParksInBounds, meterToMile, getCentroid2 } from "../../u
 import GpxParser from "gpxparser";
 import RouteDetails from "../../components/MapGpx/RouteDetails";
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import clientPromise from '../../lib/mongodb'
 
 const INITIAL_ZOOM = 14;
-
-export async function getStaticPaths() {
-  const routeList = await ff.readJson('./data', 'routes.json');
-  const pathList = routeList.map(r => {
-    return { params: { slug: r.slug } }
-  });
-  return {
-    paths: pathList,
-    fallback: false,
-  }
-}
 
 async function getAllParksData() {
   const collectionList = await ff.readJson(
@@ -36,7 +26,7 @@ async function getAllParksData() {
   return dataList;
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getServerSideProps({ params: { slug } }) {
   // get data
   const data = (await ff.readJson('./data', 'routes.json')).filter(d => d.slug === slug)[0];
   // get gpx data
@@ -49,9 +39,19 @@ export async function getStaticProps({ params: { slug } }) {
   var gpx = new GpxParser();
   gpx.parse(gpxData);
   const positions = gpx.tracks[0].points.map(p => [p.lat, p.lon]);
+  const initCenter = getCentroid2(positions);
+  let initialLikeCount = 0;
+  try {
+    const client = await clientPromise;
+    console.log('is connected')
+    const db = client.db(process.env.MONGODB_DBNAME);
+    initialLikeCount = (await db.collection('likes').findOne({slug})).count;
+    if (isNaN(initialLikeCount)) initialLikeCount = 0;
+    if (!initialLikeCount) initialLikeCount = 0;
+  } catch (err) {
+    console.log(err)
+  }
 
-  // const initCenter = [parkList[0].lat, parkList[0].long];
-  const initCenter = getCentroid2(positions)
 
   const routeData = {
     positions: gpx.tracks[0].points.map(p => [p.lat, p.lon]),
@@ -67,6 +67,7 @@ export async function getStaticProps({ params: { slug } }) {
     gpxFileLocation: data.gpxFileLocation ?? '',
     parkNameList: parkList.map(p => p.parkName),
     slug: data.slug,
+    initialLikeCount: initialLikeCount
   };
 
   const initMapDataList = parkList

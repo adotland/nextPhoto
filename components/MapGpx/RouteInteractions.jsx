@@ -1,11 +1,14 @@
-import { Box, Flex, Tag, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Flex, IconButton, Tag, Text, useColorModeValue } from "@chakra-ui/react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { FaThumbsUp } from "react-icons/fa";
 
 function handleGpxDownload(slug) {
   umami.trackEvent(slug, 'gpx-download');
   window.location.href = `/api/gpx?query=${slug}`;
 }
 
-function InteractionTag({ slug, children }) {
+function DownloadGpx({ slug }) {
   return (
     <Flex mr={5}>
       <Box>
@@ -19,14 +22,70 @@ function InteractionTag({ slug, children }) {
           onClick={() => handleGpxDownload(slug)}
           cursor={'pointer'}
         >
-          {children}
+          download gpx
         </Tag>
       </Box>
     </Flex>
   )
 }
 
-export default function RouteInteractions({ slug }) {
+function Like({ slug, initialLikeCount }) {
+  const itemName = `like-${slug}`;
+  const [count, setCount] = useState(initialLikeCount ?? 0)
+  const [isLike, setIsLike] = useState(false)
+
+  
+  useEffect(() => {
+    const alreadyLiked = window.localStorage.getItem(itemName);
+    console.log('a', alreadyLiked)
+    if ( alreadyLiked !== null ) setIsLike(JSON.parse(alreadyLiked));
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(itemName, JSON.stringify(isLike));
+  }, [itemName, isLike])
+
+
+
+  const updateLikeCount = async (isIncrement) => {
+    try {
+      const response = await fetch('/api/like', { method: 'POST', body: JSON.stringify({ isIncrement, slug, count }) })
+      const data = await response.json()
+      if (!data.error) {
+        setCount(data.data)
+      }
+    } catch (err) {
+      // sentry
+    }
+  }
+
+  const handleLikeClick = async () => {
+    if (isLike) {
+      await updateLikeCount(false)
+      setIsLike(false)
+    } else {
+      await updateLikeCount(true);
+      setIsLike(true);
+    }
+  }
+
+  return (
+    <>
+      <IconButton
+        aria-label='Add to friends'
+        icon={<FaThumbsUp />}
+        onClick={handleLikeClick}
+        variant={isLike ? 'solid' : 'outline'}
+      />
+      <Text ml={5}>
+        {count}
+      </Text>
+    </>
+  );
+}
+
+export default function RouteInteractions({ slug, initialLikeCount }) {
+
   return (
     <Flex my={4} mx={'auto'} justifyContent={['center', 'center', 'center', 'left']}>
       {/* <Text pt={2} mr={5}>Tags: </Text> */}
@@ -38,9 +97,9 @@ export default function RouteInteractions({ slug }) {
         rounded='md'
         bg={useColorModeValue('white', 'blackAlpha.200')}
       >
-        <InteractionTag slug={slug}>download gpx</InteractionTag>
-        {/* <InteractionTag type={'color'} value={'like'} />
-        <InteractionTag type={'color'} value={'share'} /> */}
+        <DownloadGpx slug={slug} />
+        <Like slug={slug} initialLikeCount={initialLikeCount} />
+        {/* <InteractionTag type={'color'} value={'share'} /> */}
         {/* {filterType && <FilterTag type={'type'} value={filterType} />} */}
         {/* {filterFeatured && <FilterTag type={'featured'} value={'featured'} />} */}
       </Flex>
