@@ -14,7 +14,7 @@ const readFile = (filePath, fileName) => {
 
 
 const getGpxFile = (fileName) => {
-  return readFile("data/gpx/", fileName)
+  return readFile("./data/gpx/", fileName)
 }
 
 const santize = (input) => {
@@ -24,7 +24,7 @@ const santize = (input) => {
     ?.toLowerCase();
 }
 
-const routeDataList = readJson("data/", "routes.json");
+const routeDataList = readJson("./data/", "routes.json");
 
 const dataList = routeDataList.map(data => {
   const gpxData = getGpxFile(data.gpxFile);
@@ -34,11 +34,11 @@ const dataList = routeDataList.map(data => {
   }
 });
 
-const collectionList = readJson("data/", "enabled_collections.json");
+const collectionList = readJson("./data/", "enabled_collections.json");
 
 let parksDataList = [];
 collectionList.map(async (collection) =>
-  parksDataList.push(readJson('data/', `${collection}_data.json`))
+  parksDataList.push(readJson('./data/', `${collection}_data.json`))
 )
 parksDataList = parksDataList.flat();
 
