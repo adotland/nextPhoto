@@ -1,0 +1,7 @@
+.parkLink {
+  margin-right: 5px;
+}
+
+.parkLink:hover {
+  border-bottom: 1px solid;
+}

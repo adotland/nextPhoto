@@ -26,7 +26,7 @@ export async function getServerSideProps({ params: { slug } }) {
   try {
     const client = await clientPromise;
     const db = client.db(process.env.MONGODB_DBNAME);
-    const dbResponse = (await db.collection('likes').findOne({slug}));
+    const dbResponse = (await db.collection('likes').findOne({ slug }));
     initialLikeCount = dbResponse?.count ?? 0;
     if (isNaN(initialLikeCount)) initialLikeCount = 0;
     if (!initialLikeCount) initialLikeCount = 0;
@@ -46,7 +46,7 @@ export async function getServerSideProps({ params: { slug } }) {
     elevation: gpx.tracks[0].elevation,
     routeName: data.name,
     gpxFileLocation: data.gpxFileLocation ?? '',
-    parkNameList: data.parkNameList,
+    parkList: data.parkList,
     slug: data.slug,
     initialLikeCount: initialLikeCount
   };

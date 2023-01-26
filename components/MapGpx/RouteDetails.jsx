@@ -6,8 +6,10 @@ import {
   Flex,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { BsArrowDownRight, BsArrowUpRight } from "react-icons/bs";
 import RouteInteractions from "./RouteInteractions";
+import styles from "./RouteDetails.module.css";
 
 function Detail({ title, data }) {
   return (
@@ -65,8 +67,10 @@ export default function RouteDetails({ data, ...props }) {
       <RouteInteractions slug={data.slug} initialLikeCount={data.initialLikeCount} />
       {data.distance && <Detail title={"Distance"} data={`${data.distance} mi`} />}
       {data.elevation && <ElevationDetail data={data.elevation} />}
-      {data.parkNameList?.length > 0 && (
-        <Detail title={"Parks Featured"} data={data.parkNameList.join(", ")} />
+      {data.parkList?.length > 0 && (
+        <Detail title={"Parks Featured"} data={data.parkList.map(p => (
+          <Link key={p.slug} href={`/park/${p.slug}`}><a className={styles.parkLink}>{p.name},&nbsp;</a></Link>
+        ))} />
       )}
     </Box>
   );

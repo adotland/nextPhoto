@@ -78,7 +78,7 @@ function Like({ slug, initialLikeCount }) {
         onClick={handleLikeClick}
         variant={isLike ? 'solid' : 'outline'}
       />
-      <Text ml={5}>
+      <Text ml={5} mr={2}>
         {count}
       </Text>
     </>

@@ -49,7 +49,8 @@ async function handler(req, res) {
   const routeData = dataList.find(d => d.slug === slug);
   if (routeData) {
     // get park data
-    const routeParkDataList = parksDataList.filter(p => routeData.parkNameList.includes(p.slug));
+    const parkSlugList = routeData.parkList.map(p => p.slug);
+    const routeParkDataList = parksDataList.filter(p => parkSlugList.includes(p.slug));
     res.status(200).send(JSON.stringify({ ...routeData, parkDataList: routeParkDataList }));
   } else {
     res.status(404).send({ error: 'failed to fetch data' })

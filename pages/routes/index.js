@@ -28,10 +28,9 @@ export async function getStaticProps() {
 
   // get park data
   const allParks = await getAllParksData();
-  // const parkList = allParks.filter(p => data.parkList.includes(p.slug));
 
   const dataList = routeDataList.map(routeData => {
-    const twoParks = [routeData.parkNameList[0], routeData.parkNameList.slice(-1)[0]];
+    const twoParks = [routeData.parkList[0]?.slug, routeData.parkList.slice(-1)[0]?.slug];
     const imageList = [];
     const image_1 = allParks.find(d => d.slug === twoParks[0]);
     imageList.push(image_1 ? image_1.imageName : null)

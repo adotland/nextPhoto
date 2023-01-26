@@ -6,15 +6,39 @@
     "hoodNameList": [
       "northwest"
     ],
-    "parkNameList": [
-      "a-b-ernst-park",
-      "bf-day-playground",
-      "alice-ball-park",
-      "greenwood-park",
-      "bitter-lake-playfield",
-      "bitter-lake-reservoir-open-space",
-      "p-patch_bitter-lake",
-      "llandover-woods-greenspace"
+    "parkList": [
+      {
+        "slug": "a-b-ernst-park",
+        "name": "A. B. Ernst Park"
+      },
+      {
+        "slug": "bf-day-playground",
+        "name": "B.F. Day Playground"
+      },
+      {
+        "slug": "alice-ball-park",
+        "name": "Alice Ball Park"
+      },
+      {
+        "slug": "greenwood-park",
+        "name": "Greenwood Park"
+      },
+      {
+        "slug": "bitter-lake-playfield",
+        "name": "Bitter Lake Playfield"
+      },
+      {
+        "slug": "bitter-lake-reservoir-open-space",
+        "name": "Bitter Lake Reservoir Open Space"
+      },
+      {
+        "slug": "p-patch_bitter-lake",
+        "name": "Bitter Lake"
+      },
+      {
+        "slug": "llandover-woods-greenspace",
+        "name": "Llandover Woods Greenspace"
+      }
     ]
   },
   {
@@ -24,15 +48,39 @@
     "hoodNameList": [
       "downtown"
     ],
-    "parkNameList": [
-      "belltown-cottage-park",
-      "victor-steinbrueck-park",
-      "bell-street-park",
-      "westlake-square",
-      "mcgraw-square",
-      "westlake-park",
-      "plymouth-pillars-park",
-      "cascade-playground"
+    "parkList": [
+      {
+        "slug": "belltown-cottage-park",
+        "name": "Belltown Cottage Park"
+      },
+      {
+        "slug": "victor-steinbrueck-park",
+        "name": "Victor Steinbrueck Park"
+      },
+      {
+        "slug": "bell-street-park",
+        "name": "Bell Street Park"
+      },
+      {
+        "slug": "westlake-square",
+        "name": "Westlake Square"
+      },
+      {
+        "slug": "mcgraw-square",
+        "name": "McGraw Square"
+      },
+      {
+        "slug": "westlake-park",
+        "name": "Westlake Park"
+      },
+      {
+        "slug": "plymouth-pillars-park",
+        "name": "Plymouth Pillars Park"
+      },
+      {
+        "slug": "cascade-playground",
+        "name": "Cascade Playground"
+      }
     ]
   },
   {
@@ -42,15 +90,39 @@
     "hoodNameList": [
       "central"
     ],
-    "parkNameList": [
-      "fairview-walkway",
-      "eastlake-triangle",
-      "bellevue-place",
-      "summit-place",
-      "belmont-place",
-      "tashkent-park",
-      "thomas-st-mini-park",
-      "summit-slope-park"
+    "parkList": [
+      {
+        "slug": "fairview-walkway",
+        "name": "Fairview Walkway"
+      },
+      {
+        "slug": "eastlake-triangle",
+        "name": "Eastlake Triangle"
+      },
+      {
+        "slug": "bellevue-place",
+        "name": "Bellevue Place"
+      },
+      {
+        "slug": "summit-place",
+        "name": "Summit Place"
+      },
+      {
+        "slug": "belmont-place",
+        "name": "Belmont Place"
+      },
+      {
+        "slug": "tashkent-park",
+        "name": "Tashkent Park"
+      },
+      {
+        "slug": "thomas-st-mini-park",
+        "name": "Thomas St. Mini Park"
+      },
+      {
+        "slug": "summit-slope-park",
+        "name": "Summit Slope Park"
+      }
     ]
   },
   {
@@ -58,17 +130,47 @@
     "gpxFile": "Eastlake Interlaken Volunteer Park.gpx",
     "slug": "eastlake-interlaken-volunteer-park",
     "hoodNameList": [],
-    "parkNameList": [
-      "i-5-colonnade",
-      "harvard-miller-roanoke-annex",
-      "roanoke-park",
-      "bagley-viewpoint",
-      "interlaken-park",
-      "louisa-boren-park",
-      "grand-army-of-the-republic-cemetery",
-      "st-marks-greenbelt",
-      "volunteer-park-conservatory",
-      "volunteer-park"
+    "parkList": [
+      {
+        "slug": "i-5-colonnade",
+        "name": "I-5 Colonnade"
+      },
+      {
+        "slug": "harvard-miller-roanoke-annex",
+        "name": "Harvard-Miller Roanoke Annex"
+      },
+      {
+        "slug": "roanoke-park",
+        "name": "Roanoke Park"
+      },
+      {
+        "slug": "bagley-viewpoint",
+        "name": "Bagley Viewpoint"
+      },
+      {
+        "slug": "interlaken-park",
+        "name": "Interlaken Park"
+      },
+      {
+        "slug": "louisa-boren-park",
+        "name": "Louisa Boren Park"
+      },
+      {
+        "slug": "grand-army-of-the-republic-cemetery",
+        "name": "Grand Army of the Republic Cemetery"
+      },
+      {
+        "slug": "st-marks-greenbelt",
+        "name": "St. Mark's Greenbelt"
+      },
+      {
+        "slug": "volunteer-park-conservatory",
+        "name": "Volunteer Park Conservatory"
+      },
+      {
+        "slug": "volunteer-park",
+        "name": "Volunteer Park"
+      }
     ]
   },
   {
@@ -76,19 +178,55 @@
     "gpxFile": "Elliot Bay to Central District.gpx",
     "slug": "elliot-bay-to-central-district",
     "hoodNameList": [],
-    "parkNameList": [
-      "washington-street-public-boat-landing",
-      "pioneer-square",
-      "hing-hay-park",
-      "international-childrens-park",
-      "beacon-place",
-      "sturgus-park",
-      "daejeon-park",
-      "atlantic-street-park",
-      "jimi-hendrix-park",
-      "blue-dog-pond",
-      "judkins-park-and-playfield",
-      "judge-charles-m-stokes-overlook"
+    "parkList": [
+      {
+        "slug": "washington-street-public-boat-landing",
+        "name": "Washington Street Public Boat Landing"
+      },
+      {
+        "slug": "pioneer-square",
+        "name": "Pioneer Square"
+      },
+      {
+        "slug": "hing-hay-park",
+        "name": "Hing Hay Park"
+      },
+      {
+        "slug": "international-childrens-park",
+        "name": "International Children's Park"
+      },
+      {
+        "slug": "beacon-place",
+        "name": "Beacon Place"
+      },
+      {
+        "slug": "sturgus-park",
+        "name": "Sturgus Park"
+      },
+      {
+        "slug": "daejeon-park",
+        "name": "Daejeon Park"
+      },
+      {
+        "slug": "atlantic-street-park",
+        "name": "Atlantic Street Park"
+      },
+      {
+        "slug": "jimi-hendrix-park",
+        "name": "Jimi Hendrix Park"
+      },
+      {
+        "slug": "blue-dog-pond",
+        "name": "Blue Dog Pond"
+      },
+      {
+        "slug": "judkins-park-and-playfield",
+        "name": "Judkins Park and Playfield"
+      },
+      {
+        "slug": "judge-charles-m-stokes-overlook",
+        "name": "Judge Charles M. Stokes Overlook"
+      }
     ]
   },
   {
@@ -99,13 +237,31 @@
       "magnolia queen anne",
       "downtown"
     ],
-    "parkNameList": [
-      "tilikum-place",
-      "counterbalance-park-an-urban-oasis",
-      "highland-place",
-      "west-queen-anne-playfield",
-      "east-queen-anne-playground",
-      "maclean-park"
+    "parkList": [
+      {
+        "slug": "tilikum-place",
+        "name": "Tilikum Place"
+      },
+      {
+        "slug": "counterbalance-park-an-urban-oasis",
+        "name": "Counterbalance Park: An Urban Oasis"
+      },
+      {
+        "slug": "highland-place",
+        "name": "Highland Place"
+      },
+      {
+        "slug": "west-queen-anne-playfield",
+        "name": "West Queen Anne Playfield"
+      },
+      {
+        "slug": "east-queen-anne-playground",
+        "name": "East Queen Anne Playground"
+      },
+      {
+        "slug": "maclean-park",
+        "name": "MacLean Park"
+      }
     ]
   },
   {
@@ -113,22 +269,67 @@
     "gpxFile": "Gas Works to Greenlake Loop.gpx",
     "slug": "gas-works-to-greenlake-loop",
     "hoodNameList": [],
-    "parkNameList": [
-      "wallingford-steps",
-      "wallingford-playfield",
-      "p-patch_good-shepherd",
-      "meridian-playground",
-      "corliss-place",
-      "keystone-place",
-      "ne-60th-street-park",
-      "green-lake-park",
-      "crescent-place",
-      "linden-orchard-park",
-      "p-patch_linden-orchard",
-      "woodland-park",
-      "fremont-peak-park",
-      "ross-playground",
-      "fremont-canal-park"
+    "parkList": [
+      {
+        "slug": "wallingford-steps",
+        "name": "Wallingford Steps"
+      },
+      {
+        "slug": "wallingford-playfield",
+        "name": "Wallingford Playfield"
+      },
+      {
+        "slug": "p-patch_good-shepherd",
+        "name": "Good Shepherd"
+      },
+      {
+        "slug": "meridian-playground",
+        "name": "Meridian Playground"
+      },
+      {
+        "slug": "corliss-place",
+        "name": "Corliss Place"
+      },
+      {
+        "slug": "keystone-place",
+        "name": "Keystone Place"
+      },
+      {
+        "slug": "ne-60th-street-park",
+        "name": "NE 60th Street Park"
+      },
+      {
+        "slug": "green-lake-park",
+        "name": "Green Lake Park"
+      },
+      {
+        "slug": "crescent-place",
+        "name": "Crescent Place"
+      },
+      {
+        "slug": "linden-orchard-park",
+        "name": "Linden Orchard Park"
+      },
+      {
+        "slug": "p-patch_linden-orchard",
+        "name": "Linden Orchard"
+      },
+      {
+        "slug": "woodland-park",
+        "name": "Woodland Park"
+      },
+      {
+        "slug": "fremont-peak-park",
+        "name": "Fremont Peak Park"
+      },
+      {
+        "slug": "ross-playground",
+        "name": "Ross Playground"
+      },
+      {
+        "slug": "fremont-canal-park",
+        "name": "Fremont Canal Park"
+      }
     ]
   },
   {
@@ -136,13 +337,31 @@
     "gpxFile": "Gas Works to Montlake.gpx",
     "slug": "gas-works-to-montlake",
     "hoodNameList": [],
-    "parkNameList": [
-      "gas-works-park",
-      "waterway-19",
-      "christie-park",
-      "west-montlake-park",
-      "montlake-boulevard",
-      "east-montlake-park"
+    "parkList": [
+      {
+        "slug": "gas-works-park",
+        "name": "Gas Works Park"
+      },
+      {
+        "slug": "waterway-19",
+        "name": "Waterway 19"
+      },
+      {
+        "slug": "christie-park",
+        "name": "Christie Park"
+      },
+      {
+        "slug": "west-montlake-park",
+        "name": "West Montlake Park"
+      },
+      {
+        "slug": "montlake-boulevard",
+        "name": "Montlake Boulevard"
+      },
+      {
+        "slug": "east-montlake-park",
+        "name": "East Montlake Park"
+      }
     ]
   },
   {
@@ -150,17 +369,47 @@
     "gpxFile": "North Passage Point Park to East Lake Cheshiahud.gpx",
     "slug": "north-passage-point-park-to-east-lake-cheshiahud",
     "hoodNameList": [],
-    "parkNameList": [
-      "north-passage-point-park",
-      "northlake-park",
-      "peace-park",
-      "south-passage-point-park",
-      "fairview-park",
-      "rogers-playground",
-      "roanoke-st-mini-park",
-      "cheshiahud-lake-union-loop",
-      "lynn-street-mini-park",
-      "terry-pettus-park"
+    "parkList": [
+      {
+        "slug": "north-passage-point-park",
+        "name": "North Passage Point Park"
+      },
+      {
+        "slug": "northlake-park",
+        "name": "Northlake Park"
+      },
+      {
+        "slug": "peace-park",
+        "name": "Peace Park"
+      },
+      {
+        "slug": "south-passage-point-park",
+        "name": "South Passage Point Park"
+      },
+      {
+        "slug": "fairview-park",
+        "name": "Fairview Park"
+      },
+      {
+        "slug": "rogers-playground",
+        "name": "Rogers Playground"
+      },
+      {
+        "slug": "roanoke-st-mini-park",
+        "name": "Roanoke St. Mini Park"
+      },
+      {
+        "slug": "cheshiahud-lake-union-loop",
+        "name": "Cheshiahud Lake Union Loop"
+      },
+      {
+        "slug": "lynn-street-mini-park",
+        "name": "Lynn Street Mini Park"
+      },
+      {
+        "slug": "terry-pettus-park",
+        "name": "Terry Pettus Park"
+      }
     ]
   },
   {
@@ -168,18 +417,51 @@
     "gpxFile": "Occidental to Oxbow.gpx",
     "slug": "occidental-to-oxbow",
     "hoodNameList": [],
-    "parkNameList": [
-      "occidental-square",
-      "katie-blacks-garden",
-      "beacon-hill-playground",
-      "12th-ave-s-viewpoint",
-      "mcclellan-place",
-      "stevens-place",
-      "maple-wood-playfield",
-      "cleveland-playfield",
-      "georgetown-playfield",
-      "oxbow-park",
-      "p-patch_oxbow-park"
+    "parkList": [
+      {
+        "slug": "occidental-square",
+        "name": "Occidental Square"
+      },
+      {
+        "slug": "katie-blacks-garden",
+        "name": "Katie Black's Garden"
+      },
+      {
+        "slug": "beacon-hill-playground",
+        "name": "Beacon Hill Playground"
+      },
+      {
+        "slug": "12th-ave-s-viewpoint",
+        "name": "12th Ave S Viewpoint"
+      },
+      {
+        "slug": "mcclellan-place",
+        "name": "McClellan Place"
+      },
+      {
+        "slug": "stevens-place",
+        "name": "Stevens Place"
+      },
+      {
+        "slug": "maple-wood-playfield",
+        "name": "Maple Wood Playfield"
+      },
+      {
+        "slug": "cleveland-playfield",
+        "name": "Cleveland Playfield"
+      },
+      {
+        "slug": "georgetown-playfield",
+        "name": "Georgetown Playfield"
+      },
+      {
+        "slug": "oxbow-park",
+        "name": "Oxbow Park"
+      },
+      {
+        "slug": "p-patch_oxbow-park",
+        "name": "Oxbow Park"
+      }
     ]
   },
   {
@@ -189,12 +471,27 @@
     "hoodNameList": [
       "magnolia queen anne"
     ],
-    "parkNameList": [
-      "bhy-kracke-park",
-      "ward-springs-park",
-      "highland-place",
-      "observatory-courts",
-      "highland-drive-parkway"
+    "parkList": [
+      {
+        "slug": "bhy-kracke-park",
+        "name": "Bhy Kracke Park"
+      },
+      {
+        "slug": "ward-springs-park",
+        "name": "Ward Springs Park"
+      },
+      {
+        "slug": "highland-place",
+        "name": "Highland Place"
+      },
+      {
+        "slug": "observatory-courts",
+        "name": "Observatory Courts"
+      },
+      {
+        "slug": "highland-drive-parkway",
+        "name": "Highland Drive Parkway"
+      }
     ]
   },
   {
@@ -202,9 +499,15 @@
     "gpxFile": "Space Needle Elliot Bay Park Loop.gpx",
     "slug": "space-needle-elliot-bay-park-loop",
     "hoodNameList": [],
-    "parkNameList": [
-      "myrtle-edwards-park",
-      "port_terminal-91-bike-trail-elliott-bay-trail"
+    "parkList": [
+      {
+        "slug": "myrtle-edwards-park",
+        "name": "Myrtle Edwards Park"
+      },
+      {
+        "slug": "port_terminal-91-bike-trail-elliott-bay-trail",
+        "name": "Terminal 91 Bike Trail (Elliott Bay Trail)"
+      }
     ]
   }
 ]
