@@ -1,17 +1,6 @@
 import { withSentry } from "@sentry/nextjs";
 import path from "path";
 import * as fs from "fs";
-import { promisify } from "util";
-import { Stream } from "stream";
-
-const pipeline = promisify(Stream.pipeline);
-
-const dataList = JSON.parse(
-  fs.readFileSync(
-    path.join(process.cwd(), "data/") + "routes.json",
-    "utf8"
-  )
-);
 
 const getGpxFile = (fileName) => {
   return fs.readFileSync(
@@ -27,15 +16,27 @@ const santize = (input) => {
     ?.toLowerCase();
 }
 
+const routeDataList = JSON.parse(
+  fs.readFileSync(
+    path.join(process.cwd(), "data/") + "routes.json",
+    "utf8"
+  )
+);
+
+const dataList = routeDataList.map(data => {
+  const gpxData = getGpxFile(data.gpxFile);
+  return {
+    ...data,
+    gpxData
+  }
+})
+
 async function handler(req, res) {
-  let { slug } = req.query;
+  let { slug } = req.query
   slug = santize(slug);
   const found = dataList.find(d => d.slug === slug);
   if (found) {
-    const file = getGpxFile(found.gpxFile)
-    res.setHeader('Content-Type', 'application/gpx+xml');
-    res.setHeader('Content-Disposition', `attachment; filename=${found.gpxFile}`);
-    await pipeline(file, res);
+    res.status(200).send(JSON.stringify(found));
   } else {
     res.status(404).send({ error: 'failed to fetch data' })
   }

@@ -8,6 +8,7 @@ import GpxParser from "gpxparser";
 import RouteDetails from "../../components/MapGpx/RouteDetails";
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import clientPromise from '../../lib/mongodb'
+import config from "../../config";
 
 const INITIAL_ZOOM = 14;
 
@@ -28,16 +29,16 @@ async function getAllParksData() {
 
 export async function getServerSideProps({ params: { slug } }) {
   // get data
-  const data = (await ff.readJson('./data', 'routes.json')).filter(d => d.slug === slug)[0];
-  // get gpx data
-  const gpxData = await ff.read('./data/gpx', `${data.gpxFile}`);
+  const api_url = config.endpoints.api
+  const response = await fetch(`${api_url}/api/routes?slug=${slug}`);
+  const data = await response.json();
   // get park data
   const allParks = await getAllParksData();
   const parkList = allParks.filter(p => data.parkList.includes(p.slug));
 
   // get route data
   var gpx = new GpxParser();
-  gpx.parse(gpxData);
+  gpx.parse(data.gpxData);
   const positions = gpx.tracks[0].points.map(p => [p.lat, p.lon]);
   const initCenter = getCentroid2(positions);
   let initialLikeCount = 0;
@@ -51,7 +52,6 @@ export async function getServerSideProps({ params: { slug } }) {
   } catch (err) {
     console.log(err)
   }
-
 
   const routeData = {
     positions: gpx.tracks[0].points.map(p => [p.lat, p.lon]),
