@@ -3,10 +3,10 @@
     "name": "Ballard to Llandover Woods",
     "gpxFile": "Ballard to Llandover Woods.gpx",
     "slug": "ballard-to-llandover-woods",
-    "hoodList": [
+    "hoodNameList": [
       "northwest"
     ],
-    "parkList": [
+    "parkNameList": [
       "a-b-ernst-park",
       "bf-day-playground",
       "alice-ball-park",
@@ -21,10 +21,10 @@
     "name": "Belltown to Cascade",
     "gpxFile": "Belltown to Cascade.gpx",
     "slug": "belltown-to-cascade",
-    "hoodList": [
+    "hoodNameList": [
       "downtown"
     ],
-    "parkList": [
+    "parkNameList": [
       "belltown-cottage-park",
       "victor-steinbrueck-park",
       "bell-street-park",
@@ -39,10 +39,10 @@
     "name": "East Lake Union to Capitol Hill",
     "gpxFile": "East Lake Union to Capitol Hill.gpx",
     "slug": "east-lake-union-to-capitol-hill",
-    "hoodList": [
+    "hoodNameList": [
       "central"
     ],
-    "parkList": [
+    "parkNameList": [
       "fairview-walkway",
       "eastlake-triangle",
       "bellevue-place",
@@ -57,8 +57,8 @@
     "name": "Eastlake Interlaken Volunteer Park",
     "gpxFile": "Eastlake Interlaken Volunteer Park.gpx",
     "slug": "eastlake-interlaken-volunteer-park",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "i-5-colonnade",
       "harvard-miller-roanoke-annex",
       "roanoke-park",
@@ -75,8 +75,8 @@
     "name": "Elliot Bay to Central District",
     "gpxFile": "Elliot Bay to Central District.gpx",
     "slug": "elliot-bay-to-central-district",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "washington-street-public-boat-landing",
       "pioneer-square",
       "hing-hay-park",
@@ -95,11 +95,11 @@
     "name": "From Belltown to Queen Anne",
     "gpxFile": "From Belltown to Queen Anne.gpx",
     "slug": "from-belltown-to-queen-anne",
-    "hoodList": [
+    "hoodNameList": [
       "magnolia queen anne",
       "downtown"
     ],
-    "parkList": [
+    "parkNameList": [
       "tilikum-place",
       "counterbalance-park-an-urban-oasis",
       "highland-place",
@@ -112,8 +112,8 @@
     "name": "Gas Works to Greenlake Loop",
     "gpxFile": "Gas Works to Greenlake Loop.gpx",
     "slug": "gas-works-to-greenlake-loop",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "wallingford-steps",
       "wallingford-playfield",
       "p-patch_good-shepherd",
@@ -135,8 +135,8 @@
     "name": "Gas Works to Montlake",
     "gpxFile": "Gas Works to Montlake.gpx",
     "slug": "gas-works-to-montlake",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "gas-works-park",
       "waterway-19",
       "christie-park",
@@ -149,8 +149,8 @@
     "name": "North Passage Point Park to East Lake Cheshiahud",
     "gpxFile": "North Passage Point Park to East Lake Cheshiahud.gpx",
     "slug": "north-passage-point-park-to-east-lake-cheshiahud",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "north-passage-point-park",
       "northlake-park",
       "peace-park",
@@ -167,8 +167,8 @@
     "name": "Occidental to Oxbow",
     "gpxFile": "Occidental to Oxbow.gpx",
     "slug": "occidental-to-oxbow",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "occidental-square",
       "katie-blacks-garden",
       "beacon-hill-playground",
@@ -186,10 +186,10 @@
     "name": "Queen Anne Hill Southeast",
     "gpxFile": "Queen Anne Hill Southeast.gpx",
     "slug": "queen-anne-hill-southeast",
-    "hoodList": [
+    "hoodNameList": [
       "magnolia queen anne"
     ],
-    "parkList": [
+    "parkNameList": [
       "bhy-kracke-park",
       "ward-springs-park",
       "highland-place",
@@ -201,8 +201,8 @@
     "name": "Space Needle Elliot Bay Park Loop",
     "gpxFile": "Space Needle Elliot Bay Park Loop.gpx",
     "slug": "space-needle-elliot-bay-park-loop",
-    "hoodList": [],
-    "parkList": [
+    "hoodNameList": [],
+    "parkNameList": [
       "myrtle-edwards-park",
       "port_terminal-91-bike-trail-elliott-bay-trail"
     ]

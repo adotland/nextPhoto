@@ -1,4 +1,3 @@
-import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../../components/Carousel";
 import MapGpx from "../../components/MapGpx";
@@ -12,29 +11,11 @@ import config from "../../config";
 
 const INITIAL_ZOOM = 14;
 
-async function getAllParksData() {
-  const collectionList = await ff.readJson(
-    "./data",
-    "enabled_collections.json"
-  );
-  const dataList = (
-    await Promise.all(
-      collectionList.map(async (collection) =>
-        ff.readJson(ff.path(`./data/${collection}_data.json`))
-      )
-    )
-  ).flat();
-  return dataList;
-}
-
 export async function getServerSideProps({ params: { slug } }) {
   // get data
   const api_url = config.endpoints.api
   const response = await fetch(`${api_url}/api/routes?slug=${slug}`);
   const data = await response.json();
-  // get park data
-  const allParks = await getAllParksData();
-  const parkList = allParks.filter(p => data.parkList.includes(p.slug));
 
   // get route data
   var gpx = new GpxParser();
@@ -50,7 +31,7 @@ export async function getServerSideProps({ params: { slug } }) {
     if (isNaN(initialLikeCount)) initialLikeCount = 0;
     if (!initialLikeCount) initialLikeCount = 0;
   } catch (err) {
-    console.log(err)
+    console.error(err)
   }
 
   const routeData = {
@@ -65,35 +46,31 @@ export async function getServerSideProps({ params: { slug } }) {
     elevation: gpx.tracks[0].elevation,
     routeName: data.name,
     gpxFileLocation: data.gpxFileLocation ?? '',
-    parkNameList: parkList.map(p => p.parkName),
+    parkNameList: data.parkNameList,
     slug: data.slug,
     initialLikeCount: initialLikeCount
   };
 
-  const initMapDataList = parkList
+  const initMapDataList = data.parkDataList
 
   const initCarouselDataList = initMapDataList.map(data => {
     return {
       parkName: data.parkName,
       slug: data.slug,
-      // lat: data.lat || null,
-      // long: data.long || null,
       imageName: data.imageName,
-      // width: data.width,
-      // height: data.height,
       filters: data.filters,
       collection: data.collection,
     }
   });
 
-  return { props: { initMapDataList, initCarouselDataList, parkList, routeData, routeDetails } };
+  return { props: { initCarouselDataList, parkDataList: data.parkDataList, routeData, routeDetails } };
 }
 
 
-export default function MapRoutePage({ initMapDataList, initCarouselDataList, parkList, routeData, routeDetails }) {
+export default function MapRoutePage({ initCarouselDataList, parkDataList, routeData, routeDetails }) {
 
   const [carouselDataList, setCarouselDataList] = useState(initCarouselDataList);
-  const [mapDataList, setMapDataList] = useState(initMapDataList);
+  const [mapDataList, setMapDataList] = useState(parkDataList);
   const [newParkSlug, setNewParkSlug] = useState()
   const [activeCarouselItem, setActiveCarouselItem] = useState(0);
   const [activeMarker, setActiveMarker] = useState()
@@ -103,7 +80,7 @@ export default function MapRoutePage({ initMapDataList, initCarouselDataList, pa
   }
 
   useEffect(() => {
-    const newData = parkList.filter(d => d.slug === newParkSlug)
+    const newData = parkDataList.filter(d => d.slug === newParkSlug)
     if (newData.length) {
       setCarouselDataList(prevDataList => [...newData, ...prevDataList].slice(0, 15));
     }
@@ -112,7 +89,7 @@ export default function MapRoutePage({ initMapDataList, initCarouselDataList, pa
 
   const getParksInBounds = (bounds) => {
     // get every park with lat > s, lat < n, long > w, long < e
-    const parksInBounds = findParksInBounds(parkList, bounds, 15)
+    const parksInBounds = findParksInBounds(parkDataList, bounds, 15)
     setMapDataList(parksInBounds)
     setCarouselDataList(parksInBounds)
   }
