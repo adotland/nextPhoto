@@ -5,7 +5,7 @@ import { FaThumbsUp } from "react-icons/fa";
 
 function handleGpxDownload(slug) {
   umami.trackEvent(slug, 'gpx-download');
-  window.location.href = `/api/gpx?query=${slug}`;
+  window.location.href = `/api/gpx?slug=${slug}`;
 }
 
 function DownloadGpx({ slug }) {
