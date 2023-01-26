@@ -1,11 +1,10 @@
-import { Box, Flex, Heading, HStack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import { ff } from "fssf";
 import Link from "next/link";
 import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import PageWrap from "../../components/PageWrap";
 import SEO from "../../components/SEO/general";
-import { Link as ChakraLink } from "@chakra-ui/react";
 import styles from "./RouteList.module.css";
 
 async function getAllParksData() {
@@ -16,7 +15,7 @@ async function getAllParksData() {
   const dataList = (
     await Promise.all(
       collectionList.map(async (collection) =>
-        ff.readJson(ff.path(`./data/${collection}_data.json`))
+        await ff.readJson(ff.path(`./data/${collection}_data.json`))
       )
     )
   ).flat();
@@ -32,7 +31,7 @@ export async function getStaticProps() {
   // const parkList = allParks.filter(p => data.parkList.includes(p.slug));
 
   const dataList = routeDataList.map(routeData => {
-    const twoParks = [routeData.parkList[0], routeData.parkList.slice(-1)[0]];
+    const twoParks = [routeData.parkNameList[0], routeData.parkNameList.slice(-1)[0]];
     const imageList = [];
     const image_1 = allParks.find(d => d.slug === twoParks[0]);
     imageList.push(image_1 ? image_1.imageName : null)
