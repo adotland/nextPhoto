@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import { ff } from "fssf";
 import Details from "../../components/Details";
@@ -69,10 +69,11 @@ export default function ParkSlug({ currentData, related }) {
     <>
       <SEO data={currentData} />
       <Flex
-        m={[0, 0, 0, 7]}
         justifyContent={"space-evenly"}
         flexDir={["column", "column", "column", "row"]}
-        mt={[4, 4, 16, 4]}
+        bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
+        padding={[0, 0, 0, '33px']}
+        boxShadow={'rgb(0 0 0 / 17%) inset 0px 2px 4px -2px'}
       >
         <Box
           flex={1}

@@ -208,8 +208,8 @@ const Slider = ({
       </Flex>
       <Box
         ref={ref}
-        w={{ base: "100%", md: `calc(100% + ${gap}px)` }}
-        ml={{ base: 0, md: `-${gap / 2}px` }}
+        // w={{ base: "100%", md: `calc(100% + ${gap}px)` }}
+        // ml={{ base: 0, md: `-${gap / 2}px` }}
         px={`${gap / 2}px`}
         position="relative"
         overflow="hidden"

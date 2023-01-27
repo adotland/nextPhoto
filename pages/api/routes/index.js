@@ -34,7 +34,6 @@ async function handler(req, res) {
   slug = santize(slug);
   const routeData = routeDataList.find(d => d.slug === slug);
   if (routeData) {
-    // get park data
     const parkSlugList = routeData.parkList.map(p => p.slug);
     const routeParkDataList = parksDataList.filter(p => parkSlugList.includes(p.slug));
     res.status(200).send(JSON.stringify({ ...routeData, parkDataList: routeParkDataList }));

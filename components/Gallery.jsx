@@ -15,6 +15,7 @@ function GalleryHeader({ children }) {
       pt={4}
       pl={['initial', 'initial', 'initial', 8]}
       textAlign={['center', 'center', 'center', 'left']}
+      boxShadow={'rgb(0 0 0 / 17%) inset 0px 2px 4px -2px'}
     >
       <Heading as={'h1'} fontSize={'lg'} color={useColorModeValue('blackAlpha.700', 'whiteAlpha.700')}>{children}</Heading>
     </Box>
@@ -36,7 +37,8 @@ export default function Gallery({ dataList, filterColor, filterImageType, isFeat
   const textColor = useColorModeValue('black', 'white')
 
   return (
-    <Box mt={[4, 4, 14, 4]} >
+    <Box mt={[4, 4, 14, 4]}
+    >
       <SEO pageTitle={filterImageType && `${capFirst(filterImageType)} Collection` || filterColor && `${capFirst(filterColor)} Collection` || isFeatured && 'Featured Collection'} />
       <GalleryTitle filterColor={filterColor} filterImageType={filterImageType} />
       <Box
