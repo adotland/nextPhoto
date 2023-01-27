@@ -1,4 +1,4 @@
-import PageWrap from "../../components/PageWrap";
+import MapPageWrap from "../../components/MapPageWrap";
 import { ff } from "fssf";
 import { useEffect, useState } from "react";
 import Carousel from "../../components/Carousel";
@@ -162,7 +162,7 @@ export default function MapPage({
   return (
     <>
       <SEO pageTitle={"Map of Parks in the Greater Seattle Area"} />
-      <PageWrap>
+      <MapPageWrap>
         <MapFull
           dataList={mapDataList}
           loadData={loadData}
@@ -180,7 +180,7 @@ export default function MapPage({
           setActiveCarouselItem={setActiveCarouselItem}
           setActiveMarker={setActiveMarker}
         />
-      </PageWrap>
+      </MapPageWrap>
     </>
   );
 }

@@ -4,11 +4,8 @@ import { Box, Flex } from '@chakra-ui/layout'
 
 import Footer from './Footer';
 import Navbar from './Navbar';
-import { useRouter } from 'next/router';
 
 export default function Layout({ children }) {
-  const router = useRouter();
-  const padding = router.pathname.indexOf('/map') === -1 ? "6rem" : "0px"; // TODO
   return (
     <>
       <Head>
@@ -19,7 +16,7 @@ export default function Layout({ children }) {
           <header>
             <Navbar />
           </header>
-          <Box as='main' paddingTop={[padding]} paddingBottom={'6rem'}>
+          <Box as='main' paddingTop={["4rem", "4rem", "4rem", "6rem",]} paddingBottom={'6rem'}>
             {children}
           </Box>
         </Flex>
