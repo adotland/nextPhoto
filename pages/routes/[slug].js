@@ -2,14 +2,11 @@ import { useEffect, useState } from "react";
 import Carousel from "../../components/Carousel";
 import MapGpx from "../../components/MapGpx";
 import SEO from "../../components/SEO/general";
-import { getBounds, findParksInBounds, meterToMile, getCentroid2 } from "../../utils/helpers";
-import GpxParser from "gpxparser";
+import { findParksInBounds } from "../../utils/helpers";
 import RouteDetails from "../../components/MapGpx/RouteDetails";
 import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import clientPromise from '../../lib/mongodb'
 import config from "../../config";
-
-const INITIAL_ZOOM = 14;
 
 export async function getServerSideProps({ params: { slug } }) {
   // get data
@@ -18,10 +15,6 @@ export async function getServerSideProps({ params: { slug } }) {
   const data = await response.json();
 
   // get route data
-  var gpx = new GpxParser();
-  gpx.parse(data.gpxData);
-  const positions = gpx.tracks[0].points.map(p => [p.lat, p.lon]);
-  const initCenter = getCentroid2(positions);
   let initialLikeCount = 0;
   try {
     const client = await clientPromise;
@@ -34,21 +27,14 @@ export async function getServerSideProps({ params: { slug } }) {
     console.error(err)
   }
 
-  const routeData = {
-    positions: gpx.tracks[0].points.map(p => [p.lat, p.lon]),
-    initZoom: INITIAL_ZOOM,
-    initCenter,
-    initBounds: getBounds(...initCenter, INITIAL_ZOOM),
-  };
 
   const routeDetails = {
-    distance: meterToMile(gpx.tracks[0].distance.total),
-    elevation: gpx.tracks[0].elevation,
-    routeName: data.name,
-    gpxFileLocation: data.gpxFileLocation ?? '',
-    parkList: data.parkList,
-    slug: data.slug,
-    initialLikeCount: initialLikeCount
+    distance: data.routeData?.distance,
+    elevation: data.routeData?.elevation,
+    routeName: data.name ?? '',
+    parkList: data.parkList ?? [],
+    slug: data.slug ?? '',
+    initialLikeCount: initialLikeCount ?? 0
   };
 
   const initMapDataList = data.parkDataList
@@ -63,7 +49,7 @@ export async function getServerSideProps({ params: { slug } }) {
     }
   });
 
-  return { props: { initCarouselDataList, parkDataList: data.parkDataList, routeData, routeDetails } };
+  return { props: { initCarouselDataList, parkDataList: data.parkDataList, routeData: data.routeData, routeDetails } };
 }
 
 

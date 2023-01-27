@@ -25,10 +25,6 @@ function Detail({ title, data }) {
   );
 }
 
-function meterToFoot(m) {
-  return (Number(m) / 0.3048).toFixed(0);
-}
-
 function IconDetail({ title, text, icon }) {
   return (
     <Flex justifyContent={["center", "center", "center", "flex-start"]} alignItems={'center'}>
@@ -46,8 +42,8 @@ function ElevationDetail({ data }) {
       <Box ml={2}>
         &nbsp;
         <Box display={"inline-block"} ml={2}>
-          <IconDetail title={"climb"} text={`${meterToFoot(data.pos)} ft`} icon={<BsArrowUpRight />} />
-          <IconDetail title={"descend"} text={`${meterToFoot(data.neg)} ft`} icon={<BsArrowDownRight />} />
+          <IconDetail title={"climb"} text={`${data.pos} ft`} icon={<BsArrowUpRight />} />
+          <IconDetail title={"descend"} text={`${data.neg} ft`} icon={<BsArrowDownRight />} />
         </Box>
       </Box>
     </Box>

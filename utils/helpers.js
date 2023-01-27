@@ -97,32 +97,3 @@ export function findParksInBounds(list, bounds, amount) {
   })
     .slice(0, amount);
 }
-
-export function meterToMile (m) {
-  return (Number(m) / 1609.344).toFixed(2);
-}
-
-export function meterToFoot (m) {
-  return (m / 0.3048).toFixed(2)
-}
-
-// https://stackoverflow.com/questions/22796520/finding-the-center-of-leaflet-polygon
-export function getCentroid2 (arr) {
-  var twoTimesSignedArea = 0;
-  var cxTimes6SignedArea = 0;
-  var cyTimes6SignedArea = 0;
-
-  var length = arr.length
-
-  var x = function (i) { return arr[i % length][0] };
-  var y = function (i) { return arr[i % length][1] };
-
-  for ( var i = 0; i < arr.length; i++) {
-      var twoSA = x(i)*y(i+1) - x(i+1)*y(i);
-      twoTimesSignedArea += twoSA;
-      cxTimes6SignedArea += (x(i) + x(i+1)) * twoSA;
-      cyTimes6SignedArea += (y(i) + y(i+1)) * twoSA;
-  }
-  var sixSignedArea = 3 * twoTimesSignedArea;
-  return [ cxTimes6SignedArea / sixSignedArea, cyTimes6SignedArea / sixSignedArea];        
-}
