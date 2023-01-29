@@ -60,7 +60,7 @@ export default function RouteDetails({ data, ...props }) {
       >
         {data.routeName}
       </Heading>
-      <RouteInteractions slug={data.slug} initialLikeCount={data.initialLikeCount} />
+      <RouteInteractions slug={data.slug} initialLikeCount={data.initialLikeCount} links={data.links} />
       {data.distance && <Detail title={"Distance"} data={`${data.distance} mi`} />}
       {data.elevation && <ElevationDetail data={data.elevation} />}
       {data.parkList?.length > 0 && (

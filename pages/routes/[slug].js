@@ -34,7 +34,8 @@ export async function getServerSideProps({ params: { slug } }) {
     routeName: data.name ?? '',
     parkList: data.parkList ?? [],
     slug: data.slug ?? '',
-    initialLikeCount: initialLikeCount ?? 0
+    initialLikeCount: initialLikeCount ?? 0,
+    links: data.links,
   };
 
   const initMapDataList = data.parkDataList
