@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import PageWrap from "../../components/PageWrap";
+import RouteFilterHood from "../../components/RouteFilterHood";
 import SEO from "../../components/SEO/general";
 import styles from "./RouteList.module.css";
 
@@ -23,38 +24,52 @@ async function getAllParksData() {
 }
 
 export async function getStaticProps() {
-  // get list of routes
-  const routeDataList = await ff.readJson('./data', 'routes.json');
-
-  // get park data
+  const routeDataListInput = await ff.readJson('./data', 'routes.json');
   const allParks = await getAllParksData();
+  const hoodFilterSet = new Set();
 
-  const dataList = routeDataList.map(routeData => {
+  const routeDataList = routeDataListInput.map(routeData => {
+    // get hood filters
+    routeData.hoodNameList.forEach(hood => hoodFilterSet.add(hood));
+    // get cover images
     const twoParks = [routeData.parkList[0]?.slug, routeData.parkList.slice(-1)[0]?.slug];
     const imageList = [];
     const image_1 = allParks.find(d => d.slug === twoParks[0]);
-    imageList.push(image_1 ? image_1.imageName : null)
+    imageList.push(image_1 ? image_1.imageName : null);
     const image_2 = allParks.find(d => d.slug === twoParks[1]);
-    imageList.push(image_2 ? image_2.imageName : null)
+    imageList.push(image_2 ? image_2.imageName : null);
     return {
       ...routeData,
       imageList
     }
   });
 
-  return {
-    props: {
-      dataList
-    }
+  const filters = {
+    hood: Array.from(hoodFilterSet)
   }
 
+  return {
+    props: {
+      routeDataList,
+      filters
+    }
+  }
 }
 
 function RouteFilters({
-  data,
-  setData
+  routeDataList,
+  filteredRouteDataList,
+  setFilteredRouteDataList,
+  filters
 }) {
-
+  return (
+    <RouteFilterHood
+      hoodList={filters.hood}
+      routeDataList={routeDataList}
+      filteredRouteDataList={filteredRouteDataList}
+      setFilteredRouteDataList={setFilteredRouteDataList}
+    />
+  )
 }
 
 function RouteContainer({ children }) {
@@ -83,9 +98,10 @@ function RouteCard({
 }
 
 export default function RouteListPage({
-  dataList
+  routeDataList,
+  filters
 }) {
-  const [filteredList, setFilteredList] = useState(dataList)
+  const [filteredRouteDataList, setFilteredRouteDataList] = useState(routeDataList)
   return (
     <>
       <SEO pageTitle={"Route List"} />
@@ -95,14 +111,13 @@ export default function RouteListPage({
             <Heading mb={4}>Park Routes</Heading>
             <Text mb={4}>{`Each of these routes will take to you several parks in Seattle. If you complete all of the routes, you will have gone to every park and P-Patch in the city! Routes vary in length and difficulty, but most are short tours of parks that are close to each other. For this reason, I suggest incorporating them into an existing ride. The shorter ones also work well as run or walk routes.`}
             </Text>
-            {/* <Flex mb={4}> */}
             <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow us on `}
               <a
                 href="https://instagram.com/theparkandthebike"
                 title="instagram"
                 target={"_blank"}
                 rel="noreferrer"
-                style={{display: 'inline-block', margin: '5px', borderBottom: '2px solid'}}
+                style={{ display: 'inline-block', margin: '5px', borderBottom: '2px solid' }}
               >
                 <span style={{ display: 'inline-block', marginRight: '5px' }}>
                   <BsInstagram />
@@ -110,13 +125,17 @@ export default function RouteListPage({
                 Instagram!
               </a>
             </Text>
-            <RouteFilters data={filteredList} setData={setFilteredList} />
+            <RouteFilters
+              routeDataList={routeDataList}
+              filteredRouteDataList={filteredRouteDataList}
+              setFilteredRouteDataList={setFilteredRouteDataList}
+              filters={filters} />
             <RouteContainer>
               {
-                filteredList.length && filteredList.map(data => <RouteCard data={data} key={data.name} />)
+                filteredRouteDataList.length && filteredRouteDataList.map(data => <RouteCard data={data} key={data.name} />)
               }
             </RouteContainer>
-            more coming soon!
+            <Box my={5} fontSize={'lg'}>more coming soon!</Box>
           </Flex>
         </Flex>
       </PageWrap>

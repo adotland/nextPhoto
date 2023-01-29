@@ -54,6 +54,7 @@ const LeafletFull = ({
   const [currentTiles, setCurrentTiles] = useState(null);
   const [markersObj, setMarkersObj] = useState({});
   const [markerRefObj, setMarkerRefObj] = useState({});
+  const [mapBgColor, setMapBgColor] = useState(useColorModeValue("white", "#191a1a"))
 
   let tileProvider = useColorModeValue("jawgLight", "jawgDark");
 
@@ -116,6 +117,7 @@ const LeafletFull = ({
     });
     mapState.addLayer(tmp);
     setCurrentTiles(tmp);
+    setMapBgColor(colorMode === "light" ? "white" : "#191a1a")
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [colorMode]);
 
@@ -169,7 +171,7 @@ const LeafletFull = ({
       },
       //TODO
       layeradd: (e) => {
-        // console.log('layeradd')
+        // console.log('layeradd', e.layer, map);
         if (
           map &&
           heatmapLayerRef.current &&
@@ -180,7 +182,7 @@ const LeafletFull = ({
         }
       },
       layerremove: (e) => {
-        // console.log('layerremove')
+        console.log('layerremove', e.layer)
         if (
           map &&
           heatmapLayerRef.current &&
@@ -206,7 +208,6 @@ const LeafletFull = ({
     scrollWheelZoom: true,
   };
 
-  const mapBgColor = useColorModeValue("white", "#191a1a");
   return (
     <Box textAlign={'center'} p={7}
       bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
