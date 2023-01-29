@@ -92,7 +92,7 @@ export default function MapRoutePage({ initCarouselDataList, parkDataList, route
       <Box
         bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
         padding={[0, 0, 0, '33px']}
-        boxShadow={'rgb(0 0 0 / 17%) inset 0px 0px 4px -2px'}
+        boxShadow={'rgb(0 0 0) inset 0px 1px 4px -4px'}
       >
         <Flex
           m={[0, 0, 0, 7]}
