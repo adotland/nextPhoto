@@ -1,7 +1,7 @@
-import { Box, Flex, Stack, Text, useCheckbox, useCheckboxGroup } from "@chakra-ui/react"
+import { Box, Flex, Text, useCheckbox, useCheckboxGroup } from "@chakra-ui/react"
 import { useEffect } from "react"
 
-export default function RouteFilterHood({ hoodList, routeDataList, filteredRouteDataList, setFilteredRouteDataList }) {
+export default function RouteFilterHood({ hoodFilter, setFilterValue }) {
   function CustomCheckbox(props) {
     const { state, getCheckboxProps, getInputProps, getLabelProps, htmlProps } =
       useCheckbox(props)
@@ -19,6 +19,7 @@ export default function RouteFilterHood({ hoodList, routeDataList, filteredRoute
         rounded='lg'
         px={3}
         py={1}
+        m={1}
         cursor='pointer'
         {...htmlProps}
       >
@@ -40,26 +41,17 @@ export default function RouteFilterHood({ hoodList, routeDataList, filteredRoute
   }
 
   const { value: selectedHoods, getCheckboxProps } = useCheckboxGroup({
-    defaultValue: hoodList,
+    defaultValue: hoodFilter,
   })
 
   useEffect(() => {
-    const newFilteredRouteSet = new Set();
-    routeDataList.forEach(route => {
-      selectedHoods.forEach(hood => {
-        if (route.hoodNameList.includes(hood)) {
-          newFilteredRouteSet.add(route)
-        }
-      });
-      setFilteredRouteDataList(Array.from(newFilteredRouteSet));
-    });
-  }, [selectedHoods, routeDataList, setFilteredRouteDataList])
+    setFilterValue(selectedHoods)
+  }, [selectedHoods, setFilterValue])
 
   return (
-    <Stack spacing={[1, 5]} direction={['column', 'row']} my={5} alignItems={'center'}>
-      <Text>&apos;Hoods</Text>
-      {/* <Text>The selected checkboxes are: {selectedHoods.sort().join(' and ')}</Text> */}
-      {hoodList.map(hood => (<CustomCheckbox key={hood} {...getCheckboxProps({ value: `${hood}` })} />))}
-    </Stack>
+    <Flex flexWrap={'wrap'} my={5} w={'100%'} justifyContent={'center'} alignItems={'center'} border={'1px solid #aaa'} p={3} rounded={'lg'}>
+      <Text fontWeight={'bold'} mr={3}>Hoods</Text>
+      {hoodFilter.map(hood => (<CustomCheckbox key={hood} {...getCheckboxProps({ value: `${hood}` })} />))}
+    </Flex>
   )
 }

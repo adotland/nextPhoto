@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import PageWrap from "../../components/PageWrap";
-import RouteFilterHood from "../../components/RouteFilterHood";
 import SEO from "../../components/SEO/general";
+import RouteFilter from "./RouteFilter";
 import styles from "./RouteList.module.css";
 
 async function getAllParksData() {
@@ -56,22 +56,6 @@ export async function getStaticProps() {
   }
 }
 
-function RouteFilters({
-  routeDataList,
-  filteredRouteDataList,
-  setFilteredRouteDataList,
-  filters
-}) {
-  return (
-    <RouteFilterHood
-      hoodList={filters.hood}
-      routeDataList={routeDataList}
-      filteredRouteDataList={filteredRouteDataList}
-      setFilteredRouteDataList={setFilteredRouteDataList}
-    />
-  )
-}
-
 function RouteContainer({ children }) {
   return (
     <Flex wrap={'wrap'} justifyContent={'space-between'}>{children}</Flex>
@@ -109,9 +93,9 @@ export default function RouteListPage({
         <Flex flexDir={'column'} mt={5} mb={8} alignItems={'center'}>
           <Flex flexDir={'column'} maxW={['100%', '100%', '100%', '75%']} alignItems={'center'} textAlign={'center'}>
             <Heading mb={4}>Park Routes</Heading>
-            <Text mb={4}>{`Each of these routes will take to you several parks in Seattle. If you complete all of the routes, you will have gone to every park and P-Patch in the city! Routes vary in length and difficulty, but most are short tours of parks that are close to each other. For this reason, I suggest incorporating them into an existing ride. The shorter ones also work well as run or walk routes.`}
+            <Text mb={4}>{`Each of these routes will take to you several parks in Seattle. They are based on the routes I originally took, but are RE-planned and improved. If you complete all of the routes, you will have gone to every park and P-Patch in the city! Routes vary in length and difficulty, but most are short tours of parks that are close to each other. Try incorporating them into an existing ride! The shorter ones also work well as run or walk routes.`}
             </Text>
-            <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow us on `}
+            <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow on `}
               <a
                 href="https://instagram.com/theparkandthebike"
                 title="instagram"
@@ -125,9 +109,8 @@ export default function RouteListPage({
                 Instagram!
               </a>
             </Text>
-            <RouteFilters
+            <RouteFilter
               routeDataList={routeDataList}
-              filteredRouteDataList={filteredRouteDataList}
               setFilteredRouteDataList={setFilteredRouteDataList}
               filters={filters} />
             <RouteContainer>
