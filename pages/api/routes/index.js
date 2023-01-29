@@ -2,14 +2,14 @@ import { withSentry } from "@sentry/nextjs";
 import path from "path";
 import * as fs from "fs";
 
-const readJson = (filePath, fileName) => {
-  const dataStr = readFile(filePath, fileName)
-  return JSON.parse(dataStr);
-}
-
 const readFile = (filePath, fileName) => {
   const fullPath = path.join(process.cwd(), filePath, fileName);
   return fs.readFileSync(fullPath, "utf8");
+}
+
+const readJson = (filePath, fileName) => {
+  const dataStr = readFile(filePath, fileName)
+  return JSON.parse(dataStr);
 }
 
 const santize = (input) => {
@@ -23,9 +23,9 @@ const routeDataList = readJson("./data/", "routes.json");
 const collectionList = readJson("./data/", "enabled_collections.json");
 
 let parksDataList = [];
-collectionList.map(async (collection) =>
+collectionList.forEach((collection) =>
   parksDataList.push(readJson('./data/', `${collection}_data.json`))
-)
+);
 parksDataList = parksDataList.flat();
 
 
