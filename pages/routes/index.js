@@ -5,7 +5,7 @@ import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import PageWrap from "../../components/PageWrap";
 import SEO from "../../components/SEO/general";
-import RouteFilter from "./RouteFilter";
+import RouteFilter from "../../components/RouteFilter";
 import styles from "./RouteList.module.css";
 
 async function getAllParksData() {
