@@ -16,7 +16,7 @@ function MainHomeTextBox({ children }) {
   return (
     <Flex
     flexDir={'column'}
-      color={useColorModeValue("#111", "#eee")}
+      color={"#111"}
       fontSize={["xl", "xl", "2xl"]}
       w={["100%", "333px"]}
       h={['initial', 'initial', 'initial', '90%']}
