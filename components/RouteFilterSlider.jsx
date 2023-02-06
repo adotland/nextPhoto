@@ -23,8 +23,8 @@ const RouteFilterSlider = ({ title, setFilterValue, max, step, icon }) => {
         <SliderMark value={max} {...labelStyles}>
           {max}+
         </SliderMark>
-        <SliderTrack bg='red.100'>
-          <SliderFilledTrack bg='tomato' />
+        <SliderTrack bg='blue.100'>
+          <SliderFilledTrack bg='#3388ff' />
         </SliderTrack>
         <SliderThumb boxSize={6}>
           {icon}

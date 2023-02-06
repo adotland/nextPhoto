@@ -13,9 +13,9 @@ export default function RouteFilterHood({ hoodFilter, setFilterValue }) {
         alignItems='center'
         gridColumnGap={2}
         // maxW='40'
-        bg='gray.50'
+        bg='blue.50'
         border='1px solid'
-        borderColor='gray.500'
+        borderColor='blue.500'
         rounded='lg'
         px={3}
         py={1}
@@ -28,14 +28,14 @@ export default function RouteFilterHood({ hoodFilter, setFilterValue }) {
           alignItems='center'
           justifyContent='center'
           border='2px solid'
-          borderColor='gray.500'
+          borderColor='blue.500'
           w={4}
           h={4}
           {...getCheckboxProps()}
         >
-          {state.isChecked && <Box w={2} h={2} bg='gray.500' />}
+          {state.isChecked && <Box w={2} h={2} bg='blue.500' />}
         </Flex>
-        <Text color="gray.700" {...getLabelProps()}>{props.value}</Text>
+        <Text color="blue.700" {...getLabelProps()}>{props.value}</Text>
       </Text>
     )
   }

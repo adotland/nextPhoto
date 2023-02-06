@@ -68,7 +68,7 @@ function RouteCard({
   return (
     <Link href={`/routes/${data.slug}`}>
       <a>
-        <Box className={styles.grow} bgSize={'cover'} width="303px" height={'133px'} rounded={'lg'} m={2} backgroundImage={`url('/_next/image?url=https%3A%2F%2Ftheparkandthebike.s3.us-west-2.amazonaws.com%2F${data.imageList[0]}&w=384&q=75')`}>
+        <Box className={styles.grow} bgSize={'cover'} width="303px" height={'133px'} rounded={'lg'} m={5} backgroundImage={`url('/_next/image?url=https%3A%2F%2Ftheparkandthebike.s3.us-west-2.amazonaws.com%2F${data.imageList[0]}&w=384&q=75')`}>
           <Box
             p={'10px'}
             roundedTop={'lg'}

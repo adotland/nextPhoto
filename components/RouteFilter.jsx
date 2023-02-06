@@ -60,7 +60,7 @@ function RouteFilter({
   // }
 
   return (
-    <Accordion defaultIndex={[0]} allowMultiple w={'100%'} mb={5}>
+    <Accordion defaultIndex={[]} allowMultiple allowToggle w={'100%'} mb={5}>
       <AccordionItem>
         <AccordionButton>
           <Box flex='1' textAlign='center'>
@@ -69,7 +69,7 @@ function RouteFilter({
           <AccordionIcon />
         </AccordionButton>
         <AccordionPanel pb={4}>
-          <Flex flexDir={'column'} maxW={'90%'} m={'0 auto'} w={'90%'}>
+          <Flex flexDir={'column'} maxW={['90%', '90%', '50%']} m={'0 auto'} w={['90%', '90%', '50%']}>
             <RouteFilterSlider
               title={`Distance (mi)`}
               setFilterValue={setDistanceFilter}
