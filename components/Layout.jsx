@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import { Box, Flex } from '@chakra-ui/layout'
+import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
 
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -8,6 +9,7 @@ import Navbar from './Navbar';
 export default function Layout({ children }) {
   return (
     <>
+    <SkipNavLink>Skip to content</SkipNavLink>
       <Head>
         <meta name="robots" content="follow, index" />
       </Head>
@@ -16,6 +18,7 @@ export default function Layout({ children }) {
           <header>
             <Navbar />
           </header>
+          <SkipNavContent />
           <Box as='main' paddingTop={["4rem", "4rem", "4rem", "6rem",]} paddingBottom={'6rem'}>
             {children}
           </Box>
