@@ -6,6 +6,8 @@ import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
 import Footer from './Footer';
 import Navbar from './Navbar';
 
+import styles from './layout.module.css'
+
 export default function Layout({ children }) {
   return (
     <>
@@ -14,7 +16,7 @@ export default function Layout({ children }) {
         <meta name="robots" content="follow, index" />
       </Head>
       <Box style={{ position: 'relative', minHeight: '100vh' }}>
-        <Flex flexDir={'column'} maxWidth='1500px' m='auto'>
+        <Flex flexDir={'column'} maxWidth='1500px' m='auto' className={styles.tileBg}>
           <header>
             <Navbar />
           </header>
