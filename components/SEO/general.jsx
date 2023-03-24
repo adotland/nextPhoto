@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import config from "../../config";
 
 export default function SEO({pageTitle, isMap}) {
-  const title = `${pageTitle} // ${config.meta.title}`;
+  const title = `${pageTitle} - ${config.meta.title}`;
   const mainImage = `https://${config.meta.social.graphic}`;
   const description = `${pageTitle} page for ${config.meta.title}, photoblog for bicycles in parks located in the Greater Seattle area`;
   const router = useRouter();
