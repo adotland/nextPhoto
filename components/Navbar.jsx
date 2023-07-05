@@ -101,7 +101,7 @@ const MenuItemToolTip = ({ children, to = "/", name, icon, pathname }) => {
         >
           <Flex justify={'space-between'}>
             <Text mr={1}>{children}</Text>
-            {icon}
+            <span style={{ marginTop: '2px' }}>{icon}</span>
           </Flex>
         </Box>
         {/* </Tooltip> */}
@@ -124,13 +124,13 @@ const MenuLinks = ({ isOpen, setIsOpen, pathname }) => {
         direction={["column", "column", "column", "row"]}
         pt={[2, 4, 0, 0]}
       >
-        <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1.4em'} />} pathname={pathname}>Featured Parks</MenuItemToolTip>
-        <MenuItemToolTip to="/routes" name="Routes" icon={<BsPinMapFill size={'1.4em'} />} pathname={pathname}>Routes</MenuItemToolTip>
-        <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1.4em"} />} pathname={pathname}>Full Map</MenuItemToolTip>
+        <MenuItemToolTip to="/featured" name="Featured" icon={<FaTree size={'1em'} />} pathname={pathname}>Featured Parks</MenuItemToolTip>
+        <MenuItemToolTip to="/routes" name="Routes" icon={<BsPinMapFill size={'1em'} />} pathname={pathname}>Routes</MenuItemToolTip>
+        <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1em"} />} pathname={pathname}>Full Map</MenuItemToolTip>
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItemToolTip to="/blog" name="Blog" icon={<GoBeaker size={'1.4em'} />} pathname={pathname}>Blog</MenuItemToolTip>
-        <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />} pathname={pathname}>About</MenuItemToolTip>
+        <MenuItemToolTip to="/blog" name="Blog" icon={<GoBeaker size={'1em'} />} pathname={pathname}>Blog</MenuItemToolTip>
+        <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1em'} />} pathname={pathname}>About</MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
     </Box>
