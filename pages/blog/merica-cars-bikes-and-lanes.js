@@ -18,8 +18,8 @@ export default function MericaCarsBikeLanes({ }) {
     <>
       <SEO pageTitle={'Seattle Park Data Map - Health'} />
       <PageWrap>
-        <Flex flexDir={'column'} mt={5} mb={8} align={'center'}>
-          <Flex flexDir={'column'} maxW={['100%', '100%', '100%', '75%']}>
+        <Flex flexDir={'column'} mt={5} mb={8} ml={'auto'} mr={'auto'} maxW={960}>
+          <Flex flexDir={'column'}>
             <Heading mb={4}>&apos;Merica, Cars, Bikes, and Lanes</Heading>
 
             <Box boxShadow={"lg"} maxW={['400']}>
