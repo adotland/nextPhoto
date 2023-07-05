@@ -1,4 +1,4 @@
-import { useColorModeValue, useColorMode, Text, Box } from "@chakra-ui/react";
+import { useColorModeValue, useColorMode, Box } from "@chakra-ui/react";
 import { useEffect, useState, useRef, forwardRef } from "react";
 
 import L from "leaflet";
@@ -22,6 +22,7 @@ import {
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
+import P from "../P";
 
 // eslint-disable-next-line react/display-name
 const HeatmapLayer = forwardRef(({ heatmapData }, ref) => {
@@ -213,7 +214,7 @@ const LeafletFull = ({
       bgGradient={useColorModeValue("linear(to-b, gray.100, transparent)", "linear(to-b, blackAlpha.300, transparent)")}
     >
       <h2 style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '10px' }}>Parks Map</h2>
-      <Text mb={2}>scroll and zoom to discover parks</Text>
+      <P>scroll and zoom to discover parks</P>
       <MapContainer
         className={styles.map}
         style={{ backgroundColor: mapBgColor }}

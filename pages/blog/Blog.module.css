@@ -1,0 +1,32 @@
+/* Blog.module.css */
+
+.blogLink {
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s;
+  margin: 1rem 0;
+}
+
+.blogLink::after {
+  content: '';
+  position: absolute;
+  right: -1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.blogLink:hover {
+  transform: translateX(0.5rem);
+  /* Translate to the right on hover */
+}
+
+.blogLink:hover::after {
+  opacity: 1;
+  /* Fade in the right arrow icon on hover */
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}

@@ -70,10 +70,10 @@ export default function Socials({ dataList }) {
         <Flex as={'section'} className={styles.linksSection}>
           <PageLink name={'What is this?'} url={'/about'} />
           <PageLink name={'Best Parks'} url={'/featured'} />
-          <PageLink name={'Map'} url={'/map/'} />
-          <PageLink name={'Experiments'} url={'/map/seattle-parks-and-health'} />
+          <PageLink name={'Map'} url={'/map'} />
+          <PageLink name={'Blog'} url={'/blog'} />
         </Flex>
-        <GalleryForSocials dataList={dataList}/>
+        <GalleryForSocials dataList={dataList} />
       </Flex>
     </Flex>
   );

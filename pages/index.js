@@ -15,7 +15,7 @@ import { BsMap, BsPinMapFill } from "react-icons/bs";
 function MainHomeTextBox({ children }) {
   return (
     <Flex
-    flexDir={'column'}
+      flexDir={'column'}
       color={"#111"}
       fontSize={["xl", "xl", "2xl"]}
       w={["100%", "333px"]}
@@ -95,7 +95,7 @@ function HomeTextBox({ children }) {
 function HomeLinkBox({ link, children }) {
   return (
     <Link href={link} passHref >
-      <ChakraLink style={{display: 'contents'}}>
+      <ChakraLink style={{ display: 'contents' }}>
         <HomeTextBox>{children}</HomeTextBox>
       </ChakraLink>
     </Link>
@@ -168,11 +168,11 @@ export default function IndexPage({ videoLink, bgLink, mainImgLink }) {
               </div>
               <BsMap size={"1.4em"} />
             </HomeLinkBox>
-            <HomeLinkBox link={"/map/seattle-parks-and-health"}>
+            <HomeLinkBox link={"/blog"}>
               <div>
                 Explore data in the
                 <br />
-                <span style={{ fontWeight: "bold" }}>Experiments</span> section
+                <span style={{ fontWeight: "bold" }}>Blog</span> section
               </div>
               <GoBeaker size={"1.4em"} />
             </HomeLinkBox>

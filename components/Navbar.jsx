@@ -129,7 +129,7 @@ const MenuLinks = ({ isOpen, setIsOpen, pathname }) => {
         <MenuItemToolTip to="/map" name="Park Map" icon={<BsMap size={"1.4em"} />} pathname={pathname}>Full Map</MenuItemToolTip>
         <FilterMenu setNavbarIsOpen={setIsOpen} />
         <Search setNavbarIsOpen={setIsOpen} />
-        <MenuItemToolTip to="/data/seattle-parks-and-health" name="Health Data Map" icon={<GoBeaker size={'1.4em'} />} pathname={pathname}>Data Experiments</MenuItemToolTip>
+        <MenuItemToolTip to="/blog" name="Blog" icon={<GoBeaker size={'1.4em'} />} pathname={pathname}>Blog</MenuItemToolTip>
         <MenuItemToolTip to="/about" name="About" icon={<BiInfoCircle size={'1.4em'} />} pathname={pathname}>About</MenuItemToolTip>
         <ColorModeToggle setIsOpen={setIsOpen} />
       </Stack>
