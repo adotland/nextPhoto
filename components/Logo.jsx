@@ -19,7 +19,7 @@ export default function Logo(props) {
           // bgGradient={useColorModeValue("linear(to-l, green.300 ,#000)", "linear(to-l, green.300 ,#fff)")}
           // bgClip="text"
           >
-            TheParkAndTheBike
+            BikeToThePark
           </Text>
         </a>
       </Link>

@@ -44,7 +44,7 @@ export default function Socials({ dataList }) {
             objectFit={"cover"}
           />
         </Box>
-        <Box mt={10} as={'h1'} fontSize={'large'}>TheParkAndTheBike</Box>
+        <Box mt={10} as={'h1'} fontSize={'large'}>BikeToThePark</Box>
       </Flex>
       <Flex as={'main'} mt={'1rem'} flexDir={'column'} alignItems={'center'}>
         <Flex as={'section'}>

@@ -3,7 +3,7 @@ const configCommon = {
     api: process.env.API_URL,
   },
   meta: {
-    title: "TheParkAndTheBike",
+    title: "BikeToThePark",
     description: "Bikes in Parks Photo Blog",
     social: {
       twitter: {

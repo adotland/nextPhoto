@@ -57,11 +57,13 @@ export default function About({ statsObj }) {
         <Heading as={'h2'} fontSize={'1rem'} >Why</Heading>
       </Box>
       <Box as="section" className="content" my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
-        <P>Welcome to TheParkAndTheBike. Seattle is full of incredible sights. In 2020, as a way to get exercise and explore the city, I decided to ride a bicycle to every park in Seattle. I was surprised to find there was over four hundred.</P>
+        <P>Welcome to BikeToThePark. In 2020, as a way to get exercise and explore the city, I decided to ride a bicycle to every park in Seattle. I was surprised to find there was over four hundred.</P>
 
-        <P>Along the way, I learned about the P-Patches, which were often located within the parks, so I also rode my bike to every standalone <AboutLink text='P-Patch' path='/collection/p-patch' />.</P>
+        <P>{`I wasn't used to riding often or over distances, so having the parks as motivation to go somewhere outdoors with fresh air and nature during the pandemic's lockdown was what worked for me.`}</P>
 
-        <P>I also covered: </P>
+        <P>Along the way, I learned about the alternatives to parks, like P-Patches, which were often inside the parks, so I also rode my bike to every standalone <AboutLink text='P-Patch' path='/collection/p-patch' />.</P>
+
+        <P>I also covered parks not operated by the city: </P>
 
         <UnorderedList mb={2}>
           <ListItem><AboutLink text='Port of Seattle owned parks' path='/collection/extras' /></ListItem>
@@ -87,8 +89,6 @@ export default function About({ statsObj }) {
           <ListItem><ChakraLink href={'https://twitter.com/SeattleParks'} target={'_blank'} color={useColorModeValue('green.700', 'green.500')}>Seattle Parks Twitter</ChakraLink> for park event info</ListItem>
         </UnorderedList>
       </Box>
-
-      <Text fontSize={'xs'} my={10} ml={7} pt={5}>This blog is not affiliated with any of the organizations representing the places or bicycles pictured. <a target="_blank" rel="noreferrer" href="https://www.pexels.com/video/aerial-view-of-a-town-beside-a-lake-2355554/">Intro video from Pexels</a>. All photographs &copy; TheParkAndTheBike</Text>
 
     </Box >
   )

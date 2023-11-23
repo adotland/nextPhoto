@@ -17,7 +17,7 @@ function Footer() {
   return (
     <Box
       color={useColorModeValue("gray.900", "gray.300")}
-      bgGradient={isHomepage ? bgSolidColor : bgGradientColor }
+      bgGradient={isHomepage ? bgSolidColor : bgGradientColor}
     >
       <Flex
         pt={isHomepage ? 0 : 5}
@@ -28,7 +28,7 @@ function Footer() {
         maxWidth="1492px"
         m="auto"
       >
-        &copy; {new Date().getFullYear()} TheParkAndTheBike
+        &copy; {new Date().getFullYear()} BikeToThePark
         <Flex justifyContent={"flex-end"}>
           <Box ml={5}>
             <Link

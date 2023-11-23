@@ -145,7 +145,7 @@ export default function IndexPage({ videoLink, bgLink, mainImgLink }) {
             <MainHomeTextBox img={mainImgLink}>
               <div>
                 Welcome to{" "}
-                <span style={{ fontWeight: "bold" }}>TheParkAndTheBike</span>,
+                <span style={{ fontWeight: "bold" }}>BikeToThePark</span>,
                 <br />
                 an exploration of parks in
                 <br />
