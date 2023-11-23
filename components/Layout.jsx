@@ -11,12 +11,13 @@ import styles from './layout.module.css'
 export default function Layout({ children }) {
   return (
     <>
-    <SkipNavLink>Skip to content</SkipNavLink>
+      <SkipNavLink>Skip to content</SkipNavLink>
       <Head>
         <meta name="robots" content="follow, index" />
       </Head>
       <Box style={{ position: 'relative', minHeight: '100vh' }}>
-        <Flex flexDir={'column'} maxWidth='1500px' m='auto' className={styles.tileBg}>
+        {/* <Flex flexDir={'column'} maxWidth='1500px' m='auto' className={styles.tileBg}> */}
+        <Flex flexDir={'column'} maxWidth='1500px' m='auto'>
           <header>
             <Navbar />
           </header>
