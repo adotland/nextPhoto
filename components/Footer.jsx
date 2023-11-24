@@ -28,7 +28,7 @@ function Footer() {
         maxWidth="1492px"
         m="auto"
       >
-        &copy; {new Date().getFullYear()} BikeToThePark
+        &copy; {new Date().getFullYear()} Bike^Park
         <Flex justifyContent={"flex-end"}>
           <Box ml={5}>
             <Link
@@ -41,7 +41,7 @@ function Footer() {
           </Box>
           <Box ml={5}>
             <Link
-              href="https://instagram.com/theparkandthebike"
+              href="https://instagram.com/bikesinparks"
               target={"_blank"}
               title="instagram"
             >

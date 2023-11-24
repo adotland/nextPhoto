@@ -57,9 +57,9 @@ export default function About({ statsObj }) {
         <Heading as={'h2'} fontSize={'1rem'} >Why</Heading>
       </Box>
       <Box as="section" className="content" my={30} mx={'auto'} maxW={["90%", "90%", "90%", "75%"]}>
-        <P>Welcome to BikeToThePark. In 2020, as a way to get exercise and explore the city, I decided to ride a bicycle to every park in Seattle. I was surprised to find there was over four hundred.</P>
+        <P>In 2020, as a way to get exercise and explore the city, I decided to ride a bicycle to every park in Seattle. I was surprised to find there was over four hundred.</P>
 
-        <P>{`I wasn't used to riding often or over distances, so having the parks as motivation to go somewhere outdoors with fresh air and nature during the pandemic's lockdown was what worked for me.`}</P>
+        <P>{`I wasn't used to riding often or over distances, so having the parks as motivation to go somewhere outdoors with fresh air and nature during the pandemic's lockdown was what worked for me. As you can see, most of the rides were done on a "Walmart bike", so equipment was not a barrier to entry. I also started off a little heavier, ended the quest a little lighter.`}</P>
 
         <P>Along the way, I learned about the alternatives to parks, like P-Patches, which were often inside the parks, so I also rode my bike to every standalone <AboutLink text='P-Patch' path='/collection/p-patch' />.</P>
 

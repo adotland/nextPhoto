@@ -97,7 +97,7 @@ export default function RouteListPage({
             </Text>
             <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow on `}
               <a
-                href="https://instagram.com/theparkandthebike"
+                href="https://instagram.com/bikesinparks"
                 title="instagram"
                 target={"_blank"}
                 rel="noreferrer"

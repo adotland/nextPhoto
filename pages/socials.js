@@ -59,7 +59,7 @@ export default function Socials({ dataList }) {
           </Box>
           <Box ml={'2rem'}>
             <ChakraLink
-              href="https://instagram.com/theparkandthebike"
+              href="https://instagram.com/bikesinparks"
               target={"_blank"}
               title="instagram"
             >
