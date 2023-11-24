@@ -11,7 +11,7 @@ import { GoBeaker } from "react-icons/go";
 import { FaTree } from "react-icons/fa";
 import Image from "next/image";
 import { BsMap, BsPinMapFill } from "react-icons/bs";
-
+import IG from "../components/IG";
 function MainHomeTextBox({ children }) {
   return (
     <Flex
@@ -112,7 +112,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function IndexPage({ videoLink, bgLink, mainImgLink }) {
+export default function IndexPage({ videoLink, bgLink, mainImgLink, posts }) {
   const gradColor = useColorModeValue('#33d0ff', '#33d0ff')
   const bgColor = useColorModeValue('white', 'black')
   return (
@@ -191,6 +191,7 @@ export default function IndexPage({ videoLink, bgLink, mainImgLink }) {
                 type from the Menu above
               </div>
             </HomeTextBox>
+            <IG />
           </Flex>
         </Flex>
       </Box>
