@@ -14,7 +14,7 @@ const config = {
   ...configCommon,
   endpoints: {
     ...configCommon.endpoints,
-    canonical: "https://www.theparkandthebike.com",
+    canonical: "https://www.biketothepark.com",
   },
   csp
 };

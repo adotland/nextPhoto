@@ -95,7 +95,7 @@ export default function RouteListPage({
             <Heading mb={4}>Park Routes</Heading>
             <Text mb={4}>{`Each of these routes will take to you several parks in Seattle. They are based on the routes I originally took, but are replanned and improved. If you complete all of the routes, you will have gone to every park and P-Patch in the city! Routes vary in length and difficulty, but most are short tours of parks that are close to each other. Try incorporating them into an existing ride! The shorter ones also work well as run or walk routes.`}
             </Text>
-            <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #theparkandthebike, and if you like, follow on `}
+            <Text as={'div'} fontWeight={'bold'} mb={4}>{`After you complete a route, feel free to share on social media with the tag #biketothepark, and if you like, follow on `}
               <a
                 href="https://instagram.com/bikesinparks"
                 title="instagram"
