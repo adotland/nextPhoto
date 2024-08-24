@@ -20,7 +20,7 @@ export default class Document extends NextDocument {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="manifest" href="/site.webmanifest" />
-          <script async defer data-website-id="0720928a-0552-4e9c-9964-9bcc3c677ded" data-host-url="https://umami-seven-weld.vercel.app/" src={`${config.endpoints.canonical}/_umami.js`} data-domains="www.biketothepark.com,biketothepark.com"></script>
+          <script async defer data-website-id="d27e87b1-2277-491c-9ec5-edb306460706" data-host-url="https://umami-seven-weld.vercel.app/" src={`${config.endpoints.canonical}/_umami.js`} data-domains="www.biketothepark.com,biketothepark.com"></script>
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.initialColorMode} />
