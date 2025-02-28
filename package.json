@@ -67,6 +67,7 @@
     "cross-env": "^7.0.3",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^10.0.2",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "gpxparser": "^3.0.8",
